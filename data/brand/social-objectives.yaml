@@ -1,0 +1,26 @@
+schemaVersion: 1.0.0
+brandVersion: final-2026.1
+objectives:
+  - key: qualified-awareness
+    outcome: Reach relevant Iraqi business and operational decision-makers with credible problems and insight.
+    primaryKpis: [qualified_reach, profile_visits, qualified_follows]
+  - key: authority-and-trust
+    outcome: Demonstrate operational depth, applied AI judgment, and reliable regional execution.
+    primaryKpis: [saves, shares, meaningful_comments, return_profile_visits]
+  - key: demand-generation
+    outcome: Create informed conversations for Aurendor systems and Aurendor Build.
+    primaryKpis: [website_clicks, qualified_messages, leads]
+  - key: learning
+    outcome: Improve topic, hook, format, creative, and CTA choices from controlled evidence.
+    primaryKpis: [experiment_completion, insight_quality, repeatable_lift]
+guardrails:
+  - negative_feedback_rate
+  - unfollows
+  - claim_or_brand_failures
+  - content_production_cost
+  - owner_revision_rate
+normalization:
+  - Compare rate metrics per reach or impression where supported.
+  - Separate organic and paid distribution.
+  - Do not infer causation from one post.
+

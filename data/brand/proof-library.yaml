@@ -1,0 +1,21 @@
+schemaVersion: 1.0.0
+brandVersion: final-2026.1
+proofItems:
+  - id: proof-built-construction-platform
+    statement: Aurendor has built a construction operations platform with project, payment, file, media, and stakeholder views.
+    allowedUse: factual product description
+    sourcePaths:
+      - marketing/_context/AURENDOR_Product_Offerings.md
+      - marketing/assets/build-app-assets/
+    strength: product-evidence
+  - id: proof-september-library
+    statement: A 33-item September 2026 content queue with 98 PNG and 4 MP4 source assets exists for review.
+    allowedUse: internal operational reporting only
+    sourcePaths:
+      - content-engine/READY-TO-PUBLISH/
+      - content-engine/ENGINE-STATE.md
+    strength: internal-evidence
+restrictions:
+  - Do not publish customer names, testimonials, revenue, performance, or outcome statistics without a dedicated permission/source record.
+  - A screenshot proves a feature/interface exists; it does not prove a business outcome.
+

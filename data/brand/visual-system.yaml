@@ -1,0 +1,66 @@
+schemaVersion: 1.0.0
+brandVersion: final-2026.1
+effectiveAt: 2026-08-19T00:00:00+03:00
+concept: Digital Civilization
+palette:
+  deep: "#003F35"
+  deep2: "#00302A"
+  deep3: "#00221D"
+  mid: "#0B594A"
+  neon: "#0EDB23"
+  pale: "#77FF70"
+  pale2: "#95FF73"
+  paper: "#F4F8F5"
+  white: "#FFFFFF"
+  ink: "#0B201B"
+  inkSoft: "#3A5145"
+  lineLight: "#CFDDD4"
+colorBudget:
+  dominant: 0.60
+  secondary: 0.30
+  accentMaximum: 0.10
+  rule: Neon is a charge, never a large fill or small body text.
+typography:
+  latin: Dh Ranclo Bold
+  arabic: Ghroob Arabic ITF
+  arabicWeights: [ExtraBold, Bold, Medium, Regular, Light]
+  arabicTracking: prohibited
+  arabicBodyLineHeight: 1.7
+canvas:
+  feed: { width: 1080, height: 1350, ratio: "4:5", safeMargin: 72 }
+  story: { width: 1080, height: 1920, ratio: "9:16", topUiSafe: 250, bottomUiSafe: 250 }
+rhythm:
+  lightEditorial: 0.75
+  darkExpressive: 0.25
+grid:
+  baseUnit: 8
+  columns: 6
+  gutter: 24
+  contentWidth: 936
+  oneFocalPoint: true
+  whitespaceRange: [0.30, 0.50]
+marks:
+  primary: Interlocking geometric ae monogram
+  wordmark: lowercase aurendor with Arabic lockup and ESTD 2026
+motifs:
+  - soft interlocking frame pattern
+  - modular ae pattern
+  - thin neon hairline frame
+  - fixed corner labels
+  - contained flat tech illustration
+imagery:
+  status: founder-direction-not-final
+  treatment: deep-green to pale-neon duotone; optional restrained grain
+  fallback: brand illustrations and custom geometric system diagrams
+prohibited:
+  - archived cream/forest/gold Sovereign Field palette
+  - full-color ungraded stock photography
+  - generic blue gradient and glowing brain imagery
+  - mixed icon families
+  - more than one creative grid break per composition
+provenance:
+  - path: marketing/_context/AURENDOR_Brand_Identity_FINAL_2026.md
+    authority: canonical
+  - path: marketing/_context/AURENDOR_Social_Design_System_2026.md
+    authority: canonical
+

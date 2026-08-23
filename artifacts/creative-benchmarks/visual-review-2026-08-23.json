@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "1.0.0",
+  "reviewDate": "2026-08-23",
+  "status": "VISUAL_REVIEW_COMPLETED_SINGLE_CRITIC",
+  "decision": "REVISE",
+  "publicationCandidate": false,
+  "reviewedIn": {
+    "renderer": "Chromium",
+    "viewport": {
+      "width": 1080,
+      "height": 1350
+    }
+  },
+  "independentCriticReview": {
+    "reviewer": "root-agent-visual-review",
+    "assetBinding": "PRE_REVISION_HASHES_NOT_CAPTURED",
+    "validForCurrentAssetHashApproval": false,
+    "observations": [
+      "Arabic shaping, hierarchy, readability, and color contrast rendered cleanly in Chromium.",
+      "The initial set repeated one editorial template across all three creatives.",
+      "Initial Arabic layouts left an overly empty and unbalanced left field.",
+      "The initial action rail had a large disconnected gap.",
+      "The initial top and bottom signature used live type instead of the canonical logo.",
+      "The nested systems geometry remained generic.",
+      "Concept originality and optical polish did not support a 93-plus publication-candidate score."
+    ],
+    "decision": "REVISE"
+  },
+  "revisionResponse": [
+    "Converted 01-ar-system-light into a materially different asymmetric system-map composition.",
+    "Added a functional decide–execute–measure loop to the left counter-field.",
+    "Tightened the first creative's action rail and bound it to the content field.",
+    "Embedded exact canonical FINAL 2026 horizontal-logo path geometry in all three SVG masters.",
+    "Retained conservative automated score caps and the visual-review-required release state."
+  ],
+  "currentAssets": [
+    {
+      "file": "01-ar-system-light.svg",
+      "sha256": "4725f479ea77aa9a151f11dd7ee1657b1781299b54c5049347845c69f8cc1034"
+    },
+    {
+      "file": "02-ar-ai-dark.svg",
+      "sha256": "d6cac1806605f64b9a5c7ebd9cbd9f08164c484523410e7c3255f34a69c9e6d1"
+    },
+    {
+      "file": "03-en-operating-system-light.svg",
+      "sha256": "38b37a755b656fb8a753fe552402c4c114bf69a7396af52696c44444f938445d"
+    }
+  ],
+  "postRevisionRasterSmokeCheck": {
+    "performedBy": "creative-benchmarks-implementer",
+    "independentVisualCritic": false,
+    "renderer": "Chromium",
+    "viewport": "1080x1350",
+    "observations": [
+      "All exact copy is visible with no observed clipping.",
+      "Arabic text is shaped and ordered correctly in the inspected Chromium raster.",
+      "The canonical horizontal logo geometry is visible without distortion.",
+      "The system-map layout materially reduces the first creative's empty counter-field."
+    ],
+    "aestheticPassClaimed": false
+  },
+  "postRevisionRasterEvidence": [
+    {
+      "file": "01-ar-system-light.png",
+      "sha256": "4d787787862b257e5058b5966d45889a295904c1df1e0d2ad21edf6f27fc3a60",
+      "dimensions": "1080x1350"
+    },
+    {
+      "file": "02-ar-ai-dark.png",
+      "sha256": "38ea81c47b65369f1034e2507a2930f340f16b263d1cee92b07c6d746764c426",
+      "dimensions": "1080x1350"
+    },
+    {
+      "file": "03-en-operating-system-light.png",
+      "sha256": "1beb147fe76d6009d54f00acce4b1eaf1d3571c9f89652c13daf823991e80f25",
+      "dimensions": "1080x1350"
+    }
+  ],
+  "currentHashGate": {
+    "independentCriticsCompleted": 0,
+    "independentCriticsRequired": 2,
+    "remainingCriticsRequired": 2,
+    "reason": "All asset hashes changed after the single independent review; the post-revision smoke check is implementation verification, not an independent critic.",
+    "releaseDecision": "REVISE"
+  },
+  "outstandingRevisionRisks": [
+    "02-ar-ai-dark and 03-en-operating-system-light still share the generic nested-systems motif.",
+    "Final optical balance, originality, and platform-compressed raster quality require two independent current-hash critics.",
+    "Production fonts must be embedded or supplied to the final raster exporter."
+  ]
+}

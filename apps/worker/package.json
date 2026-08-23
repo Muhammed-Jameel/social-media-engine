@@ -1,0 +1,23 @@
+{
+  "name": "@aurendor/worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src"
+  },
+  "dependencies": {
+    "@aurendor/db": "workspace:*",
+    "@aurendor/engine": "workspace:*",
+    "@aurendor/observability": "workspace:*",
+    "@aurendor/schemas": "workspace:*"
+  },
+  "devDependencies": {
+    "tsx": "4.23.12",
+    "typescript": "5.9.3"
+  }
+}
+

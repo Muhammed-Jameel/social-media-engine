@@ -1,0 +1,42 @@
+{
+  "name": "aurendor-content-os",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "AURENDOR's evidence-led social media operating system.",
+  "packageManager": "pnpm@11.19.0",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "pnpm db:migrate && pnpm db:seed && pnpm brand:sync && pnpm seed:import && pnpm --filter @aurendor/web dev",
+    "worker": "pnpm --filter @aurendor/worker dev",
+    "build": "pnpm -r --if-present build",
+    "typecheck": "pnpm -r --if-present typecheck",
+    "lint": "eslint apps packages scripts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "db:migrate": "tsx scripts/migrate.mts",
+    "db:seed": "tsx scripts/seed.mts",
+    "seed:e2e": "tsx scripts/seed-e2e.mts",
+    "seed:import": "tsx scripts/import-existing-content.mts",
+    "creative:benchmarks": "tsx scripts/generate-creative-benchmarks.mts",
+    "simulate:dry-run": "tsx scripts/simulate-dry-run.mts",
+    "discovery": "node scripts/discover-brand.mts",
+    "brand:sync": "tsx scripts/sync-brand-index.mts",
+    "secrets:check": "tsx scripts/check-secrets.mts",
+    "check": "pnpm secrets:check && pnpm lint && pnpm typecheck && pnpm test && pnpm build"
+  },
+  "devDependencies": {
+    "@aurendor/db": "workspace:*",
+    "@aurendor/engine": "workspace:*",
+    "@playwright/test": "1.62.1",
+    "@types/node": "24.3.0",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.3.2",
+    "tsx": "4.23.12",
+    "typescript": "5.9.3",
+    "vitest": "4.1.11"
+  }
+}

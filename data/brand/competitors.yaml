@@ -1,0 +1,23 @@
+schemaVersion: 1.0.0
+brandVersion: final-2026.1
+competitorTypes:
+  - key: generic-saas
+    contrast: Broad and shallow versus Aurendor's operational depth.
+  - key: global-construction-platforms
+    examples: [Procore, PlanGrid]
+    contrast: Global scale but less Iraqi/Arabic-first regional fit; avoid unsupported comparative claims.
+  - key: ai-hype-agencies
+    contrast: Demo-led positioning versus dependable operational systems.
+  - key: freelance-development
+    contrast: Project delivery versus institutional product and infrastructure accountability.
+  - key: heavy-erp
+    contrast: Broad implementation burden versus focused operational clarity.
+policy:
+  - Use competitor names only in sourced comparison content reviewed for accuracy.
+  - Never invent pricing, capabilities, weaknesses, customer sentiment, or market share.
+provenance:
+  - path: marketing/new-brand/00-brand-strategy/brand-positioning.md
+    authority: medium
+  - path: marketing/research/AURENDOR_Market_and_Competitor_Study_2026-06.md
+    authority: medium
+

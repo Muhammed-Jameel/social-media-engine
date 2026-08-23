@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350" role="img" aria-labelledby="title desc" data-aurendor-brand-version="final-2026.1" data-aurendor-mode="dark" data-aurendor-direction="rtl" data-aurendor-layout="editorial" data-aurendor-background="#003F35" data-aurendor-primary="#F4F8F5" data-aurendor-secondary="#77FF70" data-aurendor-copy-hash="08d646c9e98d6997f7f40d8ba9087f6a352ca3bff1eee1b018483060b7b2ddec">
+  <title id="title">الذكاء الاصطناعي ليس طبقة تجميلية</title>
+  <desc id="desc">قيمته تظهر عندما يختصر زمن القرار، ويرفع جودة التنفيذ، ويترك أثرا يمكن إثباته.</desc>
+  <rect data-role="canvas" width="1080" height="1350" fill="#003F35"/>
+  <g aria-hidden="true" opacity="0.14" fill="none" stroke="#77FF70" stroke-width="14">
+    <path d="M659 -72h330q82 0 82 82v210q0 82-82 82H659q-82 0-82-82V10q0-82 82-82Z"/>
+    <path d="M745 28h330q82 0 82 82v210q0 82-82 82H745q-82 0-82-82V110q0-82 82-82Z"/>
+    <path d="M832 128h330q82 0 82 82v210q0 82-82 82H832q-82 0-82-82V210q0-82 82-82Z"/>
+  </g>
+  <rect x="40" y="40" width="1000" height="1270" rx="6" fill="none" stroke="#0EDB23" stroke-width="2"/>
+  <g data-role="canonical-logo" data-source-sha256="acf822a1f6f8038b8128639d76e3b9390a020a09eaa2a6188ce9123e08112e2a" fill="#F4F8F5" transform="translate(96 49) scale(0.4194388197859416)">
+    <path d="M247.15,8.11v21.64h-10.82V8.11h-5.41v8.63l-5.41.44v-9.07h-27.05v5.41h21.64v4.1l-16.27,1.31-5.37.43h0v5.41h0v10.39h27.05v-12.82l5.41-.49v13.31h21.64V8.11h-5.41ZM220.1,29.74h-16.23v-5.46l16.23-1.46v6.92Z"/>
+    <polygon points="263.38 13.51 274.2 13.51 274.2 8.1 257.97 8.1 257.97 35.15 263.38 35.15 263.38 13.51"/>
+    <path d="M366.16,8.11v27.05h21.64V8.11h-21.64ZM382.39,29.74h-10.82V13.51h10.82v16.23Z"/>
+    <path d="M402.77,8.1c-5.28,0-9.56,4.28-9.56,9.56v28.29l5.41.44v-28.73c0-2.29,1.86-4.15,4.15-4.15h12.08v-5.41h-12.07Z"/>
+    <path d="M348.43,35.15c6.8,0,12.32-5.52,12.32-12.32v-9.31h-5.39v9.31c0,3.82-3.09,6.91-6.91,6.91h-3.9V13.52h10.8v-5.39h-16.21v27.03h9.31Z"/>
+    <polygon points="328.29 8.1 312.07 8.1 312.07 45.76 317.47 46.21 317.47 13.51 328.29 13.51 328.29 35.15 333.7 35.15 333.7 5.62 328.29 5.62 328.29 8.1"/>
+    <path d="M225.51,45.98v10.69h0v5.06h0l5.28.48,16.36,1.47v3.94h-32.46v5.41h37.87v-27.05h-27.05ZM247.15,58.42l-16.23-1.31v-5.72h16.23v7.03Z"/>
+    <rect x="404.02" y="45.98" width="5.41" height="27.05"/>
+    <path d="M355.34,60.76l5.41.48v-15.26h-16.23v16.32c0,2.94-2.38,5.32-5.32,5.32h-.09v5.41c5.97,0,10.82-4.84,10.82-10.82v-10.82h5.41v9.37Z"/>
+    <polygon points="333.7 53.89 333.7 73.03 257.97 73.03 257.97 67.62 274.2 67.62 274.2 59.49 257.97 58.04 257.97 52.97 274.2 54.28 279.61 54.72 279.61 67.62 285.02 67.62 285.02 51.39 290.42 51.39 290.42 67.62 328.29 67.62 328.29 53.44 333.7 53.89"/>
+    <path d="M387.8,58.42v-12.44h-21.64v15.75l5.29.48h0l10.94.99v4.42h-27.05v5.41h32.46v-9.35l10.82.98v-5.36l-10.82-.87ZM382.39,57.99l-10.82-.87v-5.72h10.82v6.6Z"/>
+    <path d="M279.61,8.11v12.86l-10.82.87v5.41l10.82-.97v8.87h27.05v-5.41h-21.64v-3.95l16.23-1.46,5.41-.49v-15.74h-27.05ZM301.25,19.22l-16.23,1.31v-7.02h16.23v5.71Z"/>
+    <polygon points="317.56 76.51 312.06 76.51 312.06 82 315.94 82 315.94 85.88 321.44 85.88 321.44 80.38 317.56 80.38 317.56 76.51"/>
+    <rect x="290.42" y="45.89" width="5.5" height="5.5"/>
+    <polygon points="318.38 58.11 310.89 57.21 310.89 58.84 318.38 59.75 318.38 58.11"/>
+    <polygon points="402.98 41.22 410.48 42.13 410.48 40.5 402.98 39.59 402.98 41.22"/>
+    <path d="M214.69,60.77l5.41.49v-15.27h-16.23v16.32c0,2.94-2.38,5.32-5.32,5.32h-.09v5.41c5.97,0,10.82-4.84,10.82-10.82v-10.82h5.41v9.38Z"/>
+    <path d="M166.85,45.49l15.17-1.37V0h-75.84v36.06l-15.17,1.23v-13.77l-15.17,1.37V0H0v15.17h60.68v11.09l-45.51,4.09-15.17,1.37v44.12h75.84v-36.06l15.17-1.23v13.77l15.17-1.37v24.89h75.84v-15.17h-60.68v-11.09l45.51-4.09ZM121.34,15.17h45.51v16l-45.51,3.67V15.17ZM60.68,60.66H15.17v-16l45.51-3.67v19.67Z"/>
+  </g>
+  <text x="984" y="72" text-anchor="end" fill="#77FF70" font-family="Dh Ranclo, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="1.4">DIGITAL CIVILIZATION / 2026</text>
+  <g data-role="content" direction="rtl">
+    <text x="912" y="216" text-anchor="middle" direction="rtl" unicode-bidi="plaintext" fill="#0EDB23" font-family="Dh Ranclo, Ghroob Arabic ITF, Arial, sans-serif" font-size="25" font-weight="700" letter-spacing="1.8">ذكاء يعمل داخل النظام</text>
+    <line x1="840" y1="243" x2="984" y2="243" stroke="#0EDB23" stroke-width="8"/>
+    <g data-role="headline" fill="#F4F8F5" font-family="Ghroob Arabic ITF, Dh Ranclo, Arial, sans-serif" font-size="64" font-weight="800">
+      <text data-line-index="0" x="744" y="354" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">الذكاء الاصطناعي</text>
+      <text data-line-index="1" x="744" y="435" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">ليس طبقة تجميلية</text>
+    </g>
+    <g data-role="support" fill="#77FF70" font-family="Ghroob Arabic ITF, Dh Ranclo, Arial, sans-serif" font-size="35" font-weight="500">
+      <text data-line-index="0" x="744" y="730" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">قيمته تظهر عندما يختصر</text>
+      <text data-line-index="1" x="744" y="784" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">زمن القرار، ويرفع جودة</text>
+      <text data-line-index="2" x="744" y="838" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">التنفيذ، ويترك أثرا يمكن</text>
+      <text data-line-index="3" x="744" y="892" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">إثباته.</text>
+    </g>
+  </g>
+  
+  <g data-role="action" transform="translate(96 1013)">
+    <rect width="888" height="176" rx="36" fill="#00302A" stroke="#0EDB23" stroke-width="2"/>
+    <circle cx="67" cy="88" r="31" fill="#0EDB23"/>
+    <path d="M53 88h28M67 74v28" stroke="#003F35" stroke-width="7" stroke-linecap="round"/>
+    <g fill="#F4F8F5" font-family="Ghroob Arabic ITF, Dh Ranclo, Arial, sans-serif" font-size="31" font-weight="650">
+      <text data-line-index="0" x="551" y="78" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">اورندور · الذكاء قيمة تشغيلية لا</text>
+      <text data-line-index="1" x="551" y="120" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">استعراض</text>
+    </g>
+  </g>
+  <g font-family="Dh Ranclo, Ghroob Arabic ITF, Arial, sans-serif" font-size="21" font-weight="700" fill="#77FF70">
+    <text x="96" y="1295">ESTD / BAGHDAD</text>
+    <text x="984" y="1295" text-anchor="end">CONTENT SYSTEM / 01</text>
+  </g>
+</svg>

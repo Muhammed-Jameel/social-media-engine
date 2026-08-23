@@ -1,0 +1,68 @@
+import Image from "next/image";
+import Link from "next/link";
+import { AlertTriangle, Bell, LogOut, Pause, Radio } from "lucide-react";
+import type { EngineSettingsView } from "@aurendor/db/runtime";
+import type { OwnerSession } from "@/lib/auth";
+import { logoutAction } from "@/app/login/actions";
+import { NavLinks } from "./nav-links";
+
+export function AppShell({ session, settings, notificationCount, children }: { session: OwnerSession; settings: EngineSettingsView; notificationCount: number; children: React.ReactNode }) {
+  return (
+    <div className="app-shell">
+      <aside className="sidebar">
+        <Link href="/" className="brand-lockup" aria-label="AURENDOR Content OS home">
+          <Image src="/brand/aurendor-horizontal-pale.svg" alt="AURENDOR" width={415} height={86} style={{ height: "auto" }} priority />
+          <span>Content OS</span>
+        </Link>
+        <div className="environment-card">
+          <div className="environment-label"><Radio aria-hidden="true" size={14} /> Environment</div>
+          <strong>{settings.dryRun ? "Dry run" : "Production"}</strong>
+          <span>{settings.autonomyStage}</span>
+        </div>
+        <NavLinks />
+        <div className="sidebar-footer">
+          <div className="owner-chip">
+            <span className="owner-avatar" aria-hidden="true">MJ</span>
+            <span><strong>Owner</strong><small>{session.email}</small></span>
+          </div>
+          {!session.demo ? (
+            <form action={logoutAction}>
+              <button type="submit" className="icon-button icon-button-dark" aria-label="Sign out"><LogOut size={17} /></button>
+            </form>
+          ) : null}
+        </div>
+      </aside>
+
+      <div className="main-frame">
+        <header className="mobile-header">
+          <Link href="/" aria-label="AURENDOR Content OS home">
+            <Image src="/brand/aurendor-horizontal-pale.svg" alt="AURENDOR" width={415} height={86} style={{ height: "auto" }} priority />
+          </Link>
+          <div className="mobile-status"><span className="pulse" />{settings.dryRun ? "Dry run" : "Live"}</div>
+        </header>
+        <div className="mobile-nav"><NavLinks /></div>
+        {session.demo ? (
+          <div className="demo-banner" role="status">
+            <AlertTriangle aria-hidden="true" size={16} />
+            <span><strong>Demonstration environment.</strong> Analytics are synthetic and no provider action can publish.</span>
+          </div>
+        ) : null}
+        {settings.paused ? (
+          <div className="pause-banner" role="alert">
+            <Pause aria-hidden="true" size={16} fill="currentColor" />
+            <span><strong>Engine paused.</strong> Generation, scheduling, and publishing workers are held.</span>
+            <Link href="/controls">Review control</Link>
+          </div>
+        ) : null}
+        <div className="top-rail">
+          <div><span className="pulse" /> System ready <span className="rail-divider" /> Asia/Baghdad</div>
+          <Link href="/#notifications" className="notification-link" aria-label={`${notificationCount} notifications`}>
+            <Bell size={17} />
+            {notificationCount > 0 ? <span>{notificationCount}</span> : null}
+          </Link>
+        </div>
+        <main id="main-content" className="main-content">{children}</main>
+      </div>
+    </div>
+  );
+}

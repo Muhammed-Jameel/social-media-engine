@@ -1,0 +1,33 @@
+schemaVersion: 1.0.0
+brandVersion: final-2026.1
+pillars:
+  - key: operational-education
+    name: Operational education
+    purpose: Make invisible workflow problems understandable and useful.
+    targetMix: 0.30
+  - key: applied-ai
+    name: Applied AI and automation
+    purpose: Show credible, practical automation patterns without hype.
+    targetMix: 0.25
+  - key: proof-and-systems
+    name: Proof and systems in practice
+    purpose: Build trust through product evidence, process, demos, and documented outcomes.
+    targetMix: 0.20
+  - key: product-bunyan
+    name: Aurendor Build / Bunyan Pro
+    purpose: Explain construction operations value in buyer language.
+    targetMix: 0.15
+  - key: brand-and-founder
+    name: Brand, founder, and company perspective
+    purpose: Establish category authority, regional relevance, and how Aurendor thinks.
+    targetMix: 0.10
+constraints:
+  educationalMinimum: 0.40
+  promotionalMaximum: 0.15
+  timelyReserve: 0.10
+provenance:
+  - path: marketing/_context/AURENDOR_Social_Post_Playbook.md
+    authority: high
+  - path: marketing/_context/AURENDOR_Social_Design_System_2026.md
+    authority: canonical-social
+

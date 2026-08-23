@@ -1,0 +1,29 @@
+schemaVersion: 1.0.0
+brandVersion: final-2026.1
+offerings:
+  - key: aurendor-build
+    name: Aurendor Build / Bunyan Pro
+    status: current
+    category: construction operations platform
+    capabilities: [project visibility, progress updates, files, site media, payment follow-up, stakeholder coordination]
+  - key: intelligent-automation
+    name: Intelligent automation systems
+    status: current-growth
+    category: applied AI and workflow automation
+    capabilities: [workflow mapping, department integration, assisted operations, repetitive-task automation]
+  - key: knowledge-systems
+    name: Enterprise knowledge and RAG systems
+    status: emerging
+    category: retrieval and knowledge infrastructure
+    capabilities: [document retrieval, governed answers, knowledge access, decision support]
+  - key: custom-digital-systems
+    name: Custom operational systems
+    status: current
+    category: digital infrastructure
+    capabilities: [workflow applications, dashboards, integrations, operational data systems]
+provenance:
+  - path: marketing/_context/AURENDOR_Product_Offerings.md
+    authority: high
+  - path: marketing/_context/AURENDOR_Brand_Context.md
+    authority: high
+

@@ -1,0 +1,46 @@
+schemaVersion: 1.0.0
+brandVersion: final-2026.1
+language: ar
+brandName: اورندور
+voice: عربية مهنية حديثة، واضحة وواثقة، قريبة من واقع الأعمال في العراق من دون مبالغة أو ترجمة حرفية.
+defaultRegister: professional-iraqi-relevant
+registerOptions:
+  formal: فصحى مهنية للوثائق والتصريحات الرسمية
+  social: لغة عراقية مفهومة ومحترمة حسب الجمهور والحملة
+rules:
+  - اكتب الفكرة بالعربية من أصلها ولا تترجم تركيباً إنكليزياً.
+  - قدّم الفائدة العملية أولاً.
+  - استخدم جملاً مباشرة ومتوسطة الطول.
+  - لا تستخدم اللهجة بكثافة من دون قرار حملة واضح.
+  - أبقِ أرقام الاتصال في كتلة مستقلة ولا تخلط كلمات لاتينية داخل سطر عربي.
+  - لا تستخدم التباعد بين الحروف العربية.
+preferredTerms:
+  - تنظيم
+  - وضوح
+  - متابعة
+  - تحكم
+  - توثيق
+  - تنسيق
+  - اعتمادية
+  - بنية رقمية
+  - أنظمة ذكية
+  - وضوح القرار
+bannedTerms:
+  - مذهل
+  - خرافي
+  - ثوري
+  - الأفضل بلا منازع
+  - معجزة تقنية
+  - حلول متكاملة لجميع احتياجاتكم
+  - شريككم نحو المستقبل
+qualityChecks:
+  - no translated-English syntax
+  - no unsupported superlatives
+  - correct Arabic shaping and RTL
+  - no orphan line in on-design copy
+  - CTA matches audience and platform
+provenance:
+  - path: marketing/_context/AURENDOR_Brand_Voice_Guide.md
+    authority: high
+  - path: marketing/_context/AURENDOR_Social_Design_System_2026.md
+    authority: canonical-social

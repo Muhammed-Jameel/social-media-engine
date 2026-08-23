@@ -1,0 +1,43 @@
+schemaVersion: 1.0.0
+brandVersion: final-2026.1
+language: en
+voice: Calm authority grounded in operational reality.
+pillars:
+  clarity: Say the useful thing first.
+  authority: Speak from expertise, not ego.
+  practicality: Tie claims to real workflow friction and outcomes.
+  composure: No urgency manipulation or shouting.
+  credibility: Never overclaim or hide uncertainty.
+headlineRules:
+  lengthWords: [3, 8]
+  style: declarative, compact, specific
+preferredTerms:
+  - structure
+  - visibility
+  - control
+  - coordination
+  - operational clarity
+  - dependable
+  - intelligent infrastructure
+  - documentation
+  - accountability
+bannedPatterns:
+  - in today's rapidly evolving digital landscape
+  - unlock the power of AI
+  - revolutionize
+  - game-changing
+  - disruptive
+  - magical
+  - best-in-class
+  - effortless
+  - empty "not X, but Y" repetition
+ctaExamples:
+  - See the system
+  - Explore the workflow
+  - Talk to Aurendor
+provenance:
+  - path: marketing/new-brand/00-brand-strategy/brand-voice.md
+    authority: high
+  - path: marketing/_context/AURENDOR_Brand_Voice_Guide.md
+    authority: high
+

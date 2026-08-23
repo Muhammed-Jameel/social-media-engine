@@ -1,0 +1,18 @@
+.git/
+node_modules/
+.next/
+dist/
+build/
+cache/
+tmp/
+outputs/
+graphify-out/
+social media engine/
+.DS_Store
+.env
+.env.*
+.mcp.json
+settings.local.json
+*.tmp
+*.log
+
