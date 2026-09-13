@@ -25,7 +25,7 @@ def main():
     original = destination.read_text() if destination.exists() else ""
     if re.search(r"^OWNER_PASSWORD_HASH\s*=\s*['\"]?scrypt:", original, re.M):
         raise SystemExit("An owner login already exists; this setup will not overwrite it.")
-    print(f"Create the AURENDOR dashboard login for {OWNER_EMAIL}.")
+    print(f"Create the SOCIAL_MEDIA_PLUGIN dashboard login for {OWNER_EMAIL}.")
     print("Your password stays on this computer and is not printed or saved as plain text.")
     password = getpass.getpass("New password (at least 12 characters): ")
     if len(password) < 12:

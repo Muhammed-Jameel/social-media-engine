@@ -10,10 +10,10 @@ if (existsSync(rootEnvironmentPath)) process.loadEnvFile(rootEnvironmentPath);
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   transpilePackages: [
-    "@aurendor/db",
-    "@aurendor/engine",
-    "@aurendor/observability",
-    "@aurendor/schemas",
+    "@social-media-plugin/db",
+    "@social-media-plugin/engine",
+    "@social-media-plugin/observability",
+    "@social-media-plugin/schemas",
   ],
   serverExternalPackages: ["@electric-sql/pglite"],
   experimental: {

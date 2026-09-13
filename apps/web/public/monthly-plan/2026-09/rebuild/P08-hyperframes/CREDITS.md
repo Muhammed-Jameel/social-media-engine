@@ -2,7 +2,7 @@
 
 ## Required published credit
 
-**“Apple iPhone 15 Pro Max Black” by polyman Studio (@Polyman_3D), licensed CC BY 4.0. Screen content, materials and lighting adapted for AURENDOR.**
+**“Apple iPhone 15 Pro Max Black” by polyman Studio (@Polyman_3D), licensed CC BY 4.0. Screen content, materials and lighting adapted for SOCIAL_MEDIA_PLUGIN.**
 
 - Model: https://sketchfab.com/3d-models/apple-iphone-15-pro-max-black-df17520841214c1792fb8a44c6783ee7
 - Creator: https://sketchfab.com/Polyman_3D
@@ -21,7 +21,7 @@ Unmodified original geometry is retained, including lenses, frame, controls and 
 Three.js 0.185.1 MIT: bundled license `vendor/LICENSE`.
 Quentin Pla's `phone-mockup-studio` MIT source informed screen UV transform and front reflection treatment. Its original license is retained as `UPSTREAM-MIT-LICENSE`, source read-only copy as `upstream-reference.html`, and original CREDITS as `UPSTREAM-CREDITS.md`.
 
-`device.js` is the custom AURENDOR deterministic renderer. It has no requestAnimationFrame or playback clock; Hyperframes/GSAP controls every pose explicitly.
+`device.js` is the custom SOCIAL_MEDIA_PLUGIN deterministic renderer. It has no requestAnimationFrame or playback clock; Hyperframes/GSAP controls every pose explicitly.
 
 
 # Bunyan Pro film — music rights and production record
@@ -33,7 +33,7 @@ Music: **Games Music**, by **Grigoriy Nuzhny**, Mixkit catalog **706**.
 - [Mixkit Stock Music Free License](https://mixkit.co/license/#musicFree)
 - [Mixkit terms](https://mixkit.co/terms/)
 
-The original AURENDOR license record is `aurendor-launch-1109/docs/music-license.md`, checked September 8, 2026. The original track listing and license page were rechecked September 10, 2026; the license landing page HTML is preserved alongside this document. The previous rights review records permission for edited music incorporated into commercial web/social video and online advertisements. It excludes standalone music distribution, music ownership claims and rights-management registration. Attribution to the composer remains intact. Do not upload these isolated stems as a music release.
+The original SOCIAL_MEDIA_PLUGIN license record is `social-launch-1109/docs/music-license.md`, checked September 8, 2026. The original track listing and license page were rechecked September 10, 2026; the license landing page HTML is preserved alongside this document. The previous rights review records permission for edited music incorporated into commercial web/social video and online advertisements. It excludes standalone music distribution, music ownership claims and rights-management registration. Attribution to the composer remains intact. Do not upload these isolated stems as a music release.
 
 This is a new 56.25-second edit of the licensed recording, not an original AI-composed score. The edit uses pitch-preserving Rubber Band time stretch from the 140 BPM source grid to 128 BPM, with five deliberate phrase edits, a financial-section recess, and an ending from the actual source outro. Original deterministic transition sounds are separately synthesized; no third-party SFX recordings are used. There is no narration.
 

@@ -11,7 +11,7 @@ principles:
     languages: [ar, en]
     anthropomorphismLevels: [1, 2, 3]
     strongReferenceIds: [ref_51e708951ea61f18, ref_2ca843f06643d5f6, ref_6dd0a9246092f4d5]
-    aurendorApplication: "Default to abstract or object behavior at levels 1–3; a face requires a documented comprehension benefit."
+    socialMediaPluginApplication: "Default to abstract or object behavior at levels 1–3; a face requires a documented comprehension benefit."
     retrievalTags: [behavior, premium, object, system, restraint]
     mustNotCopy: "Do not reproduce another brand's character, expression system, silhouette, or signature behavior."
   - id: ANTHRO_FACE_REMOVAL_TEST
@@ -24,7 +24,7 @@ principles:
     languages: [ar, en]
     anthropomorphismLevels: [2, 3, 4, 5]
     strongReferenceIds: [ref_51e708951ea61f18, ref_f5593ec327689f0a, ref_2ca843f06643d5f6]
-    aurendorApplication: "Store the test result in every concept candidate and downgrade the anthropomorphism level when the behavior remains legible without a face."
+    socialMediaPluginApplication: "Store the test result in every concept candidate and downgrade the anthropomorphism level when the behavior remains legible without a face."
     retrievalTags: [face, test, behavior, comprehension, restraint]
     mustNotCopy: "Do not use a reference character as the face-removal test starting point."
   - id: ANTHRO_CAPABILITY_BOUNDARY
@@ -37,7 +37,7 @@ principles:
     languages: [ar, en]
     anthropomorphismLevels: [1, 2, 3, 4, 5]
     strongReferenceIds: [ref_51e708951ea61f18, ref_4afce40fe49062b6, ref_2ca843f06643d5f6]
-    aurendorApplication: "Depict handoffs, source boundaries, confidence gaps, approvals, or graceful failure instead of omnipotent AI behavior."
+    socialMediaPluginApplication: "Depict handoffs, source boundaries, confidence gaps, approvals, or graceful failure instead of omnipotent AI behavior."
     retrievalTags: [trust, limitation, evidence, permission, uncertainty]
     mustNotCopy: "Do not reuse the source's UI, symbols, agents, or failure scenario."
   - id: ANTHRO_LEVEL_FITS_MESSAGE
@@ -50,9 +50,9 @@ principles:
     languages: [ar, en]
     anthropomorphismLevels: [0, 1, 2, 3, 4, 5]
     strongReferenceIds: [ref_51e708951ea61f18, ref_7ea2e6edfd24a465, ref_f5593ec327689f0a]
-    aurendorApplication: "Use levels 0–3 as the normal range, level 4 selectively, and level 5 only when a complete scene materially improves comprehension."
+    socialMediaPluginApplication: "Use levels 0–3 as the normal range, level 4 selectively, and level 5 only when a complete scene materially improves comprehension."
     retrievalTags: [level, rhythm, feed, variation, message]
-    mustNotCopy: "Do not map AURENDOR levels onto another brand's mascot or character universe."
+    mustNotCopy: "Do not map SOCIAL_MEDIA_PLUGIN levels onto another brand's mascot or character universe."
   - id: ANTHRO_MATERIAL_CONTINUITY
     name: Material and silhouette continuity
     description: "When an entity recurs, preserve its material response, proportions, silhouette logic, pose vocabulary, and light behavior."
@@ -63,7 +63,7 @@ principles:
     languages: [ar, en]
     anthropomorphismLevels: [3, 4, 5]
     strongReferenceIds: [ref_f5cec23c32415d6e, ref_7ea2e6edfd24a465, ref_51e708951ea61f18]
-    aurendorApplication: "Approve recurring entities only after front, side, three-quarter, pose, expression, and material tests pass the character bible."
+    socialMediaPluginApplication: "Approve recurring entities only after front, side, three-quarter, pose, expression, and material tests pass the character bible."
     retrievalTags: [consistency, material, silhouette, character, system]
     mustNotCopy: "Do not borrow another character's proportions, eyes, limb language, surface treatment, or animation timing."
   - id: ANTHRO_NO_PERMANENT_MASCOT_YET
@@ -76,6 +76,6 @@ principles:
     languages: [ar, en]
     anthropomorphismLevels: [0, 1, 2, 3, 4]
     strongReferenceIds: [ref_51e708951ea61f18, ref_2ca843f06643d5f6, ref_f5cec23c32415d6e]
-    aurendorApplication: "Adopt a hybrid world now and require benchmark evidence of recognition, maturity, and flexibility before any permanent mascot decision."
+    socialMediaPluginApplication: "Adopt a hybrid world now and require benchmark evidence of recognition, maturity, and flexibility before any permanent mascot decision."
     retrievalTags: [mascot, defer, hybrid, premium, enterprise]
     mustNotCopy: "Do not adapt an existing mascot system or force a recurring figure into every composition."

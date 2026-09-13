@@ -8,10 +8,10 @@ importers:
 
   .:
     devDependencies:
-      '@aurendor/db':
+      '@social-media-plugin/db':
         specifier: workspace:*
         version: link:packages/db
-      '@aurendor/engine':
+      '@social-media-plugin/engine':
         specifier: workspace:*
         version: link:packages/engine
       '@fontsource/ibm-plex-sans':
@@ -41,16 +41,16 @@ importers:
 
   apps/web:
     dependencies:
-      '@aurendor/db':
+      '@social-media-plugin/db':
         specifier: workspace:*
         version: link:../../packages/db
-      '@aurendor/engine':
+      '@social-media-plugin/engine':
         specifier: workspace:*
         version: link:../../packages/engine
-      '@aurendor/observability':
+      '@social-media-plugin/observability':
         specifier: workspace:*
         version: link:../../packages/observability
-      '@aurendor/schemas':
+      '@social-media-plugin/schemas':
         specifier: workspace:*
         version: link:../../packages/schemas
       lucide-react:
@@ -81,16 +81,16 @@ importers:
 
   apps/worker:
     dependencies:
-      '@aurendor/db':
+      '@social-media-plugin/db':
         specifier: workspace:*
         version: link:../../packages/db
-      '@aurendor/engine':
+      '@social-media-plugin/engine':
         specifier: workspace:*
         version: link:../../packages/engine
-      '@aurendor/observability':
+      '@social-media-plugin/observability':
         specifier: workspace:*
         version: link:../../packages/observability
-      '@aurendor/schemas':
+      '@social-media-plugin/schemas':
         specifier: workspace:*
         version: link:../../packages/schemas
     devDependencies:
@@ -103,7 +103,7 @@ importers:
 
   packages/db:
     dependencies:
-      '@aurendor/schemas':
+      '@social-media-plugin/schemas':
         specifier: workspace:*
         version: link:../schemas
       '@electric-sql/pglite':
@@ -125,13 +125,13 @@ importers:
 
   packages/engine:
     dependencies:
-      '@aurendor/db':
+      '@social-media-plugin/db':
         specifier: workspace:*
         version: link:../db
-      '@aurendor/observability':
+      '@social-media-plugin/observability':
         specifier: workspace:*
         version: link:../observability
-      '@aurendor/schemas':
+      '@social-media-plugin/schemas':
         specifier: workspace:*
         version: link:../schemas
       openai:

@@ -25,7 +25,7 @@ The golden/adversarial suite should include at least:
 - FINAL 2026 source outranks a newer archived/derived contradiction;
 - untrusted file/comment content attempts to instruct the agent;
 - missing evidence and conflicting brand facts;
-- generic “innovation/digital transformation” copy with no AURENDOR tension;
+- generic “innovation/digital transformation” copy with no SOCIAL_MEDIA_PLUGIN tension;
 - Arabic that is literal, unnatural, malformed RTL, or mixed-direction;
 - unsupported customer, pricing, performance, legal, or guarantee claim;
 - repeated hook/creative structure from recent posts;
@@ -64,6 +64,6 @@ Compare candidate vs baseline on the same fixture set. Preserve regressions, not
 
 ## Current evidence gap
 
-The repository has unit and contract tests for schemas, redaction, policy, state transitions, brand/design-intelligence retrieval, byte-level render binding, content checks, and analytics normalization. Round three contains 12 hash-anchored rendered candidates with role-separated reviews, but only candidates `01`, `02`, `07`, and `12` clear the unanimous critic-only professional threshold; `07`/`12` then fail candidate-level feed originality, `03` has an Arabic typography hard fail, and the approved AURENDOR golden set is empty. Live production adapters, a fully accepted representative suite, production Postgres/restore evidence, and provider contract reports remain incomplete. Therefore G3, G6, G7, and G8 are not closed for production.
+The repository has unit and contract tests for schemas, redaction, policy, state transitions, brand/design-intelligence retrieval, byte-level render binding, content checks, and analytics normalization. Round three contains 12 hash-anchored rendered candidates with role-separated reviews, but only candidates `01`, `02`, `07`, and `12` clear the unanimous critic-only professional threshold; `07`/`12` then fail candidate-level feed originality, `03` has an Arabic typography hard fail, and the approved SOCIAL_MEDIA_PLUGIN golden set is empty. Live production adapters, a fully accepted representative suite, production Postgres/restore evidence, and provider contract reports remain incomplete. Therefore G3, G6, G7, and G8 are not closed for production.
 
 Use [Creative QA](CREATIVE_QA.md) for pixel-level acceptance and [Final Readiness Report](FINAL_READINESS_REPORT.md) for the current no-go decision.

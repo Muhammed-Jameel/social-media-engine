@@ -1,9 +1,9 @@
 {
-  "name": "aurendor-content-os",
+  "name": "social-content-os",
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "AURENDOR's evidence-led social media operating system.",
+  "description": "SOCIAL_MEDIA_PLUGIN's evidence-led social media operating system.",
   "license": "MIT",
   "packageManager": "pnpm@11.19.0",
   "engines": {
@@ -11,8 +11,8 @@
   },
   "scripts": {
     "campaign:production": "tsx scripts/campaign-production.mts",
-    "dev": "pnpm db:migrate && pnpm db:seed && pnpm brand:sync && pnpm seed:import && pnpm plan:september && pnpm --filter @aurendor/web dev",
-    "worker": "pnpm --filter @aurendor/worker dev",
+    "dev": "pnpm db:migrate && pnpm db:seed && pnpm brand:sync && pnpm seed:import && pnpm plan:september && pnpm --filter @social-media-plugin/web dev",
+    "worker": "pnpm --filter @social-media-plugin/worker dev",
     "build": "pnpm -r --if-present build",
     "typecheck": "pnpm -r --if-present typecheck",
     "lint": "eslint apps packages scripts",
@@ -47,8 +47,8 @@
     "social:schedule": "tsx scripts/social-schedule.mts"
   },
   "devDependencies": {
-    "@aurendor/db": "workspace:*",
-    "@aurendor/engine": "workspace:*",
+    "@social-media-plugin/db": "workspace:*",
+    "@social-media-plugin/engine": "workspace:*",
     "@fontsource/ibm-plex-sans": "5.3.0",
     "@playwright/test": "1.62.1",
     "@types/node": "24.3.0",

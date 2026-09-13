@@ -36,7 +36,7 @@ interface Candidate {
   html: (sourceUri?: string) => string;
 }
 
-const logo = (fill: string) => `<svg class="brand-logo" viewBox="0 0 414.84 85.88" aria-label="AURENDOR">${renderCanonicalHorizontalLogo(fill, 0, 0, 414.84)}</svg>`;
+const logo = (fill: string) => `<svg class="brand-logo" viewBox="0 0 414.84 85.88" aria-label="SOCIAL_MEDIA_PLUGIN">${renderCanonicalHorizontalLogo(fill, 0, 0, 414.84)}</svg>`;
 
 const base = (title: string, content: string, extraCss = "") => `<!doctype html>
 <html lang="ar" dir="rtl"><head><meta charset="utf-8"/><title>${title}</title><style>
@@ -138,7 +138,7 @@ const candidates: Candidate[] = [
       title: "Iraq’s CPI 2025: From Starting Reform to Earning Trust",
       url: "https://www.undp.org/iraq/blog/iraqs-cpi-2025-starting-reform-earning-trust",
       publishedAt: "2026",
-      claimBoundary: "A two-part governance principle; no invented causal statistic or AURENDOR performance claim.",
+      claimBoundary: "A two-part governance principle; no invented causal statistic or SOCIAL_MEDIA_PLUGIN performance claim.",
     },
     html: () => base("التقنية تقلّل الاحتكاك والحوكمة تبني الثقة", `<main class="canvas governance" lang="ar" dir="rtl">
       <header class="copy-safe headline" data-copy-region="headline" data-arabic-zone>
@@ -240,7 +240,7 @@ const candidates: Candidate[] = [
       title: "Iraq 2022 Country Profile",
       url: "https://www.enterprisesurveys.org/content/dam/enterprisesurveys/documents/country/Iraq-2022.pdf",
       publishedAt: "2022",
-      claimBoundary: "The 41.3% figure describes surveyed formal establishments reporting electrical outages; it is not a population estimate or an AURENDOR continuity outcome.",
+      claimBoundary: "The 41.3% figure describes surveyed formal establishments reporting electrical outages; it is not a population estimate or an SOCIAL_MEDIA_PLUGIN continuity outcome.",
     },
     html: () => base("حين تنقطع الكهرباء هل تعرف خدمتك ماذا تفعل؟", `<main class="canvas continuity" lang="ar" dir="rtl">
       <header class="copy-safe headline" data-copy-region="headline" data-arabic-zone>

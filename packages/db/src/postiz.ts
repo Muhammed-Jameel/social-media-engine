@@ -1,5 +1,5 @@
 import type { DatabaseClient, SqlRow } from "./client";
-import { AURENDOR_ORGANIZATION_ID } from "./ids";
+import { SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID } from "./ids";
 
 export interface CachedPostizMedia {
   id: string;
@@ -89,7 +89,7 @@ export async function reservePostizBatch(database: DatabaseClient, input: {
      RETURNING id, state, request_hash`,
     [
       input.id,
-      AURENDOR_ORGANIZATION_ID,
+      SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID,
       input.contentItemId,
       input.idempotencyKey,
       input.requestHash,
@@ -151,7 +151,7 @@ export async function listPostizBatches(database: DatabaseClient, limit = 12): P
      JOIN content_items item ON item.id = batch.content_item_id
      WHERE batch.organization_id = $1
      ORDER BY batch.created_at DESC LIMIT $2`,
-    [AURENDOR_ORGANIZATION_ID, limit],
+    [SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID, limit],
   );
   return result.rows.map((row) => ({
     id: row.id,

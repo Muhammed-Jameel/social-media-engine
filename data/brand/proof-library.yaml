@@ -2,10 +2,10 @@ schemaVersion: 1.0.0
 brandVersion: final-2026.1
 proofItems:
   - id: proof-built-construction-platform
-    statement: Aurendor has built a construction operations platform with project, payment, file, media, and stakeholder views.
+    statement: Social Media Plugin has built a construction operations platform with project, payment, file, media, and stakeholder views.
     allowedUse: factual product description
     sourcePaths:
-      - marketing/_context/AURENDOR_Product_Offerings.md
+      - marketing/_context/SOCIAL_MEDIA_PLUGIN_Product_Offerings.md
       - marketing/assets/build-app-assets/
     strength: product-evidence
   - id: proof-september-library

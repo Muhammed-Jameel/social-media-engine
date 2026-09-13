@@ -1,6 +1,6 @@
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import { createDatabase, type DatabaseClient, migrateDatabase } from "./client";
-import { AURENDOR_ORGANIZATION_ID } from "./ids";
+import { SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID } from "./ids";
 import { ContentOsRepository, type SocialLearningRuleFilter } from "./repository";
 import { randomUUID } from "node:crypto";
 import { seedCoreData } from "./seed";
@@ -23,7 +23,7 @@ describe("social learning rule persistence", () => {
     await repository.upsertSocialLearningRules([
       {
         ruleId: randomUUID(),
-        organizationId: AURENDOR_ORGANIZATION_ID,
+        organizationId: SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID,
         brandVersion: "brand-final-2026.1",
         category: "fact",
         scope: { scopeLevel: "global" },
@@ -38,7 +38,7 @@ describe("social learning rule persistence", () => {
       },
       {
         ruleId: randomUUID(),
-        organizationId: AURENDOR_ORGANIZATION_ID,
+        organizationId: SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID,
         brandVersion: "brand-final-2026.1",
         category: "fact",
         scope: { scopeLevel: "platform", platform: "instagram" },
@@ -63,7 +63,7 @@ describe("social learning rule persistence", () => {
     await repository.upsertSocialLearningRules([
       {
         ruleId: randomUUID(),
-        organizationId: AURENDOR_ORGANIZATION_ID,
+        organizationId: SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID,
         brandVersion: "brand-final-2026.1",
         category: "preference",
         scope: { scopeLevel: "platform", platform: "instagram" },
@@ -78,7 +78,7 @@ describe("social learning rule persistence", () => {
       },
       {
         ruleId: randomUUID(),
-        organizationId: AURENDOR_ORGANIZATION_ID,
+        organizationId: SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID,
         brandVersion: "brand-final-2026.1",
         category: "preference",
         scope: { scopeLevel: "platform", platform: "linkedin" },
@@ -104,7 +104,7 @@ describe("social learning rule persistence", () => {
     await repository.upsertSocialLearningRules([
       {
         ruleId: "11111111-1111-1111-1111-111111111111",
-        organizationId: AURENDOR_ORGANIZATION_ID,
+        organizationId: SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID,
         brandVersion: "brand-final-2026.1",
         category: "performance",
         scope: { scopeLevel: "campaign", campaignId: "11111111-1111-1111-1111-111111111111" },
@@ -134,7 +134,7 @@ describe("social learning rule persistence", () => {
     await repository.upsertSocialLearningRules([
       {
         ruleId: randomUUID(),
-        organizationId: AURENDOR_ORGANIZATION_ID,
+        organizationId: SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID,
         brandVersion: "brand-final-2026.1",
         category: "fact",
         scope: { scopeLevel: "global" },
@@ -149,7 +149,7 @@ describe("social learning rule persistence", () => {
       },
       {
         ruleId: randomUUID(),
-        organizationId: AURENDOR_ORGANIZATION_ID,
+        organizationId: SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID,
         brandVersion: "brand-final-2026.1",
         category: "fact",
         scope: { scopeLevel: "global" },
@@ -172,7 +172,7 @@ describe("social learning rule persistence", () => {
        ) VALUES ($1, $2, $3, $4, $5, $6::jsonb, $7, $8, $9, $10::jsonb, $11, $12, $13::jsonb, now(), now())`,
       [
         `legacy:${randomUUID()}`,
-        AURENDOR_ORGANIZATION_ID,
+        SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID,
         "11111111-1111-1111-1111-111111111112",
         "brand-final-2026.1",
         "fact",
@@ -184,7 +184,7 @@ describe("social learning rule persistence", () => {
         pastIso,
         null,
         JSON.stringify({
-          organizationId: AURENDOR_ORGANIZATION_ID,
+          organizationId: SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID,
           ruleId: "11111111-1111-1111-1111-111111111112",
           brandVersion: "brand-final-2026.1",
           category: "fact",

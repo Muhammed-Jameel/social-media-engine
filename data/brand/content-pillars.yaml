@@ -14,20 +14,20 @@ pillars:
     purpose: Build trust through product evidence, process, demos, and documented outcomes.
     targetMix: 0.20
   - key: product-bunyan
-    name: Aurendor Build / Bunyan Pro
+    name: Social Media Plugin Build / Bunyan Pro
     purpose: Explain construction operations value in buyer language.
     targetMix: 0.15
   - key: brand-and-founder
     name: Brand, founder, and company perspective
-    purpose: Establish category authority, regional relevance, and how Aurendor thinks.
+    purpose: Establish category authority, regional relevance, and how Social Media Plugin thinks.
     targetMix: 0.10
 constraints:
   educationalMinimum: 0.40
   promotionalMaximum: 0.15
   timelyReserve: 0.10
 provenance:
-  - path: marketing/_context/AURENDOR_Social_Post_Playbook.md
+  - path: marketing/_context/SOCIAL_MEDIA_PLUGIN_Social_Post_Playbook.md
     authority: high
-  - path: marketing/_context/AURENDOR_Social_Design_System_2026.md
+  - path: marketing/_context/SOCIAL_MEDIA_PLUGIN_Social_Design_System_2026.md
     authority: canonical-social
 

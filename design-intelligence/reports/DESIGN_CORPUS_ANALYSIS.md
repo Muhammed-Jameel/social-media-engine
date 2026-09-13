@@ -1,4 +1,4 @@
-# AURENDOR Design Corpus Analysis
+# SOCIAL_MEDIA_PLUGIN Design Corpus Analysis
 
 Status: read-only inventory and triage complete  
 Audit date: 2026-08-23  
@@ -91,7 +91,7 @@ Additional evidence:
 - zero primary images are square, portrait, 4:5, or 9:16;
 - only one primary exceeds roughly 800px in both practical scale and pixel count.
 
-This distribution strongly indicates a project-cover/preview corpus, not a set of individual social deliverables. It should not be used to infer that AURENDOR production output should be landscape 4:3. Format-specific professional references are still required for square posts, 4:5 feed posts, 9:16 stories/reels, carousels, and bilingual Arabic layouts.
+This distribution strongly indicates a project-cover/preview corpus, not a set of individual social deliverables. It should not be used to infer that SOCIAL_MEDIA_PLUGIN production output should be landscape 4:3. Format-specific professional references are still required for square posts, 4:5 feed posts, 9:16 stories/reels, carousels, and bilingual Arabic layouts.
 
 ## Derivative relationship evidence
 
@@ -195,7 +195,7 @@ confirmed template-sibling family          total family weight <= 1.0
 rejected/unusable reference                0.0
 ```
 
-Professional merit must not be inferred from inclusion, file size, cluster centrality, or filename keywords. Human art-direction review decides quality and AURENDOR suitability.
+Professional merit must not be inferred from inclusion, file size, cluster centrality, or filename keywords. Human art-direction review decides quality and SOCIAL_MEDIA_PLUGIN suitability.
 
 ### Deep-review sample
 
@@ -205,7 +205,7 @@ Build a reviewed sample of approximately 180–240 primaries after exact dedupli
 - separate semantic/content similarity from layout/presentation-shell similarity;
 - choose at least one medoid and one boundary/outlier candidate per validated visual family;
 - include all scarce Arabic-region, character/mascot, 3D, and editorial candidates unless a reviewer rejects them;
-- oversample social, AI/technology, enterprise, data, systems, conceptual advertising, and premium editorial candidates relevant to AURENDOR;
+- oversample social, AI/technology, enterprise, data, systems, conceptual advertising, and premium editorial candidates relevant to SOCIAL_MEDIA_PLUGIN;
 - include both strong and weak examples so the critic learns failure boundaries;
 - prevent one creator, campaign, filename family, or mockup shell from dominating the sample.
 

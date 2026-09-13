@@ -29,7 +29,7 @@ ANALYZER_PATH = ROOT / "scripts" / "analyze-design-corpus.py"
 
 
 def load_analyzer() -> Any:
-    spec = importlib.util.spec_from_file_location("aurendor_corpus_analyzer", ANALYZER_PATH)
+    spec = importlib.util.spec_from_file_location("social_media_plugin_corpus_analyzer", ANALYZER_PATH)
     if spec is None or spec.loader is None:
         raise RuntimeError(f"Unable to load {ANALYZER_PATH}")
     module = importlib.util.module_from_spec(spec)

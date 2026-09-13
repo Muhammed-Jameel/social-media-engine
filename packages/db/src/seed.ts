@@ -2,8 +2,8 @@ import { randomUUID } from "node:crypto";
 import type { DatabaseClient } from "./client";
 import {
   ACTIVE_BRAND_VERSION_ID,
-  AURENDOR_ORGANIZATION_ID,
-  AURENDOR_OWNER_ID,
+  SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID,
+  SOCIAL_MEDIA_PLUGIN_OWNER_ID,
   SEPTEMBER_CAMPAIGN_ID,
   SEPTEMBER_STRATEGY_ID,
 } from "./ids";
@@ -119,15 +119,15 @@ export async function seedCoreData(database: DatabaseClient): Promise<void> {
   const traceId = randomUUID();
   await database.query(
     `INSERT INTO organizations (id, slug, name, timezone, default_language)
-     VALUES ($1, 'aurendor', 'AURENDOR', 'Asia/Baghdad', 'ar')
+     VALUES ($1, 'social-media-plugin', 'SOCIAL_MEDIA_PLUGIN', 'Asia/Baghdad', 'ar')
      ON CONFLICT (id) DO UPDATE SET updated_at = now()`,
-    [AURENDOR_ORGANIZATION_ID],
+    [SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID],
   );
   await database.query(
     `INSERT INTO users (id, organization_id, email, role)
-     VALUES ($1, $2, 'owner@aurendor.local', 'OWNER')
+     VALUES ($1, $2, 'owner@social-media-plugin.local', 'OWNER')
      ON CONFLICT (id) DO NOTHING`,
-    [AURENDOR_OWNER_ID, AURENDOR_ORGANIZATION_ID],
+    [SOCIAL_MEDIA_PLUGIN_OWNER_ID, SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID],
   );
   await database.query(
     `INSERT INTO engine_settings (
@@ -138,7 +138,7 @@ export async function seedCoreData(database: DatabaseClient): Promise<void> {
      VALUES ($1, true, false, false, true, 'BENCHMARKING', $2::jsonb, 'OFFLINE', $3::jsonb)
      ON CONFLICT (organization_id) DO NOTHING`,
     [
-      AURENDOR_ORGANIZATION_ID,
+      SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID,
       json(creativeGateEvidence),
       json({
         timezone: "Asia/Baghdad",
@@ -155,7 +155,7 @@ export async function seedCoreData(database: DatabaseClient): Promise<void> {
      ON CONFLICT (id) DO NOTHING`,
     [
       ACTIVE_BRAND_VERSION_ID,
-      AURENDOR_ORGANIZATION_ID,
+      SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID,
       json({
         category: "Operational Intelligence Infrastructure",
         bigIdea: "Digital Civilization",
@@ -164,17 +164,17 @@ export async function seedCoreData(database: DatabaseClient): Promise<void> {
         arabicFont: "Ghroob Arabic ITF",
       }),
       json([
-        "marketing/_context/AURENDOR_Brand_Identity_FINAL_2026.md",
-        "marketing/_context/AURENDOR_Social_Design_System_2026.md",
+        "marketing/_context/SOCIAL_MEDIA_PLUGIN_Brand_Identity_FINAL_2026.md",
+        "marketing/_context/SOCIAL_MEDIA_PLUGIN_Social_Design_System_2026.md",
       ]),
-      AURENDOR_OWNER_ID,
+      SOCIAL_MEDIA_PLUGIN_OWNER_ID,
     ],
   );
   await database.query(
     `INSERT INTO campaigns (id, organization_id, name, objective, starts_at, ends_at, status, metadata)
      VALUES ($1, $2, 'September 2026 — Structured Intelligence', 'Build qualified awareness and operational trust before conversion.', '2026-09-01T00:00:00+03:00', '2026-10-01T23:59:59+03:00', 'DRAFT', $3::jsonb)
      ON CONFLICT (id) DO NOTHING`,
-    [SEPTEMBER_CAMPAIGN_ID, AURENDOR_ORGANIZATION_ID, json({ importedFrom: "content-engine", isDemo: true })],
+    [SEPTEMBER_CAMPAIGN_ID, SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID, json({ importedFrom: "content-engine", isDemo: true })],
   );
   await database.query(
     `INSERT INTO monthly_strategies (
@@ -185,10 +185,10 @@ export async function seedCoreData(database: DatabaseClient): Promise<void> {
      ON CONFLICT (id) DO NOTHING`,
     [
       SEPTEMBER_STRATEGY_ID,
-      AURENDOR_ORGANIZATION_ID,
+      SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID,
       SEPTEMBER_CAMPAIGN_ID,
       "Show Iraqi businesses what structured AI and automation look like in practical operations.",
-      json(["AI automation", "operational clarity", "Aurendor Build proof", "brand authority"]),
+      json(["AI automation", "operational clarity", "Social Media Plugin Build proof", "brand authority"]),
       json(["Problem recognition", "Practical systems", "Product proof", "Trusted next step"]),
       json(["Iraqi business owners", "construction and engineering leaders", "operations leaders"]),
       json({ operationalEducation: 0.3, appliedAi: 0.25, proofAndSystems: 0.2, product: 0.15, brand: 0.1 }),
@@ -199,7 +199,7 @@ export async function seedCoreData(database: DatabaseClient): Promise<void> {
         schemaVersion: "1.0.0",
         modelVersion: null,
         promptVersion: "import-v1",
-        skillVersions: ["aurendor-content-strategy@1.0.0"],
+        skillVersions: ["social-content-strategy@1.0.0"],
         templateVersion: null,
         traceId,
         createdAt: new Date().toISOString(),
@@ -214,7 +214,7 @@ export async function seedCoreData(database: DatabaseClient): Promise<void> {
        VALUES ($1, $2, $3, NULL, $4, $5, $6, $7, '{}'::jsonb, '2026-08-23T00:00:00Z')
        ON CONFLICT (id) DO UPDATE
        SET state = EXCLUDED.state, reason = EXCLUDED.reason, source_url = EXCLUDED.source_url, verified_at = EXCLUDED.verified_at`,
-      [`cap-${provider}-${capability}`, AURENDOR_ORGANIZATION_ID, provider, capability, state, reason, sourceUrl],
+      [`cap-${provider}-${capability}`, SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID, provider, capability, state, reason, sourceUrl],
     );
   }
 
@@ -223,7 +223,7 @@ export async function seedCoreData(database: DatabaseClient): Promise<void> {
      VALUES ('insight-seed-1', $1, 'OBSERVATION', $2, '[]'::jsonb, '2026-08-01T00:00:00Z', '2026-08-23T00:00:00Z', 1, $3, $4)
      ON CONFLICT (id) DO NOTHING`,
     [
-      AURENDOR_ORGANIZATION_ID,
+      SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID,
       "The September library is production-shaped but has not been published, so performance claims are unavailable.",
       "Operational evidence only; not a content-performance conclusion.",
       "Complete review, publish under supervision, then establish 30/60/90-day baselines.",
@@ -233,6 +233,6 @@ export async function seedCoreData(database: DatabaseClient): Promise<void> {
     `INSERT INTO notifications (id, organization_id, kind, title, body, action_url, status)
      VALUES ('notification-plan-ready', $1, 'PLAN_REVIEW', 'September plan ready for review', 'Thirty-three imported items need owner review before scheduling.', '/plans/2026-09', 'UNREAD')
      ON CONFLICT (id) DO NOTHING`,
-    [AURENDOR_ORGANIZATION_ID],
+    [SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID],
   );
 }

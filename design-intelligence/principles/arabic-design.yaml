@@ -11,7 +11,7 @@ principles:
     languages: [ar]
     anthropomorphismLevels: [0, 1, 2, 3, 4, 5]
     strongReferenceIds: [ref_8871f98455278188, ref_8ef6ff7e70837523, ref_2ca843f06643d5f6]
-    aurendorApplication: "Choose Arabic line breaks and right-edge relationships during concept design; never finish English and replace its strings."
+    socialMediaPluginApplication: "Choose Arabic line breaks and right-edge relationships during concept design; never finish English and replace its strings."
     retrievalTags: [arabic, rtl, composition, hierarchy, original]
     mustNotCopy: "Do not mirror a reference grid or transfer its Arabic phrase, lettering, or decorative forms."
   - id: AR_SEMANTIC_LINE_BREAKS
@@ -24,7 +24,7 @@ principles:
     languages: [ar]
     anthropomorphismLevels: [0, 1, 2, 3, 4, 5]
     strongReferenceIds: [ref_8ef6ff7e70837523, ref_8871f98455278188, ref_3991533a0cc6d024]
-    aurendorApplication: "Store authored headline lines explicitly, preview them in Ghroob, and reject JavaScript character-count wrapping."
+    socialMediaPluginApplication: "Store authored headline lines explicitly, preview them in Ghroob, and reject JavaScript character-count wrapping."
     retrievalTags: [arabic, line-break, headline, rhythm, meaning]
     mustNotCopy: "Do not reuse a reference's wording, calligraphic arrangement, or line-break silhouette."
   - id: AR_NO_TRACKING
@@ -37,7 +37,7 @@ principles:
     languages: [ar]
     anthropomorphismLevels: [0, 1, 2, 3, 4, 5]
     strongReferenceIds: [ref_8871f98455278188, ref_8ef6ff7e70837523]
-    aurendorApplication: "Set Arabic tracking to normal, validate shaping after font load, and treat any broken joining as an automatic rejection."
+    socialMediaPluginApplication: "Set Arabic tracking to normal, validate shaping after font load, and treat any broken joining as an automatic rejection."
     retrievalTags: [arabic, tracking, shaping, joins, typography]
     mustNotCopy: "Do not imitate custom lettering visible in a reference."
   - id: AR_BILINGUAL_OPTICAL_BASELINE
@@ -50,7 +50,7 @@ principles:
     languages: [ar, en]
     anthropomorphismLevels: [0, 1, 2, 3, 4, 5]
     strongReferenceIds: [ref_2ca843f06643d5f6, ref_8871f98455278188, ref_7ea2e6edfd24a465]
-    aurendorApplication: "Tune Ghroob and Dh Ranclo sizes and vertical offsets optically; record the relationship instead of forcing shared CSS values."
+    socialMediaPluginApplication: "Tune Ghroob and Dh Ranclo sizes and vertical offsets optically; record the relationship instead of forcing shared CSS values."
     retrievalTags: [arabic, bilingual, baseline, latin, optical]
     mustNotCopy: "Do not transplant a reference's bilingual lockup or script proportions."
   - id: AR_MIXED_SCRIPT_ISLANDS
@@ -63,7 +63,7 @@ principles:
     languages: [ar]
     anthropomorphismLevels: [0, 1, 2, 3, 4, 5]
     strongReferenceIds: [ref_3991533a0cc6d024, ref_2ca843f06643d5f6, ref_8ef6ff7e70837523]
-    aurendorApplication: "Use isolated directional spans, choose numeral style intentionally, and inspect every mixed-script line in final pixels."
+    socialMediaPluginApplication: "Use isolated directional spans, choose numeral style intentionally, and inspect every mixed-script line in final pixels."
     retrievalTags: [arabic, bidi, numerals, punctuation, mixed-script]
     mustNotCopy: "Do not reuse source data, product UI, acronyms, or labels."
   - id: AR_DENSITY_BY_ROLE
@@ -76,7 +76,7 @@ principles:
     languages: [ar]
     anthropomorphismLevels: [0, 1, 2, 3]
     strongReferenceIds: [ref_8871f98455278188, ref_8ef6ff7e70837523, ref_3991533a0cc6d024]
-    aurendorApplication: "Use a maximum of one headline plus one evidence phrase on covers; never compress body copy to preserve a fixed template."
+    socialMediaPluginApplication: "Use a maximum of one headline plus one evidence phrase on covers; never compress body copy to preserve a fixed template."
     retrievalTags: [arabic, density, carousel, mobile, hierarchy]
     mustNotCopy: "Do not copy a reference's content split, slide order, or caption treatment."
   - id: AR_OPTICAL_RIGHT_EDGE
@@ -89,7 +89,7 @@ principles:
     languages: [ar]
     anthropomorphismLevels: [0, 1, 2, 3, 4, 5]
     strongReferenceIds: [ref_8ef6ff7e70837523, ref_8871f98455278188]
-    aurendorApplication: "Measure browser glyph bounds, then make a documented optical correction at final raster scale."
+    socialMediaPluginApplication: "Measure browser glyph bounds, then make a documented optical correction at final raster scale."
     retrievalTags: [arabic, optical, alignment, edge, typography]
     mustNotCopy: "Do not reproduce a source's typographic outline or placement."
   - id: AR_PIXEL_PROOF_REQUIRED
@@ -102,6 +102,6 @@ principles:
     languages: [ar]
     anthropomorphismLevels: [0, 1, 2, 3, 4, 5]
     strongReferenceIds: [ref_8871f98455278188, ref_8ef6ff7e70837523, ref_2ca843f06643d5f6]
-    aurendorApplication: "Require the Arabic Design Reviewer to inspect current-hash pixels; missing font evidence or substituted glyphs blocks release."
+    socialMediaPluginApplication: "Require the Arabic Design Reviewer to inspect current-hash pixels; missing font evidence or substituted glyphs blocks release."
     retrievalTags: [arabic, pixels, qa, shaping, mobile]
-    mustNotCopy: "References are quality anchors only and never substitute for reviewing AURENDOR's rendered Arabic."
+    mustNotCopy: "References are quality anchors only and never substitute for reviewing SOCIAL_MEDIA_PLUGIN's rendered Arabic."

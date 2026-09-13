@@ -22,10 +22,10 @@ audiences:
     tensions: [knowledge trapped in documents, generic AI demos, security and reliability concerns]
     desiredOutcomes: [retrievable institutional knowledge, governed automation, dependable applied AI]
 provenance:
-  - path: marketing/_context/AURENDOR_Growth_Marketing_Context.md
+  - path: marketing/_context/SOCIAL_MEDIA_PLUGIN_Growth_Marketing_Context.md
     authority: high
-  - path: marketing/_context/AURENDOR_Product_Offerings.md
+  - path: marketing/_context/SOCIAL_MEDIA_PLUGIN_Product_Offerings.md
     authority: high
-  - path: sales/_context/AURENDOR_Build_ICP_v1.md
+  - path: sales/_context/SOCIAL_MEDIA_PLUGIN_Build_ICP_v1.md
     authority: medium
 

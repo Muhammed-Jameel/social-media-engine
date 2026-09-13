@@ -18,7 +18,7 @@ This repository is in `OFFLINE`. Its executable publisher rejects production-cla
 
 The release owner signs each item. A missing item is a stop:
 
-- known source credential has been revoked/rotated and no longer appears in `/Users/muhammedjameel/Documents/AURENDOR/.mcp.json`;
+- known source credential has been revoked/rotated and no longer appears in `/Users/muhammedjameel/Documents/SOCIAL_MEDIA_PLUGIN/.mcp.json`;
 - CI passes secret scan, lint, type-check, unit/contract tests, migrations, and production build;
 - production build output is inspected and does not trace/include workstation source discovery, local databases, generated demo content, or unrelated repository files;
 - owner authentication/authorization, session expiry, CSRF/origin protection, and audit logging are exercised in the deployed environment;
@@ -58,7 +58,7 @@ At initial deployment:
 DEMO_MODE=false
 DRY_RUN=true
 PRODUCTION_PUBLISHING_ENABLED=false
-AURENDOR_ENGINE_PAUSED=true
+SOCIAL_MEDIA_PLUGIN_ENGINE_PAUSED=true
 ```
 
 Keep the engine paused while identity, read-only provider, storage, webhook, and reconciliation probes run. Unpause only for an explicitly approved test window. The environment flags are necessary controls but never sufficient authority: approvals, policy, account capability, hashes, auth proof, and adapter maturity still apply.
@@ -109,7 +109,7 @@ Weekly:
 
 ## Rollback and pause
 
-Set `AURENDOR_ENGINE_PAUSED=true` and restart affected web/worker processes to block new scheduling/publishing transitions. Also cancel native provider schedules directly where they already exist; the local pause cannot retract a provider-side scheduled or published post.
+Set `SOCIAL_MEDIA_PLUGIN_ENGINE_PAUSED=true` and restart affected web/worker processes to block new scheduling/publishing transitions. Also cancel native provider schedules directly where they already exist; the local pause cannot retract a provider-side scheduled or published post.
 
 For a bad published post, preserve evidence first, then use the provider’s native admin interface to hide/delete/correct it under owner authorization. Record the provider action, actor, timestamp, reason, visible result, and follow-up. Do not delete local audit or intent records.
 

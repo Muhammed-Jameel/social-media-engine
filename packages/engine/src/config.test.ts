@@ -8,8 +8,8 @@ describe("engine configuration", () => {
 
   it("parses the deployment creative fail-safe independently of the global pause", () => {
     const config = getEngineConfig({
-      AURENDOR_ENGINE_PAUSED: "false",
-      AURENDOR_CREATIVE_PRODUCTION_PAUSED: "true",
+      SOCIAL_MEDIA_PLUGIN_ENGINE_PAUSED: "false",
+      SOCIAL_MEDIA_PLUGIN_CREATIVE_PRODUCTION_PAUSED: "true",
     });
     expect(config.paused).toBe(false);
     expect(config.creativeProductionPaused).toBe(true);
@@ -19,8 +19,8 @@ describe("engine configuration", () => {
     const config = getEngineConfig({
       SOCIAL_ENGINE_PAUSED: "true",
       SOCIAL_ENGINE_CREATIVE_PRODUCTION_PAUSED: "true",
-      AURENDOR_ENGINE_PAUSED: "false",
-      AURENDOR_CREATIVE_PRODUCTION_PAUSED: "false",
+      SOCIAL_MEDIA_PLUGIN_ENGINE_PAUSED: "false",
+      SOCIAL_MEDIA_PLUGIN_CREATIVE_PRODUCTION_PAUSED: "false",
     });
     expect(config.paused).toBe(true);
     expect(config.creativeProductionPaused).toBe(true);

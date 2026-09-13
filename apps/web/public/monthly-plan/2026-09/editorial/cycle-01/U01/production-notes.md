@@ -1,14 +1,14 @@
 # U01 — production credits
 
-Creative direction, Arabic editorial adaptation, HTML/CSS paper artwork, GSAP choreography and original transition sound design: AURENDOR production agent. The paper, clock and diagrams are original explanatory artwork, not product interfaces, model outputs or a customer case.
+Creative direction, Arabic editorial adaptation, HTML/CSS paper artwork, GSAP choreography and original transition sound design: SOCIAL_MEDIA_PLUGIN production agent. The paper, clock and diagrams are original explanatory artwork, not product interfaces, model outputs or a customer case.
 
 ## Music
 
-Games Music — Grigoriy Nuzhny, Mixkit catalog 706. This is a new 55-second edit of a licensed recording, not an AI-generated score. Pitch-preserving time stretch 140→120 BPM. Source: https://assets.mixkit.co/music/706/706.mp3 ; listing https://mixkit.co/free-stock-music/breakbeat/ ; license https://mixkit.co/license/#musicFree . Prior primary license record rechecked September10,2026: `content-system-v7/bunyan-hyperframes/audio/rights.md` and retained license HTML. Source original: `aurendor-launch-1109/assets/licensed/games-music-grigoriy-nuzhny-mixkit-706.mp3`. Incorporated social video use; do not distribute the isolated recording or register ownership. Original deterministic paper contacts/air/impacts are authored in audio-build.py.
+Games Music — Grigoriy Nuzhny, Mixkit catalog 706. This is a new 55-second edit of a licensed recording, not an AI-generated score. Pitch-preserving time stretch 140→120 BPM. Source: https://assets.mixkit.co/music/706/706.mp3 ; listing https://mixkit.co/free-stock-music/breakbeat/ ; license https://mixkit.co/license/#musicFree . Prior primary license record rechecked September10,2026: `content-system-v7/bunyan-hyperframes/audio/rights.md` and retained license HTML. Source original: `social-launch-1109/assets/licensed/games-music-grigoriy-nuzhny-mixkit-706.mp3`. Incorporated social video use; do not distribute the isolated recording or register ownership. Original deterministic paper contacts/air/impacts are authored in audio-build.py.
 
 ## Brand and typography
 
-Original authorized AURENDOR horizontal logo, Ghroob Arabic ITF400/700/800 and Dh Ranclo Bold. Source folder: `/Users/muhammedjameel/Documents/AURENDOR/marketing/brand/fonts/final-2026`. Color system preserved: #003F35, #0EDB23, #77FF70, white. Do not publish raw fonts as a download.
+Original authorized SOCIAL_MEDIA_PLUGIN horizontal logo, Ghroob Arabic ITF400/700/800 and Dh Ranclo Bold. Source folder: `/Users/muhammedjameel/Documents/SOCIAL_MEDIA_PLUGIN/marketing/brand/fonts/final-2026`. Color system preserved: #003F35, #0EDB23, #77FF70, white. Do not publish raw fonts as a download.
 
 ## Factual support
 

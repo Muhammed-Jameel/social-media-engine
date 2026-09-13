@@ -1,6 +1,6 @@
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
-import { projectRoot } from "@aurendor/db/runtime";
+import { projectRoot } from "@social-media-plugin/db/runtime";
 import { parse as parseYaml } from "yaml";
 
 const canonicalFiles = [

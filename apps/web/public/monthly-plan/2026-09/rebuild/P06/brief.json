@@ -15,7 +15,7 @@
   "level": "intermediate",
   "downloadFiles": [],
   "readyState": "copy_complete_pending_render_and_final_QA",
-  "productionMethod": "Render using static/render.cjs. Actual Ghroob and Dh Ranclo, original AURENDOR palette and architectural plates. Recompose at mobile size; preserve qualifying conditions in main copy.",
+  "productionMethod": "Render using static/render.cjs. Actual Ghroob and Dh Ranclo, original SOCIAL_MEDIA_PLUGIN palette and architectural plates. Recompose at mobile size; preserve qualifying conditions in main copy.",
   "tools": [
     "Original brand fonts and assets",
     "Local browser renderer",
@@ -47,7 +47,7 @@
       "source": "https://learn.microsoft.com/en-us/azure/search/search-filters",
       "checked": "2026-09-10",
       "claim": "Search filters can include/exclude indexed content using filterable metadata values.",
-      "limits": "The effective-date metadata contract is AURENDOR design advice, not an automatic vendor guarantee."
+      "limits": "The effective-date metadata contract is SOCIAL_MEDIA_PLUGIN design advice, not an automatic vendor guarantee."
     }
   ],
   "claimLimits": [

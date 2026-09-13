@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { AlertTriangle, Bell, LogOut, Pause, Radio, ShieldAlert } from "lucide-react";
-import type { EngineSettingsView } from "@aurendor/db/runtime";
+import type { EngineSettingsView } from "@social-media-plugin/db/runtime";
 import type { OwnerSession } from "@/lib/auth";
 import { logoutAction } from "@/app/login/actions";
 import { NavLinks } from "./nav-links";
@@ -10,8 +10,8 @@ export function AppShell({ session, settings, notificationCount, children }: { s
   return (
     <div className="app-shell">
       <aside className="sidebar">
-        <Link href="/" className="brand-lockup" aria-label="AURENDOR Content OS home">
-          <Image src="/brand/aurendor-horizontal-pale.svg" alt="AURENDOR" width={415} height={86} style={{ height: "auto" }} priority />
+        <Link href="/" className="brand-lockup" aria-label="SOCIAL_MEDIA_PLUGIN Content OS home">
+          <Image src="/brand/social-horizontal-pale.svg" alt="SOCIAL_MEDIA_PLUGIN" width={415} height={86} style={{ height: "auto" }} priority />
           <span>Content OS</span>
         </Link>
         <div className="environment-card">
@@ -35,8 +35,8 @@ export function AppShell({ session, settings, notificationCount, children }: { s
 
       <div className="main-frame">
         <header className="mobile-header">
-          <Link href="/" aria-label="AURENDOR Content OS home">
-            <Image src="/brand/aurendor-horizontal-pale.svg" alt="AURENDOR" width={415} height={86} style={{ height: "auto" }} priority />
+          <Link href="/" aria-label="SOCIAL_MEDIA_PLUGIN Content OS home">
+            <Image src="/brand/social-horizontal-pale.svg" alt="SOCIAL_MEDIA_PLUGIN" width={415} height={86} style={{ height: "auto" }} priority />
           </Link>
           <div className="mobile-status"><span className="pulse" />{settings.dryRun ? "Dry run" : "Live"}</div>
         </header>

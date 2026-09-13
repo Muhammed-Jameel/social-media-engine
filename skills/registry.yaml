@@ -1,14 +1,14 @@
 schema_version: 1.0.0
-registry_scope: aurendor-project-native
+registry_scope: social-project-native
 last_reviewed: 2026-08-23
 skills:
-  - name: aurendor-brand-intelligence
+  - name: social-brand-intelligence
     version: 1.0.0
     commit_hash: pending-initial-project-commit
     content_hash_sha256: 83330d30cc523bdf77d4c843487af93b23e487a83003f819857f8552330b162e
-    source: AURENDOR Content OS master specification
-    license: AURENDOR proprietary internal use
-    local_path: skills/aurendor-brand-intelligence
+    source: SOCIAL_MEDIA_PLUGIN Content OS master specification
+    license: SOCIAL_MEDIA_PLUGIN proprietary internal use
+    local_path: skills/social-brand-intelligence
     purpose: Retrieve, reconcile, and package brand truth with provenance and conflict handling.
     security_review_status: reviewed-no-executable-code-sources-treated-as-data
     benchmark_result: official-quick-validate-and-structural-audit-passed_behavioral-evals-pending
@@ -16,13 +16,13 @@ skills:
     rejection_reason: null
     rollout_state: draft
     last_reviewed_date: 2026-08-23
-  - name: aurendor-design-corpus-analysis
+  - name: social-design-corpus-analysis
     version: 1.0.0
     commit_hash: pending-creative-quality-rebuild-commit
     content_hash_sha256: 5e8afe3db4d55365ed0223a702ad60f7a139b7c96f3ca03270d04bded80ad56a
-    source: AURENDOR creative-quality rebuild
-    license: AURENDOR proprietary internal use
-    local_path: skills/aurendor-design-corpus-analysis
+    source: SOCIAL_MEDIA_PLUGIN creative-quality rebuild
+    license: SOCIAL_MEDIA_PLUGIN proprietary internal use
+    local_path: skills/social-design-corpus-analysis
     purpose: Audit a read-only visual corpus and produce safe design taxonomy, principles, annotations, and retrieval metadata.
     security_review_status: reviewed-read-only-corpus-no-reference-pixels-or-identities-in-generation
     benchmark_result: official-quick-validate-and-structural-audit-passed_corpus-fixture-evals-pending
@@ -30,13 +30,13 @@ skills:
     rejection_reason: null
     rollout_state: draft
     last_reviewed_date: 2026-08-23
-  - name: aurendor-content-strategy
+  - name: social-content-strategy
     version: 1.0.0
     commit_hash: pending-initial-project-commit
     content_hash_sha256: 606d739dd0e850d0b0c4600bb876fa58b287d74744e6cb9549da63f6d215e8e5
-    source: AURENDOR Content OS master specification
-    license: AURENDOR proprietary internal use
-    local_path: skills/aurendor-content-strategy
+    source: SOCIAL_MEDIA_PLUGIN Content OS master specification
+    license: SOCIAL_MEDIA_PLUGIN proprietary internal use
+    local_path: skills/social-content-strategy
     purpose: Translate business priorities and evidence into strategic monthly content plans.
     security_review_status: reviewed-no-executable-code-sources-treated-as-data
     benchmark_result: official-quick-validate-and-structural-audit-passed_behavioral-evals-pending
@@ -44,13 +44,13 @@ skills:
     rejection_reason: null
     rollout_state: draft
     last_reviewed_date: 2026-08-23
-  - name: aurendor-arabic-copywriter
+  - name: social-arabic-copywriter
     version: 1.0.0
     commit_hash: pending-initial-project-commit
     content_hash_sha256: e5874b5a9ab2714b4f532619506d4a322dc0744f9de6afd8381ed01408b038d7
-    source: AURENDOR Content OS master specification
-    license: AURENDOR proprietary internal use
-    local_path: skills/aurendor-arabic-copywriter
+    source: SOCIAL_MEDIA_PLUGIN Content OS master specification
+    license: SOCIAL_MEDIA_PLUGIN proprietary internal use
+    local_path: skills/social-arabic-copywriter
     purpose: Write native, Iraqi-relevant professional Arabic social copy and accessible variants.
     security_review_status: reviewed-no-executable-code-sources-treated-as-data
     benchmark_result: official-quick-validate-and-structural-audit-passed_behavioral-evals-pending
@@ -58,13 +58,13 @@ skills:
     rejection_reason: null
     rollout_state: draft
     last_reviewed_date: 2026-08-23
-  - name: aurendor-arabic-design-review
+  - name: social-arabic-design-review
     version: 1.0.0
     commit_hash: pending-creative-quality-rebuild-commit
     content_hash_sha256: 13e81b985e7af6e2099d51116c775ada57db4342c8529a896dedb71304895f77
-    source: AURENDOR creative-quality rebuild
-    license: AURENDOR proprietary internal use
-    local_path: skills/aurendor-arabic-design-review
+    source: SOCIAL_MEDIA_PLUGIN creative-quality rebuild
+    license: SOCIAL_MEDIA_PLUGIN proprietary internal use
+    local_path: skills/social-arabic-design-review
     purpose: Preflight Arabic-first art direction and inspect rendered Arabic pixels as the independent Arabic critic.
     security_review_status: reviewed-current-pixels-required-no-copy-mutation-or-solo-approval
     benchmark_result: official-quick-validate-and-structural-audit-passed_arabic-render-evals-pending
@@ -72,13 +72,13 @@ skills:
     rejection_reason: null
     rollout_state: draft
     last_reviewed_date: 2026-08-23
-  - name: aurendor-english-copywriter
+  - name: social-english-copywriter
     version: 1.0.0
     commit_hash: pending-initial-project-commit
     content_hash_sha256: b2db1d5e075da3ac8a568b84235e7ae91181831988895bf0d38d624c6cd3a8d4
-    source: AURENDOR Content OS master specification
-    license: AURENDOR proprietary internal use
-    local_path: skills/aurendor-english-copywriter
+    source: SOCIAL_MEDIA_PLUGIN Content OS master specification
+    license: SOCIAL_MEDIA_PLUGIN proprietary internal use
+    local_path: skills/social-english-copywriter
     purpose: Write native English platform variants without literal translation or generic AI phrasing.
     security_review_status: reviewed-no-executable-code-sources-treated-as-data
     benchmark_result: official-quick-validate-and-structural-audit-passed_behavioral-evals-pending
@@ -86,13 +86,13 @@ skills:
     rejection_reason: null
     rollout_state: draft
     last_reviewed_date: 2026-08-23
-  - name: aurendor-art-direction
+  - name: social-art-direction
     version: 2.0.0
     commit_hash: pending-creative-quality-rebuild-commit
     content_hash_sha256: 3233d265cde8c8b45285fa69090efb5654d325c1f9de3c535b99805e3fa780f2
-    source: AURENDOR creative-quality rebuild
-    license: AURENDOR proprietary internal use
-    local_path: skills/aurendor-art-direction
+    source: SOCIAL_MEDIA_PLUGIN creative-quality rebuild
+    license: SOCIAL_MEDIA_PLUGIN proprietary internal use
+    local_path: skills/social-art-direction
     purpose: Retrieve design intelligence, answer 15 art-direction questions, and tournament four or more materially distinct concepts.
     security_review_status: reviewed-no-executable-code-sources-treated-as-data
     benchmark_result: official-quick-validate-and-structural-audit-passed_concept-tournament-evals-pending
@@ -100,13 +100,13 @@ skills:
     rejection_reason: null
     rollout_state: draft
     last_reviewed_date: 2026-08-23
-  - name: aurendor-anthropomorphic-art-direction
+  - name: social-anthropomorphic-art-direction
     version: 1.0.0
     commit_hash: pending-creative-quality-rebuild-commit
     content_hash_sha256: b1829838e423f9030022266459d406234284ee183bae9a41ea05c0fbd3ece45a
-    source: AURENDOR creative-quality rebuild
-    license: AURENDOR proprietary internal use
-    local_path: skills/aurendor-anthropomorphic-art-direction
+    source: SOCIAL_MEDIA_PLUGIN creative-quality rebuild
+    license: SOCIAL_MEDIA_PLUGIN proprietary internal use
+    local_path: skills/social-anthropomorphic-art-direction
     purpose: Define restrained human-like system behavior with face, maturity, capability, consistency, and mascot gates.
     security_review_status: reviewed-no-reference-character-imitation-no-unapproved-mascot-or-capability-claim
     benchmark_result: official-quick-validate-and-structural-audit-passed_character-system-evals-pending
@@ -114,13 +114,13 @@ skills:
     rejection_reason: null
     rollout_state: draft
     last_reviewed_date: 2026-08-23
-  - name: aurendor-originality-review
+  - name: social-originality-review
     version: 1.0.0
     commit_hash: pending-creative-quality-rebuild-commit
     content_hash_sha256: 5b99984c2ba0dd64b763066624a1ba3065c412827859a5d4e7dd6c496675c2db
-    source: AURENDOR creative-quality rebuild
-    license: AURENDOR proprietary internal use
-    local_path: skills/aurendor-originality-review
+    source: SOCIAL_MEDIA_PLUGIN creative-quality rebuild
+    license: SOCIAL_MEDIA_PLUGIN proprietary internal use
+    local_path: skills/social-originality-review
     purpose: Detect structural reference imitation, template reuse, and recent-feed self-repetition before production or approval.
     security_review_status: reviewed-reference-pixels-reviewer-only-no-identities-or-imitation-in-generation
     benchmark_result: official-quick-validate-and-structural-audit-passed_originality-calibration-pending
@@ -128,13 +128,13 @@ skills:
     rejection_reason: null
     rollout_state: draft
     last_reviewed_date: 2026-08-23
-  - name: aurendor-social-design
+  - name: social-design
     version: 2.0.0
     commit_hash: pending-creative-quality-rebuild-commit
     content_hash_sha256: bb9ae88b11622ab13863a01fc9803d54660ca56efbad71ab686b88eb7b6cd2fe
-    source: AURENDOR creative-quality rebuild
-    license: AURENDOR proprietary internal use
-    local_path: skills/aurendor-social-design
+    source: SOCIAL_MEDIA_PLUGIN creative-quality rebuild
+    license: SOCIAL_MEDIA_PLUGIN proprietary internal use
+    local_path: skills/social-design
     purpose: Produce asset-first, Arabic-first, exact-pixel social designs and prove visual revision integrity.
     security_review_status: reviewed-no-executable-code-provider-mutations-require-workflow-authorization
     benchmark_result: official-quick-validate-and-structural-audit-passed_pixel-revision-and-visual-golden-set-pending
@@ -142,13 +142,13 @@ skills:
     rejection_reason: null
     rollout_state: draft
     last_reviewed_date: 2026-08-23
-  - name: aurendor-design-critique
+  - name: social-design-critique
     version: 2.0.0
     commit_hash: pending-creative-quality-rebuild-commit
     content_hash_sha256: ab3ef4fa9416ab528685532e59e99bf4bf01d8c2215dbfb1ef3a433710cfca0d
-    source: AURENDOR creative-quality rebuild
-    license: AURENDOR proprietary internal use
-    local_path: skills/aurendor-design-critique
+    source: SOCIAL_MEDIA_PLUGIN creative-quality rebuild
+    license: SOCIAL_MEDIA_PLUGIN proprietary internal use
+    local_path: skills/social-design-critique
     purpose: Run a four-role 160-point review of current pixels with anchors, blind pairwise comparison, and restart logic.
     security_review_status: reviewed-no-executable-code-rendered-assets-treated-as-data
     benchmark_result: official-quick-validate-and-structural-audit-passed_four-role-visual-grader-calibration-pending
@@ -156,13 +156,13 @@ skills:
     rejection_reason: null
     rollout_state: draft
     last_reviewed_date: 2026-08-23
-  - name: aurendor-feed-curation
+  - name: social-feed-curation
     version: 1.0.0
     commit_hash: pending-creative-quality-rebuild-commit
     content_hash_sha256: 8bfb28dcc55abd2d029984f71c6c75cadde1975f43623d45c2dceba09955322e
-    source: AURENDOR creative-quality rebuild
-    license: AURENDOR proprietary internal use
-    local_path: skills/aurendor-feed-curation
+    source: SOCIAL_MEDIA_PLUGIN creative-quality rebuild
+    license: SOCIAL_MEDIA_PLUGIN proprietary internal use
+    local_path: skills/social-feed-curation
     purpose: Curate actual current pixels into coherent, varied 3-, 9-, and 12-post feed systems.
     security_review_status: reviewed-no-individual-fail-override-no-template-flattening
     benchmark_result: official-quick-validate-and-structural-audit-passed_feed-rhythm-evals-pending
@@ -170,13 +170,13 @@ skills:
     rejection_reason: null
     rollout_state: draft
     last_reviewed_date: 2026-08-23
-  - name: aurendor-brand-compliance
+  - name: social-brand-compliance
     version: 1.0.0
     commit_hash: pending-initial-project-commit
     content_hash_sha256: 86c9d5e59d66552c50a15b54cc907c2a136c3f5d4dda37f0372dfb032e89a6a0
-    source: AURENDOR Content OS master specification
-    license: AURENDOR proprietary internal use
-    local_path: skills/aurendor-brand-compliance
+    source: SOCIAL_MEDIA_PLUGIN Content OS master specification
+    license: SOCIAL_MEDIA_PLUGIN proprietary internal use
+    local_path: skills/social-brand-compliance
     purpose: Gate copy, claims, visuals, and policy against effective brand truth.
     security_review_status: reviewed-no-executable-code-compliance-cannot-authorize-publication
     benchmark_result: official-quick-validate-and-structural-audit-passed_behavioral-evals-pending
@@ -184,13 +184,13 @@ skills:
     rejection_reason: null
     rollout_state: draft
     last_reviewed_date: 2026-08-23
-  - name: aurendor-social-publishing
+  - name: social-publishing
     version: 1.0.0
     commit_hash: pending-initial-project-commit
     content_hash_sha256: 7e17fe045759031eacbaef9d937c59c5c0f0c1ce9f2cea49d5801ec1db84cfe5
-    source: AURENDOR Content OS master specification
-    license: AURENDOR proprietary internal use
-    local_path: skills/aurendor-social-publishing
+    source: SOCIAL_MEDIA_PLUGIN Content OS master specification
+    license: SOCIAL_MEDIA_PLUGIN proprietary internal use
+    local_path: skills/social-publishing
     purpose: Validate and plan idempotent platform publication under explicit approval and capability gates.
     security_review_status: reviewed-high-risk-mutation-requires-signed-state-and-production-flag
     benchmark_result: official-quick-validate-and-structural-audit-passed_dry-run-chaos-tests-pending
@@ -198,13 +198,13 @@ skills:
     rejection_reason: null
     rollout_state: draft
     last_reviewed_date: 2026-08-23
-  - name: aurendor-social-analytics
+  - name: social-analytics
     version: 1.0.0
     commit_hash: pending-initial-project-commit
     content_hash_sha256: f8a7dd1e46b7936eac435f7a6bdeb3d1bbc6443c6f5a5b3f496a96bfb48a0764
-    source: AURENDOR Content OS master specification
-    license: AURENDOR proprietary internal use
-    local_path: skills/aurendor-social-analytics
+    source: SOCIAL_MEDIA_PLUGIN Content OS master specification
+    license: SOCIAL_MEDIA_PLUGIN proprietary internal use
+    local_path: skills/social-analytics
     purpose: Normalize performance and produce evidence-calibrated observations, hypotheses, and recommendations.
     security_review_status: reviewed-no-executable-code-raw-provider-data-is-untrusted
     benchmark_result: official-quick-validate-and-structural-audit-passed_metric-fixtures-pending
@@ -212,13 +212,13 @@ skills:
     rejection_reason: null
     rollout_state: draft
     last_reviewed_date: 2026-08-23
-  - name: aurendor-content-experimentation
+  - name: social-content-experimentation
     version: 1.0.0
     commit_hash: pending-initial-project-commit
     content_hash_sha256: 0b96ef264f1757b60cd4d122a527e6683c6bfcb6b17bc59e712cbd4d15c0ed47
-    source: AURENDOR Content OS master specification
-    license: AURENDOR proprietary internal use
-    local_path: skills/aurendor-content-experimentation
+    source: SOCIAL_MEDIA_PLUGIN Content OS master specification
+    license: SOCIAL_MEDIA_PLUGIN proprietary internal use
+    local_path: skills/social-content-experimentation
     purpose: Design bounded social content experiments with primary and guardrail metrics.
     security_review_status: reviewed-no-executable-code-experiments-do-not-bypass-publishing-policy
     benchmark_result: official-quick-validate-and-structural-audit-passed_behavioral-evals-pending
@@ -226,13 +226,13 @@ skills:
     rejection_reason: null
     rollout_state: draft
     last_reviewed_date: 2026-08-23
-  - name: aurendor-monthly-retrospective
+  - name: social-monthly-retrospective
     version: 1.0.0
     commit_hash: pending-initial-project-commit
     content_hash_sha256: c7585870cd6290ef91e941ffdffea607cf9f231bb66ae343ac7632d835897087
-    source: AURENDOR Content OS master specification
-    license: AURENDOR proprietary internal use
-    local_path: skills/aurendor-monthly-retrospective
+    source: SOCIAL_MEDIA_PLUGIN Content OS master specification
+    license: SOCIAL_MEDIA_PLUGIN proprietary internal use
+    local_path: skills/social-monthly-retrospective
     purpose: Produce monthly evidence-led performance, creative, reliability, cost, and feedback retrospectives.
     security_review_status: reviewed-no-executable-code-no-silent-brand-or-policy-mutation
     benchmark_result: official-quick-validate-and-structural-audit-passed_monthly-fixture-eval-pending
@@ -240,13 +240,13 @@ skills:
     rejection_reason: null
     rollout_state: draft
     last_reviewed_date: 2026-08-23
-  - name: aurendor-next-month-planning
+  - name: social-next-month-planning
     version: 1.0.0
     commit_hash: pending-initial-project-commit
     content_hash_sha256: 9f8c1d7e2ec467c57985957644aeb82da85478fc5e0571ef919ca5a76a9dba1d
-    source: AURENDOR Content OS master specification
-    license: AURENDOR proprietary internal use
-    local_path: skills/aurendor-next-month-planning
+    source: SOCIAL_MEDIA_PLUGIN Content OS master specification
+    license: SOCIAL_MEDIA_PLUGIN proprietary internal use
+    local_path: skills/social-next-month-planning
     purpose: Orchestrate the T-minus-five-day evidence-to-owner-ready next-month plan.
     security_review_status: reviewed-no-executable-code-plan-approval-does-not-equal-unbounded-publication
     benchmark_result: official-quick-validate-and-structural-audit-passed_lifecycle-simulation-pending

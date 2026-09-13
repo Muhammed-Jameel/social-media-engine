@@ -55,9 +55,9 @@
     "assets/product/11-engineer-checklist-360.png"
   ],
   "downloadFiles": [],
-  "productionMethod": "Render variable-count 1080×1350 carousel and separate 1080×1920 Stories using content-system-v7/static/render.cjs. Keep the existing AURENDOR palette, architectural plates, logos, actual Ghroob Arabic and Dh Ranclo Latin font files. Review every frame at360px and recompose overflow; do not shrink text to force a layout.",
+  "productionMethod": "Render variable-count 1080×1350 carousel and separate 1080×1920 Stories using content-system-v7/static/render.cjs. Keep the existing SOCIAL_MEDIA_PLUGIN palette, architectural plates, logos, actual Ghroob Arabic and Dh Ranclo Latin font files. Review every frame at360px and recompose overflow; do not shrink text to force a layout.",
   "tools": [
-    "Verified AURENDOR assets and fonts",
+    "Verified SOCIAL_MEDIA_PLUGIN assets and fonts",
     "Local browser renderer",
     "Independent editorial/source review"
   ],
@@ -66,7 +66,7 @@
     "الصور من واجهة المنتج الفعلية ببيانات عرض محلية تجريبية؛ لا عملاء حقيقيون.",
     "لم يُختبر الربط بالخادم الإنتاجي أو المزامنة الحية أو توزيع المسؤوليات.",
     "التقرير وقائمة المهام ليسا إثباتًا للفحص أو موافقة هندسية.",
-    "تسمية بنيان برو في الغلاف التحريري، مع إبقاء تسمية AURENDOR الظاهرة في التطبيق دون تغيير."
+    "تسمية بنيان برو في الغلاف التحريري، مع إبقاء تسمية SOCIAL_MEDIA_PLUGIN الظاهرة في التطبيق دون تغيير."
   ],
   "readyState": "copy_complete_pending_render_and_final_QA",
   "whySave": "صيغة تحديث تربط التاريخ والعمل والموقع بما ينتظر المتابعة، تصلح في البرنامج أو الرسالة اليومية.",
@@ -173,6 +173,6 @@
       "tone": "dark"
     }
   ],
-  "visualConcept": "Actual dated report and unchecked stage tasks carry the argument. One original document summary makes the timeline explicit; the final worksheet transfers the lesson to any team. Preserve current AURENDOR brand around untouched product pixels; omit the unrelated client-view ending.",
+  "visualConcept": "Actual dated report and unchecked stage tasks carry the argument. One original document summary makes the timeline explicit; the final worksheet transfers the lesson to any team. Preserve current SOCIAL_MEDIA_PLUGIN brand around untouched product pixels; omit the unrelated client-view ending.",
   "adaptationNotes": "Instagram/Facebook: publish five frames in order. LinkedIn: use the workflow-focused text and report/checklist evidence. X: three supplied texts with one matching evidence crop if desired. Stories: ask about the unfinished inspection and reveal the follow-up structure. Product Reel P08 owns a different product question; do not duplicate this report tour."
 }

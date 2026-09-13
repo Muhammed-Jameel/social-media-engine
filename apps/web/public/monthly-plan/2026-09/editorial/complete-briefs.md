@@ -1,4 +1,4 @@
-# AURENDOR · Complete editorial briefs
+# SOCIAL_MEDIA_PLUGIN · Complete editorial briefs
 
 11–30 September 2026 · First cycle rendered for review; later Reels are scripts · Not scheduled
 
@@ -70,7 +70,7 @@ documented principles + editorial inference + explicitly synthetic worked exampl
 
 - S-AGENTS-2024
 
-- S-AURENDOR
+- S-SOCIAL_MEDIA_PLUGIN
 
 ### exampleDisclosure
 
@@ -245,7 +245,7 @@ First-party invitation to discuss the relevant service or request a Bunyan Pro d
 
 ### requiredAssets
 
-- Original AURENDOR vector logo and approved architectural assets
+- Original SOCIAL_MEDIA_PLUGIN vector logo and approved architectural assets
 
 - Ghroob Arabic ITF and Dh Ranclo brand fonts
 
@@ -385,7 +385,7 @@ evergreen research-led
 
 #### verifyBeforePublish
 
-Reopen cited mutable documentation 24–48 hours before publication; keep historical study versions and local survey scope explicit. Recheck offered AURENDOR scope. Examples must remain labelled.
+Reopen cited mutable documentation 24–48 hours before publication; keep historical study versions and local survey scope explicit. Recheck offered SOCIAL_MEDIA_PLUGIN scope. Examples must remain labelled.
 
 #### fallback
 
@@ -827,7 +827,7 @@ First-party invitation to discuss the relevant service or request a Bunyan Pro d
 
 ### requiredAssets
 
-- الشعار وGhroob للعربية وDh Ranclo للإنجليزية من أصول AURENDOR المعتمدة
+- الشعار وGhroob للعربية وDh Ranclo للإنجليزية من أصول SOCIAL_MEDIA_PLUGIN المعتمدة
 
 - رسوم توضيحية أصلية للقالب في copyableTool؛ لا صور مولدة لواجهات المنتج
 
@@ -1200,7 +1200,7 @@ Practical AI
 
 ### objective
 
-Give the reader a repeatable practical outcome independent of purchasing AURENDOR services.
+Give the reader a repeatable practical outcome independent of purchasing SOCIAL_MEDIA_PLUGIN services.
 
 ### funnel
 
@@ -1240,7 +1240,7 @@ documented capability + original fictional demonstration + editorial inference
 
 ### exampleDisclosure
 
-مثال تعليمي افتراضي من إعداد AURENDOR ، وليس نتيجة اختبار أداة أو تجربة عميل.
+مثال تعليمي افتراضي من إعداد SOCIAL_MEDIA_PLUGIN ، وليس نتيجة اختبار أداة أو تجربة عميل.
 
 ### units
 
@@ -1409,7 +1409,7 @@ Original labeled teaching example / editorial method
 
 ### requiredAssets
 
-- Original AURENDOR brand fonts Ghroob and Dh Ranclo; existing green/white identity.
+- Original SOCIAL_MEDIA_PLUGIN brand fonts Ghroob and Dh Ranclo; existing green/white identity.
 
 - An original teaching artifact specified per unit; visible مثال توضيحي label.
 
@@ -1491,7 +1491,7 @@ vertical video
 
 فهمت الشرح؟ جرّب سؤالًا مختلفًا.
 جلسة تعلّم تتوقف عند الخطأ، ثم تختبر نقل الفكرة إلى مثال جديد.
-مثال تعليمي افتراضي من إعداد AURENDOR ، وليس نتيجة اختبار أداة أو تجربة عميل.
+مثال تعليمي افتراضي من إعداد SOCIAL_MEDIA_PLUGIN ، وليس نتيجة اختبار أداة أو تجربة عميل.
 
 قالب للنسخ:
 أريد تعلّم [الموضوع] بمستوى [مستواي]. مرجعي: [نص قصير مسموح بمشاركته]. اسألني سؤالًا واحدًا وانتظر جوابي. لا تعرض الحل مسبقًا. بعد جوابي، حدّد أول خطأ أو فرضية ناقصة وأعطني تلميحًا واحدًا. ثم أعطني حالة جديدة تغيّر شرطًا واحدًا. معيار النجاح: أشرح السبب وأطبّق الفكرة دون رؤية الحل. إذا تعارض شرحي مع المرجع، أشر إلى العبارة المحددة؛ وإذا المرجع لا يكفي، قل ذلك.
@@ -2013,7 +2013,7 @@ Original illustrative artifact; not a product screenshot or client evidence.
 
 ### requiredAssets
 
-- Original AURENDOR vector logo and approved architectural assets
+- Original SOCIAL_MEDIA_PLUGIN vector logo and approved architectural assets
 
 - Ghroob Arabic ITF and Dh Ranclo brand fonts
 
@@ -2121,7 +2121,7 @@ evergreen research-led
 
 #### verifyBeforePublish
 
-Reopen cited mutable documentation 24–48 hours before publication; keep historical study versions and local survey scope explicit. Recheck offered AURENDOR scope. Examples must remain labelled.
+Reopen cited mutable documentation 24–48 hours before publication; keep historical study versions and local survey scope explicit. Recheck offered SOCIAL_MEDIA_PLUGIN scope. Examples must remain labelled.
 
 #### fallback
 
@@ -2619,7 +2619,7 @@ First-party invitation to discuss the relevant service or request a Bunyan Pro d
 
 ### requiredAssets
 
-- الشعار وGhroob للعربية وDh Ranclo للإنجليزية من أصول AURENDOR المعتمدة
+- الشعار وGhroob للعربية وDh Ranclo للإنجليزية من أصول SOCIAL_MEDIA_PLUGIN المعتمدة
 
 - رسوم توضيحية أصلية للقالب في copyableTool؛ لا صور مولدة لواجهات المنتج
 
@@ -3004,7 +3004,7 @@ Practical AI
 
 ### objective
 
-Give the reader a repeatable practical outcome independent of purchasing AURENDOR services.
+Give the reader a repeatable practical outcome independent of purchasing SOCIAL_MEDIA_PLUGIN services.
 
 ### funnel
 
@@ -3044,7 +3044,7 @@ documented capability + original fictional demonstration + editorial inference
 
 ### exampleDisclosure
 
-مثال تعليمي افتراضي من إعداد AURENDOR ، وليس نتيجة اختبار أداة أو تجربة عميل.
+مثال تعليمي افتراضي من إعداد SOCIAL_MEDIA_PLUGIN ، وليس نتيجة اختبار أداة أو تجربة عميل.
 
 ### units
 
@@ -3196,7 +3196,7 @@ First-party invitation to discuss the relevant service or request a Bunyan Pro d
 
 ### requiredAssets
 
-- Original AURENDOR brand fonts Ghroob and Dh Ranclo; existing green/white identity.
+- Original SOCIAL_MEDIA_PLUGIN brand fonts Ghroob and Dh Ranclo; existing green/white identity.
 
 - An original teaching artifact specified per unit; visible مثال توضيحي label.
 
@@ -3282,7 +3282,7 @@ photo carousel
 
 غيّر عنصرًا واحدًا. وافحص ما بقي.
 قائمة ثوابت واختبار مقارنة لتعديل صورة دون فقدان موضوعها أو كتابتها.
-مثال تعليمي افتراضي من إعداد AURENDOR ، وليس نتيجة اختبار أداة أو تجربة عميل.
+مثال تعليمي افتراضي من إعداد SOCIAL_MEDIA_PLUGIN ، وليس نتيجة اختبار أداة أو تجربة عميل.
 
 قالب للنسخ:
 عدّل الصورة التي أملك حق استخدامها. التغيير الوحيد: [مثلاً الخلفية من رمادي إلى أخضر داكن]. حافظ على [الموضوع وملامحه، اتجاهه، تكوين الصورة، نص العنوان كما هو]. لا تضف أشخاصًا أو رموزًا أو كتابة. اعتبر المرجع المرفق هو الأصل. بعد التنفيذ سأفحص: [حروف العنوان] و[الملامح] و[حواف التعديل]. إذا احتاج التغيير مساسًا بعنصر ثابت، وضّح التعارض أولًا. مثال: دعوة بعنوان “جلسة قراءة”، المطلوب تغيير الخلفية فقط.
@@ -3804,7 +3804,7 @@ intermediate
 
 ### requiredAssets
 
-- الشعار وGhroob للعربية وDh Ranclo للإنجليزية من أصول AURENDOR المعتمدة
+- الشعار وGhroob للعربية وDh Ranclo للإنجليزية من أصول SOCIAL_MEDIA_PLUGIN المعتمدة
 
 - رسوم توضيحية أصلية للقالب في copyableTool؛ لا صور مولدة لواجهات المنتج
 
@@ -4432,7 +4432,7 @@ First-party invitation to discuss the relevant service or request a Bunyan Pro d
 
 ### requiredAssets
 
-- Original AURENDOR vector logo and approved architectural assets
+- Original SOCIAL_MEDIA_PLUGIN vector logo and approved architectural assets
 
 - Ghroob Arabic ITF and Dh Ranclo brand fonts
 
@@ -4564,7 +4564,7 @@ evergreen research-led
 
 #### verifyBeforePublish
 
-Reopen cited mutable documentation 24–48 hours before publication; keep historical study versions and local survey scope explicit. Recheck offered AURENDOR scope. Examples must remain labelled.
+Reopen cited mutable documentation 24–48 hours before publication; keep historical study versions and local survey scope explicit. Recheck offered SOCIAL_MEDIA_PLUGIN scope. Examples must remain labelled.
 
 #### fallback
 
@@ -4780,7 +4780,7 @@ Practical AI
 
 ### objective
 
-Give the reader a repeatable practical outcome independent of purchasing AURENDOR services.
+Give the reader a repeatable practical outcome independent of purchasing SOCIAL_MEDIA_PLUGIN services.
 
 ### funnel
 
@@ -4820,7 +4820,7 @@ documented capability + original fictional demonstration + editorial inference
 
 ### exampleDisclosure
 
-مثال تعليمي افتراضي من إعداد AURENDOR ، وليس نتيجة اختبار أداة أو تجربة عميل.
+مثال تعليمي افتراضي من إعداد SOCIAL_MEDIA_PLUGIN ، وليس نتيجة اختبار أداة أو تجربة عميل.
 
 ### units
 
@@ -4972,7 +4972,7 @@ First-party invitation to discuss the relevant service or request a Bunyan Pro d
 
 ### requiredAssets
 
-- Original AURENDOR brand fonts Ghroob and Dh Ranclo; existing green/white identity.
+- Original SOCIAL_MEDIA_PLUGIN brand fonts Ghroob and Dh Ranclo; existing green/white identity.
 
 - An original teaching artifact specified per unit; visible مثال توضيحي label.
 
@@ -5058,7 +5058,7 @@ photo carousel
 
 مصدران اختلفا؟ لا تطلب ملخّصًا يطمس الفرق.
 جدول يربط كل ادعاء بمصدره وفترته وما لا يستطيع إثباته.
-مثال تعليمي افتراضي من إعداد AURENDOR ، وليس نتيجة اختبار أداة أو تجربة عميل.
+مثال تعليمي افتراضي من إعداد SOCIAL_MEDIA_PLUGIN ، وليس نتيجة اختبار أداة أو تجربة عميل.
 
 قالب للنسخ:
 استخدم الملفات المرفقة فقط. أنشئ جدولًا: الادعاء، اسم الملف، موضع الدليل أو الإحالة، الفترة، تعريف المقياس، ما ينقص للحسم. لا تدمج رقمين قبل مطابقة التعريف والفترة والعينة. المثال التعليمي: أ يقول “8 من 10 أكملوا الدرس”، ب يقول “5 من 10 نجحوا بالاختبار”. المطلوب إبقاؤهما مقياسين منفصلين. إذا تعذّر الوصول إلى موضع الدليل، ضع “غير متحقق” بدل اختراع رقم صفحة. اختم بسؤالين نحتاج جوابهما قبل المقارنة.
@@ -5537,7 +5537,7 @@ First-party invitation to discuss the relevant service or request a Bunyan Pro d
 
 ### requiredAssets
 
-- Original AURENDOR vector logo and approved architectural assets
+- Original SOCIAL_MEDIA_PLUGIN vector logo and approved architectural assets
 
 - Ghroob Arabic ITF and Dh Ranclo brand fonts
 
@@ -5677,7 +5677,7 @@ evergreen research-led
 
 #### verifyBeforePublish
 
-Reopen cited mutable documentation 24–48 hours before publication; keep historical study versions and local survey scope explicit. Recheck offered AURENDOR scope. Examples must remain labelled.
+Reopen cited mutable documentation 24–48 hours before publication; keep historical study versions and local survey scope explicit. Recheck offered SOCIAL_MEDIA_PLUGIN scope. Examples must remain labelled.
 
 #### fallback
 
@@ -6107,7 +6107,7 @@ ___ | ___ | ___ | ___
 
 ### requiredAssets
 
-- الشعار وGhroob للعربية وDh Ranclo للإنجليزية من أصول AURENDOR المعتمدة
+- الشعار وGhroob للعربية وDh Ranclo للإنجليزية من أصول SOCIAL_MEDIA_PLUGIN المعتمدة
 
 - رسوم توضيحية أصلية للقالب في copyableTool؛ لا صور مولدة لواجهات المنتج
 
@@ -6470,7 +6470,7 @@ Practical AI
 
 ### objective
 
-Give the reader a repeatable practical outcome independent of purchasing AURENDOR services.
+Give the reader a repeatable practical outcome independent of purchasing SOCIAL_MEDIA_PLUGIN services.
 
 ### funnel
 
@@ -6510,7 +6510,7 @@ documented capability + original fictional demonstration + editorial inference
 
 ### exampleDisclosure
 
-مثال تعليمي افتراضي من إعداد AURENDOR ، وليس نتيجة اختبار أداة أو تجربة عميل.
+مثال تعليمي افتراضي من إعداد SOCIAL_MEDIA_PLUGIN ، وليس نتيجة اختبار أداة أو تجربة عميل.
 
 ### units
 
@@ -6681,7 +6681,7 @@ Original labeled teaching example / editorial method
 
 ### requiredAssets
 
-- Original AURENDOR brand fonts Ghroob and Dh Ranclo; existing green/white identity.
+- Original SOCIAL_MEDIA_PLUGIN brand fonts Ghroob and Dh Ranclo; existing green/white identity.
 
 - An original teaching artifact specified per unit; visible مثال توضيحي label.
 
@@ -6767,7 +6767,7 @@ vertical video
 
 وجد وقتًا مناسبًا؟ هذا لا يعني أنه حجزه.
 طلب شخصي يختار جلسة دراسة دون تحريك المواعيد أو إرسال دعوات بالخطأ.
-مثال تعليمي افتراضي من إعداد AURENDOR ، وليس نتيجة اختبار أداة أو تجربة عميل.
+مثال تعليمي افتراضي من إعداد SOCIAL_MEDIA_PLUGIN ، وليس نتيجة اختبار أداة أو تجربة عميل.
 
 قالب للنسخ:
 المرحلة 1: باستخدام تقويمي المتصل إن كانت القراءة متاحة، اقترح 3 جلسات دراسة مدة كل منها 60 دقيقة هذا الأسبوع بين 18:00 و 21:00 بتوقيت Asia/Baghdad. لا تغيّر أي حدث ولا ترسل دعوة. بيّن التاريخ والوقت والتعارض المحتمل. إن لم تملك الوصول، اطلب مني قائمة الأوقات المحجوزة. المرحلة 2 بعد اختياري: اعرض عنوان الحدث وبدايته ونهايته والمنطقة الزمنية والمدعوين (لا أحد). لا تنشئه قبل موافقتي على هذه التفاصيل. إذا لم تتوفر أداة إنشاء، أعطني التفاصيل لأسجلها يدويًا. بعد التنفيذ أريد رابط الحدث أو معرّفه إن كان متاحًا، ثم سأفتحه للتحقق.
@@ -7282,7 +7282,7 @@ First-party invitation to discuss the relevant service or request a Bunyan Pro d
 
 ### requiredAssets
 
-- الشعار وGhroob للعربية وDh Ranclo للإنجليزية من أصول AURENDOR المعتمدة
+- الشعار وGhroob للعربية وDh Ranclo للإنجليزية من أصول SOCIAL_MEDIA_PLUGIN المعتمدة
 
 - رسوم توضيحية أصلية للقالب في copyableTool؛ لا صور مولدة لواجهات المنتج
 
@@ -7873,7 +7873,7 @@ Original illustrative artifact; not a product screenshot or client evidence.
 
 ### requiredAssets
 
-- Original AURENDOR vector logo and approved architectural assets
+- Original SOCIAL_MEDIA_PLUGIN vector logo and approved architectural assets
 
 - Ghroob Arabic ITF and Dh Ranclo brand fonts
 
@@ -8001,7 +8001,7 @@ evergreen research-led
 
 #### verifyBeforePublish
 
-Reopen cited mutable documentation 24–48 hours before publication; keep historical study versions and local survey scope explicit. Recheck offered AURENDOR scope. Examples must remain labelled.
+Reopen cited mutable documentation 24–48 hours before publication; keep historical study versions and local survey scope explicit. Recheck offered SOCIAL_MEDIA_PLUGIN scope. Examples must remain labelled.
 
 #### fallback
 
@@ -8265,7 +8265,7 @@ Practical AI
 
 ### objective
 
-Give the reader a repeatable practical outcome independent of purchasing AURENDOR services.
+Give the reader a repeatable practical outcome independent of purchasing SOCIAL_MEDIA_PLUGIN services.
 
 ### funnel
 
@@ -8305,7 +8305,7 @@ documented capability + original fictional demonstration + editorial inference
 
 ### exampleDisclosure
 
-مثال تعليمي افتراضي من إعداد AURENDOR ، وليس نتيجة اختبار أداة أو تجربة عميل.
+مثال تعليمي افتراضي من إعداد SOCIAL_MEDIA_PLUGIN ، وليس نتيجة اختبار أداة أو تجربة عميل.
 
 ### units
 
@@ -8457,7 +8457,7 @@ First-party invitation to discuss the relevant service or request a Bunyan Pro d
 
 ### requiredAssets
 
-- Original AURENDOR brand fonts Ghroob and Dh Ranclo; existing green/white identity.
+- Original SOCIAL_MEDIA_PLUGIN brand fonts Ghroob and Dh Ranclo; existing green/white identity.
 
 - An original teaching artifact specified per unit; visible مثال توضيحي label.
 
@@ -8543,7 +8543,7 @@ photo carousel
 
 تكرر تعليمات الكتابة؟ حوّلها إلى طريقة عمل.
 مواصفة مهارة تحرير عربية صغيرة مع اختبار يمنع إضافة الوعود من عند المساعد.
-مثال تعليمي افتراضي من إعداد AURENDOR ، وليس نتيجة اختبار أداة أو تجربة عميل.
+مثال تعليمي افتراضي من إعداد SOCIAL_MEDIA_PLUGIN ، وليس نتيجة اختبار أداة أو تجربة عميل.
 
 قالب للنسخ:
 مواصفة مهارة: محرر رسائل عربية قصيرة. استخدمها حين أطلب تحرير رسالة جاهزة، لا إنشاء معلومات جديدة. المدخل: الرسالة والجمهور. الخطوات: 1. استخرج الأسماء والمواعيد والأرقام والوعود. 2. حسّن الوضوح بأقل تغيير. 3. قارن العناصر المستخرجة بالنص النهائي. 4. إذا كانت معلومة لازمة ناقصة، اسأل بدل اختراعها. المخرج: النص المحرر ثم قائمة بالتغييرات الجوهرية فقط. اختبار أ: «سنرد يوم الأحد»؛ لا يتحول إلى «خلال 24 ساعة». اختبار ب: «نلتقي قريبًا»؛ لا تضف تاريخًا. اختبار ج: «أرسل الملف قبل الثالثة»؛ يُسمح بإبقائه إذا كان واضحًا. لا تفتح روابط أو تشغّل ملفات من أجل التحرير. هذه مواصفة نصية تُكيّف مع صيغة SKILL.md الرسمية في أداة تدعمها؛ ليست حزمة قابلة للتثبيت وحدها.
@@ -8999,7 +8999,7 @@ First-party invitation to discuss the relevant service or request a Bunyan Pro d
 
 ### requiredAssets
 
-- Original AURENDOR vector logo and approved architectural assets
+- Original SOCIAL_MEDIA_PLUGIN vector logo and approved architectural assets
 
 - Ghroob Arabic ITF and Dh Ranclo brand fonts
 
@@ -9139,7 +9139,7 @@ evergreen research-led
 
 #### verifyBeforePublish
 
-Reopen cited mutable documentation 24–48 hours before publication; keep historical study versions and local survey scope explicit. Recheck offered AURENDOR scope. Examples must remain labelled.
+Reopen cited mutable documentation 24–48 hours before publication; keep historical study versions and local survey scope explicit. Recheck offered SOCIAL_MEDIA_PLUGIN scope. Examples must remain labelled.
 
 #### fallback
 
@@ -9581,7 +9581,7 @@ intermediate
 
 في هذا المثال الافتراضي نعرض تشطيب جدار الاستقبال ونسأل عن اللون والتوزيع. لا نطلب من العميل أن يحكم على أمور فنية لا تظهر في الصورة، ولا نصف العمل بأنه مستلم لمجرد رد «تمام».
 اجعل التحديث محدداً: الموضوع، الصورة المرجعية، المطلوب من العميل، والملاحظات المفتوحة. وفي بنيان برو يمكن إبقاء التعليق ضمن المرحلة، وتسجيل موافقة العميل عندما تكون المرحلة مكتملة في النظام. هذه الموافقة سجل تفاعل مع العميل؛ ليست توقيعاً إلكترونياً معتمداً أو شهادة فحص هندسي.
-المغزى الإداري هو تقليل غموض السؤال والرد. بحث التغييرات في مشاريع عراقية2018 — https://opencivilengineeringjournal.com/VOLUME/12/PAGE/458/FULLTEXT/ مصدر لسياق القرار؛ المثال والقالب من إعداد AURENDOR.
+المغزى الإداري هو تقليل غموض السؤال والرد. بحث التغييرات في مشاريع عراقية2018 — https://opencivilengineeringjournal.com/VOLUME/12/PAGE/458/FULLTEXT/ مصدر لسياق القرار؛ المثال والقالب من إعداد SOCIAL_MEDIA_PLUGIN.
 
 قالب جاهز للنسخ:
 تحديث للعميل
@@ -9612,7 +9612,7 @@ intermediate
 
 ### requiredAssets
 
-- الشعار وGhroob للعربية وDh Ranclo للإنجليزية من أصول AURENDOR المعتمدة
+- الشعار وGhroob للعربية وDh Ranclo للإنجليزية من أصول SOCIAL_MEDIA_PLUGIN المعتمدة
 
 - رسوم توضيحية أصلية للقالب في copyableTool؛ لا صور مولدة لواجهات المنتج
 
@@ -9636,7 +9636,7 @@ reel 9:16 / 56s
 
 في هذا المثال الافتراضي نعرض تشطيب جدار الاستقبال ونسأل عن اللون والتوزيع. لا نطلب من العميل أن يحكم على أمور فنية لا تظهر في الصورة، ولا نصف العمل بأنه مستلم لمجرد رد «تمام».
 اجعل التحديث محدداً: الموضوع، الصورة المرجعية، المطلوب من العميل، والملاحظات المفتوحة. وفي بنيان برو يمكن إبقاء التعليق ضمن المرحلة، وتسجيل موافقة العميل عندما تكون المرحلة مكتملة في النظام. هذه الموافقة سجل تفاعل مع العميل؛ ليست توقيعاً إلكترونياً معتمداً أو شهادة فحص هندسي.
-المغزى الإداري هو تقليل غموض السؤال والرد. بحث التغييرات في مشاريع عراقية2018 — https://opencivilengineeringjournal.com/VOLUME/12/PAGE/458/FULLTEXT/ مصدر لسياق القرار؛ المثال والقالب من إعداد AURENDOR.
+المغزى الإداري هو تقليل غموض السؤال والرد. بحث التغييرات في مشاريع عراقية2018 — https://opencivilengineeringjournal.com/VOLUME/12/PAGE/458/FULLTEXT/ مصدر لسياق القرار؛ المثال والقالب من إعداد SOCIAL_MEDIA_PLUGIN.
 
 قالب جاهز للنسخ:
 تحديث للعميل
@@ -9660,7 +9660,7 @@ native reel 9:16
 لأصحاب شركات المقاولات والمكاتب الهندسية:
 في هذا المثال الافتراضي نعرض تشطيب جدار الاستقبال ونسأل عن اللون والتوزيع. لا نطلب من العميل أن يحكم على أمور فنية لا تظهر في الصورة، ولا نصف العمل بأنه مستلم لمجرد رد «تمام».
 اجعل التحديث محدداً: الموضوع، الصورة المرجعية، المطلوب من العميل، والملاحظات المفتوحة. وفي بنيان برو يمكن إبقاء التعليق ضمن المرحلة، وتسجيل موافقة العميل عندما تكون المرحلة مكتملة في النظام. هذه الموافقة سجل تفاعل مع العميل؛ ليست توقيعاً إلكترونياً معتمداً أو شهادة فحص هندسي.
-المغزى الإداري هو تقليل غموض السؤال والرد. بحث التغييرات في مشاريع عراقية2018 — https://opencivilengineeringjournal.com/VOLUME/12/PAGE/458/FULLTEXT/ مصدر لسياق القرار؛ المثال والقالب من إعداد AURENDOR.
+المغزى الإداري هو تقليل غموض السؤال والرد. بحث التغييرات في مشاريع عراقية2018 — https://opencivilengineeringjournal.com/VOLUME/12/PAGE/458/FULLTEXT/ مصدر لسياق القرار؛ المثال والقالب من إعداد SOCIAL_MEDIA_PLUGIN.
 
 ناقشوا هذا الإجراء في اجتماع الموقع القادم.
 
@@ -10031,7 +10031,7 @@ Practical AI
 
 ### objective
 
-Give the reader a repeatable practical outcome independent of purchasing AURENDOR services.
+Give the reader a repeatable practical outcome independent of purchasing SOCIAL_MEDIA_PLUGIN services.
 
 ### funnel
 
@@ -10071,7 +10071,7 @@ documented capability + original fictional demonstration + editorial inference
 
 ### exampleDisclosure
 
-مثال تعليمي افتراضي من إعداد AURENDOR ، وليس نتيجة اختبار أداة أو تجربة عميل.
+مثال تعليمي افتراضي من إعداد SOCIAL_MEDIA_PLUGIN ، وليس نتيجة اختبار أداة أو تجربة عميل.
 
 ### units
 
@@ -10223,7 +10223,7 @@ First-party invitation to discuss the relevant service or request a Bunyan Pro d
 
 ### requiredAssets
 
-- Original AURENDOR brand fonts Ghroob and Dh Ranclo; existing green/white identity.
+- Original SOCIAL_MEDIA_PLUGIN brand fonts Ghroob and Dh Ranclo; existing green/white identity.
 
 - An original teaching artifact specified per unit; visible مثال توضيحي label.
 
@@ -10309,7 +10309,7 @@ photo carousel
 
 جدولك يحتاج 120 دقيقة… وعندك 90.
 طلب تخطيط يكشف 30 دقيقة نقص ويعرض خيار تأجيل واضح بدل اختصار الزمن سرًا.
-مثال تعليمي افتراضي من إعداد AURENDOR ، وليس نتيجة اختبار أداة أو تجربة عميل.
+مثال تعليمي افتراضي من إعداد SOCIAL_MEDIA_PLUGIN ، وليس نتيجة اختبار أداة أو تجربة عميل.
 
 قالب للنسخ:
 نظّم أمسية مدتها 90 دقيقة. المهام: دراسة 45 دقيقة لا تُجزّأ؛ لغة 30 دقيقة؛ ترتيب ملفات 30 دقيقة يمكن تأجيله للغد؛ راحة 15 دقيقة ثابتة. لا تشغّل مهام بالتوازي ولا تخفض المدة. أولًا احسب المجموع والعجز. ثم اعرض خيارين مع المهمة المؤجلة في كل خيار، وما الذي أخسره باختيار كل منهما. لا تغيّر أي تقويم. اختبار القبول: كل خيار لا يتجاوز 90 دقيقة ويذكر صراحة ما لم يتسع له الوقت. الإجمالي المتوقع 120 والعجز 30. إذا أضفت قيدًا يجعل الخطة مستحيلة، قل ذلك قبل الجدولة.
@@ -10766,7 +10766,7 @@ First-party invitation to discuss the relevant service or request a Bunyan Pro d
 
 ### requiredAssets
 
-- الشعار وGhroob للعربية وDh Ranclo للإنجليزية من أصول AURENDOR المعتمدة
+- الشعار وGhroob للعربية وDh Ranclo للإنجليزية من أصول SOCIAL_MEDIA_PLUGIN المعتمدة
 
 - رسوم توضيحية أصلية للقالب في copyableTool؛ لا صور مولدة لواجهات المنتج
 
@@ -11331,7 +11331,7 @@ First-party invitation to discuss the relevant service or request a Bunyan Pro d
 
 ### requiredAssets
 
-- Original AURENDOR vector logo and approved architectural assets
+- Original SOCIAL_MEDIA_PLUGIN vector logo and approved architectural assets
 
 - Ghroob Arabic ITF and Dh Ranclo brand fonts
 
@@ -11451,7 +11451,7 @@ evergreen research-led
 
 #### verifyBeforePublish
 
-Reopen cited mutable documentation 24–48 hours before publication; keep historical study versions and local survey scope explicit. Recheck offered AURENDOR scope. Examples must remain labelled.
+Reopen cited mutable documentation 24–48 hours before publication; keep historical study versions and local survey scope explicit. Recheck offered SOCIAL_MEDIA_PLUGIN scope. Examples must remain labelled.
 
 #### fallback
 
@@ -11667,7 +11667,7 @@ Practical AI
 
 ### objective
 
-Give the reader a repeatable practical outcome independent of purchasing AURENDOR services.
+Give the reader a repeatable practical outcome independent of purchasing SOCIAL_MEDIA_PLUGIN services.
 
 ### funnel
 
@@ -11707,7 +11707,7 @@ documented capability + original fictional demonstration + editorial inference
 
 ### exampleDisclosure
 
-مثال تعليمي افتراضي من إعداد AURENDOR ، وليس نتيجة اختبار أداة أو تجربة عميل.
+مثال تعليمي افتراضي من إعداد SOCIAL_MEDIA_PLUGIN ، وليس نتيجة اختبار أداة أو تجربة عميل.
 
 ### units
 
@@ -11878,7 +11878,7 @@ Original labeled teaching example / editorial method
 
 ### requiredAssets
 
-- Original AURENDOR brand fonts Ghroob and Dh Ranclo; existing green/white identity.
+- Original SOCIAL_MEDIA_PLUGIN brand fonts Ghroob and Dh Ranclo; existing green/white identity.
 
 - An original teaching artifact specified per unit; visible مثال توضيحي label.
 
@@ -11964,7 +11964,7 @@ vertical video
 
 قبل أن يرتّب ملاحظاتك… تأكد أنه قرأها.
 خطوتان لصورة ملاحظات: تفريغ مع مواضع الشك، ثم تنظيم النص المصحح.
-مثال تعليمي افتراضي من إعداد AURENDOR ، وليس نتيجة اختبار أداة أو تجربة عميل.
+مثال تعليمي افتراضي من إعداد SOCIAL_MEDIA_PLUGIN ، وليس نتيجة اختبار أداة أو تجربة عميل.
 
 قالب للنسخ:
 سأرفق صورة لملاحظات غير حساسة. المرحلة 1: انسخ النص مع ترتيب الأسطر. لا تلخّص ولا تصحّح المعنى. ضع[غيرواضح] عند ما لا تستطيع قراءته، أو احتمالين فقط إذا كان الالتباس محددًا. لا تستنتج تواريخ أو أسماء من السياق. انتظر تصحيحي. المرحلة 2: حوّل النص الذي صححته إلى قائمة: المهمة، الجزء المطلوب، الموعد المذكور صراحة. اكتب“غيرمذكور” عند نقص الموعد. معيار القبول: كل رقم واسم وموعد في القائمة قابل للمطابقة مع النص المصحح. مثال: “مراجعة الفصل[4 أو 9؟]” يبقى سؤالًا قبل أن يصبح مهمة.
@@ -12478,7 +12478,7 @@ Original illustrative artifact; not a product screenshot or client evidence.
 
 ### requiredAssets
 
-- Original AURENDOR vector logo and approved architectural assets
+- Original SOCIAL_MEDIA_PLUGIN vector logo and approved architectural assets
 
 - Ghroob Arabic ITF and Dh Ranclo brand fonts
 
@@ -12604,7 +12604,7 @@ evergreen research-led
 
 #### verifyBeforePublish
 
-Reopen cited mutable documentation 24–48 hours before publication; keep historical study versions and local survey scope explicit. Recheck offered AURENDOR scope. Examples must remain labelled.
+Reopen cited mutable documentation 24–48 hours before publication; keep historical study versions and local survey scope explicit. Recheck offered SOCIAL_MEDIA_PLUGIN scope. Examples must remain labelled.
 
 #### fallback
 
@@ -13086,7 +13086,7 @@ ___ | ___ | ___
 
 ### requiredAssets
 
-- الشعار وGhroob للعربية وDh Ranclo للإنجليزية من أصول AURENDOR المعتمدة
+- الشعار وGhroob للعربية وDh Ranclo للإنجليزية من أصول SOCIAL_MEDIA_PLUGIN المعتمدة
 
 - رسوم توضيحية أصلية للقالب في copyableTool؛ لا صور مولدة لواجهات المنتج
 
@@ -13457,7 +13457,7 @@ Practical AI
 
 ### objective
 
-Give the reader a repeatable practical outcome independent of purchasing AURENDOR services.
+Give the reader a repeatable practical outcome independent of purchasing SOCIAL_MEDIA_PLUGIN services.
 
 ### funnel
 
@@ -13497,7 +13497,7 @@ documented capability + original fictional demonstration + editorial inference
 
 ### exampleDisclosure
 
-مثال تعليمي افتراضي من إعداد AURENDOR ، وليس نتيجة اختبار أداة أو تجربة عميل.
+مثال تعليمي افتراضي من إعداد SOCIAL_MEDIA_PLUGIN ، وليس نتيجة اختبار أداة أو تجربة عميل.
 
 ### units
 
@@ -13649,7 +13649,7 @@ First-party invitation to discuss the relevant service or request a Bunyan Pro d
 
 ### requiredAssets
 
-- Original AURENDOR brand fonts Ghroob and Dh Ranclo; existing green/white identity.
+- Original SOCIAL_MEDIA_PLUGIN brand fonts Ghroob and Dh Ranclo; existing green/white identity.
 
 - An original teaching artifact specified per unit; visible مثال توضيحي label.
 
@@ -13735,7 +13735,7 @@ photo carousel
 
 العرض جميل. هل تستطيع تعديل كلمة فيه؟
 فحص تسليم عرض عربي: حرّر كلمة، أعد فتح الملف، وافحص اتجاه النص والقالب ومصدر الادعاء.
-مثال تعليمي افتراضي من إعداد AURENDOR ، وليس نتيجة اختبار أداة أو تجربة عميل.
+مثال تعليمي افتراضي من إعداد SOCIAL_MEDIA_PLUGIN ، وليس نتيجة اختبار أداة أو تجربة عميل.
 
 قالب للنسخ:
 أنشئ عرضًا من 5 شرائح من النص المرفق، بالقالب المرفق إن كانت أدوات الملفات متاحة. سلّم ملف عرض قابلًا للتحرير، لا صورًا مفلطحة بدل النصوص. حافظ على الخطوط والألوان والهوامش، واضبط العربية من اليمين إلى اليسار مع محاذاة صحيحة. إذا كان خط القالب غير متاح، أخبرني قبل استبداله. لكل ادعاء مهم، ضع عبارة المصدر وموضعها في ملاحظات الشريحة أو ملف مراجع مرافق. ميّز أي مثال تؤلفه. سأفتح الملف وأبدّل كلمة «مسودة» إلى «نسخة نهائية»، ثم أحفظه وأعيد فتحه: يجب أن يبقى النص قابلًا للتحرير بلا قصّ أو تغيّر غير مقصود في القالب. إذا لم تستطع إنشاء ملف بهذه المواصفات، قل ذلك وقدّم محتوى منظمًا للنقل إلى القالب دون ادعاء التصدير.
@@ -14231,7 +14231,7 @@ First-party invitation to discuss the relevant service or request a Bunyan Pro d
 
 ### requiredAssets
 
-- Original AURENDOR vector logo and approved architectural assets
+- Original SOCIAL_MEDIA_PLUGIN vector logo and approved architectural assets
 
 - Ghroob Arabic ITF and Dh Ranclo brand fonts
 
@@ -14363,7 +14363,7 @@ evergreen research-led
 
 #### verifyBeforePublish
 
-Reopen cited mutable documentation 24–48 hours before publication; keep historical study versions and local survey scope explicit. Recheck offered AURENDOR scope. Examples must remain labelled.
+Reopen cited mutable documentation 24–48 hours before publication; keep historical study versions and local survey scope explicit. Recheck offered SOCIAL_MEDIA_PLUGIN scope. Examples must remain labelled.
 
 #### fallback
 
@@ -14611,7 +14611,7 @@ intermediate
 
 ### researchInsight
 
-دليل ILO يضع إدارة الأعمال ضمن كفاءات المقاول. الزاوية هنا اقتراح AURENDOR لتوثيق نطاق العمل، وليست دراسة تثبت ارتفاع المبيعات بالمعارض.
+دليل ILO يضع إدارة الأعمال ضمن كفاءات المقاول. الزاوية هنا اقتراح SOCIAL_MEDIA_PLUGIN لتوثيق نطاق العمل، وليست دراسة تثبت ارتفاع المبيعات بالمعارض.
 
 ### claimType
 
@@ -14804,7 +14804,7 @@ Portfolio الفعلي ببيانات توضيحية ثم القالب
 ### caption
 
 قبل إضافة مشروع إلى المعرض، اسأل: هل تصف الصفحة ما نفذته شركتك فعلاً أم تترك الصورة توحي بأنكم نفذتم كل شيء؟
-بطاقة واضحة تقول: نوع المشروع، دور المكتب وحدوده، تحدٍ محدد، ودليل نملك حق عرضه. لا حاجة لاختراع شهادة عميل أو نسبة توفير. المثال في الفيديو تعليمي وليس مشروعاً نفذته AURENDOR أو عميل بنيان.
+بطاقة واضحة تقول: نوع المشروع، دور المكتب وحدوده، تحدٍ محدد، ودليل نملك حق عرضه. لا حاجة لاختراع شهادة عميل أو نسبة توفير. المثال في الفيديو تعليمي وليس مشروعاً نفذته SOCIAL_MEDIA_PLUGIN أو عميل بنيان.
 بنيان برو يتيح تنظيم معرض الأعمال ووسائطه. المنفعة أن يصبح المشروع قابلاً للفهم لدى عميل يبحث عن نطاق يشبه حاجته. لا نعد بأن نشره يحقق مبيعات محددة. اكتب البطاقة باستخدام القالب ثم راجع إذن نشر الصور والبيانات. موارد ILO لإدارة البناء — https://www.ilo.org/publications/enhancing-labour-based-construction-management مرجع سياقي عام.
 
 قالب جاهز للنسخ:
@@ -14838,7 +14838,7 @@ Portfolio الفعلي ببيانات توضيحية ثم القالب
 
 ### requiredAssets
 
-- الشعار وGhroob للعربية وDh Ranclo للإنجليزية من أصول AURENDOR المعتمدة
+- الشعار وGhroob للعربية وDh Ranclo للإنجليزية من أصول SOCIAL_MEDIA_PLUGIN المعتمدة
 
 - رسوم توضيحية أصلية للقالب في copyableTool؛ لا صور مولدة لواجهات المنتج
 
@@ -14861,7 +14861,7 @@ reel 9:16 / 56s
 ##### caption
 
 قبل إضافة مشروع إلى المعرض، اسأل: هل تصف الصفحة ما نفذته شركتك فعلاً أم تترك الصورة توحي بأنكم نفذتم كل شيء؟
-بطاقة واضحة تقول: نوع المشروع، دور المكتب وحدوده، تحدٍ محدد، ودليل نملك حق عرضه. لا حاجة لاختراع شهادة عميل أو نسبة توفير. المثال في الفيديو تعليمي وليس مشروعاً نفذته AURENDOR أو عميل بنيان.
+بطاقة واضحة تقول: نوع المشروع، دور المكتب وحدوده، تحدٍ محدد، ودليل نملك حق عرضه. لا حاجة لاختراع شهادة عميل أو نسبة توفير. المثال في الفيديو تعليمي وليس مشروعاً نفذته SOCIAL_MEDIA_PLUGIN أو عميل بنيان.
 بنيان برو يتيح تنظيم معرض الأعمال ووسائطه. المنفعة أن يصبح المشروع قابلاً للفهم لدى عميل يبحث عن نطاق يشبه حاجته. لا نعد بأن نشره يحقق مبيعات محددة. اكتب البطاقة باستخدام القالب ثم راجع إذن نشر الصور والبيانات. موارد ILO لإدارة البناء — https://www.ilo.org/publications/enhancing-labour-based-construction-management مرجع سياقي عام.
 
 قالب جاهز للنسخ:
@@ -14886,7 +14886,7 @@ native reel 9:16
 
 لأصحاب شركات المقاولات والمكاتب الهندسية:
 قبل إضافة مشروع إلى المعرض، اسأل: هل تصف الصفحة ما نفذته شركتك فعلاً أم تترك الصورة توحي بأنكم نفذتم كل شيء؟
-بطاقة واضحة تقول: نوع المشروع، دور المكتب وحدوده، تحدٍ محدد، ودليل نملك حق عرضه. لا حاجة لاختراع شهادة عميل أو نسبة توفير. المثال في الفيديو تعليمي وليس مشروعاً نفذته AURENDOR أو عميل بنيان.
+بطاقة واضحة تقول: نوع المشروع، دور المكتب وحدوده، تحدٍ محدد، ودليل نملك حق عرضه. لا حاجة لاختراع شهادة عميل أو نسبة توفير. المثال في الفيديو تعليمي وليس مشروعاً نفذته SOCIAL_MEDIA_PLUGIN أو عميل بنيان.
 بنيان برو يتيح تنظيم معرض الأعمال ووسائطه. المنفعة أن يصبح المشروع قابلاً للفهم لدى عميل يبحث عن نطاق يشبه حاجته. لا نعد بأن نشره يحقق مبيعات محددة. اكتب البطاقة باستخدام القالب ثم راجع إذن نشر الصور والبيانات. موارد ILO لإدارة البناء — https://www.ilo.org/publications/enhancing-labour-based-construction-management مرجع سياقي عام.
 
 ناقشوا هذا الإجراء في اجتماع الموقع القادم.
@@ -15262,7 +15262,7 @@ Practical AI
 
 ### objective
 
-Give the reader a repeatable practical outcome independent of purchasing AURENDOR services.
+Give the reader a repeatable practical outcome independent of purchasing SOCIAL_MEDIA_PLUGIN services.
 
 ### funnel
 
@@ -15302,7 +15302,7 @@ documented capability + original fictional demonstration + editorial inference
 
 ### exampleDisclosure
 
-مثال تعليمي افتراضي من إعداد AURENDOR ، وليس نتيجة اختبار أداة أو تجربة عميل.
+مثال تعليمي افتراضي من إعداد SOCIAL_MEDIA_PLUGIN ، وليس نتيجة اختبار أداة أو تجربة عميل.
 
 ### units
 
@@ -15454,7 +15454,7 @@ First-party invitation to discuss the relevant service or request a Bunyan Pro d
 
 ### requiredAssets
 
-- Original AURENDOR brand fonts Ghroob and Dh Ranclo; existing green/white identity.
+- Original SOCIAL_MEDIA_PLUGIN brand fonts Ghroob and Dh Ranclo; existing green/white identity.
 
 - An original teaching artifact specified per unit; visible مثال توضيحي label.
 
@@ -15540,7 +15540,7 @@ photo carousel
 
 المصطلح نفسه… لا تترجمه بثلاث طرق.
 جدول مصطلحات عربي/إنجليزي يتضمن المعنى والاستثناء قبل الترجمة.
-مثال تعليمي افتراضي من إعداد AURENDOR ، وليس نتيجة اختبار أداة أو تجربة عميل.
+مثال تعليمي افتراضي من إعداد SOCIAL_MEDIA_PLUGIN ، وليس نتيجة اختبار أداة أو تجربة عميل.
 
 قالب للنسخ:
 ترجم النص مع قاموس القرار التالي: course في ملف الجامعة = مقرر دراسي؛ course في الطعام = طبق. المدخل التعليمي: “The course materials are ready. The course evaluation opens on Sunday. The main course will be served at seven.” المخرج المتوقع: «مواد المقرر الدراسي جاهزة. يبدأ تقييم المقرر الدراسي يوم الأحد. سيُقدّم الطبق الرئيسي عند السابعة». لا تغيّر المقرر إلى البرنامج في الجملة الثانية؛ المقصود هو المفهوم نفسه. لا تضف صباحًا أو مساءً لأن المصدر لا يحدّد. بعد ترجمة النص الفعلي، أعطني المصطلح والجملة وأي خروج عن القاموس مع السبب. معيار القبول: نفس المفهوم بنفس المقابل، والاستثناء مبرّر بتغيّر المعنى.
@@ -15821,7 +15821,7 @@ documented principles + editorial inference + explicitly synthetic worked exampl
 
 - S-AGENTS-2024
 
-- S-AURENDOR
+- S-SOCIAL_MEDIA_PLUGIN
 
 ### exampleDisclosure
 
@@ -16023,7 +16023,7 @@ First-party invitation to discuss the relevant service or request a Bunyan Pro d
 
 ### requiredAssets
 
-- Original AURENDOR vector logo and approved architectural assets
+- Original SOCIAL_MEDIA_PLUGIN vector logo and approved architectural assets
 
 - Ghroob Arabic ITF and Dh Ranclo brand fonts
 
@@ -16175,7 +16175,7 @@ evergreen research-led
 
 #### verifyBeforePublish
 
-Reopen cited mutable documentation 24–48 hours before publication; keep historical study versions and local survey scope explicit. Recheck offered AURENDOR scope. Examples must remain labelled.
+Reopen cited mutable documentation 24–48 hours before publication; keep historical study versions and local survey scope explicit. Recheck offered SOCIAL_MEDIA_PLUGIN scope. Examples must remain labelled.
 
 #### fallback
 
@@ -16573,7 +16573,7 @@ First-party invitation to discuss the relevant service or request a Bunyan Pro d
 ### caption
 
 ابدأ بمشروع واحد وسجل طريقة العمل الحالية قبل تغييرها. اختَر ثلاثة أسئلة حقيقية، وسجّل الزمن والنواقص، ثم أعد الاختبار بأسئلة مشابهة بعد أسبوع. إذا أعطيت الفريق الأسئلة نفسها حرفياً، قد تقيس الحفظ بدلاً من تحسن المتابعة.
-حدّد مسبقاً ما تعتبره نجاحاً، مثل وجود مرجع لكل تغيير في العينة، وقدرة شخص آخر على الوصول إليه، وعبء تحديث مقبول للفريق. هذه معايير يقترحها المكتب وليست نتائج أو وعوداً من AURENDOR.
+حدّد مسبقاً ما تعتبره نجاحاً، مثل وجود مرجع لكل تغيير في العينة، وقدرة شخص آخر على الوصول إليه، وعبء تحديث مقبول للفريق. هذه معايير يقترحها المكتب وليست نتائج أو وعوداً من SOCIAL_MEDIA_PLUGIN.
 بنيان برو يمكن أن يكون أداة التجربة عبر التقارير والتغييرات والملاحظات والملفات. اطلب عرضاً مبنياً على أسئلتك الثلاثة، لا على استعراض كل قائمة. تجربة ILO للرصد الرقمي — https://prospectslearnings.ilo.org/interventions/employment-intensive-investment-programmes-eiip/case-studies/digital-monitoring-conducted-engineering-students سياق لفكرة البدء المحدود.
 
 قالب جاهز للنسخ:
@@ -16613,7 +16613,7 @@ First-party invitation to discuss the relevant service or request a Bunyan Pro d
 
 ### requiredAssets
 
-- الشعار وGhroob للعربية وDh Ranclo للإنجليزية من أصول AURENDOR المعتمدة
+- الشعار وGhroob للعربية وDh Ranclo للإنجليزية من أصول SOCIAL_MEDIA_PLUGIN المعتمدة
 
 - رسوم توضيحية أصلية للقالب في copyableTool؛ لا صور مولدة لواجهات المنتج
 
@@ -16636,7 +16636,7 @@ carousel 4:5
 ##### caption
 
 ابدأ بمشروع واحد وسجل طريقة العمل الحالية قبل تغييرها. اختَر ثلاثة أسئلة حقيقية، وسجّل الزمن والنواقص، ثم أعد الاختبار بأسئلة مشابهة بعد أسبوع. إذا أعطيت الفريق الأسئلة نفسها حرفياً، قد تقيس الحفظ بدلاً من تحسن المتابعة.
-حدّد مسبقاً ما تعتبره نجاحاً، مثل وجود مرجع لكل تغيير في العينة، وقدرة شخص آخر على الوصول إليه، وعبء تحديث مقبول للفريق. هذه معايير يقترحها المكتب وليست نتائج أو وعوداً من AURENDOR.
+حدّد مسبقاً ما تعتبره نجاحاً، مثل وجود مرجع لكل تغيير في العينة، وقدرة شخص آخر على الوصول إليه، وعبء تحديث مقبول للفريق. هذه معايير يقترحها المكتب وليست نتائج أو وعوداً من SOCIAL_MEDIA_PLUGIN.
 بنيان برو يمكن أن يكون أداة التجربة عبر التقارير والتغييرات والملاحظات والملفات. اطلب عرضاً مبنياً على أسئلتك الثلاثة، لا على استعراض كل قائمة. تجربة ILO للرصد الرقمي — https://prospectslearnings.ilo.org/interventions/employment-intensive-investment-programmes-eiip/case-studies/digital-monitoring-conducted-engineering-students سياق لفكرة البدء المحدود.
 
 قالب جاهز للنسخ:
@@ -16664,7 +16664,7 @@ numbered image album
 
 لأصحاب شركات المقاولات والمكاتب الهندسية:
 ابدأ بمشروع واحد وسجل طريقة العمل الحالية قبل تغييرها. اختَر ثلاثة أسئلة حقيقية، وسجّل الزمن والنواقص، ثم أعد الاختبار بأسئلة مشابهة بعد أسبوع. إذا أعطيت الفريق الأسئلة نفسها حرفياً، قد تقيس الحفظ بدلاً من تحسن المتابعة.
-حدّد مسبقاً ما تعتبره نجاحاً، مثل وجود مرجع لكل تغيير في العينة، وقدرة شخص آخر على الوصول إليه، وعبء تحديث مقبول للفريق. هذه معايير يقترحها المكتب وليست نتائج أو وعوداً من AURENDOR.
+حدّد مسبقاً ما تعتبره نجاحاً، مثل وجود مرجع لكل تغيير في العينة، وقدرة شخص آخر على الوصول إليه، وعبء تحديث مقبول للفريق. هذه معايير يقترحها المكتب وليست نتائج أو وعوداً من SOCIAL_MEDIA_PLUGIN.
 بنيان برو يمكن أن يكون أداة التجربة عبر التقارير والتغييرات والملاحظات والملفات. اطلب عرضاً مبنياً على أسئلتك الثلاثة، لا على استعراض كل قائمة. تجربة ILO للرصد الرقمي — https://prospectslearnings.ilo.org/interventions/employment-intensive-investment-programmes-eiip/case-studies/digital-monitoring-conducted-engineering-students سياق لفكرة البدء المحدود.
 
 ناقشوا هذا الإجراء في اجتماع الموقع القادم.
@@ -16993,7 +16993,7 @@ Practical AI
 
 ### objective
 
-Give the reader a repeatable practical outcome independent of purchasing AURENDOR services.
+Give the reader a repeatable practical outcome independent of purchasing SOCIAL_MEDIA_PLUGIN services.
 
 ### funnel
 
@@ -17033,7 +17033,7 @@ documented capability + original fictional demonstration + editorial inference
 
 ### exampleDisclosure
 
-مثال تعليمي افتراضي من إعداد AURENDOR ، وليس نتيجة اختبار أداة أو تجربة عميل.
+مثال تعليمي افتراضي من إعداد SOCIAL_MEDIA_PLUGIN ، وليس نتيجة اختبار أداة أو تجربة عميل.
 
 ### units
 
@@ -17204,7 +17204,7 @@ Original labeled teaching example / editorial method
 
 ### requiredAssets
 
-- Original AURENDOR brand fonts Ghroob and Dh Ranclo; existing green/white identity.
+- Original SOCIAL_MEDIA_PLUGIN brand fonts Ghroob and Dh Ranclo; existing green/white identity.
 
 - An original teaching artifact specified per unit; visible مثال توضيحي label.
 
@@ -17290,7 +17290,7 @@ vertical video
 
 تابع القدرة التي تحتاجها، لا كل أخبار AI.
 قالب متابعة محدود لأداة تفريغ عربي مع تمييز الإعلان من الإتاحة والفائدة العملية.
-مثال تعليمي افتراضي من إعداد AURENDOR ، وليس نتيجة اختبار أداة أو تجربة عميل.
+مثال تعليمي افتراضي من إعداد SOCIAL_MEDIA_PLUGIN ، وليس نتيجة اختبار أداة أو تجربة عميل.
 
 قالب للنسخ:
 أنشئ متابعة لمدة 14 يومًا إذا كانت المهام المجدولة متاحة. افحص يوميًا في فترة المساء بتوقيت Asia/Baghdad المصادر الرسمية لهاتين الأداتين: [حدّد أداتين تستخدمهما]. سؤالي: هل أضافتا تفريغًا للعربية مع التوقيتات وتصدير SRT ؟ لا تبحث عن كل أخبار AI. عند تغير مهم، أرسل: القدرة، تاريخ الإعلان، حالة الإتاحة والقيود الموثقة، الرابط الأصلي، واختبارًا واحدًا بمقطع أملكه. ميّز بين الإعلان والطرح الفعلي. لا تدّعِ دعم اللهجة العراقية إذا لم يوثّق المصدر ذلك. لا تكرر خبرًا أرسلته. إذا لم يوجد مفيد، ابقَ صامتًا حيث تسمح إعدادات المهمة. عند نهاية 14 يومًا، توقف وأعطني ما استحق المحاولة. اعرض بطاقة تأكيد المهمة وجدولها؛ إن لم تملك تلك القدرة، قل ذلك وقدّم تذكيرًا يدويًا. لا تشترك ولا ترسل ملفات لأي خدمة.
@@ -17899,11 +17899,11 @@ Bunyan Pro source verification, September 10 2026
 
 ### publisher
 
-AURENDOR
+SOCIAL_MEDIA_PLUGIN
 
 ### url
 
-/Users/muhammedjameel/Documents/AURENDOR/apps/construction-tracker/src
+/Users/muhammedjameel/Documents/SOCIAL_MEDIA_PLUGIN/apps/construction-tracker/src
 
 ### publishedDate
 
@@ -18015,7 +18015,7 @@ Targeted edits, Sketch, all-tier rollout announced September8
 
 ### limitation
 
-Publisher claims; no AURENDOR comparison test or guaranteed unchanged pixels.
+Publisher claims; no SOCIAL_MEDIA_PLUGIN comparison test or guaranteed unchanged pixels.
 
 ### sourceType
 
@@ -18651,7 +18651,7 @@ Retrieval supplies business knowledge; exact identifiers may require lexical sea
 
 ### limitation
 
-Not proof of Iraqi Arabic quality, access control implementation or AURENDOR deployed system; no benchmark percentages used.
+Not proof of Iraqi Arabic quality, access control implementation or SOCIAL_MEDIA_PLUGIN deployed system; no benchmark percentages used.
 
 ### sourceType
 
@@ -18779,11 +18779,11 @@ original research preprint
 
 ### id
 
-S-AURENDOR
+S-SOCIAL_MEDIA_PLUGIN
 
 ### title
 
-AURENDOR authorized service scope
+SOCIAL_MEDIA_PLUGIN authorized service scope
 
 ### publisher
 

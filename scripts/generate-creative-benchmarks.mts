@@ -1,7 +1,7 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import {
-  AURENDOR_CREATIVE_BRAND_VERSION,
+  SOCIAL_MEDIA_PLUGIN_CREATIVE_BRAND_VERSION,
   CANONICAL_HORIZONTAL_LOGO_SOURCE_SHA256,
   duplicateCreativeFingerprints,
   evaluateTechnicalCreativePreflight,
@@ -104,7 +104,7 @@ const benchmarkDefinitions: BenchmarkDefinition[] = [
       kicker: "FROM PROJECTS TO SYSTEMS",
       headline: "Digital growth needs an operating system",
       support: "Connect strategy, product, data, and AI around decisions your team can execute and measure.",
-      footer: "AURENDOR · Build what compounds",
+      footer: "SOCIAL_MEDIA_PLUGIN · Build what compounds",
       direction: "ltr",
       mode: "light",
       width: 1080,
@@ -154,10 +154,10 @@ const sharedLimitations = [
 const manifest = {
   schemaVersion: "1.0.0",
   generatorVersion: "1.0.0",
-  brandVersion: AURENDOR_CREATIVE_BRAND_VERSION,
+  brandVersion: SOCIAL_MEDIA_PLUGIN_CREATIVE_BRAND_VERSION,
   deterministic: true,
   canonicalLogo: {
-    source: "AURENDOR VISUAL IDENTITY/logo versions/horizontal logo/SVG/Asset 14.svg",
+    source: "SOCIAL_MEDIA_PLUGIN VISUAL IDENTITY/logo versions/horizontal logo/SVG/Asset 14.svg",
     sourceSha256: CANONICAL_HORIZONTAL_LOGO_SOURCE_SHA256,
     embedding: "Exact path geometry with mode-specific canonical fill.",
   },
@@ -205,7 +205,7 @@ const manifest = {
 
 await writeFile(new URL("manifest.json", `file://${outputDirectory}/`), `${JSON.stringify(manifest, null, 2)}\n`, "utf8");
 
-const readme = `# AURENDOR creative benchmarks\n\nThese three deterministic SVG masters exercise Arabic RTL, light/dark contrast, English LTR rendering, the canonical horizontal logo, and one materially different system-map layout against the FINAL 2026 identity. The matching PNG files are inspected Chromium smoke-check previews, not publishing exports.\n\nThey are benchmark inputs, not approved social posts. The manifest records generator-level objective checks and intentionally leaves its own visual inspection as \`NOT_PERFORMED\`. A separate dated review artifact records one pre-revision independent critique plus a post-revision raster smoke check; because every asset hash changed during revision, it correctly leaves the current set at \`REVISE\` with two current-hash critics still required. Before publication, rasterize with the production fonts, inspect at mobile size, obtain two independent visual critiques, complete brand/compliance review, and bind the approved asset hash to the publication plan.\n`;
+const readme = `# SOCIAL_MEDIA_PLUGIN creative benchmarks\n\nThese three deterministic SVG masters exercise Arabic RTL, light/dark contrast, English LTR rendering, the canonical horizontal logo, and one materially different system-map layout against the FINAL 2026 identity. The matching PNG files are inspected Chromium smoke-check previews, not publishing exports.\n\nThey are benchmark inputs, not approved social posts. The manifest records generator-level objective checks and intentionally leaves its own visual inspection as \`NOT_PERFORMED\`. A separate dated review artifact records one pre-revision independent critique plus a post-revision raster smoke check; because every asset hash changed during revision, it correctly leaves the current set at \`REVISE\` with two current-hash critics still required. Before publication, rasterize with the production fonts, inspect at mobile size, obtain two independent visual critiques, complete brand/compliance review, and bind the approved asset hash to the publication plan.\n`;
 await writeFile(new URL("README.md", `file://${outputDirectory}/`), readme, "utf8");
 
-console.log(`Generated ${rendered.length} AURENDOR creative benchmarks in ${outputDirectory}`);
+console.log(`Generated ${rendered.length} SOCIAL_MEDIA_PLUGIN creative benchmarks in ${outputDirectory}`);

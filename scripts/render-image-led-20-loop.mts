@@ -67,7 +67,7 @@ function shell(candidate: Candidate, sourceBytes: Uint8Array) {
   const sourceUri = dataUri("image/png", sourceBytes);
   const dark = candidate.theme === "dark";
   const logoFill = dark ? "#F4F8F5" : "#003F35";
-  const logo = `<svg class="brand-logo" viewBox="0 0 414.84 85.88" aria-label="AURENDOR">${renderCanonicalHorizontalLogo(logoFill, 0, 0, 414.84)}</svg>`;
+  const logo = `<svg class="brand-logo" viewBox="0 0 414.84 85.88" aria-label="SOCIAL_MEDIA_PLUGIN">${renderCanonicalHorizontalLogo(logoFill, 0, 0, 414.84)}</svg>`;
   return `<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"/><title>${candidate.id}</title><style>
 @font-face{font-family:Ghroob;src:url('${dataUri("font/otf", arabicRegular)}') format('opentype');font-weight:400}
 @font-face{font-family:Ghroob;src:url('${dataUri("font/otf", arabicBold)}') format('opentype');font-weight:700}

@@ -46,7 +46,7 @@ function dotField() {
 }
 
 function shell(content: string, title: string, background: string, logoFill: string) {
-  const logo = `<svg class="brand-logo" viewBox="0 0 414.84 85.88" aria-label="AURENDOR">${renderCanonicalHorizontalLogo(logoFill, 0, 0, 414.84)}</svg>`;
+  const logo = `<svg class="brand-logo" viewBox="0 0 414.84 85.88" aria-label="SOCIAL_MEDIA_PLUGIN">${renderCanonicalHorizontalLogo(logoFill, 0, 0, 414.84)}</svg>`;
   return `<!doctype html>
 <html lang="ar" dir="rtl">
 <head>

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { getDatabase } from "@aurendor/db/runtime";
-import { canonicalSha256, currentPackage, listProductionJobs } from "@aurendor/engine";
+import { getDatabase } from "@social-media-plugin/db/runtime";
+import { canonicalSha256, currentPackage, listProductionJobs } from "@social-media-plugin/engine";
 import { PageHeader } from "@/components/page-header";
 import { EmptyState, Panel } from "@/components/panel";
 import { requireOwner } from "@/lib/auth";

@@ -7,20 +7,20 @@
 
 - Canva is a creative/edit/export provider, not a social scheduler.
 - Facebook Pages, Instagram professional accounts, and LinkedIn organization pages can be automated after OAuth, scopes, review, storage, sandbox, and first-publish validation.
-- TikTok is draft upload/manual handoff for this internal AURENDOR utility. Its current Direct Post guidelines reject private/internal upload utilities as an acceptable audited public client.
+- TikTok is draft upload/manual handoff for this internal SOCIAL_MEDIA_PLUGIN utility. Its current Direct Post guidelines reject private/internal upload utilities as an acceptable audited public client.
 - YouTube stays optional until account need and audit readiness are confirmed.
 - Every adapter exposes granular capability state and never maps “not configured” to “supported in production.”
 
 ## Postiz gateway
 
-Account setup recheck — 2026-09-08: X OAuth succeeded for `@aurendor_io`; no live post was tested, and its developer console showed zero credits. LinkedIn organization OAuth completed after the owner obtained Advertising API access, and Postiz saved the Aurendor Page. TikTok sandbox is saved for target `aurendor.io`, with only `user.info.basic` and `video.upload`; private credentials are installed. A pinned, hash-guarded upload-only Postiz patch prevents upstream's broad-scope request and rejects Direct Post in both backend and worker. Its 11 contract checks and 10 existing gateway/executor tests passed. Live sandbox OAuth and a two-photo inbox handoff succeeded on Postiz's side; owner mobile confirmation remains pending. Production upload access is not yet approved. See [setup evidence](../setup/POSTIZ.md). These are configuration/sandbox observations, not production capability grants.
+Account setup recheck — 2026-09-08: X OAuth succeeded for `@social_media_plugin_io`; no live post was tested, and its developer console showed zero credits. LinkedIn organization OAuth completed after the owner obtained Advertising API access, and Postiz saved the Social Media Plugin Page. TikTok sandbox is saved for target `social-media-plugin.io`, with only `user.info.basic` and `video.upload`; private credentials are installed. A pinned, hash-guarded upload-only Postiz patch prevents upstream's broad-scope request and rejects Direct Post in both backend and worker. Its 11 contract checks and 10 existing gateway/executor tests passed. Live sandbox OAuth and a two-photo inbox handoff succeeded on Postiz's side; owner mobile confirmation remains pending. Production upload access is not yet approved. See [setup evidence](../setup/POSTIZ.md). These are configuration/sandbox observations, not production capability grants.
 
 | Area | Verified capability | Engine behavior |
 |---|---|---|
 | Deployment | Postiz supports self-hosting and exposes a Public API | Pin the container version and bind the local instance to loopback by default |
 | Provider coverage | Postiz integrations cover Instagram, Facebook, LinkedIn, TikTok, and X | Use one server-side gateway while retaining platform-specific copy and settings |
 | Public API | Integration listing, media upload, and post creation are documented | Validate every response, keep the API key server-side, and store the exact request before dispatch |
-| Scheduling | The post-create request supports draft, schedule, and immediate modes | Default to draft; live modes require independent AURENDOR gates |
+| Scheduling | The post-create request supports draft, schedule, and immediate modes | Default to draft; live modes require independent SOCIAL_MEDIA_PLUGIN gates |
 | Policy | Postiz cannot remove provider app review, scopes, rate limits, or TikTok audit requirements | Keep provider restrictions explicit and require supervised account-level validation |
 
 Official sources: [Self-hosting](https://docs.postiz.com/installation/docker-compose), [Public API](https://docs.postiz.com/public-api/introduction), [Create posts](https://docs.postiz.com/public-api/posts/create), [Upload](https://docs.postiz.com/public-api/uploads/upload-file), [Integrations](https://docs.postiz.com/public-api/integrations/list).
@@ -82,7 +82,7 @@ Official sources: [Page Posts](https://developers.facebook.com/docs/pages-api/po
 
 | Area | Official capability | Engine behavior |
 |---|---|---|
-| Auth | Three-legged OAuth; organization publish/read/community scopes are vetted | Prioritize AURENDOR organization page |
+| Auth | Three-legged OAuth; organization publish/read/community scopes are vetted | Prioritize SOCIAL_MEDIA_PLUGIN organization page |
 | Formats | Text, single image/video, document, article, poll and MultiImage (2–20 images) | Convert organic “carousel” execution to MultiImage or document as appropriate |
 | Carousel | Organic carousel is unsupported; carousel is sponsored-only | Never submit an organic carousel media type |
 | Scheduling | Creation accepts `PUBLISHED`; no future scheduler | Internal durable scheduler publishes at due time |
@@ -94,7 +94,7 @@ Official sources: [OAuth](https://learn.microsoft.com/en-us/linkedin/shared/auth
 
 ## TikTok
 
-**Sandbox canary — 2026-09-08:** Aurendor OAuth is connected. One owner-authorized two-photo `MEDIA_UPLOAD` test completed through Postiz at 06:07:21 UTC, with an inbox release URL and no error. This verifies the sandbox photo handoff on Postiz's side; owner mobile-inbox confirmation is pending. Postiz's `PUBLISHED` label is not public-publication evidence for `UPLOAD`. Video, production review, and unattended public posting remain unverified/disabled. [Audit record](../operations/TIKTOK-SANDBOX-CANARY-20260908.json).
+**Sandbox canary — 2026-09-08:** Social Media Plugin OAuth is connected. One owner-authorized two-photo `MEDIA_UPLOAD` test completed through Postiz at 06:07:21 UTC, with an inbox release URL and no error. This verifies the sandbox photo handoff on Postiz's side; owner mobile-inbox confirmation is pending. Postiz's `PUBLISHED` label is not public-publication evidence for `UPLOAD`. Video, production review, and unattended public posting remain unverified/disabled. [Audit record](../operations/TIKTOK-SANDBOX-CANARY-20260908.json).
 
 | Area | Official capability | Engine behavior |
 |---|---|---|
@@ -109,7 +109,7 @@ Official sources: [OAuth](https://learn.microsoft.com/en-us/linkedin/shared/auth
 
 Official sources: [Content Posting get started](https://developers.tiktok.com/docs/en/content-posting-api-get-started), [Direct Post](https://developers.tiktok.com/docs/en/content-posting-api-reference-direct-post), [Upload draft](https://developers.tiktok.com/docs/en/content-posting-api-get-started-upload-content), [Content Sharing Guidelines](https://developers.tiktok.com/doc/content-sharing-guidelines/), [Video query](https://developers.tiktok.com/docs/en/tiktok-api-v2-video-query).
 
-Upload-only implementation review (2026-09-08): [User info field scopes](https://developers.tiktok.com/doc/tiktok-api-v2-get-user-info/), [media transfer requirements](https://developers.tiktok.com/doc/content-posting-api-media-transfer-guide/), and [Postiz TikTok setup](https://docs.postiz.com/self-host/providers/tiktok). Video uploads use `FILE_UPLOAD` in deployed v2.23.0; photo URLs must belong to the verified media domain. Inbox completion still requires the user to review and post in TikTok. No typed AURENDOR contract change: existing `UPLOAD` manual-handoff semantics remain in force.
+Upload-only implementation review (2026-09-08): [User info field scopes](https://developers.tiktok.com/doc/tiktok-api-v2-get-user-info/), [media transfer requirements](https://developers.tiktok.com/doc/content-posting-api-media-transfer-guide/), and [Postiz TikTok setup](https://docs.postiz.com/self-host/providers/tiktok). Video uploads use `FILE_UPLOAD` in deployed v2.23.0; photo URLs must belong to the verified media domain. Inbox completion still requires the user to review and post in TikTok. No typed SOCIAL_MEDIA_PLUGIN contract change: existing `UPLOAD` manual-handoff semantics remain in force.
 
 ## YouTube (optional)
 

@@ -15,7 +15,7 @@
   "level": "beginner",
   "downloadFiles": [],
   "readyState": "copy_complete_pending_render_and_final_QA",
-  "productionMethod": "Render using static/render.cjs. Actual Ghroob and Dh Ranclo, original AURENDOR palette and architectural plates. Recompose at mobile size; preserve qualifying conditions in main copy.",
+  "productionMethod": "Render using static/render.cjs. Actual Ghroob and Dh Ranclo, original SOCIAL_MEDIA_PLUGIN palette and architectural plates. Recompose at mobile size; preserve qualifying conditions in main copy.",
   "tools": [
     "Original brand fonts and assets",
     "Local browser renderer",
@@ -29,7 +29,7 @@
   "date": "2026-09-30",
   "titleAr": "صف لنا\nطلبًا واحدًا",
   "titleEn": "Start with one real workflow",
-  "pillar": "aurendor_services",
+  "pillar": "social_media_plugin_services",
   "audience": "صاحب شركة أو مدير عمليات يريد مناقشة أتمتة عمل متكرر، ولا يملك مواصفات مشروع تقني.",
   "objective": "تسهيل أول رسالة مفيدة إلى أورندور بمثال مكتمل وقصير يوضح أين تبدأ مناقشة النطاق.",
   "coreIdea": "مدخل العمل والعقبة والنتيجة المطلوبة تكفي لبدء فهم المسار. ليس على العميل اختيار النموذج أو معرفة كل الأرقام قبل التواصل.",
@@ -38,7 +38,7 @@
       "id": "P12-AUTHORIZED-SCOPE",
       "kind": "first_party_user_scope",
       "source": "USER-REQUIREMENTS.txt",
-      "claim": "AURENDOR authorized offering includes business automation, AI integrations, internal systems and implementation.",
+      "claim": "SOCIAL_MEDIA_PLUGIN authorized offering includes business automation, AI integrations, internal systems and implementation.",
       "limits": "No price, response-time, free consultation or completed-client claim."
     },
     {
@@ -46,7 +46,7 @@
       "kind": "synthetic_original",
       "source": "briefs/P12.json#slides",
       "claim": "Illustrative completed inquiry for incoming order clarification.",
-      "limits": "Not a client quote or deployed AURENDOR system."
+      "limits": "Not a client quote or deployed SOCIAL_MEDIA_PLUGIN system."
     }
   ],
   "claimLimits": [
@@ -119,7 +119,7 @@
     }
   ],
   "visualConcept": "Short completed inquiry as editorial document, then two concrete implications; preserve original brand atmosphere. Three-field invitation instead of a form screenshot. No fake customer message styling, avatar or testimonial marks.",
-  "adaptationNotes": "Instagram four frames; Facebook caption with concrete example; LinkedIn why first-contact details help scope; X two posts; one direct-reply Story. Verify publishing account is AURENDOR and replies enabled; no outside message sent by production agent.",
+  "adaptationNotes": "Instagram four frames; Facebook caption with concrete example; LinkedIn why first-contact details help scope; X two posts; one direct-reply Story. Verify publishing account is SOCIAL_MEDIA_PLUGIN and replies enabled; no outside message sent by production agent.",
   "hook": "صف لنا\nطلبًا واحدًا",
   "facebook": "إذا كنت تفكر بأتمتة عمل في شركتك، لا تحتاج أن تبدأ باسم نموذج أو قائمة أدوات. ابدأ بطلب واحد يعرف فريقك كيف يمر من شخص إلى آخر.\n\nمثال توضيحي لرسالة: «تصلنا طلبات شراء بالنص والصور. يتأخر تجهيزها لأن اسم الصنف ناقص. نحتاج مسودة طلب واضحة، ويُسأل الموظف عن الصنف الملتبس».\n\nهذا الوصف يفتح أسئلة عملية: من أين تصل الطلبات؟ هل توجد قائمة أصناف؟ أين تُحفظ المسودة؟ ومن يعتمدها؟ استخراج البيانات قد يستفيد من الذكاء الاصطناعي، ونقلها قد يحتاج تكاملًا، أما الصنف الذي لم نستطع تحديده فيحتاج مسارًا واضحًا للعودة إلى الموظف.\n\nهذه قراءة أولية لمثال خيالي، وليست وصفًا لنظام منشور أو وعدًا بأن كل الطلبات ستعمل تلقائيًا. في أورندور نعمل على أنظمة الأعمال وتكاملات الذكاء الاصطناعي وأتمتة المسارات.\n\nراسل حسابنا باسم العمل المتكرر، والعقبة، والنتيجة المطلوبة. إذا لم تعرف عدد الطلبات أو الوقت المستغرق، اذكر ذلك كما هو. تفاصيل النطاق تأتي من فهم المسار.",
   "sourceIds": [

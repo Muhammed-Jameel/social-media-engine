@@ -1,6 +1,6 @@
-# AURENDOR skill output contracts
+# SOCIAL_MEDIA_PLUGIN skill output contracts
 
-These are the normative v1 base contracts plus the v2 creative contracts for project-native skill outputs. Runtime schemas should be exported from `@aurendor/schemas` at the referenced paths. Exact strings may be enums in code; IDs are stable strings; timestamps are ISO 8601 with explicit offset or `Z`.
+These are the normative v1 base contracts plus the v2 creative contracts for project-native skill outputs. Runtime schemas should be exported from `@social-media-plugin/schemas` at the referenced paths. Exact strings may be enums in code; IDs are stable strings; timestamps are ISO 8601 with explicit offset or `Z`.
 
 ## Common artifact envelope
 

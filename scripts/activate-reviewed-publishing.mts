@@ -4,7 +4,7 @@ import { parseEnv } from 'node:util';
 import { join, resolve } from 'node:path';
 import net from 'node:net';
 import { getDatabase } from '../packages/db/src/client';
-import { AURENDOR_ORGANIZATION_ID, AURENDOR_OWNER_ID, isEnginePaused } from '../packages/db/src/ids';
+import { SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID, SOCIAL_MEDIA_PLUGIN_OWNER_ID, isEnginePaused } from '../packages/db/src/ids';
 import { atomicJson, withOperationsLock } from '../packages/engine/src/social-operations-store';
 
 // One-time activation expressly requested by the owner after personally creating
@@ -36,12 +36,12 @@ await withOperationsLock(root, async () => {
   let previous: unknown;
   try {
     await database.transaction(async db => {
-      const rows = await db.query('SELECT dry_run, production_publishing_enabled, paused FROM engine_settings WHERE organization_id=$1', [AURENDOR_ORGANIZATION_ID]);
+      const rows = await db.query('SELECT dry_run, production_publishing_enabled, paused FROM engine_settings WHERE organization_id=$1', [SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID]);
       const before = rows.rows[0];
       if (!before || before.paused) throw Error('Database pause is active or settings missing; preserved.');
       previous = before;
-      await db.query('UPDATE engine_settings SET dry_run=false, production_publishing_enabled=true, updated_at=now() WHERE organization_id=$1', [AURENDOR_ORGANIZATION_ID]);
-      await db.query(`INSERT INTO audit_logs (id,organization_id,actor_id,action,entity_type,entity_id,previous_state,new_state,reason,trace_id) VALUES ($1,$2,$3,'ACTIVATE_REVIEWED_PUBLISHING','engine_settings',$2,$4::jsonb,$5::jsonb,$6,$7)`, [randomUUID(), AURENDOR_ORGANIZATION_ID, AURENDOR_OWNER_ID, JSON.stringify(before), JSON.stringify({dry_run:false,production_publishing_enabled:true,paused:false}), 'Owner requested automatic scheduling of six reviewed September pieces, supplied email, and personally completed password setup. Independent release hashes and global pause remain enforced.', randomUUID()]);
+      await db.query('UPDATE engine_settings SET dry_run=false, production_publishing_enabled=true, updated_at=now() WHERE organization_id=$1', [SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID]);
+      await db.query(`INSERT INTO audit_logs (id,organization_id,actor_id,action,entity_type,entity_id,previous_state,new_state,reason,trace_id) VALUES ($1,$2,$3,'ACTIVATE_REVIEWED_PUBLISHING','engine_settings',$2,$4::jsonb,$5::jsonb,$6,$7)`, [randomUUID(), SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID, SOCIAL_MEDIA_PLUGIN_OWNER_ID, JSON.stringify(before), JSON.stringify({dry_run:false,production_publishing_enabled:true,paused:false}), 'Owner requested automatic scheduling of six reviewed September pieces, supplied email, and personally completed password setup. Independent release hashes and global pause remain enforced.', randomUUID()]);
     });
   } finally { await database.close(); }
   // A failure before this write leaves runtime publication flags closed.

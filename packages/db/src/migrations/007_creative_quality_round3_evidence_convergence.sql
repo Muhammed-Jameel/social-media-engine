@@ -1,6 +1,6 @@
 -- Migration 006 may already be recorded in long-lived local databases with
 -- pre-audit wording. Reapply the corrected, hash-bound gate state so every
--- AURENDOR database converges without reopening creative production.
+-- SOCIAL_MEDIA_PLUGIN database converges without reopening creative production.
 WITH corrected_gate AS (
   SELECT '{
       "reason": "Round-three candidate 01 decisively beats its matched legacy output in one controlled neutral-label identical-brief comparison, and four candidates form a critic-only professional upper tier. This is not suite-wide proof, and the complete suite has not cleared the release contract.",
@@ -106,7 +106,7 @@ SET creative_production_paused = true,
     creative_gate_evidence = corrected_gate.evidence,
     updated_at = now()
 FROM corrected_gate
-WHERE organization_id = 'org-aurendor'
+WHERE organization_id = 'org-social-media-plugin'
   AND (
     creative_production_paused IS DISTINCT FROM true
     OR creative_gate_state IS DISTINCT FROM 'BENCHMARKING'

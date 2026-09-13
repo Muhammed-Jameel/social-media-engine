@@ -2,7 +2,7 @@ import { z } from "zod";
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
 import { resolveWithinRoot } from "./security";
-import { ProfessionalCritiqueSetSchema } from "@aurendor/schemas";
+import { ProfessionalCritiqueSetSchema } from "@social-media-plugin/schemas";
 import { canonicalSha256 } from "./evidence";
 import { readVerifiedAsset } from "./postiz";
 

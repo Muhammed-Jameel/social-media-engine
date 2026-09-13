@@ -11,7 +11,7 @@ principles:
     languages: [ar, en]
     anthropomorphismLevels: [1, 2, 3, 4, 5]
     strongReferenceIds: [ref_6dd0a9246092f4d5, ref_51e708951ea61f18, ref_f5593ec327689f0a]
-    aurendorApplication: "Name the operational verb in the art-direction record and remove any object that does not participate in it."
+    socialMediaPluginApplication: "Name the operational verb in the art-direction record and remove any object that does not participate in it."
     retrievalTags: [action, verb, story, immediate, behavior]
     mustNotCopy: "Do not reuse a source's action, actors, props, or setting as a finished scene."
   - id: STORY_TENSION_THEN_RESOLUTION
@@ -24,7 +24,7 @@ principles:
     languages: [ar, en]
     anthropomorphismLevels: [0, 1, 2, 3, 4, 5]
     strongReferenceIds: [ref_51e708951ea61f18, ref_2ca843f06643d5f6, ref_6dd0a9246092f4d5]
-    aurendorApplication: "Make the cost of fragmentation, uncertainty, or delay visible; let the AURENDOR mechanism organize the frame rather than appear as a logo."
+    socialMediaPluginApplication: "Make the cost of fragmentation, uncertainty, or delay visible; let the SOCIAL_MEDIA_PLUGIN mechanism organize the frame rather than appear as a logo."
     retrievalTags: [problem, solution, stakes, transformation, contrast]
     mustNotCopy: "Do not duplicate the source before/after metaphor or staging."
   - id: STORY_COPY_COMPLETES_IMAGE
@@ -37,7 +37,7 @@ principles:
     languages: [ar, en]
     anthropomorphismLevels: [0, 1, 2, 3, 4, 5]
     strongReferenceIds: [ref_6dd0a9246092f4d5, ref_51e708951ea61f18, ref_8871f98455278188]
-    aurendorApplication: "Write the Arabic headline and sketch the image together; reject concepts where either merely captions the other."
+    socialMediaPluginApplication: "Write the Arabic headline and sketch the image together; reject concepts where either merely captions the other."
     retrievalTags: [copy, image, idea, twist, memory]
     mustNotCopy: "Do not reuse a source headline construction, visual pun, or branded object."
   - id: STORY_STATE_TRANSFORMATION
@@ -50,7 +50,7 @@ principles:
     languages: [ar, en]
     anthropomorphismLevels: [1, 2, 3, 4]
     strongReferenceIds: [ref_51e708951ea61f18, ref_f5cec23c32415d6e, ref_4afce40fe49062b6]
-    aurendorApplication: "Define the initial state, transforming behavior, and verifiable end state in the brief; never use abstract lines without a state meaning."
+    socialMediaPluginApplication: "Define the initial state, transforming behavior, and verifiable end state in the brief; never use abstract lines without a state meaning."
     retrievalTags: [system, state, transformation, infrastructure, process]
     mustNotCopy: "Do not reuse the source's modular units, arrows, nodes, or state sequence."
   - id: STORY_CONTEXTUAL_MICRODETAILS
@@ -63,6 +63,6 @@ principles:
     languages: [ar, en]
     anthropomorphismLevels: [0, 1, 2, 3, 4, 5]
     strongReferenceIds: [ref_6dd0a9246092f4d5, ref_7ea2e6edfd24a465, ref_4afce40fe49062b6]
-    aurendorApplication: "Every microelement must answer what happened, how the system behaves, or what counts as evidence; otherwise remove it."
+    socialMediaPluginApplication: "Every microelement must answer what happened, how the system behaves, or what counts as evidence; otherwise remove it."
     retrievalTags: [detail, evidence, context, atmosphere, craft]
     mustNotCopy: "Do not lift labels, icons, textures, or props from a reference."

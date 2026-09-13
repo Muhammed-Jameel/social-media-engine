@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import {projectRoot} from '@aurendor/db/runtime';
-import {readLearning,timingReadout,basicEngagement,engagementPerReach,type TrackedPost} from '@aurendor/engine';
+import {projectRoot} from '@social-media-plugin/db/runtime';
+import {readLearning,timingReadout,basicEngagement,engagementPerReach,type TrackedPost} from '@social-media-plugin/engine';
 import {PageHeader} from '@/components/page-header';
 import {Panel} from '@/components/panel';
 import {MetricCard} from '@/components/metric-card';

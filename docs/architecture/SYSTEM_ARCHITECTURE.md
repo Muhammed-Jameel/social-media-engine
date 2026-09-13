@@ -2,7 +2,7 @@
 
 ## Shape
 
-AURENDOR Content OS is a TypeScript modular monolith with two executable surfaces:
+SOCIAL_MEDIA_PLUGIN Content OS is a TypeScript modular monolith with two executable surfaces:
 
 - `apps/web`: Next.js App Router owner console, server actions, and a health endpoint. Webhook signature/replay verification exists in the domain layer; provider-specific ingress routes are not yet connected.
 - `apps/worker`: resumable background workflow runner for monthly planning, post production, publishing, and analytics.

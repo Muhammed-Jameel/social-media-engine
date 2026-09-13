@@ -12,8 +12,8 @@ describe("security boundaries", () => {
   it("blocks private-network asset URLs and storage traversal", () => {
     expect(() => validateRemoteAssetUrl("https://127.0.0.1/internal")).toThrow(/private/);
     expect(() => validateRemoteAssetUrl("http://cdn.example.com/file.png")).toThrow(/HTTPS/);
-    expect(() => resolveWithinRoot("/tmp/aurendor-assets", "../../etc/passwd")).toThrow(/escapes/);
-    expect(resolveWithinRoot("/tmp/aurendor-assets", "post/asset.png")).toBe("/tmp/aurendor-assets/post/asset.png");
+    expect(() => resolveWithinRoot("/tmp/social-assets", "../../etc/passwd")).toThrow(/escapes/);
+    expect(resolveWithinRoot("/tmp/social-assets", "post/asset.png")).toBe("/tmp/social-assets/post/asset.png");
   });
 
   it("verifies timestamps/signatures and prevents webhook replay", async () => {

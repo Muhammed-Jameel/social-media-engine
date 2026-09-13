@@ -36,10 +36,10 @@ Production requires:
 
 For each provider:
 
-1. Register a dedicated AURENDOR application and record its environment/owner without copying secret values into the repository.
+1. Register a dedicated SOCIAL_MEDIA_PLUGIN application and record its environment/owner without copying secret values into the repository.
 2. Configure the exact callback URL from `.env.example` for that environment.
 3. Request the least scopes required for the chosen formats, accounts, insights, and comments.
-4. Complete OAuth as the AURENDOR account owner and bind the returned identity to the intended Page, organization, or channel.
+4. Complete OAuth as the SOCIAL_MEDIA_PLUGIN account owner and bind the returned identity to the intended Page, organization, or channel.
 5. Encrypt access and refresh tokens before persistence; store provider token metadata separately from values.
 6. Probe each capability independently. Record `AVAILABLE`, a precise unavailable state, or `MANUAL_HANDOFF_REQUIRED`, plus verification time and official source.
 7. Run read-only identity and permission tests, then sandbox/create-only tests where supported.

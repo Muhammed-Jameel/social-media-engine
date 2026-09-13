@@ -19,7 +19,7 @@
 - FINAL 2026 YAML brand pack, bilingual voice rules, audiences, pillars, proof/claims policy, visual rubric, terminology, and objectives.
 - September importer for 33 content items and 98 manifest-referenced assets, including recorded filename drift repair. Imported content remains `NEEDS_REVIEW`.
 - Brand retrieval, content/risk checks, fixture/OpenAI gateway boundary, workflow execution, and normalized fixture analytics.
-- A read-only 1,296-primary-file design corpus index, curated professional-reference layer, retrieval taxonomy, Arabic design system, anthropomorphic system, feed rules, professional rubric, and versioned AURENDOR creative skills.
+- A read-only 1,296-primary-file design corpus index, curated professional-reference layer, retrieval taxonomy, Arabic design system, anthropomorphic system, feed rules, professional rubric, and versioned SOCIAL_MEDIA_PLUGIN creative skills.
 - A professional post-production workflow with strict exact-copy/editorial binding, design-intelligence retrieval, a four-route concept tournament, principle-only generation handoff, original/mobile raster evidence, technical preflight, independent pixel critics, professional-anchor comparison, originality review, feed review, policy aggregation, audited owner approval, and scheduling boundary.
 - The worker is fail-closed: `POST_PRODUCTION` cannot use the offline placeholder executor, and missing live production/review/scheduling adapters create an owner-action-required failure without discarding prior evidence.
 - Dry-run publication simulation with exact account/copy/asset/schedule bindings, idempotency, persisted intent/outbox, provider-style receipt, and no remote mutation.
@@ -34,14 +34,14 @@
 
 - FINAL 2026 deep/neon-green identity supersedes archived Sovereign Field v3.
 - Ghroob Arabic originals were restored on 2026-08-19.
-- Instagram handle is recorded as `@aurendor`, but ownership/API access is not verified.
+- Instagram handle is recorded as `@social-media-plugin`, but ownership/API access is not verified.
 - The historical queue contains 33 post manifests that approve 98 referenced assets (94 PNG, 4 MP4) and is usable as benchmark/demo evidence. The 107 top-level media files also include 9 unreferenced legacy/duplicate files, which the importer intentionally excludes.
 - `W3-P5` is a known hard-fail creative and cannot pass without repair and fresh rendered review.
 - The hash-anchored round-three suite contains 12 exact Chromium renders plus mobile, feed, carousel, textless-mechanism, and identical-brief comparison evidence. It is tamper-evident, but its local directories are not filesystem-immutable.
 - Candidate `01` decisively beats its matched legacy output in one independent neutral-label original/mobile identical-brief comparison. That result is strong controlled evidence for `01`; it is not a suite-wide old-versus-new conclusion.
 - All four required critic roles have reviewed the exact applicable round-three hashes. Four assets (`01`, `02`, `07`, `12`) clear the unanimous critic-only professional threshold; only `01` and `02` also clear candidate-level originality.
 - The feed originality gate rejects the repeated dark English conceptual-object shell shared by `07` and `12`. Candidate `03` also has a current Arabic typography hard fail. Eight of 12 integrated critique sets remain below the unanimous professional bar.
-- The AURENDOR approved golden set remains empty. Professional-candidate status is not owner approval or production release.
+- The SOCIAL_MEDIA_PLUGIN approved golden set remains empty. Professional-candidate status is not owner approval or production release.
 - No successful publication history exists in the prior engine.
 - Demo analytics are synthetic and visibly labelled; they do not establish performance.
 - TikTok Direct Post remains unavailable until its provider application passes TikTok audit; Postiz draft/manual completion is the safe interim route.
@@ -59,7 +59,7 @@
 
 ## Critical security action
 
-A Gemini API-key-like value was detected in `/Users/muhammedjameel/Documents/AURENDOR/.mcp.json`. The value was not copied or printed. The owner must revoke/rotate it in the owning Google/Gemini project, inspect usage, update/remove the local configuration securely, and verify the old credential is invalid. Production remains no-go until this is recorded as closed.
+A Gemini API-key-like value was detected in `/Users/muhammedjameel/Documents/SOCIAL_MEDIA_PLUGIN/.mcp.json`. The value was not copied or printed. The owner must revoke/rotate it in the owning Google/Gemini project, inspect usage, update/remove the local configuration securely, and verify the old credential is invalid. Production remains no-go until this is recorded as closed.
 
 ## Open product decisions
 
@@ -77,4 +77,4 @@ A Gemini API-key-like value was detected in `/Users/muhammedjameel/Documents/AUR
 5. Run draft payload parity, timeout/duplicate/reconciliation, and provider-visible canary checks one channel at a time.
 6. Obtain explicit owner approval for one low-risk supervised canary with rollback ready.
 
-Until these steps are evidenced, the truthful claim is: **AURENDOR Content OS has an implemented self-hosted Postiz delivery path and a correctly frozen production gate; it is not yet a verified live autonomous publisher.**
+Until these steps are evidenced, the truthful claim is: **SOCIAL_MEDIA_PLUGIN Content OS has an implemented self-hosted Postiz delivery path and a correctly frozen production gate; it is not yet a verified live autonomous publisher.**

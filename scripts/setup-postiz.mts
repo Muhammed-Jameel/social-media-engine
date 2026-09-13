@@ -2,7 +2,7 @@ import { randomBytes } from "node:crypto";
 import { chmod, mkdir, readFile, writeFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import { join } from "node:path";
-import { projectRoot } from "@aurendor/db";
+import { projectRoot } from "@social-media-plugin/db";
 
 const root = projectRoot();
 const directory = join(root, ".postiz");

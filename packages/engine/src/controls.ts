@@ -1,4 +1,4 @@
-import { OwnerCommandSchema } from "@aurendor/schemas";
+import { OwnerCommandSchema } from "@social-media-plugin/schemas";
 import { z } from "zod";
 
 export type ClassifiedOwnerCommand = z.infer<typeof OwnerCommandSchema>;

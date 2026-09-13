@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "corpus.schema.json",
-  "title": "AURENDOR Design Reference Corpus",
+  "title": "SOCIAL_MEDIA_PLUGIN Design Reference Corpus",
   "description": "Normalized, reference-only catalog for copyrighted design research. Full source images remain outside the repository; records retain identity, provenance, rights, similarity decisions, and review evidence.",
   "type": "object",
   "additionalProperties": false,

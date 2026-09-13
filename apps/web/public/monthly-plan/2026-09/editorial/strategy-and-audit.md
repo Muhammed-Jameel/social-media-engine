@@ -4,25 +4,25 @@ Continue the next three-piece cycle and then use the new scoped September workfl
 
 ## Owner production requirements — 10 September 2026
 
-Every carousel ends with a dedicated, simple CTA image related to its subject: relevant AURENDOR service, Bunyan Pro demonstration, or practical AI training for teams. The educational sequence remains complete before this invitation. This replaces the earlier cap on commercial CTAs for carousel endings. No free trial or outcome guarantee is implied.
+Every carousel ends with a dedicated, simple CTA image related to its subject: relevant SOCIAL_MEDIA_PLUGIN service, Bunyan Pro demonstration, or practical AI training for teams. The educational sequence remains complete before this invitation. This replaces the earlier cap on commercial CTAs for carousel endings. No free trial or outcome guarantee is implied.
 
 Every authorized video requires two independently composed exports: vertical 1080×1920 (9:16) and horizontal 1920×1080 (16:9), with matching content and timing. Check readability, safe zones and audio sync in both. Do not crop or pad one export into the other. U01 is authorized; later Reel production remains paused. These rules are recorded in every corresponding brief and PRODUCTION-RULES.json.
 
-# AURENDOR · 11–30 September 2026
+# SOCIAL_MEDIA_PLUGIN · 11–30 September 2026
 
 Production update, 10 September 2026: the owner has authorized implementation of S01, B01 and U01. Two carousels and this first Reel now have rendered files for creative review, with three supporting Stories. Later Reel production remains paused. See production/cycle-01; no scheduling or publishing has occurred.
 
 ## The editorial decision
 
-Publish 30 core ideas in ten two-day cycles. Every cycle contains one AURENDOR business-AI idea, one Bunyan Pro idea for construction company owners, and one independent practical-AI idea. Two are carousels; the third is a Reel script. Rotate the Reel across pillars. Create one supporting Story frame per idea, for 30 frames on Instagram and Facebook.
+Publish 30 core ideas in ten two-day cycles. Every cycle contains one SOCIAL_MEDIA_PLUGIN business-AI idea, one Bunyan Pro idea for construction company owners, and one independent practical-AI idea. Two are carousels; the third is a Reel script. Rotate the Reel across pillars. Create one supporting Story frame per idea, for 30 frames on Instagram and Facebook.
 
 This is an editorial production plan. It does not approve, schedule, or publish anything. Video production is paused at the owner's request; the ten Reel entries contain writing and scene direction only. Existing films remain archived.
 
 Publication times are proposed in Asia/Baghdad: the first carousel at 11:00 on the first day; the second carousel at 12:30 and the Reel at 19:30 on the second day. These are starting hypotheses, not researched audience peaks. Review actual account data after the first three cycles.
 
-## What following AURENDOR should give someone
+## What following SOCIAL_MEDIA_PLUGIN should give someone
 
-AURENDOR builds AI-supported business systems, integrations, internal tools, retrieval systems and automation; it also provides implementation, consulting and training. Its content should demonstrate the judgment needed to build a useful system: understand the task, improve its inputs, define a usable output, identify exceptions and measure whether the work improves.
+SOCIAL_MEDIA_PLUGIN builds AI-supported business systems, integrations, internal tools, retrieval systems and automation; it also provides implementation, consulting and training. Its content should demonstrate the judgment needed to build a useful system: understand the task, improve its inputs, define a usable output, identify exceptions and measure whether the work improves.
 
 Bunyan Pro serves construction and engineering companies. Its value should be explained through an owner's decisions: which site needs attention, what changed, what a payment request is based on, what information must survive a handover, and whether records are complete enough to use. Product claims are limited to evidence from the actual application. Construction finance, contractual responsibility and engineering acceptance are not software features or guaranteed outcomes.
 
@@ -75,7 +75,7 @@ The principal problem was systemic: ten core pieces could not meet the requested
 
 ## Production and brand rules
 
-Preserve AURENDOR's established identity: deep green #003F35, bright green #0EDB23, mint #77FF70, Ghroob Arabic and Dh Ranclo English. Use genuine font files. Arabic display text needs generous leading and sufficient container width; recompose instead of shrinking to fit. Test at phone size. The dashboard is a text review surface, not an exported carousel design.
+Preserve SOCIAL_MEDIA_PLUGIN's established identity: deep green #003F35, bright green #0EDB23, mint #77FF70, Ghroob Arabic and Dh Ranclo English. Use genuine font files. Arabic display text needs generous leading and sufficient container width; recompose instead of shrinking to fit. Test at phone size. The dashboard is a text review surface, not an exported carousel design.
 
 Each brief specifies the on-design text separately from the caption. Diagrams should explain a relationship. Tables should make a decision easier. Real Bunyan screenshots must come from the application with demonstration data and sensitive information removed. Do not fabricate interfaces, automated calculations, version history, AI features or verified field outcomes. Synthetic numbers must remain labelled when the idea is adapted.
 

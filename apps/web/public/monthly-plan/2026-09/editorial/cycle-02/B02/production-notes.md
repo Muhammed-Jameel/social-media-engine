@@ -20,7 +20,7 @@ The canonical ChangeRequestsTab.jsx was reread on September 10, 2026. It display
 
 The original Erbil public-project study is local context for owner changes, not a national rate. Its existing primary-source snapshot remains in content-system-v8/research/bunyan/B-ERBIL; this production turn’s refresh timed out. The 2018 Open Civil Engineering Journal change-order paper was reopened successfully and reviewed. Publication dates and scope are in credits.json. Neither paper’s photographs, charts or logos are reproduced. No mutable statistics or latest-news claims are made.
 
-The material still life is original image_gen output; full prompt and original path are in credits.json. It is a conceptual image, not a real site or vendor’s sample offering. Existing approved AURENDOR SVG logos and licensed local Ghroob/Ranclo fonts are used. No new font, logo, stock subscription or paid dependency was installed. Brand palette remains #003F35 / #0EDB23 / #77FF70, with neutral architectural stone, charcoal and paper.
+The material still life is original image_gen output; full prompt and original path are in credits.json. It is a conceptual image, not a real site or vendor’s sample offering. Existing approved SOCIAL_MEDIA_PLUGIN SVG logos and licensed local Ghroob/Ranclo fonts are used. No new font, logo, stock subscription or paid dependency was installed. Brand palette remains #003F35 / #0EDB23 / #77FF70, with neutral architectural stone, charcoal and paper.
 
 ## Mobile and typography QA
 
@@ -36,6 +36,6 @@ Story: add a native Instagram/Facebook poll in x210–870, y1550–1662. Options
 
 ## Rebuild
 
-From the repository root, run node content-system-v8/production/cycle-02/B02/build.cjs, then node content-system-v8/production/cycle-02/B02/render.cjs. The renderer uses the existing aurendor-launch-1109 Puppeteer/Sharp packages and local Chrome. Then run finalize.py using the bundled Python runtime to regenerate the six-page PDF, hash manifest and delivery manifest. Existing licensed fonts are referenced by local path rather than copied for redistribution.
+From the repository root, run node content-system-v8/production/cycle-02/B02/build.cjs, then node content-system-v8/production/cycle-02/B02/render.cjs. The renderer uses the existing social-launch-1109 Puppeteer/Sharp packages and local Chrome. Then run finalize.py using the bundled Python runtime to regenerate the six-page PDF, hash manifest and delivery manifest. Existing licensed fonts are referenced by local path rather than copied for redistribution.
 
 Used: image_gen, authored JavaScript/HTML/CSS/SVG, Puppeteer/Chrome, Sharp, fontTools/HarfBuzz and Python/Pillow/pypdf. No Remotion or video renderer.

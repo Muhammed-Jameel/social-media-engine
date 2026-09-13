@@ -11,7 +11,7 @@ const basePrinciple = {
   languages: ["ar", "en"] as Array<"ar" | "en">,
   anthropomorphismLevels: [0, 1, 2],
   strongReferenceIds: [],
-  aurendorApplication: "Give the concept object at least half of the available visual emphasis.",
+  socialMediaPluginApplication: "Give the concept object at least half of the available visual emphasis.",
   retrievalTags: ["clarity", "single", "focus"],
   mustNotCopy: "Do not reproduce the source object, crop, or headline relationship.",
   domain: "composition",

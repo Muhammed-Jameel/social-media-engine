@@ -14,7 +14,7 @@ The takeaway is specific: 65% stage progress and two unfinished checklist items 
 | 10.5–13.5 | Progress and open items move into alignment, retaining their different units. |
 | 13.5–18 | The conclusion resolves in two Arabic phrases, followed by the CTA and brand lockup. |
 
-Assets: existing AURENDOR architecture, logos, Ghroob and Dh Ranclo; real stage/report captures; imported product recording edited/exported through Recordly. The underlying capture is scaled from 540×960 and looks softer at close range. This is not a newly captured native 1080p product recording. Product UI retains its actual fonts and controls.
+Assets: existing SOCIAL_MEDIA_PLUGIN architecture, logos, Ghroob and Dh Ranclo; real stage/report captures; imported product recording edited/exported through Recordly. The underlying capture is scaled from 540×960 and looks softer at close range. This is not a newly captured native 1080p product recording. Product UI retains its actual fonts and controls.
 
 Audio: licensed “Games Music” by Grigoriy Nuzhny, Mixkit item 706, with authored transition effects and an edit-specific ending. Full source intervals, rights record and reproducible stems remain in this production folder. No narration. Audio was measured for levels, clipping and timing; the agent could not listen and does not claim listening approval.
 

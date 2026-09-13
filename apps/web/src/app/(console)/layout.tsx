@@ -1,4 +1,4 @@
-import { getRepository } from "@aurendor/db/runtime";
+import { getRepository } from "@social-media-plugin/db/runtime";
 import { AppShell } from "@/components/app-shell";
 import { requireOwner } from "@/lib/auth";
 

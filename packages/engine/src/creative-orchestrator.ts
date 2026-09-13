@@ -15,7 +15,7 @@ import {
   type ProfessionalCritiqueSet,
   type ProfessionalDesignBrief,
   type VisualFamily,
-} from "@aurendor/schemas";
+} from "@social-media-plugin/schemas";
 import type { AgentRole, StructuredAgentGateway } from "./agents";
 import { createAgentGateway } from "./agents";
 import {
@@ -39,7 +39,7 @@ export const ART_DIRECTION_DECISION_QUESTIONS = [
   "How does Arabic or English reading direction determine composition from the start?",
   "What bespoke asset, material, crop, perspective, and light make the idea credible?",
   "Would human-like behavior improve comprehension, and can it work without a face?",
-  "Why is this an AURENDOR idea rather than a generic technology campaign?",
+  "Why is this an SOCIAL_MEDIA_PLUGIN idea rather than a generic technology campaign?",
 ] as const;
 
 const ArtDirectionDecisionAnswersSchema = z.object({
@@ -57,7 +57,7 @@ const ArtDirectionDecisionAnswersSchema = z.object({
   languageCompositionDecision: z.string().min(12),
   assetCraftDecision: z.string().min(12),
   anthropomorphismDecision: z.string().min(12),
-  aurendorDistinctiveness: z.string().min(12),
+  socialMediaPluginDistinctiveness: z.string().min(12),
 });
 
 export const ArtDirectionDecisionSchema = z.object({
@@ -254,7 +254,7 @@ export class ProfessionalCreativeOrchestrator {
     }
     const result = await this.gateway.run({
       role: "ART_DIRECTOR",
-      taskName: "aurendor_professional_art_direction_v2",
+      taskName: "social_media_plugin_professional_art_direction_v2",
       instructions: [
         "Answer all fifteen art-direction decisions explicitly before selecting a visual route.",
         ...ART_DIRECTION_DECISION_QUESTIONS.map((question, index) => `${index + 1}. ${question}`),
@@ -384,7 +384,7 @@ export class ProfessionalPixelCriticPanel {
     const critiques = await Promise.all(roles.map(async (criticRole) => {
       const result = await this.gateway.run({
         role: CRITIC_GATEWAY_ROLES[criticRole],
-        taskName: `aurendor_pixel_critique_${criticRole.toLocaleLowerCase()}`,
+        taskName: `social_media_plugin_pixel_critique_${criticRole.toLocaleLowerCase()}`,
         instructions: [
           `Act independently as ${criticRole}; do not average toward politeness.`,
           "Inspect the actual candidate pixels at original and mobile scale and the supplied professional-anchor pixels.",
@@ -451,7 +451,7 @@ export class ProfessionalPixelCriticPanel {
   }): Promise<PairwiseCreativeComparison> {
     const result = await this.gateway.run({
       role: "ADJUDICATOR",
-      taskName: "aurendor_blind_pairwise_creative_v2",
+      taskName: "social_media_plugin_blind_pairwise_creative_v2",
       instructions: "Compare A and B only from supplied pixels. Use blind labels, select neither when both miss the professional bar, and give observable reasons across every rubric dimension.",
       input: {
         candidateAAssetId: input.candidateAAssetId,

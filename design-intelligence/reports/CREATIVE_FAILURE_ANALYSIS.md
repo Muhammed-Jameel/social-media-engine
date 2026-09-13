@@ -1,4 +1,4 @@
-# AURENDOR Creative Failure Analysis
+# SOCIAL_MEDIA_PLUGIN Creative Failure Analysis
 
 **Artifact status:** Active rebuild baseline  
 **Audit date:** 2026-08-23  
@@ -23,9 +23,9 @@ The findings below are grounded in the following repository evidence:
 - Workflow implementation: [`packages/engine/src/workflows.ts`](../../packages/engine/src/workflows.ts)
 - Runtime schemas: [`packages/schemas/src/index.ts`](../../packages/schemas/src/index.ts)
 - Imported-brief construction: [`packages/db/src/importer.ts`](../../packages/db/src/importer.ts)
-- Native art-direction skill: [`skills/aurendor-art-direction/SKILL.md`](../../skills/aurendor-art-direction/SKILL.md)
-- Native design-production skill: [`skills/aurendor-social-design/SKILL.md`](../../skills/aurendor-social-design/SKILL.md)
-- Native critique skill: [`skills/aurendor-design-critique/SKILL.md`](../../skills/aurendor-design-critique/SKILL.md)
+- Native art-direction skill: [`skills/social-art-direction/SKILL.md`](../../skills/social-art-direction/SKILL.md)
+- Native design-production skill: [`skills/social-design/SKILL.md`](../../skills/social-design/SKILL.md)
+- Native critique skill: [`skills/social-design-critique/SKILL.md`](../../skills/social-design-critique/SKILL.md)
 - Canonical visual system: [`data/brand/visual-system.yaml`](../../data/brand/visual-system.yaml)
 - Previous rubric: [`data/brand/creative-rubric.yaml`](../../data/brand/creative-rubric.yaml)
 - Benchmark manifest and review: [`artifacts/creative-benchmarks/manifest.json`](../../artifacts/creative-benchmarks/manifest.json), [`visual-review-2026-08-23.json`](../../artifacts/creative-benchmarks/visual-review-2026-08-23.json)
@@ -154,7 +154,7 @@ The canonical system provides strong palette, grid, typography, and personality 
 
 **Visible consequence:** The renderer mistakes green, logo, frames, cards, and systems linework for brand distinctiveness. There is no durable grammar for visual storytelling, materials, lighting, depth, character behavior, image treatment, or anthropomorphism.
 
-**Required systemic control:** Define AURENDOR’s visual grammar and a premium hybrid anthropomorphic system before adopting a permanent mascot. Brand recognition must survive logo removal.
+**Required systemic control:** Define SOCIAL_MEDIA_PLUGIN’s visual grammar and a premium hybrid anthropomorphic system before adopting a permanent mascot. Brand recognition must survive logo removal.
 
 ### CF-11 — The rubric underweights the missing qualities
 
@@ -162,7 +162,7 @@ The canonical system provides strong palette, grid, typography, and personality 
 
 The prior 100-point rubric gives only 6 points to graphic quality and 3 to polish. It does not independently weight professional plausibility or distinctiveness at the level required by the rebuild mission.
 
-**Visible consequence:** Technically clean template work can approach a strong band without professional craft, conceptual storytelling, or AURENDOR-specific visual thinking.
+**Visible consequence:** Technically clean template work can approach a strong band without professional craft, conceptual storytelling, or SOCIAL_MEDIA_PLUGIN-specific visual thinking.
 
 **Required systemic control:** Use the 160-point professional rubric: concept, composition, typography, visual craft, brand, communication, professional polish, and distinctiveness at 20 points each. Numeric scores remain subordinate to hard failures and pairwise evidence.
 
@@ -253,17 +253,17 @@ The visual-generation workflow may not resume normal production while any blocke
 8. **RB-08 — Qualitative evaluation is metadata-based.** Remove qualitative release authority from the deterministic evaluator and implement original-resolution pixel critics.
 9. **RB-09 — The professional 160-point rubric is not enforced.** Implement evidence-citing critics, automatic rejection rules, pairwise comparison, and calibrated thresholds.
 10. **RB-10 — Near-duplicate and feed-fatigue controls are absent.** Validate structural/perceptual similarity and 3-/9-/12-post feed rhythm.
-11. **RB-11 — AURENDOR visual grammar and anthropomorphic direction are incomplete.** Approve a coherent premium system without prematurely fixing one mascot.
+11. **RB-11 — SOCIAL_MEDIA_PLUGIN visual grammar and anthropomorphic direction are incomplete.** Approve a coherent premium system without prematurely fixing one mascot.
 12. **RB-12 — Controlled benchmark has not passed.** Generate multiple candidates across the ten required content types, reject weak concepts, iterate strong ones, and inspect final rendered pixels.
 13. **RB-13 — Old-vs-new improvement is unproven.** A blind or semi-blind comparison on identical briefs must decisively favor the rebuilt engine in concept, hierarchy, typography, craft, distinctiveness, brand fit, and communication.
-14. **RB-14 — No approved AURENDOR golden set exists.** Select original, hash-bound outputs only after they pass professional comparison and all current-hash critics.
+14. **RB-14 — No approved SOCIAL_MEDIA_PLUGIN golden set exists.** Select original, hash-bound outputs only after they pass professional comparison and all current-hash critics.
 
 ## Release decision rule
 
 Passing tests, creating a corpus index, generating an image, exporting from Canva, or improving a prompt is not sufficient. Release requires:
 
 1. all `RB-*` blockers closed with durable evidence;
-2. no automatic-rejection pattern from [`forbidden-patterns.yaml`](../aurendor/forbidden-patterns.yaml);
+2. no automatic-rejection pattern from [`forbidden-patterns.yaml`](../social-media-plugin/forbidden-patterns.yaml);
 3. all required critics reviewing the exact current raster hashes;
 4. a professional-candidate score of at least `145/160`, with no hard fail;
 5. a decisive blind old-vs-new win;

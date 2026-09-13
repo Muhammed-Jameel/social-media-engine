@@ -13,7 +13,7 @@ export default async function LoginPage({ searchParams }: { searchParams: Promis
   return (
     <main id="main-content" className="login-shell">
       <section className="login-brand-panel">
-        <Image src="/brand/aurendor-horizontal-pale.svg" alt="AURENDOR" width={415} height={86} style={{ height: "auto" }} priority />
+        <Image src="/brand/social-horizontal-pale.svg" alt="SOCIAL_MEDIA_PLUGIN" width={415} height={86} style={{ height: "auto" }} priority />
         <div className="login-statement">
           <p className="eyebrow eyebrow-pale">Owner control plane</p>
           <h1>Digital Civilization,<br />operated deliberately.</h1>
@@ -26,7 +26,7 @@ export default async function LoginPage({ searchParams }: { searchParams: Promis
           <span className="login-icon"><LockKeyhole size={23} /></span>
           <p className="eyebrow">Private workspace</p>
           <h2>Sign in as owner</h2>
-          <p className="form-intro">Publishing controls and approvals are restricted to the configured AURENDOR owner.</p>
+          <p className="form-intro">Publishing controls and approvals are restricted to the configured SOCIAL_MEDIA_PLUGIN owner.</p>
           {error ? <div className="form-error" role="alert">The email or password did not match the configured owner.</div> : null}
           <label>Email address<input name="email" type="email" autoComplete="username" required /></label>
           <label>Password<input name="password" type="password" autoComplete="current-password" required /></label>

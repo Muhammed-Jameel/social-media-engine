@@ -15,7 +15,7 @@ import {
   MessageSquareText,
   ShieldCheck,
 } from "lucide-react";
-import { getRepository } from "@aurendor/db/runtime";
+import { getRepository } from "@social-media-plugin/db/runtime";
 import { approveMonthAction } from "@/app/actions";
 import { PageHeader } from "@/components/page-header";
 import { Panel } from "@/components/panel";

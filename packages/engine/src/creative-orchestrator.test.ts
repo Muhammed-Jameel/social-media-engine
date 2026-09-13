@@ -7,7 +7,7 @@ import type {
   ProfessionalCritiqueSet,
   VisualFamily,
   ImageryMode,
-} from "@aurendor/schemas";
+} from "@social-media-plugin/schemas";
 import { FixtureAgentGateway } from "./agents";
 import {
   buildArtDirectionKnowledgeContext,
@@ -86,7 +86,7 @@ function concept(
       material: "Paper, translucent resin, or brushed metal according to route",
       texture: "Controlled tactile detail without synthetic glow haze",
       relationToTypography: "The material action counterbalances rather than sits behind the Arabic type.",
-      assetPlan: [{ asset: "bespoke focal scene", source: "generated-bespoke", licenseEvidence: "Original AURENDOR generation record" }],
+      assetPlan: [{ asset: "bespoke focal scene", source: "generated-bespoke", licenseEvidence: "Original SOCIAL_MEDIA_PLUGIN generation record" }],
     },
     referenceUses: references.map(({ reference }, referenceIndex) => ({
       referenceId: reference.referenceId,
@@ -121,7 +121,7 @@ function tournament(packet: DesignKnowledgePacket, count = 4): ConceptTournament
 function directionInput(packet: DesignKnowledgePacket, count = 4): ProfessionalArtDirectionInput {
   return {
     contentItemId: "00000000-0000-4000-8000-000000000001",
-    communicationGoal: "Explain how AURENDOR keeps operational context attached to each handoff.",
+    communicationGoal: "Explain how SOCIAL_MEDIA_PLUGIN keeps operational context attached to each handoff.",
     purpose: "education",
     audience: "Iraqi and regional operations leaders",
     audienceTension: "Critical context is lost when work passes between people and tools.",
@@ -139,7 +139,7 @@ function directionInput(packet: DesignKnowledgePacket, count = 4): ProfessionalA
       schemaVersion: "1.0.0",
       modelVersion: "fixture-v1",
       promptVersion: "art-direction-v2",
-      skillVersions: ["aurendor-art-direction@2.0.0"],
+      skillVersions: ["social-art-direction@2.0.0"],
       templateVersion: null,
       traceId: "00000000-0000-4000-8000-000000000002",
       createdAt: "2026-08-23T10:00:00.000Z",
@@ -161,7 +161,7 @@ function directionInput(packet: DesignKnowledgePacket, count = 4): ProfessionalA
         languageCompositionDecision: "The RTL headline begins at the upper right and hands attention into the leftward action.",
         assetCraftDecision: "A bespoke macro material scene needs credible contacts, soft directional light, and restrained texture.",
         anthropomorphismDecision: "Humanize the act of handing over through motion; a face would reduce authority.",
-        aurendorDistinctiveness: "The green charge represents active operational intelligence inside a deep-green material world.",
+        socialMediaPluginDistinctiveness: "The green charge represents active operational intelligence inside a deep-green material world.",
       },
       tournament: tournament(packet, count),
     },

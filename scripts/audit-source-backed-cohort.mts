@@ -95,7 +95,7 @@ const manualReviews: Record<string, {
     arabic: "Every dot, hamza, shadda, decimal mark, and question mark remains intact; cards, borders, and the continuity band are isolated from all copy regions.",
     professional: "Materially clearer and more production-ready than the current SEP-13 interrupted-letter construction while remaining a graphic-led editorial post.",
     feedRole: "Replaces a dark distorted-type tile with a light evidence-led graphic between the light SEP-12 tactile scene and dark SEP-14 documentary reel, preserving the 11/9 image-to-graphic balance.",
-    remainingRisk: "The 41.3% statistic applies to the surveyed formal establishments and must not be generalized to every Iraqi business or used as an AURENDOR outcome.",
+    remainingRisk: "The 41.3% statistic applies to the surveyed formal establishments and must not be generalized to every Iraqi business or used as an SOCIAL_MEDIA_PLUGIN outcome.",
   },
 };
 

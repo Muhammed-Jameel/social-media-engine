@@ -41,12 +41,12 @@ export function getEngineConfig(environment: NodeJS.ProcessEnv = process.env): E
     paused: readBoolean(environment, [
       "SOCIAL_ENGINE_PAUSED",
       "SOCIAL_MEDIA_ENGINE_PAUSED",
-      "AURENDOR_ENGINE_PAUSED",
+      "SOCIAL_MEDIA_PLUGIN_ENGINE_PAUSED",
     ]),
     creativeProductionPaused: readBoolean(environment, [
       "SOCIAL_ENGINE_CREATIVE_PRODUCTION_PAUSED",
       "SOCIAL_MEDIA_CREATIVE_PRODUCTION_PAUSED",
-      "AURENDOR_CREATIVE_PRODUCTION_PAUSED",
+      "SOCIAL_MEDIA_PLUGIN_CREATIVE_PRODUCTION_PAUSED",
     ]),
     openAiApiKey: environment.OPENAI_API_KEY || undefined,
     frontierModel: environment.OPENAI_FRONTIER_MODEL,

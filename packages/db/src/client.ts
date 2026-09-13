@@ -19,13 +19,13 @@ function findProjectRoot(start = process.cwd()): string {
   while (true) {
     if (existsSync(join(current, "pnpm-workspace.yaml"))) return current;
     const parent = resolve(current, "..");
-    if (parent === current) throw new Error(`Unable to locate AURENDOR engine root from ${start}`);
+    if (parent === current) throw new Error(`Unable to locate SOCIAL_MEDIA_PLUGIN engine root from ${start}`);
     current = parent;
   }
 }
 
 export function projectRoot(): string {
-  return process.env.AURENDOR_ENGINE_ROOT ? resolve(process.env.AURENDOR_ENGINE_ROOT) : findProjectRoot();
+  return process.env.SOCIAL_MEDIA_PLUGIN_ENGINE_ROOT ? resolve(process.env.SOCIAL_MEDIA_PLUGIN_ENGINE_ROOT) : findProjectRoot();
 }
 
 class PGliteClient implements DatabaseClient {
@@ -152,13 +152,13 @@ export async function migrateDatabase(database: DatabaseClient): Promise<void> {
 }
 
 declare global {
-  var __aurendorDatabase: Promise<DatabaseClient> | undefined;
+  var __socialMediaPluginDatabase: Promise<DatabaseClient> | undefined;
 }
 
 export async function getDatabase(): Promise<DatabaseClient> {
-  globalThis.__aurendorDatabase ??= createDatabase().then(async (database) => {
+  globalThis.__socialMediaPluginDatabase ??= createDatabase().then(async (database) => {
     await migrateDatabase(database);
     return database;
   });
-  return globalThis.__aurendorDatabase;
+  return globalThis.__socialMediaPluginDatabase;
 }

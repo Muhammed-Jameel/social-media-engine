@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { createDatabase, migrateDatabase, seedCoreData } from "@aurendor/db";
+import { createDatabase, migrateDatabase, seedCoreData } from "@social-media-plugin/db";
 import { advanceProduction, assertApprovedPackage, assertSynchronizedSelection, CAMPAIGN_PLATFORMS, CampaignPlanSchema, currentPackage, decideProduction, newProductionJob, packageAssets, ProductionPackageSchema, type ProductionJob } from "./campaign-production";
 import { canonicalSha256 } from "./evidence";
 import { importCampaignPlan, loadProductionJob, saveProductionJob } from "./campaign-store";
@@ -16,7 +16,7 @@ function asset(n: number) {
   return { id: `asset-${n}`, sourcePath: `apps/web/public/production/test/${n}.png`, sha256: canonicalSha256(n), mimeType: "image/png" as const, width: 1080, height: 1920, altText: `Meaningful alternative text ${n}`, visualSubject: `Distinct scene ${n}`, licenseEvidence: "Owned original asset" };
 }
 function pkg() {
-  return ProductionPackageSchema.parse({ contentItemId: slot.id, scheduledAt: slot.scheduledAt, variants: CAMPAIGN_PLATFORMS.map((p, i) => ({ platform: p, accountId: `${p}-account`, format: "carousel", title: "AURENDOR workflow", adaptationRationale: `Native ${p} layout`, entries: [{ caption: `${p} native caption`, assets: [asset(i * 2), asset(i * 2 + 1)] }] })), stories: [10, 11].map(n => ({ parentPostId: slot.id, platform: "instagram", asset: asset(n), engagementPrompt: "Where do your handoffs lose context?", returnToPostCTA: "Read the new workflow post", nativeStickerHandoff: "Add question sticker in app" })) });
+  return ProductionPackageSchema.parse({ contentItemId: slot.id, scheduledAt: slot.scheduledAt, variants: CAMPAIGN_PLATFORMS.map((p, i) => ({ platform: p, accountId: `${p}-account`, format: "carousel", title: "SOCIAL_MEDIA_PLUGIN workflow", adaptationRationale: `Native ${p} layout`, entries: [{ caption: `${p} native caption`, assets: [asset(i * 2), asset(i * 2 + 1)] }] })), stories: [10, 11].map(n => ({ parentPostId: slot.id, platform: "instagram", asset: asset(n), engagementPrompt: "Where do your handoffs lose context?", returnToPostCTA: "Read the new workflow post", nativeStickerHandoff: "Add question sticker in app" })) });
 }
 function throughAssets(): ProductionJob {
   let j = advanceProduction(newProductionJob("2026-10", slot), idea("idea-1"));

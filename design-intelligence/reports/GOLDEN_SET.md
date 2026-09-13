@@ -1,7 +1,7 @@
-# AURENDOR Golden Set
+# SOCIAL_MEDIA_PLUGIN Golden Set
 
-**Status:** professional reference calibration exists; **no AURENDOR output is approved as gold**  
-**AURENDOR gold count:** `0`  
+**Status:** professional reference calibration exists; **no SOCIAL_MEDIA_PLUGIN output is approved as gold**  
+**SOCIAL_MEDIA_PLUGIN gold count:** `0`  
 **Production decision:** `BLOCKED`  
 **Review date:** 2026-08-25
 
@@ -9,8 +9,8 @@
 
 “Golden set” refers to two different things and they must never be conflated.
 
-1. **Professional reference anchors** are third-party, reference-only examples used to calibrate concept, hierarchy, craft, Arabic, systems thinking, or failure boundaries. They are not AURENDOR assets, are not cleared for reuse, and do not become training or generation material.
-2. **AURENDOR golden outputs** are original, rights-cleared, hash-bound AURENDOR assets that have passed every professional critic, comparison, originality, Arabic, feed, and owner gate.
+1. **Professional reference anchors** are third-party, reference-only examples used to calibrate concept, hierarchy, craft, Arabic, systems thinking, or failure boundaries. They are not SOCIAL_MEDIA_PLUGIN assets, are not cleared for reuse, and do not become training or generation material.
+2. **SOCIAL_MEDIA_PLUGIN golden outputs** are original, rights-cleared, hash-bound SOCIAL_MEDIA_PLUGIN assets that have passed every professional critic, comparison, originality, Arabic, feed, and owner gate.
 
 Only the second category can become regression fixtures for the production engine. It is currently empty.
 
@@ -24,12 +24,12 @@ The Senior Art Director, Senior Graphic Designer, and Social Performance Strateg
 
 Every local corpus item is `REFERENCE_ONLY`. An `anchorTier: gold` label means “one of the strongest reviewed quality anchors in this local low-resolution corpus for named dimensions.” It does **not** mean:
 
-- AURENDOR owns or may publish the work;
+- SOCIAL_MEDIA_PLUGIN owns or may publish the work;
 - creator, project, award, or license provenance is complete;
 - the thumbnail proves final micro-craft;
 - the composition may be recreated;
 - the item is suitable for every purpose;
-- the item has passed the AURENDOR production rubric as an AURENDOR asset.
+- the item has passed the SOCIAL_MEDIA_PLUGIN production rubric as an SOCIAL_MEDIA_PLUGIN asset.
 
 The local corpus contains low-resolution landscape project covers and incomplete file-level provenance. Detailed limits are in [DESIGN_CORPUS_ANALYSIS.md](./DESIGN_CORPUS_ANALYSIS.md). Curated records and explicit anti-copy fields are in [reference-annotations.yaml](../corpus/reference-annotations.yaml) and [references.json](../corpus/references.json).
 
@@ -62,8 +62,8 @@ These supplement the gold tier when a post needs a specific comparison dimension
 | `ref_a549cc94cfd3fc44` | Product ecosystem depth and three-beat hierarchy | Product text and perspective cannot be validated at thumbnail size |
 | `ref_8684a4138ac5fc7a` | Expressive type as directional space | Circular Latin treatment cannot be transferred blindly to connected Arabic |
 | `ref_b0989790e897bbea` | Arabic feed variation through world and product | Dense montage prevents individual craft review; no scene or character may be reused |
-| `ref_f3b5ee0b6b861b5a` | Bilingual atmosphere and cultural fit | Rights and custom lettering are unverified; heritage motifs are not an AURENDOR direction |
-| `ref_525eaa7ecad7ac5a` | Recurring object-character campaign consistency | Deliberately playful boundary; too exuberant as AURENDOR's default tone |
+| `ref_f3b5ee0b6b861b5a` | Bilingual atmosphere and cultural fit | Rights and custom lettering are unverified; heritage motifs are not an SOCIAL_MEDIA_PLUGIN direction |
+| `ref_525eaa7ecad7ac5a` | Recurring object-character campaign consistency | Deliberately playful boundary; too exuberant as SOCIAL_MEDIA_PLUGIN's default tone |
 
 ### Context-only and negative anchors
 
@@ -72,7 +72,7 @@ Negative anchors train rejection boundaries, not generation style.
 | Reference ID | Boundary learned |
 |---|---|
 | `ref_f5593ec327689f0a` | Strong transformation idea can still fail craft because of visible generated artifacts |
-| `ref_4c27807cd3a0dd00` | Face-first cute package character is too juvenile for AURENDOR |
+| `ref_4c27807cd3a0dd00` | Face-first cute package character is too juvenile for SOCIAL_MEDIA_PLUGIN |
 | `ref_744a0288aedf2b96` | Literal smiling mascot and dense Arabic footer weaken enterprise authority |
 | `ref_e3720567ab44c8c9` | Equal-weight promotional tiles create unreadable density and template repetition |
 | `ref_f1d7d6e4a6b4a8a7` | Purple glow and abstract event blobs can be polished yet conceptually generic |
@@ -95,12 +95,12 @@ External sources extend the local corpus where provenance, process explanation, 
 | [Pentagram — Abridge](https://www.pentagram.com/work/abridge) | Metaphor derived from authentic product behavior and language | Identity expression, name treatment, typography, compositions |
 | [29LT — Kingdom of Bahrain Pavilion](https://blog.29lt.com/2022/07/06/bahrain-pavilion-expo2020-dubai/) | Arabic and Latin co-developed around one architectural idea | Custom lettering, pavilion identity, cultural and architectural expression |
 | [Mutlaq Studio — Zyda](https://mutlaqstudio.com/projects/zyda) | Arabic-first SaaS type relationships, baseline calibration, modular bilingual social behavior | Typeface, letter-derived grid, layouts, brand assets |
-| [D&AD 2026 entry kit and judging criteria](https://media.dandad.org/documents/Entry_Kit_2026_EN_1.pdf) | Idea, execution, and fitness-for-purpose calibration | Awards status is not a substitute for AURENDOR strategy or rights |
+| [D&AD 2026 entry kit and judging criteria](https://media.dandad.org/documents/Entry_Kit_2026_EN_1.pdf) | Idea, execution, and fitness-for-purpose calibration | Awards status is not a substitute for SOCIAL_MEDIA_PLUGIN strategy or rights |
 | [W3C Arabic and Persian Layout Requirements](https://www.w3.org/TR/alreq/) | Technical checks for bidi, shaping, ligatures, diacritics, numerals, punctuation, and line breaking | Draft technical guidance is not an aesthetic style or final standard |
 
 The complete research interpretation, including source types, responsible AI, copyright, and prompt-injection controls, is in [ANTHROPOMORPHIC_RESEARCH.md](./ANTHROPOMORPHIC_RESEARCH.md).
 
-## Current AURENDOR golden-output registry
+## Current SOCIAL_MEDIA_PLUGIN golden-output registry
 
 | Status | Count | Assets |
 |---|---:|---|
@@ -114,9 +114,9 @@ The approved-gold registry remains intentionally empty. A complete exact-hash cr
 
 ## Required benchmark coverage
 
-The golden set eventually needs original AURENDOR examples across all ten required types. Current admission status is deliberately blank:
+The golden set eventually needs original SOCIAL_MEDIA_PLUGIN examples across all ten required types. Current admission status is deliberately blank:
 
-| Benchmark type | Required variation | Approved AURENDOR gold |
+| Benchmark type | Required variation | Approved SOCIAL_MEDIA_PLUGIN gold |
 |---|---|---:|
 | AI education | Editorial, conceptual, or evidence-led | `0` |
 | Automation | State change or object interaction | `0` |
@@ -131,13 +131,13 @@ The golden set eventually needs original AURENDOR examples across all ten requir
 
 Coverage does not require one fixed style per type. It requires enough validated range to demonstrate that the system is not a template factory.
 
-## AURENDOR admission contract
+## SOCIAL_MEDIA_PLUGIN admission contract
 
 An output enters `APPROVED_GOLD` only when all of the following are true.
 
 ### Ownership and provenance
 
-- The visual and verbal concept is original to AURENDOR.
+- The visual and verbal concept is original to SOCIAL_MEDIA_PLUGIN.
 - Every asset is owned, generated under recorded terms, or explicitly licensed for the use.
 - Product UI, data, claims, people, fonts, marks, and generated assets have source and rights evidence.
 - No third-party reference pixels or graphics appear in the production asset.
@@ -149,8 +149,8 @@ An output enters `APPROVED_GOLD` only when all of the following are true.
 - The image and words complete one another.
 - The composition, type, imagery, material, light, and micro-detail follow a coherent rationale.
 - Arabic assets pass every rule in [ARABIC_DESIGN_RULES.md](./ARABIC_DESIGN_RULES.md).
-- Anthropomorphic assets pass the level, face, capability, and originality controls in [AURENDOR_ANTHROPOMORPHIC_SYSTEM.md](./AURENDOR_ANTHROPOMORPHIC_SYSTEM.md).
-- The work remains recognizably AURENDOR with the logo hidden.
+- Anthropomorphic assets pass the level, face, capability, and originality controls in [SOCIAL_MEDIA_PLUGIN_ANTHROPOMORPHIC_SYSTEM.md](./SOCIAL_MEDIA_PLUGIN_ANTHROPOMORPHIC_SYSTEM.md).
+- The work remains recognizably SOCIAL_MEDIA_PLUGIN with the logo hidden.
 
 ### Pixel-grounded critics
 
@@ -243,7 +243,7 @@ Engagement data may inform future hypotheses, but performance cannot downgrade t
 4. Complete all independent current-hash critiques and pairwise comparisons.
 5. Close system-level release blockers; do not waive them for a visually strong exception.
 6. Submit qualifying assets for separate owner approval.
-7. Add only approved hashes to the AURENDOR registry.
+7. Add only approved hashes to the SOCIAL_MEDIA_PLUGIN registry.
 8. Use the immutable set for future creative-engine regression.
 
-Until this procedure produces at least one qualifying item—and the broader benchmark proves repeatability—the accurate statement is: **professional reference anchors exist; the AURENDOR golden set does not yet.**
+Until this procedure produces at least one qualifying item—and the broader benchmark proves repeatability—the accurate statement is: **professional reference anchors exist; the SOCIAL_MEDIA_PLUGIN golden set does not yet.**

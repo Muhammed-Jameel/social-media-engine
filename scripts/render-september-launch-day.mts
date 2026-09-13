@@ -49,8 +49,8 @@ const [fontRegular, fontBold, latinBold, logoColor, logoPale] = await Promise.al
   dataUri(join(fontRoot, "GhroobArabicITF-Regular.otf"), "font/otf"),
   dataUri(join(fontRoot, "GhroobArabicITF-ExtraBold.otf"), "font/otf"),
   dataUri(join(fontRoot, "DhRanclo-Bold.otf"), "font/otf"),
-  dataUri(join(logoRoot, "aurendor-horizontal-color.svg"), "image/svg+xml"),
-  dataUri(join(logoRoot, "aurendor-horizontal-pale.svg"), "image/svg+xml"),
+  dataUri(join(logoRoot, "social-horizontal-color.svg"), "image/svg+xml"),
+  dataUri(join(logoRoot, "social-horizontal-pale.svg"), "image/svg+xml"),
 ]);
 
 const sourcePlateFiles = launchPosts.flatMap((post) =>
@@ -192,7 +192,7 @@ function metaphorFor(postKey: string, sequence: number): string {
     "SEP-02": ["HOW WE WORK", "01 · OBSERVE", "02 · DECIDE", "03 · BUILD", "04 · MEASURE", "MAP THE FIRST PATH"],
     "SEP-03": ["FOUR CAPABILITIES", "01 · AUTOMATION", "02 · KNOWLEDGE", "03 · SYSTEMS", "04 · BUNYAN PRO", "CHOOSE BY THE PROBLEM"],
   };
-  return labels[postKey]?.[sequence - 1] ?? "AURENDOR";
+  return labels[postKey]?.[sequence - 1] ?? "SOCIAL_MEDIA_PLUGIN";
 }
 
 function carouselHtml(post: (typeof launchPosts)[number], slide: CarouselFrame): string {
@@ -252,7 +252,7 @@ function storyHtml(post: (typeof launchPosts)[number], story: SupportingStoryFra
     `<img class="brand" src="${logoPale}" alt=""/>`, `<div class="series"><b>0${post.sequence}</b>/ 03 · STORY 0${story.sequence}</div>`,
     '<section class="story-copy" data-safe>', `<div class="chapter">${story.sequence === 1 ? "قبل المنشور" : "بعد المنشور"}</div>`, `<h1>${headlineHtml}</h1>`,
     `<p class="body">${story.sequence === 1 ? "شاركنا تجربتك لنقدّم محتوى أقرب إلى تحديات العمل الفعلية." : "ست شرائح موجزة تشرح الفكرة وتضع الخطوة التالية في سياق واضح."}</p>`, '</section>',
-    `<section class="interaction" data-safe>${storyInteraction(story)}</section>`, `<div class="story-footer">${post.key} · AURENDOR LAUNCH 2026</div>`, '</main></body></html>',
+    `<section class="interaction" data-safe>${storyInteraction(story)}</section>`, `<div class="story-footer">${post.key} · SOCIAL_MEDIA_PLUGIN LAUNCH 2026</div>`, '</main></body></html>',
   ].join("");
 }
 
@@ -302,26 +302,26 @@ try {
 
 const sourcePlates = sourcePlateFiles;
 const manifest = {
-  schemaVersion: "2.0.0", campaign: "AURENDOR launch day — tactile image-led direction", generatedAt: new Date().toISOString(), posts: 3,
+  schemaVersion: "2.0.0", campaign: "SOCIAL_MEDIA_PLUGIN launch day — tactile image-led direction", generatedAt: new Date().toISOString(), posts: 3,
   carouselSlides: records.filter((record) => record.kind === "carousel_slide").length,
   storyFrames: records.filter((record) => record.kind === "story_frame").length,
   externalAssets: [], generatedOriginalAssets: sourcePlates.map((file) => `artifacts/monthly-plans/2026-09-structured-intelligence/launch-day/source-plates-v3/${file}`),
-  ownedAssets: ["apps/web/public/brand/aurendor-horizontal-color.svg", "apps/web/public/brand/aurendor-horizontal-pale.svg", "marketing/brand/fonts/final-2026/GhroobArabicITF-Regular.otf", "marketing/brand/fonts/final-2026/GhroobArabicITF-ExtraBold.otf", "marketing/brand/fonts/final-2026/DhRanclo-Bold.otf"],
-  productionNotes: ["Eighteen original source plates were generated specifically for AURENDOR: one unique image for every carousel slide, with approved prior work used only as style reference.", "All visible copy and logos are applied by the deterministic renderer; generated plates contain no text, logo, or people.", "The red-marked visual patterns were excluded: no flat diagram language, split explainers, neon fields, or generic dashboard cards.", "All Arabic is rendered with the canonical Ghroob font, increased line height, and checked inside the canvas safe area.", "Story files use relevant scenes from the carousel family and reserve space for native platform interaction/link stickers.", "Files require owner approval before publication."],
+  ownedAssets: ["apps/web/public/brand/social-horizontal-color.svg", "apps/web/public/brand/social-horizontal-pale.svg", "marketing/brand/fonts/final-2026/GhroobArabicITF-Regular.otf", "marketing/brand/fonts/final-2026/GhroobArabicITF-ExtraBold.otf", "marketing/brand/fonts/final-2026/DhRanclo-Bold.otf"],
+  productionNotes: ["Eighteen original source plates were generated specifically for SOCIAL_MEDIA_PLUGIN: one unique image for every carousel slide, with approved prior work used only as style reference.", "All visible copy and logos are applied by the deterministic renderer; generated plates contain no text, logo, or people.", "The red-marked visual patterns were excluded: no flat diagram language, split explainers, neon fields, or generic dashboard cards.", "All Arabic is rendered with the canonical Ghroob font, increased line height, and checked inside the canvas safe area.", "Story files use relevant scenes from the carousel family and reserve space for native platform interaction/link stickers.", "Files require owner approval before publication."],
   records,
 };
 
 await writeFile(join(outputRoot, "manifest.json"), JSON.stringify(manifest, null, 2) + "\n", "utf8");
 await writeFile(join(outputRoot, "DESIGN-ASSET-PLAN.md"), [
-  "# AURENDOR launch-day design asset plan", "", "Direction: tactile, cinematic, image-led editorial design. Every carousel uses six distinct but thematically connected physical metaphors rather than repeated crops of one image.", "",
+  "# SOCIAL_MEDIA_PLUGIN launch-day design asset plan", "", "Direction: tactile, cinematic, image-led editorial design. Every carousel uses six distinct but thematically connected physical metaphors rather than repeated crops of one image.", "",
   "1. Eighteen original source plates — one unique generated image per carousel slide; text-free, logo-free, and people-free.",
-  "2. Official AURENDOR horizontal marks — source: `apps/web/public/brand`; used small and consistently.",
-  "3. Ghroob Arabic ITF — canonical AURENDOR typeface for all Arabic copy; exact RTL text remains editable in the renderer.",
+  "2. Official SOCIAL_MEDIA_PLUGIN horizontal marks — source: `apps/web/public/brand`; used small and consistently.",
+  "3. Ghroob Arabic ITF — canonical SOCIAL_MEDIA_PLUGIN typeface for all Arabic copy; exact RTL text remains editable in the renderer.",
   "4. Dh Ranclo Bold — canonical Latin display face for restrained metadata only.", "", "No stock assets or third-party design elements are used. The source plates are project-bound generated originals; the original generator outputs remain preserved in the Codex generated-images folder.", "", "Rejected patterns deliberately excluded: flat vector explainers, split cards, bright full-green canvases, decorative node diagrams, fake dashboards, and people used as attention devices.", "",
 ].join("\n"), "utf8");
 
 const contentPackage = [
-  "# AURENDOR launch-day content package", "", "Three Arabic announcement carousels scheduled across launch day. Every carousel contains six 1080×1350 slides and two supporting 1080×1920 Story backgrounds.", "", "## Publishing order", "",
+  "# SOCIAL_MEDIA_PLUGIN launch-day content package", "", "Three Arabic announcement carousels scheduled across launch day. Every carousel contains six 1080×1350 slides and two supporting 1080×1920 Story backgrounds.", "", "## Publishing order", "",
   ...launchPosts.flatMap((post) => [
     `### ${post.key} — ${post.title}`, "", `- Publish: ${post.publishAt}`, `- Platforms: ${post.platforms.join(", ")}`, `- Purpose: ${post.pillar}`, `- Asset folder: \`${relative(root, join(outputRoot, post.key))}\``, "", "Caption:", "", finalCaption(post), "", "Slides:", "", ...post.slides.map((slide) => `1. **${slide.sequence}. ${slide.title}**${slide.body ? ` — ${slide.body}` : ""}`), "", "Supporting Stories:", "", ...post.supportingStories.map((story) => `1. **Story ${story.sequence} · ${story.timing}** — ${story.exactText} · Native sticker: ${story.interaction.type} (${story.interaction.prompt})`), "",
   ]),

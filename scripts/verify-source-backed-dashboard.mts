@@ -4,7 +4,7 @@ import { chromium, type Page } from "@playwright/test";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
 const evidenceRoot = `${root}artifacts/creative-rebuild/source-backed-cohort-2026-08-31/dashboard-verification/`;
-const url = process.env.AURENDOR_DASHBOARD_URL ?? "http://localhost:3000/plans/2026-09";
+const url = process.env.SOCIAL_MEDIA_PLUGIN_DASHBOARD_URL ?? "http://localhost:3000/plans/2026-09";
 const expectedTitle = "الدفع الرقمي يكتمل عند نقطة القبول";
 const expectedAlt = "قطعة دفع خضراء تسير في مسار حجري وتتوقف أمام تجويف فارغ يرمز إلى نقطة قبول غير متاحة.";
 const expectedPublicFile = "month1-12-sb01.png";

@@ -1,4 +1,4 @@
-# AURENDOR Creative Quality Rubric
+# SOCIAL_MEDIA_PLUGIN Creative Quality Rubric
 
 **Status:** active benchmark specification; production enforcement still requires end-to-end workflow evidence  
 **Scale:** `160` points, eight dimensions × `20`  
@@ -22,7 +22,7 @@ No qualitative score is valid unless the critic receives and records:
 - a representative mobile-size render;
 - a thumbnail or feed view when relevant;
 - the communication objective, audience, and selected design brief;
-- active AURENDOR visual rules;
+- active SOCIAL_MEDIA_PLUGIN visual rules;
 - `2–5` relevant professional anchors, selected for the dimensions being compared;
 - asset, UI, photography, generated-image, and font provenance;
 - the current revision lineage;
@@ -143,7 +143,7 @@ Low score evidence: halos, floating contacts, broken hands, fake UI, inconsisten
 
 Evaluate:
 
-- AURENDOR recognizability with the logo hidden;
+- SOCIAL_MEDIA_PLUGIN recognizability with the logo hidden;
 - fit with Operational Intelligence and Digital Civilization;
 - material, light, color-state, and typographic behavior;
 - Arabic authority and regional credibility;
@@ -151,9 +151,9 @@ Evaluate:
 - correct active brand version, logo, type, and palette;
 - feed-level consistency without a repeated layout.
 
-High score evidence: the world feels AURENDOR before the mark; the logo acts as a quiet signature.
+High score evidence: the world feels SOCIAL_MEDIA_PLUGIN before the mark; the logo acts as a quiet signature.
 
-Low score evidence: brand quality depends on green and logo presence, archived systems are mixed, or a provider's generic style overwhelms AURENDOR.
+Low score evidence: brand quality depends on green and logo presence, archived systems are mixed, or a provider's generic style overwhelms SOCIAL_MEDIA_PLUGIN.
 
 ### 6. Communication — 20
 
@@ -193,20 +193,20 @@ Low score evidence: technically clean but synthetic output, template polish with
 
 ### 8. Distinctiveness — 20
 
-Ask: **Was this designed specifically for AURENDOR and this message, or could it be generic AI/Canva/SaaS content?**
+Ask: **Was this designed specifically for SOCIAL_MEDIA_PLUGIN and this message, or could it be generic AI/Canva/SaaS content?**
 
 Evaluate:
 
 - ownability of the visual mechanism;
-- originality relative to recent AURENDOR work and nearest references;
-- AURENDOR-specific use of operational behavior, Arabic voice, material, and charged state;
+- originality relative to recent SOCIAL_MEDIA_PLUGIN work and nearest references;
+- SOCIAL_MEDIA_PLUGIN-specific use of operational behavior, Arabic voice, material, and charged state;
 - difference in focal geometry and structure from the recent feed;
 - resistance to category clichés;
 - absence of copied compositions, characters, motifs, or trade dress.
 
 High score evidence: the composition cannot accept unrelated copy without losing its logic and remains recognizable with the logo hidden.
 
-Low score evidence: swap-ready template, generic premium-tech glow, common AI symbols, repeated feed silhouette, or reference-specific expression recolored for AURENDOR.
+Low score evidence: swap-ready template, generic premium-tech glow, common AI symbols, repeated feed silhouette, or reference-specific expression recolored for SOCIAL_MEDIA_PLUGIN.
 
 ## Decision bands
 
@@ -251,7 +251,7 @@ Any hard failure forces `REJECT`, regardless of total:
 - `REFERENCE_TOO_CLOSE`
 - `UNLICENSED_ASSET`
 
-Pipeline-level failures—such as metadata self-approval, a missing current-hash critic, or an unverified font—produce `BLOCKED`, not a provisional creative score. The detailed observable patterns and controls are in [forbidden-patterns.yaml](../aurendor/forbidden-patterns.yaml).
+Pipeline-level failures—such as metadata self-approval, a missing current-hash critic, or an unverified font—produce `BLOCKED`, not a provisional creative score. The detailed observable patterns and controls are in [forbidden-patterns.yaml](../social-media-plugin/forbidden-patterns.yaml).
 
 ## Required independent critics
 
@@ -336,4 +336,4 @@ A post that passes alone may still fail the feed. Exact SHA inequality does not 
 
 ## Golden-set admission
 
-An asset can enter the AURENDOR golden set only after it passes this entire contract, decisively beats the old engine on an identical brief, and receives separate owner approval bound to the current hash. No present AURENDOR output has passed that standard. The distinction between professional reference anchors and original AURENDOR gold is maintained in [GOLDEN_SET.md](./GOLDEN_SET.md).
+An asset can enter the SOCIAL_MEDIA_PLUGIN golden set only after it passes this entire contract, decisively beats the old engine on an identical brief, and receives separate owner approval bound to the current hash. No present SOCIAL_MEDIA_PLUGIN output has passed that standard. The distinction between professional reference anchors and original SOCIAL_MEDIA_PLUGIN gold is maintained in [GOLDEN_SET.md](./GOLDEN_SET.md).

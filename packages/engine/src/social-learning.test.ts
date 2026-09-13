@@ -17,11 +17,11 @@ describe('Measurement regression checks',()=>{
   const r=normalizePostMetrics([{label:'Clicks',data:[{date:'2026-09-10',total:12}]},{label:'Link clicks',data:[{date:'2026-09-10',total:5}]},{label:'Views',data:[{date:'2026-09-09',total:''},{date:'2026-09-10',total:8}]}]);
   expect(r.metrics.clicks).toBeNull();expect(r.metrics.views).toBeNull();expect(r.ambiguous).toEqual(['Link clicks','Views']);
  });
- it.each(['https://tiktok.com/messages','https://tiktok.com/messages/','https://tiktok.com/@aurendor','https://not-tiktok.com/@a/video/123','https://tiktok.com.evil.example/@a/video/123','https://evil.example/post/123','not a URL'])('rejects non-public TikTok link %s',releaseURL=>{
+ it.each(['https://tiktok.com/messages','https://tiktok.com/messages/','https://tiktok.com/@social-media-plugin','https://not-tiktok.com/@a/video/123','https://tiktok.com.evil.example/@a/video/123','https://evil.example/post/123','not a URL'])('rejects non-public TikTok link %s',releaseURL=>{
   expect(isPublicPost({state:'PUBLISHED',platform:'tiktok',releaseURL})).toBe(false);
  });
  it.each([
-  ['instagram','https://www.instagram.com/reel/a/'],['instagram','https://www.instagram.com/stories/aurendor/123/'],['facebook','https://www.facebook.com/aurendor/posts/123'],['facebook','https://www.facebook.com/permalink.php?story_fbid=123&id=456'],['linkedin','https://www.linkedin.com/feed/update/urn:li:ugcPost:123'],['x','https://x.com/aurendor/status/123'],['tiktok','https://www.tiktok.com/@aurendor.io/video/123']
+  ['instagram','https://www.instagram.com/reel/a/'],['instagram','https://www.instagram.com/stories/social-media-plugin/123/'],['facebook','https://www.facebook.com/social-media-plugin/posts/123'],['facebook','https://www.facebook.com/permalink.php?story_fbid=123&id=456'],['linkedin','https://www.linkedin.com/feed/update/urn:li:ugcPost:123'],['x','https://x.com/social-media-plugin/status/123'],['tiktok','https://www.tiktok.com/@social-media-plugin.io/video/123']
  ])('recognizes a provider post permalink for %s',(platform,releaseURL)=>expect(isPublicPost({state:'PUBLISHED',platform,releaseURL})).toBe(true));
  it('retains TikTok inbox method as nonpublic even if it contains a post-shaped URL',()=>expect(isPublicPost({state:'PUBLISHED',platform:'tiktok',releaseURL:'https://www.tiktok.com/@a/video/123',settings:{content_posting_method:'UPLOAD'}})).toBe(false));
  it('handles invalid publication timestamps without crashing the collector',()=>expect(nextCheckpoint('invalid',[],Date.now())).toBeNull());

@@ -3,7 +3,7 @@ import { readFile } from "node:fs/promises";
 import { basename, join } from "node:path";
 import type { DatabaseClient } from "./client";
 import { projectRoot } from "./client";
-import { AURENDOR_ORGANIZATION_ID } from "./ids";
+import { SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID } from "./ids";
 
 interface BrandManifestSource {
   sourcePath: string;
@@ -49,7 +49,7 @@ export async function syncBrandSourceManifest(database: DatabaseClient): Promise
          last_modified = EXCLUDED.last_modified, indexed_at = now()`,
       [
         id,
-        AURENDOR_ORGANIZATION_ID,
+        SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID,
         source.sourcePath,
         basename(source.sourcePath),
         source.sha256,
@@ -80,7 +80,7 @@ export async function syncBrandSourceManifest(database: DatabaseClient): Promise
      ON CONFLICT (id) DO UPDATE SET new_state = EXCLUDED.new_state, created_at = now()`,
     [
       "audit-brand-source-manifest-current",
-      AURENDOR_ORGANIZATION_ID,
+      SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID,
       JSON.stringify(summary),
       "Indexed source metadata and provenance only; source content remains untrusted data.",
       randomUUID(),

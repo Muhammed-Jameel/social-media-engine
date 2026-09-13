@@ -17,9 +17,9 @@ The report’s example concerns a pump-delivery delay and confirms the presence 
 ## Assets and rights
 
 - Conceptual architectural plate: original image_gen output for this task, September10,2026. Source: /Users/muhammedjameel/.codex/generated_images/01a08ca9-c50a-7660-a3f5-686d27002f8d/exec-cb376d7e-b157-4ef2-a6f2-b4734b5d268d.png. No copied architectural project, external stock image, or generated text/logo. Generation prompt recorded in credits.json. Crops are presentation-only HTML image positioning; source PNG retained.
-- Logos: existing approved AURENDOR horizontal-white.svg and horizontal-dark.svg from content-system-v7/assets/brand/logos. No redrawing or altered letterforms.
+- Logos: existing approved SOCIAL_MEDIA_PLUGIN horizontal-white.svg and horizontal-dark.svg from content-system-v7/assets/brand/logos. No redrawing or altered letterforms.
 - Arabic: Ghroob Arabic ITF Regular400, Bold700, ExtraBold800. English/counters: Dh Ranclo Bold700. Original licensed font files referenced locally rather than redistributed in the public artwork package.
-- Brand guide read: AURENDOR_Brand_Guideline_FINAL_2026.pdf. Exact palette follows the user-approved current production system #003F35 / #0EDB23 / #77FF70 with neutral paper/concrete surfaces; stale conflicting palette prose is not applied.
+- Brand guide read: SOCIAL_MEDIA_PLUGIN_Brand_Guideline_FINAL_2026.pdf. Exact palette follows the user-approved current production system #003F35 / #0EDB23 / #77FF70 with neutral paper/concrete surfaces; stale conflicting palette prose is not applied.
 - Research basis: B-ILO-DIGITAL and B-PRODUCT in the researched brief. The ILO is cited as a source, not depicted as endorsing the product. No article photographs or institutional logos used.
 
 ## Actual tool usage
@@ -40,7 +40,7 @@ The Story intentionally reserves x210–870, y1540–1660 for a native Instagram
 
 ## Rebuild
 
-From the project root: node content-system-v8/production/cycle-01/B01/build.cjs then node content-system-v8/production/cycle-01/B01/render.cjs. Existing aurendor-launch-1109 node_modules and local Chrome are required. Raw fonts remain linked to the existing project directory.
+From the project root: node content-system-v8/production/cycle-01/B01/build.cjs then node content-system-v8/production/cycle-01/B01/render.cjs. Existing social-launch-1109 node_modules and local Chrome are required. Raw fonts remain linked to the existing project directory.
 
 Independent editorial correction: slide04 headline now uses the correct agreement «خمسة أسئلة تكفي للبداية.». The generator, HTML, exact-copy, PNG/mobile, PDF and contact proof were rebuilt; browser checks still pass6/6.
 

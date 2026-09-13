@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight, Layers3 } from "lucide-react";
-import type { ContentSummaryView } from "@aurendor/db/runtime";
+import type { ContentSummaryView } from "@social-media-plugin/db/runtime";
 import { formatDateTime, humanize } from "@/lib/format";
 import { RiskBadge, StatusBadge } from "./status-badge";
 

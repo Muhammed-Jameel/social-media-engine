@@ -2,7 +2,7 @@ import { randomBytes } from "node:crypto";
 import { spawnSync } from "node:child_process";
 import { chmod, mkdir, readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
-import { projectRoot } from "@aurendor/db";
+import { projectRoot } from "@social-media-plugin/db";
 
 const POSTIZ_APP_CONTAINER = "postiz-postiz-1";
 const POSTIZ_DATABASE_CONTAINER = "postiz-postiz-postgres-1";

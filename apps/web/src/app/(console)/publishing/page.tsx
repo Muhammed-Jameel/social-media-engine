@@ -2,8 +2,8 @@ import { SocialOperationsPanel } from "@/components/social-operations-panel";
 import { randomUUID } from "node:crypto";
 import Link from "next/link";
 import { AlertTriangle, CalendarClock, CheckCircle2, ExternalLink, Layers3, PlugZap } from "lucide-react";
-import { getDatabase, getRepository, listPostizBatches } from "@aurendor/db/runtime";
-import { currentPackage, loadProductionJob } from "@aurendor/engine";
+import { getDatabase, getRepository, listPostizBatches } from "@social-media-plugin/db/runtime";
+import { currentPackage, loadProductionJob } from "@social-media-plugin/engine";
 import { PageHeader } from "@/components/page-header";
 import { EmptyState, Panel } from "@/components/panel";
 import { PublishSubmitButton } from "@/components/publish-submit-button";
@@ -39,7 +39,7 @@ export default async function PublishingPage({ searchParams }: { searchParams: P
       <PageHeader
         eyebrow="Postiz publishing bridge"
         title="Publish once. Adapt everywhere."
-        description="A supervised publishing surface for the five active AURENDOR channels. Postiz handles provider connections; Content OS preserves approval, exact assets, audit history, and duplicate protection."
+        description="A supervised publishing surface for the five active SOCIAL_MEDIA_PLUGIN channels. Postiz handles provider connections; Content OS preserves approval, exact assets, audit history, and duplicate protection."
         actions={<a className="button button-secondary" href={runtime.frontendUrl} target="_blank" rel="noreferrer"><ExternalLink size={16} /> Open Postiz</a>}
       />
 

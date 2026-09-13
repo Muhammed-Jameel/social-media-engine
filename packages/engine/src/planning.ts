@@ -1,5 +1,5 @@
 import { createHash, randomUUID } from "node:crypto";
-import { MonthlyPlanSchema, type MonthlyPlan, type Platform } from "@aurendor/schemas";
+import { MonthlyPlanSchema, type MonthlyPlan, type Platform } from "@social-media-plugin/schemas";
 import type { StructuredAgentGateway } from "./agents";
 import { createAgentGateway } from "./agents";
 import { retrieveBrandContext } from "./brand";
@@ -39,10 +39,10 @@ function messageFor(pillar: string, priority: string): string {
     "operational-education": "A clear workflow makes accountability and the next decision visible.",
     "applied-ai": "Applied AI becomes useful when it is attached to a defined operating decision.",
     "proof-and-systems": "Trust grows when the system, evidence, and operating logic can be inspected.",
-    "brand-authority": "AURENDOR builds operational intelligence infrastructure, not isolated digital features.",
+    "brand-authority": "SOCIAL_MEDIA_PLUGIN builds operational intelligence infrastructure, not isolated digital features.",
     product: "A focused operational product can replace fragmented project follow-up with a controlled flow.",
     "founder-insight": "The quality of automation depends on the quality of the process decision beneath it.",
-    "timely-reserve": "Use the reserved slot only for a current topic with verified evidence and a durable AURENDOR point of view.",
+    "timely-reserve": "Use the reserved slot only for a current topic with verified evidence and a durable SOCIAL_MEDIA_PLUGIN point of view.",
   };
   return map[pillar] ?? `Turn ${priority} into a concrete and inspectable operating practice.`;
 }
@@ -92,7 +92,7 @@ export function createBootstrapMonthlyPlan(input: MonthlyPlanningInput): Monthly
     schemaVersion: "1.0.0",
     artifactId: stableId(`${input.organizationId}:${input.month}:monthly-plan`),
     artifactType: "monthly_plan",
-    skill: "aurendor-content-strategy",
+    skill: "social-content-strategy",
     skillVersion: "1.0.0",
     modelVersion: "none",
     promptVersion: "bootstrap-plan-v1",
@@ -110,7 +110,7 @@ export function createBootstrapMonthlyPlan(input: MonthlyPlanningInput): Monthly
     timezone: input.timezone ?? "Asia/Baghdad",
     businessPriorities: input.businessPriorities,
     objectives: [
-      "Build qualified awareness for AURENDOR's operational intelligence category.",
+      "Build qualified awareness for SOCIAL_MEDIA_PLUGIN's operational intelligence category.",
       "Increase evidence-led consideration without overpromotion.",
       "Create reusable learning signals for the next monthly retrospective.",
     ],
@@ -136,12 +136,12 @@ export class MonthlyPlanningService {
     ]);
     const result = await this.gateway.run({
       role: "CONTENT_STRATEGIST",
-      taskName: "aurendor_monthly_plan_v1",
+      taskName: "social_media_plugin_monthly_plan_v1",
       instructions: [
         "Create a professional monthly content system, not a generic topic list.",
         "Every item must bind objective, audience tension, perception shift, evidence, CTA, KPI, risk, and anti-repetition context.",
         "Do not invent performance history, current facts, proof, customer names, offers, or provider capabilities.",
-        "Keep the FINAL 2026 deep-green/neon identity and AURENDOR operational-intelligence category authoritative.",
+        "Keep the FINAL 2026 deep-green/neon identity and SOCIAL_MEDIA_PLUGIN operational-intelligence category authoritative.",
       ].join(" "),
       input: { request: input, brandContext: brand, bootstrapWhenHistoryMissing: true },
       schema: MonthlyPlanSchema,

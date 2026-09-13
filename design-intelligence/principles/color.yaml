@@ -11,7 +11,7 @@ principles:
     languages: [ar, en]
     anthropomorphismLevels: [0, 1, 2, 3, 4, 5]
     strongReferenceIds: [ref_51e708951ea61f18, ref_7ea2e6edfd24a465, ref_f5cec23c32415d6e]
-    aurendorApplication: "Use deep green or paper as the world, mid/pale tones for depth, and neon only where intelligence, action, or resolved flow is visible."
+    socialMediaPluginApplication: "Use deep green or paper as the world, mid/pale tones for depth, and neon only where intelligence, action, or resolved flow is visible."
     retrievalTags: [color, accent, green, hierarchy, atmosphere]
     mustNotCopy: "Do not sample or reproduce a source palette or gradient."
   - id: COLOR_SEMANTIC_NOT_SKIN
@@ -24,7 +24,7 @@ principles:
     languages: [ar, en]
     anthropomorphismLevels: [0, 1, 2, 3, 4]
     strongReferenceIds: [ref_51e708951ea61f18, ref_4afce40fe49062b6, ref_f5cec23c32415d6e]
-    aurendorApplication: "Record the meaning of each non-neutral color in the brief and remove color changes with no state or hierarchy role."
+    socialMediaPluginApplication: "Record the meaning of each non-neutral color in the brief and remove color changes with no state or hierarchy role."
     retrievalTags: [semantic, state, evidence, process, system]
     mustNotCopy: "Do not adopt another campaign's color-state mapping."
   - id: COLOR_MATERIAL_LIGHT_BEFORE_GLOW
@@ -37,7 +37,7 @@ principles:
     languages: [ar, en]
     anthropomorphismLevels: [1, 2, 3, 4, 5]
     strongReferenceIds: [ref_2ca843f06643d5f6, ref_6dd0a9246092f4d5, ref_51e708951ea61f18]
-    aurendorApplication: "Light the AURENDOR world as a physical environment; reserve pale-neon spill for active intelligence and verify it does not wash out Arabic type."
+    socialMediaPluginApplication: "Light the SOCIAL_MEDIA_PLUGIN world as a physical environment; reserve pale-neon spill for active intelligence and verify it does not wash out Arabic type."
     retrievalTags: [light, material, glow, depth, premium]
     mustNotCopy: "Do not replicate source lighting, reflections, atmosphere, or surface colors."
   - id: COLOR_FEED_BALANCE
@@ -50,6 +50,6 @@ principles:
     languages: [ar, en]
     anthropomorphismLevels: [0, 1, 2, 3, 4, 5]
     strongReferenceIds: [ref_51e708951ea61f18, ref_f5cec23c32415d6e, ref_7ea2e6edfd24a465]
-    aurendorApplication: "Assign each post a feed rhythm role and reject a nine-post plan dominated by the same green field or neon intensity."
+    socialMediaPluginApplication: "Assign each post a feed rhythm role and reject a nine-post plan dominated by the same green field or neon intensity."
     retrievalTags: [feed, rhythm, fatigue, color, campaign]
     mustNotCopy: "Do not copy a source campaign's color sequence or grid."

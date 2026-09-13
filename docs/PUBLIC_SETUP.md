@@ -34,7 +34,7 @@ The repository starts in safe demo mode by default:
 - `DEMO_MODE=true`
 - `DRY_RUN=true`
 - `PRODUCTION_PUBLISHING_ENABLED=false`
-- `AURENDOR_ENGINE_PAUSED=false`
+- `SOCIAL_MEDIA_PLUGIN_ENGINE_PAUSED=false`
 
 ## 4) Validate your environment
 

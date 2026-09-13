@@ -1,5 +1,5 @@
 import { randomUUID } from "node:crypto";
-import type { CapabilityState, Platform } from "@aurendor/schemas";
+import type { CapabilityState, Platform } from "@social-media-plugin/schemas";
 
 export interface PlatformCapabilities {
   directPublish: CapabilityState;
@@ -62,7 +62,7 @@ export class DryRunPublisher implements SocialPublisher {
         schedule: "MANUAL_HANDOFF_REQUIRED",
         video: "MANUAL_HANDOFF_REQUIRED",
         comments: "UNAVAILABLE_POLICY",
-        reason: ["TikTok draft upload/manual completion is required for this internal AURENDOR utility."],
+        reason: ["TikTok draft upload/manual completion is required for this internal SOCIAL_MEDIA_PLUGIN utility."],
       };
     }
     if (this.platform === "linkedin") {

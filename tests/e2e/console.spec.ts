@@ -21,7 +21,7 @@ test("dashboard identifies the demo environment and all 33 imported items", asyn
 
   await page.goto("/");
 
-  await expect(page).toHaveTitle(/AURENDOR Content OS/);
+  await expect(page).toHaveTitle(/SOCIAL_MEDIA_PLUGIN Content OS/);
   await expect(page.getByRole("heading", { level: 1, name: "The month, under control." })).toBeVisible();
   await expect(page.getByRole("status").filter({ hasText: "Demonstration environment." })).toContainText(
     "Analytics are synthetic and no provider action can publish.",
@@ -77,7 +77,7 @@ test("analytics labels every demonstration as synthetic evidence", async ({ page
   await expect(page.getByRole("heading", { level: 1, name: "Evidence before optimization." })).toBeVisible();
   await expect(page.locator(".evidence-label")).toHaveText(/Synthetic demo/);
   await expect(page.locator(".evidence-callout")).toContainText("Synthetic 8-week demonstration");
-  await expect(page.locator(".evidence-callout")).toContainText("must not be used as proof of AURENDOR performance");
+  await expect(page.locator(".evidence-callout")).toContainText("must not be used as proof of SOCIAL_MEDIA_PLUGIN performance");
   await expect(page.getByRole("table")).toContainText("Directional demo only");
   await expectHealthyConsolePage(page, runtimeErrors);
 });
@@ -90,7 +90,7 @@ test("health endpoint reports demo mode with publishing disabled", async ({ requ
   const health = (await response.json()) as Record<string, unknown>;
   expect(health).toMatchObject({
     status: "ok",
-    service: "aurendor-content-os",
+    service: "social-content-os",
     mode: "demo",
     publicationCapability: "dry-run-only",
     publishingEnabled: false,

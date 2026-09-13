@@ -23,7 +23,7 @@ If a render, slide, license, or evidence input is missing, return `BLOCKED`; do 
 - Active colors are deep `#003F35`, neon `#0EDB23`, pale `#77FF70`, and paper `#F4F8F5` unless an evidence-backed campaign extension is approved.
 - Latin display uses Dh Ranclo; Arabic uses Ghroob Arabic ITF.
 - Arabic is correctly shaped, professional, naturally authored, and right-to-left; numerals, punctuation, mixed Latin text, and alignment are inspected explicitly.
-- The design expresses disciplined grid, modular geometry, deliberate whitespace, quiet confidence, and a recognizable AURENDOR device beyond simply placing a logo on green.
+- The design expresses disciplined grid, modular geometry, deliberate whitespace, quiet confidence, and a recognizable SOCIAL_MEDIA_PLUGIN device beyond simply placing a logo on green.
 - Archived cream/gold Sovereign Field v3 styling cannot silently pass as current work.
 - Visuals avoid generic blue-tech clichés, stock-template composition, fake dashboards, gratuitous gradients, placeholder statistics, and ornamental AI imagery with no concept role.
 

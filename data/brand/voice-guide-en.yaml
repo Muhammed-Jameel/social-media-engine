@@ -34,10 +34,10 @@ bannedPatterns:
 ctaExamples:
   - See the system
   - Explore the workflow
-  - Talk to Aurendor
+  - Talk to Social Media Plugin
 provenance:
   - path: marketing/new-brand/00-brand-strategy/brand-voice.md
     authority: high
-  - path: marketing/_context/AURENDOR_Brand_Voice_Guide.md
+  - path: marketing/_context/SOCIAL_MEDIA_PLUGIN_Brand_Voice_Guide.md
     authority: high
 

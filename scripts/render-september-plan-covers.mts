@@ -139,7 +139,7 @@ try {
       css,
       "</style></head><body>",
       '<main class="cover theme-', theme, " mode-", escapeHtml(post.creativeMode), '">',
-      '<div class="top"><span class="brand">aurendor</span><span class="counter"><b>',
+      '<div class="top"><span class="brand">social-media-plugin</span><span class="counter"><b>',
       String(post.sequence).padStart(2, "0"), "</b>/ 20</span></div>",
       '<section class="copy"><span class="track">', escapeHtml(trackLabels[post.contentTrack] ?? post.contentTrack), "</span>",
       "<h1>", escapeHtml(post.title), "</h1>",

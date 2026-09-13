@@ -3,10 +3,10 @@ import { FixtureAgentGateway } from "./agents";
 import { createBootstrapMonthlyPlan, MonthlyPlanningService } from "./planning";
 
 const input = {
-  organizationId: "aurendor",
+  organizationId: "social-media-plugin",
   month: "2026-10",
   timezone: "Asia/Baghdad",
-  businessPriorities: ["Operational AI authority", "Aurendor Build consideration"],
+  businessPriorities: ["Operational AI authority", "Social Media Plugin Build consideration"],
   audiences: ["Iraqi business owners", "Construction operations leaders"],
   now: new Date("2026-09-26T09:00:00.000Z"),
 };

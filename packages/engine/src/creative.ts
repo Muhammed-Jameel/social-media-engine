@@ -1,9 +1,9 @@
 import { createHash, randomUUID } from "node:crypto";
-import type { CapabilityState, DesignBrief } from "@aurendor/schemas";
+import type { CapabilityState, DesignBrief } from "@social-media-plugin/schemas";
 
-export const AURENDOR_CREATIVE_BRAND_VERSION = "final-2026.1" as const;
+export const SOCIAL_MEDIA_PLUGIN_CREATIVE_BRAND_VERSION = "final-2026.1" as const;
 
-export const AURENDOR_CREATIVE_COLORS = {
+export const SOCIAL_MEDIA_PLUGIN_CREATIVE_COLORS = {
   deep: "#003F35",
   neon: "#0EDB23",
   pale: "#77FF70",
@@ -92,7 +92,7 @@ export interface CreativeAutomationScore {
 
 export interface CreativeAutomationEvaluation {
   evaluatorVersion: "1.0.0";
-  brandVersion: typeof AURENDOR_CREATIVE_BRAND_VERSION;
+  brandVersion: typeof SOCIAL_MEDIA_PLUGIN_CREATIVE_BRAND_VERSION;
   decision: "REJECTED_BY_AUTOMATION" | "AUTOMATED_CHECKS_PASSED_VISUAL_REVIEW_REQUIRED";
   hardFails: CreativeHardFail[];
   checks: CreativeAutomationCheck[];
@@ -123,7 +123,7 @@ export interface CreativeAutomationEvaluation {
 
 export interface TechnicalCreativePreflightEvaluation {
   evaluatorVersion: "2.0.0";
-  brandVersion: typeof AURENDOR_CREATIVE_BRAND_VERSION;
+  brandVersion: typeof SOCIAL_MEDIA_PLUGIN_CREATIVE_BRAND_VERSION;
   decision: "REJECTED_BY_TECHNICAL_PREFLIGHT" | "TECHNICAL_PREFLIGHT_PASSED_PIXEL_REVIEW_REQUIRED";
   hardFails: CreativeHardFail[];
   checks: CreativeAutomationCheck[];
@@ -158,15 +158,15 @@ function expectedDirection(input: SocialSvgInput): "rtl" | "ltr" {
 function paletteFor(mode: "light" | "dark") {
   return mode === "dark"
     ? {
-        canvas: AURENDOR_CREATIVE_COLORS.deep,
-        primary: AURENDOR_CREATIVE_COLORS.paper,
-        secondary: AURENDOR_CREATIVE_COLORS.pale,
+        canvas: SOCIAL_MEDIA_PLUGIN_CREATIVE_COLORS.deep,
+        primary: SOCIAL_MEDIA_PLUGIN_CREATIVE_COLORS.paper,
+        secondary: SOCIAL_MEDIA_PLUGIN_CREATIVE_COLORS.pale,
         card: "#00302A",
       }
     : {
-        canvas: AURENDOR_CREATIVE_COLORS.paper,
-        primary: AURENDOR_CREATIVE_COLORS.deep,
-        secondary: AURENDOR_CREATIVE_COLORS.lightSecondary,
+        canvas: SOCIAL_MEDIA_PLUGIN_CREATIVE_COLORS.paper,
+        primary: SOCIAL_MEDIA_PLUGIN_CREATIVE_COLORS.deep,
+        secondary: SOCIAL_MEDIA_PLUGIN_CREATIVE_COLORS.lightSecondary,
         card: "#FFFFFF",
       };
 }
@@ -235,7 +235,7 @@ export function renderCanonicalHorizontalLogo(fill: string, x: number, y: number
 }
 
 /**
- * Renders a deterministic, editable social SVG using AURENDOR's FINAL 2026 identity.
+ * Renders a deterministic, editable social SVG using SOCIAL_MEDIA_PLUGIN's FINAL 2026 identity.
  * The output intentionally remains an SVG master. Social publishing should use a
  * separately verified raster export because font metrics vary by renderer.
  */
@@ -260,7 +260,7 @@ export function renderSocialSvg(input: SocialSvgInput): string {
   const actionX = systemMap ? Math.round(width * 0.49) : contentInset;
   const actionWidth = width - actionX - contentInset;
   const actionIconX = systemMap ? 54 : 67;
-  const footerText = input.footer ?? (rtl ? "اورندور · بنية رقمية ذكية" : "AURENDOR · Digital Civilization");
+  const footerText = input.footer ?? (rtl ? "اورندور · بنية رقمية ذكية" : "SOCIAL_MEDIA_PLUGIN · Digital Civilization");
   const textX = rtl ? width - contentInset - Math.round(contentWidth * 0.27) : contentInset;
   const kickerX = rtl ? width - contentInset - 72 : contentInset;
   const headlineLines = wrapText(input.headline, rtl ? 16 : 20);
@@ -273,24 +273,24 @@ export function renderSocialSvg(input: SocialSvgInput): string {
   const copyHash = copyBindingHash(input, footerText);
 
   return `<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-labelledby="title desc" data-aurendor-brand-version="${AURENDOR_CREATIVE_BRAND_VERSION}" data-aurendor-mode="${mode}" data-aurendor-direction="${direction}" data-aurendor-layout="${layout}" data-aurendor-background="${palette.canvas}" data-aurendor-primary="${palette.primary}" data-aurendor-secondary="${palette.secondary}" data-aurendor-copy-hash="${copyHash}">
+<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-labelledby="title desc" data-social-brand-version="${SOCIAL_MEDIA_PLUGIN_CREATIVE_BRAND_VERSION}" data-social-mode="${mode}" data-social-direction="${direction}" data-social-layout="${layout}" data-social-background="${palette.canvas}" data-social-primary="${palette.primary}" data-social-secondary="${palette.secondary}" data-social-copy-hash="${copyHash}">
   <title id="title">${escapeXml(input.headline)}</title>
   <desc id="desc">${escapeXml(input.support)}</desc>
   <rect data-role="canvas" width="${width}" height="${height}" fill="${palette.canvas}"/>
-  ${systemMap ? `<g aria-hidden="true" opacity="0.2" fill="${AURENDOR_CREATIVE_COLORS.neon}">
+  ${systemMap ? `<g aria-hidden="true" opacity="0.2" fill="${SOCIAL_MEDIA_PLUGIN_CREATIVE_COLORS.neon}">
     <circle cx="118" cy="254" r="4"/><circle cx="158" cy="254" r="4"/><circle cx="198" cy="254" r="4"/><circle cx="238" cy="254" r="4"/>
     <circle cx="118" cy="294" r="4"/><circle cx="158" cy="294" r="4"/><circle cx="198" cy="294" r="4"/><circle cx="238" cy="294" r="4"/>
-  </g>` : `<g aria-hidden="true" opacity="${mode === "dark" ? "0.14" : "0.07"}" fill="none" stroke="${AURENDOR_CREATIVE_COLORS.pale}" stroke-width="14">
+  </g>` : `<g aria-hidden="true" opacity="${mode === "dark" ? "0.14" : "0.07"}" fill="none" stroke="${SOCIAL_MEDIA_PLUGIN_CREATIVE_COLORS.pale}" stroke-width="14">
     <path d="M${Math.round(width * 0.61)} -72h330q82 0 82 82v210q0 82-82 82H${Math.round(width * 0.61)}q-82 0-82-82V10q0-82 82-82Z"/>
     <path d="M${Math.round(width * 0.69)} 28h330q82 0 82 82v210q0 82-82 82H${Math.round(width * 0.69)}q-82 0-82-82V110q0-82 82-82Z"/>
     <path d="M${Math.round(width * 0.77)} 128h330q82 0 82 82v210q0 82-82 82H${Math.round(width * 0.77)}q-82 0-82-82V210q0-82 82-82Z"/>
   </g>`}
-  <rect x="${frameInset}" y="${frameInset}" width="${width - frameInset * 2}" height="${height - frameInset * 2}" rx="6" fill="none" stroke="${mode === "dark" ? AURENDOR_CREATIVE_COLORS.neon : AURENDOR_CREATIVE_COLORS.deep}" stroke-width="2"/>
+  <rect x="${frameInset}" y="${frameInset}" width="${width - frameInset * 2}" height="${height - frameInset * 2}" rx="6" fill="none" stroke="${mode === "dark" ? SOCIAL_MEDIA_PLUGIN_CREATIVE_COLORS.neon : SOCIAL_MEDIA_PLUGIN_CREATIVE_COLORS.deep}" stroke-width="2"/>
   ${renderCanonicalHorizontalLogo(palette.primary, contentInset, 49, 174)}
   <text x="${width - contentInset}" y="72" text-anchor="end" fill="${palette.secondary}" font-family="Dh Ranclo, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="1.4">DIGITAL CIVILIZATION / 2026</text>
   <g data-role="content" direction="${direction}">
-    <text x="${kickerX}" y="${kickerY}" text-anchor="${rtl ? "middle" : "start"}" direction="${direction}" unicode-bidi="plaintext" fill="${AURENDOR_CREATIVE_COLORS.neon}" font-family="Dh Ranclo, Ghroob Arabic ITF, Arial, sans-serif" font-size="25" font-weight="700" letter-spacing="1.8">${escapeXml(input.kicker.toUpperCase())}</text>
-    <line x1="${rtl ? width - contentInset - 144 : contentInset}" y1="${kickerY + 27}" x2="${rtl ? width - contentInset : contentInset + 144}" y2="${kickerY + 27}" stroke="${AURENDOR_CREATIVE_COLORS.neon}" stroke-width="8"/>
+    <text x="${kickerX}" y="${kickerY}" text-anchor="${rtl ? "middle" : "start"}" direction="${direction}" unicode-bidi="plaintext" fill="${SOCIAL_MEDIA_PLUGIN_CREATIVE_COLORS.neon}" font-family="Dh Ranclo, Ghroob Arabic ITF, Arial, sans-serif" font-size="25" font-weight="700" letter-spacing="1.8">${escapeXml(input.kicker.toUpperCase())}</text>
+    <line x1="${rtl ? width - contentInset - 144 : contentInset}" y1="${kickerY + 27}" x2="${rtl ? width - contentInset : contentInset + 144}" y2="${kickerY + 27}" stroke="${SOCIAL_MEDIA_PLUGIN_CREATIVE_COLORS.neon}" stroke-width="8"/>
     <g data-role="headline" fill="${palette.primary}" font-family="Ghroob Arabic ITF, Dh Ranclo, Arial, sans-serif" font-size="${typography.headlineSize}" font-weight="800">
       ${renderTextLines(headlineLines, textX, headlineBaseline, Math.round(typography.headlineSize * 1.27), direction)}
     </g>
@@ -300,18 +300,18 @@ export function renderSocialSvg(input: SocialSvgInput): string {
   </g>
   ${systemMap ? `<g data-role="system-map" transform="translate(${contentInset} 565)" font-family="Ghroob Arabic ITF, Dh Ranclo, Arial, sans-serif">
     <text x="0" y="0" fill="${palette.secondary}" font-family="Dh Ranclo, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="1.4">OPERATING MAP / CLOSED LOOP</text>
-    <line x1="42" y1="50" x2="42" y2="312" stroke="${AURENDOR_CREATIVE_COLORS.neon}" stroke-width="4"/>
+    <line x1="42" y1="50" x2="42" y2="312" stroke="${SOCIAL_MEDIA_PLUGIN_CREATIVE_COLORS.neon}" stroke-width="4"/>
     ${[
       { index: "01", ar: "قرار", en: "DECIDE", y: 42 },
       { index: "02", ar: "تنفيذ", en: "EXECUTE", y: 137 },
       { index: "03", ar: "قياس", en: "MEASURE", y: 232 },
-    ].map((node) => `<g transform="translate(0 ${node.y})"><rect x="0" y="0" width="350" height="76" rx="18" fill="${palette.card}" stroke="${mode === "dark" ? AURENDOR_CREATIVE_COLORS.pale : "#CFDDD4"}" stroke-width="2"/><circle cx="42" cy="38" r="17" fill="${AURENDOR_CREATIVE_COLORS.neon}"/><text x="42" y="44" text-anchor="middle" fill="${AURENDOR_CREATIVE_COLORS.deep}" font-family="Dh Ranclo, Arial, sans-serif" font-size="13" font-weight="800">${node.index}</text><text x="216" y="49" text-anchor="middle" direction="${direction}" fill="${palette.primary}" font-size="30" font-weight="700">${rtl ? node.ar : node.en}</text></g>`).join("\n    ")}
+    ].map((node) => `<g transform="translate(0 ${node.y})"><rect x="0" y="0" width="350" height="76" rx="18" fill="${palette.card}" stroke="${mode === "dark" ? SOCIAL_MEDIA_PLUGIN_CREATIVE_COLORS.pale : "#CFDDD4"}" stroke-width="2"/><circle cx="42" cy="38" r="17" fill="${SOCIAL_MEDIA_PLUGIN_CREATIVE_COLORS.neon}"/><text x="42" y="44" text-anchor="middle" fill="${SOCIAL_MEDIA_PLUGIN_CREATIVE_COLORS.deep}" font-family="Dh Ranclo, Arial, sans-serif" font-size="13" font-weight="800">${node.index}</text><text x="216" y="49" text-anchor="middle" direction="${direction}" fill="${palette.primary}" font-size="30" font-weight="700">${rtl ? node.ar : node.en}</text></g>`).join("\n    ")}
     <path d="M350 270h32v-190h-32" fill="none" stroke="${palette.secondary}" stroke-width="2" stroke-dasharray="8 8"/>
   </g>` : ""}
   <g data-role="action" transform="translate(${actionX} ${actionY})">
-    <rect width="${actionWidth}" height="${actionHeight}" rx="36" fill="${palette.card}" stroke="${mode === "dark" ? AURENDOR_CREATIVE_COLORS.neon : "#CFDDD4"}" stroke-width="2"/>
-    <circle cx="${actionIconX}" cy="${Math.round(actionHeight / 2)}" r="31" fill="${AURENDOR_CREATIVE_COLORS.neon}"/>
-    <path d="M${actionIconX - 14} ${Math.round(actionHeight / 2)}h28M${actionIconX} ${Math.round(actionHeight / 2) - 14}v28" stroke="${AURENDOR_CREATIVE_COLORS.deep}" stroke-width="7" stroke-linecap="round"/>
+    <rect width="${actionWidth}" height="${actionHeight}" rx="36" fill="${palette.card}" stroke="${mode === "dark" ? SOCIAL_MEDIA_PLUGIN_CREATIVE_COLORS.neon : "#CFDDD4"}" stroke-width="2"/>
+    <circle cx="${actionIconX}" cy="${Math.round(actionHeight / 2)}" r="31" fill="${SOCIAL_MEDIA_PLUGIN_CREATIVE_COLORS.neon}"/>
+    <path d="M${actionIconX - 14} ${Math.round(actionHeight / 2)}h28M${actionIconX} ${Math.round(actionHeight / 2) - 14}v28" stroke="${SOCIAL_MEDIA_PLUGIN_CREATIVE_COLORS.deep}" stroke-width="7" stroke-linecap="round"/>
     <g fill="${palette.primary}" font-family="Ghroob Arabic ITF, Dh Ranclo, Arial, sans-serif" font-size="${typography.footerSize}" font-weight="650">
       ${renderTextLines(footerLines, rtl ? Math.round(actionWidth * (systemMap ? 0.64 : 0.62)) : systemMap ? 106 : 126, footerBaseline, footerLineHeight, direction)}
     </g>
@@ -324,7 +324,7 @@ export function renderSocialSvg(input: SocialSvgInput): string {
 }
 
 function metadata(svg: string, key: string): string | null {
-  const match = svg.match(new RegExp(`data-aurendor-${key}="([^"]+)"`, "u"));
+  const match = svg.match(new RegExp(`data-social-${key}="([^"]+)"`, "u"));
   return match?.[1] ?? null;
 }
 
@@ -388,7 +388,7 @@ export function evaluateSocialCreative({ input, svg, assetLicenseStatus }: Evalu
     normalizeHex(background) === normalizeHex(expectedPalette.canvas) &&
     normalizeHex(primary) === normalizeHex(expectedPalette.primary) &&
     normalizeHex(secondary) === normalizeHex(expectedPalette.secondary) &&
-    metadata(svg, "brand-version") === AURENDOR_CREATIVE_BRAND_VERSION;
+    metadata(svg, "brand-version") === SOCIAL_MEDIA_PLUGIN_CREATIVE_BRAND_VERSION;
   if (!paletteMatches) fail("WRONG_BRAND_COLOR", "Rendered palette or brand version differs from FINAL 2026.");
   checks.push({ key: "canonical_brand_tokens", status: paletteMatches ? "PASS" : "FAIL", evidence: `${background} / ${primary} / ${secondary}` });
 
@@ -417,7 +417,7 @@ export function evaluateSocialCreative({ input, svg, assetLicenseStatus }: Evalu
   if (!densityPasses) fail("TEXT_DENSITY_EXCEEDED", `Copy density ${totalCharacters} exceeds the ${totalBudget}-character mobile budget.`);
   checks.push({ key: "mobile_text_density", status: densityPasses ? "PASS" : "FAIL", evidence: `${totalCharacters}/${totalBudget} characters` });
 
-  const resolvedFooter = input.footer ?? (direction === "rtl" ? "اورندور · بنية رقمية ذكية" : "AURENDOR · Digital Civilization");
+  const resolvedFooter = input.footer ?? (direction === "rtl" ? "اورندور · بنية رقمية ذكية" : "SOCIAL_MEDIA_PLUGIN · Digital Civilization");
   const allCopyRendered = metadata(svg, "copy-hash") === copyBindingHash(input, resolvedFooter);
   if (!allCopyRendered) fail("COPY_MISSING_FROM_RENDER", "At least one exact approved copy segment is missing from the SVG.");
   checks.push({ key: "exact_copy_binding", status: allCopyRendered ? "PASS" : "FAIL", evidence: allCopyRendered ? "All exact copy segments found." : "Copy mismatch found." });
@@ -459,7 +459,7 @@ export function evaluateSocialCreative({ input, svg, assetLicenseStatus }: Evalu
 
   return {
     evaluatorVersion: "1.0.0",
-    brandVersion: AURENDOR_CREATIVE_BRAND_VERSION,
+    brandVersion: SOCIAL_MEDIA_PLUGIN_CREATIVE_BRAND_VERSION,
     decision: hardFails.length > 0 ? "REJECTED_BY_AUTOMATION" : "AUTOMATED_CHECKS_PASSED_VISUAL_REVIEW_REQUIRED",
     hardFails,
     checks,
@@ -538,7 +538,7 @@ export class DeterministicSvgProvider implements DesignProvider {
       support: exactText.slice(1).join(" ") || input.visualConcept,
       footer: "اورندور · بنية رقمية ذكية",
       direction: /[\u0600-\u06FF]/u.test(exactText.join(" ")) ? "rtl" : "ltr",
-      mode: input.palette.includes(AURENDOR_CREATIVE_COLORS.deep) && input.layoutFamily.includes("dark") ? "dark" : "light",
+      mode: input.palette.includes(SOCIAL_MEDIA_PLUGIN_CREATIVE_COLORS.deep) && input.layoutFamily.includes("dark") ? "dark" : "light",
       width: input.canvas.width,
       height: input.canvas.height,
     });

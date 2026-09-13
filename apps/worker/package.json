@@ -1,5 +1,5 @@
 {
-  "name": "@aurendor/worker",
+  "name": "@social-media-plugin/worker",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -10,10 +10,10 @@
     "lint": "eslint src"
   },
   "dependencies": {
-    "@aurendor/db": "workspace:*",
-    "@aurendor/engine": "workspace:*",
-    "@aurendor/observability": "workspace:*",
-    "@aurendor/schemas": "workspace:*"
+    "@social-media-plugin/db": "workspace:*",
+    "@social-media-plugin/engine": "workspace:*",
+    "@social-media-plugin/observability": "workspace:*",
+    "@social-media-plugin/schemas": "workspace:*"
   },
   "devDependencies": {
     "tsx": "4.23.12",

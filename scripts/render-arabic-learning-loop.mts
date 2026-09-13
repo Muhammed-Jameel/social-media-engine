@@ -29,7 +29,7 @@ interface LearningCandidate {
 }
 
 const logo = (fill: string) =>
-  `<svg class="brand-logo" viewBox="0 0 414.84 85.88" aria-label="AURENDOR">${renderCanonicalHorizontalLogo(fill, 0, 0, 414.84)}</svg>`;
+  `<svg class="brand-logo" viewBox="0 0 414.84 85.88" aria-label="SOCIAL_MEDIA_PLUGIN">${renderCanonicalHorizontalLogo(fill, 0, 0, 414.84)}</svg>`;
 
 function shell(content: string, title: string) {
   return `<!doctype html>

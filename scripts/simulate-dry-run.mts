@@ -1,11 +1,11 @@
 import { createHash, randomUUID } from "node:crypto";
-import { createDatabase, migrateDatabase, type SqlRow } from "@aurendor/db";
+import { createDatabase, migrateDatabase, type SqlRow } from "@social-media-plugin/db";
 import {
   canonicalPayloadHash,
   dispatchDryRunPublication,
   publicationIdempotencyKey,
   type ExactOutboundPublication,
-} from "@aurendor/engine";
+} from "@social-media-plugin/engine";
 
 const database = await createDatabase();
 await migrateDatabase(database);
@@ -70,7 +70,7 @@ const plan = {
   schemaVersion: "1.0.0" as const,
   artifactId: `dry-run-${item.external_key}`,
   artifactType: "publication_plan" as const,
-  skill: "aurendor-social-publishing",
+  skill: "social-publishing",
   skillVersion: "1.0.0",
   modelVersion: "none",
   promptVersion: "dry-run-fixture-v1",

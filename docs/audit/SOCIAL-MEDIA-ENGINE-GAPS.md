@@ -2,7 +2,7 @@
 
 ## Audit baseline
 
-This file captures prioritized gaps after Stage-1 audit of the AURENDOR Social Media Engine implementation.
+This file captures prioritized gaps after Stage-1 audit of the SOCIAL_MEDIA_PLUGIN Social Media Engine implementation.
 
 ## P0 (blocks safe core operation/security)
 

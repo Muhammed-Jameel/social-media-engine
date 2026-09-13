@@ -14,20 +14,20 @@ function readBoolean(environment: NodeJS.ProcessEnv, keys: readonly string[]): b
   return false;
 }
 
-export const AURENDOR_ORGANIZATION_ID = readString(process.env, [
+export const SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID = readString(process.env, [
   "SOCIAL_ENGINE_ORGANIZATION_ID",
   "SOCIAL_MEDIA_ORGANIZATION_ID",
-  "AURENDOR_ORGANIZATION_ID",
-]) ?? "org-aurendor";
+  "SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID",
+]) ?? "org-social-media-plugin";
 
-export const AURENDOR_OWNER_ID = readString(process.env, [
+export const SOCIAL_MEDIA_PLUGIN_OWNER_ID = readString(process.env, [
   "SOCIAL_ENGINE_OWNER_ID",
   "SOCIAL_MEDIA_OWNER_ID",
-  "AURENDOR_OWNER_ID",
+  "SOCIAL_MEDIA_PLUGIN_OWNER_ID",
 ]) ?? "user-owner";
 
-export const SOCIAL_MEDIA_ORGANIZATION_ID = AURENDOR_ORGANIZATION_ID;
-export const SOCIAL_MEDIA_OWNER_ID = AURENDOR_OWNER_ID;
+export const SOCIAL_MEDIA_ORGANIZATION_ID = SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID;
+export const SOCIAL_MEDIA_OWNER_ID = SOCIAL_MEDIA_PLUGIN_OWNER_ID;
 
 export const SEPTEMBER_CAMPAIGN_ID = "campaign-2026-09";
 export const SEPTEMBER_STRATEGY_ID = "strategy-2026-09";
@@ -37,7 +37,7 @@ export function isEnginePaused(environment: NodeJS.ProcessEnv = process.env): bo
   return readBoolean(environment, [
     "SOCIAL_ENGINE_PAUSED",
     "SOCIAL_MEDIA_ENGINE_PAUSED",
-    "AURENDOR_ENGINE_PAUSED",
+    "SOCIAL_MEDIA_PLUGIN_ENGINE_PAUSED",
   ]);
 }
 
@@ -45,7 +45,7 @@ export function isCreativeProductionPaused(environment: NodeJS.ProcessEnv = proc
   return readBoolean(environment, [
     "SOCIAL_ENGINE_CREATIVE_PRODUCTION_PAUSED",
     "SOCIAL_MEDIA_CREATIVE_PRODUCTION_PAUSED",
-    "AURENDOR_CREATIVE_PRODUCTION_PAUSED",
+    "SOCIAL_MEDIA_PLUGIN_CREATIVE_PRODUCTION_PAUSED",
   ]);
 }
 
@@ -53,6 +53,6 @@ export function getSourceRootFromEnvironment(environment: NodeJS.ProcessEnv = pr
   return readString(environment, [
     "SOCIAL_MEDIA_SOURCE_ROOT",
     "SOCIAL_ENGINE_SOURCE_ROOT",
-    "AURENDOR_SOURCE_ROOT",
+    "SOCIAL_MEDIA_PLUGIN_SOURCE_ROOT",
   ]);
 }

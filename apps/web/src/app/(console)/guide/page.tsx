@@ -7,7 +7,7 @@ const screens = [
   ["Command", "Your home screen: month status, the nearest review work, provider limitations, learning signals, and alerts."],
   ["Plan", "The active Month 1 campaign: strategy, 20 scheduled releases, produced files or planning covers, copy, CTA, Stories, evidence, and production state."],
   ["Content", "The current SEP-* review queue, with a separate read-only Historical filter for superseded imported work."],
-  ["Analytics", "A learning view for reach and format cohorts. It is currently synthetic demonstration data, not proof of AURENDOR performance."],
+  ["Analytics", "A learning view for reach and format cohorts. It is currently synthetic demonstration data, not proof of SOCIAL_MEDIA_PLUGIN performance."],
   ["Runs", "The durable workflow ledger. Use it to see which process ran, its current step, status, creation time, and trace identifier."],
   ["Providers", "A capability matrix. Connected does not automatically mean publishing is available; read the state and reason for each action."],
   ["Controls", "Safety controls for pausing the engine, interpreting a bounded owner command, and viewing the publication authorization chain."],
@@ -78,7 +78,7 @@ export default function DashboardGuidePage() {
         <Panel title="Run it locally" description="Use the pinned Node version to avoid the pnpm compatibility error.">
           <div className="guide-code-block">
             <PlayCircle size={18} />
-            <pre><code>{`cd /Users/muhammedjameel/Documents/AURENDOR/apps/social-media-engine-plugin
+            <pre><code>{`cd /Users/muhammedjameel/Documents/SOCIAL_MEDIA_PLUGIN/apps/social-media-engine-plugin
 nvm install
 nvm use
 pnpm install

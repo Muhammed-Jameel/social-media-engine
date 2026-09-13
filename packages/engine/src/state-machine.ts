@@ -1,4 +1,4 @@
-import type { ContentStatus, WorkflowRun } from "@aurendor/schemas";
+import type { ContentStatus, WorkflowRun } from "@social-media-plugin/schemas";
 
 const contentTransitions: Readonly<Record<ContentStatus, readonly ContentStatus[]>> = {
   DRAFT: ["NEEDS_REVIEW", "CANCELLED"],

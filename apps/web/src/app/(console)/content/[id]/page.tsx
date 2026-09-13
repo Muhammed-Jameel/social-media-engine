@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { AlertTriangle, ArrowLeft, CheckCircle2, FileCheck2, Fingerprint, MessageSquareQuote, ShieldX } from "lucide-react";
-import { getRepository, getDatabase } from "@aurendor/db/runtime";
-import { loadProductionJob } from "@aurendor/engine";
+import { getRepository, getDatabase } from "@social-media-plugin/db/runtime";
+import { loadProductionJob } from "@social-media-plugin/engine";
 import { notFound } from "next/navigation";
 import { reviewContentAction } from "@/app/actions";
 import { PageHeader } from "@/components/page-header";

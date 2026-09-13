@@ -1,12 +1,12 @@
 # Local Setup
 
-This guide creates a safe local AURENDOR Content OS environment. It leaves external publication disabled and uses a local PGlite database.
+This guide creates a safe local SOCIAL_MEDIA_PLUGIN Content OS environment. It leaves external publication disabled and uses a local PGlite database.
 
 ## 1. Prerequisites
 
 - macOS, Linux, or WSL with Node.js `>=22.13.0`; `.nvmrc` pins the tested Node.js `22.23.2` LTS release
 - pnpm `11.19.0`
-- Access to the canonical source tree at your local AURENDOR root (for example, `/path/to/AURENDOR`) if you want to rerun discovery or import the historical queue
+- Access to the canonical source tree at your local SOCIAL_MEDIA_PLUGIN root (for example, `/path/to/SOCIAL_MEDIA_PLUGIN`) if you want to rerun discovery or import the historical queue
 - Optional: `ffprobe` for richer video metadata during import
 - Docker Desktop when using the self-hosted Postiz publishing gateway
 
@@ -34,7 +34,7 @@ Keep these local defaults unchanged:
 DEMO_MODE=true
 DRY_RUN=true
 PRODUCTION_PUBLISHING_ENABLED=false
-AURENDOR_ENGINE_PAUSED=false
+SOCIAL_MEDIA_PLUGIN_ENGINE_PAUSED=false
 PGLITE_DATA_DIR=.data/pglite
 ```
 
@@ -113,13 +113,13 @@ pnpm test:e2e
 
 ## Local reset
 
-The local database lives only under this repository’s `.data/pglite`. Stop the web app and worker before resetting. Because deleting state is destructive, make a copy of `.data/pglite` first if you need its audit history, then remove only the explicit project-local database directory and rerun migration/seed/import. Never point a cleanup command at the AURENDOR source tree.
+The local database lives only under this repository’s `.data/pglite`. Stop the web app and worker before resetting. Because deleting state is destructive, make a copy of `.data/pglite` first if you need its audit history, then remove only the explicit project-local database directory and rerun migration/seed/import. Never point a cleanup command at the SOCIAL_MEDIA_PLUGIN source tree.
 
 ## Common failures
 
 | Symptom | Check |
 |---|---|
-| Import cannot find a source post | Confirm the canonical AURENDOR path exists and has not moved; do not create fake replacement files |
+| Import cannot find a source post | Confirm the canonical SOCIAL_MEDIA_PLUGIN path exists and has not moved; do not create fake replacement files |
 | Video metadata is incomplete | Install `ffprobe`; the importer can still hash and ingest the file |
 | PGlite lock/start issue | Stop duplicate web/worker processes that point to the same data directory |
 | Provider says not configured | Expected in local mode; see the provider setup guides and do not override the capability state |

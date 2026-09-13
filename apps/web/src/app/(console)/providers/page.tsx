@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ExternalLink, PlugZap, ShieldQuestion } from "lucide-react";
-import { getRepository } from "@aurendor/db/runtime";
+import { getRepository } from "@social-media-plugin/db/runtime";
 import { PageHeader } from "@/components/page-header";
 import { Panel } from "@/components/panel";
 import { StatusBadge } from "@/components/status-badge";

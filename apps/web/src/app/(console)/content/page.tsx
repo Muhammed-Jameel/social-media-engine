@@ -1,5 +1,5 @@
 import { Filter, Search } from "lucide-react";
-import { getRepository } from "@aurendor/db/runtime";
+import { getRepository } from "@social-media-plugin/db/runtime";
 import { ContentCard } from "@/components/content-card";
 import { PageHeader } from "@/components/page-header";
 import { EmptyState } from "@/components/panel";

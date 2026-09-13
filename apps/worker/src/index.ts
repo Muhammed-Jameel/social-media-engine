@@ -1,6 +1,6 @@
 import { randomUUID } from "node:crypto";
 import { join } from "node:path";
-import { getDatabase, projectRoot } from "@aurendor/db/runtime";
+import { getDatabase, projectRoot } from "@social-media-plugin/db/runtime";
 import {
   createProfessionalPostProductionExecutor,
   DesignKnowledgeRetriever,
@@ -9,10 +9,10 @@ import {
   offlineWorkflowExecutor,
   runWorkerOnce,
   type WorkflowStepExecutor,
-} from "@aurendor/engine";
-import { createLogger } from "@aurendor/observability";
+} from "@social-media-plugin/engine";
+import { createLogger } from "@social-media-plugin/observability";
 
-const logger = createLogger({ service: "aurendor-worker" });
+const logger = createLogger({ service: "social-worker" });
 const workerId = `worker-${randomUUID()}`;
 const database = await getDatabase();
 const runtimeConfig = getEngineConfig();

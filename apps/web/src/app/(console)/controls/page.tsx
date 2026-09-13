@@ -1,6 +1,6 @@
 import { AlertOctagon, Check, CircleStop, Command, DatabaseZap, KeyRound, LockKeyhole, Pause, Play, ShieldAlert, ShieldCheck, Sparkles } from "lucide-react";
-import { getRepository } from "@aurendor/db/runtime";
-import { classifyOwnerCommand } from "@aurendor/engine";
+import { getRepository } from "@social-media-plugin/db/runtime";
+import { classifyOwnerCommand } from "@social-media-plugin/engine";
 import { confirmOwnerCommandAction, interpretOwnerCommandAction, setEnginePauseAction } from "@/app/actions";
 import { PageHeader } from "@/components/page-header";
 import { Panel } from "@/components/panel";
@@ -40,7 +40,7 @@ export default async function ControlsPage({ searchParams }: { searchParams: Pro
           <div><dt>Control policy</dt><dd>No console toggle; release requires an audited configuration change.</dd></div>
         </dl>
         {settings.environmentCreativeProductionPauseRequested ? (
-          <div className="creative-gate-environment-note"><LockKeyhole size={17} /><span><strong>Deployment creative kill switch is also active.</strong> A released database gate will remain held until `AURENDOR_CREATIVE_PRODUCTION_PAUSED=false` is deployed and the worker restarts.</span></div>
+          <div className="creative-gate-environment-note"><LockKeyhole size={17} /><span><strong>Deployment creative kill switch is also active.</strong> A released database gate will remain held until `SOCIAL_MEDIA_PLUGIN_CREATIVE_PRODUCTION_PAUSED=false` is deployed and the worker restarts.</span></div>
         ) : null}
       </Panel>
 
@@ -70,7 +70,7 @@ export default async function ControlsPage({ searchParams }: { searchParams: Pro
             <div><h3>{settings.paused ? "All worker mutations are held" : "Engine workers are permitted to run"}</h3><p>{settings.paused ? "Resume only after the incident or owner concern is resolved." : "The production publishing gate remains independently disabled."}</p></div>
           </div>
           {settings.environmentPauseRequested ? (
-            <div className="policy-note"><LockKeyhole size={18} /><div><strong>Deployment kill switch is active.</strong><span>Set `AURENDOR_ENGINE_PAUSED=false` in the deployment secret configuration and restart the worker only after the incident or review is closed.</span></div></div>
+            <div className="policy-note"><LockKeyhole size={18} /><div><strong>Deployment kill switch is active.</strong><span>Set `SOCIAL_MEDIA_PLUGIN_ENGINE_PAUSED=false` in the deployment secret configuration and restart the worker only after the incident or review is closed.</span></div></div>
           ) : (
             <form action={setEnginePauseAction} className="pause-form">
               <input type="hidden" name="paused" value={settings.paused ? "false" : "true"} />

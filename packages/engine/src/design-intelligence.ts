@@ -3,7 +3,7 @@ import { readFile, readdir } from "node:fs/promises";
 import { join } from "node:path";
 import { parse as parseYaml } from "yaml";
 import { z } from "zod";
-import type { DesignPurpose, ImageryMode, VisualFamily } from "@aurendor/schemas";
+import type { DesignPurpose, ImageryMode, VisualFamily } from "@social-media-plugin/schemas";
 
 const PrincipleSchema = z.object({
   id: z.string().min(3),
@@ -16,7 +16,7 @@ const PrincipleSchema = z.object({
   languages: z.array(z.enum(["ar", "en"])).min(1),
   anthropomorphismLevels: z.array(z.number().int().min(0).max(5)),
   strongReferenceIds: z.array(z.string()),
-  aurendorApplication: z.string().min(12),
+  socialMediaPluginApplication: z.string().min(12),
   retrievalTags: z.array(z.string()),
   mustNotCopy: z.string().min(12),
 });
@@ -232,7 +232,7 @@ export class DesignKnowledgeRetriever {
       generationContext: {
         principleInstructions: principles.map(({ principle }) => ({
           principleId: principle.id,
-          decision: principle.aurendorApplication,
+          decision: principle.socialMediaPluginApplication,
           why: principle.whyItWorks,
           mustNotCopy: principle.mustNotCopy,
         })),

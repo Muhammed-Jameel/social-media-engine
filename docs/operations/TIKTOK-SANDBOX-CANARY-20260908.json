@@ -4,11 +4,11 @@
   "postizPostId": "cmts9fjm80002pv7x7mclid3z",
   "integrationId": "cmts942e50001pv7xvq3hdwid",
   "provider": "tiktok",
-  "accountDisplayName": "Aurendor",
+  "accountDisplayName": "Social Media Plugin",
   "deliveryMethod": "UPLOAD",
   "publicPostingAllowed": false,
   "title": "TEST — do not publish",
-  "content": "AURENDOR — sandbox connection test. Draft for internal review only; do not publish. Test reference: TT-SANDBOX-20260908-01.",
+  "content": "SOCIAL_MEDIA_PLUGIN — sandbox connection test. Draft for internal review only; do not publish. Test reference: TT-SANDBOX-20260908-01.",
   "sourceAssetSha256": [
     "42f161985587fec6f22e3a83df091c0fc001d53fd12dacf43b2fda1196f3b3dd",
     "1911f1506debe82c37d461db477690b956015e680c34f5ff116cafb489284be8"

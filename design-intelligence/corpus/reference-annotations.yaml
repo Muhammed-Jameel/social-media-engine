@@ -389,7 +389,7 @@ references:
       microDetails: "Cup, saddle, fabric, pattern, and distant architecture all reinforce setting."
       story: "The viewer participates in a ritual while looking toward the origin of the celebration."
       relationships: "Framing, gesture, and title make identity inseparable from place."
-      arabicTransfer: "Useful cultural-fit reference only; AURENDOR must avoid borrowed heritage motifs and retain its technology category."
+      arabicTransfer: "Useful cultural-fit reference only; SOCIAL_MEDIA_PLUGIN must avoid borrowed heritage motifs and retain its technology category."
       limitations: "The cover cannot validate rights or fine custom-lettering quality."
   - referenceId: ref_f5593ec327689f0a
     reviewStatus: CONTEXT_ONLY
@@ -441,7 +441,7 @@ references:
       microDetails: "Goggles, limbs, grips, splashes, and scene props build episode specificity."
       story: "One product lives many adventures and social interactions."
       relationships: "Product and supporting actors physically interact rather than pose beside a pack shot."
-      arabicTransfer: "Useful character-system evidence but too playful as AURENDOR's default tone."
+      arabicTransfer: "Useful character-system evidence but too playful as SOCIAL_MEDIA_PLUGIN's default tone."
       limitations: "Boundary reference; full-character exuberance risks weakening enterprise sophistication."
   - referenceId: ref_4c27807cd3a0dd00
     reviewStatus: REJECTED_AS_ANCHOR
@@ -452,22 +452,22 @@ references:
     imageryModes: [conceptual-photomanipulation, bespoke-illustration]
     anthropomorphismLevels: [3, 4, 5]
     retrievalTags: [cute, package-face, pet, mascot, childishness-boundary]
-    strengthRationale: "A coherent pet campaign, retained only as a boundary example of face-first anthropomorphism that would be too cute for AURENDOR."
+    strengthRationale: "A coherent pet campaign, retained only as a boundary example of face-first anthropomorphism that would be too cute for SOCIAL_MEDIA_PLUGIN."
     qualityDimensions: [negative-anchor, anthropomorphism-boundary]
     principleIds: [ANTHRO_FACE_REMOVAL_TEST, ANTHRO_NO_PERMANENT_MASCOT_YET]
-    doNotCopy: ["Do not add a cute package face, animal pose system, green pet world, or playful mascot treatment to AURENDOR."]
+    doNotCopy: ["Do not add a cute package face, animal pose system, green pet world, or playful mascot treatment to SOCIAL_MEDIA_PLUGIN."]
     analysis:
       purposeAndSupport: "Sells pet treats through a cute package character interacting with cats."
       hierarchy: "Cats and large smiling package dominate; copy is secondary."
       composition: "Campaign variety is high but almost every concept depends on a face or pet gag."
       grid: "World consistency exceeds layout repetition."
-      typography: "Playful hand lettering fits category but not AURENDOR."
+      typography: "Playful hand lettering fits category but not SOCIAL_MEDIA_PLUGIN."
       color: "Friendly green field supports pet category recognition."
       imagery: "Cats and package are composited into humorous interactions."
       microDetails: "Facial expression and paws carry most emotion."
       story: "The package behaves as the pet's friend or target."
       relationships: "Character face, not operational behavior, carries brand personality."
-      arabicTransfer: "Not an Arabic reference and not suitable for AURENDOR tone."
+      arabicTransfer: "Not an Arabic reference and not suitable for SOCIAL_MEDIA_PLUGIN tone."
       limitations: "Hard negative anchor for childish anthropomorphism."
   - referenceId: ref_744a0288aedf2b96
     reviewStatus: REJECTED_AS_ANCHOR
@@ -478,7 +478,7 @@ references:
     imageryModes: [bespoke-3d, conceptual-photomanipulation]
     anthropomorphismLevels: [4, 5]
     retrievalTags: [mascot, orange, office, childishness-boundary, arabic]
-    strengthRationale: "The service benefit is clear, but the literal smiling orange mascot makes it a useful rejection boundary for AURENDOR's enterprise tone."
+    strengthRationale: "The service benefit is clear, but the literal smiling orange mascot makes it a useful rejection boundary for SOCIAL_MEDIA_PLUGIN's enterprise tone."
     qualityDimensions: [negative-anchor, anthropomorphism-boundary, arabic-density]
     principleIds: [ANTHRO_BEHAVIOR_BEFORE_FACE, ANTHRO_FACE_REMOVAL_TEST]
     doNotCopy: ["Do not reuse chair interaction, orange mascot, face, blue office, casting, headline, or tiny footer copy."]
@@ -519,7 +519,7 @@ references:
       microDetails: "Effects accumulate instead of supporting one story."
       story: "No single 1–2 second story survives the montage."
       relationships: "Elements are adjacent, not causally related."
-      arabicTransfer: "Not suitable as an Arabic or AURENDOR anchor."
+      arabicTransfer: "Not suitable as an Arabic or SOCIAL_MEDIA_PLUGIN anchor."
       limitations: "Hard negative anchor; portfolio covers are not production posts."
   - referenceId: ref_f1d7d6e4a6b4a8a7
     reviewStatus: REJECTED_AS_ANCHOR

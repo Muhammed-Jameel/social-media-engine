@@ -26,7 +26,7 @@ for (const service of ['backend', 'orchestrator']) {
   });
   test(`${service}: photos use MEDIA_UPLOAD and inbox status never claims a public URL`, async () => {
     const p = new TiktokProvider();
-    const first = { settings: { content_posting_method: 'UPLOAD', title: 'Review' }, media: [{ path: 'https://postiz.aurendor.io/uploads/test.jpg' }], message: 'Test' };
+    const first = { settings: { content_posting_method: 'UPLOAD', title: 'Review' }, media: [{ path: 'https://postiz.social-media-plugin.io/uploads/test.jpg' }], message: 'Test' };
     assert.equal(p.contentPostingMethod(first), 'UPLOAD');
     assert.equal(p.postingMethod('UPLOAD', false), '/inbox/video/init/');
     assert.equal(p.postingMethod('UPLOAD', true), '/content/init/');

@@ -1,6 +1,6 @@
 import "server-only";
 
-import { getDatabase, type SqlRow } from "@aurendor/db/runtime";
+import { getDatabase, type SqlRow } from "@social-media-plugin/db/runtime";
 
 export interface RunView {
   id: string;

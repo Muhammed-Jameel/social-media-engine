@@ -91,7 +91,7 @@ function inferTopics(path: string): string[] {
     ["research", "research"],
     ["sales", "sales"],
     ["product", "product"],
-    ["build", "aurendor-build"],
+    ["build", "social-build"],
     ["content-engine", "prior-engine"],
     ["ready-to-publish", "publication-candidate"],
   ] as const;

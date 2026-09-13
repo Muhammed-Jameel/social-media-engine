@@ -1,7 +1,7 @@
 services:
   postiz:
     # Reproducible upload-only TikTok adapter; build before starting cloud Postiz.
-    image: aurendor/postiz:2.23.0-tiktok-upload-only-1
+    image: social-media-plugin/postiz:2.23.0-tiktok-upload-only-1
     build:
       context: ./tiktok-upload-only
     pull_policy: never

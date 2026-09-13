@@ -188,7 +188,7 @@ const hardFailAssetIds = critiqueSets.filter((set) => set.critiques.some((critiq
 
 const integrated = {
   schemaVersion: "1.0.0",
-  assembly: "AURENDOR round-three exact-current-hash professional critique sets",
+  assembly: "SOCIAL_MEDIA_PLUGIN round-three exact-current-hash professional critique sets",
   assembledAt: new Date().toISOString(),
   benchmark: {
     iteration: manifest.iteration,

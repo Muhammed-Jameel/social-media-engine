@@ -7,7 +7,7 @@ export interface E2EContentFixture {
 
 /**
  * Metadata-only content used by Playwright. Keep this fixture independent of
- * the private AURENDOR source library so a clean checkout can exercise the
+ * the private SOCIAL_MEDIA_PLUGIN source library so a clean checkout can exercise the
  * owner console without copying creative files or credentials.
  */
 export const e2eContentFixtures = [

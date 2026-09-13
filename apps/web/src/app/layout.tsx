@@ -20,7 +20,7 @@ const ghroob = localFont({
 });
 
 export const metadata: Metadata = {
-  title: { default: "AURENDOR Content OS", template: "%s · AURENDOR Content OS" },
+  title: { default: "SOCIAL_MEDIA_PLUGIN Content OS", template: "%s · SOCIAL_MEDIA_PLUGIN Content OS" },
   description: "Owner-controlled social strategy, creative quality, approvals, publishing safety, and learning.",
   robots: { index: false, follow: false },
 };

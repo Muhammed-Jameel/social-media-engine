@@ -11,7 +11,7 @@ Owner instruction, 10 September 2026: produce the next three items, replace the 
 - `pnpm social:schedule --live`: schedule only validated future releases with an open live dashboard gate. No immediate posts, catch-up bursts, or retries of prior intents.
 - `pnpm social:status`: read stored collection state.
 
-Current scope is September11–30; monitor final posts through October7. The previous `aurendor-monthly-content-production` automation is paused. Replacement `aurendor-publishing-and-first-week-learning` checks hourly. The host must be awake for creative work and collection. Accepted Postiz schedules execute on the hosted deployment.
+Current scope is September11–30; monitor final posts through October7. The previous `social-monthly-content-production` automation is paused. Replacement `social-publishing-and-first-week-learning` checks hourly. The host must be awake for creative work and collection. Accepted Postiz schedules execute on the hosted deployment.
 
 ## Release contract
 

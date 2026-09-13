@@ -7,10 +7,10 @@ import {
   type RuleCategory,
   type RuleScope,
   type SocialLearningRule,
-} from "@aurendor/schemas";
+} from "@social-media-plugin/schemas";
 import type { DatabaseClient, SqlRow } from "./client";
 import { getDatabase } from "./client";
-import { AURENDOR_ORGANIZATION_ID, AURENDOR_OWNER_ID, isCreativeProductionPaused, isEnginePaused } from "./ids";
+import { SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID, SOCIAL_MEDIA_PLUGIN_OWNER_ID, isCreativeProductionPaused, isEnginePaused } from "./ids";
 import { z } from "zod";
 
 const SOCIAL_LEARNING_UUID_FALLBACK = "00000000-0000-4000-8000-000000000000";
@@ -288,10 +288,10 @@ export class ContentOsRepository {
               creative_production_paused, creative_gate_state, creative_gate_evidence,
               autonomy_stage, planning_lead_days
        FROM engine_settings WHERE organization_id = $1`,
-      [AURENDOR_ORGANIZATION_ID],
+      [SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID],
     );
     const row = result.rows[0];
-    if (!row) throw new Error("AURENDOR engine settings have not been seeded.");
+    if (!row) throw new Error("SOCIAL_MEDIA_PLUGIN engine settings have not been seeded.");
     const environmentPauseRequested = isEnginePaused(process.env);
     const environmentCreativeProductionPauseRequested = isCreativeProductionPaused(process.env);
     return {
@@ -309,7 +309,7 @@ export class ContentOsRepository {
   }
 
   async listContent(filters: { status?: string; platform?: string; month?: string; lifecycle?: "active" | "superseded" | "all" } = {}): Promise<ContentSummaryView[]> {
-    const parameters: unknown[] = [AURENDOR_ORGANIZATION_ID];
+    const parameters: unknown[] = [SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID];
     const predicates = ["c.organization_id = $1"];
     if ((filters.lifecycle ?? "active") === "active") predicates.push("c.superseded_at IS NULL");
     if (filters.lifecycle === "superseded") predicates.push("c.superseded_at IS NOT NULL");
@@ -377,7 +377,7 @@ export class ContentOsRepository {
       this.database.query<SqlRow & { id: string; month: string; objective: string; status: string }>(
         `SELECT id, month, objective, status FROM monthly_strategies
          WHERE organization_id = $1 ORDER BY month DESC LIMIT 1`,
-        [AURENDOR_ORGANIZATION_ID],
+        [SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID],
       ),
     ]);
     const strategy = strategyResult.rows[0];
@@ -433,7 +433,7 @@ export class ContentOsRepository {
       plan_version: string | null;
       superseded_at: unknown | null;
       superseded_reason: string | null;
-    }>("SELECT * FROM content_items WHERE id = $1 AND organization_id = $2", [id, AURENDOR_ORGANIZATION_ID]);
+    }>("SELECT * FROM content_items WHERE id = $1 AND organization_id = $2", [id, SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID]);
     const row = itemResult.rows[0];
     if (!row) return null;
     const [assetResult, copyResult, critiqueResult, approvalResult] = await Promise.all([
@@ -535,7 +535,7 @@ export class ContentOsRepository {
   async recordApproval(decision: ApprovalDecision): Promise<void> {
     const lifecycle = await this.database.query<SqlRow & { superseded_at: unknown | null }>(
       "SELECT superseded_at FROM content_items WHERE id = $1 AND organization_id = $2",
-      [decision.contentItemId, AURENDOR_ORGANIZATION_ID],
+      [decision.contentItemId, SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID],
     );
     if (!lifecycle.rows[0]) throw new Error("The content item does not exist.");
     if (lifecycle.rows[0].superseded_at) throw new Error("Superseded content is read-only and cannot receive a new decision.");
@@ -563,7 +563,7 @@ export class ContentOsRepository {
          jsonb_build_object('status', (SELECT status FROM updated)), $8, $9)`,
       [
         decision.contentItemId,
-        AURENDOR_ORGANIZATION_ID,
+        SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID,
         nextStatus,
         decision.id,
         decision.actorId,
@@ -601,7 +601,7 @@ export class ContentOsRepository {
        INSERT INTO audit_logs (id, organization_id, actor_id, action, entity_type, entity_id, previous_state, new_state, reason, trace_id)
        VALUES ($3, $2, $4, 'APPROVE_MONTH', 'monthly_strategy', $1, jsonb_build_object('status', 'IN_REVIEW'),
                jsonb_build_object('status', 'APPROVED', 'approvedItems', (SELECT count(*) FROM items)), $5, $6)`,
-      [strategyId, AURENDOR_ORGANIZATION_ID, randomUUID(), AURENDOR_OWNER_ID, feedback || "Owner approved the monthly strategy.", traceId],
+      [strategyId, SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID, randomUUID(), SOCIAL_MEDIA_PLUGIN_OWNER_ID, feedback || "Owner approved the monthly strategy.", traceId],
     );
   }
 
@@ -617,7 +617,7 @@ export class ContentOsRepository {
        VALUES ($3, $1, $4, $5, 'engine_settings', $1,
          jsonb_build_object('paused', (SELECT paused FROM prior)),
          jsonb_build_object('paused', (SELECT paused FROM changed)), $6, $7)`,
-      [AURENDOR_ORGANIZATION_ID, paused, randomUUID(), AURENDOR_OWNER_ID, paused ? "PAUSE_ENGINE" : "RESUME_ENGINE", reason, traceId],
+      [SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID, paused, randomUUID(), SOCIAL_MEDIA_PLUGIN_OWNER_ID, paused ? "PAUSE_ENGINE" : "RESUME_ENGINE", reason, traceId],
     );
   }
 
@@ -626,7 +626,7 @@ export class ContentOsRepository {
     options: { actorId?: string; confirmed?: boolean } = {},
   ): Promise<string> {
     const id = randomUUID();
-    const actorId = options.actorId ?? AURENDOR_OWNER_ID;
+    const actorId = options.actorId ?? SOCIAL_MEDIA_PLUGIN_OWNER_ID;
     const confirmed = !command.requiresConfirmation || options.confirmed === true;
     await this.database.query(
       `INSERT INTO owner_commands (
@@ -635,7 +635,7 @@ export class ContentOsRepository {
        ) VALUES ($1, $2, $3, $4, $5, $6, $7::jsonb, $8, CASE WHEN $9 THEN now() ELSE NULL END)`,
       [
         id,
-        AURENDOR_ORGANIZATION_ID,
+        SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID,
         actorId,
         command.command,
         command.scope,
@@ -653,7 +653,7 @@ export class ContentOsRepository {
          $5::jsonb, $6, $7)`,
       [
         randomUUID(),
-        AURENDOR_ORGANIZATION_ID,
+        SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID,
         actorId,
         id,
         JSON.stringify({ scope: command.scope, classification: command.classification, confirmed }),
@@ -674,7 +674,7 @@ export class ContentOsRepository {
     const result = await this.database.query<SqlRow & { id: string; provider: string; capability: string; state: string; reason: string; source_url: string | null; verified_at: unknown | null }>(
       `SELECT id, provider, capability, state, reason, source_url, verified_at
        FROM provider_capabilities WHERE organization_id = $1 ORDER BY provider, capability`,
-      [AURENDOR_ORGANIZATION_ID],
+      [SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID],
     );
     return result.rows.map((row) => ({
       id: row.id,
@@ -691,7 +691,7 @@ export class ContentOsRepository {
     const result = await this.database.query<SqlRow & { id: string; kind: string; statement: string; confidence_note: string; next_action: string }>(
       `SELECT id, kind, statement, confidence_note, next_action FROM insights
        WHERE organization_id = $1 ORDER BY created_at DESC LIMIT 8`,
-      [AURENDOR_ORGANIZATION_ID],
+      [SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID],
     );
     return result.rows.map((row) => ({
       id: row.id,
@@ -706,14 +706,14 @@ export class ContentOsRepository {
     const result = await this.database.query<SqlRow & { id: string; kind: string; title: string; body: string; action_url: string | null; status: string }>(
       `SELECT id, kind, title, body, action_url, status FROM notifications
        WHERE organization_id = $1 AND status IN ('UNREAD', 'SENT') ORDER BY created_at DESC LIMIT 8`,
-      [AURENDOR_ORGANIZATION_ID],
+      [SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID],
     );
     return result.rows.map((row) => ({ id: row.id, kind: row.kind, title: row.title, body: row.body, actionUrl: row.action_url, status: row.status }));
   }
 
   async listSocialLearningRules(filters: SocialLearningRuleFilter = {}): Promise<SocialLearningRule[]> {
     const includeInactive = filters.includeInactive ?? false;
-    const parameters: unknown[] = [AURENDOR_ORGANIZATION_ID];
+    const parameters: unknown[] = [SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID];
     const predicates = ["organization_id = $1"];
     if (!includeInactive) {
       predicates.push("(active_from IS NULL OR active_from <= now())");
@@ -807,7 +807,7 @@ export class ContentOsRepository {
     const placeholders = ruleIds.map((_, index) => `$${index + 2}`).join(", ");
     const result = await this.database.query(
       `DELETE FROM social_learning_rules WHERE organization_id = $1 AND rule_id IN (${placeholders})`,
-      [AURENDOR_ORGANIZATION_ID, ...ruleIds],
+      [SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID, ...ruleIds],
     );
     return result.rowCount;
   }

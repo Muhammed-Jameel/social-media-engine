@@ -41,7 +41,7 @@ grid:
   whitespaceRange: [0.30, 0.50]
 marks:
   primary: Interlocking geometric ae monogram
-  wordmark: lowercase aurendor with Arabic lockup and ESTD 2026
+  wordmark: lowercase social-media-plugin with Arabic lockup and ESTD 2026
 motifs:
   - soft interlocking frame pattern
   - modular ae pattern
@@ -69,7 +69,7 @@ prohibited:
   - mixed icon families
   - more than one creative grid break per composition
 provenance:
-  - path: marketing/_context/AURENDOR_Brand_Identity_FINAL_2026.md
+  - path: marketing/_context/SOCIAL_MEDIA_PLUGIN_Brand_Identity_FINAL_2026.md
     authority: canonical
-  - path: marketing/_context/AURENDOR_Social_Design_System_2026.md
+  - path: marketing/_context/SOCIAL_MEDIA_PLUGIN_Social_Design_System_2026.md
     authority: canonical

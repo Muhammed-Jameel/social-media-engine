@@ -1,6 +1,6 @@
 import { randomUUID } from "node:crypto";
 import type { DatabaseClient, SqlRow } from "./client";
-import { AURENDOR_ORGANIZATION_ID, SEPTEMBER_CAMPAIGN_ID, SEPTEMBER_STRATEGY_ID } from "./ids";
+import { SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID, SEPTEMBER_CAMPAIGN_ID, SEPTEMBER_STRATEGY_ID } from "./ids";
 
 export interface ActivePlanAssetInput {
   storagePath: string;
@@ -112,10 +112,10 @@ function artifactEnvelope(input: ActivePlanSyncInput, post: ActivePlanPostInput)
     modelVersion: null,
     promptVersion: "active-plan-sync-v2",
     skillVersions: [
-      "aurendor-marketing-team-lead@current",
-      "aurendor-campaign-brief@current",
-      "aurendor-social-copy@current",
-      "aurendor-social-creative@current",
+      "social-marketing-team-lead@current",
+      "social-campaign-brief@current",
+      "social-social-copy@current",
+      "social-social-creative@current",
       "higgsfield-generate@planning-only",
     ],
     templateVersion: input.planVersion,
@@ -142,7 +142,7 @@ export async function syncActivePlan(database: DatabaseClient, input: ActivePlan
   return database.transaction(async (transaction) => {
     const strategyBefore = await transaction.query<SqlRow & { plan_hash: string | null }>(
       "SELECT artifact_envelope->>'planHash' AS plan_hash FROM monthly_strategies WHERE id = $1 AND organization_id = $2",
-      [SEPTEMBER_STRATEGY_ID, AURENDOR_ORGANIZATION_ID],
+      [SEPTEMBER_STRATEGY_ID, SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID],
     );
     if (!strategyBefore.rows[0]) throw new Error("The September strategy must be seeded before syncing the active plan.");
 
@@ -153,7 +153,7 @@ export async function syncActivePlan(database: DatabaseClient, input: ActivePlan
        WHERE id = $1 AND organization_id = $2`,
       [
         SEPTEMBER_CAMPAIGN_ID,
-        AURENDOR_ORGANIZATION_ID,
+        SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID,
         input.campaignName,
         input.objective,
         json({ activePlanVersion: input.planVersion, activePlanHash: input.planHash, isDemo: false }),
@@ -183,7 +183,7 @@ export async function syncActivePlan(database: DatabaseClient, input: ActivePlan
        WHERE id = $1 AND organization_id = $2`,
       [
         SEPTEMBER_STRATEGY_ID,
-        AURENDOR_ORGANIZATION_ID,
+        SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID,
         input.objective,
         json([input.positioning, input.publishingBoundary]),
         json(["brand_intro", "ai_automation_service", "bunyan_pro", "value_first"]),
@@ -209,7 +209,7 @@ export async function syncActivePlan(database: DatabaseClient, input: ActivePlan
            OR artifact_envelope->>'promptVersion' = 'active-plan-sync-v2'
          )
        RETURNING id`,
-      [AURENDOR_ORGANIZATION_ID, input.month, input.planVersion, json(keys)],
+      [SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID, input.month, input.planVersion, json(keys)],
     );
 
     let resetForReview = 0;
@@ -217,7 +217,7 @@ export async function syncActivePlan(database: DatabaseClient, input: ActivePlan
       let id = contentId(post.key);
       const previous = await transaction.query<SqlRow & { content_hash: string | null }>(
         "SELECT artifact_envelope->>'contentHash' AS content_hash FROM content_items WHERE organization_id = $1 AND external_key = $2",
-        [AURENDOR_ORGANIZATION_ID, post.key],
+        [SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID, post.key],
       );
       if (previous.rows[0] && previous.rows[0].content_hash !== post.contentHash) resetForReview += 1;
       const envelope = artifactEnvelope(input, post);
@@ -272,7 +272,7 @@ export async function syncActivePlan(database: DatabaseClient, input: ActivePlan
          RETURNING id`,
         [
           id,
-          AURENDOR_ORGANIZATION_ID,
+          SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID,
           SEPTEMBER_STRATEGY_ID,
           post.key,
           input.month,
@@ -409,7 +409,7 @@ export async function syncActivePlan(database: DatabaseClient, input: ActivePlan
          $4::jsonb, $5::jsonb, $6, $7)`,
       [
         randomUUID(),
-        AURENDOR_ORGANIZATION_ID,
+        SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID,
         SEPTEMBER_STRATEGY_ID,
         json({ planHash: strategyBefore.rows[0]?.plan_hash ?? null }),
         json({ planHash: input.planHash, planVersion: input.planVersion, items: input.posts.length, superseded: superseded.rowCount }),

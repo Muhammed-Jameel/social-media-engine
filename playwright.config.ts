@@ -17,7 +17,7 @@ export default defineConfig({
   webServer: process.env.E2E_BASE_URL
     ? undefined
     : {
-        command: "pnpm db:migrate && pnpm db:seed && pnpm seed:e2e && pnpm --filter @aurendor/web dev",
+        command: "pnpm db:migrate && pnpm db:seed && pnpm seed:e2e && pnpm --filter @social-media-plugin/web dev",
         url: baseURL,
         reuseExistingServer: false,
         timeout: 120_000,

@@ -8,7 +8,7 @@ import {
   syncActivePlan,
   type ActivePlanAssetInput,
   type ActivePlanPostInput,
-} from "@aurendor/db";
+} from "@social-media-plugin/db";
 import {
   finalCaption,
   septemberCampaign,
@@ -43,7 +43,7 @@ function assertPlan(): void {
     if (keys.has(post.key)) throw new Error("Duplicate post key: " + post.key);
     keys.add(post.key);
     if (index < 3 && post.contentTrack !== "brand_intro") {
-      throw new Error("The first three posts must introduce AURENDOR.");
+      throw new Error("The first three posts must introduce SOCIAL_MEDIA_PLUGIN.");
     }
     if (index >= 3) {
       const expected = expectedCycle[(index - 3) % 3];

@@ -5,7 +5,7 @@ import { basename, extname, join, relative, resolve } from "node:path";
 import { promisify } from "node:util";
 import type { DatabaseClient } from "./client";
 import { projectRoot } from "./client";
-import { AURENDOR_ORGANIZATION_ID, getSourceRootFromEnvironment, SEPTEMBER_STRATEGY_ID } from "./ids";
+import { SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID, getSourceRootFromEnvironment, SEPTEMBER_STRATEGY_ID } from "./ids";
 
 const runFile = promisify(execFile);
 
@@ -54,7 +54,7 @@ function mapTrack(track: string): { objective: string; audience: string; pillar:
   const normalized = track.toLowerCase();
   if (normalized.includes("bunyan") || normalized.includes("build")) {
     return {
-      objective: "Show how Aurendor Build creates clearer construction operations.",
+      objective: "Show how Social Media Plugin Build creates clearer construction operations.",
       audience: "Construction companies and engineering offices",
       pillar: "product-bunyan",
       funnel: "consideration",
@@ -64,12 +64,12 @@ function mapTrack(track: string): { objective: string; audience: string; pillar:
   }
   if (normalized.includes("brand")) {
     return {
-      objective: "Establish Aurendor as the builder of intelligent operational infrastructure.",
+      objective: "Establish Social Media Plugin as the builder of intelligent operational infrastructure.",
       audience: "Iraqi business and operations leaders",
       pillar: "brand-and-founder",
       funnel: "awareness",
       tension: "AI is often presented as a demo rather than dependable operating infrastructure.",
-      shift: "Aurendor builds practical systems where intelligence and automation become operational.",
+      shift: "Social Media Plugin builds practical systems where intelligence and automation become operational.",
     };
   }
   if (normalized.includes("proof")) {
@@ -79,7 +79,7 @@ function mapTrack(track: string): { objective: string; audience: string; pillar:
       pillar: "proof-and-systems",
       funnel: "consideration",
       tension: "Technology claims are difficult to trust without visible proof.",
-      shift: "Aurendor shows working systems and the operational thinking behind them.",
+      shift: "Social Media Plugin shows working systems and the operational thinking behind them.",
     };
   }
   return {
@@ -170,7 +170,7 @@ async function resolveQueueRoot(sourceRoot: string): Promise<string> {
 
   throw new Error(
     `Unable to locate the historical content queue. Checked: ${candidates.join(", ")}. ` +
-      "Set SOCIAL_MEDIA_SOURCE_ROOT (or SOCIAL_ENGINE_SOURCE_ROOT / AURENDOR_SOURCE_ROOT) to the repository root if it lives elsewhere.",
+      "Set SOCIAL_MEDIA_SOURCE_ROOT (or SOCIAL_ENGINE_SOURCE_ROOT / SOCIAL_MEDIA_PLUGIN_SOURCE_ROOT) to the repository root if it lives elsewhere.",
   );
 }
 
@@ -214,7 +214,7 @@ export async function importExistingContent(
       schemaVersion: "1.0.0",
       modelVersion: null,
       promptVersion: "legacy-import-v1",
-      skillVersions: ["aurendor-brand-compliance@1.0.0"],
+      skillVersions: ["social-brand-compliance@1.0.0"],
       templateVersion: "legacy-render-unknown",
       traceId,
       createdAt: new Date().toISOString(),
@@ -237,7 +237,7 @@ export async function importExistingContent(
          risk_level = EXCLUDED.risk_level, qa_flags = EXCLUDED.qa_flags, updated_at = now()`,
       [
         contentId,
-        AURENDOR_ORGANIZATION_ID,
+        SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID,
         SEPTEMBER_STRATEGY_ID,
         post.id,
         post.title,
@@ -253,7 +253,7 @@ export async function importExistingContent(
         post.title,
         `Test a ${post.format} execution grounded in the ${post.track} track.`,
         json([]),
-        "Save, share, or contact Aurendor when the workflow is relevant.",
+        "Save, share, or contact Social Media Plugin when the workflow is relevant.",
         json(["saves", "shares", "profile_visits", "qualified_messages"]),
         scheduledAt,
         post.id === "W3-P5" ? "ITEM_APPROVAL" : "MONTHLY_APPROVAL",
@@ -298,7 +298,7 @@ export async function importExistingContent(
            hashtags, factual_claims, editorial_score, selected, artifact_envelope
          ) VALUES ($1, $2, $3, 'ar', $4, $5::jsonb, $6, $7, $8::jsonb, '[]'::jsonb, 78, true, $9::jsonb)
          ON CONFLICT (id) DO UPDATE SET caption = EXCLUDED.caption, hashtags = EXCLUDED.hashtags`,
-        [copyId, contentId, platform, post.track, json([post.title]), caption, `AURENDOR social creative: ${post.title}`, json(hashtags), json(envelope)],
+        [copyId, contentId, platform, post.track, json([post.title]), caption, `SOCIAL_MEDIA_PLUGIN social creative: ${post.title}`, json(hashtags), json(envelope)],
       );
     }
 
@@ -322,7 +322,7 @@ export async function importExistingContent(
          ON CONFLICT (id) DO UPDATE SET source_path = EXCLUDED.source_path, storage_path = EXCLUDED.storage_path`,
         [
           assetId,
-          AURENDOR_ORGANIZATION_ID,
+          SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID,
           resolvedAsset.path,
           relative(projectRoot(), outputPath),
           mimeType(resolvedAsset.path).startsWith("video") ? "video" : "image",
@@ -368,7 +368,7 @@ export async function importExistingContent(
      ON CONFLICT (id) DO UPDATE SET new_state = EXCLUDED.new_state`,
     [
       "audit-legacy-import-2026-09",
-      AURENDOR_ORGANIZATION_ID,
+      SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID,
       SEPTEMBER_STRATEGY_ID,
       json(summary),
       "Imported read-only September content evidence with explicit filename reconciliation and review status.",

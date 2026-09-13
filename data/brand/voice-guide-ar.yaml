@@ -40,7 +40,7 @@ qualityChecks:
   - no orphan line in on-design copy
   - CTA matches audience and platform
 provenance:
-  - path: marketing/_context/AURENDOR_Brand_Voice_Guide.md
+  - path: marketing/_context/SOCIAL_MEDIA_PLUGIN_Brand_Voice_Guide.md
     authority: high
-  - path: marketing/_context/AURENDOR_Social_Design_System_2026.md
+  - path: marketing/_context/SOCIAL_MEDIA_PLUGIN_Social_Design_System_2026.md
     authority: canonical-social

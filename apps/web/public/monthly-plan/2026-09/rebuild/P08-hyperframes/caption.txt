@@ -21,7 +21,7 @@
 
 الواجهات من التطبيق الفعلي. البيانات والصور توضيحية، وليست نتائج أو مشاريع عملاء.
 
-تدير شركة مقاولات أو مكتبًا هندسيًا؟ راسل AURENDOR واذكر أين تتعطّل المتابعة عندكم: تقارير الموقع، طلبات التغيير، أو الدفعات. واطلب عرضًا عمليًا لشركتك.
+تدير شركة مقاولات أو مكتبًا هندسيًا؟ راسل SOCIAL_MEDIA_PLUGIN واذكر أين تتعطّل المتابعة عندكم: تقارير الموقع، طلبات التغيير، أو الدفعات. واطلب عرضًا عمليًا لشركتك.
 
 3D model: “Apple iPhone 15 Pro Max Black” by polyman Studio (@Polyman_3D), CC BY 4.0. Screen content, materials and lighting adapted.
 https://sketchfab.com/3d-models/apple-iphone-15-pro-max-black-df17520841214c1792fb8a44c6783ee7

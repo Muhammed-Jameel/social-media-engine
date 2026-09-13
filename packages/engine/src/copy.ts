@@ -3,7 +3,7 @@ import {
   CopyPackageSchema,
   type CopyPackage,
   type Platform,
-} from "@aurendor/schemas";
+} from "@social-media-plugin/schemas";
 import { antiGenericScore, detectGenericCopy } from "./content";
 
 export interface CopyPackageInput {
@@ -115,10 +115,10 @@ export function buildCopyPackage(input: CopyPackageInput): CopyPackage {
     return {
       platform,
       caption,
-      hashtags: platform === "instagram" ? ["#اورندور", "#أتمتة", "#ذكاء_تشغيلي"] : ["#Aurendor", "#OperationalAI"],
+      hashtags: platform === "instagram" ? ["#اورندور", "#أتمتة", "#ذكاء_تشغيلي"] : ["#Social Media Plugin", "#OperationalAI"],
       altText: input.language === "ar"
         ? `تصميم من اورندور يشرح: ${input.keyMessage}`
-        : `AURENDOR editorial graphic explaining: ${input.keyMessage}`,
+        : `SOCIAL_MEDIA_PLUGIN editorial graphic explaining: ${input.keyMessage}`,
       cta: input.cta,
     };
   });
@@ -134,7 +134,7 @@ export function buildCopyPackage(input: CopyPackageInput): CopyPackage {
     schemaVersion: "1.0.0" as const,
     artifactId: `copy-package-${sha(`${input.contentItemId}:${createdAt}`).slice(0, 24)}`,
     artifactType: "copy_package" as const,
-    skill: input.language === "ar" ? "aurendor-copywriter-ar" : "aurendor-copywriter-en",
+    skill: input.language === "ar" ? "social-arabic-copywriter" : "social-english-copywriter",
     skillVersion: "1.0.0",
     modelVersion: "none",
     promptVersion: "deterministic-copy-v1",
@@ -160,7 +160,7 @@ export function buildCopyPackage(input: CopyPackageInput): CopyPackage {
     ],
     altTextByAsset: (input.assetIds ?? []).map((assetId) => ({
       assetId,
-      altText: input.language === "ar" ? `تصميم اورندور حول ${input.keyMessage}` : `AURENDOR graphic about ${input.keyMessage}`,
+      altText: input.language === "ar" ? `تصميم اورندور حول ${input.keyMessage}` : `SOCIAL_MEDIA_PLUGIN graphic about ${input.keyMessage}`,
     })),
     claimChecks,
     editorialScores: Object.fromEntries(platformVariants.map((variant) => [variant.platform, copyScore(variant.caption)])),

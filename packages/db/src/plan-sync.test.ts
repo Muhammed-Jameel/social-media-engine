@@ -1,6 +1,6 @@
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import { createDatabase, migrateDatabase, type DatabaseClient } from "./client";
-import { AURENDOR_ORGANIZATION_ID, SEPTEMBER_STRATEGY_ID } from "./ids";
+import { SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID, SEPTEMBER_STRATEGY_ID } from "./ids";
 import { syncActivePlan, type ActivePlanSyncInput } from "./plan-sync";
 import { ContentOsRepository } from "./repository";
 import { seedCoreData } from "./seed";
@@ -85,7 +85,7 @@ async function insertLegacyItem(database: DatabaseClient): Promise<void> {
        'NEEDS_REVIEW', 'MONTHLY_APPROVAL', 'low', '[]'::jsonb, NULL, '[]'::jsonb,
        80, true, '[]'::jsonb, 'legacy/post.json', '{"promptVersion":"legacy-import-v1"}'::jsonb
      )`,
-    [AURENDOR_ORGANIZATION_ID, SEPTEMBER_STRATEGY_ID],
+    [SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID, SEPTEMBER_STRATEGY_ID],
   );
 }
 

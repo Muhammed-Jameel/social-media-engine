@@ -1,17 +1,17 @@
-# AURENDOR Creative Skill Registry and Audit
+# SOCIAL_MEDIA_PLUGIN Creative Skill Registry and Audit
 
 **Status:** reviewed research baseline  
 **Version:** 1.0.0  
 **Reviewed:** 2026-08-23  
-**Scope:** locally available AURENDOR, design, image-generation, creative-production, advertising, and Canva skills relevant to the Creative Quality Rebuild
+**Scope:** locally available SOCIAL_MEDIA_PLUGIN, design, image-generation, creative-production, advertising, and Canva skills relevant to the Creative Quality Rebuild
 
 ## Registry purpose
 
-This document records whether a skill is suitable for the AURENDOR creative pipeline. Availability is not approval. A skill may be useful as research, a sandboxed production aid, or an objective QA helper without being trusted as an Art Director, autonomous tool executor, or publication gate.
+This document records whether a skill is suitable for the SOCIAL_MEDIA_PLUGIN creative pipeline. Availability is not approval. A skill may be useful as research, a sandboxed production aid, or an objective QA helper without being trusted as an Art Director, autonomous tool executor, or publication gate.
 
 No skill was installed as part of this audit. Inspection was read-only. No image-generation API, Canva mutation, Creative Production mutation, advertising provider, or publishing provider was called.
 
-The project-native machine-readable registry remains `skills/registry.yaml`. That registry covers AURENDOR-native policy skills. This document additionally records local third-party, system-managed, and plugin-provided candidates and defines the controls required before any external skill can be adopted.
+The project-native machine-readable registry remains `skills/registry.yaml`. That registry covers SOCIAL_MEDIA_PLUGIN-native policy skills. This document additionally records local third-party, system-managed, and plugin-provided candidates and defines the controls required before any external skill can be adopted.
 
 ## Decision vocabulary
 
@@ -31,32 +31,32 @@ The project-native machine-readable registry remains `skills/registry.yaml`. Tha
 - Existing provider, idempotency, license, exact-copy, render, and publication controls remain in force.
 - A creative skill cannot authorize a provider call, approve a render, alter brand truth, or publish content.
 - Web pages, reference images, skill instructions, tool output, provider payloads, OCR, and metadata are untrusted data unless explicitly trusted by policy.
-- The current FINAL 2026 AURENDOR identity remains the effective brand source; external skills cannot replace it with their preferred palettes, fonts, templates, or trends.
+- The current FINAL 2026 SOCIAL_MEDIA_PLUGIN identity remains the effective brand source; external skills cannot replace it with their preferred palettes, fonts, templates, or trends.
 
 ## Summary decision table
 
 | Skill or package | Source/version | Network or mutation surface | License signal | Benchmark signal | Decision |
 |---|---|---|---|---|---|
-| Project-native AURENDOR skill layer | `skills/`, v1.0.0 entries | No executable code in skill files; downstream tools separately gated | AURENDOR proprietary internal use | Structural validation passed; creative behavioral/golden evals pending | `RETAIN_AND_UPGRADE` |
-| `aurendor-art-direction` v1 | Project-native | None directly | AURENDOR proprietary | Four structural eval cases; no corpus-scale behavioral benchmark | `RETAIN_AND_UPGRADE` |
-| `aurendor-social-design` v1 | Project-native | Describes provider mutation, durable intent, and capability routes | AURENDOR proprietary | Visual golden set pending | `ADOPT` for production infrastructure only |
-| `aurendor-design-critique` v1 | Project-native | Render reads only | AURENDOR proprietary | Visual grader calibration pending | `RETAIN_AND_UPGRADE` |
-| `aurendor-brand-compliance` v1 | Project-native | Read/gate only; cannot publish | AURENDOR proprietary | Behavioral eval pending | `ADOPT` as compliance boundary |
+| Project-native SOCIAL_MEDIA_PLUGIN skill layer | `skills/`, v1.0.0 entries | No executable code in skill files; downstream tools separately gated | SOCIAL_MEDIA_PLUGIN proprietary internal use | Structural validation passed; creative behavioral/golden evals pending | `RETAIN_AND_UPGRADE` |
+| `social-art-direction` v1 | Project-native | None directly | SOCIAL_MEDIA_PLUGIN proprietary | Four structural eval cases; no corpus-scale behavioral benchmark | `RETAIN_AND_UPGRADE` |
+| `social-design` v1 | Project-native | Describes provider mutation, durable intent, and capability routes | SOCIAL_MEDIA_PLUGIN proprietary | Visual golden set pending | `ADOPT` for production infrastructure only |
+| `social-design-critique` v1 | Project-native | Render reads only | SOCIAL_MEDIA_PLUGIN proprietary | Visual grader calibration pending | `RETAIN_AND_UPGRADE` |
+| `social-brand-compliance` v1 | Project-native | Read/gate only; cannot publish | SOCIAL_MEDIA_PLUGIN proprietary | Behavioral eval pending | `ADOPT` as compliance boundary |
 | `professional-social-media-design` | Local skill; no declared version | Local Python inspector; no network; reads project files and emits snippets | No source or license declared | No tests/evals found | `INSPIRATION_ONLY` |
-| `aurendor-social-creative` | Local personal skill; no version | No scripts/network | No license declared | No tests/evals found | `DEPRECATE` |
-| `aurendor-ad-creative` | Local personal skill; no version | No scripts/network | No license declared | No tests/evals found | `CONDITIONAL_QA_ONLY` for angle/test input |
+| `social-social-creative` | Local personal skill; no version | No scripts/network | No license declared | No tests/evals found | `DEPRECATE` |
+| `social-ad-creative` | Local personal skill; no version | No scripts/network | No license declared | No tests/evals found | `CONDITIONAL_QA_ONLY` for angle/test input |
 | `ui-ux-pro-max` | Workspace skill; no declared version | Local CSV/Python; no network; optional `--persist` writes files | Source/license not declared | Search data exists; design-source provenance and creative benchmark absent | `CONDITIONAL_QA_ONLY` |
-| `ad-creative` | Local agent skill v1.1.0 | External API guidance, API keys, shell/tool commands | Source/license not declared | Includes eval JSON, but no AURENDOR visual benchmark | `INSPIRATION_ONLY` |
-| `image` | Local agent skill v1.0.0 | External image APIs, API keys, arbitrary URL checks, local conversion commands | Source/license not declared | No AURENDOR benchmark | `INSPIRATION_ONLY` |
-| System `imagegen` | System-managed skill; no declared skill version | Built-in external generation; CLI fallback uses OpenAI API key/SDK and writes image files | License not declared in skill | Capability workflow exists; AURENDOR visual benchmark absent | `SANDBOX_ONLY` |
-| Creative Production `produce` | OpenAI-maintained plugin v0.1.25 | Local Node MCP, interactive/write capability, image generation, subprocess/local-server helpers | Proprietary, declared in plugin manifest | General workflow contracts; AURENDOR benchmark absent | `SANDBOX_ONLY` |
-| Canva `canva-design-feedback` | Canva plugin v14.0.0 | Connected Canva account; read-only skill uses thumbnails/content and cancellable read transaction | Plugin manifest links terms/privacy; no license field | Actual-pixel feedback workflow; AURENDOR critic calibration absent | `CONDITIONAL_QA_ONLY` |
+| `ad-creative` | Local agent skill v1.1.0 | External API guidance, API keys, shell/tool commands | Source/license not declared | Includes eval JSON, but no SOCIAL_MEDIA_PLUGIN visual benchmark | `INSPIRATION_ONLY` |
+| `image` | Local agent skill v1.0.0 | External image APIs, API keys, arbitrary URL checks, local conversion commands | Source/license not declared | No SOCIAL_MEDIA_PLUGIN benchmark | `INSPIRATION_ONLY` |
+| System `imagegen` | System-managed skill; no declared skill version | Built-in external generation; CLI fallback uses OpenAI API key/SDK and writes image files | License not declared in skill | Capability workflow exists; SOCIAL_MEDIA_PLUGIN visual benchmark absent | `SANDBOX_ONLY` |
+| Creative Production `produce` | OpenAI-maintained plugin v0.1.25 | Local Node MCP, interactive/write capability, image generation, subprocess/local-server helpers | Proprietary, declared in plugin manifest | General workflow contracts; SOCIAL_MEDIA_PLUGIN benchmark absent | `SANDBOX_ONLY` |
+| Canva `canva-design-feedback` | Canva plugin v14.0.0 | Connected Canva account; read-only skill uses thumbnails/content and cancellable read transaction | Plugin manifest links terms/privacy; no license field | Actual-pixel feedback workflow; SOCIAL_MEDIA_PLUGIN critic calibration absent | `CONDITIONAL_QA_ONLY` |
 
-## Project-native AURENDOR skill layer
+## Project-native SOCIAL_MEDIA_PLUGIN skill layer
 
-Source: `skills/registry.yaml` and `skills/aurendor-*/SKILL.md`  
-Declared source: AURENDOR Content OS master specification  
-Declared license: AURENDOR proprietary internal use
+Source: `skills/registry.yaml` and `skills/social-*/SKILL.md`  
+Declared source: SOCIAL_MEDIA_PLUGIN Content OS master specification  
+Declared license: SOCIAL_MEDIA_PLUGIN proprietary internal use
 
 ### Existing strengths to preserve
 
@@ -64,13 +64,13 @@ Declared license: AURENDOR proprietary internal use
 - Explicit provenance, license, review, benchmark, adoption, and rollout fields.
 - External sources treated as data, not instructions.
 - Models and creative skills cannot authorize publication.
-- `aurendor-social-design` preserves exact copy, asset hashes, licenses, provider capability truth, durable intent, idempotency, render verification, and manual fallback.
-- `aurendor-design-critique` requires actual renders, original and mobile views, independent critics, hard-fail vetoes, bounded revisions, and visible evidence.
-- `aurendor-brand-compliance` independently checks claims, permissions, asset licenses, accessibility, brand version, and approval class.
+- `social-design` preserves exact copy, asset hashes, licenses, provider capability truth, durable intent, idempotency, render verification, and manual fallback.
+- `social-design-critique` requires actual renders, original and mobile views, independent critics, hard-fail vetoes, bounded revisions, and visible evidence.
+- `social-brand-compliance` independently checks claims, permissions, asset licenses, accessibility, brand version, and approval class.
 
 ### Creative gaps requiring v2
 
-#### `aurendor-art-direction`
+#### `social-art-direction`
 
 The current skill correctly prohibits generic AI clichés and reference copying, but it does not yet provide:
 
@@ -86,19 +86,19 @@ The current skill correctly prohibits generic AI clichés and reference copying,
 
 **Decision:** preserve its safety and brand rules, replace creative reasoning with v2, and keep autonomous production paused until behavioral benchmarks pass.
 
-#### `aurendor-social-design`
+#### `social-design`
 
 The provider and exact-output controls are strong and should not be rewritten. The skill should consume a stronger approved concept packet and send completed renders through the new originality, Arabic, professional-critique, and feed-level gates.
 
 **Decision:** adopt as infrastructure. Production output remains non-publishable until the full creative gate passes.
 
-#### `aurendor-design-critique`
+#### `social-design-critique`
 
 The current 100-point rubric assigns only 14 points to concept and 3 to polish. It lacks full-weight distinctiveness, pairwise comparison with professional quality anchors, dedicated Arabic and social-performance reviewers, feed simulations, and an independent copying/similarity gate.
 
 **Decision:** retain actual-pixel, independence, hard-fail, and bounded-loop behavior. Replace scoring and reviewer structure with v2.
 
-#### `aurendor-brand-compliance`
+#### `social-brand-compliance`
 
 The skill is correctly separated from owner approval and publishing. It should consume the new originality decision and character-capability truth record as additional hard gates.
 
@@ -127,20 +127,20 @@ Declared license: none
 - No version, upstream repository, author, license, content hash, or benchmark is declared.
 - `inspect_brand_context.py` recursively reads selected project files and emits snippets. It skips common build directories but has no robust secret-pattern redaction or explicit path allowlist. A sensitive file with a brand-related name could appear in output.
 
-**Decision:** `INSPIRATION_ONLY`. Reimplement useful principles inside versioned AURENDOR-native skills. Do not copy the skill into the runtime or invoke its inspector on sensitive roots without redaction and an allowlist.
+**Decision:** `INSPIRATION_ONLY`. Reimplement useful principles inside versioned SOCIAL_MEDIA_PLUGIN-native skills. Do not copy the skill into the runtime or invoke its inspector on sensitive roots without redaction and an allowlist.
 
-## Local `aurendor-social-creative`
+## Local `social-social-creative`
 
-Path: `/Users/muhammedjameel/.codex/skills/aurendor-social-creative`  
+Path: `/Users/muhammedjameel/.codex/skills/social-social-creative`  
 Declared version/source/license: none
 
 The skill has no scripts, dependencies, network behavior, or provider mutations. Its instructions are safe but only cover a concept, format, overlay copy, prompt, checklist, and variants. It lacks the corpus, visual grammar, Arabic composition, anthropomorphism, originality, multi-critic, rendered-pixel, and benchmark requirements of the rebuild.
 
 **Decision:** `DEPRECATE` after its safe mobile-legibility and purpose-first reminders are incorporated into the project-native v2 system.
 
-## Local `aurendor-ad-creative`
+## Local `social-ad-creative`
 
-Path: `/Users/muhammedjameel/.codex/skills/aurendor-ad-creative`  
+Path: `/Users/muhammedjameel/.codex/skills/social-ad-creative`  
 Declared version/source/license: none
 
 The skill usefully separates strategic test angles and asks each concept to test one hypothesis. It has no executable code or network behavior. It is not an art-direction or visual-craft system.
@@ -149,7 +149,7 @@ The skill usefully separates strategic test angles and asks each concept to test
 
 ## Workspace `ui-ux-pro-max`
 
-Path: `/Users/muhammedjameel/Documents/AURENDOR-Codex/.codex/skills/ui-ux-pro-max`  
+Path: `/Users/muhammedjameel/Documents/SOCIAL_MEDIA_PLUGIN-Codex/.codex/skills/ui-ux-pro-max`  
 Declared version/source/license: none
 
 ### Technical inspection
@@ -207,7 +207,7 @@ Declared version/license: none in `SKILL.md`
 
 ### Bounded role
 
-Use only after an approved original AURENDOR concept and art-direction packet exist. Generate bespoke raster ingredients, not brand decisions or final exact typography. Do not send raw Behance/reference-corpus images unless AURENDOR owns or has an explicit transformation license for them.
+Use only after an approved original SOCIAL_MEDIA_PLUGIN concept and art-direction packet exist. Generate bespoke raster ingredients, not brand decisions or final exact typography. Do not send raw Behance/reference-corpus images unless SOCIAL_MEDIA_PLUGIN owns or has an explicit transformation license for them.
 
 **Decision:** `SANDBOX_ONLY` until it passes the controlled benchmark, provenance capture, Arabic handoff, similarity gate, and output-rights review.
 
@@ -231,7 +231,7 @@ Declared capabilities: Interactive, Write
 
 Potentially valuable for divergent concept boards and reviewable image candidates. It should never receive the professional corpus wholesale, authorize external publication, or replace the native Art Director and critics.
 
-**Decision:** `SANDBOX_ONLY`. Evaluate with synthetic/AURENDOR-owned assets, stable board IDs, no production provider credentials, and explicit output review.
+**Decision:** `SANDBOX_ONLY`. Evaluate with synthetic/SOCIAL_MEDIA_PLUGIN-owned assets, stable board IDs, no production provider credentials, and explicit output review.
 
 ## Canva `canva-design-feedback` v14.0.0
 
@@ -273,7 +273,7 @@ Registry and ingestion implications:
 
 ## Proposed project-native skills
 
-### `aurendor-design-corpus-analysis`
+### `social-design-corpus-analysis`
 
 Purpose: inventory, hash, deduplicate, cluster, sample, and analyze the professional reference corpus while preserving reference-only rights and treating all content as untrusted data.
 
@@ -287,7 +287,7 @@ Required outputs:
 - provenance and rights records;
 - prompt-injection/security warnings.
 
-### `aurendor-anthropomorphic-system`
+### `social-anthropomorphic-system`
 
 Purpose: select anthropomorphism level, define behavioral truth, assess trust/capability implications, and produce character/mechanism specifications without creating final designs.
 
@@ -300,21 +300,21 @@ Required outputs:
 - character-bible requirement status;
 - prohibited cliché list.
 
-### `aurendor-arabic-design-review`
+### `social-arabic-design-review`
 
 Purpose: independently inspect rendered Arabic and bilingual work for composition, typography, shaping, RTL, cultural fit, mixed-script behavior, punctuation, numerals, line breaks, clipping, and mobile readability.
 
 This reviewer is mandatory for Arabic candidates and cannot be replaced by automated bidi/OCR checks.
 
-### `aurendor-visual-originality-review`
+### `social-visual-originality-review`
 
 Purpose: compare a candidate with the professional corpus and public brand-character references, combine computational neighbors with human judgment, and issue `pass`, `revise`, `reject`, or `escalate` independently of aesthetic quality.
 
-### `aurendor-feed-curation`
+### `social-feed-curation`
 
 Purpose: render and evaluate 3-, 9-, 12-post, and monthly feed simulations for repetition, rhythm, family diversity, color balance, visual fatigue, and recognition.
 
-### `aurendor-creative-benchmark`
+### `social-creative-benchmark`
 
 Purpose: run fixed briefs through old and new creative systems, preserve blinded candidate identities, coordinate pairwise critic tournaments, record score evidence, and detect golden-set regressions.
 

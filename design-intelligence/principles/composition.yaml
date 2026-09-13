@@ -11,7 +11,7 @@ principles:
     languages: [ar, en]
     anthropomorphismLevels: [0, 1, 2, 3, 4, 5]
     strongReferenceIds: [ref_6dd0a9246092f4d5, ref_97c66851c15d6c1f, ref_8871f98455278188]
-    aurendorApplication: "Allocate roughly half the perceived visual weight to one operational actor, object, or phrase; demote the logo and explanatory copy."
+    socialMediaPluginApplication: "Allocate roughly half the perceived visual weight to one operational actor, object, or phrase; demote the logo and explanatory copy."
     retrievalTags: [focus, immediate, single, awareness, clarity, hero]
     mustNotCopy: "Do not reuse the source subject, silhouette, crop, camera angle, or headline placement."
   - id: COMP_ASYMMETRIC_COUNTERWEIGHT
@@ -24,7 +24,7 @@ principles:
     languages: [ar, en]
     anthropomorphismLevels: [0, 1, 2, 3]
     strongReferenceIds: [ref_51e708951ea61f18, ref_7ea2e6edfd24a465, ref_2ca843f06643d5f6]
-    aurendorApplication: "For Arabic, bias the information counterweight toward the right reading entry while allowing the conceptual mass to pull left or diagonally."
+    socialMediaPluginApplication: "For Arabic, bias the information counterweight toward the right reading entry while allowing the conceptual mass to pull left or diagonally."
     retrievalTags: [asymmetry, balance, space, tension, rtl, editorial]
     mustNotCopy: "Do not mirror or trace any source grid; re-derive mass placement from the new message and script direction."
   - id: COMP_SEMANTIC_DEPTH
@@ -37,7 +37,7 @@ principles:
     languages: [ar, en]
     anthropomorphismLevels: [1, 2, 3, 4, 5]
     strongReferenceIds: [ref_6dd0a9246092f4d5, ref_2ca843f06643d5f6, ref_f5593ec327689f0a]
-    aurendorApplication: "Put the operational problem in the foreground, the intelligent system at the action plane, and environmental evidence in the background."
+    socialMediaPluginApplication: "Put the operational problem in the foreground, the intelligent system at the action plane, and environmental evidence in the background."
     retrievalTags: [depth, relationship, action, environment, narrative]
     mustNotCopy: "Do not reproduce a source scene, character arrangement, environment, or perspective."
   - id: COMP_PURPOSEFUL_CROP
@@ -50,7 +50,7 @@ principles:
     languages: [ar, en]
     anthropomorphismLevels: [0, 1, 2, 3, 4, 5]
     strongReferenceIds: [ref_97c66851c15d6c1f, ref_8871f98455278188, ref_f5593ec327689f0a]
-    aurendorApplication: "Crop only where the implied continuation serves the idea; keep faces, Arabic letterforms, and proof-bearing UI intact."
+    socialMediaPluginApplication: "Crop only where the implied continuation serves the idea; keep faces, Arabic letterforms, and proof-bearing UI intact."
     retrievalTags: [crop, motion, scale, energy, immediacy]
     mustNotCopy: "Do not imitate the source crop, pose, or object orientation."
   - id: COMP_NEGATIVE_SPACE_HAS_A_JOB
@@ -63,7 +63,7 @@ principles:
     languages: [ar, en]
     anthropomorphismLevels: [0, 1, 2, 3]
     strongReferenceIds: [ref_51e708951ea61f18, ref_7ea2e6edfd24a465, ref_ac0d35ccf58d8eb9]
-    aurendorApplication: "Declare the role of every large empty region in the brief: headline field, absence metaphor, gaze destination, or monthly-feed breathing beat."
+    socialMediaPluginApplication: "Declare the role of every large empty region in the brief: headline field, absence metaphor, gaze destination, or monthly-feed breathing beat."
     retrievalTags: [space, restraint, editorial, quiet, premium]
     mustNotCopy: "Do not transplant the source's blank-field proportion or exact text position."
   - id: COMP_SYSTEM_VARIATION_NOT_TEMPLATE
@@ -76,6 +76,6 @@ principles:
     languages: [ar, en]
     anthropomorphismLevels: [0, 1, 2, 3, 4, 5]
     strongReferenceIds: [ref_51e708951ea61f18, ref_f5cec23c32415d6e, ref_7ea2e6edfd24a465]
-    aurendorApplication: "Repeat material, light behavior, color charge, and typographic voice; prohibit repeating the same header-frame-action-rail skeleton."
+    socialMediaPluginApplication: "Repeat material, light behavior, color charge, and typographic voice; prohibit repeating the same header-frame-action-rail skeleton."
     retrievalTags: [system, campaign, coherence, variation, feed]
     mustNotCopy: "Do not reproduce any source campaign's modules, motif, or sequence structure."

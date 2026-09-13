@@ -3,7 +3,7 @@
 **Assessment date:** 2026-08-23  
 **Decision:** **NO-GO for external production publication**  
 **Permitted stage:** `OFFLINE`; shadow-mode candidate only after the blocking security/auth/provider items below are closed  
-**Evidence basis:** repository artifacts and local fixture implementation; no verified live AURENDOR provider accounts or production traffic
+**Evidence basis:** repository artifacts and local fixture implementation; no verified live SOCIAL_MEDIA_PLUGIN provider accounts or production traffic
 
 ## What is genuinely implemented
 
@@ -43,9 +43,9 @@ The total is directional, not a probability of safety. Any critical blocker belo
 
 ## Critical blockers
 
-1. **Credential rotation:** a Gemini API-key-like value was detected at `/Users/muhammedjameel/Documents/AURENDOR/.mcp.json`. It was not copied or printed. The owner must revoke/rotate it, inspect usage, and confirm the old value is invalid.
+1. **Credential rotation:** a Gemini API-key-like value was detected at `/Users/muhammedjameel/Documents/SOCIAL_MEDIA_PLUGIN/.mcp.json`. It was not copied or printed. The owner must revoke/rotate it, inspect usage, and confirm the old value is invalid.
 2. **Production identity/security:** signed scrypt/HMAC owner authentication and strict HTTP-only sessions exist locally, but authorization, session security, credential encryption/rotation, CSRF/origin protections, and deployment secret handling are not yet exercised in a deployed environment.
-3. **Provider access:** Canva, Meta, LinkedIn, TikTok, YouTube, storage, and notifications have no verified AURENDOR OAuth/account/capability evidence.
+3. **Provider access:** Canva, Meta, LinkedIn, TikTok, YouTube, storage, and notifications have no verified SOCIAL_MEDIA_PLUGIN OAuth/account/capability evidence.
 4. **Production publisher:** the executable publisher is deliberately dry-run-only. Real adapters, webhook signatures, retry/reconciliation contracts, and provider-visible validation remain unimplemented/unverified.
 5. **Creative evidence:** imported assets start at `NEEDS_REVIEW`; `W3-P5` has a known hard failure. Three current benchmark hashes passed deterministic/raster smoke checks but have zero of two required independent current-hash critic approvals and no owner publication approval.
 6. **Analytics truth:** current dashboard/demo metrics are synthetic. No real provider payload, metric definition registry, or 30/60/90-day evidence set has been collected.

@@ -1,10 +1,10 @@
-# AURENDOR automatic content production — v1
+# SOCIAL_MEDIA_PLUGIN automatic content production — v1
 
 Effective owner direction: 2026-09-08. This is the operating protocol for the Codex heartbeat, not a claim that the legacy offline worker can generate finished media.
 
 ## Execution and authority
 
-- Work in the current copied implementation directory (for this project: `/Users/muhammedjameel/Documents/AURENDOR/apps/social-media-engine-plugin`). Read its AGENTS.md first. Never expose credentials, replace the owner's existing plan, erase old assets, or change publishing safety switches.
+- Work in the current copied implementation directory (for this project: `/Users/muhammedjameel/Documents/SOCIAL_MEDIA_PLUGIN/apps/social-media-engine-plugin`). Read its AGENTS.md first. Never expose credentials, replace the owner's existing plan, erase old assets, or change publishing safety switches.
 - Codex runs the creative agents and real media tools on the local host. The VPS runs Postiz and already-accepted schedules. A local Codex heartbeat is **not** an always-on VPS creative worker: the host and necessary tools must be available.
 - No production CLI command can grant owner approval or publish. Only an authenticated dashboard owner action approves the exact five-platform package and optionally schedules it. Missing permissions, funds, rendering capability, or evidence are blockers, never simulated successes.
 - Do not auto-purchase credits or invoke a newly billable service. Use existing authorized capabilities. Never manufacture reviewer scores, screenshots, source evidence, or rendered files to advance a gate.
@@ -26,10 +26,10 @@ Run each producer and its critic in **separate agent invocations**, with unique 
 
 | Stage | Role and required knowledge | Gate |
 | --- | --- | --- |
-| Monthly plan | AURENDOR marketing-team lead, campaign brief, project content-strategy and brand-intelligence skills | Full month, 2:1 cadence, no duplicate launch, grounded priorities |
+| Monthly plan | SOCIAL_MEDIA_PLUGIN marketing-team lead, campaign brief, project content-strategy and brand-intelligence skills | Full month, 2:1 cadence, no duplicate launch, grounded priorities |
 | IDEA | Strategist/ideation agent; recent feed and owner feedback | Scenario, useful payoff, hook, novelty and evidence needs |
 | IDEA_REVIEW | Independent senior content strategist | Every dimension ≥85/100; no hard failures; otherwise replace the idea |
-| COPY | Native Arabic/English writer plus art director; aurendor-social-copy, aurendor-social-creative, project art-direction and social-design skills | Exact platform captions, X thread entries, per-frame text, concept tournament and production direction |
+| COPY | Native Arabic/English writer plus art director; social-social-copy, social-social-creative, project art-direction and social-design skills | Exact platform captions, X thread entries, per-frame text, concept tournament and production direction |
 | COPY_REVIEW | Independent editorial critic; brand guardian, factual sources and Arabic editorial expertise | Relevance, originality, clarity, credibility and platform fit all ≥85; unsupported claims fail |
 | ASSETS | Creative producer plus video director when relevant; actual rendering tools | Five native variants, ≥2 supporting Stories, media hashes, rights, account IDs, exact reviewed captions |
 | DESIGN_REVIEW | Independent senior art director, graphic designer, social-performance strategist, and Arabic design reviewer for Arabic work | Every asset at original/mobile scale; ≥145/160 per specialist, comparable/above anchors, no hard fail; full video playback/audio QA |
@@ -66,7 +66,7 @@ The CLI uses the engine database. With embedded PGlite, do not open a second dat
 - LinkedIn: use a document-style carousel, not an accidental multi-image collage. The bridge uses Postiz `post_as_images_carousel: true` and `carousel_name`. Write a professional opening and useful document sequence. A detailed demo may benefit from 4:5 or 16:9 video; landscape is not automatically better.
 - TikTok: 9:16 photo sequence or video, concise native text, safe zones and a first-second hook. Current integration is **UPLOAD/inbox completion**, never Direct Post. No guarantee of simultaneous public publication with the other four channels.
 - X: write the entire thread explicitly, with up to four distinct images per entry and a conservative 280-character editorial budget per entry. No generic auto-generated “continuation” captions. Check account permissions/funds before any live dispatch.
-- One shared `scheduledAt` belongs to the whole package. Choose one connected AURENDOR account per platform. Do not quietly drop an unavailable platform or move it to a different time.
+- One shared `scheduledAt` belongs to the whole package. Choose one connected SOCIAL_MEDIA_PLUGIN account per platform. Do not quietly drop an unavailable platform or move it to a different time.
 - Network and platform processing are not atomic. An incomplete/ambiguous Postiz acknowledgement must be reconciled per platform; never resend the whole batch to “fix” one channel.
 
 ## GPT-6 Astra video production protocol

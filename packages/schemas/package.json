@@ -1,5 +1,5 @@
 {
-  "name": "@aurendor/schemas",
+  "name": "@social-media-plugin/schemas",
   "version": "0.1.0",
   "private": true,
   "type": "module",

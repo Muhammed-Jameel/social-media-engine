@@ -50,7 +50,7 @@ function headlineMarkup(lines: string[]) {
 }
 
 function shell(candidate: Candidate) {
-  const logo = `<svg class="brand-logo" viewBox="0 0 414.84 85.88" aria-label="AURENDOR">${renderCanonicalHorizontalLogo(candidate.logoFill, 0, 0, 414.84)}</svg>`;
+  const logo = `<svg class="brand-logo" viewBox="0 0 414.84 85.88" aria-label="SOCIAL_MEDIA_PLUGIN">${renderCanonicalHorizontalLogo(candidate.logoFill, 0, 0, 414.84)}</svg>`;
   const text = `<header class="copy-block">
     <div class="label">${candidate.label} · ${String(candidate.number).padStart(2, "0")}</div>
     <h1>${headlineMarkup(candidate.headline)}</h1>

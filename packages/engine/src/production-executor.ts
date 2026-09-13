@@ -2,7 +2,7 @@ import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
 import { extname } from "node:path";
 import { z, type ZodType } from "zod";
-import type { DatabaseClient } from "@aurendor/db/runtime";
+import type { DatabaseClient } from "@social-media-plugin/db/runtime";
 import {
   AnthropomorphismLevelSchema,
   ArtifactEnvelopeSchema,
@@ -12,7 +12,7 @@ import {
   ProfessionalDesignBriefSchema,
   SourceReferenceSchema,
   VisualFamilySchema,
-} from "@aurendor/schemas";
+} from "@social-media-plugin/schemas";
 import {
   ArtDirectionDecisionSchema,
   ProfessionalCreativeOrchestrator,

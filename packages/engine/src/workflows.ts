@@ -1,7 +1,7 @@
 import { randomUUID } from "node:crypto";
-import { createLogger } from "@aurendor/observability";
-import type { DatabaseClient, SqlRow } from "@aurendor/db/runtime";
-import { AURENDOR_ORGANIZATION_ID } from "@aurendor/db/runtime";
+import { createLogger } from "@social-media-plugin/observability";
+import type { DatabaseClient, SqlRow } from "@social-media-plugin/db/runtime";
+import { SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID } from "@social-media-plugin/db/runtime";
 import { canonicalSha256, computePostProductionApprovalBinding } from "./evidence";
 import { EngineError, normalizeEngineError } from "./errors";
 
@@ -211,7 +211,7 @@ export async function enqueueWorkflow(
        id, organization_id, type, status, idempotency_key, current_step, steps, input, output, trace_id, next_attempt_at
      ) VALUES ($1, $2, $3, 'PENDING', $4, $5, $6::jsonb, $7::jsonb, NULL, $8, now())
      ON CONFLICT (idempotency_key) DO NOTHING`,
-    [id, AURENDOR_ORGANIZATION_ID, input.type, input.idempotencyKey, steps[0]?.name, JSON.stringify(steps), JSON.stringify(input.payload), input.traceId ?? randomUUID()],
+    [id, SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID, input.type, input.idempotencyKey, steps[0]?.name, JSON.stringify(steps), JSON.stringify(input.payload), input.traceId ?? randomUUID()],
   );
   const result = await database.query<SqlRow & { id: string }>("SELECT id FROM workflow_runs WHERE idempotency_key = $1", [input.idempotencyKey]);
   const stored = result.rows[0];
@@ -336,7 +336,7 @@ export async function runWorkerOnce(
 ): Promise<{ worked: boolean; workflowId?: string; status?: string }> {
   const settings = await database.query<SqlRow & { paused: boolean }>(
     "SELECT paused FROM engine_settings WHERE organization_id = $1",
-    [AURENDOR_ORGANIZATION_ID],
+    [SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID],
   );
   if (settings.rows[0]?.paused !== false) return { worked: false };
   const workflow = await claimNextWorkflow(database, workerId, options);

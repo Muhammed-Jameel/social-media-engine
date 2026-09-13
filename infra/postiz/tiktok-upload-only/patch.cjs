@@ -20,11 +20,11 @@ function patch(source) {
   replace('username: username,', "username: '',", 2);
   replace('const state = Math.random().toString(36).substring(2);', "const state = require('node:crypto').randomBytes(24).toString('hex');");
   replace('async postPending(id, accessToken, postDetails, integration) {', 'async postPending(id, accessToken, postDetails, integration) {\n        this.contentPostingMethod(postDetails?.[0]);');
-  replace('Use DIRECT_POST unless the user explicitly asks to review or edit the post inside the TikTok app first.', 'This AURENDOR deployment supports UPLOAD only. Direct Post is disabled.');
+  replace('Use DIRECT_POST unless the user explicitly asks to review or edit the post inside the TikTok app first.', 'This SOCIAL_MEDIA_PLUGIN deployment supports UPLOAD only. Direct Post is disabled.');
   // Overrides are attached after decorator evaluation, in BOTH the HTTP backend
   // and Temporal worker bundles. No frontend-only safety assumption.
   return source + `
-// AURENDOR_UPLOAD_ONLY_V1
+// SOCIAL_MEDIA_PLUGIN_UPLOAD_ONLY_V1
 Object.assign(exports.TiktokProvider.prototype, {
     contentPostingMethod(firstPost) {
         if (firstPost?.settings?.content_posting_method !== 'UPLOAD') {

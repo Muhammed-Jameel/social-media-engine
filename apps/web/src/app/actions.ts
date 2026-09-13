@@ -1,9 +1,9 @@
 "use server";
 
 import { randomUUID } from "node:crypto";
-import { getRepository, getDatabase } from "@aurendor/db/runtime";
-import { classifyOwnerCommand, loadProductionJob } from "@aurendor/engine";
-import { ApprovalDecisionSchema } from "@aurendor/schemas";
+import { getRepository, getDatabase } from "@social-media-plugin/db/runtime";
+import { classifyOwnerCommand, loadProductionJob } from "@social-media-plugin/engine";
+import { ApprovalDecisionSchema } from "@social-media-plugin/schemas";
 import { z } from "zod";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";

@@ -1,14 +1,14 @@
 import { join } from "node:path";
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import {
-  AURENDOR_OWNER_ID,
+  SOCIAL_MEDIA_PLUGIN_OWNER_ID,
   createDatabase,
   migrateDatabase,
   seedCoreData,
   type DatabaseClient,
   type SqlRow,
-} from "@aurendor/db";
-import type { CreativeConceptCandidate, ImageryMode, ProfessionalCritique, VisualFamily } from "@aurendor/schemas";
+} from "@social-media-plugin/db";
+import type { CreativeConceptCandidate, ImageryMode, ProfessionalCritique, VisualFamily } from "@social-media-plugin/schemas";
 import {
   FixtureAgentGateway,
   type StructuredAgentGateway,
@@ -39,7 +39,7 @@ function validInput(): ProfessionalPostProductionInput {
   return ProfessionalPostProductionInputSchema.parse({
     schemaVersion: "1.0.0",
     contentItemId: "00000000-0000-4000-8000-000000000101",
-    communicationGoal: "Explain how AURENDOR preserves context through an operational handoff.",
+    communicationGoal: "Explain how SOCIAL_MEDIA_PLUGIN preserves context through an operational handoff.",
     purpose: "education",
     audience: "Regional operations leaders",
     audienceTension: "Important context disappears when responsibility changes hands.",
@@ -60,7 +60,7 @@ function validInput(): ProfessionalPostProductionInput {
     },
     research: {
       disposition: "NOT_REQUIRED",
-      rationale: "This educational claim describes the owned AURENDOR operating model and makes no external factual claim.",
+      rationale: "This educational claim describes the owned SOCIAL_MEDIA_PLUGIN operating model and makes no external factual claim.",
       sources: [],
     },
     editorialApproval: {
@@ -75,7 +75,7 @@ function validInput(): ProfessionalPostProductionInput {
       schemaVersion: "1.0.0",
       modelVersion: "fixture-v1",
       promptVersion: "post-production-v1",
-      skillVersions: ["aurendor-art-direction@2.0.0", "aurendor-design-critique@2.0.0"],
+      skillVersions: ["social-art-direction@2.0.0", "social-design-critique@2.0.0"],
       templateVersion: null,
       traceId: "00000000-0000-4000-8000-000000000102",
       createdAt: "2026-08-25T07:00:00.000Z",
@@ -148,7 +148,7 @@ function gatewayConcept(
       material: "Dark mineral composite and clear resin",
       texture: "Controlled tactile grain without synthetic haze",
       relationToTypography: "The contact event counterbalances the Arabic type rather than sitting behind it.",
-      assetPlan: [{ asset: "bespoke focal scene", source: "generated-bespoke", licenseEvidence: "Original AURENDOR fixture generation" }],
+      assetPlan: [{ asset: "bespoke focal scene", source: "generated-bespoke", licenseEvidence: "Original SOCIAL_MEDIA_PLUGIN fixture generation" }],
     },
     referenceUses: referenceIds.slice(0, 3).map((referenceId, referenceIndex) => ({
       referenceId,
@@ -200,7 +200,7 @@ function gatewayCritique(input: Record<string, unknown>): ProfessionalCritique {
 class DynamicProfessionalGateway implements StructuredAgentGateway {
   async run<T>(request: StructuredAgentRequest<T>): Promise<StructuredAgentResult<T>> {
     let fixture: unknown;
-    if (request.taskName === "aurendor_professional_art_direction_v2") {
+    if (request.taskName === "social_media_plugin_professional_art_direction_v2") {
       const knowledge = request.input["designKnowledge"] as {
         references: Array<{ referenceId: string }>;
         principles: Array<{ principleId: string }>;
@@ -226,7 +226,7 @@ class DynamicProfessionalGateway implements StructuredAgentGateway {
           languageCompositionDecision: "The RTL headline begins upper right and hands attention into the leftward action.",
           assetCraftDecision: "A bespoke macro material scene requires credible contacts, directional light, and restrained texture.",
           anthropomorphismDecision: "Humanize the handoff through behavior; a face would reduce authority.",
-          aurendorDistinctiveness: "A charged green state travels through a dark mineral operating world unique to the brief.",
+          socialMediaPluginDistinctiveness: "A charged green state travels through a dark mineral operating world unique to the brief.",
         },
         tournament: {
           candidates,
@@ -238,7 +238,7 @@ class DynamicProfessionalGateway implements StructuredAgentGateway {
           rejectedCandidates: [{ candidateId: "runtime-route-2", reason: "The typography-led route carries less message-specific operating evidence." }],
         },
       };
-    } else if (request.taskName.startsWith("aurendor_pixel_critique_")) {
+    } else if (request.taskName.startsWith("social_media_plugin_pixel_critique_")) {
       fixture = gatewayCritique(request.input);
     } else {
       throw new Error(`Unexpected dynamic gateway task: ${request.taskName}`);
@@ -497,7 +497,7 @@ describe("professional post-production runtime", () => {
     const policyEvidence = evidence["policy-check"] as Record<string, unknown>;
     await resumeWorkflowAfterApproval(database, {
       workflowId,
-      actorId: AURENDOR_OWNER_ID,
+      actorId: SOCIAL_MEDIA_PLUGIN_OWNER_ID,
       approvalRef: "runtime-owner-approval-01",
       renderedAssetSha256: renderEvidence["renderedAssetSha256"] as string,
       pixelEvidenceSha256: renderEvidence["pixelEvidenceSha256"] as string,

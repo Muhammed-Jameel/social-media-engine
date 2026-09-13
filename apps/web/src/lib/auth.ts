@@ -4,7 +4,7 @@ import { createHmac, scryptSync, timingSafeEqual } from "node:crypto";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 
-const COOKIE_NAME = "aurendor_owner_session";
+const COOKIE_NAME = "social_media_plugin_owner_session";
 const SESSION_AGE_SECONDS = 60 * 60 * 12;
 
 export interface OwnerSession {
@@ -60,7 +60,7 @@ function verifyToken(token: string): OwnerSession | null {
 export async function getOwnerSession(): Promise<OwnerSession | null> {
   if (isDemoMode()) {
     return {
-      email: process.env.OWNER_EMAIL?.trim() || "owner@aurendor.com",
+      email: process.env.OWNER_EMAIL?.trim() || "owner@social-media-plugin.com",
       role: "owner",
       demo: true,
     };

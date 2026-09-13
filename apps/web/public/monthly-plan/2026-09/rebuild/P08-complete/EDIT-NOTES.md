@@ -17,7 +17,7 @@ The captures were made through the available CUA browser tools from a new isolat
 
 The complete phone shell is adapted from [Devices.css by Yan Zhu](https://github.com/picturepan2/devices.css), under its [MIT license](https://github.com/picturepan2/devices.css/blob/master/LICENSE). Original geometry, notices and source are retained in `remotion/public/vendor/devices-css`. Its390×830 screen contains the390×748 app viewport plus54px top and28px bottom device chrome. The mockup does not imply Apple endorsement.
 
-Ghroob Arabic ITF and Dh Ranclo remain the editorial fonts. The application keeps its real native typography and AURENDOR Build interface branding; screenshots were not repainted to conceal that naming difference. Existing AURENDOR architectural artwork and logos are reused.
+Ghroob Arabic ITF and Dh Ranclo remain the editorial fonts. The application keeps its real native typography and SOCIAL_MEDIA_PLUGIN Build interface branding; screenshots were not repainted to conceal that naming difference. Existing SOCIAL_MEDIA_PLUGIN architectural artwork and logos are reused.
 
 The licensed music is Games Music by Grigoriy Nuzhny, Mixkit706. The source rights, edit intervals, stems and level checks are in `audio/AUDIO-HANDOFF.md`. Final58second music master:−17.00LUFS,−7.87dBTP, no clipped samples. No voiceover was added. Signal measurement does not substitute for listening review.
 

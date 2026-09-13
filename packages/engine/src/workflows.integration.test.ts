@@ -1,12 +1,12 @@
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import {
-  AURENDOR_OWNER_ID,
+  SOCIAL_MEDIA_PLUGIN_OWNER_ID,
   createDatabase,
   migrateDatabase,
   seedCoreData,
   type DatabaseClient,
   type SqlRow,
-} from "@aurendor/db";
+} from "@social-media-plugin/db";
 import { canonicalSha256, computePostProductionApprovalBinding } from "./evidence";
 import { EngineError } from "./errors";
 import { ensureScheduledWork } from "./scheduler";
@@ -187,7 +187,7 @@ describe("durable workflow integration", () => {
     expect(waiting.rows[0]).toMatchObject({ status: "WAITING_FOR_APPROVAL", current_step: "owner-review" });
     await resumeWorkflowAfterApproval(database, {
       workflowId,
-      actorId: AURENDOR_OWNER_ID,
+      actorId: SOCIAL_MEDIA_PLUGIN_OWNER_ID,
       approvalRef: "integration-owner-approval",
     });
     const resumed = await database.query<SqlRow & { status: string; current_step: string }>(
@@ -205,7 +205,7 @@ describe("durable workflow integration", () => {
       [workflowId],
     );
     expect(approvalEvidence.rows[0]?.output).toMatchObject({
-      "owner-review": { approved: true, actorId: AURENDOR_OWNER_ID, approvalRef: "integration-owner-approval" },
+      "owner-review": { approved: true, actorId: SOCIAL_MEDIA_PLUGIN_OWNER_ID, approvalRef: "integration-owner-approval" },
     });
   });
 
@@ -246,7 +246,7 @@ describe("durable workflow integration", () => {
 
     await expect(resumeWorkflowAfterApproval(database, {
       workflowId,
-      actorId: AURENDOR_OWNER_ID,
+      actorId: SOCIAL_MEDIA_PLUGIN_OWNER_ID,
       approvalRef: "stale-evidence-approval",
       ...fixture.binding,
       pixelEvidenceSha256: "f".repeat(64),
@@ -271,7 +271,7 @@ describe("durable workflow integration", () => {
 
     await resumeWorkflowAfterApproval(database, {
       workflowId,
-      actorId: AURENDOR_OWNER_ID,
+      actorId: SOCIAL_MEDIA_PLUGIN_OWNER_ID,
       approvalRef: "exact-evidence-approval",
       ...fixture.binding,
     });
@@ -284,7 +284,7 @@ describe("durable workflow integration", () => {
     expect(stored.rows[0]?.output).toMatchObject({
       "owner-review": {
         approved: true,
-        actorId: AURENDOR_OWNER_ID,
+        actorId: SOCIAL_MEDIA_PLUGIN_OWNER_ID,
         approvalRef: "exact-evidence-approval",
         ...fixture.binding,
         approvalBindingSha256: computePostProductionApprovalBinding(fixture.binding),
@@ -295,7 +295,7 @@ describe("durable workflow integration", () => {
       [workflowId],
     );
     expect(audit.rows).toHaveLength(1);
-    expect(audit.rows[0]).toMatchObject({ actor_id: AURENDOR_OWNER_ID });
+    expect(audit.rows[0]).toMatchObject({ actor_id: SOCIAL_MEDIA_PLUGIN_OWNER_ID });
     expect(audit.rows[0]?.new_state).toMatchObject({
       approvalEvidence: {
         ...fixture.binding,

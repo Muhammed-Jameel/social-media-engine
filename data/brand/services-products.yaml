@@ -5,7 +5,7 @@ offerings:
     name: Bunyan Pro
     status: current
     category: construction operations platform
-    legacyAliases: [Aurendor Build]
+    legacyAliases: [Social Media Plugin Build]
     capabilities: [project visibility, progress updates, files, site media, payment follow-up, stakeholder coordination]
   - key: intelligent-automation
     name: Intelligent automation systems
@@ -23,7 +23,7 @@ offerings:
     category: digital infrastructure
     capabilities: [workflow applications, dashboards, integrations, operational data systems]
 provenance:
-  - path: marketing/_context/AURENDOR_Product_Offerings.md
+  - path: marketing/_context/SOCIAL_MEDIA_PLUGIN_Product_Offerings.md
     authority: high
-  - path: marketing/_context/AURENDOR_Brand_Context.md
+  - path: marketing/_context/SOCIAL_MEDIA_PLUGIN_Brand_Context.md
     authority: high

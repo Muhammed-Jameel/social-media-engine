@@ -1,6 +1,6 @@
 {
   "version": "v8",
-  "title": "AURENDOR · September 11–30 · Value-first editorial plan",
+  "title": "SOCIAL_MEDIA_PLUGIN · September 11–30 · Value-first editorial plan",
   "researchedAt": "2026-09-10",
   "timezone": "Asia/Baghdad",
   "status": "Editorial review — first cycle rendered; nothing scheduled",
@@ -354,7 +354,7 @@
   },
   "productionRules": {
     "updatedAt": "2026-09-10",
-    "carousel": "Every carousel ends with one simple, topic-related invitation to try/discuss the relevant AURENDOR service or Bunyan Pro. Keep the useful teaching complete before this card.",
+    "carousel": "Every carousel ends with one simple, topic-related invitation to try/discuss the relevant SOCIAL_MEDIA_PLUGIN service or Bunyan Pro. Keep the useful teaching complete before this card.",
     "videos": {
       "vertical": {
         "width": 1080,
@@ -380,7 +380,7 @@
       "qa": "Check font rendering, overflow, mobile readability, full decode and audio sync independently for both exports.",
       "authorization": "Owner authorized continued three-piece production cycles under the September publishing and learning workflow on 10 September 2026. Both aspect ratios remain mandatory."
     },
-    "publishingWorkflow": "New hourly automation: aurendor-publishing-and-first-week-learning. Scope and gates: social-media-engine/data/social-operations-policy.json. Previous monthly automation paused. Published status must come from actual Postiz records."
+    "publishingWorkflow": "New hourly automation: social-publishing-and-first-week-learning. Scope and gates: social-media-engine/data/social-operations-policy.json. Previous monthly automation paused. Published status must come from actual Postiz records."
   },
   "items": [
     {
@@ -402,7 +402,7 @@
       "sourceIds": [
         "S-UNDP-2024",
         "S-AGENTS-2024",
-        "S-AURENDOR"
+        "S-SOCIAL_MEDIA_PLUGIN"
       ],
       "exampleDisclosure": "كل أسماء الجهات والمواقف والأرقام التشغيلية في هذا المنشور أمثلة توضيحية مؤلفة، وليست بيانات عملاء أو نتائج تنفيذ من أورندور.",
       "units": [
@@ -454,7 +454,7 @@
       "cta": "اختر مهمة واحدة واملأ بطاقتها مع الموظف الذي ينفذها.",
       "copyableTool": "بطاقة اختيار أول تجربة\nالمهمة: [ ]\nتكرارها الفعلي خلال أسبوع: [ ]\nمكان المدخل ومن يسمح باستخدامه: [ ]\nشكل المخرج المقبول: [ ]\nصاحب المراجعة: [ ]\nأثر الخطأ وكيف نرجع عنه: [ ]\nهل لدينا مثال صحيح وآخر ناقص؟ [ ]\nقرار: تجربة محدودة / تجهيز البيانات أولًا / تأجيل القرار عالي الأثر.",
       "requiredAssets": [
-        "Original AURENDOR vector logo and approved architectural assets",
+        "Original SOCIAL_MEDIA_PLUGIN vector logo and approved architectural assets",
         "Ghroob Arabic ITF and Dh Ranclo brand fonts",
         "Original synthetic worksheet/document content from units, visibly labelled مثال توضيحي"
       ],
@@ -491,7 +491,7 @@
       },
       "freshness": {
         "type": "evergreen research-led",
-        "verifyBeforePublish": "Reopen cited mutable documentation 24–48 hours before publication; keep historical study versions and local survey scope explicit. Recheck offered AURENDOR scope. Examples must remain labelled.",
+        "verifyBeforePublish": "Reopen cited mutable documentation 24–48 hours before publication; keep historical study versions and local survey scope explicit. Recheck offered SOCIAL_MEDIA_PLUGIN scope. Examples must remain labelled.",
         "fallback": "Publish original task worksheet without mutable vendor capability claim if documentation changes."
       },
       "commercialBridge": "أورندور تبدأ تصميم أنظمة الأعمال من مسار محدد ومخرج يمكن تقييمه.",
@@ -638,7 +638,7 @@
       "cta": "استخدم القالب في تحديث موقع واحد اليوم.",
       "copyableTool": "المشروع: ___ | التاريخ والوقت: ___ | المرحلة: ___\nأُنجز اليوم: ___\nالعمل المتوقف وسببه: ___\nالقرار المطلوب من الإدارة: ___ / لا يوجد\nمسؤول المتابعة المتفق عليه: ___\nموعد المراجعة التالية: ___\nمرجع الصورة أو التقرير: ___\nملاحظة: المسؤول والموعد يكتبَان يدوياً ضمن الملاحظات، وليسا حقول سير عمل مفترضة في المنتج.",
       "requiredAssets": [
-        "الشعار وGhroob للعربية وDh Ranclo للإنجليزية من أصول AURENDOR المعتمدة",
+        "الشعار وGhroob للعربية وDh Ranclo للإنجليزية من أصول SOCIAL_MEDIA_PLUGIN المعتمدة",
         "رسوم توضيحية أصلية للقالب في copyableTool؛ لا صور مولدة لواجهات المنتج",
         "عند ظهور المنتج: التقاط جديد من التطبيق الفعلي ببيانات تجريبية مع عبارة واجهة فعلية / بيانات تجريبية",
         "استخدم الهوية القائمة دون تغيير؛ لا تُنشر وجوه أو عناوين أو بيانات زبائن من لقطات فعلية. لا يُستخدم شعار جهة البحث بما يوحي بالتأييد."
@@ -756,7 +756,7 @@
       "format": "reel",
       "pillar": "Practical AI",
       "audience": "طالب جامعي أو محترف يتعلّم مهارة جديدة ويستخدم AI لتفسير الدروس.",
-      "objective": "Give the reader a repeatable practical outcome independent of purchasing AURENDOR services.",
+      "objective": "Give the reader a repeatable practical outcome independent of purchasing SOCIAL_MEDIA_PLUGIN services.",
       "funnel": "awareness / trust",
       "level": "beginner / intermediate",
       "titleAr": "فهمت الشرح؟ جرّب سؤالًا مختلفًا.",
@@ -768,7 +768,7 @@
       "sourceIds": [
         "U-S01"
       ],
-      "exampleDisclosure": "مثال تعليمي افتراضي من إعداد AURENDOR ، وليس نتيجة اختبار أداة أو تجربة عميل.",
+      "exampleDisclosure": "مثال تعليمي افتراضي من إعداد SOCIAL_MEDIA_PLUGIN ، وليس نتيجة اختبار أداة أو تجربة عميل.",
       "units": [
         {
           "number": 1,
@@ -823,7 +823,7 @@
       "cta": "أغلق الشرح، ثم اطلب سؤالًا يغيّر شرطًا واحدًا وأجب قبل رؤية الحل.",
       "copyableTool": "أريد تعلّم [الموضوع] بمستوى [مستواي]. مرجعي: [نص قصير مسموح بمشاركته]. اسألني سؤالًا واحدًا وانتظر جوابي. لا تعرض الحل مسبقًا. بعد جوابي، حدّد أول خطأ أو فرضية ناقصة وأعطني تلميحًا واحدًا. ثم أعطني حالة جديدة تغيّر شرطًا واحدًا. معيار النجاح: أشرح السبب وأطبّق الفكرة دون رؤية الحل. إذا تعارض شرحي مع المرجع، أشر إلى العبارة المحددة؛ وإذا المرجع لا يكفي، قل ذلك.",
       "requiredAssets": [
-        "Original AURENDOR brand fonts Ghroob and Dh Ranclo; existing green/white identity.",
+        "Original SOCIAL_MEDIA_PLUGIN brand fonts Ghroob and Dh Ranclo; existing green/white identity.",
         "An original teaching artifact specified per unit; visible مثال توضيحي label.",
         "Any named tool UI must be captured from an available account immediately before production; otherwise use an explicitly labeled diagram, never fake UI."
       ],
@@ -850,7 +850,7 @@
         },
         "tiktok": {
           "format": "vertical video",
-          "caption": "فهمت الشرح؟ جرّب سؤالًا مختلفًا.\nجلسة تعلّم تتوقف عند الخطأ، ثم تختبر نقل الفكرة إلى مثال جديد.\nمثال تعليمي افتراضي من إعداد AURENDOR ، وليس نتيجة اختبار أداة أو تجربة عميل.\n\nقالب للنسخ:\nأريد تعلّم [الموضوع] بمستوى [مستواي]. مرجعي: [نص قصير مسموح بمشاركته]. اسألني سؤالًا واحدًا وانتظر جوابي. لا تعرض الحل مسبقًا. بعد جوابي، حدّد أول خطأ أو فرضية ناقصة وأعطني تلميحًا واحدًا. ثم أعطني حالة جديدة تغيّر شرطًا واحدًا. معيار النجاح: أشرح السبب وأطبّق الفكرة دون رؤية الحل. إذا تعارض شرحي مع المرجع، أشر إلى العبارة المحددة؛ وإذا المرجع لا يكفي، قل ذلك."
+          "caption": "فهمت الشرح؟ جرّب سؤالًا مختلفًا.\nجلسة تعلّم تتوقف عند الخطأ، ثم تختبر نقل الفكرة إلى مثال جديد.\nمثال تعليمي افتراضي من إعداد SOCIAL_MEDIA_PLUGIN ، وليس نتيجة اختبار أداة أو تجربة عميل.\n\nقالب للنسخ:\nأريد تعلّم [الموضوع] بمستوى [مستواي]. مرجعي: [نص قصير مسموح بمشاركته]. اسألني سؤالًا واحدًا وانتظر جوابي. لا تعرض الحل مسبقًا. بعد جوابي، حدّد أول خطأ أو فرضية ناقصة وأعطني تلميحًا واحدًا. ثم أعطني حالة جديدة تغيّر شرطًا واحدًا. معيار النجاح: أشرح السبب وأطبّق الفكرة دون رؤية الحل. إذا تعارض شرحي مع المرجع، أشر إلى العبارة المحددة؛ وإذا المرجع لا يكفي، قل ذلك."
         }
       },
       "story": {
@@ -1028,7 +1028,7 @@
       "cta": "جرّب القالب على عرض قديم منزوع البيانات الخاصة وقارن ما كشفه من نواقص.",
       "copyableTool": "حلل نص العرض التالي لأغراض إعداد الاستيضاح فقط: [النص]. أخرج جدولًا: الشرط | النص الأصلي حرفيًا | المعنى بالعربية | معلومة غير مذكورة | سؤال للمورد. احتفظ بأرقام الأصناف والوحدات وأسماء العملات كما وردت. لا تستبدل التأكيد بالدفع أو الشحن بالوصول. بعدها اكتب رسالة استيضاح قصيرة بالعربية والإنجليزية. لا تضف شروطًا أو تفسر تعبيرًا يحتمل أكثر من معنى دون بيان الاحتمال.",
       "requiredAssets": [
-        "Original AURENDOR vector logo and approved architectural assets",
+        "Original SOCIAL_MEDIA_PLUGIN vector logo and approved architectural assets",
         "Ghroob Arabic ITF and Dh Ranclo brand fonts",
         "Original synthetic worksheet/document content from units, visibly labelled مثال توضيحي"
       ],
@@ -1065,7 +1065,7 @@
       },
       "freshness": {
         "type": "evergreen research-led",
-        "verifyBeforePublish": "Reopen cited mutable documentation 24–48 hours before publication; keep historical study versions and local survey scope explicit. Recheck offered AURENDOR scope. Examples must remain labelled.",
+        "verifyBeforePublish": "Reopen cited mutable documentation 24–48 hours before publication; keep historical study versions and local survey scope explicit. Recheck offered SOCIAL_MEDIA_PLUGIN scope. Examples must remain labelled.",
         "fallback": "Publish original task worksheet without mutable vendor capability claim if documentation changes."
       },
       "commercialBridge": "يمكن أن يصبح تجهيز عروض الموردين جزءًا من تكامل أعمال بعد تحديد مصادرها وخطوة اعتمادها.",
@@ -1234,7 +1234,7 @@
       "cta": "راجع آخر تغيير: هل سُجّل أثر المدة أم السعر فقط؟",
       "copyableTool": "رقم الطلب: ___ | التاريخ: ___\nالموضع والنطاق الحالي: ___\nالتغيير المطلوب وسببه: ___\nفرق الكلفة المقدّر والعملة: ___\nفرضية السعر وصلاحيته: ___\nأثر التوريد: ___ يوم\nأثر موعد المشروع بعد مراجعة التسلسل: ___ / لم يُحسم\nبديل يحافظ على الموعد: ___\nصاحب القرار ومرجعه وتاريخه: ___\nتعليمات التنفيذ المعتمدة: ___\nهذا سجل إداري مقترح؛ ليس نموذج تعديل عقد قانوني.",
       "requiredAssets": [
-        "الشعار وGhroob للعربية وDh Ranclo للإنجليزية من أصول AURENDOR المعتمدة",
+        "الشعار وGhroob للعربية وDh Ranclo للإنجليزية من أصول SOCIAL_MEDIA_PLUGIN المعتمدة",
         "رسوم توضيحية أصلية للقالب في copyableTool؛ لا صور مولدة لواجهات المنتج",
         "عند ظهور المنتج: التقاط جديد من التطبيق الفعلي ببيانات تجريبية مع عبارة واجهة فعلية / بيانات تجريبية",
         "استخدم الهوية القائمة دون تغيير؛ لا تُنشر وجوه أو عناوين أو بيانات زبائن من لقطات فعلية. لا يُستخدم شعار جهة البحث بما يوحي بالتأييد."
@@ -1352,7 +1352,7 @@
       "format": "carousel",
       "pillar": "Practical AI",
       "audience": "مصمم أو صانع محتوى أو شخص يصمم دعوة أو عرضًا ويعرف توليد الصور.",
-      "objective": "Give the reader a repeatable practical outcome independent of purchasing AURENDOR services.",
+      "objective": "Give the reader a repeatable practical outcome independent of purchasing SOCIAL_MEDIA_PLUGIN services.",
       "funnel": "awareness / trust",
       "level": "intermediate",
       "titleAr": "الخلفية تغيّرت. والعنوان أيضًا؟",
@@ -1364,7 +1364,7 @@
       "sourceIds": [
         "U-S02"
       ],
-      "exampleDisclosure": "مثال تعليمي افتراضي من إعداد AURENDOR ، وليس نتيجة اختبار أداة أو تجربة عميل.",
+      "exampleDisclosure": "مثال تعليمي افتراضي من إعداد SOCIAL_MEDIA_PLUGIN ، وليس نتيجة اختبار أداة أو تجربة عميل.",
       "units": [
         {
           "number": 1,
@@ -1414,7 +1414,7 @@
       "cta": "اختر صورة تملكها، واكتب ثلاثة تفاصيل يجب أن تبقى قبل طلب أول تعديل.",
       "copyableTool": "عدّل الصورة التي أملك حق استخدامها. التغيير الوحيد: [مثلاً الخلفية من رمادي إلى أخضر داكن]. حافظ على [الموضوع وملامحه، اتجاهه، تكوين الصورة، نص العنوان كما هو]. لا تضف أشخاصًا أو رموزًا أو كتابة. اعتبر المرجع المرفق هو الأصل. بعد التنفيذ سأفحص: [حروف العنوان] و[الملامح] و[حواف التعديل]. إذا احتاج التغيير مساسًا بعنصر ثابت، وضّح التعارض أولًا. مثال: دعوة بعنوان “جلسة قراءة”، المطلوب تغيير الخلفية فقط.",
       "requiredAssets": [
-        "Original AURENDOR brand fonts Ghroob and Dh Ranclo; existing green/white identity.",
+        "Original SOCIAL_MEDIA_PLUGIN brand fonts Ghroob and Dh Ranclo; existing green/white identity.",
         "An original teaching artifact specified per unit; visible مثال توضيحي label.",
         "Any named tool UI must be captured from an available account immediately before production; otherwise use an explicitly labeled diagram, never fake UI."
       ],
@@ -1441,7 +1441,7 @@
         },
         "tiktok": {
           "format": "photo carousel",
-          "caption": "غيّر عنصرًا واحدًا. وافحص ما بقي.\nقائمة ثوابت واختبار مقارنة لتعديل صورة دون فقدان موضوعها أو كتابتها.\nمثال تعليمي افتراضي من إعداد AURENDOR ، وليس نتيجة اختبار أداة أو تجربة عميل.\n\nقالب للنسخ:\nعدّل الصورة التي أملك حق استخدامها. التغيير الوحيد: [مثلاً الخلفية من رمادي إلى أخضر داكن]. حافظ على [الموضوع وملامحه، اتجاهه، تكوين الصورة، نص العنوان كما هو]. لا تضف أشخاصًا أو رموزًا أو كتابة. اعتبر المرجع المرفق هو الأصل. بعد التنفيذ سأفحص: [حروف العنوان] و[الملامح] و[حواف التعديل]. إذا احتاج التغيير مساسًا بعنصر ثابت، وضّح التعارض أولًا. مثال: دعوة بعنوان “جلسة قراءة”، المطلوب تغيير الخلفية فقط."
+          "caption": "غيّر عنصرًا واحدًا. وافحص ما بقي.\nقائمة ثوابت واختبار مقارنة لتعديل صورة دون فقدان موضوعها أو كتابتها.\nمثال تعليمي افتراضي من إعداد SOCIAL_MEDIA_PLUGIN ، وليس نتيجة اختبار أداة أو تجربة عميل.\n\nقالب للنسخ:\nعدّل الصورة التي أملك حق استخدامها. التغيير الوحيد: [مثلاً الخلفية من رمادي إلى أخضر داكن]. حافظ على [الموضوع وملامحه، اتجاهه، تكوين الصورة، نص العنوان كما هو]. لا تضف أشخاصًا أو رموزًا أو كتابة. اعتبر المرجع المرفق هو الأصل. بعد التنفيذ سأفحص: [حروف العنوان] و[الملامح] و[حواف التعديل]. إذا احتاج التغيير مساسًا بعنصر ثابت، وضّح التعارض أولًا. مثال: دعوة بعنوان “جلسة قراءة”، المطلوب تغيير الخلفية فقط."
         }
       },
       "story": {
@@ -1611,7 +1611,7 @@
       "cta": "انسخ النموذج قبل إرسال طلب الدفعة القادم.",
       "copyableTool": "المشروع: ___ | طلب الدفع رقم: ___ | التاريخ: ___\nالمبلغ والعملة: ___\nنوع الطلب: دفعة مقدمة / مقابل فترة عمل / غيره وفق الاتفاق\nالفترة أو المرحلة: ___\nأساس المبلغ ومرجع الاتفاق: ___\nمرجع الكشف أو الفاتورة ومكانها: ___\nالاستفسار المتبقي ومسؤول الإجابة: ___\nالتحصيل الفعلي: لم يحصل / مبلغ ___ بتاريخ ___ ومرجع ___\nلا يعني إرسال الطلب استلام المبلغ.",
       "requiredAssets": [
-        "الشعار وGhroob للعربية وDh Ranclo للإنجليزية من أصول AURENDOR المعتمدة",
+        "الشعار وGhroob للعربية وDh Ranclo للإنجليزية من أصول SOCIAL_MEDIA_PLUGIN المعتمدة",
         "رسوم توضيحية أصلية للقالب في copyableTool؛ لا صور مولدة لواجهات المنتج",
         "عند ظهور المنتج: التقاط جديد من التطبيق الفعلي ببيانات تجريبية مع عبارة واجهة فعلية / بيانات تجريبية",
         "استخدم الهوية القائمة دون تغيير؛ لا تُنشر وجوه أو عناوين أو بيانات زبائن من لقطات فعلية. لا يُستخدم شعار جهة البحث بما يوحي بالتأييد."
@@ -1810,7 +1810,7 @@
       "cta": "ارسم ثلاثة مسارات لخدمة العملاء، وسمّ مسؤول كل مسار.",
       "copyableTool": "خريطة فرز الرسائل\nنوع الرسالة: معلومة عامة / حالة طلب / شكوى أو استثناء / غير واضح\nالمرجع المعتمد: [ ]\nالمعلومة المطلوبة أولًا: [ ]\nمن يملك القرار: [ ]\nالمخرج: مسودة رد / ملخص حالة / طلب معلومة\nقاعدة الرسالة المختلطة: أظهر كل طلب فيها ولا تسقط الشكوى عند وجود سؤال عام.",
       "requiredAssets": [
-        "Original AURENDOR vector logo and approved architectural assets",
+        "Original SOCIAL_MEDIA_PLUGIN vector logo and approved architectural assets",
         "Ghroob Arabic ITF and Dh Ranclo brand fonts",
         "Original synthetic worksheet/document content from units, visibly labelled مثال توضيحي"
       ],
@@ -1847,7 +1847,7 @@
       },
       "freshness": {
         "type": "evergreen research-led",
-        "verifyBeforePublish": "Reopen cited mutable documentation 24–48 hours before publication; keep historical study versions and local survey scope explicit. Recheck offered AURENDOR scope. Examples must remain labelled.",
+        "verifyBeforePublish": "Reopen cited mutable documentation 24–48 hours before publication; keep historical study versions and local survey scope explicit. Recheck offered SOCIAL_MEDIA_PLUGIN scope. Examples must remain labelled.",
         "fallback": "Publish original task worksheet without mutable vendor capability claim if documentation changes."
       },
       "commercialBridge": "تجهيز مسار الاستفسار وربطه بسجل الشركة أحد تطبيقات تكاملات AI.",
@@ -1921,7 +1921,7 @@
       "format": "carousel",
       "pillar": "Practical AI",
       "audience": "باحث أو طالب دراسات عليا أو قارئ يقارن عدة ملفات حول موضوع واحد.",
-      "objective": "Give the reader a repeatable practical outcome independent of purchasing AURENDOR services.",
+      "objective": "Give the reader a repeatable practical outcome independent of purchasing SOCIAL_MEDIA_PLUGIN services.",
       "funnel": "awareness / trust",
       "level": "intermediate",
       "titleAr": "مصدران اختلفا؟ لا تطلب ملخّصًا يطمس الفرق.",
@@ -1933,7 +1933,7 @@
       "sourceIds": [
         "U-S10"
       ],
-      "exampleDisclosure": "مثال تعليمي افتراضي من إعداد AURENDOR ، وليس نتيجة اختبار أداة أو تجربة عميل.",
+      "exampleDisclosure": "مثال تعليمي افتراضي من إعداد SOCIAL_MEDIA_PLUGIN ، وليس نتيجة اختبار أداة أو تجربة عميل.",
       "units": [
         {
           "number": 1,
@@ -1983,7 +1983,7 @@
       "cta": "افتح ملفين تقارنهما الآن، واملأ خانة تعريف المقياس قبل مقارنة الأرقام.",
       "copyableTool": "استخدم الملفات المرفقة فقط. أنشئ جدولًا: الادعاء، اسم الملف، موضع الدليل أو الإحالة، الفترة، تعريف المقياس، ما ينقص للحسم. لا تدمج رقمين قبل مطابقة التعريف والفترة والعينة. المثال التعليمي: أ يقول “8 من 10 أكملوا الدرس”، ب يقول “5 من 10 نجحوا بالاختبار”. المطلوب إبقاؤهما مقياسين منفصلين. إذا تعذّر الوصول إلى موضع الدليل، ضع “غير متحقق” بدل اختراع رقم صفحة. اختم بسؤالين نحتاج جوابهما قبل المقارنة.",
       "requiredAssets": [
-        "Original AURENDOR brand fonts Ghroob and Dh Ranclo; existing green/white identity.",
+        "Original SOCIAL_MEDIA_PLUGIN brand fonts Ghroob and Dh Ranclo; existing green/white identity.",
         "An original teaching artifact specified per unit; visible مثال توضيحي label.",
         "Any named tool UI must be captured from an available account immediately before production; otherwise use an explicitly labeled diagram, never fake UI."
       ],
@@ -2010,7 +2010,7 @@
         },
         "tiktok": {
           "format": "photo carousel",
-          "caption": "مصدران اختلفا؟ لا تطلب ملخّصًا يطمس الفرق.\nجدول يربط كل ادعاء بمصدره وفترته وما لا يستطيع إثباته.\nمثال تعليمي افتراضي من إعداد AURENDOR ، وليس نتيجة اختبار أداة أو تجربة عميل.\n\nقالب للنسخ:\nاستخدم الملفات المرفقة فقط. أنشئ جدولًا: الادعاء، اسم الملف، موضع الدليل أو الإحالة، الفترة، تعريف المقياس، ما ينقص للحسم. لا تدمج رقمين قبل مطابقة التعريف والفترة والعينة. المثال التعليمي: أ يقول “8 من 10 أكملوا الدرس”، ب يقول “5 من 10 نجحوا بالاختبار”. المطلوب إبقاؤهما مقياسين منفصلين. إذا تعذّر الوصول إلى موضع الدليل، ضع “غير متحقق” بدل اختراع رقم صفحة. اختم بسؤالين نحتاج جوابهما قبل المقارنة."
+          "caption": "مصدران اختلفا؟ لا تطلب ملخّصًا يطمس الفرق.\nجدول يربط كل ادعاء بمصدره وفترته وما لا يستطيع إثباته.\nمثال تعليمي افتراضي من إعداد SOCIAL_MEDIA_PLUGIN ، وليس نتيجة اختبار أداة أو تجربة عميل.\n\nقالب للنسخ:\nاستخدم الملفات المرفقة فقط. أنشئ جدولًا: الادعاء، اسم الملف، موضع الدليل أو الإحالة، الفترة، تعريف المقياس، ما ينقص للحسم. لا تدمج رقمين قبل مطابقة التعريف والفترة والعينة. المثال التعليمي: أ يقول “8 من 10 أكملوا الدرس”، ب يقول “5 من 10 نجحوا بالاختبار”. المطلوب إبقاؤهما مقياسين منفصلين. إذا تعذّر الوصول إلى موضع الدليل، ضع “غير متحقق” بدل اختراع رقم صفحة. اختم بسؤالين نحتاج جوابهما قبل المقارنة."
         }
       },
       "story": {
@@ -2164,7 +2164,7 @@
       "cta": "حوّل إجراءً يتكرر السؤال عنه إلى بطاقة معرفة من خمس خانات.",
       "copyableTool": "بطاقة معرفة داخلية\nاسم الإجراء والأسماء التي يستخدمها الموظفون له: [ ]\nمتى يبدأ؟ [ ]\nخطواته والمخرج المطلوب: [ ]\nالحالات المستثناة والمسؤول عنها: [ ]\nمالك الوثيقة والنسخة وتاريخ النفاذ: [ ]\nمن يحق له الاطلاع؟ [ ]\nثلاثة أسئلة اختبار: مباشر / اسم دارج / حالة غير مغطاة.\nالجواب المقبول: خطوات محددة مع رابط الفقرة والنسخة، أو طلب توضيح من صاحب الإجراء.",
       "requiredAssets": [
-        "Original AURENDOR vector logo and approved architectural assets",
+        "Original SOCIAL_MEDIA_PLUGIN vector logo and approved architectural assets",
         "Ghroob Arabic ITF and Dh Ranclo brand fonts",
         "Original synthetic worksheet/document content from units, visibly labelled مثال توضيحي"
       ],
@@ -2201,7 +2201,7 @@
       },
       "freshness": {
         "type": "evergreen research-led",
-        "verifyBeforePublish": "Reopen cited mutable documentation 24–48 hours before publication; keep historical study versions and local survey scope explicit. Recheck offered AURENDOR scope. Examples must remain labelled.",
+        "verifyBeforePublish": "Reopen cited mutable documentation 24–48 hours before publication; keep historical study versions and local survey scope explicit. Recheck offered SOCIAL_MEDIA_PLUGIN scope. Examples must remain labelled.",
         "fallback": "Publish original task worksheet without mutable vendor capability claim if documentation changes."
       },
       "commercialBridge": "أورندور تعمل على أنظمة المعرفة الداخلية وربط الإجابات بمصادر الشركة.",
@@ -2343,7 +2343,7 @@
       "cta": "حضّر جدول الأسبوع القادم قبل إضافة أي التزام جديد.",
       "copyableTool": "مراجعة أسبوع يبدأ: ___ | العملة: ___\nدفعات مسجلة: ___ | مصروفات مسجلة: ___ | الفرق: ___\nهل طابقناه مع الواقع؟ ___ | ملاحظات المطابقة: ___\nالتزام قادم | مبلغ | تاريخ استحقاق | مؤكد/تقديري | مرجعه\n___ | ___ | ___ | ___ | ___\nتحصيل متوقع غير مستلم | مبلغ | موعد متوقع | أساس التوقع\n___ | ___ | ___ | ___\nالقرار المطلوب ومَن يراجعه: ___\nقالب يدوي خارج الوظائف المثبتة لبنيان؛ لا تحسب الربح منه.",
       "requiredAssets": [
-        "الشعار وGhroob للعربية وDh Ranclo للإنجليزية من أصول AURENDOR المعتمدة",
+        "الشعار وGhroob للعربية وDh Ranclo للإنجليزية من أصول SOCIAL_MEDIA_PLUGIN المعتمدة",
         "رسوم توضيحية أصلية للقالب في copyableTool؛ لا صور مولدة لواجهات المنتج",
         "عند ظهور المنتج: التقاط جديد من التطبيق الفعلي ببيانات تجريبية مع عبارة واجهة فعلية / بيانات تجريبية",
         "استخدم الهوية القائمة دون تغيير؛ لا تُنشر وجوه أو عناوين أو بيانات زبائن من لقطات فعلية. لا يُستخدم شعار جهة البحث بما يوحي بالتأييد."
@@ -2456,7 +2456,7 @@
       "format": "reel",
       "pillar": "Practical AI",
       "audience": "مستخدم AI يريد تنظيم أسبوعه عبر أدوات مرتبطة بحسابه.",
-      "objective": "Give the reader a repeatable practical outcome independent of purchasing AURENDOR services.",
+      "objective": "Give the reader a repeatable practical outcome independent of purchasing SOCIAL_MEDIA_PLUGIN services.",
       "funnel": "awareness / trust",
       "level": "intermediate",
       "titleAr": "وجد وقتًا مناسبًا؟ هذا لا يعني أنه حجزه.",
@@ -2468,7 +2468,7 @@
       "sourceIds": [
         "U-S04"
       ],
-      "exampleDisclosure": "مثال تعليمي افتراضي من إعداد AURENDOR ، وليس نتيجة اختبار أداة أو تجربة عميل.",
+      "exampleDisclosure": "مثال تعليمي افتراضي من إعداد SOCIAL_MEDIA_PLUGIN ، وليس نتيجة اختبار أداة أو تجربة عميل.",
       "units": [
         {
           "number": 1,
@@ -2523,7 +2523,7 @@
       "cta": "ابدأ بثلاثة اقتراحات لساعة دراسة، ثم افحص تفاصيل الموعد المختار في تقويمك.",
       "copyableTool": "المرحلة 1: باستخدام تقويمي المتصل إن كانت القراءة متاحة، اقترح 3 جلسات دراسة مدة كل منها 60 دقيقة هذا الأسبوع بين 18:00 و 21:00 بتوقيت Asia/Baghdad. لا تغيّر أي حدث ولا ترسل دعوة. بيّن التاريخ والوقت والتعارض المحتمل. إن لم تملك الوصول، اطلب مني قائمة الأوقات المحجوزة. المرحلة 2 بعد اختياري: اعرض عنوان الحدث وبدايته ونهايته والمنطقة الزمنية والمدعوين (لا أحد). لا تنشئه قبل موافقتي على هذه التفاصيل. إذا لم تتوفر أداة إنشاء، أعطني التفاصيل لأسجلها يدويًا. بعد التنفيذ أريد رابط الحدث أو معرّفه إن كان متاحًا، ثم سأفتحه للتحقق.",
       "requiredAssets": [
-        "Original AURENDOR brand fonts Ghroob and Dh Ranclo; existing green/white identity.",
+        "Original SOCIAL_MEDIA_PLUGIN brand fonts Ghroob and Dh Ranclo; existing green/white identity.",
         "An original teaching artifact specified per unit; visible مثال توضيحي label.",
         "Any named tool UI must be captured from an available account immediately before production; otherwise use an explicitly labeled diagram, never fake UI."
       ],
@@ -2550,7 +2550,7 @@
         },
         "tiktok": {
           "format": "vertical video",
-          "caption": "وجد وقتًا مناسبًا؟ هذا لا يعني أنه حجزه.\nطلب شخصي يختار جلسة دراسة دون تحريك المواعيد أو إرسال دعوات بالخطأ.\nمثال تعليمي افتراضي من إعداد AURENDOR ، وليس نتيجة اختبار أداة أو تجربة عميل.\n\nقالب للنسخ:\nالمرحلة 1: باستخدام تقويمي المتصل إن كانت القراءة متاحة، اقترح 3 جلسات دراسة مدة كل منها 60 دقيقة هذا الأسبوع بين 18:00 و 21:00 بتوقيت Asia/Baghdad. لا تغيّر أي حدث ولا ترسل دعوة. بيّن التاريخ والوقت والتعارض المحتمل. إن لم تملك الوصول، اطلب مني قائمة الأوقات المحجوزة. المرحلة 2 بعد اختياري: اعرض عنوان الحدث وبدايته ونهايته والمنطقة الزمنية والمدعوين (لا أحد). لا تنشئه قبل موافقتي على هذه التفاصيل. إذا لم تتوفر أداة إنشاء، أعطني التفاصيل لأسجلها يدويًا. بعد التنفيذ أريد رابط الحدث أو معرّفه إن كان متاحًا، ثم سأفتحه للتحقق."
+          "caption": "وجد وقتًا مناسبًا؟ هذا لا يعني أنه حجزه.\nطلب شخصي يختار جلسة دراسة دون تحريك المواعيد أو إرسال دعوات بالخطأ.\nمثال تعليمي افتراضي من إعداد SOCIAL_MEDIA_PLUGIN ، وليس نتيجة اختبار أداة أو تجربة عميل.\n\nقالب للنسخ:\nالمرحلة 1: باستخدام تقويمي المتصل إن كانت القراءة متاحة، اقترح 3 جلسات دراسة مدة كل منها 60 دقيقة هذا الأسبوع بين 18:00 و 21:00 بتوقيت Asia/Baghdad. لا تغيّر أي حدث ولا ترسل دعوة. بيّن التاريخ والوقت والتعارض المحتمل. إن لم تملك الوصول، اطلب مني قائمة الأوقات المحجوزة. المرحلة 2 بعد اختياري: اعرض عنوان الحدث وبدايته ونهايته والمنطقة الزمنية والمدعوين (لا أحد). لا تنشئه قبل موافقتي على هذه التفاصيل. إذا لم تتوفر أداة إنشاء، أعطني التفاصيل لأسجلها يدويًا. بعد التنفيذ أريد رابط الحدث أو معرّفه إن كان متاحًا، ثم سأفتحه للتحقق."
         }
       },
       "story": {
@@ -2725,7 +2725,7 @@
       "cta": "اختبر آخر مخطط أرسلتموه: هل يمكن تحديد إصداره من اسمه ومرجعه؟",
       "copyableTool": "سجل تسليم مخطط — إجراء يدوي\nرمز المشروع: ___ | رقم المخطط: ___ | الطابق/الموضع: ___\nالإصدار: ___ | تاريخ الإصدار: ___\nاسم الملف: ___\nما الذي تغيّر؟ ___\nمرجع قرار التصميم والجهة المخولة: ___\nالنسخة الجاري العمل بها: ___\nتسلّمها: ___ بتاريخ ___\nالإجراء على النسخة السابقة: ___\nلا يعتمد تاريخ الرفع وحده لاختيار نسخة التنفيذ.",
       "requiredAssets": [
-        "الشعار وGhroob للعربية وDh Ranclo للإنجليزية من أصول AURENDOR المعتمدة",
+        "الشعار وGhroob للعربية وDh Ranclo للإنجليزية من أصول SOCIAL_MEDIA_PLUGIN المعتمدة",
         "رسوم توضيحية أصلية للقالب في copyableTool؛ لا صور مولدة لواجهات المنتج",
         "عند ظهور المنتج: التقاط جديد من التطبيق الفعلي ببيانات تجريبية مع عبارة واجهة فعلية / بيانات تجريبية",
         "استخدم الهوية القائمة دون تغيير؛ لا تُنشر وجوه أو عناوين أو بيانات زبائن من لقطات فعلية. لا يُستخدم شعار جهة البحث بما يوحي بالتأييد."
@@ -2906,7 +2906,7 @@
       "cta": "اكتب خمسة حقول يحتاجها فريقك فعلًا وحدد فحصًا لكل حقل.",
       "copyableTool": "مواصفة استخراج فاتورة\nالمدخل: صورة أو PDF من المصدر المسموح.\nالحقول: رقم المستند، المورد، التاريخ، العملة، البنود، الإجمالي.\nلكل حقل: القيمة كما وردت + الصفحة وموضع النص + ملاحظة الالتباس إن وجدت.\nالفحوص: مجموع البنود مقابل الإجمالي مع مراعاة خصم/ضريبة ظاهرة؛ العملة؛ تطابق المورد ورقم الفاتورة مع السجل.\nلا تجمع عملات مختلفة. المستند الملتبس أو المكرر المحتمل إلى قائمة المراجعة. المخرج مسودة فقط؛ الاعتماد المحاسبي عند المسؤول.",
       "requiredAssets": [
-        "Original AURENDOR vector logo and approved architectural assets",
+        "Original SOCIAL_MEDIA_PLUGIN vector logo and approved architectural assets",
         "Ghroob Arabic ITF and Dh Ranclo brand fonts",
         "Original synthetic worksheet/document content from units, visibly labelled مثال توضيحي"
       ],
@@ -2943,7 +2943,7 @@
       },
       "freshness": {
         "type": "evergreen research-led",
-        "verifyBeforePublish": "Reopen cited mutable documentation 24–48 hours before publication; keep historical study versions and local survey scope explicit. Recheck offered AURENDOR scope. Examples must remain labelled.",
+        "verifyBeforePublish": "Reopen cited mutable documentation 24–48 hours before publication; keep historical study versions and local survey scope explicit. Recheck offered SOCIAL_MEDIA_PLUGIN scope. Examples must remain labelled.",
         "fallback": "Publish original task worksheet without mutable vendor capability claim if documentation changes."
       },
       "commercialBridge": "استخراج بيانات المستندات وربطها بمسار مراجعة تطبيق من تطبيقات أنظمة AI للأعمال.",
@@ -3038,7 +3038,7 @@
       "format": "carousel",
       "pillar": "Practical AI",
       "audience": "محرر أو كاتب عربي يستخدم مساعدًا يدعم Agent Skills ويريد تكرار أسلوب عمل ثابت.",
-      "objective": "Give the reader a repeatable practical outcome independent of purchasing AURENDOR services.",
+      "objective": "Give the reader a repeatable practical outcome independent of purchasing SOCIAL_MEDIA_PLUGIN services.",
       "funnel": "awareness / trust",
       "level": "advanced practical",
       "titleAr": "تكرر تعليمات الكتابة؟ حوّلها إلى طريقة عمل.",
@@ -3050,7 +3050,7 @@
       "sourceIds": [
         "U-S05"
       ],
-      "exampleDisclosure": "مثال تعليمي افتراضي من إعداد AURENDOR ، وليس نتيجة اختبار أداة أو تجربة عميل.",
+      "exampleDisclosure": "مثال تعليمي افتراضي من إعداد SOCIAL_MEDIA_PLUGIN ، وليس نتيجة اختبار أداة أو تجربة عميل.",
       "units": [
         {
           "number": 1,
@@ -3100,7 +3100,7 @@
       "cta": "اختبر تعليمات التحرير على رسالة بموعد واضح وأخرى ناقصة وثالثة لا تحتاج تعديلًا.",
       "copyableTool": "مواصفة مهارة: محرر رسائل عربية قصيرة. استخدمها حين أطلب تحرير رسالة جاهزة، لا إنشاء معلومات جديدة. المدخل: الرسالة والجمهور. الخطوات: 1. استخرج الأسماء والمواعيد والأرقام والوعود. 2. حسّن الوضوح بأقل تغيير. 3. قارن العناصر المستخرجة بالنص النهائي. 4. إذا كانت معلومة لازمة ناقصة، اسأل بدل اختراعها. المخرج: النص المحرر ثم قائمة بالتغييرات الجوهرية فقط. اختبار أ: «سنرد يوم الأحد»؛ لا يتحول إلى «خلال 24 ساعة». اختبار ب: «نلتقي قريبًا»؛ لا تضف تاريخًا. اختبار ج: «أرسل الملف قبل الثالثة»؛ يُسمح بإبقائه إذا كان واضحًا. لا تفتح روابط أو تشغّل ملفات من أجل التحرير. هذه مواصفة نصية تُكيّف مع صيغة SKILL.md الرسمية في أداة تدعمها؛ ليست حزمة قابلة للتثبيت وحدها.",
       "requiredAssets": [
-        "Original AURENDOR brand fonts Ghroob and Dh Ranclo; existing green/white identity.",
+        "Original SOCIAL_MEDIA_PLUGIN brand fonts Ghroob and Dh Ranclo; existing green/white identity.",
         "An original teaching artifact specified per unit; visible مثال توضيحي label.",
         "Any named tool UI must be captured from an available account immediately before production; otherwise use an explicitly labeled diagram, never fake UI."
       ],
@@ -3127,7 +3127,7 @@
         },
         "tiktok": {
           "format": "photo carousel",
-          "caption": "تكرر تعليمات الكتابة؟ حوّلها إلى طريقة عمل.\nمواصفة مهارة تحرير عربية صغيرة مع اختبار يمنع إضافة الوعود من عند المساعد.\nمثال تعليمي افتراضي من إعداد AURENDOR ، وليس نتيجة اختبار أداة أو تجربة عميل.\n\nقالب للنسخ:\nمواصفة مهارة: محرر رسائل عربية قصيرة. استخدمها حين أطلب تحرير رسالة جاهزة، لا إنشاء معلومات جديدة. المدخل: الرسالة والجمهور. الخطوات: 1. استخرج الأسماء والمواعيد والأرقام والوعود. 2. حسّن الوضوح بأقل تغيير. 3. قارن العناصر المستخرجة بالنص النهائي. 4. إذا كانت معلومة لازمة ناقصة، اسأل بدل اختراعها. المخرج: النص المحرر ثم قائمة بالتغييرات الجوهرية فقط. اختبار أ: «سنرد يوم الأحد»؛ لا يتحول إلى «خلال 24 ساعة». اختبار ب: «نلتقي قريبًا»؛ لا تضف تاريخًا. اختبار ج: «أرسل الملف قبل الثالثة»؛ يُسمح بإبقائه إذا كان واضحًا. لا تفتح روابط أو تشغّل ملفات من أجل التحرير. هذه مواصفة نصية تُكيّف مع صيغة SKILL.md الرسمية في أداة تدعمها؛ ليست حزمة قابلة للتثبيت وحدها."
+          "caption": "تكرر تعليمات الكتابة؟ حوّلها إلى طريقة عمل.\nمواصفة مهارة تحرير عربية صغيرة مع اختبار يمنع إضافة الوعود من عند المساعد.\nمثال تعليمي افتراضي من إعداد SOCIAL_MEDIA_PLUGIN ، وليس نتيجة اختبار أداة أو تجربة عميل.\n\nقالب للنسخ:\nمواصفة مهارة: محرر رسائل عربية قصيرة. استخدمها حين أطلب تحرير رسالة جاهزة، لا إنشاء معلومات جديدة. المدخل: الرسالة والجمهور. الخطوات: 1. استخرج الأسماء والمواعيد والأرقام والوعود. 2. حسّن الوضوح بأقل تغيير. 3. قارن العناصر المستخرجة بالنص النهائي. 4. إذا كانت معلومة لازمة ناقصة، اسأل بدل اختراعها. المخرج: النص المحرر ثم قائمة بالتغييرات الجوهرية فقط. اختبار أ: «سنرد يوم الأحد»؛ لا يتحول إلى «خلال 24 ساعة». اختبار ب: «نلتقي قريبًا»؛ لا تضف تاريخًا. اختبار ج: «أرسل الملف قبل الثالثة»؛ يُسمح بإبقائه إذا كان واضحًا. لا تفتح روابط أو تشغّل ملفات من أجل التحرير. هذه مواصفة نصية تُكيّف مع صيغة SKILL.md الرسمية في أداة تدعمها؛ ليست حزمة قابلة للتثبيت وحدها."
         }
       },
       "story": {
@@ -3274,7 +3274,7 @@
       "cta": "أضف خانة «آخر وعد أو اعتراض» إلى قائمة المتابعة الحالية.",
       "copyableTool": "بطاقة متابعة مستحق\nمرجع العميل الداخلي: [ ]\nالفاتورة: [ ]\nالرصيد المعتمد من المحاسبة وعملته: [ ]\nتاريخ ووقت تحديث السجل: [ ]\nالحالة: بلا رد / وعد بموعد / اعتراض قائم / قيد مطابقة\nآخر تواصل: [ ]\nالإجراء المطلوب وصاحبه: [ ]\nتعليمات AI: لخص البطاقة واكتب مسودة مهذبة فقط. إن كان الرصيد قيد المطابقة أو توجد معلومة متعارضة، اكتب سؤالًا داخليًا للمسؤول بدل مسودة مطالبة. لا تضف غرامات أو التزامات أو وعودًا.",
       "requiredAssets": [
-        "Original AURENDOR vector logo and approved architectural assets",
+        "Original SOCIAL_MEDIA_PLUGIN vector logo and approved architectural assets",
         "Ghroob Arabic ITF and Dh Ranclo brand fonts",
         "Original synthetic worksheet/document content from units, visibly labelled مثال توضيحي"
       ],
@@ -3311,7 +3311,7 @@
       },
       "freshness": {
         "type": "evergreen research-led",
-        "verifyBeforePublish": "Reopen cited mutable documentation 24–48 hours before publication; keep historical study versions and local survey scope explicit. Recheck offered AURENDOR scope. Examples must remain labelled.",
+        "verifyBeforePublish": "Reopen cited mutable documentation 24–48 hours before publication; keep historical study versions and local survey scope explicit. Recheck offered SOCIAL_MEDIA_PLUGIN scope. Examples must remain labelled.",
         "fallback": "Publish original task worksheet without mutable vendor capability claim if documentation changes."
       },
       "commercialBridge": "يمكن لأورندور ربط مصادر المعلومات بمسودات متابعة يراجعها فريق الشركة.",
@@ -3460,11 +3460,11 @@
           "narrationAr": "هذه الإجراءات تبقى لدى المختصين حسب المشروع. الفائدة أن تعرف الإدارة ما عُرض، وما كان الرد عليه، وما بقي مفتوحاً. قبل الصورة القادمة، اكتب المطلوب من العميل في جملة واحدة."
         }
       ],
-      "caption": "في هذا المثال الافتراضي نعرض تشطيب جدار الاستقبال ونسأل عن اللون والتوزيع. لا نطلب من العميل أن يحكم على أمور فنية لا تظهر في الصورة، ولا نصف العمل بأنه مستلم لمجرد رد «تمام».\nاجعل التحديث محدداً: الموضوع، الصورة المرجعية، المطلوب من العميل، والملاحظات المفتوحة. وفي بنيان برو يمكن إبقاء التعليق ضمن المرحلة، وتسجيل موافقة العميل عندما تكون المرحلة مكتملة في النظام. هذه الموافقة سجل تفاعل مع العميل؛ ليست توقيعاً إلكترونياً معتمداً أو شهادة فحص هندسي.\nالمغزى الإداري هو تقليل غموض السؤال والرد. بحث التغييرات في مشاريع عراقية2018 — https://opencivilengineeringjournal.com/VOLUME/12/PAGE/458/FULLTEXT/ مصدر لسياق القرار؛ المثال والقالب من إعداد AURENDOR.\n\nقالب جاهز للنسخ:\nتحديث للعميل\nالمشروع والمرحلة: ___\nموضوع التحديث المحدد: ___\nما نعرضه في الصورة/الملف رقم: ___\nالمطلوب منك مراجعته: ___\nالملاحظات التي لم تُغلق بعد: ___\nالرد المطلوب وموعد المتابعة المتفق عليه: ___\nالفحص الفني أو إجراء الاستلام المنفصل ومرجعه: ___\nمثال: نعرض لون وتوزيع تشطيب جدار الاستقبال. نرجو كتابة ملاحظتك على الاختيار؛ مراجعة التنفيذ الفنية يتولاها المختص وفق إجراءات المشروع.",
+      "caption": "في هذا المثال الافتراضي نعرض تشطيب جدار الاستقبال ونسأل عن اللون والتوزيع. لا نطلب من العميل أن يحكم على أمور فنية لا تظهر في الصورة، ولا نصف العمل بأنه مستلم لمجرد رد «تمام».\nاجعل التحديث محدداً: الموضوع، الصورة المرجعية، المطلوب من العميل، والملاحظات المفتوحة. وفي بنيان برو يمكن إبقاء التعليق ضمن المرحلة، وتسجيل موافقة العميل عندما تكون المرحلة مكتملة في النظام. هذه الموافقة سجل تفاعل مع العميل؛ ليست توقيعاً إلكترونياً معتمداً أو شهادة فحص هندسي.\nالمغزى الإداري هو تقليل غموض السؤال والرد. بحث التغييرات في مشاريع عراقية2018 — https://opencivilengineeringjournal.com/VOLUME/12/PAGE/458/FULLTEXT/ مصدر لسياق القرار؛ المثال والقالب من إعداد SOCIAL_MEDIA_PLUGIN.\n\nقالب جاهز للنسخ:\nتحديث للعميل\nالمشروع والمرحلة: ___\nموضوع التحديث المحدد: ___\nما نعرضه في الصورة/الملف رقم: ___\nالمطلوب منك مراجعته: ___\nالملاحظات التي لم تُغلق بعد: ___\nالرد المطلوب وموعد المتابعة المتفق عليه: ___\nالفحص الفني أو إجراء الاستلام المنفصل ومرجعه: ___\nمثال: نعرض لون وتوزيع تشطيب جدار الاستقبال. نرجو كتابة ملاحظتك على الاختيار؛ مراجعة التنفيذ الفنية يتولاها المختص وفق إجراءات المشروع.",
       "cta": "أضف جملة «المطلوب منك مراجعة…» إلى تحديث العميل القادم.",
       "copyableTool": "تحديث للعميل\nالمشروع والمرحلة: ___\nموضوع التحديث المحدد: ___\nما نعرضه في الصورة/الملف رقم: ___\nالمطلوب منك مراجعته: ___\nالملاحظات التي لم تُغلق بعد: ___\nالرد المطلوب وموعد المتابعة المتفق عليه: ___\nالفحص الفني أو إجراء الاستلام المنفصل ومرجعه: ___\nمثال: نعرض لون وتوزيع تشطيب جدار الاستقبال. نرجو كتابة ملاحظتك على الاختيار؛ مراجعة التنفيذ الفنية يتولاها المختص وفق إجراءات المشروع.",
       "requiredAssets": [
-        "الشعار وGhroob للعربية وDh Ranclo للإنجليزية من أصول AURENDOR المعتمدة",
+        "الشعار وGhroob للعربية وDh Ranclo للإنجليزية من أصول SOCIAL_MEDIA_PLUGIN المعتمدة",
         "رسوم توضيحية أصلية للقالب في copyableTool؛ لا صور مولدة لواجهات المنتج",
         "عند ظهور المنتج: التقاط جديد من التطبيق الفعلي ببيانات تجريبية مع عبارة واجهة فعلية / بيانات تجريبية",
         "استخدم الهوية القائمة دون تغيير؛ لا تُنشر وجوه أو عناوين أو بيانات زبائن من لقطات فعلية. لا يُستخدم شعار جهة البحث بما يوحي بالتأييد."
@@ -3473,11 +3473,11 @@
       "platforms": {
         "instagram": {
           "format": "reel 9:16 / 56s",
-          "caption": "في هذا المثال الافتراضي نعرض تشطيب جدار الاستقبال ونسأل عن اللون والتوزيع. لا نطلب من العميل أن يحكم على أمور فنية لا تظهر في الصورة، ولا نصف العمل بأنه مستلم لمجرد رد «تمام».\nاجعل التحديث محدداً: الموضوع، الصورة المرجعية، المطلوب من العميل، والملاحظات المفتوحة. وفي بنيان برو يمكن إبقاء التعليق ضمن المرحلة، وتسجيل موافقة العميل عندما تكون المرحلة مكتملة في النظام. هذه الموافقة سجل تفاعل مع العميل؛ ليست توقيعاً إلكترونياً معتمداً أو شهادة فحص هندسي.\nالمغزى الإداري هو تقليل غموض السؤال والرد. بحث التغييرات في مشاريع عراقية2018 — https://opencivilengineeringjournal.com/VOLUME/12/PAGE/458/FULLTEXT/ مصدر لسياق القرار؛ المثال والقالب من إعداد AURENDOR.\n\nقالب جاهز للنسخ:\nتحديث للعميل\nالمشروع والمرحلة: ___\nموضوع التحديث المحدد: ___\nما نعرضه في الصورة/الملف رقم: ___\nالمطلوب منك مراجعته: ___\nالملاحظات التي لم تُغلق بعد: ___\nالرد المطلوب وموعد المتابعة المتفق عليه: ___\nالفحص الفني أو إجراء الاستلام المنفصل ومرجعه: ___\nمثال: نعرض لون وتوزيع تشطيب جدار الاستقبال. نرجو كتابة ملاحظتك على الاختيار؛ مراجعة التنفيذ الفنية يتولاها المختص وفق إجراءات المشروع."
+          "caption": "في هذا المثال الافتراضي نعرض تشطيب جدار الاستقبال ونسأل عن اللون والتوزيع. لا نطلب من العميل أن يحكم على أمور فنية لا تظهر في الصورة، ولا نصف العمل بأنه مستلم لمجرد رد «تمام».\nاجعل التحديث محدداً: الموضوع، الصورة المرجعية، المطلوب من العميل، والملاحظات المفتوحة. وفي بنيان برو يمكن إبقاء التعليق ضمن المرحلة، وتسجيل موافقة العميل عندما تكون المرحلة مكتملة في النظام. هذه الموافقة سجل تفاعل مع العميل؛ ليست توقيعاً إلكترونياً معتمداً أو شهادة فحص هندسي.\nالمغزى الإداري هو تقليل غموض السؤال والرد. بحث التغييرات في مشاريع عراقية2018 — https://opencivilengineeringjournal.com/VOLUME/12/PAGE/458/FULLTEXT/ مصدر لسياق القرار؛ المثال والقالب من إعداد SOCIAL_MEDIA_PLUGIN.\n\nقالب جاهز للنسخ:\nتحديث للعميل\nالمشروع والمرحلة: ___\nموضوع التحديث المحدد: ___\nما نعرضه في الصورة/الملف رقم: ___\nالمطلوب منك مراجعته: ___\nالملاحظات التي لم تُغلق بعد: ___\nالرد المطلوب وموعد المتابعة المتفق عليه: ___\nالفحص الفني أو إجراء الاستلام المنفصل ومرجعه: ___\nمثال: نعرض لون وتوزيع تشطيب جدار الاستقبال. نرجو كتابة ملاحظتك على الاختيار؛ مراجعة التنفيذ الفنية يتولاها المختص وفق إجراءات المشروع."
         },
         "facebook": {
           "format": "native reel 9:16",
-          "caption": "لأصحاب شركات المقاولات والمكاتب الهندسية:\nفي هذا المثال الافتراضي نعرض تشطيب جدار الاستقبال ونسأل عن اللون والتوزيع. لا نطلب من العميل أن يحكم على أمور فنية لا تظهر في الصورة، ولا نصف العمل بأنه مستلم لمجرد رد «تمام».\nاجعل التحديث محدداً: الموضوع، الصورة المرجعية، المطلوب من العميل، والملاحظات المفتوحة. وفي بنيان برو يمكن إبقاء التعليق ضمن المرحلة، وتسجيل موافقة العميل عندما تكون المرحلة مكتملة في النظام. هذه الموافقة سجل تفاعل مع العميل؛ ليست توقيعاً إلكترونياً معتمداً أو شهادة فحص هندسي.\nالمغزى الإداري هو تقليل غموض السؤال والرد. بحث التغييرات في مشاريع عراقية2018 — https://opencivilengineeringjournal.com/VOLUME/12/PAGE/458/FULLTEXT/ مصدر لسياق القرار؛ المثال والقالب من إعداد AURENDOR.\n\nناقشوا هذا الإجراء في اجتماع الموقع القادم.\n\nقالب جاهز للنسخ:\nتحديث للعميل\nالمشروع والمرحلة: ___\nموضوع التحديث المحدد: ___\nما نعرضه في الصورة/الملف رقم: ___\nالمطلوب منك مراجعته: ___\nالملاحظات التي لم تُغلق بعد: ___\nالرد المطلوب وموعد المتابعة المتفق عليه: ___\nالفحص الفني أو إجراء الاستلام المنفصل ومرجعه: ___\nمثال: نعرض لون وتوزيع تشطيب جدار الاستقبال. نرجو كتابة ملاحظتك على الاختيار؛ مراجعة التنفيذ الفنية يتولاها المختص وفق إجراءات المشروع."
+          "caption": "لأصحاب شركات المقاولات والمكاتب الهندسية:\nفي هذا المثال الافتراضي نعرض تشطيب جدار الاستقبال ونسأل عن اللون والتوزيع. لا نطلب من العميل أن يحكم على أمور فنية لا تظهر في الصورة، ولا نصف العمل بأنه مستلم لمجرد رد «تمام».\nاجعل التحديث محدداً: الموضوع، الصورة المرجعية، المطلوب من العميل، والملاحظات المفتوحة. وفي بنيان برو يمكن إبقاء التعليق ضمن المرحلة، وتسجيل موافقة العميل عندما تكون المرحلة مكتملة في النظام. هذه الموافقة سجل تفاعل مع العميل؛ ليست توقيعاً إلكترونياً معتمداً أو شهادة فحص هندسي.\nالمغزى الإداري هو تقليل غموض السؤال والرد. بحث التغييرات في مشاريع عراقية2018 — https://opencivilengineeringjournal.com/VOLUME/12/PAGE/458/FULLTEXT/ مصدر لسياق القرار؛ المثال والقالب من إعداد SOCIAL_MEDIA_PLUGIN.\n\nناقشوا هذا الإجراء في اجتماع الموقع القادم.\n\nقالب جاهز للنسخ:\nتحديث للعميل\nالمشروع والمرحلة: ___\nموضوع التحديث المحدد: ___\nما نعرضه في الصورة/الملف رقم: ___\nالمطلوب منك مراجعته: ___\nالملاحظات التي لم تُغلق بعد: ___\nالرد المطلوب وموعد المتابعة المتفق عليه: ___\nالفحص الفني أو إجراء الاستلام المنفصل ومرجعه: ___\nمثال: نعرض لون وتوزيع تشطيب جدار الاستقبال. نرجو كتابة ملاحظتك على الاختيار؛ مراجعة التنفيذ الفنية يتولاها المختص وفق إجراءات المشروع."
         },
         "linkedin": {
           "format": "native subtitled video",
@@ -3600,7 +3600,7 @@
       "format": "carousel",
       "pillar": "Practical AI",
       "audience": "شخص ينظم الدراسة والهوايات والمهام الشخصية بعد الدوام.",
-      "objective": "Give the reader a repeatable practical outcome independent of purchasing AURENDOR services.",
+      "objective": "Give the reader a repeatable practical outcome independent of purchasing SOCIAL_MEDIA_PLUGIN services.",
       "funnel": "awareness / trust",
       "level": "beginner / intermediate",
       "titleAr": "جدولك يحتاج 120 دقيقة… وعندك 90.",
@@ -3612,7 +3612,7 @@
       "sourceIds": [
         "U-S06"
       ],
-      "exampleDisclosure": "مثال تعليمي افتراضي من إعداد AURENDOR ، وليس نتيجة اختبار أداة أو تجربة عميل.",
+      "exampleDisclosure": "مثال تعليمي افتراضي من إعداد SOCIAL_MEDIA_PLUGIN ، وليس نتيجة اختبار أداة أو تجربة عميل.",
       "units": [
         {
           "number": 1,
@@ -3662,7 +3662,7 @@
       "cta": "اجمع مدد مهام هذا المساء، واكتب صراحة ما ستؤجله إذا تجاوزت وقتك المتاح.",
       "copyableTool": "نظّم أمسية مدتها 90 دقيقة. المهام: دراسة 45 دقيقة لا تُجزّأ؛ لغة 30 دقيقة؛ ترتيب ملفات 30 دقيقة يمكن تأجيله للغد؛ راحة 15 دقيقة ثابتة. لا تشغّل مهام بالتوازي ولا تخفض المدة. أولًا احسب المجموع والعجز. ثم اعرض خيارين مع المهمة المؤجلة في كل خيار، وما الذي أخسره باختيار كل منهما. لا تغيّر أي تقويم. اختبار القبول: كل خيار لا يتجاوز 90 دقيقة ويذكر صراحة ما لم يتسع له الوقت. الإجمالي المتوقع 120 والعجز 30. إذا أضفت قيدًا يجعل الخطة مستحيلة، قل ذلك قبل الجدولة.",
       "requiredAssets": [
-        "Original AURENDOR brand fonts Ghroob and Dh Ranclo; existing green/white identity.",
+        "Original SOCIAL_MEDIA_PLUGIN brand fonts Ghroob and Dh Ranclo; existing green/white identity.",
         "An original teaching artifact specified per unit; visible مثال توضيحي label.",
         "Any named tool UI must be captured from an available account immediately before production; otherwise use an explicitly labeled diagram, never fake UI."
       ],
@@ -3689,7 +3689,7 @@
         },
         "tiktok": {
           "format": "photo carousel",
-          "caption": "جدولك يحتاج 120 دقيقة… وعندك 90.\nطلب تخطيط يكشف 30 دقيقة نقص ويعرض خيار تأجيل واضح بدل اختصار الزمن سرًا.\nمثال تعليمي افتراضي من إعداد AURENDOR ، وليس نتيجة اختبار أداة أو تجربة عميل.\n\nقالب للنسخ:\nنظّم أمسية مدتها 90 دقيقة. المهام: دراسة 45 دقيقة لا تُجزّأ؛ لغة 30 دقيقة؛ ترتيب ملفات 30 دقيقة يمكن تأجيله للغد؛ راحة 15 دقيقة ثابتة. لا تشغّل مهام بالتوازي ولا تخفض المدة. أولًا احسب المجموع والعجز. ثم اعرض خيارين مع المهمة المؤجلة في كل خيار، وما الذي أخسره باختيار كل منهما. لا تغيّر أي تقويم. اختبار القبول: كل خيار لا يتجاوز 90 دقيقة ويذكر صراحة ما لم يتسع له الوقت. الإجمالي المتوقع 120 والعجز 30. إذا أضفت قيدًا يجعل الخطة مستحيلة، قل ذلك قبل الجدولة."
+          "caption": "جدولك يحتاج 120 دقيقة… وعندك 90.\nطلب تخطيط يكشف 30 دقيقة نقص ويعرض خيار تأجيل واضح بدل اختصار الزمن سرًا.\nمثال تعليمي افتراضي من إعداد SOCIAL_MEDIA_PLUGIN ، وليس نتيجة اختبار أداة أو تجربة عميل.\n\nقالب للنسخ:\nنظّم أمسية مدتها 90 دقيقة. المهام: دراسة 45 دقيقة لا تُجزّأ؛ لغة 30 دقيقة؛ ترتيب ملفات 30 دقيقة يمكن تأجيله للغد؛ راحة 15 دقيقة ثابتة. لا تشغّل مهام بالتوازي ولا تخفض المدة. أولًا احسب المجموع والعجز. ثم اعرض خيارين مع المهمة المؤجلة في كل خيار، وما الذي أخسره باختيار كل منهما. لا تغيّر أي تقويم. اختبار القبول: كل خيار لا يتجاوز 90 دقيقة ويذكر صراحة ما لم يتسع له الوقت. الإجمالي المتوقع 120 والعجز 30. إذا أضفت قيدًا يجعل الخطة مستحيلة، قل ذلك قبل الجدولة."
         }
       },
       "story": {
@@ -3841,7 +3841,7 @@
       "cta": "خذ عائقاً مفتوحاً وحوّله إلى خطوة متابعة محددة.",
       "copyableTool": "العائق رقم: ___ | المشروع والمرحلة: ___\nالنشاط المتأثر: ___\nالمعلومة المؤكدة ومصدرها وتاريخها: ___\nما لم يتأكد بعد: ___\nالقرار أو الاستفسار التالي: ___\nالشخص المتفق على المتابعة معه: ___\nموعد مراجعة التقدم في المتابعة: ___\nالنتيجة الجديدة ومرجعها: ___\nهذه خانات كتابة يدوية في سجل أو ملاحظة، لا وظائف إسناد/تنبيه مفترضة.",
       "requiredAssets": [
-        "الشعار وGhroob للعربية وDh Ranclo للإنجليزية من أصول AURENDOR المعتمدة",
+        "الشعار وGhroob للعربية وDh Ranclo للإنجليزية من أصول SOCIAL_MEDIA_PLUGIN المعتمدة",
         "رسوم توضيحية أصلية للقالب في copyableTool؛ لا صور مولدة لواجهات المنتج",
         "عند ظهور المنتج: التقاط جديد من التطبيق الفعلي ببيانات تجريبية مع عبارة واجهة فعلية / بيانات تجريبية",
         "استخدم الهوية القائمة دون تغيير؛ لا تُنشر وجوه أو عناوين أو بيانات زبائن من لقطات فعلية. لا يُستخدم شعار جهة البحث بما يوحي بالتأييد."
@@ -4017,7 +4017,7 @@
       "cta": "راجع صنفًا واحدًا: هل يسجل ملفك أيام نفاده أم المبيعات فقط؟",
       "copyableTool": "قالب تجهيز بيانات الطلب\nالتاريخ | رمز الصنف الثابت | الوحدات المباعة | ساعات/حالة التوفر | المرتجعات | السعر | عرض ترويجي | سبب استثنائي\nالقواعد: لا تخلط البيع بالمرتجع. لا تملأ يوم النفاد بمبيعات مفترضة. إذا كان التوفر غير معروف فاكتب غير معروف. احتفظ بجزء زمني لاحق للاختبار.\nسؤال القرار: هل نريد توقع الوحدات المباعة أم تقدير الطلب الممكن عند التوفر؟ حدد ذلك قبل اختيار النموذج.",
       "requiredAssets": [
-        "Original AURENDOR vector logo and approved architectural assets",
+        "Original SOCIAL_MEDIA_PLUGIN vector logo and approved architectural assets",
         "Ghroob Arabic ITF and Dh Ranclo brand fonts",
         "Original synthetic worksheet/document content from units, visibly labelled مثال توضيحي"
       ],
@@ -4054,7 +4054,7 @@
       },
       "freshness": {
         "type": "evergreen research-led",
-        "verifyBeforePublish": "Reopen cited mutable documentation 24–48 hours before publication; keep historical study versions and local survey scope explicit. Recheck offered AURENDOR scope. Examples must remain labelled.",
+        "verifyBeforePublish": "Reopen cited mutable documentation 24–48 hours before publication; keep historical study versions and local survey scope explicit. Recheck offered SOCIAL_MEDIA_PLUGIN scope. Examples must remain labelled.",
         "fallback": "Publish original task worksheet without mutable vendor capability claim if documentation changes."
       },
       "commercialBridge": "تبدأ حلول دعم القرار من تعريف البيانات والقرار الذي نريد تحسينه، قبل اختيار النموذج.",
@@ -4128,7 +4128,7 @@
       "format": "reel",
       "pillar": "Practical AI",
       "audience": "طالب أو موظف يحوّل صور ملاحظاته العربية إلى قائمة مرتبة.",
-      "objective": "Give the reader a repeatable practical outcome independent of purchasing AURENDOR services.",
+      "objective": "Give the reader a repeatable practical outcome independent of purchasing SOCIAL_MEDIA_PLUGIN services.",
       "funnel": "awareness / trust",
       "level": "intermediate",
       "titleAr": "قبل أن يرتّب ملاحظاتك… تأكد أنه قرأها.",
@@ -4140,7 +4140,7 @@
       "sourceIds": [
         "U-S07"
       ],
-      "exampleDisclosure": "مثال تعليمي افتراضي من إعداد AURENDOR ، وليس نتيجة اختبار أداة أو تجربة عميل.",
+      "exampleDisclosure": "مثال تعليمي افتراضي من إعداد SOCIAL_MEDIA_PLUGIN ، وليس نتيجة اختبار أداة أو تجربة عميل.",
       "units": [
         {
           "number": 1,
@@ -4195,7 +4195,7 @@
       "cta": "جرّب على صورة ملاحظاتك: صحّح التفريغ أولًا، ثم اطلب قائمة المهام.",
       "copyableTool": "سأرفق صورة لملاحظات غير حساسة. المرحلة 1: انسخ النص مع ترتيب الأسطر. لا تلخّص ولا تصحّح المعنى. ضع[غيرواضح] عند ما لا تستطيع قراءته، أو احتمالين فقط إذا كان الالتباس محددًا. لا تستنتج تواريخ أو أسماء من السياق. انتظر تصحيحي. المرحلة 2: حوّل النص الذي صححته إلى قائمة: المهمة، الجزء المطلوب، الموعد المذكور صراحة. اكتب“غيرمذكور” عند نقص الموعد. معيار القبول: كل رقم واسم وموعد في القائمة قابل للمطابقة مع النص المصحح. مثال: “مراجعة الفصل[4 أو 9؟]” يبقى سؤالًا قبل أن يصبح مهمة.",
       "requiredAssets": [
-        "Original AURENDOR brand fonts Ghroob and Dh Ranclo; existing green/white identity.",
+        "Original SOCIAL_MEDIA_PLUGIN brand fonts Ghroob and Dh Ranclo; existing green/white identity.",
         "An original teaching artifact specified per unit; visible مثال توضيحي label.",
         "Any named tool UI must be captured from an available account immediately before production; otherwise use an explicitly labeled diagram, never fake UI."
       ],
@@ -4222,7 +4222,7 @@
         },
         "tiktok": {
           "format": "vertical video",
-          "caption": "قبل أن يرتّب ملاحظاتك… تأكد أنه قرأها.\nخطوتان لصورة ملاحظات: تفريغ مع مواضع الشك، ثم تنظيم النص المصحح.\nمثال تعليمي افتراضي من إعداد AURENDOR ، وليس نتيجة اختبار أداة أو تجربة عميل.\n\nقالب للنسخ:\nسأرفق صورة لملاحظات غير حساسة. المرحلة 1: انسخ النص مع ترتيب الأسطر. لا تلخّص ولا تصحّح المعنى. ضع[غيرواضح] عند ما لا تستطيع قراءته، أو احتمالين فقط إذا كان الالتباس محددًا. لا تستنتج تواريخ أو أسماء من السياق. انتظر تصحيحي. المرحلة 2: حوّل النص الذي صححته إلى قائمة: المهمة، الجزء المطلوب، الموعد المذكور صراحة. اكتب“غيرمذكور” عند نقص الموعد. معيار القبول: كل رقم واسم وموعد في القائمة قابل للمطابقة مع النص المصحح. مثال: “مراجعة الفصل[4 أو 9؟]” يبقى سؤالًا قبل أن يصبح مهمة."
+          "caption": "قبل أن يرتّب ملاحظاتك… تأكد أنه قرأها.\nخطوتان لصورة ملاحظات: تفريغ مع مواضع الشك، ثم تنظيم النص المصحح.\nمثال تعليمي افتراضي من إعداد SOCIAL_MEDIA_PLUGIN ، وليس نتيجة اختبار أداة أو تجربة عميل.\n\nقالب للنسخ:\nسأرفق صورة لملاحظات غير حساسة. المرحلة 1: انسخ النص مع ترتيب الأسطر. لا تلخّص ولا تصحّح المعنى. ضع[غيرواضح] عند ما لا تستطيع قراءته، أو احتمالين فقط إذا كان الالتباس محددًا. لا تستنتج تواريخ أو أسماء من السياق. انتظر تصحيحي. المرحلة 2: حوّل النص الذي صححته إلى قائمة: المهمة، الجزء المطلوب، الموعد المذكور صراحة. اكتب“غيرمذكور” عند نقص الموعد. معيار القبول: كل رقم واسم وموعد في القائمة قابل للمطابقة مع النص المصحح. مثال: “مراجعة الفصل[4 أو 9؟]” يبقى سؤالًا قبل أن يصبح مهمة."
         }
       },
       "story": {
@@ -4396,7 +4396,7 @@
       "cta": "نفّذ تمرين التسليم مع شخصين ومهمة واحدة من عمل الفريق.",
       "copyableTool": "تمرين تدريب 30 دقيقة — مقترح\n0–10: اختر ملاحظات مؤلفة أو منزوعة البيانات وحدد المخرج المقبول.\n10–20: جهز باستخدام AI جدولًا: المطلوب / نطاق الخدمة / الأسئلة / الخطوة التالية. لا تضف سعرًا أو التزامًا غير وارد.\n20–30: يسلم الموظف الناتج لزميل لا يرى المحادثة. يقيم: هل يصلح للخطوة التالية؟ ما التصحيح المطلوب؟ كم استغرقت المراجعة؟\nاحتفظ بنموذج الإجابة والتصحيح. كرر مع مهمة أصعب بعد نجاح المهمة الأولى.",
       "requiredAssets": [
-        "Original AURENDOR vector logo and approved architectural assets",
+        "Original SOCIAL_MEDIA_PLUGIN vector logo and approved architectural assets",
         "Ghroob Arabic ITF and Dh Ranclo brand fonts",
         "Original synthetic worksheet/document content from units, visibly labelled مثال توضيحي"
       ],
@@ -4433,7 +4433,7 @@
       },
       "freshness": {
         "type": "evergreen research-led",
-        "verifyBeforePublish": "Reopen cited mutable documentation 24–48 hours before publication; keep historical study versions and local survey scope explicit. Recheck offered AURENDOR scope. Examples must remain labelled.",
+        "verifyBeforePublish": "Reopen cited mutable documentation 24–48 hours before publication; keep historical study versions and local survey scope explicit. Recheck offered SOCIAL_MEDIA_PLUGIN scope. Examples must remain labelled.",
         "fallback": "Publish original task worksheet without mutable vendor capability claim if documentation changes."
       },
       "commercialBridge": "يشمل عمل أورندور تدريب المديرين والفرق على مهام محددة ومعايير قبول واضحة.",
@@ -4596,7 +4596,7 @@
       "cta": "جرّب اختبار التسليم مع زميل لا يتابع الموقع يومياً.",
       "copyableTool": "حزمة تسليم موقع — صفحة مراجع\nالمشروع: ___ | تاريخ التسليم: ___ | من: ___ | إلى: ___\nآخر تقرير ومرجعه: ___\nالمخطط الجاري العمل به وإصداره: ___\nآخر القرارات والتغييرات ومراجعها: ___\nعائق مفتوح | المطلوب | المتابع المتفق عليه\n___ | ___ | ___\nملاحظات العميل المفتوحة ومرجعها: ___\nما لم نستطع توثيقه بعد: ___\nاختبار: هل عثر البديل على آخر تغيير ومرجعه؟ ___\nتأكيد الوصول إلى الملفات بحسب الدور: ___",
       "requiredAssets": [
-        "الشعار وGhroob للعربية وDh Ranclo للإنجليزية من أصول AURENDOR المعتمدة",
+        "الشعار وGhroob للعربية وDh Ranclo للإنجليزية من أصول SOCIAL_MEDIA_PLUGIN المعتمدة",
         "رسوم توضيحية أصلية للقالب في copyableTool؛ لا صور مولدة لواجهات المنتج",
         "عند ظهور المنتج: التقاط جديد من التطبيق الفعلي ببيانات تجريبية مع عبارة واجهة فعلية / بيانات تجريبية",
         "استخدم الهوية القائمة دون تغيير؛ لا تُنشر وجوه أو عناوين أو بيانات زبائن من لقطات فعلية. لا يُستخدم شعار جهة البحث بما يوحي بالتأييد."
@@ -4709,7 +4709,7 @@
       "format": "carousel",
       "pillar": "Practical AI",
       "audience": "طالب أو مدرّب أو محترف يستخدم AI لإعداد عروض عربية ويحتاج ملفًا قابلًا للتعديل.",
-      "objective": "Give the reader a repeatable practical outcome independent of purchasing AURENDOR services.",
+      "objective": "Give the reader a repeatable practical outcome independent of purchasing SOCIAL_MEDIA_PLUGIN services.",
       "funnel": "awareness / trust",
       "level": "advanced practical",
       "titleAr": "العرض جميل. هل تستطيع تعديل كلمة فيه؟",
@@ -4721,7 +4721,7 @@
       "sourceIds": [
         "U-S08"
       ],
-      "exampleDisclosure": "مثال تعليمي افتراضي من إعداد AURENDOR ، وليس نتيجة اختبار أداة أو تجربة عميل.",
+      "exampleDisclosure": "مثال تعليمي افتراضي من إعداد SOCIAL_MEDIA_PLUGIN ، وليس نتيجة اختبار أداة أو تجربة عميل.",
       "units": [
         {
           "number": 1,
@@ -4771,7 +4771,7 @@
       "cta": "افتح عرضك الأخير، غيّر كلمة في العنوان، ثم احفظه وأعد فتحه قبل اعتباره جاهزًا.",
       "copyableTool": "أنشئ عرضًا من 5 شرائح من النص المرفق، بالقالب المرفق إن كانت أدوات الملفات متاحة. سلّم ملف عرض قابلًا للتحرير، لا صورًا مفلطحة بدل النصوص. حافظ على الخطوط والألوان والهوامش، واضبط العربية من اليمين إلى اليسار مع محاذاة صحيحة. إذا كان خط القالب غير متاح، أخبرني قبل استبداله. لكل ادعاء مهم، ضع عبارة المصدر وموضعها في ملاحظات الشريحة أو ملف مراجع مرافق. ميّز أي مثال تؤلفه. سأفتح الملف وأبدّل كلمة «مسودة» إلى «نسخة نهائية»، ثم أحفظه وأعيد فتحه: يجب أن يبقى النص قابلًا للتحرير بلا قصّ أو تغيّر غير مقصود في القالب. إذا لم تستطع إنشاء ملف بهذه المواصفات، قل ذلك وقدّم محتوى منظمًا للنقل إلى القالب دون ادعاء التصدير.",
       "requiredAssets": [
-        "Original AURENDOR brand fonts Ghroob and Dh Ranclo; existing green/white identity.",
+        "Original SOCIAL_MEDIA_PLUGIN brand fonts Ghroob and Dh Ranclo; existing green/white identity.",
         "An original teaching artifact specified per unit; visible مثال توضيحي label.",
         "Any named tool UI must be captured from an available account immediately before production; otherwise use an explicitly labeled diagram, never fake UI."
       ],
@@ -4798,7 +4798,7 @@
         },
         "tiktok": {
           "format": "photo carousel",
-          "caption": "العرض جميل. هل تستطيع تعديل كلمة فيه؟\nفحص تسليم عرض عربي: حرّر كلمة، أعد فتح الملف، وافحص اتجاه النص والقالب ومصدر الادعاء.\nمثال تعليمي افتراضي من إعداد AURENDOR ، وليس نتيجة اختبار أداة أو تجربة عميل.\n\nقالب للنسخ:\nأنشئ عرضًا من 5 شرائح من النص المرفق، بالقالب المرفق إن كانت أدوات الملفات متاحة. سلّم ملف عرض قابلًا للتحرير، لا صورًا مفلطحة بدل النصوص. حافظ على الخطوط والألوان والهوامش، واضبط العربية من اليمين إلى اليسار مع محاذاة صحيحة. إذا كان خط القالب غير متاح، أخبرني قبل استبداله. لكل ادعاء مهم، ضع عبارة المصدر وموضعها في ملاحظات الشريحة أو ملف مراجع مرافق. ميّز أي مثال تؤلفه. سأفتح الملف وأبدّل كلمة «مسودة» إلى «نسخة نهائية»، ثم أحفظه وأعيد فتحه: يجب أن يبقى النص قابلًا للتحرير بلا قصّ أو تغيّر غير مقصود في القالب. إذا لم تستطع إنشاء ملف بهذه المواصفات، قل ذلك وقدّم محتوى منظمًا للنقل إلى القالب دون ادعاء التصدير."
+          "caption": "العرض جميل. هل تستطيع تعديل كلمة فيه؟\nفحص تسليم عرض عربي: حرّر كلمة، أعد فتح الملف، وافحص اتجاه النص والقالب ومصدر الادعاء.\nمثال تعليمي افتراضي من إعداد SOCIAL_MEDIA_PLUGIN ، وليس نتيجة اختبار أداة أو تجربة عميل.\n\nقالب للنسخ:\nأنشئ عرضًا من 5 شرائح من النص المرفق، بالقالب المرفق إن كانت أدوات الملفات متاحة. سلّم ملف عرض قابلًا للتحرير، لا صورًا مفلطحة بدل النصوص. حافظ على الخطوط والألوان والهوامش، واضبط العربية من اليمين إلى اليسار مع محاذاة صحيحة. إذا كان خط القالب غير متاح، أخبرني قبل استبداله. لكل ادعاء مهم، ضع عبارة المصدر وموضعها في ملاحظات الشريحة أو ملف مراجع مرافق. ميّز أي مثال تؤلفه. سأفتح الملف وأبدّل كلمة «مسودة» إلى «نسخة نهائية»، ثم أحفظه وأعيد فتحه: يجب أن يبقى النص قابلًا للتحرير بلا قصّ أو تغيّر غير مقصود في القالب. إذا لم تستطع إنشاء ملف بهذه المواصفات، قل ذلك وقدّم محتوى منظمًا للنقل إلى القالب دون ادعاء التصدير."
         }
       },
       "story": {
@@ -4963,7 +4963,7 @@
       "cta": "استخدم بطاقة القياس قبل الموافقة على توسيع تجربة AI.",
       "copyableTool": "بطاقة تجربة AI\nالمهمة ونطاق الحالات: [ ]\nمعيار القبول قبل الاختبار: [ ]\nلكل حالة: الزمن بالطريقة الحالية | زمن الإنشاء مع AI | المراجعة | التصحيح | قبول من أول مرة؟ | سبب الإرجاع.\nقارن الحالات العادية والناقصة والاستثنائية على حدة.\nاجمع تكلفة التشغيل والإشراف والتكامل.\nقرار التوسع: ما تحسن؟ ما لم يتحسن؟ ما الذي يتطلب تغيير النطاق؟ لا تحول الدقائق إلى وفر مالي دون افتراضات معلنة.",
       "requiredAssets": [
-        "Original AURENDOR vector logo and approved architectural assets",
+        "Original SOCIAL_MEDIA_PLUGIN vector logo and approved architectural assets",
         "Ghroob Arabic ITF and Dh Ranclo brand fonts",
         "Original synthetic worksheet/document content from units, visibly labelled مثال توضيحي"
       ],
@@ -5000,7 +5000,7 @@
       },
       "freshness": {
         "type": "evergreen research-led",
-        "verifyBeforePublish": "Reopen cited mutable documentation 24–48 hours before publication; keep historical study versions and local survey scope explicit. Recheck offered AURENDOR scope. Examples must remain labelled.",
+        "verifyBeforePublish": "Reopen cited mutable documentation 24–48 hours before publication; keep historical study versions and local survey scope explicit. Recheck offered SOCIAL_MEDIA_PLUGIN scope. Examples must remain labelled.",
         "fallback": "Publish original task worksheet without mutable vendor capability claim if documentation changes."
       },
       "commercialBridge": "يمكن مناقشة نطاق تجربة وقياس مخرجاتها مع أورندور قبل توسيع نظام الأعمال.",
@@ -5082,7 +5082,7 @@
       "hook": "الصورة قد تعجب العميل. لكن هل يعرف ما الذي نفذتموه؟",
       "centralArgument": "معرض الأعمال يصبح أداة تقييم أفضل عندما يشرح نطاق مسؤولية الشركة والتحدي والحل وما يمكن إثباته، لا حين يكتفي بصور نهائية.",
       "readerPayoff": "بطاقة مشروع من أربعة حقول تساعد المالك على عرض خبرته بصدق وبما يفيد العميل القادم.",
-      "researchInsight": "دليل ILO يضع إدارة الأعمال ضمن كفاءات المقاول. الزاوية هنا اقتراح AURENDOR لتوثيق نطاق العمل، وليست دراسة تثبت ارتفاع المبيعات بالمعارض.",
+      "researchInsight": "دليل ILO يضع إدارة الأعمال ضمن كفاءات المقاول. الزاوية هنا اقتراح SOCIAL_MEDIA_PLUGIN لتوثيق نطاق العمل، وليست دراسة تثبت ارتفاع المبيعات بالمعارض.",
       "claimType": [
         "documented product scope",
         "editorial inference",
@@ -5149,11 +5149,11 @@
           "narrationAr": "بنيان برو يدعم معرض المشاريع والوسائط. لكن اكتبوا بطاقة المشروع أولاً. الفائدة أن يجد العميل القادم عملاً يشبه حاجته، ويفهم لماذا خبرتكم مناسبة له."
         }
       ],
-      "caption": "قبل إضافة مشروع إلى المعرض، اسأل: هل تصف الصفحة ما نفذته شركتك فعلاً أم تترك الصورة توحي بأنكم نفذتم كل شيء؟\nبطاقة واضحة تقول: نوع المشروع، دور المكتب وحدوده، تحدٍ محدد، ودليل نملك حق عرضه. لا حاجة لاختراع شهادة عميل أو نسبة توفير. المثال في الفيديو تعليمي وليس مشروعاً نفذته AURENDOR أو عميل بنيان.\nبنيان برو يتيح تنظيم معرض الأعمال ووسائطه. المنفعة أن يصبح المشروع قابلاً للفهم لدى عميل يبحث عن نطاق يشبه حاجته. لا نعد بأن نشره يحقق مبيعات محددة. اكتب البطاقة باستخدام القالب ثم راجع إذن نشر الصور والبيانات. موارد ILO لإدارة البناء — https://www.ilo.org/publications/enhancing-labour-based-construction-management مرجع سياقي عام.\n\nقالب جاهز للنسخ:\nبطاقة مشروع للعرض\nنوع المشروع: ___\nدور شركتنا تحديداً: ___\nما لم يكن ضمن نطاقنا: ___\nتحدٍ موثق: ___\nكيف تعامل الفريق معه ومرجعنا الداخلي: ___\nالدليل الذي نملك حق نشره: ___\nأسماء/عناوين/وجوه يجب إخفاؤها: ___\nالحاجة التي تشبه هذا المشروع لدى العميل القادم: ___\nلا تضف نتائج رقمية أو شهادات عميل بلا توثيق وإذن.",
+      "caption": "قبل إضافة مشروع إلى المعرض، اسأل: هل تصف الصفحة ما نفذته شركتك فعلاً أم تترك الصورة توحي بأنكم نفذتم كل شيء؟\nبطاقة واضحة تقول: نوع المشروع، دور المكتب وحدوده، تحدٍ محدد، ودليل نملك حق عرضه. لا حاجة لاختراع شهادة عميل أو نسبة توفير. المثال في الفيديو تعليمي وليس مشروعاً نفذته SOCIAL_MEDIA_PLUGIN أو عميل بنيان.\nبنيان برو يتيح تنظيم معرض الأعمال ووسائطه. المنفعة أن يصبح المشروع قابلاً للفهم لدى عميل يبحث عن نطاق يشبه حاجته. لا نعد بأن نشره يحقق مبيعات محددة. اكتب البطاقة باستخدام القالب ثم راجع إذن نشر الصور والبيانات. موارد ILO لإدارة البناء — https://www.ilo.org/publications/enhancing-labour-based-construction-management مرجع سياقي عام.\n\nقالب جاهز للنسخ:\nبطاقة مشروع للعرض\nنوع المشروع: ___\nدور شركتنا تحديداً: ___\nما لم يكن ضمن نطاقنا: ___\nتحدٍ موثق: ___\nكيف تعامل الفريق معه ومرجعنا الداخلي: ___\nالدليل الذي نملك حق نشره: ___\nأسماء/عناوين/وجوه يجب إخفاؤها: ___\nالحاجة التي تشبه هذا المشروع لدى العميل القادم: ___\nلا تضف نتائج رقمية أو شهادات عميل بلا توثيق وإذن.",
       "cta": "أعد كتابة وصف مشروع واحد بحيث يعرف القارئ دور شركتكم بدقة.",
       "copyableTool": "بطاقة مشروع للعرض\nنوع المشروع: ___\nدور شركتنا تحديداً: ___\nما لم يكن ضمن نطاقنا: ___\nتحدٍ موثق: ___\nكيف تعامل الفريق معه ومرجعنا الداخلي: ___\nالدليل الذي نملك حق نشره: ___\nأسماء/عناوين/وجوه يجب إخفاؤها: ___\nالحاجة التي تشبه هذا المشروع لدى العميل القادم: ___\nلا تضف نتائج رقمية أو شهادات عميل بلا توثيق وإذن.",
       "requiredAssets": [
-        "الشعار وGhroob للعربية وDh Ranclo للإنجليزية من أصول AURENDOR المعتمدة",
+        "الشعار وGhroob للعربية وDh Ranclo للإنجليزية من أصول SOCIAL_MEDIA_PLUGIN المعتمدة",
         "رسوم توضيحية أصلية للقالب في copyableTool؛ لا صور مولدة لواجهات المنتج",
         "عند ظهور المنتج: التقاط جديد من التطبيق الفعلي ببيانات تجريبية مع عبارة واجهة فعلية / بيانات تجريبية",
         "استخدم الهوية القائمة دون تغيير؛ لا تُنشر وجوه أو عناوين أو بيانات زبائن من لقطات فعلية. لا يُستخدم شعار جهة البحث بما يوحي بالتأييد."
@@ -5162,11 +5162,11 @@
       "platforms": {
         "instagram": {
           "format": "reel 9:16 / 56s",
-          "caption": "قبل إضافة مشروع إلى المعرض، اسأل: هل تصف الصفحة ما نفذته شركتك فعلاً أم تترك الصورة توحي بأنكم نفذتم كل شيء؟\nبطاقة واضحة تقول: نوع المشروع، دور المكتب وحدوده، تحدٍ محدد، ودليل نملك حق عرضه. لا حاجة لاختراع شهادة عميل أو نسبة توفير. المثال في الفيديو تعليمي وليس مشروعاً نفذته AURENDOR أو عميل بنيان.\nبنيان برو يتيح تنظيم معرض الأعمال ووسائطه. المنفعة أن يصبح المشروع قابلاً للفهم لدى عميل يبحث عن نطاق يشبه حاجته. لا نعد بأن نشره يحقق مبيعات محددة. اكتب البطاقة باستخدام القالب ثم راجع إذن نشر الصور والبيانات. موارد ILO لإدارة البناء — https://www.ilo.org/publications/enhancing-labour-based-construction-management مرجع سياقي عام.\n\nقالب جاهز للنسخ:\nبطاقة مشروع للعرض\nنوع المشروع: ___\nدور شركتنا تحديداً: ___\nما لم يكن ضمن نطاقنا: ___\nتحدٍ موثق: ___\nكيف تعامل الفريق معه ومرجعنا الداخلي: ___\nالدليل الذي نملك حق نشره: ___\nأسماء/عناوين/وجوه يجب إخفاؤها: ___\nالحاجة التي تشبه هذا المشروع لدى العميل القادم: ___\nلا تضف نتائج رقمية أو شهادات عميل بلا توثيق وإذن."
+          "caption": "قبل إضافة مشروع إلى المعرض، اسأل: هل تصف الصفحة ما نفذته شركتك فعلاً أم تترك الصورة توحي بأنكم نفذتم كل شيء؟\nبطاقة واضحة تقول: نوع المشروع، دور المكتب وحدوده، تحدٍ محدد، ودليل نملك حق عرضه. لا حاجة لاختراع شهادة عميل أو نسبة توفير. المثال في الفيديو تعليمي وليس مشروعاً نفذته SOCIAL_MEDIA_PLUGIN أو عميل بنيان.\nبنيان برو يتيح تنظيم معرض الأعمال ووسائطه. المنفعة أن يصبح المشروع قابلاً للفهم لدى عميل يبحث عن نطاق يشبه حاجته. لا نعد بأن نشره يحقق مبيعات محددة. اكتب البطاقة باستخدام القالب ثم راجع إذن نشر الصور والبيانات. موارد ILO لإدارة البناء — https://www.ilo.org/publications/enhancing-labour-based-construction-management مرجع سياقي عام.\n\nقالب جاهز للنسخ:\nبطاقة مشروع للعرض\nنوع المشروع: ___\nدور شركتنا تحديداً: ___\nما لم يكن ضمن نطاقنا: ___\nتحدٍ موثق: ___\nكيف تعامل الفريق معه ومرجعنا الداخلي: ___\nالدليل الذي نملك حق نشره: ___\nأسماء/عناوين/وجوه يجب إخفاؤها: ___\nالحاجة التي تشبه هذا المشروع لدى العميل القادم: ___\nلا تضف نتائج رقمية أو شهادات عميل بلا توثيق وإذن."
         },
         "facebook": {
           "format": "native reel 9:16",
-          "caption": "لأصحاب شركات المقاولات والمكاتب الهندسية:\nقبل إضافة مشروع إلى المعرض، اسأل: هل تصف الصفحة ما نفذته شركتك فعلاً أم تترك الصورة توحي بأنكم نفذتم كل شيء؟\nبطاقة واضحة تقول: نوع المشروع، دور المكتب وحدوده، تحدٍ محدد، ودليل نملك حق عرضه. لا حاجة لاختراع شهادة عميل أو نسبة توفير. المثال في الفيديو تعليمي وليس مشروعاً نفذته AURENDOR أو عميل بنيان.\nبنيان برو يتيح تنظيم معرض الأعمال ووسائطه. المنفعة أن يصبح المشروع قابلاً للفهم لدى عميل يبحث عن نطاق يشبه حاجته. لا نعد بأن نشره يحقق مبيعات محددة. اكتب البطاقة باستخدام القالب ثم راجع إذن نشر الصور والبيانات. موارد ILO لإدارة البناء — https://www.ilo.org/publications/enhancing-labour-based-construction-management مرجع سياقي عام.\n\nناقشوا هذا الإجراء في اجتماع الموقع القادم.\n\nقالب جاهز للنسخ:\nبطاقة مشروع للعرض\nنوع المشروع: ___\nدور شركتنا تحديداً: ___\nما لم يكن ضمن نطاقنا: ___\nتحدٍ موثق: ___\nكيف تعامل الفريق معه ومرجعنا الداخلي: ___\nالدليل الذي نملك حق نشره: ___\nأسماء/عناوين/وجوه يجب إخفاؤها: ___\nالحاجة التي تشبه هذا المشروع لدى العميل القادم: ___\nلا تضف نتائج رقمية أو شهادات عميل بلا توثيق وإذن."
+          "caption": "لأصحاب شركات المقاولات والمكاتب الهندسية:\nقبل إضافة مشروع إلى المعرض، اسأل: هل تصف الصفحة ما نفذته شركتك فعلاً أم تترك الصورة توحي بأنكم نفذتم كل شيء؟\nبطاقة واضحة تقول: نوع المشروع، دور المكتب وحدوده، تحدٍ محدد، ودليل نملك حق عرضه. لا حاجة لاختراع شهادة عميل أو نسبة توفير. المثال في الفيديو تعليمي وليس مشروعاً نفذته SOCIAL_MEDIA_PLUGIN أو عميل بنيان.\nبنيان برو يتيح تنظيم معرض الأعمال ووسائطه. المنفعة أن يصبح المشروع قابلاً للفهم لدى عميل يبحث عن نطاق يشبه حاجته. لا نعد بأن نشره يحقق مبيعات محددة. اكتب البطاقة باستخدام القالب ثم راجع إذن نشر الصور والبيانات. موارد ILO لإدارة البناء — https://www.ilo.org/publications/enhancing-labour-based-construction-management مرجع سياقي عام.\n\nناقشوا هذا الإجراء في اجتماع الموقع القادم.\n\nقالب جاهز للنسخ:\nبطاقة مشروع للعرض\nنوع المشروع: ___\nدور شركتنا تحديداً: ___\nما لم يكن ضمن نطاقنا: ___\nتحدٍ موثق: ___\nكيف تعامل الفريق معه ومرجعنا الداخلي: ___\nالدليل الذي نملك حق نشره: ___\nأسماء/عناوين/وجوه يجب إخفاؤها: ___\nالحاجة التي تشبه هذا المشروع لدى العميل القادم: ___\nلا تضف نتائج رقمية أو شهادات عميل بلا توثيق وإذن."
         },
         "linkedin": {
           "format": "native subtitled video",
@@ -5289,7 +5289,7 @@
       "format": "carousel",
       "pillar": "Practical AI",
       "audience": "مترجم أو محرر أو موظف يكتب بالعربية والإنجليزية في مجال محدد.",
-      "objective": "Give the reader a repeatable practical outcome independent of purchasing AURENDOR services.",
+      "objective": "Give the reader a repeatable practical outcome independent of purchasing SOCIAL_MEDIA_PLUGIN services.",
       "funnel": "awareness / trust",
       "level": "intermediate",
       "titleAr": "المصطلح نفسه… لا تترجمه بثلاث طرق.",
@@ -5301,7 +5301,7 @@
       "sourceIds": [
         "U-S06"
       ],
-      "exampleDisclosure": "مثال تعليمي افتراضي من إعداد AURENDOR ، وليس نتيجة اختبار أداة أو تجربة عميل.",
+      "exampleDisclosure": "مثال تعليمي افتراضي من إعداد SOCIAL_MEDIA_PLUGIN ، وليس نتيجة اختبار أداة أو تجربة عميل.",
       "units": [
         {
           "number": 1,
@@ -5351,7 +5351,7 @@
       "cta": "ابدأ بخمسة مصطلحات تتكرر في ملفاتك، واكتب السياق والاستثناء لكل مصطلح.",
       "copyableTool": "ترجم النص مع قاموس القرار التالي: course في ملف الجامعة = مقرر دراسي؛ course في الطعام = طبق. المدخل التعليمي: “The course materials are ready. The course evaluation opens on Sunday. The main course will be served at seven.” المخرج المتوقع: «مواد المقرر الدراسي جاهزة. يبدأ تقييم المقرر الدراسي يوم الأحد. سيُقدّم الطبق الرئيسي عند السابعة». لا تغيّر المقرر إلى البرنامج في الجملة الثانية؛ المقصود هو المفهوم نفسه. لا تضف صباحًا أو مساءً لأن المصدر لا يحدّد. بعد ترجمة النص الفعلي، أعطني المصطلح والجملة وأي خروج عن القاموس مع السبب. معيار القبول: نفس المفهوم بنفس المقابل، والاستثناء مبرّر بتغيّر المعنى.",
       "requiredAssets": [
-        "Original AURENDOR brand fonts Ghroob and Dh Ranclo; existing green/white identity.",
+        "Original SOCIAL_MEDIA_PLUGIN brand fonts Ghroob and Dh Ranclo; existing green/white identity.",
         "An original teaching artifact specified per unit; visible مثال توضيحي label.",
         "Any named tool UI must be captured from an available account immediately before production; otherwise use an explicitly labeled diagram, never fake UI."
       ],
@@ -5378,7 +5378,7 @@
         },
         "tiktok": {
           "format": "photo carousel",
-          "caption": "المصطلح نفسه… لا تترجمه بثلاث طرق.\nجدول مصطلحات عربي/إنجليزي يتضمن المعنى والاستثناء قبل الترجمة.\nمثال تعليمي افتراضي من إعداد AURENDOR ، وليس نتيجة اختبار أداة أو تجربة عميل.\n\nقالب للنسخ:\nترجم النص مع قاموس القرار التالي: course في ملف الجامعة = مقرر دراسي؛ course في الطعام = طبق. المدخل التعليمي: “The course materials are ready. The course evaluation opens on Sunday. The main course will be served at seven.” المخرج المتوقع: «مواد المقرر الدراسي جاهزة. يبدأ تقييم المقرر الدراسي يوم الأحد. سيُقدّم الطبق الرئيسي عند السابعة». لا تغيّر المقرر إلى البرنامج في الجملة الثانية؛ المقصود هو المفهوم نفسه. لا تضف صباحًا أو مساءً لأن المصدر لا يحدّد. بعد ترجمة النص الفعلي، أعطني المصطلح والجملة وأي خروج عن القاموس مع السبب. معيار القبول: نفس المفهوم بنفس المقابل، والاستثناء مبرّر بتغيّر المعنى."
+          "caption": "المصطلح نفسه… لا تترجمه بثلاث طرق.\nجدول مصطلحات عربي/إنجليزي يتضمن المعنى والاستثناء قبل الترجمة.\nمثال تعليمي افتراضي من إعداد SOCIAL_MEDIA_PLUGIN ، وليس نتيجة اختبار أداة أو تجربة عميل.\n\nقالب للنسخ:\nترجم النص مع قاموس القرار التالي: course في ملف الجامعة = مقرر دراسي؛ course في الطعام = طبق. المدخل التعليمي: “The course materials are ready. The course evaluation opens on Sunday. The main course will be served at seven.” المخرج المتوقع: «مواد المقرر الدراسي جاهزة. يبدأ تقييم المقرر الدراسي يوم الأحد. سيُقدّم الطبق الرئيسي عند السابعة». لا تغيّر المقرر إلى البرنامج في الجملة الثانية؛ المقصود هو المفهوم نفسه. لا تضف صباحًا أو مساءً لأن المصدر لا يحدّد. بعد ترجمة النص الفعلي، أعطني المصطلح والجملة وأي خروج عن القاموس مع السبب. معيار القبول: نفس المفهوم بنفس المقابل، والاستثناء مبرّر بتغيّر المعنى."
         }
       },
       "story": {
@@ -5473,7 +5473,7 @@
       "claimType": "documented principles + editorial inference + explicitly synthetic worked example",
       "sourceIds": [
         "S-AGENTS-2024",
-        "S-AURENDOR"
+        "S-SOCIAL_MEDIA_PLUGIN"
       ],
       "exampleDisclosure": "كل أسماء الجهات والمواقف والأرقام التشغيلية في هذا المنشور أمثلة توضيحية مؤلفة، وليست بيانات عملاء أو نتائج تنفيذ من أورندور.",
       "units": [
@@ -5532,7 +5532,7 @@
       "cta": "راسل أورندور بخريطة مسار واحد: بدايته، مصادره، مخرجه، ومسؤول استثناءاته.",
       "copyableTool": "خريطة تنفيذ مختصرة\nاسم المسار: [ ]\nالمشغّل ووقت العمل: [ ]\nمصدر كل معلومة وصلاحية الوصول: [ ]\nالمخرج ومكان حفظه: [ ]\nمن يعتمد المخرج: [ ]\nمتى يتحول إلى شخص؟ ومن؟ [ ]\nمعرّف العمل وكيف نتجنب التكرار: [ ]\nأثر التنفيذ الذي نسجله: [ ]\nأمثلة اختبار: كاملة / ناقصة / مكررة.\nلكل مثال: المدخل المتوقع والمخرج المقبول.\nالقياس: وقت الإنجاز والمراجعة ونسبة إعادة العمل.",
       "requiredAssets": [
-        "Original AURENDOR vector logo and approved architectural assets",
+        "Original SOCIAL_MEDIA_PLUGIN vector logo and approved architectural assets",
         "Ghroob Arabic ITF and Dh Ranclo brand fonts",
         "Original synthetic worksheet/document content from units, visibly labelled مثال توضيحي"
       ],
@@ -5569,7 +5569,7 @@
       },
       "freshness": {
         "type": "evergreen research-led",
-        "verifyBeforePublish": "Reopen cited mutable documentation 24–48 hours before publication; keep historical study versions and local survey scope explicit. Recheck offered AURENDOR scope. Examples must remain labelled.",
+        "verifyBeforePublish": "Reopen cited mutable documentation 24–48 hours before publication; keep historical study versions and local survey scope explicit. Recheck offered SOCIAL_MEDIA_PLUGIN scope. Examples must remain labelled.",
         "fallback": "Publish original task worksheet without mutable vendor capability claim if documentation changes."
       },
       "commercialBridge": "أورندور تقدم أنظمة الأعمال وتكاملات AI والأتمتة؛ هذا مدخل لمناقشة النطاق دون وعد تنفيذ مسبق.",
@@ -5707,11 +5707,11 @@
           "evidence": "First-party invitation to discuss the relevant service or request a Bunyan Pro demonstration; no free trial or guaranteed outcome asserted."
         }
       ],
-      "caption": "ابدأ بمشروع واحد وسجل طريقة العمل الحالية قبل تغييرها. اختَر ثلاثة أسئلة حقيقية، وسجّل الزمن والنواقص، ثم أعد الاختبار بأسئلة مشابهة بعد أسبوع. إذا أعطيت الفريق الأسئلة نفسها حرفياً، قد تقيس الحفظ بدلاً من تحسن المتابعة.\nحدّد مسبقاً ما تعتبره نجاحاً، مثل وجود مرجع لكل تغيير في العينة، وقدرة شخص آخر على الوصول إليه، وعبء تحديث مقبول للفريق. هذه معايير يقترحها المكتب وليست نتائج أو وعوداً من AURENDOR.\nبنيان برو يمكن أن يكون أداة التجربة عبر التقارير والتغييرات والملاحظات والملفات. اطلب عرضاً مبنياً على أسئلتك الثلاثة، لا على استعراض كل قائمة. تجربة ILO للرصد الرقمي — https://prospectslearnings.ilo.org/interventions/employment-intensive-investment-programmes-eiip/case-studies/digital-monitoring-conducted-engineering-students سياق لفكرة البدء المحدود.\n\nقالب جاهز للنسخ:\nورقة تجربة سبعة أيام — ليست ضمان نتائج\nالمشروع والعينة: ___\nالسؤال1: ___ | وقت العثور قبل: ___ | النقص: ___\nالسؤال2: ___ | وقت العثور قبل: ___ | النقص: ___\nالسؤال3: ___ | وقت العثور قبل: ___ | النقص: ___\nمسؤول التحديث وموعده: ___\nمسؤول مراجعة النواقص: ___\nمعيار نجاح متفق عليه قبل البدء: ___\nبعد أسبوع، أسئلة مشابهة لا محفوظة: ___\nوقت العثور بعد: ___ | مراجع مفقودة: ___\nجهد التحديث اليومي وكيف قيس: ___\nقرار: نوسع / نعدل الإجراء / نوقف التجربة\nسبب القرار: ___",
+      "caption": "ابدأ بمشروع واحد وسجل طريقة العمل الحالية قبل تغييرها. اختَر ثلاثة أسئلة حقيقية، وسجّل الزمن والنواقص، ثم أعد الاختبار بأسئلة مشابهة بعد أسبوع. إذا أعطيت الفريق الأسئلة نفسها حرفياً، قد تقيس الحفظ بدلاً من تحسن المتابعة.\nحدّد مسبقاً ما تعتبره نجاحاً، مثل وجود مرجع لكل تغيير في العينة، وقدرة شخص آخر على الوصول إليه، وعبء تحديث مقبول للفريق. هذه معايير يقترحها المكتب وليست نتائج أو وعوداً من SOCIAL_MEDIA_PLUGIN.\nبنيان برو يمكن أن يكون أداة التجربة عبر التقارير والتغييرات والملاحظات والملفات. اطلب عرضاً مبنياً على أسئلتك الثلاثة، لا على استعراض كل قائمة. تجربة ILO للرصد الرقمي — https://prospectslearnings.ilo.org/interventions/employment-intensive-investment-programmes-eiip/case-studies/digital-monitoring-conducted-engineering-students سياق لفكرة البدء المحدود.\n\nقالب جاهز للنسخ:\nورقة تجربة سبعة أيام — ليست ضمان نتائج\nالمشروع والعينة: ___\nالسؤال1: ___ | وقت العثور قبل: ___ | النقص: ___\nالسؤال2: ___ | وقت العثور قبل: ___ | النقص: ___\nالسؤال3: ___ | وقت العثور قبل: ___ | النقص: ___\nمسؤول التحديث وموعده: ___\nمسؤول مراجعة النواقص: ___\nمعيار نجاح متفق عليه قبل البدء: ___\nبعد أسبوع، أسئلة مشابهة لا محفوظة: ___\nوقت العثور بعد: ___ | مراجع مفقودة: ___\nجهد التحديث اليومي وكيف قيس: ___\nقرار: نوسع / نعدل الإجراء / نوقف التجربة\nسبب القرار: ___",
       "cta": "راسلنا بأسئلتك الثلاثة لنرتّب عرض بنيان برو حول سير عملك.",
       "copyableTool": "ورقة تجربة سبعة أيام — ليست ضمان نتائج\nالمشروع والعينة: ___\nالسؤال1: ___ | وقت العثور قبل: ___ | النقص: ___\nالسؤال2: ___ | وقت العثور قبل: ___ | النقص: ___\nالسؤال3: ___ | وقت العثور قبل: ___ | النقص: ___\nمسؤول التحديث وموعده: ___\nمسؤول مراجعة النواقص: ___\nمعيار نجاح متفق عليه قبل البدء: ___\nبعد أسبوع، أسئلة مشابهة لا محفوظة: ___\nوقت العثور بعد: ___ | مراجع مفقودة: ___\nجهد التحديث اليومي وكيف قيس: ___\nقرار: نوسع / نعدل الإجراء / نوقف التجربة\nسبب القرار: ___",
       "requiredAssets": [
-        "الشعار وGhroob للعربية وDh Ranclo للإنجليزية من أصول AURENDOR المعتمدة",
+        "الشعار وGhroob للعربية وDh Ranclo للإنجليزية من أصول SOCIAL_MEDIA_PLUGIN المعتمدة",
         "رسوم توضيحية أصلية للقالب في copyableTool؛ لا صور مولدة لواجهات المنتج",
         "عند ظهور المنتج: التقاط جديد من التطبيق الفعلي ببيانات تجريبية مع عبارة واجهة فعلية / بيانات تجريبية",
         "استخدم الهوية القائمة دون تغيير؛ لا تُنشر وجوه أو عناوين أو بيانات زبائن من لقطات فعلية. لا يُستخدم شعار جهة البحث بما يوحي بالتأييد."
@@ -5720,11 +5720,11 @@
       "platforms": {
         "instagram": {
           "format": "carousel 4:5",
-          "caption": "ابدأ بمشروع واحد وسجل طريقة العمل الحالية قبل تغييرها. اختَر ثلاثة أسئلة حقيقية، وسجّل الزمن والنواقص، ثم أعد الاختبار بأسئلة مشابهة بعد أسبوع. إذا أعطيت الفريق الأسئلة نفسها حرفياً، قد تقيس الحفظ بدلاً من تحسن المتابعة.\nحدّد مسبقاً ما تعتبره نجاحاً، مثل وجود مرجع لكل تغيير في العينة، وقدرة شخص آخر على الوصول إليه، وعبء تحديث مقبول للفريق. هذه معايير يقترحها المكتب وليست نتائج أو وعوداً من AURENDOR.\nبنيان برو يمكن أن يكون أداة التجربة عبر التقارير والتغييرات والملاحظات والملفات. اطلب عرضاً مبنياً على أسئلتك الثلاثة، لا على استعراض كل قائمة. تجربة ILO للرصد الرقمي — https://prospectslearnings.ilo.org/interventions/employment-intensive-investment-programmes-eiip/case-studies/digital-monitoring-conducted-engineering-students سياق لفكرة البدء المحدود.\n\nقالب جاهز للنسخ:\nورقة تجربة سبعة أيام — ليست ضمان نتائج\nالمشروع والعينة: ___\nالسؤال1: ___ | وقت العثور قبل: ___ | النقص: ___\nالسؤال2: ___ | وقت العثور قبل: ___ | النقص: ___\nالسؤال3: ___ | وقت العثور قبل: ___ | النقص: ___\nمسؤول التحديث وموعده: ___\nمسؤول مراجعة النواقص: ___\nمعيار نجاح متفق عليه قبل البدء: ___\nبعد أسبوع، أسئلة مشابهة لا محفوظة: ___\nوقت العثور بعد: ___ | مراجع مفقودة: ___\nجهد التحديث اليومي وكيف قيس: ___\nقرار: نوسع / نعدل الإجراء / نوقف التجربة\nسبب القرار: ___"
+          "caption": "ابدأ بمشروع واحد وسجل طريقة العمل الحالية قبل تغييرها. اختَر ثلاثة أسئلة حقيقية، وسجّل الزمن والنواقص، ثم أعد الاختبار بأسئلة مشابهة بعد أسبوع. إذا أعطيت الفريق الأسئلة نفسها حرفياً، قد تقيس الحفظ بدلاً من تحسن المتابعة.\nحدّد مسبقاً ما تعتبره نجاحاً، مثل وجود مرجع لكل تغيير في العينة، وقدرة شخص آخر على الوصول إليه، وعبء تحديث مقبول للفريق. هذه معايير يقترحها المكتب وليست نتائج أو وعوداً من SOCIAL_MEDIA_PLUGIN.\nبنيان برو يمكن أن يكون أداة التجربة عبر التقارير والتغييرات والملاحظات والملفات. اطلب عرضاً مبنياً على أسئلتك الثلاثة، لا على استعراض كل قائمة. تجربة ILO للرصد الرقمي — https://prospectslearnings.ilo.org/interventions/employment-intensive-investment-programmes-eiip/case-studies/digital-monitoring-conducted-engineering-students سياق لفكرة البدء المحدود.\n\nقالب جاهز للنسخ:\nورقة تجربة سبعة أيام — ليست ضمان نتائج\nالمشروع والعينة: ___\nالسؤال1: ___ | وقت العثور قبل: ___ | النقص: ___\nالسؤال2: ___ | وقت العثور قبل: ___ | النقص: ___\nالسؤال3: ___ | وقت العثور قبل: ___ | النقص: ___\nمسؤول التحديث وموعده: ___\nمسؤول مراجعة النواقص: ___\nمعيار نجاح متفق عليه قبل البدء: ___\nبعد أسبوع، أسئلة مشابهة لا محفوظة: ___\nوقت العثور بعد: ___ | مراجع مفقودة: ___\nجهد التحديث اليومي وكيف قيس: ___\nقرار: نوسع / نعدل الإجراء / نوقف التجربة\nسبب القرار: ___"
         },
         "facebook": {
           "format": "numbered image album",
-          "caption": "لأصحاب شركات المقاولات والمكاتب الهندسية:\nابدأ بمشروع واحد وسجل طريقة العمل الحالية قبل تغييرها. اختَر ثلاثة أسئلة حقيقية، وسجّل الزمن والنواقص، ثم أعد الاختبار بأسئلة مشابهة بعد أسبوع. إذا أعطيت الفريق الأسئلة نفسها حرفياً، قد تقيس الحفظ بدلاً من تحسن المتابعة.\nحدّد مسبقاً ما تعتبره نجاحاً، مثل وجود مرجع لكل تغيير في العينة، وقدرة شخص آخر على الوصول إليه، وعبء تحديث مقبول للفريق. هذه معايير يقترحها المكتب وليست نتائج أو وعوداً من AURENDOR.\nبنيان برو يمكن أن يكون أداة التجربة عبر التقارير والتغييرات والملاحظات والملفات. اطلب عرضاً مبنياً على أسئلتك الثلاثة، لا على استعراض كل قائمة. تجربة ILO للرصد الرقمي — https://prospectslearnings.ilo.org/interventions/employment-intensive-investment-programmes-eiip/case-studies/digital-monitoring-conducted-engineering-students سياق لفكرة البدء المحدود.\n\nناقشوا هذا الإجراء في اجتماع الموقع القادم.\n\nقالب جاهز للنسخ:\nورقة تجربة سبعة أيام — ليست ضمان نتائج\nالمشروع والعينة: ___\nالسؤال1: ___ | وقت العثور قبل: ___ | النقص: ___\nالسؤال2: ___ | وقت العثور قبل: ___ | النقص: ___\nالسؤال3: ___ | وقت العثور قبل: ___ | النقص: ___\nمسؤول التحديث وموعده: ___\nمسؤول مراجعة النواقص: ___\nمعيار نجاح متفق عليه قبل البدء: ___\nبعد أسبوع، أسئلة مشابهة لا محفوظة: ___\nوقت العثور بعد: ___ | مراجع مفقودة: ___\nجهد التحديث اليومي وكيف قيس: ___\nقرار: نوسع / نعدل الإجراء / نوقف التجربة\nسبب القرار: ___"
+          "caption": "لأصحاب شركات المقاولات والمكاتب الهندسية:\nابدأ بمشروع واحد وسجل طريقة العمل الحالية قبل تغييرها. اختَر ثلاثة أسئلة حقيقية، وسجّل الزمن والنواقص، ثم أعد الاختبار بأسئلة مشابهة بعد أسبوع. إذا أعطيت الفريق الأسئلة نفسها حرفياً، قد تقيس الحفظ بدلاً من تحسن المتابعة.\nحدّد مسبقاً ما تعتبره نجاحاً، مثل وجود مرجع لكل تغيير في العينة، وقدرة شخص آخر على الوصول إليه، وعبء تحديث مقبول للفريق. هذه معايير يقترحها المكتب وليست نتائج أو وعوداً من SOCIAL_MEDIA_PLUGIN.\nبنيان برو يمكن أن يكون أداة التجربة عبر التقارير والتغييرات والملاحظات والملفات. اطلب عرضاً مبنياً على أسئلتك الثلاثة، لا على استعراض كل قائمة. تجربة ILO للرصد الرقمي — https://prospectslearnings.ilo.org/interventions/employment-intensive-investment-programmes-eiip/case-studies/digital-monitoring-conducted-engineering-students سياق لفكرة البدء المحدود.\n\nناقشوا هذا الإجراء في اجتماع الموقع القادم.\n\nقالب جاهز للنسخ:\nورقة تجربة سبعة أيام — ليست ضمان نتائج\nالمشروع والعينة: ___\nالسؤال1: ___ | وقت العثور قبل: ___ | النقص: ___\nالسؤال2: ___ | وقت العثور قبل: ___ | النقص: ___\nالسؤال3: ___ | وقت العثور قبل: ___ | النقص: ___\nمسؤول التحديث وموعده: ___\nمسؤول مراجعة النواقص: ___\nمعيار نجاح متفق عليه قبل البدء: ___\nبعد أسبوع، أسئلة مشابهة لا محفوظة: ___\nوقت العثور بعد: ___ | مراجع مفقودة: ___\nجهد التحديث اليومي وكيف قيس: ___\nقرار: نوسع / نعدل الإجراء / نوقف التجربة\nسبب القرار: ___"
         },
         "linkedin": {
           "format": "PDF document carousel",
@@ -5824,7 +5824,7 @@
       "format": "reel",
       "pillar": "Practical AI",
       "audience": "مستخدم AI يريد متابعة تطور يفيده دون قراءة كل إعلان يوميًا.",
-      "objective": "Give the reader a repeatable practical outcome independent of purchasing AURENDOR services.",
+      "objective": "Give the reader a repeatable practical outcome independent of purchasing SOCIAL_MEDIA_PLUGIN services.",
       "funnel": "awareness / trust",
       "level": "intermediate",
       "titleAr": "تابع القدرة التي تحتاجها، لا كل أخبار AI.",
@@ -5836,7 +5836,7 @@
       "sourceIds": [
         "U-S09"
       ],
-      "exampleDisclosure": "مثال تعليمي افتراضي من إعداد AURENDOR ، وليس نتيجة اختبار أداة أو تجربة عميل.",
+      "exampleDisclosure": "مثال تعليمي افتراضي من إعداد SOCIAL_MEDIA_PLUGIN ، وليس نتيجة اختبار أداة أو تجربة عميل.",
       "units": [
         {
           "number": 1,
@@ -5891,7 +5891,7 @@
       "cta": "اختر أداتين وقدرة واحدة تريد متابعتها، وحدّد موعدًا لإنهاء التجربة.",
       "copyableTool": "أنشئ متابعة لمدة 14 يومًا إذا كانت المهام المجدولة متاحة. افحص يوميًا في فترة المساء بتوقيت Asia/Baghdad المصادر الرسمية لهاتين الأداتين: [حدّد أداتين تستخدمهما]. سؤالي: هل أضافتا تفريغًا للعربية مع التوقيتات وتصدير SRT ؟ لا تبحث عن كل أخبار AI. عند تغير مهم، أرسل: القدرة، تاريخ الإعلان، حالة الإتاحة والقيود الموثقة، الرابط الأصلي، واختبارًا واحدًا بمقطع أملكه. ميّز بين الإعلان والطرح الفعلي. لا تدّعِ دعم اللهجة العراقية إذا لم يوثّق المصدر ذلك. لا تكرر خبرًا أرسلته. إذا لم يوجد مفيد، ابقَ صامتًا حيث تسمح إعدادات المهمة. عند نهاية 14 يومًا، توقف وأعطني ما استحق المحاولة. اعرض بطاقة تأكيد المهمة وجدولها؛ إن لم تملك تلك القدرة، قل ذلك وقدّم تذكيرًا يدويًا. لا تشترك ولا ترسل ملفات لأي خدمة.",
       "requiredAssets": [
-        "Original AURENDOR brand fonts Ghroob and Dh Ranclo; existing green/white identity.",
+        "Original SOCIAL_MEDIA_PLUGIN brand fonts Ghroob and Dh Ranclo; existing green/white identity.",
         "An original teaching artifact specified per unit; visible مثال توضيحي label.",
         "Any named tool UI must be captured from an available account immediately before production; otherwise use an explicitly labeled diagram, never fake UI."
       ],
@@ -5918,7 +5918,7 @@
         },
         "tiktok": {
           "format": "vertical video",
-          "caption": "تابع القدرة التي تحتاجها، لا كل أخبار AI.\nقالب متابعة محدود لأداة تفريغ عربي مع تمييز الإعلان من الإتاحة والفائدة العملية.\nمثال تعليمي افتراضي من إعداد AURENDOR ، وليس نتيجة اختبار أداة أو تجربة عميل.\n\nقالب للنسخ:\nأنشئ متابعة لمدة 14 يومًا إذا كانت المهام المجدولة متاحة. افحص يوميًا في فترة المساء بتوقيت Asia/Baghdad المصادر الرسمية لهاتين الأداتين: [حدّد أداتين تستخدمهما]. سؤالي: هل أضافتا تفريغًا للعربية مع التوقيتات وتصدير SRT ؟ لا تبحث عن كل أخبار AI. عند تغير مهم، أرسل: القدرة، تاريخ الإعلان، حالة الإتاحة والقيود الموثقة، الرابط الأصلي، واختبارًا واحدًا بمقطع أملكه. ميّز بين الإعلان والطرح الفعلي. لا تدّعِ دعم اللهجة العراقية إذا لم يوثّق المصدر ذلك. لا تكرر خبرًا أرسلته. إذا لم يوجد مفيد، ابقَ صامتًا حيث تسمح إعدادات المهمة. عند نهاية 14 يومًا، توقف وأعطني ما استحق المحاولة. اعرض بطاقة تأكيد المهمة وجدولها؛ إن لم تملك تلك القدرة، قل ذلك وقدّم تذكيرًا يدويًا. لا تشترك ولا ترسل ملفات لأي خدمة."
+          "caption": "تابع القدرة التي تحتاجها، لا كل أخبار AI.\nقالب متابعة محدود لأداة تفريغ عربي مع تمييز الإعلان من الإتاحة والفائدة العملية.\nمثال تعليمي افتراضي من إعداد SOCIAL_MEDIA_PLUGIN ، وليس نتيجة اختبار أداة أو تجربة عميل.\n\nقالب للنسخ:\nأنشئ متابعة لمدة 14 يومًا إذا كانت المهام المجدولة متاحة. افحص يوميًا في فترة المساء بتوقيت Asia/Baghdad المصادر الرسمية لهاتين الأداتين: [حدّد أداتين تستخدمهما]. سؤالي: هل أضافتا تفريغًا للعربية مع التوقيتات وتصدير SRT ؟ لا تبحث عن كل أخبار AI. عند تغير مهم، أرسل: القدرة، تاريخ الإعلان، حالة الإتاحة والقيود الموثقة، الرابط الأصلي، واختبارًا واحدًا بمقطع أملكه. ميّز بين الإعلان والطرح الفعلي. لا تدّعِ دعم اللهجة العراقية إذا لم يوثّق المصدر ذلك. لا تكرر خبرًا أرسلته. إذا لم يوجد مفيد، ابقَ صامتًا حيث تسمح إعدادات المهمة. عند نهاية 14 يومًا، توقف وأعطني ما استحق المحاولة. اعرض بطاقة تأكيد المهمة وجدولها؛ إن لم تملك تلك القدرة، قل ذلك وقدّم تذكيرًا يدويًا. لا تشترك ولا ترسل ملفات لأي خدمة."
         }
       },
       "story": {
@@ -6119,8 +6119,8 @@
     {
       "id": "B-PRODUCT",
       "title": "Bunyan Pro source verification, September 10 2026",
-      "publisher": "AURENDOR",
-      "url": "/Users/muhammedjameel/Documents/AURENDOR/apps/construction-tracker/src",
+      "publisher": "SOCIAL_MEDIA_PLUGIN",
+      "url": "/Users/muhammedjameel/Documents/SOCIAL_MEDIA_PLUGIN/apps/construction-tracker/src",
       "publishedDate": "2026-09-10",
       "accessedAt": "2026-09-10",
       "scope": "مراجعة المصدر وFEATURE-COVERAGE، دون اختبار نشر أو بيانات زبائن.",
@@ -6152,7 +6152,7 @@
       "accessedAt": "2026-09-10",
       "scope": "Targeted edits, Sketch, all-tier rollout announced September8",
       "claimSupported": "Targeted edits, Sketch, all-tier rollout announced September8",
-      "limitation": "Publisher claims; no AURENDOR comparison test or guaranteed unchanged pixels.",
+      "limitation": "Publisher claims; no SOCIAL_MEDIA_PLUGIN comparison test or guaranteed unchanged pixels.",
       "sourceType": "primary_vendor_documentation",
       "snapshot": "research/practical/U-S02/text.txt",
       "textSha256": "99936836603d6efa2fd72adb544f08ac118480e17dc1fbbc0bcc38b29ec50c35"
@@ -6339,7 +6339,7 @@
       "accessedAt": "2026-09-10",
       "scope": "Technical discussion of retrieval and context loss.",
       "claimSupported": "Retrieval supplies business knowledge; exact identifiers may require lexical search; chunks need document context.",
-      "limitation": "Not proof of Iraqi Arabic quality, access control implementation or AURENDOR deployed system; no benchmark percentages used.",
+      "limitation": "Not proof of Iraqi Arabic quality, access control implementation or SOCIAL_MEDIA_PLUGIN deployed system; no benchmark percentages used.",
       "sourceType": "primary technical research"
     },
     {
@@ -6379,8 +6379,8 @@
       "sourceType": "original research preprint"
     },
     {
-      "id": "S-AURENDOR",
-      "title": "AURENDOR authorized service scope",
+      "id": "S-SOCIAL_MEDIA_PLUGIN",
+      "title": "SOCIAL_MEDIA_PLUGIN authorized service scope",
       "publisher": "First-party user instruction and existing P12 brief",
       "url": "local:content-system-v7/briefs/P12.json",
       "publishedDate": null,

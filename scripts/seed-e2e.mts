@@ -1,7 +1,7 @@
-import { createDatabase } from "@aurendor/db/runtime";
+import { createDatabase } from "@social-media-plugin/db/runtime";
 import { e2eContentFixtures } from "../tests/fixtures/e2e-content";
 
-const ORGANIZATION_ID = "org-aurendor";
+const ORGANIZATION_ID = "org-social-media-plugin";
 const STRATEGY_ID = "strategy-2026-09";
 const EXPECTED_CONTENT_COUNT = 33;
 const HIGH_RISK_KEY = "W3-P5";
@@ -129,7 +129,7 @@ try {
         fixture.format,
         json(fixture.platforms),
         "Lead with one concrete operating tension.",
-        "Use structured hierarchy and the active AURENDOR identity; visual production remains intentionally absent from this fixture.",
+        "Use structured hierarchy and the active SOCIAL_MEDIA_PLUGIN identity; visual production remains intentionally absent from this fixture.",
         "Open the owner review surface.",
         json(["qualified_reach", "saves", "shares"]),
         scheduledAt(index),

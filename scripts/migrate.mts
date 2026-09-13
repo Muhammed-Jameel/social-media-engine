@@ -1,4 +1,4 @@
-import { createDatabase, migrateDatabase } from "@aurendor/db";
+import { createDatabase, migrateDatabase } from "@social-media-plugin/db";
 
 const database = await createDatabase();
 await migrateDatabase(database);

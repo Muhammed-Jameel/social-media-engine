@@ -1,4 +1,4 @@
-# AURENDOR Design Retrieval System
+# SOCIAL_MEDIA_PLUGIN Design Retrieval System
 
 **Status:** local knowledge base and deterministic retriever implemented; production art-direction integration not yet proven  
 **Schema version:** `1.0.0`  
@@ -40,7 +40,7 @@ communication objective + audience + language
   -> block if evidence is too thin or too homogeneous
   -> hash and persist a design-knowledge packet
   -> Art Director develops 3–6 original concepts
-  -> generator receives principles, AURENDOR rules, and original concept only
+  -> generator receives principles, SOCIAL_MEDIA_PLUGIN rules, and original concept only
   -> authorized critics compare final pixels with relevant professional anchors
   -> originality reviewer inspects nearest corpus candidates
 ```
@@ -101,21 +101,21 @@ visualFamilies: []
 languages: [ar, en]
 anthropomorphismLevels: []
 strongReferenceIds: []
-aurendorApplication: string
+socialMediaPluginApplication: string
 retrievalTags: []
 mustNotCopy: string
 ```
 
 Vague labels such as “clean,” “bold,” or “professional” do not qualify as principles.
 
-### AURENDOR rules
+### SOCIAL_MEDIA_PLUGIN rules
 
 The professional packet is interpreted through, never substituted for:
 
-- [visual-grammar.yaml](../aurendor/visual-grammar.yaml);
-- [character-system.yaml](../aurendor/character-system.yaml);
-- [forbidden-patterns.yaml](../aurendor/forbidden-patterns.yaml);
-- [AURENDOR_VISUAL_LANGUAGE.md](./AURENDOR_VISUAL_LANGUAGE.md);
+- [visual-grammar.yaml](../social-media-plugin/visual-grammar.yaml);
+- [character-system.yaml](../social-media-plugin/character-system.yaml);
+- [forbidden-patterns.yaml](../social-media-plugin/forbidden-patterns.yaml);
+- [SOCIAL_MEDIA_PLUGIN_VISUAL_LANGUAGE.md](./SOCIAL_MEDIA_PLUGIN_VISUAL_LANGUAGE.md);
 - [ARABIC_DESIGN_RULES.md](./ARABIC_DESIGN_RULES.md).
 
 External references cannot modify brand truth, workflow state, provider permissions, or publishing policy.
@@ -211,8 +211,8 @@ The packet deliberately separates two contexts.
 
 The generator receives:
 
-- original AURENDOR concept and visual specification;
-- extracted `aurendorApplication` decisions;
+- original SOCIAL_MEDIA_PLUGIN concept and visual specification;
+- extracted `socialMediaPluginApplication` decisions;
 - `whyItWorks` reasoning;
 - explicit `mustNotCopy` boundaries;
 - stable reference IDs for audit;
@@ -222,7 +222,7 @@ Studio, artist, campaign, and client names are stripped from generation prompts.
 
 ### Critic context
 
-An authorized local critic may receive the final AURENDOR pixels plus selected professional anchor pixels and their comparison dimensions. The question is whether the level of visual thinking and execution is comparable—not whether the designs look alike.
+An authorized local critic may receive the final SOCIAL_MEDIA_PLUGIN pixels plus selected professional anchor pixels and their comparison dimensions. The question is whether the level of visual thinking and execution is comparable—not whether the designs look alike.
 
 Corpus paths are never exposed through public application routes. Raw reference pixels are not sent to an external critic or provider without explicit authorization and documented rights handling. A remote model may receive structured analysis when raw-pixel rights are not established.
 
@@ -237,7 +237,7 @@ For each concept, the Art Director records at least three `ReferencePrincipleUse
 - expression that must not be copied;
 - rights state `REFERENCE_ONLY`.
 
-The concept must independently answer the fifteen questions defined by the rebuild mission: communication, audience, feeling, two-second understanding, one visual idea, textless meaning, metaphor, anthropomorphism, composition, hierarchy, AURENDOR rules, reference principles, exclusions, distinctiveness, and professional rationale.
+The concept must independently answer the fifteen questions defined by the rebuild mission: communication, audience, feeling, two-second understanding, one visual idea, textless meaning, metaphor, anthropomorphism, composition, hierarchy, SOCIAL_MEDIA_PLUGIN rules, reference principles, exclusions, distinctiveness, and professional rationale.
 
 Generate `3–6` materially different candidates and use pairwise concept selection before asset polish. Retrieval must not collapse concept diversity: different candidates should not all translate the same reference into nearby compositions.
 
@@ -266,7 +266,7 @@ The BUCK “agent-first inquiry” finding documented in [ANTHROPOMORPHIC_RESEAR
 
 External content may never:
 
-- change AURENDOR brand truth;
+- change SOCIAL_MEDIA_PLUGIN brand truth;
 - authorize publication or provider use;
 - modify workflow or pause state;
 - override anti-copy controls;

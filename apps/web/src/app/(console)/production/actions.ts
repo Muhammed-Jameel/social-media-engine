@@ -1,7 +1,7 @@
 "use server";
 import { randomUUID } from "node:crypto";
-import { getDatabase, projectRoot } from "@aurendor/db/runtime";
-import { currentPackage, decideProduction, loadProductionJob, saveProductionJob, verifyProductionBytes } from "@aurendor/engine";
+import { getDatabase, projectRoot } from "@social-media-plugin/db/runtime";
+import { currentPackage, decideProduction, loadProductionJob, saveProductionJob, verifyProductionBytes } from "@social-media-plugin/engine";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { requireOwner, isDemoMode } from "@/lib/auth";

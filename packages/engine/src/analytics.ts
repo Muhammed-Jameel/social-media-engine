@@ -1,4 +1,4 @@
-import type { MetricSnapshot } from "@aurendor/schemas";
+import type { MetricSnapshot } from "@social-media-plugin/schemas";
 
 export interface NormalizedRates {
   engagementRate: number | null;

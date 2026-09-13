@@ -1,4 +1,4 @@
-import { getDatabase, getRepository } from "@aurendor/db/runtime";
+import { getDatabase, getRepository } from "@social-media-plugin/db/runtime";
 import { isDemoMode } from "@/lib/auth";
 
 export const dynamic = "force-dynamic";
@@ -7,8 +7,8 @@ export async function GET() {
   const checkedAt = new Date().toISOString();
   const publishingFlagRequested = process.env.PRODUCTION_PUBLISHING_ENABLED === "true";
   const postizConfigured = Boolean(process.env.POSTIZ_API_URL?.trim() && process.env.POSTIZ_API_KEY?.trim());
-  const environmentPauseRequested = process.env.SOCIAL_ENGINE_PAUSED === "true" || process.env.SOCIAL_MEDIA_ENGINE_PAUSED === "true" || process.env.AURENDOR_ENGINE_PAUSED === "true";
-  const environmentCreativeProductionPauseRequested = process.env.SOCIAL_ENGINE_CREATIVE_PRODUCTION_PAUSED === "true" || process.env.SOCIAL_MEDIA_CREATIVE_PRODUCTION_PAUSED === "true" || process.env.AURENDOR_CREATIVE_PRODUCTION_PAUSED === "true";
+  const environmentPauseRequested = process.env.SOCIAL_ENGINE_PAUSED === "true" || process.env.SOCIAL_MEDIA_ENGINE_PAUSED === "true" || process.env.SOCIAL_MEDIA_PLUGIN_ENGINE_PAUSED === "true";
+  const environmentCreativeProductionPauseRequested = process.env.SOCIAL_ENGINE_CREATIVE_PRODUCTION_PAUSED === "true" || process.env.SOCIAL_MEDIA_CREATIVE_PRODUCTION_PAUSED === "true" || process.env.SOCIAL_MEDIA_PLUGIN_CREATIVE_PRODUCTION_PAUSED === "true";
 
   try {
     const database = await getDatabase();
@@ -17,7 +17,7 @@ export async function GET() {
     const publishingEnabled = ownerAuthConfigured && publishingFlagRequested && process.env.DRY_RUN === "false" && !isDemoMode() && postizConfigured && !settings.dryRun && settings.productionPublishingEnabled && !settings.paused;
     return Response.json({
       status: "ok",
-      service: "aurendor-content-os",
+      service: "social-content-os",
       database: database.kind,
       mode: isDemoMode() ? "demo" : process.env.DRY_RUN === "false" ? "production-configuration-requested" : "offline-dry-run",
       publicationCapability: postizConfigured ? "postiz-supervised" : "dry-run-only",
@@ -31,6 +31,6 @@ export async function GET() {
       checkedAt,
     }, { headers: { "Cache-Control": "no-store" } });
   } catch {
-    return Response.json({ status: "degraded", service: "aurendor-content-os", database: "unavailable", checkedAt }, { status: 503, headers: { "Cache-Control": "no-store" } });
+    return Response.json({ status: "degraded", service: "social-content-os", database: "unavailable", checkedAt }, { status: 503, headers: { "Cache-Control": "no-store" } });
   }
 }

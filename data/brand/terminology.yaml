@@ -1,20 +1,20 @@
 schemaVersion: 1.0.0
 brandVersion: final-2026.1
 preferred:
-  Aurendor: master brand in prose
-  AURENDOR: formal display and Latin brand label
+  Social Media Plugin: master brand in prose
+  SOCIAL_MEDIA_PLUGIN: formal display and Latin brand label
   اورندور: Arabic brand rendering
   operational intelligence: category idea
   intelligent infrastructure: strategic description
   Bunyan Pro: current public name for the construction operations product
-  Aurendor Build: legacy product alias; do not use in new public-facing content
+  Social Media Plugin Build: legacy product alias; do not use in new public-facing content
 avoid:
-  - Aurendor Systems as the master brand name
+  - Social Media Plugin Systems as the master brand name
   - generic app developer
   - AI agency
   - cheap software
   - construction-only company
   - AI-powered as an unsupported decorative feature claim
 resolvedDecisions:
-  - term: Aurendor Build vs Bunyan Pro
-    decision: Use Bunyan Pro in all new public-facing work; retain Aurendor Build only as a historical alias.
+  - term: Social Media Plugin Build vs Bunyan Pro
+    decision: Use Bunyan Pro in all new public-facing work; retain Social Media Plugin Build only as a historical alias.

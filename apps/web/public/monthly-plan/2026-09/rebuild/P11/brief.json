@@ -174,7 +174,7 @@
   "tools": [
     "Actual Gemini web in Arc via CUA",
     "Independent Python Decimal calculation",
-    "AURENDOR static renderer",
+    "SOCIAL_MEDIA_PLUGIN static renderer",
     "Ghroob Arabic ITF / Dh Ranclo"
   ],
   "motion": "Static carousel. Do not call screenshot captures a recording. A later screen-recorded adaptation would require an actual capture and its own QA.",
@@ -215,7 +215,7 @@
   ],
   "productionStatus": "brief_ready_render_pending",
   "editorialReview": {
-    "method": "Writer factual and Arabic passes using aurendor-editorial-depth and performed experiment; independent critique requested. Final visual QA remains required.",
+    "method": "Writer factual and Arabic passes using social-editorial-depth and performed experiment; independent critique requested. Final visual QA remains required.",
     "depthGate": [
       {
         "criterion": "novelty",

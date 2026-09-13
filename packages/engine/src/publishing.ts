@@ -1,6 +1,6 @@
 import { createHash, randomUUID } from "node:crypto";
-import type { DatabaseClient, SqlRow } from "@aurendor/db/runtime";
-import { PublicationPlanSchema, type PublicationPlan } from "@aurendor/schemas";
+import type { DatabaseClient, SqlRow } from "@social-media-plugin/db/runtime";
+import { PublicationPlanSchema, type PublicationPlan } from "@social-media-plugin/schemas";
 import { publisherFor, type PublicationResult, type SocialPublisher } from "./integrations";
 
 export interface ExactOutboundPublication {

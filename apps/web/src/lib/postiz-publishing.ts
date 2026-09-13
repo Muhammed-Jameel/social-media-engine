@@ -3,7 +3,7 @@ import "server-only";
 import { createHash, randomUUID } from "node:crypto";
 import { basename } from "node:path";
 import {
-  AURENDOR_ORGANIZATION_ID,
+  SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID,
   cachePostizMedia,
   getCachedPostizMedia,
   getDatabase,
@@ -11,7 +11,7 @@ import {
   projectRoot,
   reservePostizBatch,
   updatePostizBatch,
-} from "@aurendor/db/runtime";
+} from "@social-media-plugin/db/runtime";
 import {
   PostizApiError,
   getPostizClient,
@@ -29,7 +29,7 @@ import {
   assertSynchronizedSelection,
   canonicalSha256,
   verifyProductionBytes,
-} from "@aurendor/engine";
+} from "@social-media-plugin/engine";
 
 const activePlatforms = ["instagram", "facebook", "linkedin", "tiktok", "x"] as const;
 type ActivePlatform = typeof activePlatforms[number];
@@ -187,7 +187,7 @@ export async function publishContentViaPostiz(input: PostizPublishInput): Promis
   // Package identity, not a fresh browser nonce, prevents duplicate schedules.
   const idempotencyKey = sha256(`postiz-v2:${input.contentItemId}:${canonicalSha256(pkg)}:${input.mode}`);
   const reservation = await database.transaction(async tx => {
-    await tx.query("SELECT id FROM campaign_production_jobs WHERE id=$1 AND organization_id=$2 FOR UPDATE", [item.id, AURENDOR_ORGANIZATION_ID]);
+    await tx.query("SELECT id FROM campaign_production_jobs WHERE id=$1 AND organization_id=$2 FOR UPDATE", [item.id, SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID]);
     const current = await loadProductionJob(tx, item.id);
     if (!current || canonicalSha256(assertApprovedPackage(current)) !== canonicalSha256(pkg)) throw new Error("Owner approval changed during upload. Nothing was scheduled.");
     return reservePostizBatch(tx, {
@@ -233,7 +233,7 @@ export async function publishContentViaPostiz(input: PostizPublishInput): Promis
          $8, $9)`,
       [
         item.id,
-        AURENDOR_ORGANIZATION_ID,
+        SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID,
         input.mode === "schedule" ? "SCHEDULED" : item.status,
         randomUUID(),
         input.actorId,

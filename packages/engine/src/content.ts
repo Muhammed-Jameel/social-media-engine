@@ -1,5 +1,5 @@
 import { randomUUID } from "node:crypto";
-import type { ContentFormat, Platform, RiskLevel } from "@aurendor/schemas";
+import type { ContentFormat, Platform, RiskLevel } from "@social-media-plugin/schemas";
 import { classifyApproval } from "./policy";
 
 const genericPatterns = [

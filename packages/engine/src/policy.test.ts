@@ -11,7 +11,7 @@ describe("publishing policy", () => {
   it("builds stable idempotency keys independent of hash order", () => {
     const base = {
       version: "v1",
-      organizationId: "aurendor",
+      organizationId: "social-media-plugin",
       contentItemId: "post-1",
       brandVersion: "final-2026.1",
       copyHash: "copy-hash",

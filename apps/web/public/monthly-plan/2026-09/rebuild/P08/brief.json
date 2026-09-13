@@ -71,7 +71,7 @@
   "sourcePacket": [
     {
       "id": "BUNYAN-PROGRESS-INDEPENDENT",
-      "source": "/Users/muhammedjameel/Documents/AURENDOR/apps/construction-tracker/src/components/engineer/EngineerStageCard.jsx",
+      "source": "/Users/muhammedjameel/Documents/SOCIAL_MEDIA_PLUGIN/apps/construction-tracker/src/components/engineer/EngineerStageCard.jsx",
       "sourceRevision": "97f85090cdb954c70ac44e509e89b8938d1e15be",
       "checked": "2026-09-10",
       "scope": "progress_percent save and StageChecklistItem update are separate"

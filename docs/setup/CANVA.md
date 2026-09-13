@@ -1,6 +1,6 @@
 # Canva Setup
 
-Canva is an optional creative authoring/export provider. It is not the social publishing layer. The deterministic AURENDOR SVG renderer remains the offline fallback when Canva is unavailable or the account lacks Brand Template/Autofill access.
+Canva is an optional creative authoring/export provider. It is not the social publishing layer. The deterministic SOCIAL_MEDIA_PLUGIN SVG renderer remains the offline fallback when Canva is unavailable or the account lacks Brand Template/Autofill access.
 
 ## Current state
 
@@ -12,7 +12,7 @@ Canva is an optional creative authoring/export provider. It is not the social pu
 
 ## Account setup checklist
 
-1. Create a dedicated Canva Connect integration owned by AURENDOR.
+1. Create a dedicated Canva Connect integration owned by SOCIAL_MEDIA_PLUGIN.
 2. Configure an exact redirect URI:
 
    ```text
@@ -30,7 +30,7 @@ Canva is an optional creative authoring/export provider. It is not the social pu
 
 Do not use production creative first. In a non-production workspace:
 
-1. Read the connected user/team identity and confirm it is the intended AURENDOR workspace.
+1. Read the connected user/team identity and confirm it is the intended SOCIAL_MEDIA_PLUGIN workspace.
 2. Create or copy a disposable design.
 3. Upload a licensed test asset.
 4. If entitled, autofill a disposable Brand Template with benign fixture data.
@@ -43,7 +43,7 @@ Provider success is not creative approval. Every Canva result must be rendered, 
 
 ## Brand-template requirements
 
-Any approved AURENDOR Canva template must use the current FINAL 2026 system:
+Any approved SOCIAL_MEDIA_PLUGIN Canva template must use the current FINAL 2026 system:
 
 - deep green `#003F35`
 - neon green `#0EDB23`

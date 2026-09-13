@@ -13,7 +13,7 @@ Safety and containment outrank throughput. Do not retry uncertain mutations, era
 ## First 15 minutes
 
 1. Name an incident lead and recorder; note detection time, environment, provider/account, and observed effect.
-2. Set `AURENDOR_ENGINE_PAUSED=true` and restart the affected web/worker runtime. Confirm the persisted/provider queues are not advancing.
+2. Set `SOCIAL_MEDIA_PLUGIN_ENGINE_PAUSED=true` and restart the affected web/worker runtime. Confirm the persisted/provider queues are not advancing.
 3. Disable only the affected capability/account when narrower containment is reliable; otherwise keep the global pause.
 4. If provider-side schedules exist, cancel them in the provider’s native interface. The engine pause cannot cancel remote schedules by itself.
 5. Revoke exposed credentials at the provider before investigating their contents. Rotate downstream secrets that could have been reached.
@@ -22,7 +22,7 @@ Safety and containment outrank throughput. Do not retry uncertain mutations, era
 
 ## Known credential action
 
-A Gemini API-key-like value was detected in `/Users/muhammedjameel/Documents/AURENDOR/.mcp.json`. Its value was not copied into this repository and must never be printed during remediation.
+A Gemini API-key-like value was detected in `/Users/muhammedjameel/Documents/SOCIAL_MEDIA_PLUGIN/.mcp.json`. Its value was not copied into this repository and must never be printed during remediation.
 
 Required owner action:
 

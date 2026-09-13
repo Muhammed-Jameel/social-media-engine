@@ -1,4 +1,4 @@
-# AURENDOR Anthropomorphic Design Research
+# SOCIAL_MEDIA_PLUGIN Anthropomorphic Design Research
 
 **Status:** research baseline, not an approved character bible  
 **Version:** 1.0.0  
@@ -7,7 +7,7 @@
 
 ## Executive decision
 
-AURENDOR should adopt a **hybrid anthropomorphic system** with this order of preference:
+SOCIAL_MEDIA_PLUGIN should adopt a **hybrid anthropomorphic system** with this order of preference:
 
 1. **Abstract anthropomorphism** as the primary mode.
 2. **Object and system behavior** as the frequent storytelling mode.
@@ -17,7 +17,7 @@ AURENDOR should adopt a **hybrid anthropomorphic system** with this order of pre
 
 The recommended system makes technology, data, agents, infrastructure, knowledge, and business processes behave intentionally without requiring a face. Coordination, friction, search, selection, failure, recovery, protection, and transformation can carry personality through composition and motion. Full characters should be earned by the message, not imposed by a template.
 
-This direction is most compatible with AURENDOR's desired qualities: intelligence, technological depth, capability, trust, precision, ambition, and "Digital Civilization." It also avoids the common failure mode in which anthropomorphism becomes a cute robot, smiling brain, generic helper, or permanent mascot pasted onto otherwise unrelated posts.
+This direction is most compatible with SOCIAL_MEDIA_PLUGIN's desired qualities: intelligence, technological depth, capability, trust, precision, ambition, and "Digital Civilization." It also avoids the common failure mode in which anthropomorphism becomes a cute robot, smiling brain, generic helper, or permanent mascot pasted onto otherwise unrelated posts.
 
 ## Evidence model
 
@@ -28,11 +28,11 @@ The sources below are used for different kinds of evidence:
 - **Standards or specialist institution:** technical or domain evidence. A draft document is labeled as such and is not treated as a final standard.
 - **Platform terms or legal source:** evidence for ownership, license, and reuse controls. Legal conclusions remain jurisdiction-specific and require counsel when risk is material.
 
-Professional references are quality anchors and research material only. None of the referenced visual expressions, characters, layouts, or brand assets are cleared for reuse by AURENDOR.
+Professional references are quality anchors and research material only. None of the referenced visual expressions, characters, layouts, or brand assets are cleared for reuse by SOCIAL_MEDIA_PLUGIN.
 
 ## Direction comparison
 
-| Direction | Strength | Principal risk | AURENDOR suitability | Decision |
+| Direction | Strength | Principal risk | SOCIAL_MEDIA_PLUGIN suitability | Decision |
 |---|---|---|---|---|
 | Permanent mascot | Fast recognition and continuity | Prematurely fixes personality; easy to become juvenile or repetitive | Low at this stage | Defer |
 | Character universe | Can map recurring entities to AI, data, knowledge, infrastructure, and organizations | Requires a large bible and rigorous consistency; can become lore instead of communication | Medium, after benchmarks | Explore later |
@@ -48,11 +48,11 @@ Source: [Pentagram: Chiba Tech](https://www.pentagram.com/work/chiba-tech)
 
 The identity turns one culturally grounded core form into a symbol, layout grid, typographic device, reactive system, and occasionally a mascot. Its most useful lesson is not the mascot itself; it is that recognizability comes from one ownable root behaving consistently across many applications.
 
-**Transferable principle:** derive the visual world from a genuine AURENDOR source, such as the modular `ae` logic and Digital Civilization positioning. Let the source govern grid, motion, typography relationships, and character behavior.
+**Transferable principle:** derive the visual world from a genuine SOCIAL_MEDIA_PLUGIN source, such as the modular `ae` logic and Digital Civilization positioning. Let the source govern grid, motion, typography relationships, and character behavior.
 
 **Do not copy:** Chibuggy's silhouette, square construction, Japanese cultural references, checker system, custom type behavior, compositions, or animation.
 
-**Suitability:** high as a systems-development method. The permanent-mascot conclusion does not transfer because AURENDOR does not have equivalent historic character equity.
+**Suitability:** high as a systems-development method. The permanent-mascot conclusion does not transfer because SOCIAL_MEDIA_PLUGIN does not have equivalent historic character equity.
 
 ### 2. MIND — Pentagram
 
@@ -100,7 +100,7 @@ The assistant is treated as a living system across product, campaign, web, app, 
 
 **Do not copy:** Kia's assistant form, organic/technical visual tension, gesture library, motion, or design philosophy.
 
-**Suitability:** high as a character-bible and motion-playbook reference if AURENDOR later adopts recurring entities.
+**Suitability:** high as a character-bible and motion-playbook reference if SOCIAL_MEDIA_PLUGIN later adopts recurring entities.
 
 ### 6. Notion AI Assistant — BUCK
 
@@ -112,7 +112,7 @@ The character maps product states to constrained expressions and transitions thr
 
 **Do not copy:** the face, illustration style, handmade execution, state expressions, or Rive implementation details.
 
-**Suitability:** medium. The behavior architecture is useful; the playful facial treatment is not an AURENDOR direction.
+**Suitability:** medium. The behavior architecture is useful; the playful facial treatment is not an SOCIAL_MEDIA_PLUGIN direction.
 
 ### 7. Notion "Think It. Make It." — BUCK
 
@@ -132,7 +132,7 @@ Source: [Pentagram: Abridge](https://www.pentagram.com/work/abridge)
 
 The identity uses the metaphoric potential of the name and aims to make a technically sophisticated system feel human and precise.
 
-**Transferable principle:** search AURENDOR's own language, product behavior, and customer tension for metaphors before importing generic AI symbolism.
+**Transferable principle:** search SOCIAL_MEDIA_PLUGIN's own language, product behavior, and customer tension for metaphors before importing generic AI symbolism.
 
 **Suitability:** high as a concept-development reference.
 
@@ -142,7 +142,7 @@ Source: [Pentagram: Cornerstone](https://www.pentagram.com/work/cornerstone)
 
 The character family helps a cloud HR and learning platform feel warm and approachable.
 
-**Boundary lesson:** a well-crafted system can still be strategically wrong for AURENDOR. Cornerstone's exuberant, friendly characters prioritize approachability over infrastructure authority.
+**Boundary lesson:** a well-crafted system can still be strategically wrong for SOCIAL_MEDIA_PLUGIN. Cornerstone's exuberant, friendly characters prioritize approachability over infrastructure authority.
 
 **Suitability:** useful as a negative boundary and character-family study, not as a style direction.
 
@@ -152,7 +152,7 @@ Sources: [Mailchimp brand assets](https://mailchimp.com/about/brand-assets/) and
 
 Mailchimp demonstrates that an established mascot requires exact expression, spacing, trademark, voice, and usage rules. Its official guidance also treats commercial social use of third-party work conservatively.
 
-**Transferable principle:** mascot equity is governed, not improvised. If AURENDOR eventually chooses a permanent entity, every pose, expression, transformation, role, and relationship to the wordmark requires a controlled system.
+**Transferable principle:** mascot equity is governed, not improvised. If SOCIAL_MEDIA_PLUGIN eventually chooses a permanent entity, every pose, expression, transformation, role, and relationship to the wordmark requires a controlled system.
 
 **Do not copy:** Freddie, the wink, line illustration, humor, palette, or voice.
 
@@ -164,14 +164,14 @@ Source: [D&AD Awards 2026 entry kit and judging criteria](https://media.dandad.o
 
 D&AD's current criteria prioritize an inspiring idea, brilliant execution, and fitness for purpose. For craft categories, the medium must elevate the idea. This is a stronger foundation than asking whether a design is merely attractive or brand-colored.
 
-The AURENDOR concept gate should therefore ask, in order:
+The SOCIAL_MEDIA_PLUGIN concept gate should therefore ask, in order:
 
 1. Does the concept solve the communication problem?
 2. Is the visual idea specific enough to be ownable?
 3. Does the chosen medium make the idea stronger?
 4. Can the intended audience understand the main action within roughly two seconds?
 5. Is the execution comparable to the relevant professional reference cluster?
-6. Is it recognizably AURENDOR without depending on the logo?
+6. Is it recognizably SOCIAL_MEDIA_PLUGIN without depending on the logo?
 
 ## Arabic-first anchors
 
@@ -229,13 +229,13 @@ Every anthropomorphic concept must record:
 - what real capability is being represented;
 - what limitation or uncertainty the depiction could hide;
 - whether the entity appears sentient, empathetic, omniscient, or autonomous;
-- whether the visual overstates AURENDOR's actual product or service;
+- whether the visual overstates SOCIAL_MEDIA_PLUGIN's actual product or service;
 - whether a less human-like mechanism communicates the same idea more truthfully;
 - how failure, uncertainty, human oversight, and recovery are represented when relevant.
 
 Do not depict AI as emotionally understanding, morally authoritative, perfectly knowledgeable, or independently empowered when those implications are unsupported.
 
-## AURENDOR anthropomorphic grammar
+## SOCIAL_MEDIA_PLUGIN anthropomorphic grammar
 
 ### Levels
 
@@ -318,7 +318,7 @@ No recurring character may enter production without:
 
 ### Legal and platform basis
 
-Behance's [product-specific terms](https://wwwimages2.adobe.com/content/dam/cc/en/legal/servicetou/Behance-Product-Specific-Terms-en_US-20240618.pdf) state that creators retain rights to uploaded content. Public display and platform sharing do not grant AURENDOR production rights.
+Behance's [product-specific terms](https://wwwimages2.adobe.com/content/dam/cc/en/legal/servicetou/Behance-Product-Specific-Terms-en_US-20240618.pdf) state that creators retain rights to uploaded content. Public display and platform sharing do not grant SOCIAL_MEDIA_PLUGIN production rights.
 
 The [U.S. Copyright Office, 17 U.S.C. Section 102](https://www.copyright.gov/title17/92chap1.html) distinguishes ideas, processes, systems, concepts, and principles from protected expression. That distinction supports principle extraction but is not blanket permission to reproduce a composition, illustration, character, or other expressive work. Jurisdiction and facts matter.
 
@@ -335,8 +335,8 @@ The [U.S. Copyright Office, 17 U.S.C. Section 102](https://www.copyright.gov/tit
 
 - The corpus-analysis stage may inspect pixels.
 - The Art Director should normally receive structured principle extracts and small reference thumbnails for comparison, not a command to recreate an image.
-- The image generator should receive the original AURENDOR concept and visual specification. By default it should not receive raw copyrighted reference images.
-- Raw image input is permitted only for an AURENDOR-owned or explicitly licensed asset whose allowed transformations are recorded.
+- The image generator should receive the original SOCIAL_MEDIA_PLUGIN concept and visual specification. By default it should not receive raw copyrighted reference images.
+- Raw image input is permitted only for an SOCIAL_MEDIA_PLUGIN-owned or explicitly licensed asset whose allowed transformations are recorded.
 - Use at least three references from different creators or campaigns for a professional comparison packet when possible.
 - Prevent one reference or visual cluster from dominating a concept.
 - Remove artist, studio, campaign, client, and brand names from generation prompts.

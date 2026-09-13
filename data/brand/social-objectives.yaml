@@ -8,7 +8,7 @@ objectives:
     outcome: Demonstrate operational depth, applied AI judgment, and reliable regional execution.
     primaryKpis: [saves, shares, meaningful_comments, return_profile_visits]
   - key: demand-generation
-    outcome: Create informed conversations for Aurendor systems and Aurendor Build.
+    outcome: Create informed conversations for Social Media Plugin systems and Social Media Plugin Build.
     primaryKpis: [website_clicks, qualified_messages, leads]
   - key: learning
     outcome: Improve topic, hook, format, creative, and CTA choices from controlled evidence.

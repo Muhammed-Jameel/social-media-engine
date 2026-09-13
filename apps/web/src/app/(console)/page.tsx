@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ArrowRight, CalendarCheck2, ChevronRight, Lightbulb, ShieldAlert } from "lucide-react";
-import { getRepository } from "@aurendor/db/runtime";
+import { getRepository } from "@social-media-plugin/db/runtime";
 import { ContentCard } from "@/components/content-card";
 import { MetricCard } from "@/components/metric-card";
 import { PageHeader } from "@/components/page-header";

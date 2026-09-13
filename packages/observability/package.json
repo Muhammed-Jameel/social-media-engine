@@ -1,5 +1,5 @@
 {
-  "name": "@aurendor/observability",
+  "name": "@social-media-plugin/observability",
   "version": "0.1.0",
   "private": true,
   "type": "module",

@@ -6,7 +6,7 @@ This document describes the intended account preparation and the current limits 
 
 Before any supervised post:
 
-- verify the provider identity and exact AURENDOR account/Page/organization/channel;
+- verify the provider identity and exact SOCIAL_MEDIA_PLUGIN account/Page/organization/channel;
 - request least privilege and record granted scopes;
 - encrypt and test token refresh/revocation;
 - verify format, media, copy, scheduling, rate limits, and account-level API access;
@@ -20,7 +20,7 @@ Before any supervised post:
 
 Environment names are `META_APP_ID`, `META_APP_SECRET`, and `META_REDIRECT_URI`.
 
-1. Create a Meta app owned by AURENDOR.
+1. Create a Meta app owned by SOCIAL_MEDIA_PLUGIN.
 2. Confirm the Instagram account is professional and bind it through the supported Business Login route or a linked Facebook Page as appropriate.
 3. Request only the Page/account, publishing, insights, and comment scopes actually used; complete App Review/Advanced Access where required.
 4. Bind Facebook Page IDs and Instagram user IDs separately in the engine.
@@ -35,20 +35,20 @@ Comments may be ingested and classified after scope verification. The engine mus
 
 Environment names are `LINKEDIN_CLIENT_ID`, `LINKEDIN_CLIENT_SECRET`, and `LINKEDIN_REDIRECT_URI`.
 
-1. Create a LinkedIn application associated with the AURENDOR organization.
+1. Create a LinkedIn application associated with the SOCIAL_MEDIA_PLUGIN organization.
 2. Complete three-legged OAuth as an authorized organization administrator.
 3. Obtain the vetted Community Management access tier and scopes needed for organization posts/analytics.
 4. Bind the organization URN, not only the member who authenticated.
 5. Use an internal scheduler because the researched Posts API does not expose a future publish time.
 6. Represent organic multi-slide content as supported MultiImage or document content. Do not send the sponsored-only carousel media type for an organic post.
 
-Keep the capability unavailable until the actual AURENDOR organization passes an identity/read test and a sandbox or supervised create test.
+Keep the capability unavailable until the actual SOCIAL_MEDIA_PLUGIN organization passes an identity/read test and a sandbox or supervised create test.
 
 ## TikTok
 
 Environment names are `TIKTOK_CLIENT_KEY`, `TIKTOK_CLIENT_SECRET`, and `TIKTOK_REDIRECT_URI`.
 
-TikTok is intentionally **manual draft handoff only** for this internal AURENDOR utility. Current Direct Post audit guidance rejects private/internal account-management upload utilities as an acceptable public audited client, and unaudited posts are restricted. Do not relabel this limitation as a technical error or bypass it with a production flag.
+TikTok is intentionally **manual draft handoff only** for this internal SOCIAL_MEDIA_PLUGIN utility. Current Direct Post audit guidance rejects private/internal account-management upload utilities as an acceptable public audited client, and unaudited posts are restricted. Do not relabel this limitation as a technical error or bypass it with a production flag.
 
 If OAuth and upload-draft support are implemented:
 

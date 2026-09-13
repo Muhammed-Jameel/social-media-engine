@@ -58,7 +58,7 @@ const assets = {
 };
 
 const logo = (fill: string, className = "brand-logo") =>
-  `<svg class="${className}" viewBox="0 0 414.84 85.88" aria-label="AURENDOR">${renderCanonicalHorizontalLogo(fill, 0, 0, 414.84)}</svg>`;
+  `<svg class="${className}" viewBox="0 0 414.84 85.88" aria-label="SOCIAL_MEDIA_PLUGIN">${renderCanonicalHorizontalLogo(fill, 0, 0, 414.84)}</svg>`;
 
 interface BenchmarkDefinition {
   id: string;
@@ -125,7 +125,7 @@ const benchmarks: BenchmarkDefinition[] = [
     referenceIds: ["ref_51e708951ea61f18", "ref_6dd0a9246092f4d5", "ref_8871f98455278188"],
     principleIds: ["STORY_ONE_VERB", "COMP_FOCAL_DOMINANCE", "AR_COMPOSE_RTL_FIRST"],
     copy: ["لا تحتاج شركتك", "إلى مزيد من الأدوات", "بل تحتاج إلى سياق يظلّ متصلًا من القرار إلى التنفيذ."],
-    assetProvenance: ["Original AURENDOR image generation: context-handoff-round3.png; contact geometry rebuilt after round-two pixel critique; no reference pixels supplied."],
+    assetProvenance: ["Original SOCIAL_MEDIA_PLUGIN image generation: context-handoff-round3.png; contact geometry rebuilt after round-two pixel critique; no reference pixels supplied."],
     html: shell(`<main class="canvas ar" lang="ar" dir="rtl">
       <img class="hero" src="${assets.context}" alt=""/>
       <section style="position:absolute;z-index:5;right:64px;top:76px;width:900px">
@@ -150,7 +150,7 @@ const benchmarks: BenchmarkDefinition[] = [
     referenceIds: ["ref_4afce40fe49062b6", "ref_a549cc94cfd3fc44", "ref_79573233e0b609f3"],
     principleIds: ["IMAGE_UI_AS_PROOF", "COMP_SEMANTIC_DEPTH", "COLOR_MATERIAL_LIGHT_BEFORE_GLOW"],
     copy: ["الإجابة وحدها", "لا تكفي", "المهم أن تعود ومعها أدلّتها.", "RAG · مسار الدليل · ٠٢"],
-    assetProvenance: ["Original AURENDOR image generation: rag-evidence-retrieval.png; physical ledges, source slip, eyelet, cord, and floor contact rebuilt after round-two pixel critique; no reference pixels supplied."],
+    assetProvenance: ["Original SOCIAL_MEDIA_PLUGIN image generation: rag-evidence-retrieval.png; physical ledges, source slip, eyelet, cord, and floor contact rebuilt after round-two pixel critique; no reference pixels supplied."],
     html: shell(`<main class="canvas ar" lang="ar" dir="rtl" style="background:#061F19;color:#F4F8F5">
       <img class="hero" src="${assets.rag}" alt=""/>
       <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,28,22,.98) 0%,rgba(4,28,22,.82) 34%,rgba(4,28,22,.08) 62%)"></div>
@@ -177,7 +177,7 @@ const benchmarks: BenchmarkDefinition[] = [
     referenceIds: ["ref_2ca843f06643d5f6", "ref_79573233e0b609f3", "ref_7ea2e6edfd24a465"],
     principleIds: ["ANTHRO_BEHAVIOR_BEFORE_FACE", "ANTHRO_CAPABILITY_BOUNDARY_VISIBLE", "STORY_STATE_TRANSFORMATION"],
     copy: ["الأتمتة الموثوقة", "تُسلِّم المسؤولية بوضوح", "خطوة محددة · انتقال واضح · إيقاف ممكن"],
-    assetProvenance: ["Original AURENDOR image generation: custody-relay-round3.png; continuous track abandoned for three discrete stations, exactly one baton, and a physically blocking manual stop; no reference pixels supplied."],
+    assetProvenance: ["Original SOCIAL_MEDIA_PLUGIN image generation: custody-relay-round3.png; continuous track abandoned for three discrete stations, exactly one baton, and a physically blocking manual stop; no reference pixels supplied."],
     html: shell(`<main class="canvas ar" lang="ar" dir="rtl" style="background:#071B17;color:#F4F8F5">
       <img class="hero" src="${assets.custodyRelay}" alt=""/>
       <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(4,20,17,.98) 0%,rgba(4,20,17,.78) 29%,rgba(4,20,17,.04) 54%)"></div>
@@ -203,7 +203,7 @@ const benchmarks: BenchmarkDefinition[] = [
     referenceIds: ["ref_f5cec23c32415d6e", "ref_8684a4138ac5fc7a", "ref_6dd0a9246092f4d5"],
     principleIds: ["TYPE_DISPLAY_AS_COMPOSITION", "AR_SEMANTIC_LINE_BREAKS", "COLOR_SEMANTIC_NOT_SKIN"],
     copy: ["الأتمتة لا تُصلِح", "قرارًا غامضًا", "حدِّد القرار قبل أن تبني المسار."],
-    assetProvenance: ["Native typography and vector geometry; original AURENDOR composition."],
+    assetProvenance: ["Native typography and vector geometry; original SOCIAL_MEDIA_PLUGIN composition."],
     html: shell(`<main class="canvas ar" lang="ar" dir="rtl" style="background:#003F35;color:#F4F8F5">
       <div style="position:absolute;left:-72px;top:250px;font-family:Ghroob;font-size:820px;font-weight:700;line-height:.8;color:transparent;-webkit-text-stroke:10px rgba(119,255,112,.32);transform:rotate(-5deg)">؟</div>
       <svg style="position:absolute;inset:0;width:1080px;height:1350px" viewBox="0 0 1080 1350" aria-label="مسار يصطدم بنقطة السؤال ثم يلتزم بمخرج قرار محدد">
@@ -238,7 +238,7 @@ const benchmarks: BenchmarkDefinition[] = [
     referenceIds: ["ref_51e708951ea61f18", "ref_4afce40fe49062b6", "ref_7ea2e6edfd24a465"],
     principleIds: ["STORY_TENSION_THEN_RESOLUTION", "COMP_SYSTEM_VARIATION_NOT_TEMPLATE", "HIER_EVIDENCE_SUBORDINATED_NOT_HIDDEN"],
     copy: ["STOP CHASING STATUS.", "SEE THE NEXT ACTION.", "Illustrative operating pattern — not a client result."],
-    assetProvenance: ["Original AURENDOR image generation: status-to-next-action.png; illustrative pattern explicitly labelled; no reference pixels supplied."],
+    assetProvenance: ["Original SOCIAL_MEDIA_PLUGIN image generation: status-to-next-action.png; illustrative pattern explicitly labelled; no reference pixels supplied."],
     html: shell(`<main class="canvas en" style="background:#F4F8F5">
       <img class="hero" src="${assets.statusAction}" alt=""/>
       <div style="position:absolute;inset:0;background:linear-gradient(145deg,rgba(244,248,245,.98) 0%,rgba(244,248,245,.92) 29%,rgba(244,248,245,0) 53%)"></div>
@@ -304,7 +304,7 @@ const benchmarks: BenchmarkDefinition[] = [
     referenceIds: ["ref_a549cc94cfd3fc44", "ref_4afce40fe49062b6", "ref_7ea2e6edfd24a465"],
     principleIds: ["IMAGE_UI_AS_PROOF", "STORY_CONTEXTUAL_MICRODETAILS", "HIER_EVIDENCE_SUBORDINATED_NOT_HIDDEN"],
     copy: ["THE DECISION", "KEEPS ITS EVIDENCE", "Context · source · owner · next action"],
-    assetProvenance: ["Original AURENDOR image generation: evidence-rivet-round3.png; floating record route abandoned for an interlocked mineral block, evidence wafer, and glass provenance rivet; no reference pixels supplied."],
+    assetProvenance: ["Original SOCIAL_MEDIA_PLUGIN image generation: evidence-rivet-round3.png; floating record route abandoned for an interlocked mineral block, evidence wafer, and glass provenance rivet; no reference pixels supplied."],
     html: shell(`<main class="canvas en" style="background:#071B17;color:#F4F8F5">
       <img class="hero" src="${assets.evidenceRivet}" alt=""/>
       <section style="position:absolute;left:68px;top:70px;width:650px;z-index:5">
@@ -324,13 +324,13 @@ const benchmarks: BenchmarkDefinition[] = [
     visualFamily: "announcement",
     imageryMode: "typography-led",
     anthropomorphismLevel: 0,
-    twoSecondTakeaway: "AURENDOR is opening a serious field-notes series.",
+    twoSecondTakeaway: "SOCIAL_MEDIA_PLUGIN is opening a serious field-notes series.",
     selectedRoute: "A filing aperture reveals one charged note inside a quiet editorial field",
     routesConsidered: sharedRoutes("A filing aperture reveals one charged note inside a quiet editorial field", "announcement"),
     referenceIds: ["ref_f5cec23c32415d6e", "ref_7ea2e6edfd24a465", "ref_8684a4138ac5fc7a"],
     principleIds: ["TYPE_DISPLAY_AS_COMPOSITION", "COMP_PURPOSEFUL_CROP", "HIER_LOGO_QUIET_AUTHORITY"],
-    copy: ["FIELD NOTES", "OPERATING INTELLIGENCE, WITHOUT THE THEATER", "A new AURENDOR series"],
-    assetProvenance: ["Native typography and vector aperture; original AURENDOR composition."],
+    copy: ["FIELD NOTES", "OPERATING INTELLIGENCE, WITHOUT THE THEATER", "A new SOCIAL_MEDIA_PLUGIN series"],
+    assetProvenance: ["Native typography and vector aperture; original SOCIAL_MEDIA_PLUGIN composition."],
     html: shell(`<main class="canvas en" style="background:#F4F8F5">
       <div style="position:absolute;left:0;top:0;width:365px;height:100%;background:#DDE8E0"></div>
       <div style="position:absolute;left:110px;top:126px;width:840px;height:970px;border:34px solid #003F35;box-shadow:18px 18px 0 #0EDB23">
@@ -343,7 +343,7 @@ const benchmarks: BenchmarkDefinition[] = [
         </div>
         <div class="reading" style="position:absolute;left:36px;right:38px;bottom:55px;font-size:58px;font-weight:600;line-height:1.02;letter-spacing:-2px;color:#003F35">OPERATING INTELLIGENCE,<br/><span style="color:#0A6B46">WITHOUT THE THEATER.</span></div>
       </div>
-      <div class="reading" style="position:absolute;left:110px;bottom:86px;font-size:42px;color:#546E61">A new AURENDOR series</div>
+      <div class="reading" style="position:absolute;left:110px;bottom:86px;font-size:42px;color:#546E61">A new SOCIAL_MEDIA_PLUGIN series</div>
       ${logo("#003F35")}
       <style>.brand-logo{right:72px;bottom:58px;width:164px}</style>
     </main>`, "Field notes"),
@@ -362,7 +362,7 @@ const benchmarks: BenchmarkDefinition[] = [
     referenceIds: ["ref_4afce40fe49062b6", "ref_8871f98455278188", "ref_8ef6ff7e70837523"],
     principleIds: ["AR_COMPOSE_RTL_FIRST", "COMP_SYSTEM_VARIATION_NOT_TEMPLATE", "STORY_ONE_VERB"],
     copy: ["قبل أن تؤتمت،", "اسأل: أين القرار؟", "القرار الذي يغيّر سير العمل", "١ من ٣"],
-    assetProvenance: ["Native Arabic typography and vector mechanism; original AURENDOR carousel system."],
+    assetProvenance: ["Native Arabic typography and vector mechanism; original SOCIAL_MEDIA_PLUGIN carousel system."],
     html: shell(`<main class="canvas ar" lang="ar" dir="rtl" style="background:#F4F8F5">
       <div class="micro" style="position:absolute;right:70px;top:70px;color:#0A6B46">قبل الأتمتة · ١ من ٣</div>
       <section style="position:absolute;right:70px;top:160px;width:820px"><h1 style="font-size:114px;line-height:.9;margin:0">قبل أن تؤتمت،<br/><span style="color:#0A6B46">اسأل: أين القرار؟</span></h1></section>
@@ -396,7 +396,7 @@ const benchmarks: BenchmarkDefinition[] = [
     referenceIds: ["ref_4afce40fe49062b6", "ref_3991533a0cc6d024", "ref_7ea2e6edfd24a465"],
     principleIds: ["COMP_SEMANTIC_DEPTH", "HIER_THREE_BEATS_MAX", "AR_SEMANTIC_LINE_BREAKS"],
     copy: ["ما الذي يدخل؟", "طلب جديد", "ما الذي يخرج؟", "ملف مراجعة موثّق", "حدِّد المدخلات والمخرجات قبل أن تبني المسار", "٢ من ٣"],
-    assetProvenance: ["Native Arabic typography and vector boundary; original AURENDOR carousel system."],
+    assetProvenance: ["Native Arabic typography and vector boundary; original SOCIAL_MEDIA_PLUGIN carousel system."],
     html: shell(`<main class="canvas ar" lang="ar" dir="rtl" style="background:#003F35;color:#F4F8F5">
       <div class="micro" style="position:absolute;right:70px;top:70px;color:#77FF70">قبل الأتمتة · ٢ من ٣</div>
       <div style="position:absolute;left:70px;top:190px;width:940px;height:650px">
@@ -436,7 +436,7 @@ const benchmarks: BenchmarkDefinition[] = [
     referenceIds: ["ref_2ca843f06643d5f6", "ref_4afce40fe49062b6", "ref_8ef6ff7e70837523"],
     principleIds: ["ANTHRO_CAPABILITY_BOUNDARY_VISIBLE", "STORY_TENSION_THEN_RESOLUTION", "AR_COMPOSE_RTL_FIRST"],
     copy: ["ومن المسؤول", "عن إيقاف النظام؟", "نقطة إيقاف بشرية", "الموثوقية تبدأ حين يستطيع الإنسان إيقاف النظام.", "٣ من ٣"],
-    assetProvenance: ["Native Arabic typography and vector stop mechanism; original AURENDOR carousel system."],
+    assetProvenance: ["Native Arabic typography and vector stop mechanism; original SOCIAL_MEDIA_PLUGIN carousel system."],
     html: shell(`<main class="canvas ar" lang="ar" dir="rtl" style="background:#EAF1EC">
       <div class="micro" style="position:absolute;right:70px;top:70px;color:#0A6B46">قبل الأتمتة · ٣ من ٣</div>
       <section style="position:absolute;right:70px;top:160px;width:880px"><h1 style="font-size:112px;line-height:.9;margin:0">ومن المسؤول<br/><span style="color:#0A6B46">عن إيقاف النظام؟</span></h1></section>
@@ -466,13 +466,13 @@ const benchmarks: BenchmarkDefinition[] = [
     visualFamily: "conceptual-hero",
     imageryMode: "bespoke-3d",
     anthropomorphismLevel: 0,
-    twoSecondTakeaway: "AURENDOR makes complexity answerable.",
+    twoSecondTakeaway: "SOCIAL_MEDIA_PLUGIN makes complexity answerable.",
     selectedRoute: "Calibrated Core — one precise sample preserves every layer of the complex whole",
     routesConsidered: sharedRoutes("Calibrated Core — one precise sample preserves every layer of the complex whole", "conceptual-hero"),
     referenceIds: ["ref_f5cec23c32415d6e", "ref_8684a4138ac5fc7a", "ref_7ea2e6edfd24a465"],
     principleIds: ["STORY_ONE_VERB", "COMP_FOCAL_DOMINANCE", "COLOR_MATERIAL_LIGHT_BEFORE_GLOW"],
     copy: ["MAKE COMPLEXITY", "ANSWERABLE."],
-    assetProvenance: ["Original AURENDOR image generation: complexity-core-round3.png; generic network route abandoned for one physically calibrated sample that preserves every layer; no reference pixels supplied."],
+    assetProvenance: ["Original SOCIAL_MEDIA_PLUGIN image generation: complexity-core-round3.png; generic network route abandoned for one physically calibrated sample that preserves every layer; no reference pixels supplied."],
     html: shell(`<main class="canvas en" style="background:#003F35;color:#F4F8F5">
       <img class="hero" src="${assets.complexityCore}" alt="" style="transform:translateX(150px);width:calc(100% - 40px);object-position:center"/>
       <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(3,35,29,.98) 0%,rgba(3,35,29,.84) 30%,rgba(3,35,29,.12) 58%),linear-gradient(180deg,rgba(3,35,29,.4),transparent 45%)"></div>

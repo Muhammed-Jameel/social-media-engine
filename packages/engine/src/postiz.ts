@@ -177,7 +177,7 @@ export function postizSettings(providerIdentifier: string, options: { tiktokDire
   const type = postizProviderType(providerIdentifier);
   if (!type) throw new Error(`Unsupported Postiz provider: ${providerIdentifier}`);
   if (type === "instagram" || type === "instagram-standalone") return { __type: type, post_type: "post" };
-  if (type === "linkedin" || type === "linkedin-page") return { __type: type, post_as_images_carousel: options.linkedinDocumentCarousel ?? false, ...(options.linkedinDocumentCarousel ? { carousel_name: options.carouselName || "AURENDOR" } : {}) };
+  if (type === "linkedin" || type === "linkedin-page") return { __type: type, post_as_images_carousel: options.linkedinDocumentCarousel ?? false, ...(options.linkedinDocumentCarousel ? { carousel_name: options.carouselName || "SOCIAL_MEDIA_PLUGIN" } : {}) };
   if (type === "tiktok") {
     return {
       __type: type,

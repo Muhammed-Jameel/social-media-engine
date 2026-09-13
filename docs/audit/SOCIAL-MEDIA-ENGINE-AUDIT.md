@@ -1,6 +1,6 @@
 # Social Media Engine Audit Report
 
-**Scope**: Stage-1 audit of ` /Users/muhammedjameel/Documents/AURENDOR/apps/social-media-engine` (read-only reference) and copy in ` /Users/muhammedjameel/Documents/AURENDOR/apps/social-media-engine-plugin` (write target).
+**Scope**: Stage-1 audit of ` /Users/muhammedjameel/Documents/SOCIAL_MEDIA_PLUGIN/apps/social-media-engine` (read-only reference) and copy in ` /Users/muhammedjameel/Documents/SOCIAL_MEDIA_PLUGIN/apps/social-media-engine-plugin` (write target).
 
 ## Execution method
 
@@ -59,7 +59,7 @@
 
 ## Independent-copy verification status
 
-- Destination path: ` /Users/muhammedjameel/Documents/AURENDOR/apps/social-media-engine-plugin` exists and contains a copied implementation.
+- Destination path: ` /Users/muhammedjameel/Documents/SOCIAL_MEDIA_PLUGIN/apps/social-media-engine-plugin` exists and contains a copied implementation.
 - Original remains read-only by instruction; no code edits were made there during this task segment.
 - Path-specific portability sweep found hard-coded references to the original path in non-executable docs/artifacts that are not part of active runtime code; these should be cleaned before re-distribution.
 

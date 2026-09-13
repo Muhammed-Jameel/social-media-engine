@@ -8,7 +8,7 @@
 - `/production` final owner review. Rejection requires a reason and invalidates approval; a fresh idea/editorial/design cycle follows. Owner approval can trigger deterministic scheduling when existing safety flags permit it.
 - Publishing bridge now rejects missing platform variants, partial channel selection, altered captions/accounts/time, stale hashes and legacy single-media approvals. LinkedIn carousel mode uses image-to-document settings. TikTok stays UPLOAD-only. Ambiguous or incomplete batch acknowledgements are reconciliation cases, not automatic retries.
 - Existing 20 September posts registered as production jobs. Original content and media were not removed or regenerated. No new owner approvals or publication dispatches were made.
-- App heartbeat `aurendor-monthly-content-production` created ACTIVE, daily at 09:00 local time (host configured Asia/Baghdad). Plans the next month from the 20th; bounded at two complete packages or twelve submissions per run. Production requires the local Codex host and tools; the VPS only runs Postiz's accepted schedules.
+- App heartbeat `social-monthly-content-production` created ACTIVE, daily at 09:00 local time (host configured Asia/Baghdad). Plans the next month from the 20th; bounded at two complete packages or twelve submissions per run. Production requires the local Codex host and tools; the VPS only runs Postiz's accepted schedules.
 
 ## Verification
 

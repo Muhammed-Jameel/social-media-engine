@@ -1,5 +1,5 @@
-import type { DatabaseClient, SqlRow } from "@aurendor/db/runtime";
-import { AURENDOR_ORGANIZATION_ID } from "@aurendor/db/runtime";
+import type { DatabaseClient, SqlRow } from "@social-media-plugin/db/runtime";
+import { SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID } from "@social-media-plugin/db/runtime";
 import { enqueueWorkflow } from "./workflows";
 import { nextMonth, planningDateForMonth } from "./state-machine";
 
@@ -64,22 +64,22 @@ export async function ensureScheduledWork(
     `SELECT o.timezone, e.planning_lead_days, e.paused
      FROM organizations o JOIN engine_settings e ON e.organization_id = o.id
      WHERE o.id = $1`,
-    [AURENDOR_ORGANIZATION_ID],
+    [SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID],
   );
   const row = settings.rows[0];
-  if (!row) throw new Error("AURENDOR scheduling settings are not seeded.");
+  if (!row) throw new Error("SOCIAL_MEDIA_PLUGIN scheduling settings are not seeded.");
   if (row.paused) return { monthlyWorkflowId: null, analyticsWorkflowId: null };
   const decision = monthlyTriggerDecision({ now, timezone: row.timezone, leadDays: row.planning_lead_days });
   let monthlyWorkflowId: string | null = null;
   if (decision.due) {
     const existing = await database.query<SqlRow & { id: string }>(
       "SELECT id FROM monthly_strategies WHERE organization_id = $1 AND month = $2 LIMIT 1",
-      [AURENDOR_ORGANIZATION_ID, decision.targetMonth],
+      [SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID, decision.targetMonth],
     );
     if (!existing.rows[0]) {
       monthlyWorkflowId = await enqueueWorkflow(database, {
         type: "MONTHLY_PLAN",
-        idempotencyKey: `monthly-plan:${AURENDOR_ORGANIZATION_ID}:${decision.targetMonth}`,
+        idempotencyKey: `monthly-plan:${SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID}:${decision.targetMonth}`,
         payload: {
           targetMonth: decision.targetMonth,
           timezone: row.timezone,
@@ -93,7 +93,7 @@ export async function ensureScheduledWork(
   }
   const analyticsWorkflowId = await enqueueWorkflow(database, {
     type: "ANALYTICS",
-    idempotencyKey: `analytics-daily:${AURENDOR_ORGANIZATION_ID}:${decision.localDate}`,
+    idempotencyKey: `analytics-daily:${SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID}:${decision.localDate}`,
     payload: {
       localDate: decision.localDate,
       timezone: row.timezone,

@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import type { DesignBrief } from "@aurendor/schemas";
+import type { DesignBrief } from "@social-media-plugin/schemas";
 import {
   contrastRatio,
   DeterministicSvgProvider,
@@ -21,7 +21,7 @@ const arabicLight: SocialSvgInput = {
   height: 1350,
 };
 
-describe("AURENDOR deterministic creative renderer", () => {
+describe("SOCIAL_MEDIA_PLUGIN deterministic creative renderer", () => {
   it("renders a stable fingerprint and escapes exact copy", () => {
     const input = { ...arabicLight, headline: "قرار < أسرع & أوضح" };
     const first = renderSocialSvg(input);
@@ -29,7 +29,7 @@ describe("AURENDOR deterministic creative renderer", () => {
 
     expect(fingerprintSvg(first)).toBe(fingerprintSvg(second));
     expect(first).toContain("قرار &lt; أسرع &amp; أوضح");
-    expect(first).toContain('data-aurendor-brand-version="final-2026.1"');
+    expect(first).toContain('data-social-brand-version="final-2026.1"');
     expect(first).toContain('text-anchor="middle" direction="rtl"');
     expect(first).toContain('data-role="canonical-logo"');
     expect(first).toContain('data-line-index="1"');
@@ -78,7 +78,7 @@ describe("AURENDOR deterministic creative renderer", () => {
   });
 });
 
-describe("AURENDOR offline creative evaluator", () => {
+describe("SOCIAL_MEDIA_PLUGIN offline creative evaluator", () => {
   it("clears objective gates but never claims a visual critic pass", () => {
     const svg = renderSocialSvg(arabicLight);
     const evaluation = evaluateTechnicalCreativePreflight({ input: arabicLight, svg, assetLicenseStatus: "NOT_REQUIRED" });
@@ -118,8 +118,8 @@ describe("AURENDOR offline creative evaluator", () => {
 
   it("hard-fails a tampered, noncanonical low-contrast palette", () => {
     const svg = renderSocialSvg(arabicLight)
-      .replace('data-aurendor-primary="#003F35"', 'data-aurendor-primary="#E7ECE8"')
-      .replace('data-aurendor-secondary="#3A5145"', 'data-aurendor-secondary="#DCE3DE"');
+      .replace('data-social-primary="#003F35"', 'data-social-primary="#E7ECE8"')
+      .replace('data-social-secondary="#3A5145"', 'data-social-secondary="#DCE3DE"');
     const evaluation = evaluateTechnicalCreativePreflight({ input: arabicLight, svg, assetLicenseStatus: "NOT_REQUIRED" });
     const codes = evaluation.hardFails.map((failure) => failure.code);
 

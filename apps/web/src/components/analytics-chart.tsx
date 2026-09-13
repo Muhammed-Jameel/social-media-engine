@@ -1,4 +1,4 @@
-import type { AnalyticsView } from "@aurendor/db/runtime";
+import type { AnalyticsView } from "@social-media-plugin/db/runtime";
 import { compactNumber, formatDate } from "@/lib/format";
 
 export function AnalyticsChart({ series }: { series: AnalyticsView["series"] }) {

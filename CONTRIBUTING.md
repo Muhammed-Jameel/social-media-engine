@@ -1,4 +1,4 @@
-# Contributing to AURENDOR Content OS
+# Contributing to SOCIAL_MEDIA_PLUGIN Content OS
 
 Thanks for contributing. This project is now prepared as a public repository, and we follow the workflow below for all external and internal contributors.
 

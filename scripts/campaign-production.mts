@@ -1,15 +1,15 @@
 import { readFile } from "node:fs/promises";
 import { resolve } from "node:path";
-import { AURENDOR_ORGANIZATION_ID, createDatabase, migrateDatabase, projectRoot } from "@aurendor/db";
+import { SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID, createDatabase, migrateDatabase, projectRoot } from "@social-media-plugin/db";
 import { isCreativeProductionPaused, isEnginePaused } from "../packages/db/src/ids";
-import { advanceProduction, CampaignSlotSchema, canonicalSha256, importCampaignPlan, listProductionJobs, loadProductionJob, saveProductionJob, StageSubmissionSchema, verifyProductionBytes } from "@aurendor/engine";
+import { advanceProduction, CampaignSlotSchema, canonicalSha256, importCampaignPlan, listProductionJobs, loadProductionJob, saveProductionJob, StageSubmissionSchema, verifyProductionBytes } from "@social-media-plugin/engine";
 
 const [command = "status", argument, artifactPath] = process.argv.slice(2);
 const db = await createDatabase();
 try {
   await migrateDatabase(db);
   if (command !== "status" && command !== "show") {
-    const settings = await db.query<{ paused: boolean }>("SELECT paused FROM engine_settings WHERE organization_id=$1", [AURENDOR_ORGANIZATION_ID]);
+    const settings = await db.query<{ paused: boolean }>("SELECT paused FROM engine_settings WHERE organization_id=$1", [SOCIAL_MEDIA_PLUGIN_ORGANIZATION_ID]);
     if (settings.rows[0]?.paused || isEnginePaused(process.env) || isCreativeProductionPaused(process.env)) throw new Error("Production is paused. Respect the owner's controls.");
   }
   if (command === "status") {

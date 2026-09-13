@@ -1,5 +1,5 @@
 import { createHash } from "node:crypto";
-import type { ApprovalClass, ContentItem, RiskLevel } from "@aurendor/schemas";
+import type { ApprovalClass, ContentItem, RiskLevel } from "@social-media-plugin/schemas";
 
 const itemApprovalSignals = [
   "pricing",

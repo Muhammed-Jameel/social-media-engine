@@ -13,7 +13,7 @@ families:
     bestContentTypes: [awareness, education, thought-leadership, service-explanation, storytelling]
     audience: [founders, operations-leaders, executives, technical-buyers]
     emotionalEffect: "Curiosity followed by recognition or resolution."
-    aurendorSuitability: very-high
+    socialMediaPluginSuitability: very-high
     role: primary
   - id: premium-identity-editorial
     observedClusters: [cluster_08, cluster_09, cluster_15, cluster_18]
@@ -23,7 +23,7 @@ families:
     bestContentTypes: [brand-building, announcement, editorial, thought-leadership]
     audience: [executives, partners, design-aware-technology-buyers]
     emotionalEffect: "Quiet authority and considered precision."
-    aurendorSuitability: high
+    socialMediaPluginSuitability: high
     role: supporting
   - id: product-system-story
     observedClusters: [cluster_04, cluster_08, cluster_11, cluster_20]
@@ -33,7 +33,7 @@ families:
     bestContentTypes: [product-introduction, service-explanation, case-study, conversion]
     audience: [operations-leaders, technical-buyers, prospective-clients]
     emotionalEffect: "Confidence that the promise is operationally real."
-    aurendorSuitability: high
+    socialMediaPluginSuitability: high
     role: primary
   - id: information-led-editorial
     observedClusters: [cluster_04, cluster_07, cluster_10, cluster_14]
@@ -43,7 +43,7 @@ families:
     bestContentTypes: [education, statistic, process, case-study, thought-leadership]
     audience: [founders, managers, practitioners]
     emotionalEffect: "Order, comprehension, and useful authority."
-    aurendorSuitability: high-with-concept-gate
+    socialMediaPluginSuitability: high-with-concept-gate
     role: primary
   - id: expressive-typographic-poster
     observedClusters: [cluster_03, cluster_05, cluster_06, cluster_09]
@@ -53,7 +53,7 @@ families:
     bestContentTypes: [announcement, event, editorial, brand-building]
     audience: [creative-community, younger-professionals, event-audiences]
     emotionalEffect: "Energy, confidence, and cultural immediacy."
-    aurendorSuitability: selective
+    socialMediaPluginSuitability: selective
     role: accent
   - id: behavior-led-anthropomorphism
     observedClusters: [cluster_04, cluster_12, cluster_14, cluster_20]
@@ -63,7 +63,7 @@ families:
     bestContentTypes: [education, service-explanation, storytelling, product-introduction]
     audience: [founders, nontechnical-buyers, practitioners]
     emotionalEffect: "Recognition and human-scale understanding without losing sophistication."
-    aurendorSuitability: very-high-levels-1-to-3
+    socialMediaPluginSuitability: very-high-levels-1-to-3
     role: primary
   - id: cinematic-technology-world
     observedClusters: [cluster_05, cluster_16, cluster_17, cluster_18]
@@ -73,7 +73,7 @@ families:
     bestContentTypes: [announcement, product-introduction, brand-building, storytelling]
     audience: [executives, partners, technology-buyers]
     emotionalEffect: "Capability, scale, and future-facing confidence."
-    aurendorSuitability: medium-with-cliche-filter
+    socialMediaPluginSuitability: medium-with-cliche-filter
     role: accent
   - id: arabic-market-concept-advertising
     observedClusters: [cluster_03, cluster_12, cluster_16, cluster_19]
@@ -83,7 +83,7 @@ families:
     bestContentTypes: [awareness, promotion, education, service-explanation, storytelling]
     audience: [Iraqi-and-regional-business-audiences]
     emotionalEffect: "Familiarity, wit, relevance, and trust."
-    aurendorSuitability: very-high-with-arabic-review
+    socialMediaPluginSuitability: very-high-with-arabic-review
     role: primary
   - id: high-density-promotional-board
     observedClusters: [cluster_02, cluster_05, cluster_06, cluster_13]
@@ -93,7 +93,7 @@ families:
     bestContentTypes: [internal-case-study-board]
     audience: [internal-reviewers]
     emotionalEffect: "Volume and energy, often at the expense of clarity."
-    aurendorSuitability: reject-as-production-family
+    socialMediaPluginSuitability: reject-as-production-family
     role: negative-anchor
 clusterInterpretation:
   cluster_01: "One black/static asset outlier; not a useful quality family."

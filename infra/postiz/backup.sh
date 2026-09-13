@@ -3,8 +3,8 @@ set -euo pipefail
 
 umask 077
 
-project_dir="${POSTIZ_PROJECT_DIR:-/opt/aurendor-postiz}"
-backup_root="${POSTIZ_BACKUP_DIR:-/var/backups/aurendor-postiz}"
+project_dir="${POSTIZ_PROJECT_DIR:-/opt/social-postiz}"
+backup_root="${POSTIZ_BACKUP_DIR:-/var/backups/social-postiz}"
 retention_days="${POSTIZ_BACKUP_RETENTION_DAYS:-14}"
 timestamp="$(date -u +%Y%m%dT%H%M%SZ)"
 destination="$backup_root/$timestamp"

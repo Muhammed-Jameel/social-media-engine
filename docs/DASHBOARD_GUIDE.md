@@ -1,11 +1,11 @@
-# AURENDOR Content OS — Simple Dashboard Guide
+# SOCIAL_MEDIA_PLUGIN Content OS — Simple Dashboard Guide
 
 ## Start the dashboard
 
 The project requires Node.js 22.13 or later. The repository pins Node.js 22.23.2 in `.nvmrc`.
 
 ```bash
-cd /Users/muhammedjameel/Documents/AURENDOR/apps/social-media-engine-plugin
+cd /Users/muhammedjameel/Documents/SOCIAL_MEDIA_PLUGIN/apps/social-media-engine-plugin
 nvm install
 nvm use
 pnpm install
@@ -31,7 +31,7 @@ Start `pnpm worker` in a second terminal only when you intentionally want queued
 The new Month 1 plan contains:
 
 - 20 scheduled releases.
-- 3 opening posts that introduce AURENDOR.
+- 3 opening posts that introduce SOCIAL_MEDIA_PLUGIN.
 - A repeating service story → Bunyan Pro story → independent value post cadence.
 - 14 carousels and 6 reels, with no single-image posts.
 - The first day contains three complete six-slide announcement carousels and six supporting Story frames.
@@ -64,7 +64,7 @@ An approval binds the exact copy and listed asset hashes. Material changes requi
 
 ### Analytics
 
-Shows qualified reach, learning notes, and format cohorts. Current values are synthetic demonstrations and must not be used as AURENDOR performance claims.
+Shows qualified reach, learning notes, and format cohorts. Current values are synthetic demonstrations and must not be used as SOCIAL_MEDIA_PLUGIN performance claims.
 
 ### Runs
 

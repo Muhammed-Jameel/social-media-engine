@@ -1,4 +1,4 @@
-# AURENDOR Arabic Design Rules
+# SOCIAL_MEDIA_PLUGIN Arabic Design Rules
 
 **Status:** active design specification; benchmark validation pending  
 **Brand version:** `final-2026.1`  
@@ -21,7 +21,7 @@ Therefore:
 
 - corpus references calibrate hierarchy, composition, and concept;
 - specialist sources inform script behavior;
-- only AURENDOR's final rendered pixels can prove production Arabic quality.
+- only SOCIAL_MEDIA_PLUGIN's final rendered pixels can prove production Arabic quality.
 
 The [W3C Arabic and Persian Layout Requirements](https://www.w3.org/TR/alreq/) is used as a technical QA reference for bidirectionality, shaping, ligatures, diacritics, numerals, punctuation, spacing, line breaking, justification, and baselines. It is a W3C Group Draft Note, not a finished aesthetic standard. Specialist precedents and limitations are recorded in [ANTHROPOMORPHIC_RESEARCH.md](./ANTHROPOMORPHIC_RESEARCH.md#arabic-first-anchors).
 
@@ -270,7 +270,7 @@ Reject the candidate if any of the following appears:
 - no independent Arabic critic on the exact current raster hash;
 - reference lettering, copy, or composition imitated too closely.
 
-These failures map to `FP-TYPE-001` through `FP-TYPE-004`, `FP-EVAL-002`, and `FP-REFERENCE-001` in [forbidden-patterns.yaml](../aurendor/forbidden-patterns.yaml). Numeric scores cannot override them.
+These failures map to `FP-TYPE-001` through `FP-TYPE-004`, `FP-EVAL-002`, and `FP-REFERENCE-001` in [forbidden-patterns.yaml](../social-media-plugin/forbidden-patterns.yaml). Numeric scores cannot override them.
 
 ## Acceptance standard
 

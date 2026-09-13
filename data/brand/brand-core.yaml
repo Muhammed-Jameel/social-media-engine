@@ -3,13 +3,13 @@ brandVersion: final-2026.1
 effectiveAt: 2026-08-19T00:00:00+03:00
 status: active
 name:
-  prose: Aurendor
-  formal: AURENDOR
+  prose: Social Media Plugin
+  formal: SOCIAL_MEDIA_PLUGIN
   arabic: اورندور
 positioning: B2B technology company building AI systems, intelligent automation, and operational intelligence infrastructure for complex work.
 category: Operational Intelligence Infrastructure
 bigIdea: Digital Civilization
-promise: When operations become complex, Aurendor brings structure, visibility, and control.
+promise: When operations become complex, Social Media Plugin brings structure, visibility, and control.
 mission: Design and deliver dependable digital systems that help organizations manage complexity with greater visibility, structure, and control.
 vision: Become a trusted builder of intelligent digital infrastructure for complex industries across the region and beyond.
 geography:
@@ -26,9 +26,9 @@ personality:
   isNot: [playful, flashy, startup-cute, trend-chasing, noisy, hype-driven]
 masterBrandLead: AI and automation first; construction is a product domain, not the company category.
 provenance:
-  - path: marketing/_context/AURENDOR_Brand_Identity_FINAL_2026.md
+  - path: marketing/_context/SOCIAL_MEDIA_PLUGIN_Brand_Identity_FINAL_2026.md
     authority: canonical
-  - path: marketing/_context/AURENDOR_Brand_Context.md
+  - path: marketing/_context/SOCIAL_MEDIA_PLUGIN_Brand_Context.md
     authority: high
   - path: marketing/new-brand/00-brand-strategy/brand-positioning.md
     authority: medium
