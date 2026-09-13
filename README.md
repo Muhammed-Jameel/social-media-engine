@@ -1,361 +1,271 @@
+<div align="center">
+
 # Social Media Engine
+### Everything social media, in one plugin.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Status-Ready%20for%20Public%20Use-4caf50?style=for-the-badge" alt="Ready for Public Use" />
-  <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="MIT License" />
-  <img src="https://img.shields.io/badge/Node-22.x-339933?style=for-the-badge&logo=node.js" alt="Node.js" />
-  <img src="https://img.shields.io/badge/pnpm-11.x-f69220?style=for-the-badge&logo=pnpm&logoColor=white" alt="pnpm" />
-</p>
+**A brand-first social media teammate for Codex and Claude.**
 
-**Language:** [English](README.md) · [العربية](README.ar.md) · [日本語](README.ja.md)
+[Getting started](#getting-started) · [What it does](#what-it-does) · [Workflow](#your-first-session) · [Safety](#safety-and-privacy) · [Contributing](CONTRIBUTING.md)
 
-Social Media Engine is an evidence-led, bilingual social media orchestration platform for strategy, content creation, human review, compliance-safe publishing, and analytics.
+**English** | [العربية](README.ar.md) | [日本語](README.ja.md)
 
-**Tagline:** everything social media, in one plugin.
-
-Built by **Aurendor** for public use by any brand or team.
-
-GitHub: [https://github.com/Muhammed-Jameel/social-media-engine](https://github.com/Muhammed-Jameel/social-media-engine)
+</div>
 
 ---
 
-## 📌 Table of contents
+## Built for small teams with serious standards
 
-1. [What this is](#-what-this-is)
-2. [What it does](#-what-it-does)
-3. [Core architecture](#-core-architecture)
-4. [Quick start](#-quick-start)
-5. [How to use](#-how-to-use)
-6. [Environment and configuration](#-environment-and-configuration)
-7. [Supervised publishing setup](#-supervised-publishing-setup)
-8. [Workflow and operations](#-workflow-and-operations)
-9. [Commands](#-commands)
-10. [Testing and quality checks](#-testing-and-quality-checks)
-11. [Repository map](#-repository-map)
-12. [Docs and reference](#-docs-and-reference)
-13. [Release status](#-release-status)
-14. [Contact](#-contact)
+For independent businesses, solo operators, creators, and small teams managing social
+media at a medium scale. Start with your brand, not a generic content template.
 
----
+Social Media Engine uses the model and creative tools available in your AI host.
+It combines guided onboarding, persistent brand memory, deliberate creative direction,
+platform-aware writing, review, and controlled delivery.
 
-## 🎯 What this is
+> **First release:** a local-first agent plugin, not a hosted SaaS app or an autonomous
+> posting bot. Planning and copy use your host's model. Actual media requires available
+> generation/rendering tools. Publishing and account data require your own integrations.
 
-Social Media Engine is designed as a safe, staged pipeline between AI-assisted content generation and social publishing.
+## What it does
 
-It connects:
+| Stage | Included |
+| :--- | :--- |
+| **Understand your brand** | Resumable questionnaire, guidelines, assets, voice, audience, goals and owner approval |
+| **Remember** | Separate brand profiles, source/rights notes, scoped feedback and persistent approved rules |
+| **Plan** | Monthly strategies, content pillars, briefs, dates and timezone-aware calendar records |
+| **Create** | Agent workflows for platform-specific copy, images, carousels and video |
+| **Review** | Local dashboard, actual asset previews, revision history, review records and owner approval |
+| **Deliver** | Approved manual exports; optional Postiz account discovery, uploads and dispatch |
+| **Learn** | Evidence-backed metric snapshots, reporting workflow and approved feedback rules |
 
-1. A deterministic content generation layer.
-2. Human-in-the-loop approvals.
-3. Structured publishing controls with idempotency and traceability.
-4. Provider connectors that stay disabled by default.
+### Platform support, without inflated promises
 
----
+Instagram, Facebook and TikTok are primary workflow targets. Planning and manual delivery
+can be adapted to other networks. Automated posting depends on a connected Postiz
+integration, its current format support, account eligibility and provider settings.
 
-## 👥 Who should use this
+A connected account does not guarantee every format or permission. TikTok upload mode
+may require completion in TikTok. Analytics and inbox access vary by platform.
+The bundled runtime is **not** a universal OAuth service or unified social inbox.
 
-Everyone who needs to run social media at medium scale:
+## Getting started
 
-1. Small marketing teams.
-2. One-person companies.
-3. Freelancers managing multiple accounts.
-4. Agencies and service providers with repeatable social workflows.
+### 1. Requirements
 
----
+- Codex or Claude with plugins/skills, local execution and access to a working folder.
+- Python **3.10+**, with an IANA timezone database. Windows installations without one can
+  install `tzdata`: `python -m pip install tzdata`.
+- Your own brand files and a private folder for content and memory.
+- Optional: image/video/design tools and your own Postiz cloud or self-hosted account.
 
-## ✅ What it does
+There is no required OpenAI API key, bundled model subscription, model credit, or
+mandatory paid creative service. Host subscriptions and third-party services are separate.
 
-- Generates monthly plan artifacts and post schedules from brand evidence and strategy inputs.
-- Creates bilingual (Arabic + English) draft content through deterministic, reproducible workflows.
-- Supports all major social media providers, with first-class flows for Instagram, Facebook, and TikTok.
-- Runs design and quality workflows including originality checks and review loops.
-- Stores publication intent, approvals, IDs, hashes, compliance artifacts, and execution state.
-- Provides a dashboard to inspect and approve every step before publication.
-- Supports supervised provider publishing through a self-hosted Postiz bridge.
-- Keeps all defaults non-destructive so teams can validate safely before going live.
+### 2. Install in your host
 
----
+<details open>
+<summary><strong>Codex</strong></summary>
 
-## 🧱 Core architecture
+This repository includes a Codex marketplace at `.agents/plugins/marketplace.json`
+and a native plugin manifest inside `plugins/social-media-engine/.codex-plugin/`.
+
+Use your Codex installation's plugin/marketplace management to add this repository:
 
 ```text
-┌─────────────────────────┐
-│    Strategy Inputs      │
-└────────────┬────────────┘
-             │
-┌────────────▼────────────┐
-│  Content Engine         │
-│  (packages/engine)      │
-└────────────┬────────────┘
-             │
-┌────────────▼────────────┐
-│  Human Review + Gates   │
-│  (apps/web + apps/worker)│
-└────────────┬────────────┘
-             │
-┌────────────▼────────────┐
-│  Publishing Gateway     │
-│  (Postiz bridge)        │
-└─────────────────────────┘
+Muhammed-Jameel/social-media-engine
 ```
 
----
+Select **Social Media Engine** and install/enable it. For workspace-managed installations,
+an administrator may need to import or allow the GitHub marketplace first.
+Host availability and installation UI depend on the current account/app.
+See [OpenAI's plugin import documentation](https://help.openai.com/en/articles/20001504).
 
-## 🚀 Quick start
+For a local checkout, point the host's local marketplace loader at the repository root.
+The plugin source itself is `plugins/social-media-engine`, not the old application.
 
-### 0) Project URL
+</details>
 
-- Public repository: [social-media-engine](https://github.com/Muhammed-Jameel/social-media-engine)
+<details>
+<summary><strong>Claude Code</strong></summary>
 
-### 1) Prerequisites
-
-1. Node.js `22.13+` (repo pins `22.23.2` in `.nvmrc`)
-2. pnpm `11.19.0`
-3. Docker (only required for Postiz local services)
-
-### 2) Clone and install
-
-```bash
- git clone https://github.com/Muhammed-Jameel/social-media-engine.git
- cd social-media-engine
-nvm install
-nvm use
-corepack enable
-corepack prepare pnpm@11.19.0 --activate
-pnpm install
-cp .env.example .env.local
-pnpm lint
-pnpm typecheck
-pnpm test
-pnpm build
-pnpm dev
+```text
+/plugin marketplace add Muhammed-Jameel/social-media-engine
+/plugin install social-media-engine@social-media-engine
 ```
 
-Visit:
+Invoke `/social-media-engine:social-media-engine` or ask Claude to use the plugin.
+For local development:
 
-- Dashboard: [http://localhost:3000](http://localhost:3000)
-
-> If you want to add a demo video later, add a link here in a short "Demo" section.
-
-### 3) Start the worker (in second terminal)
-
-```bash
-pnpm worker
+```sh
+claude --plugin-dir ./plugins/social-media-engine
 ```
 
----
+See [Claude's plugin documentation](https://code.claude.com/docs/en/plugins).
 
-## 🧭 How to use
+</details>
 
-### A) Safe local mode (recommended first run)
+<details>
+<summary><strong>Claude Cowork</strong></summary>
 
-1. Keep demo defaults enabled.
-2. Import local data and run the generated September plan.
-3. Review every draft in the dashboard.
-4. Approve/revise before publication.
-5. Verify audit output and operation logs.
+Use Cowork's plugin customization/add-plugin flow where supported by your account.
+Add this GitHub marketplace if that option is available, or upload the plugin ZIP from
+the project's releases. The ZIP must contain the plugin's `.claude-plugin/`, `skills/`,
+`scripts/`, and `assets/` at its root, not the entire GitHub source archive.
 
-### B) Daily operating pattern
+Give Cowork access to the intended working folder. Its execution environment must have
+Python and a writable local workspace. If the host does not support a loopback browser
+preview, review exported files in the host instead of claiming the dashboard opened.
 
-1. Open dashboard.
-2. Trigger or inspect monthly plan regeneration.
-3. Move items through:
-   - Draft
-   - Review
-   - Approval
-   - Supervised publish
-4. Run post-run checks and quality review.
-5. Keep metrics collection and evidence separation clear.
+</details>
 
-### C) For teams and agencies
+### 3. Start your brand workspace
 
-1. Keep the same core engine.
-2. Update `data/brand` with your own evidence pack.
-3. Configure your preferred post templates and approval roles.
-4. Keep ownership and policy files aligned with team requirements.
-
----
-
-## ⚙️ Environment and configuration
-
-### Safe defaults (already shipped)
-
-- `DRY_RUN=true`
-- `PRODUCTION_PUBLISHING_ENABLED=false`
-- `DEMO_MODE=true`
-
-These defaults prevent external publishing.
-
-### Deployment model
-
-This is an open-source plugin and can be deployed in any style your team needs:
-
-1. Local-only setup for private strategy/review environments.
-2. Shared internal hosting for small distributed teams.
-3. Self-hosted production stacks with your preferred infrastructure.
-4. Any custom deployment architecture your organization supports.
-
-Provider connectors are available through the same deployment flow, with additional deployment prerequisites driven by your target stack.
-
-### Environment checklist
-
-1. Copy `.env.example` → `.env.local`
-2. Fill only integration fields you are ready to test
-3. Keep secrets out of git history
-4. Confirm database and encryption values before production trials
-5. Run the secret validation script before any provider onboarding
-
-```bash
-pnpm exec tsx scripts/check-secrets.mts
+```text
+Use Social Media Engine to set up my brand.
+My working folder is [your private folder].
+Ask me the onboarding questions, review my brand files,
+and get my approval before creating content.
 ```
 
----
+The skill asks only relevant missing questions and saves each group. You do not need
+to fill in a giant JSON file. Use a different brand ID for each brand.
 
-## 📣 Supervised publishing setup
+## Your first session
 
-Enable this only after internal policy signoff.
-
-1. Follow [docs/setup/POSTIZ.md](docs/setup/POSTIZ.md)
-2. Start Postiz services:
-
-```bash
-pnpm postiz:up
+```text
+Brand questionnaire + assets
+             |
+       Approved brand brief
+             |
+     Strategy + monthly plan
+             |
+   Platform copy + actual media
+             |
+ Independent review + revisions
+             |
+        Owner approval
+             |
+     Export or confirmed send
+             |
+    Real evidence + feedback
 ```
 
-3. Create admin at [http://localhost:4007](http://localhost:4007)
-4. Authorize your accounts and provider apps.
-5. Flip publishing flags intentionally:
-   - `DRY_RUN=false`
-   - `PRODUCTION_PUBLISHING_ENABLED=true`
-   - `DEMO_MODE=false`
-6. Resume the review flow and only publish approved items.
+1. **Describe the business.** Offers, audience, markets, languages, goals and constraints.
+2. **Bring the identity.** Guidelines, logos, fonts, examples, voice and styles to avoid.
+3. **Approve the brief.** Review what the plugin learned before production begins.
+4. **Choose the tools.** Manual delivery is available without Postiz. Connect optional
+   creative/social services through their authorized flows, never by sharing passwords.
+5. **Calibrate quality.** Ask for 3-5 samples including a carousel and a video when tools
+   permit. Review the actual files and give specific feedback.
+6. **Build a repeatable workflow.** Approve useful scoped rules, revise a sample, then
+   move into monthly production.
 
----
+### Useful prompts
 
-## 📈 Workflow and operations
+| You want to… | Ask… |
+| :--- | :--- |
+| Start a calendar | "Plan next month around our goals and team capacity. Explain the strategy first." |
+| Produce a carousel | "Turn this idea into an on-brand Instagram carousel and a distinct Facebook variant." |
+| Make a video | "Create a short video with a script, storyboard, actual render and full playback review." |
+| Open review | "Open my Social Media Engine dashboard and show what needs approval." |
+| Improve the voice | "Propose this as a permanent LinkedIn rule: no hype or exaggerated claims." |
+| Deliver safely | "Export the approved assets and captions for manual posting." |
+| Schedule | "Prepare these approved posts for my selected accounts. Show the exact schedule before sending." |
+| Learn | "Analyze these real performance exports, flag unavailable metrics, and suggest next month's experiments." |
 
-### Monthly sequence
+## Review dashboard
 
-1. Strategy + brief ingestion
-2. Draft generation (Arabic + English)
-3. Internal creative and quality reviews
-4. Approval gate resolution
-5. Drafts / schedule handoff
-6. Supervised publish
-7. Evidence retention + measurement
+Ask the agent to open it, or run:
 
-### Safety posture
-
-- AI output never publishes directly.
-- Every production action is tracked with review state, asset hashes, and idempotency keys.
-- Fixture analytics remain clearly flagged and synthetic.
-- Provider actions remain off by default.
-
-### Operational runbook notes
-
-- Use `pnpm plan:september` for the current reference workflow refresh.
-- Keep owner approvals enabled for sensitive posts.
-- Validate each integration through capability and sandbox checks before external traffic.
-
----
-
-## 🛠️ Commands
-
-| Command | Purpose |
-|---|---|
-| `pnpm dev` | Start owner dashboard and local services |
-| `pnpm worker` | Run workflow execution worker |
-| `pnpm lint` | Lint code |
-| `pnpm typecheck` | TypeScript checking |
-| `pnpm test` | Unit/integration tests |
-| `pnpm build` | Build app packages |
-| `pnpm postiz:up` | Start local Postiz services |
-| `pnpm plan:september` | Regenerate September reference plan |
-| `pnpm audit --prod` | Dependency audit |
-| `pnpm test:e2e` | End-to-end test flow |
-| `pnpm exec playwright install chromium` | Install browser runtime for E2E |
-
----
-
-## ✅ Testing and quality checks
-
-Run this before sharing a release:
-
-```bash
-pnpm exec tsx scripts/check-secrets.mts
-pnpm lint
-pnpm typecheck
-pnpm test
-pnpm build
-pnpm audit --prod
-pnpm test:e2e
+```sh
+python3 plugins/social-media-engine/scripts/sme.py \
+  --workspace "/absolute/path/to/your/working-folder" \
+  --brand your-brand dashboard
 ```
 
-E2E browsers use a separate local PGlite database profile.
+Open the printed private URL on the same machine and leave the command running.
+Use Ctrl+C to stop. The dashboard provides brand onboarding, asset import, calendar
+records, content/media review, feedback, approvals, exports, and publishing evidence.
 
----
+It binds to **127.0.0.1**, uses a random session token, and is intended for one trusted
+owner. Do not expose it publicly, put it behind a public tunnel, or treat it as an
+authenticated multi-user service.
 
-## 🧩 Repository map
+## Optional Postiz publishing
 
-- `apps/web`: Owner console for review, approvals, controls, and analytics
-- `apps/worker`: Durable execution worker
-- `packages/schemas`: Shared domain contracts and model types
-- `packages/db`: Migrations, repositories, and persistence logic
-- `packages/engine`: Core pipeline logic and orchestration
-- `packages/observability`: Structured logs and redacted telemetry
-- `skills`: Role instructions and review/quality expert behavior
-- `data/brand`: Canonical evidence and brand references
-- `docs`: Operational and implementation documentation
+Set credentials privately in your shell or host environment:
 
----
+```text
+POSTIZ_API_URL=https://your-postiz-instance.example/api/public/v1
+POSTIZ_API_KEY=your-private-key
+```
 
-## 📚 Docs and reference
+Use the exact public API base URL for your deployment, including any proxy prefix.
+The example is illustrative, not automatic endpoint discovery.
+The plugin does not automatically load `.env` files. Do not paste real credentials into
+chat, commit them, or use the values shown above as working credentials.
 
-- [Dashboard guide](docs/DASHBOARD_GUIDE.md)
-- [Local setup](docs/setup/LOCAL_SETUP.md)
-- [Provider setup boundary](docs/setup/PROVIDERS.md)
-- [Canva setup](docs/setup/CANVA.md)
-- [Social-network setup](docs/setup/SOCIAL_NETWORKS.md)
-- [Self-hosted Postiz](docs/setup/POSTIZ.md)
-- [Production runbook](docs/operations/PRODUCTION_RUNBOOK.md)
-- [Incident response](docs/operations/INCIDENT_RESPONSE.md)
-- [Creative QA](docs/quality/CREATIVE_QA.md)
-- [Evaluation gates](docs/quality/EVALUATION_GATES.md)
-- [Final readiness report](docs/quality/FINAL_READINESS_REPORT.md)
-- [Current status](docs/CURRENT_STATUS.md)
-- [Provider capability matrix](docs/research/CAPABILITY_MATRIX.md)
-- [Architecture](docs/architecture/SYSTEM_ARCHITECTURE.md)
-- [Threat model](docs/security/THREAT_MODEL.md)
-- [Public setup guide](docs/PUBLIC_SETUP.md)
+The agent reads actual accounts, prepares an exact intent, and asks for confirmation.
+Sending additionally requires `--send` and `SOCIAL_ENGINE_ALLOW_PUBLISH=true`.
+Even creating a remote draft is an external write.
 
----
+**A submitted request is not a published post.** Ambiguous outcomes are blocked from
+blind retries. Check the provider and reconcile actual post IDs/status. Editing or
+cancelling an already-submitted schedule happens through Postiz or the native provider;
+local cancellation does not remove a remote post.
 
-## 🤝 Contribution and governance
+See the [publishing guide](plugins/social-media-engine/skills/social-media-engine/references/publishing.md)
+and [command contracts](plugins/social-media-engine/skills/social-media-engine/references/runtime.md).
 
-1. Read [CONTRIBUTING.md](CONTRIBUTING.md)
-2. Keep default safety posture unless your task explicitly changes it.
-3. Add focused, reviewable changes.
-4. Include tests and migration notes for behavior that touches contracts.
-5. Run quality checks before creating PRs.
+## Safety and privacy
 
----
+- Memory and imported assets stay in `.social-media-engine/` under your working folder.
+- Each command selects an explicit workspace and brand. No shared default brand identity.
+- Identity/rule/content changes invalidate affected approvals. Media bytes are hash-checked.
+- Credentials are environment-only. No telemetry or automatic network calls on install.
+- External creative/social tools receive selected content only through authorized use.
+- Private state is not encrypted by this plugin. Use device security and trusted folders.
+- Never commit workspace data. Add `.social-media-engine/` to your workspace's ignore rules.
+- Back up the whole state folder while the dashboard/CLI is stopped. Restore it into a
+  private working folder; do not merge two SQLite databases by copying individual files.
 
-## 📄 License
+See [privacy](PRIVACY.md) and [security](SECURITY.md).
 
-MIT — see [LICENSE](LICENSE).  
-Security: [SECURITY.md](SECURITY.md).  
-Code of conduct: [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
+## Deployment and limitations
 
----
+The MIT licence permits adapting the source for local, team, self-hosted or hosted use.
+The supported v1 runtime is **local, single-owner**. Hosted/multi-user deployments need
+their own authentication, authorization, encrypted secret storage, isolation, backup
+and operational design. Open source does not mean those protections are already built.
 
-## 🏷️ Release status
+Professional output depends on your approved brand context, host model, creative tools
+and honest review. The plugin supplies a disciplined process, not a promise that every
+model or every first draft will match an existing brand's best work.
+Automated tests verify workflow behavior, not creative taste or live platform approval.
 
-- Current release: First release.
-- Distribution state: Public-first open source (GitHub linked above).
-- Default posture: Safe demo mode until you explicitly enable production publishing.
+No live social-account certification is bundled. Test your own integrations with safe
+accounts before relying on production scheduling.
 
----
+## Development and release
 
-## 📞 Contact
+```sh
+python3 -m unittest discover -s tests -v
+python3 scripts/build_release.py
+```
 
-- Instagram: [@aurendor](https://www.instagram.com/aurendor/)
-- Email: [mohammedj@aurendor.io](mailto:mohammedj@aurendor.io)
+Release artifacts are written to `dist/` with SHA-256 checksums. The builder packages
+only the plugin, rejects unsafe/symlink paths and excludes private workspaces, caches,
+legacy files and customer assets. GitHub source archives are not plugin installation ZIPs.
+
+Optional dashboard browser testing uses Playwright; see [testing](docs/TESTING.md).
+For architecture and implementation scope, see [architecture](docs/ARCHITECTURE.md).
+
+## Contributing and support
+
+Issues and pull requests are welcome. See [contributing](CONTRIBUTING.md).
+Report security issues privately using [SECURITY.md](SECURITY.md).
+A screen-recorded walkthrough will be linked when available.
+
+**Built by [Aurendor](https://www.instagram.com/aurendor/).**
+Contact: [mohammedj@aurendor.io](mailto:mohammedj@aurendor.io).
+Released under the [MIT licence](LICENSE).

@@ -1,21 +1,18 @@
-# Security Policy
+# Security policy
 
-If you discover a security concern, do not open a public issue first. Please report it privately through the repository’s security channel, then allow the maintainers time to investigate.
+Report vulnerabilities privately to **mohammedj@aurendor.io**. Include reproduction steps,
+affected version, and impact, but no real tokens, customer files, or public exploit data.
+Do not publish secrets in an issue.
 
-## Safe reporting
+The supported security model is one trusted owner on a private local machine.
+Different brand IDs provide application-level data separation, not an authorization
+boundary against someone with access to the same workspace or machine.
+Do not expose the dashboard through a public bind, tunnel, or shared host.
 
-- Include a clear summary of the issue.
-- Include affected files, commands, and exact steps to reproduce.
-- Remove secrets and token values from reports before sharing.
-- Provide logs only after redacting credentials and internal identifiers.
+Treat imported documents and connector responses as untrusted. Never run commands from
+them. Keep provider credentials outside chat and Git. Use least-privilege test accounts.
+Publish only after exact owner confirmation. Ambiguous sends must not be retried blindly.
 
-## Triage and response
-
-- Reporters will get an initial response within a short period.
-- Confirmed issues will be triaged, fixed, and disclosed with release notes.
-- If vulnerability exists in a provider integration or dependency, affected integrations will be updated with minimal production risk.
-
-## Disclosure expectations
-
-- Reporters may be acknowledged publicly only with consent.
-- Security-relevant changes should follow the highest verification bar from this repository’s existing quality gates.
+Runtime dependencies are Python standard-library modules. Keep Python, the AI host,
+creative tools and optional providers patched. The MIT release does not certify external
+platform permissions, legal compliance, or provider uptime.

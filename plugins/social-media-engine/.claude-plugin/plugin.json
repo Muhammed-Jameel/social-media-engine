@@ -1,0 +1,18 @@
+{
+  "name": "social-media-engine",
+  "version": "1.0.0",
+  "description": "Everything social media, in one plugin. Guided brand onboarding, creative workflows, review, and controlled publishing.",
+  "author": {
+    "name": "Aurendor",
+    "email": "mohammedj@aurendor.io"
+  },
+  "homepage": "https://github.com/Muhammed-Jameel/social-media-engine",
+  "repository": "https://github.com/Muhammed-Jameel/social-media-engine",
+  "license": "MIT",
+  "keywords": [
+    "social-media",
+    "brand",
+    "content",
+    "marketing"
+  ]
+}

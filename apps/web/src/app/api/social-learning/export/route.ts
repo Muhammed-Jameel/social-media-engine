@@ -1,5 +1,0 @@
-import {projectRoot} from '@social-media-plugin/db/runtime';
-import {readLearning,metricNames} from '@social-media-plugin/engine';
-import {getOwnerSession} from '@/lib/auth';
-export const dynamic='force-dynamic';
-export async function GET(){if(!await getOwnerSession())return Response.json({error:'Authentication required'},{status:401});const s=await readLearning(projectRoot());const rows:unknown[][]=[['postId','contentId','platform','format','timeBand','publishedAt','observedAt','ageHours','checkpointHours',...metricNames,'error']];for(const p of s.posts)for(const o of p.observations)rows.push([p.id,p.contentId,p.platform,p.format,p.slot,p.publishedAt,o.observedAt,o.ageHours,o.checkpointHours,...metricNames.map(k=>o.metrics[k]),o.error]);const cell=(v:unknown)=>{let t=v==null?'':String(v);if(/^[=+@-]/.test(t))t="'"+t;return '"'+t.replaceAll('"','""')+'"';};return new Response(rows.map(r=>r.map(cell).join(',')).join('\r\n'),{headers:{'Content-Type':'text/csv; charset=utf-8','Content-Disposition':'attachment; filename="social-social-observations.csv"','Cache-Control':'no-store'}});}

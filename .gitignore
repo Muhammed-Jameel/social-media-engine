@@ -5,6 +5,11 @@ coverage/
 playwright-report/
 test-results/
 .data/
+.social-media-engine/
+.claude/
+docs/audit/LOCAL-*
+__pycache__/
+*.py[cod]
 .env
 .env.local
 .env.*.local

@@ -1,0 +1,36 @@
+{
+  "name": "social-media-engine",
+  "version": "1.0.0",
+  "description": "Brand-first social strategy, content production, review, and controlled publishing.",
+  "author": {
+    "name": "Aurendor",
+    "email": "mohammedj@aurendor.io"
+  },
+  "homepage": "https://github.com/Muhammed-Jameel/social-media-engine",
+  "repository": "https://github.com/Muhammed-Jameel/social-media-engine",
+  "license": "MIT",
+  "keywords": [
+    "social-media",
+    "brand",
+    "content",
+    "marketing"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Social Media Engine",
+    "shortDescription": "Everything social media, in one plugin.",
+    "longDescription": "Start with guided brand onboarding, then plan, produce, review, and manage social content with persistent brand memory. Optional Postiz publishing requires explicit approval.",
+    "developerName": "Aurendor",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/Muhammed-Jameel/social-media-engine",
+    "defaultPrompt": [
+      "Set up Social Media Engine for my brand.",
+      "Plan and produce my next social campaign.",
+      "Review my content and apply my feedback."
+    ]
+  }
+}
