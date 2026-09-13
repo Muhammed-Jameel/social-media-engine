@@ -14,9 +14,9 @@
   },
   "dependencies": {
     "@social-media-plugin/schemas": "workspace:*",
-    "@electric-sql/pglite": "0.5.6",
+    "@electric-sql/pglite": "0.5.8",
     "pg": "8.23.0",
-    "zod": "4.4.3"
+    "zod": "4.6.1"
   },
   "devDependencies": {
     "@types/pg": "8.23.1",
