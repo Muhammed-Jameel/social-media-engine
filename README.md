@@ -7,6 +7,8 @@
   <img src="https://img.shields.io/badge/pnpm-11.x-f69220?style=for-the-badge&logo=pnpm&logoColor=white" alt="pnpm" />
 </p>
 
+**Language:** [English](README.md) · [العربية](README.ar.md) · [日本語](README.ja.md)
+
 Social Media Engine is an evidence-led, bilingual social media orchestration platform for strategy, content creation, human review, compliance-safe publishing, and analytics.
 
 **Tagline:** everything social media, in one plugin.
