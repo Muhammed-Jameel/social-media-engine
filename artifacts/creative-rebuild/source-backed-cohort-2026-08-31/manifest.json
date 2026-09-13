@@ -1,0 +1,546 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-09-04T03:10:54.176Z",
+  "status": "PIXEL_REVIEW_REQUIRED",
+  "count": 6,
+  "sourceBacked": true,
+  "publicationEligible": false,
+  "records": [
+    {
+      "id": "sb01-ar-payment-acceptance",
+      "title": "الدفع الرقمي يكتمل عند نقطة القبول",
+      "language": "ar",
+      "direction": "rtl",
+      "exactCopy": [
+        "شمول مالي · ٠١",
+        "الدفع الرقمي",
+        "لا يكتمل عند الحساب",
+        "يكتمل عند نقطة القبول",
+        "وجود الحساب بداية. الاستخدام يبدأ حين يجد الناس مكانًا يقبل الدفع بلا نقد.",
+        "المصدر: البنك المركزي العراقي، استراتيجية الشمول المالي الوطنية ٢٠٢٥–٢٠٢٩."
+      ],
+      "sourceImage": "sb01-payment-acceptance-base.png",
+      "sourceImageSha256": "eb04e39b89c41da389287802e6845f63933815bcddf0f24bf6130e06ba41438c",
+      "sourcePromptSummary": "Original textless payment-acceptance still life generated for this cohort: a green token stops at one intentionally empty receiving socket on limestone; no reference pixels, text, logo, or UI supplied.",
+      "evidence": {
+        "publisher": "Central Bank of Iraq",
+        "title": "National Financial Inclusion Strategy 2025–2029",
+        "url": "https://cbi.iq/static/uploads/up/file-175032973296039.pdf",
+        "publishedAt": "2025",
+        "claimBoundary": "Account access alone does not prove usage; lack of acceptance equipment is reported as a principal barrier to non-cash payment."
+      },
+      "production": {
+        "file": "production/sb01-ar-payment-acceptance.png",
+        "width": 1080,
+        "height": 1350,
+        "sha256": "9a23de5101ac86fb170a7a96284d283005227e5433851614f401ac66a350fcda",
+        "byteLength": 1306838
+      },
+      "mobile": {
+        "file": "mobile/sb01-ar-payment-acceptance.png",
+        "width": 324,
+        "height": 405,
+        "sha256": "852a5024f73e3f1b8ebda8164dbc670f75815d093e16099b68aa517abeee8ac6",
+        "byteLength": 149219
+      },
+      "fontEvidence": {
+        "regularSha256": "4dd0c3f2622fc0cfb2802ede862a24877218f78046cf0830ab6290feb68d3e41",
+        "boldSha256": "d853dc21fe5a274d5a9361d720db94ad60a8fcceb114663118b6f9cc2f9b5d5b"
+      },
+      "technicalPreflight": {
+        "documentLanguage": "ar",
+        "documentDirection": "rtl",
+        "regularFontLoaded": true,
+        "boldFontLoaded": true,
+        "exactCopyPresent": true,
+        "canvas": {
+          "width": 1080,
+          "height": 1350
+        },
+        "copyRegions": [
+          {
+            "name": "headline",
+            "bounds": {
+              "x": 72,
+              "y": 66,
+              "width": 936,
+              "height": 575,
+              "right": 1008,
+              "bottom": 641
+            },
+            "withinCanvas": true,
+            "noOverflow": true,
+            "letterSpacing": "normal"
+          },
+          {
+            "name": "source",
+            "bounds": {
+              "x": 308,
+              "y": 1212.5,
+              "width": 700,
+              "height": 79.5,
+              "right": 1008,
+              "bottom": 1292
+            },
+            "withinCanvas": true,
+            "noOverflow": true,
+            "letterSpacing": "normal"
+          }
+        ],
+        "foregroundArabicIntersections": 0,
+        "passed": true
+      },
+      "rawProfessionalReferencePixelsSuppliedToGeneration": false,
+      "generatedTextInSource": false,
+      "publicationEligible": false
+    },
+    {
+      "id": "sb02-ar-service-time",
+      "title": "التحول الحقيقي يختصر زمن الخدمة",
+      "language": "ar",
+      "direction": "rtl",
+      "exactCopy": [
+        "تحوّل خدمة · ٠٢",
+        "التحول الحقيقي",
+        "لا يضيف شاشة",
+        "يختصر زمن الخدمة",
+        "في تجربة عراقية موثّقة، انتقل البحث عن الملف من ساعات إلى أقل من دقيقة.",
+        "المصدر: برنامج الأمم المتحدة الإنمائي في العراق، ٢٠٢٥."
+      ],
+      "sourceImage": "sb02-service-time-base.png",
+      "sourceImageSha256": "f4d8a8052411e549226a2217d34406121250e5115ca9150479ad1861eb40f9d3",
+      "sourcePromptSummary": "Original textless archive-to-service photograph generated for this cohort: worn files enter one engineered indexing channel and a clean record tray emerges; no reference pixels, text, logo, people, or UI supplied.",
+      "evidence": {
+        "publisher": "UNDP Iraq",
+        "title": "What used to take hours… is now done in just one minute",
+        "url": "https://www.undp.org/iraq/stories/what-used-take-hours-now-done-just-one-minute",
+        "publishedAt": "2025-12-21",
+        "claimBoundary": "The hours-to-under-one-minute comparison belongs to the documented Iraqi police-service case and is not generalized beyond it."
+      },
+      "production": {
+        "file": "production/sb02-ar-service-time.png",
+        "width": 1080,
+        "height": 1350,
+        "sha256": "4ee88624fd66946f7d9f35d29d60107ea1ca3110b9e358fd91249a767a9f6717",
+        "byteLength": 1071690
+      },
+      "mobile": {
+        "file": "mobile/sb02-ar-service-time.png",
+        "width": 324,
+        "height": 405,
+        "sha256": "36b4b8fbd0389331569147ca22ff6edd1af06b0a3c7247a2ff93b3757d1aeca5",
+        "byteLength": 122202
+      },
+      "fontEvidence": {
+        "regularSha256": "4dd0c3f2622fc0cfb2802ede862a24877218f78046cf0830ab6290feb68d3e41",
+        "boldSha256": "d853dc21fe5a274d5a9361d720db94ad60a8fcceb114663118b6f9cc2f9b5d5b"
+      },
+      "technicalPreflight": {
+        "documentLanguage": "ar",
+        "documentDirection": "rtl",
+        "regularFontLoaded": true,
+        "boldFontLoaded": true,
+        "exactCopyPresent": true,
+        "canvas": {
+          "width": 1080,
+          "height": 1350
+        },
+        "copyRegions": [
+          {
+            "name": "headline",
+            "bounds": {
+              "x": 72,
+              "y": 70,
+              "width": 936,
+              "height": 570,
+              "right": 1008,
+              "bottom": 640
+            },
+            "withinCanvas": true,
+            "noOverflow": true,
+            "letterSpacing": "normal"
+          },
+          {
+            "name": "source",
+            "bounds": {
+              "x": 308,
+              "y": 1252.25,
+              "width": 700,
+              "height": 39.75,
+              "right": 1008,
+              "bottom": 1292
+            },
+            "withinCanvas": true,
+            "noOverflow": true,
+            "letterSpacing": "normal"
+          }
+        ],
+        "foregroundArabicIntersections": 0,
+        "passed": true
+      },
+      "rawProfessionalReferencePixelsSuppliedToGeneration": false,
+      "generatedTextInSource": false,
+      "publicationEligible": false
+    },
+    {
+      "id": "sb03-ar-governance-trust",
+      "title": "التقنية تقلّل الاحتكاك والحوكمة تبني الثقة",
+      "language": "ar",
+      "direction": "rtl",
+      "exactCopy": [
+        "حوكمة رقمية · ٠٣",
+        "التقنية تقلّل الاحتكاك",
+        "الحوكمة تبني الثقة",
+        "الخدمة الرقمية توحّد الإجراء وتزيد قابلية التتبّع. لكن الثقة تحتاج أيضًا قواعد ومساءلة وقدرة مؤسسية.",
+        "المصدر: برنامج الأمم المتحدة الإنمائي في العراق، قراءة مؤشر مدركات الفساد ٢٠٢٥.",
+        "تقنية",
+        "حوكمة",
+        "ثقة"
+      ],
+      "sourceImage": null,
+      "sourceImageSha256": null,
+      "sourcePromptSummary": "Original deterministic typographic architecture using only project fonts, brand colors, and CSS; no external or generated visual pixels.",
+      "evidence": {
+        "publisher": "UNDP Iraq",
+        "title": "Iraq’s CPI 2025: From Starting Reform to Earning Trust",
+        "url": "https://www.undp.org/iraq/blog/iraqs-cpi-2025-starting-reform-earning-trust",
+        "publishedAt": "2026",
+        "claimBoundary": "A two-part governance principle; no invented causal statistic or AURENDOR performance claim."
+      },
+      "production": {
+        "file": "production/sb03-ar-governance-trust.png",
+        "width": 1080,
+        "height": 1350,
+        "sha256": "a519fedea40d59f7fafe5fa76f73c63290bfa7fcf88798f8d6cb33d2d71b6b96",
+        "byteLength": 83149
+      },
+      "mobile": {
+        "file": "mobile/sb03-ar-governance-trust.png",
+        "width": 324,
+        "height": 405,
+        "sha256": "988eb5466758c1242ae2cb8a6e78cb7fdc43fd3a929834e6d818e5bfe16af7d8",
+        "byteLength": 42202
+      },
+      "fontEvidence": {
+        "regularSha256": "4dd0c3f2622fc0cfb2802ede862a24877218f78046cf0830ab6290feb68d3e41",
+        "boldSha256": "d853dc21fe5a274d5a9361d720db94ad60a8fcceb114663118b6f9cc2f9b5d5b"
+      },
+      "technicalPreflight": {
+        "documentLanguage": "ar",
+        "documentDirection": "rtl",
+        "regularFontLoaded": true,
+        "boldFontLoaded": true,
+        "exactCopyPresent": true,
+        "canvas": {
+          "width": 1080,
+          "height": 1350
+        },
+        "copyRegions": [
+          {
+            "name": "headline",
+            "bounds": {
+              "x": 72,
+              "y": 70,
+              "width": 936,
+              "height": 500,
+              "right": 1008,
+              "bottom": 570
+            },
+            "withinCanvas": true,
+            "noOverflow": true,
+            "letterSpacing": "normal"
+          },
+          {
+            "name": "source",
+            "bounds": {
+              "x": 228,
+              "y": 1128.5,
+              "width": 780,
+              "height": 79.5,
+              "right": 1008,
+              "bottom": 1208
+            },
+            "withinCanvas": true,
+            "noOverflow": true,
+            "letterSpacing": "normal"
+          }
+        ],
+        "foregroundArabicIntersections": 0,
+        "passed": true
+      },
+      "rawProfessionalReferencePixelsSuppliedToGeneration": false,
+      "generatedTextInSource": false,
+      "publicationEligible": false
+    },
+    {
+      "id": "sb04-ar-data-visibility",
+      "title": "البيانات النادرة تترك القرار في الظل",
+      "language": "ar",
+      "direction": "rtl",
+      "exactCopy": [
+        "بنية بيانات · ٠٤",
+        "حين تندر البيانات",
+        "يبقى القرار في الظل",
+        "الرؤية المحدودة للاحتياجات والفرص ليست مشكلة تقرير؛ إنها مشكلة قرار.",
+        "المصدر: برنامج الأمم المتحدة الإنمائي في العراق، مبادرة آي داتا، ٢٠٢٥.",
+        "مرئي",
+        "غير مرئي"
+      ],
+      "sourceImage": null,
+      "sourceImageSha256": null,
+      "sourcePromptSummary": "Original deterministic qualitative visibility field using project typography and CSS; no chart values, external assets, or generated visual pixels.",
+      "evidence": {
+        "publisher": "UNDP Iraq",
+        "title": "Unlocking Iraq’s Innovation Potential Through Data: The iDATA Local Solution",
+        "url": "https://www.undp.org/iraq/blog/unlocking-iraqs-innovation-potential-through-data-idata-local-solution",
+        "publishedAt": "2025-04-21",
+        "claimBoundary": "Qualitative visibility metaphor only; no invented values, percentages, or causal performance claim."
+      },
+      "production": {
+        "file": "production/sb04-ar-data-visibility.png",
+        "width": 1080,
+        "height": 1350,
+        "sha256": "2e16c252e4c2ab4960444279512717eb5e4f35157a406cb559ed4a4ecac10917",
+        "byteLength": 89379
+      },
+      "mobile": {
+        "file": "mobile/sb04-ar-data-visibility.png",
+        "width": 324,
+        "height": 405,
+        "sha256": "dced047fb0fe7497e4998f90fae6a4ab8e6efd378dfaa4eb3ebafbf6bad70362",
+        "byteLength": 42102
+      },
+      "fontEvidence": {
+        "regularSha256": "4dd0c3f2622fc0cfb2802ede862a24877218f78046cf0830ab6290feb68d3e41",
+        "boldSha256": "d853dc21fe5a274d5a9361d720db94ad60a8fcceb114663118b6f9cc2f9b5d5b"
+      },
+      "technicalPreflight": {
+        "documentLanguage": "ar",
+        "documentDirection": "rtl",
+        "regularFontLoaded": true,
+        "boldFontLoaded": true,
+        "exactCopyPresent": true,
+        "canvas": {
+          "width": 1080,
+          "height": 1350
+        },
+        "copyRegions": [
+          {
+            "name": "headline",
+            "bounds": {
+              "x": 72,
+              "y": 66,
+              "width": 936,
+              "height": 480,
+              "right": 1008,
+              "bottom": 546
+            },
+            "withinCanvas": true,
+            "noOverflow": true,
+            "letterSpacing": "normal"
+          },
+          {
+            "name": "source",
+            "bounds": {
+              "x": 248,
+              "y": 1168.25,
+              "width": 760,
+              "height": 39.75,
+              "right": 1008,
+              "bottom": 1208
+            },
+            "withinCanvas": true,
+            "noOverflow": true,
+            "letterSpacing": "normal"
+          }
+        ],
+        "foregroundArabicIntersections": 0,
+        "passed": true
+      },
+      "rawProfessionalReferencePixelsSuppliedToGeneration": false,
+      "generatedTextInSource": false,
+      "publicationEligible": false
+    },
+    {
+      "id": "sb05-ar-repeated-decision",
+      "title": "أي قرار يستهلك وقت فريقك كل أسبوع؟",
+      "language": "ar",
+      "direction": "rtl",
+      "exactCopy": [
+        "نمط تشغيل · ٠٥",
+        "أي قرار",
+        "يستهلك وقت فريقك",
+        "كل أسبوع؟",
+        "إذا تكرر السؤال نفسه، سجّل القاعدة قبل أن تجعل الاجتماع هو النظام.",
+        "المصدر: إرشادات هندسة وزارة الداخلية البريطانية، ٢٠٢٦."
+      ],
+      "sourceImage": "sb05-repeated-decision-base.png",
+      "sourceImageSha256": "3aad62876ce649827ddc028986b9c4ded184b91f8c87855de8b56f4c8dc31b50",
+      "sourcePromptSummary": "Original textless repeated-decision still life generated for this cohort: five limestone slots carry the same operational trace and one green decision block is ready to repeat; no reference pixels, text, logo, people, or UI supplied.",
+      "evidence": {
+        "publisher": "UK Home Office Engineering Guidance and Standards",
+        "title": "Automate to eliminate manual steps",
+        "url": "https://engineering.homeoffice.gov.uk/principles/automate-to-eliminate-manual-steps/",
+        "publishedAt": "2026-02-13",
+        "claimBoundary": "The post identifies and measures recurring manual decision toil; it promises no saving before a baseline and controlled change exist."
+      },
+      "production": {
+        "file": "production/sb05-ar-repeated-decision.png",
+        "width": 1080,
+        "height": 1350,
+        "sha256": "b4948afa548dc16912fc9f3511a034e99c1599144b83233f945338b3c827b2db",
+        "byteLength": 1355580
+      },
+      "mobile": {
+        "file": "mobile/sb05-ar-repeated-decision.png",
+        "width": 324,
+        "height": 405,
+        "sha256": "de0bea788a46e38ec5bab02e0d4e65dc9861134318b50a8e20c6484d0bb547d8",
+        "byteLength": 143786
+      },
+      "fontEvidence": {
+        "regularSha256": "4dd0c3f2622fc0cfb2802ede862a24877218f78046cf0830ab6290feb68d3e41",
+        "boldSha256": "d853dc21fe5a274d5a9361d720db94ad60a8fcceb114663118b6f9cc2f9b5d5b"
+      },
+      "technicalPreflight": {
+        "documentLanguage": "ar",
+        "documentDirection": "rtl",
+        "regularFontLoaded": true,
+        "boldFontLoaded": true,
+        "exactCopyPresent": true,
+        "canvas": {
+          "width": 1080,
+          "height": 1350
+        },
+        "copyRegions": [
+          {
+            "name": "headline",
+            "bounds": {
+              "x": 72,
+              "y": 66,
+              "width": 936,
+              "height": 575,
+              "right": 1008,
+              "bottom": 641
+            },
+            "withinCanvas": true,
+            "noOverflow": true,
+            "letterSpacing": "normal"
+          },
+          {
+            "name": "source",
+            "bounds": {
+              "x": 248,
+              "y": 1252.25,
+              "width": 760,
+              "height": 39.75,
+              "right": 1008,
+              "bottom": 1292
+            },
+            "withinCanvas": true,
+            "noOverflow": true,
+            "letterSpacing": "normal"
+          }
+        ],
+        "foregroundArabicIntersections": 0,
+        "passed": true
+      },
+      "rawProfessionalReferencePixelsSuppliedToGeneration": false,
+      "generatedTextInSource": false,
+      "publicationEligible": false
+    },
+    {
+      "id": "sb06-ar-service-continuity",
+      "title": "حين تنقطع الكهرباء هل تعرف خدمتك ماذا تفعل؟",
+      "language": "ar",
+      "direction": "rtl",
+      "exactCopy": [
+        "استمرارية خدمة · ٠٦",
+        "حين تنقطع الكهرباء",
+        "هل تعرف خدمتك ماذا تفعل؟",
+        "في مسح منشآت العراق ٢٠٢٢، أفادت ٤١٫٣٪ من المنشآت الرسمية المشمولة بانقطاعات كهربائية.",
+        "يبقى",
+        "ما يلزم الآن",
+        "يؤجَّل",
+        "ما ينتظر بوضوح",
+        "يُستعاد",
+        "ما يعود بلا فقد",
+        "المصدر: مسح منشآت العراق، مجموعة البنك الدولي، ٢٠٢٢."
+      ],
+      "sourceImage": null,
+      "sourceImageSha256": null,
+      "sourcePromptSummary": "Original deterministic three-state service-continuity editorial using only project fonts, canonical brand assets, and CSS; no external pixels, broken Arabic lettering, outage icon, chart, or fake interface.",
+      "evidence": {
+        "publisher": "World Bank Group Enterprise Surveys",
+        "title": "Iraq 2022 Country Profile",
+        "url": "https://www.enterprisesurveys.org/content/dam/enterprisesurveys/documents/country/Iraq-2022.pdf",
+        "publishedAt": "2022",
+        "claimBoundary": "The 41.3% figure describes surveyed formal establishments reporting electrical outages; it is not a population estimate or an AURENDOR continuity outcome."
+      },
+      "production": {
+        "file": "production/sb06-ar-service-continuity.png",
+        "width": 1080,
+        "height": 1350,
+        "sha256": "0446c98515f4961d3b2155fe06e0b826773277264bcdc90aa45776c6f88c73de",
+        "byteLength": 116550
+      },
+      "mobile": {
+        "file": "mobile/sb06-ar-service-continuity.png",
+        "width": 324,
+        "height": 405,
+        "sha256": "f52d8445dbd4cb76d61b9e0a67ca72b72b852e38e8e59124ebe29008b922a49c",
+        "byteLength": 48672
+      },
+      "fontEvidence": {
+        "regularSha256": "4dd0c3f2622fc0cfb2802ede862a24877218f78046cf0830ab6290feb68d3e41",
+        "boldSha256": "d853dc21fe5a274d5a9361d720db94ad60a8fcceb114663118b6f9cc2f9b5d5b"
+      },
+      "technicalPreflight": {
+        "documentLanguage": "ar",
+        "documentDirection": "rtl",
+        "regularFontLoaded": true,
+        "boldFontLoaded": true,
+        "exactCopyPresent": true,
+        "canvas": {
+          "width": 1080,
+          "height": 1350
+        },
+        "copyRegions": [
+          {
+            "name": "headline",
+            "bounds": {
+              "x": 72,
+              "y": 66,
+              "width": 936,
+              "height": 500,
+              "right": 1008,
+              "bottom": 566
+            },
+            "withinCanvas": true,
+            "noOverflow": true,
+            "letterSpacing": "normal"
+          },
+          {
+            "name": "source",
+            "bounds": {
+              "x": 248,
+              "y": 1168.25,
+              "width": 760,
+              "height": 39.75,
+              "right": 1008,
+              "bottom": 1208
+            },
+            "withinCanvas": true,
+            "noOverflow": true,
+            "letterSpacing": "normal"
+          }
+        ],
+        "foregroundArabicIntersections": 0,
+        "passed": true
+      },
+      "rawProfessionalReferencePixelsSuppliedToGeneration": false,
+      "generatedTextInSource": false,
+      "publicationEligible": false
+    }
+  ]
+}

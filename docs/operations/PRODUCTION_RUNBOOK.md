@@ -27,7 +27,7 @@ The release owner signs each item. A missing item is a stop:
 - provider app ownership, accounts, granted scopes, expiry, review/audit tier, rate limits, and capability probes are recorded;
 - exact production domains, OAuth callbacks, webhook endpoints, signatures, and replay protection are verified;
 - immutable asset storage, hashes, licenses, MIME types, dimensions, and provider accessibility are verified;
-- dual creative critics, Arabic/RTL/mobile QA, claims compliance, and the approval scope pass on the canary;
+- every applicable professional critic, Arabic/RTL/mobile QA, anchor/originality/feed review, claims compliance, and the exact-hash approval scope pass on the canary;
 - idempotency, ambiguous-response reconciliation, retry budget, and duplicate prevention pass adapter tests;
 - pause/kill switch and provider-side rollback are tested;
 - monitoring, owner notifications, escalation contacts, and on-call window are active;

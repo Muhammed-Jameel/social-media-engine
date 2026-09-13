@@ -2,7 +2,7 @@ import { existsSync } from "node:fs";
 import { mkdir, readFile, readdir } from "node:fs/promises";
 import { dirname, isAbsolute, join, resolve } from "node:path";
 import { PGlite } from "@electric-sql/pglite";
-import { Pool, type QueryResultRow } from "pg";
+import { Pool, type PoolClient, type QueryResultRow } from "pg";
 
 export type SqlRow = QueryResultRow;
 
@@ -10,6 +10,7 @@ export interface DatabaseClient {
   readonly kind: "pglite" | "postgres";
   query<T extends SqlRow = SqlRow>(sql: string, parameters?: readonly unknown[]): Promise<{ rows: T[]; rowCount: number }>;
   exec(sql: string): Promise<void>;
+  transaction<T>(callback: (database: DatabaseClient) => Promise<T>): Promise<T>;
   close(): Promise<void>;
 }
 
@@ -40,6 +41,18 @@ class PGliteClient implements DatabaseClient {
     await this.client.exec(sql);
   }
 
+  async transaction<T>(callback: (database: DatabaseClient) => Promise<T>): Promise<T> {
+    await this.client.exec("BEGIN");
+    try {
+      const result = await callback(this);
+      await this.client.exec("COMMIT");
+      return result;
+    } catch (error) {
+      await this.client.exec("ROLLBACK");
+      throw error;
+    }
+  }
+
   async close(): Promise<void> {
     await this.client.close();
   }
@@ -58,8 +71,46 @@ class PostgresClient implements DatabaseClient {
     await this.pool.query(sql);
   }
 
+  async transaction<T>(callback: (database: DatabaseClient) => Promise<T>): Promise<T> {
+    const client = await this.pool.connect();
+    try {
+      await client.query("BEGIN");
+      const result = await callback(new PostgresTransactionClient(client));
+      await client.query("COMMIT");
+      return result;
+    } catch (error) {
+      await client.query("ROLLBACK");
+      throw error;
+    } finally {
+      client.release();
+    }
+  }
+
   async close(): Promise<void> {
     await this.pool.end();
+  }
+}
+
+class PostgresTransactionClient implements DatabaseClient {
+  readonly kind = "postgres" as const;
+
+  constructor(private readonly client: PoolClient) {}
+
+  async query<T extends SqlRow = SqlRow>(sql: string, parameters: readonly unknown[] = []): Promise<{ rows: T[]; rowCount: number }> {
+    const result = await this.client.query<T>(sql, [...parameters]);
+    return { rows: result.rows, rowCount: result.rowCount ?? result.rows.length };
+  }
+
+  async exec(sql: string): Promise<void> {
+    await this.client.query(sql);
+  }
+
+  async transaction<T>(): Promise<T> {
+    throw new Error("Nested database transactions are not supported.");
+  }
+
+  async close(): Promise<void> {
+    // The owning PostgresClient transaction releases this connection.
   }
 }
 

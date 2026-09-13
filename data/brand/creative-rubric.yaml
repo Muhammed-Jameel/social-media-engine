@@ -26,6 +26,9 @@ hardFails:
   - factual error
   - visible placeholder or watermark
   - distorted people, products, or logos
+  - objectifying, sexualized, or ornamental human imagery
+  - a woman used as an attention device rather than a subject with agency
+  - a visible person without a documented narrative role
   - incoherent hierarchy
   - unlicensed asset
   - unintended overlap or crop
@@ -34,4 +37,3 @@ dualCriticPolicy:
   pass: both critics meet threshold and report no hard fail
   adjudicate: score gap exceeds disagreement margin
   rebuild: any hard fail or repeated revision failure
-

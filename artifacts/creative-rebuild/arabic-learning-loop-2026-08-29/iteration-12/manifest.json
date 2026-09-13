@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "1.0.0",
+  "iteration": 12,
+  "generatedAt": "2026-08-29T14:28:15.300Z",
+  "status": "PIXEL_REVIEW_REQUIRED",
+  "publicationEligible": false,
+  "candidate": {
+    "id": "24-ar-build-team-trust",
+    "title": "Arabic human-trust documentary portrait",
+    "language": "ar",
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "mobileReview": {
+      "width": 324,
+      "height": 405
+    },
+    "exactCopy": [
+      "مبدأ تبنّي · ٢٤",
+      "لا تبنِ نظامًا",
+      "لا يثق به فريقك",
+      "أشرك من ينفّذ العمل قبل أن تعيد تصميمه."
+    ],
+    "file": "24-ar-build-team-trust.png",
+    "sha256": "2b0200f2dd9d9c028a94d1e9484b9d2d86e84d093d51f2b35ac306f596bc85b7",
+    "byteLength": 1150049,
+    "mobileFile": "mobile/24-ar-build-team-trust.png",
+    "mobileSha256": "91811df0ec7cf96a67dbe1a11b1e7149d51672bd3398049b9701d3aeee639f07",
+    "sourceImage": "operations-lead-portrait-source.png",
+    "sourceImageSha256": "5896a24c818acb521b78126721d28e5e4cef75e220997c04b6b9c2702bf62741",
+    "sourcePromptSummary": "A fictional Iraqi/MENA woman operations lead actively adjusts one blank process card under directional architectural light, with a quiet dark lower field for Arabic; generated without reference portraits or real identities.",
+    "rawProfessionalReferencePixelsSuppliedToGeneration": false,
+    "fontEvidence": {
+      "family": "Ghroob Arabic ITF",
+      "regularSha256": "4dd0c3f2622fc0cfb2802ede862a24877218f78046cf0830ab6290feb68d3e41",
+      "boldSha256": "d853dc21fe5a274d5a9361d720db94ad60a8fcceb114663118b6f9cc2f9b5d5b"
+    },
+    "technicalPreflight": {
+      "documentLanguage": "ar",
+      "documentDirection": "rtl",
+      "fontLoadedRegular": true,
+      "fontLoadedBold": true,
+      "exactCopyPresent": true,
+      "copyRegionWithinCanvas": true,
+      "copyRegionBounds": {
+        "x": 112,
+        "y": 810,
+        "width": 900,
+        "height": 337.0625
+      }
+    }
+  }
+}

@@ -1,10 +1,11 @@
 schemaVersion: 1.0.0
 brandVersion: final-2026.1
 offerings:
-  - key: aurendor-build
-    name: Aurendor Build / Bunyan Pro
+  - key: bunyan-pro
+    name: Bunyan Pro
     status: current
     category: construction operations platform
+    legacyAliases: [Aurendor Build]
     capabilities: [project visibility, progress updates, files, site media, payment follow-up, stakeholder coordination]
   - key: intelligent-automation
     name: Intelligent automation systems
@@ -26,4 +27,3 @@ provenance:
     authority: high
   - path: marketing/_context/AURENDOR_Brand_Context.md
     authority: high
-

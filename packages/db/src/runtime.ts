@@ -4,4 +4,5 @@
 export * from "./client";
 export * from "./ids";
 export * from "./repository";
+export * from "./postiz";
 export * from "./webhooks";

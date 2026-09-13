@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { AlertTriangle, Bell, LogOut, Pause, Radio } from "lucide-react";
+import { AlertTriangle, Bell, LogOut, Pause, Radio, ShieldAlert } from "lucide-react";
 import type { EngineSettingsView } from "@aurendor/db/runtime";
 import type { OwnerSession } from "@/lib/auth";
 import { logoutAction } from "@/app/login/actions";
@@ -44,7 +44,17 @@ export function AppShell({ session, settings, notificationCount, children }: { s
         {session.demo ? (
           <div className="demo-banner" role="status">
             <AlertTriangle aria-hidden="true" size={16} />
-            <span><strong>Demonstration environment.</strong> Analytics are synthetic and no provider action can publish.</span>
+            <span><strong>Demonstration environment.</strong> Legacy controls are in demonstration mode. The Analytics page separately identifies real Postiz observations.</span>
+          </div>
+        ) : null}
+        {settings.creativeProductionPaused ? (
+          <div className="creative-pause-banner" role="alert" aria-label="Creative production release gate">
+            <ShieldAlert aria-hidden="true" size={18} />
+            <span>
+              <strong>Creative production frozen.</strong> POST_PRODUCTION claims are blocked; planning and analytics remain available.
+              <small>Read-only release gate · {settings.creativeGateState.replaceAll("_", " ")}</small>
+            </span>
+            <Link href="/controls">View gate</Link>
           </div>
         ) : null}
         {settings.paused ? (

@@ -52,10 +52,20 @@ imagery:
   status: founder-direction-not-final
   treatment: deep-green to pale-neon duotone; optional restrained grain
   fallback: brand illustrations and custom geometric system diagrams
+  peoplePolicy:
+    defaultHumanUse: narrative-only
+    humanUseRequiresJustification: true
+    preferredAlternatives: [real product UI, workflow diagrams, objects, environments, hands, motion graphics]
+    womenAsAttentionDevice: prohibited
+    objectifyingPoseCropOrStyling: prohibited
+    genderInferenceFromPixels: prohibited
+    reviewRule: People must have agency and a specific role in the story; they are never decorative attention bait.
 prohibited:
   - archived cream/forest/gold Sovereign Field palette
   - full-color ungraded stock photography
   - generic blue gradient and glowing brain imagery
+  - ornamental, sexualized, or objectifying human imagery
+  - roleless people used only to attract attention
   - mixed icon families
   - more than one creative grid break per composition
 provenance:
@@ -63,4 +73,3 @@ provenance:
     authority: canonical
   - path: marketing/_context/AURENDOR_Social_Design_System_2026.md
     authority: canonical
-

@@ -1,0 +1,295 @@
+{
+  "version": 1,
+  "contentId": "B01",
+  "title": "أي موقع يحتاجك اليوم؟",
+  "pillar": "Bunyan Pro",
+  "format": "carousel",
+  "scheduledAt": "2026-09-11T11:30:00Z",
+  "timeBand": "afternoon",
+  "review": {
+    "path": "artifacts/social-releases/B01.review.json",
+    "sha256": "efbafd01bdb37be95578c47ae8260b183a5f4a274e53263323dd6a99e182123f"
+  },
+  "variants": [
+    {
+      "platform": "instagram",
+      "accountId": "cmtqyomt30003mm807zw90ni9",
+      "title": "أي موقع يحتاجك اليوم؟",
+      "entries": [
+        {
+          "caption": "قد تصل صورة جميلة من موقع يسير جيداً، بينما ينتظر موقع آخر موافقتك على قرار بسيط. في المثال الافتراضي، رتّبنا التدخل بحسب القرار الذي يوقف العمل، ثم طلبنا توضيح التقرير الناقص.\nجرّب أن تنهي كل تحديث بعبارة: «المطلوب من الإدارة اليوم هو…». وإذا لم يوجد قرار مطلوب فاكتب ذلك. لا تكفي صورة لتقييم السلامة أو الجودة الفنية؛ تلك مسؤولية المختص والمعاينة اللازمة.\nيمكن حفظ التقرير والملاحظات داخل بنيان برو بدل إعادة تركيب السياق عند كل سؤال. مرجع تجربة الرصد الرقمي لدى ILO — https://prospectslearnings.ilo.org/interventions/employment-intensive-investment-programmes-eiip/case-studies/digital-monitoring-conducted-engineering-students.\n\nقالب جاهز للنسخ:\nالمشروع: ___ | التاريخ والوقت: ___ | المرحلة: ___\nأُنجز اليوم: ___\nالعمل المتوقف وسببه: ___\nالقرار المطلوب من الإدارة: ___ / لا يوجد\nمسؤول المتابعة المتفق عليه: ___\nموعد المراجعة التالية: ___\nمرجع الصورة أو التقرير: ___\nملاحظة: المسؤول والموعد يكتبَان يدوياً ضمن الملاحظات، وليسا حقول سير عمل مفترضة في المنتج.\n\nراسلنا لعرض بنيان برو، وشاهد كيف يجتمع التقرير والقرار في سياق مشروعك.",
+          "assets": [
+            {
+              "path": "apps/web/public/monthly-plan/2026-09/editorial/cycle-01/B01/slide-01.png",
+              "sha256": "75b1aeda719ea743fd8384315f5ccc221070e87925815cf59a22c032a185df9d",
+              "mimeType": "image/png",
+              "width": 1080,
+              "height": 1350
+            },
+            {
+              "path": "apps/web/public/monthly-plan/2026-09/editorial/cycle-01/B01/slide-02.png",
+              "sha256": "c90b27c301eb6508d546eb73b6a9e5a0226391f1d3a0e841c9a58c0e4cd1b5df",
+              "mimeType": "image/png",
+              "width": 1080,
+              "height": 1350
+            },
+            {
+              "path": "apps/web/public/monthly-plan/2026-09/editorial/cycle-01/B01/slide-03.png",
+              "sha256": "0658f1afb8dc9e77c603af177ebd4ef1ddec76fa37e22576e0483f02676afc3b",
+              "mimeType": "image/png",
+              "width": 1080,
+              "height": 1350
+            },
+            {
+              "path": "apps/web/public/monthly-plan/2026-09/editorial/cycle-01/B01/slide-04.png",
+              "sha256": "010c11dd8997f79ea48abd562166c45cd93d27d886cb5aa9d959e79e96a32bfd",
+              "mimeType": "image/png",
+              "width": 1080,
+              "height": 1350
+            },
+            {
+              "path": "apps/web/public/monthly-plan/2026-09/editorial/cycle-01/B01/slide-05.png",
+              "sha256": "72d0bcd4e3662ae0202720c48ea381be1d1dd590c05c60c894bf87a83f491fb4",
+              "mimeType": "image/png",
+              "width": 1080,
+              "height": 1350
+            },
+            {
+              "path": "apps/web/public/monthly-plan/2026-09/editorial/cycle-01/B01/slide-06.png",
+              "sha256": "891f1e972501b455cce12afd72b6b629e0763604794df7ad7312b6e732fe915e",
+              "mimeType": "image/png",
+              "width": 1080,
+              "height": 1350
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "platform": "facebook",
+      "accountId": "cmtqxv80v0001mm80h7l40uau",
+      "title": "أي موقع يحتاجك اليوم؟",
+      "entries": [
+        {
+          "caption": "لأصحاب شركات المقاولات والمكاتب الهندسية:\nقد تصل صورة جميلة من موقع يسير جيداً، بينما ينتظر موقع آخر موافقتك على قرار بسيط. في المثال الافتراضي، رتّبنا التدخل بحسب القرار الذي يوقف العمل، ثم طلبنا توضيح التقرير الناقص.\nجرّب أن تنهي كل تحديث بعبارة: «المطلوب من الإدارة اليوم هو…». وإذا لم يوجد قرار مطلوب فاكتب ذلك. لا تكفي صورة لتقييم السلامة أو الجودة الفنية؛ تلك مسؤولية المختص والمعاينة اللازمة.\nيمكن حفظ التقرير والملاحظات داخل بنيان برو بدل إعادة تركيب السياق عند كل سؤال. مرجع تجربة الرصد الرقمي لدى ILO — https://prospectslearnings.ilo.org/interventions/employment-intensive-investment-programmes-eiip/case-studies/digital-monitoring-conducted-engineering-students.\n\nناقشوا هذا الإجراء في اجتماع الموقع القادم.\n\nقالب جاهز للنسخ:\nالمشروع: ___ | التاريخ والوقت: ___ | المرحلة: ___\nأُنجز اليوم: ___\nالعمل المتوقف وسببه: ___\nالقرار المطلوب من الإدارة: ___ / لا يوجد\nمسؤول المتابعة المتفق عليه: ___\nموعد المراجعة التالية: ___\nمرجع الصورة أو التقرير: ___\nملاحظة: المسؤول والموعد يكتبَان يدوياً ضمن الملاحظات، وليسا حقول سير عمل مفترضة في المنتج.\n\nراسلنا لعرض بنيان برو، وشاهد كيف يجتمع التقرير والقرار في سياق مشروعك.",
+          "assets": [
+            {
+              "path": "apps/web/public/monthly-plan/2026-09/editorial/cycle-01/B01/slide-01.png",
+              "sha256": "75b1aeda719ea743fd8384315f5ccc221070e87925815cf59a22c032a185df9d",
+              "mimeType": "image/png",
+              "width": 1080,
+              "height": 1350
+            },
+            {
+              "path": "apps/web/public/monthly-plan/2026-09/editorial/cycle-01/B01/slide-02.png",
+              "sha256": "c90b27c301eb6508d546eb73b6a9e5a0226391f1d3a0e841c9a58c0e4cd1b5df",
+              "mimeType": "image/png",
+              "width": 1080,
+              "height": 1350
+            },
+            {
+              "path": "apps/web/public/monthly-plan/2026-09/editorial/cycle-01/B01/slide-03.png",
+              "sha256": "0658f1afb8dc9e77c603af177ebd4ef1ddec76fa37e22576e0483f02676afc3b",
+              "mimeType": "image/png",
+              "width": 1080,
+              "height": 1350
+            },
+            {
+              "path": "apps/web/public/monthly-plan/2026-09/editorial/cycle-01/B01/slide-04.png",
+              "sha256": "010c11dd8997f79ea48abd562166c45cd93d27d886cb5aa9d959e79e96a32bfd",
+              "mimeType": "image/png",
+              "width": 1080,
+              "height": 1350
+            },
+            {
+              "path": "apps/web/public/monthly-plan/2026-09/editorial/cycle-01/B01/slide-05.png",
+              "sha256": "72d0bcd4e3662ae0202720c48ea381be1d1dd590c05c60c894bf87a83f491fb4",
+              "mimeType": "image/png",
+              "width": 1080,
+              "height": 1350
+            },
+            {
+              "path": "apps/web/public/monthly-plan/2026-09/editorial/cycle-01/B01/slide-06.png",
+              "sha256": "891f1e972501b455cce12afd72b6b629e0763604794df7ad7312b6e732fe915e",
+              "mimeType": "image/png",
+              "width": 1080,
+              "height": 1350
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "platform": "linkedin",
+      "accountId": "cmtr6g2iw0003o2p3yx9s70h3",
+      "title": "أي موقع يحتاجك اليوم؟",
+      "entries": [
+        {
+          "caption": "في إدارة أكثر من موقع، جودة التقرير تظهر عندما يساعد الإدارة على ترتيب تدخلها. افترض أن موقعاً ينتظر قرار شراء، وآخر أرسل صورة بلا تاريخ. الأول يحتاج قراراً؛ الثاني يحتاج استكمال معلومة قبل الحكم.\nنقترح تحديثاً من خمسة حقول: المنجز، العائق، القرار المطلوب، مسؤول المتابعة، موعد المراجعة. إنها قاعدة كتابة يمكن تطبيقها في أي سجل، وفي تقارير وملاحظات بنيان برو. لا تمثل بديلاً عن المعاينة الهندسية.\nتجربة ILO للرصد الرقمي في دهوك والموصل مصدر للفكرة، وليست تجربة لمنتجنا: https://prospectslearnings.ilo.org/interventions/employment-intensive-investment-programmes-eiip/case-studies/digital-monitoring-conducted-engineering-students\n\nقالب جاهز للنسخ:\nالمشروع: ___ | التاريخ والوقت: ___ | المرحلة: ___\nأُنجز اليوم: ___\nالعمل المتوقف وسببه: ___\nالقرار المطلوب من الإدارة: ___ / لا يوجد\nمسؤول المتابعة المتفق عليه: ___\nموعد المراجعة التالية: ___\nمرجع الصورة أو التقرير: ___\nملاحظة: المسؤول والموعد يكتبَان يدوياً ضمن الملاحظات، وليسا حقول سير عمل مفترضة في المنتج.\n\nراسلنا لعرض بنيان برو، وشاهد كيف يجتمع التقرير والقرار في سياق مشروعك.",
+          "assets": [
+            {
+              "path": "apps/web/public/monthly-plan/2026-09/editorial/cycle-01/B01/slide-01.png",
+              "sha256": "75b1aeda719ea743fd8384315f5ccc221070e87925815cf59a22c032a185df9d",
+              "mimeType": "image/png",
+              "width": 1080,
+              "height": 1350
+            },
+            {
+              "path": "apps/web/public/monthly-plan/2026-09/editorial/cycle-01/B01/slide-02.png",
+              "sha256": "c90b27c301eb6508d546eb73b6a9e5a0226391f1d3a0e841c9a58c0e4cd1b5df",
+              "mimeType": "image/png",
+              "width": 1080,
+              "height": 1350
+            },
+            {
+              "path": "apps/web/public/monthly-plan/2026-09/editorial/cycle-01/B01/slide-03.png",
+              "sha256": "0658f1afb8dc9e77c603af177ebd4ef1ddec76fa37e22576e0483f02676afc3b",
+              "mimeType": "image/png",
+              "width": 1080,
+              "height": 1350
+            },
+            {
+              "path": "apps/web/public/monthly-plan/2026-09/editorial/cycle-01/B01/slide-04.png",
+              "sha256": "010c11dd8997f79ea48abd562166c45cd93d27d886cb5aa9d959e79e96a32bfd",
+              "mimeType": "image/png",
+              "width": 1080,
+              "height": 1350
+            },
+            {
+              "path": "apps/web/public/monthly-plan/2026-09/editorial/cycle-01/B01/slide-05.png",
+              "sha256": "72d0bcd4e3662ae0202720c48ea381be1d1dd590c05c60c894bf87a83f491fb4",
+              "mimeType": "image/png",
+              "width": 1080,
+              "height": 1350
+            },
+            {
+              "path": "apps/web/public/monthly-plan/2026-09/editorial/cycle-01/B01/slide-06.png",
+              "sha256": "891f1e972501b455cce12afd72b6b629e0763604794df7ad7312b6e732fe915e",
+              "mimeType": "image/png",
+              "width": 1080,
+              "height": 1350
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "platform": "x",
+      "accountId": "cmtr0d6q30001o2p35b2gbunj",
+      "title": "أي موقع يحتاجك اليوم؟",
+      "entries": [
+        {
+          "caption": "وصلتك صور من 3 مواقع. في مثال افتراضي: الأول يعمل، الثاني ينتظر قرار شراء، والثالث أرسل صورة بلا تاريخ. عدد الصور لا يقول أين تحتاج أن تتدخل.",
+          "assets": [
+            {
+              "path": "apps/web/public/monthly-plan/2026-09/editorial/cycle-01/B01/slide-01.png",
+              "sha256": "75b1aeda719ea743fd8384315f5ccc221070e87925815cf59a22c032a185df9d",
+              "mimeType": "image/png",
+              "width": 1080,
+              "height": 1350
+            },
+            {
+              "path": "apps/web/public/monthly-plan/2026-09/editorial/cycle-01/B01/slide-02.png",
+              "sha256": "c90b27c301eb6508d546eb73b6a9e5a0226391f1d3a0e841c9a58c0e4cd1b5df",
+              "mimeType": "image/png",
+              "width": 1080,
+              "height": 1350
+            }
+          ]
+        },
+        {
+          "caption": "جرّب هذا التحديث: المنجز / العائق / القرار المطلوب / مسؤول المتابعة / موعد المراجعة. وإذا لم يوجد قرار مطلوب، اكتب ذلك. احتفظ بالتقرير والصورة في سياق المشروع.",
+          "assets": [
+            {
+              "path": "apps/web/public/monthly-plan/2026-09/editorial/cycle-01/B01/slide-03.png",
+              "sha256": "0658f1afb8dc9e77c603af177ebd4ef1ddec76fa37e22576e0483f02676afc3b",
+              "mimeType": "image/png",
+              "width": 1080,
+              "height": 1350
+            },
+            {
+              "path": "apps/web/public/monthly-plan/2026-09/editorial/cycle-01/B01/slide-04.png",
+              "sha256": "010c11dd8997f79ea48abd562166c45cd93d27d886cb5aa9d959e79e96a32bfd",
+              "mimeType": "image/png",
+              "width": 1080,
+              "height": 1350
+            }
+          ]
+        },
+        {
+          "caption": "راسلنا لعرض بنيان برو، وشاهد كيف يجتمع التقرير والقرار في سياق مشروعك.",
+          "assets": [
+            {
+              "path": "apps/web/public/monthly-plan/2026-09/editorial/cycle-01/B01/slide-05.png",
+              "sha256": "72d0bcd4e3662ae0202720c48ea381be1d1dd590c05c60c894bf87a83f491fb4",
+              "mimeType": "image/png",
+              "width": 1080,
+              "height": 1350
+            },
+            {
+              "path": "apps/web/public/monthly-plan/2026-09/editorial/cycle-01/B01/slide-06.png",
+              "sha256": "891f1e972501b455cce12afd72b6b629e0763604794df7ad7312b6e732fe915e",
+              "mimeType": "image/png",
+              "width": 1080,
+              "height": 1350
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "platform": "tiktok",
+      "accountId": "cmts942e50001pv7xvq3hdwid",
+      "title": "أي موقع يحتاجك اليوم؟",
+      "entries": [
+        {
+          "caption": "وصلتك صور من ثلاثة مواقع. بأيّ موقع تبدأ؟\nقالب تحديث يساعدك على تحديد الموقع الذي يحتاج تدخلك، مع إبقاء المعاينة الفنية للمهندس.\nمثال تعليمي افتراضي. استخدم القالب في تحديث موقع واحد اليوم.\n\nقالب جاهز للنسخ:\nالمشروع: ___ | التاريخ والوقت: ___ | المرحلة: ___\nأُنجز اليوم: ___\nالعمل المتوقف وسببه: ___\nالقرار المطلوب من الإدارة: ___ / لا يوجد\nمسؤول المتابعة المتفق عليه: ___\nموعد المراجعة التالية: ___\nمرجع الصورة أو التقرير: ___\nملاحظة: المسؤول والموعد يكتبَان يدوياً ضمن الملاحظات، وليسا حقول سير عمل مفترضة في المنتج.\n\nراسلنا لعرض بنيان برو، وشاهد كيف يجتمع التقرير والقرار في سياق مشروعك.",
+          "assets": [
+            {
+              "path": "apps/web/public/monthly-plan/2026-09/editorial/cycle-01/B01/slide-01.png",
+              "sha256": "75b1aeda719ea743fd8384315f5ccc221070e87925815cf59a22c032a185df9d",
+              "mimeType": "image/png",
+              "width": 1080,
+              "height": 1350
+            },
+            {
+              "path": "apps/web/public/monthly-plan/2026-09/editorial/cycle-01/B01/slide-02.png",
+              "sha256": "c90b27c301eb6508d546eb73b6a9e5a0226391f1d3a0e841c9a58c0e4cd1b5df",
+              "mimeType": "image/png",
+              "width": 1080,
+              "height": 1350
+            },
+            {
+              "path": "apps/web/public/monthly-plan/2026-09/editorial/cycle-01/B01/slide-03.png",
+              "sha256": "0658f1afb8dc9e77c603af177ebd4ef1ddec76fa37e22576e0483f02676afc3b",
+              "mimeType": "image/png",
+              "width": 1080,
+              "height": 1350
+            },
+            {
+              "path": "apps/web/public/monthly-plan/2026-09/editorial/cycle-01/B01/slide-04.png",
+              "sha256": "010c11dd8997f79ea48abd562166c45cd93d27d886cb5aa9d959e79e96a32bfd",
+              "mimeType": "image/png",
+              "width": 1080,
+              "height": 1350
+            },
+            {
+              "path": "apps/web/public/monthly-plan/2026-09/editorial/cycle-01/B01/slide-05.png",
+              "sha256": "72d0bcd4e3662ae0202720c48ea381be1d1dd590c05c60c894bf87a83f491fb4",
+              "mimeType": "image/png",
+              "width": 1080,
+              "height": 1350
+            },
+            {
+              "path": "apps/web/public/monthly-plan/2026-09/editorial/cycle-01/B01/slide-06.png",
+              "sha256": "891f1e972501b455cce12afd72b6b629e0763604794df7ad7312b6e732fe915e",
+              "mimeType": "image/png",
+              "width": 1080,
+              "height": 1350
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

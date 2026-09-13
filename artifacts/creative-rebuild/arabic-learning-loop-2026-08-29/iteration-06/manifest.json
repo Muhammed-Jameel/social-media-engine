@@ -1,0 +1,55 @@
+{
+  "schemaVersion": "1.0.0",
+  "iteration": 6,
+  "generatedAt": "2026-08-29T14:28:13.715Z",
+  "status": "PIXEL_REVIEW_REQUIRED",
+  "publicationEligible": false,
+  "candidate": {
+    "id": "18-ar-intelligence-needs-context",
+    "title": "Arabic context-first typographic poster",
+    "language": "ar",
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "mobileReview": {
+      "width": 324,
+      "height": 405
+    },
+    "exactCopy": [
+      "مبدأ ذكاء · ١٨",
+      "الذكاء بلا سياق",
+      "مجرّد تخمين",
+      "زوّد النظام بما يحتاجه ليقرّر، لا بما يسهل جمعه.",
+      "السياق"
+    ],
+    "file": "18-ar-intelligence-needs-context.png",
+    "sha256": "76bd018adaf7bf329bf70cc83743386083176b68c6773259095265d3bf01462f",
+    "byteLength": 62692,
+    "mobileFile": "mobile/18-ar-intelligence-needs-context.png",
+    "mobileSha256": "40463916fa29d5986e1aac565d49f34194d686eb4186755bb69b7c648e16b0be",
+    "sourceImage": null,
+    "sourceImageSha256": null,
+    "sourcePromptSummary": "Original native HTML/CSS typographic composition: a dark field and one cropped Arabic word turn context into the dominant visual mass; no generated or external pixels.",
+    "rawProfessionalReferencePixelsSuppliedToGeneration": false,
+    "fontEvidence": {
+      "family": "Ghroob Arabic ITF",
+      "regularSha256": "4dd0c3f2622fc0cfb2802ede862a24877218f78046cf0830ab6290feb68d3e41",
+      "boldSha256": "d853dc21fe5a274d5a9361d720db94ad60a8fcceb114663118b6f9cc2f9b5d5b"
+    },
+    "technicalPreflight": {
+      "documentLanguage": "ar",
+      "documentDirection": "rtl",
+      "fontLoadedRegular": true,
+      "fontLoadedBold": true,
+      "exactCopyPresent": true,
+      "copyRegionWithinCanvas": true,
+      "copyRegionBounds": {
+        "x": 112,
+        "y": 66,
+        "width": 900,
+        "height": 358.8125
+      }
+    }
+  }
+}

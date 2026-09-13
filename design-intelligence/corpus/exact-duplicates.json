@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0.0",
+  "groups": [
+    {
+      "sha256": "00756f672a96239b5bc8b2adea428db2adf774ce7db413074b19c67c9a32c1f2",
+      "referenceId": "ref_00756f672a96239b",
+      "fileIds": [
+        "file_0e4ee19bae",
+        "file_3004dcbbcb"
+      ],
+      "sourceRelativePaths": [
+        "_to_delete/small/Bostal_Logo_Modern_Letter_B_for_Branding_Tech_agen.jpg",
+        "_to_delete/small/Bostal_Logo_Modern_Letter_B_for_Branding_Tech_arro.jpg"
+      ]
+    },
+    {
+      "sha256": "48af7836323cf9a20b8bda2e9312e2fd4861de3175263e6a800f9b880bf6f4ab",
+      "referenceId": "ref_48af7836323cf9a2",
+      "fileIds": [
+        "file_340dab2e2a",
+        "file_e86abe5bbd"
+      ],
+      "sourceRelativePaths": [
+        "Bostal_Logo_Modern_Letter_B_for_Branding_Tech_agen.webp",
+        "Bostal_Logo_Modern_Letter_B_for_Branding_Tech_arro.webp"
+      ]
+    }
+  ]
+}

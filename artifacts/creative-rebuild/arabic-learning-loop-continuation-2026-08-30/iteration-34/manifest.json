@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "1.0.0",
+  "iteration": 34,
+  "generatedAt": "2026-08-30T07:12:27.880Z",
+  "status": "PIXEL_REVIEW_REQUIRED",
+  "publicationEligible": false,
+  "candidate": {
+    "id": "46-ar-market-beyond-storefronts",
+    "title": "Arabic Iraq market-research layered premises directory",
+    "language": "ar",
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "mobileReview": {
+      "width": 324,
+      "height": 405
+    },
+    "exactCopy": [
+      "بحث سوق · ٤٦",
+      "لا تبحث عن السوق",
+      "في الواجهات فقط",
+      "واجهة",
+      "منزل",
+      "مكان غير ثابت",
+      "بغداد · البصرة · النجف · السليمانية",
+      "في مسح ٢٠٢١ لأربع مدن عراقية، تراوحت الأعمال غير المسجّلة العاملة من المنازل بين ١٣٪ و٣٥.٢٪، ومن أماكن غير ثابتة بين ٢.٤٪ و٣٠.٧٪ بحسب المدينة.",
+      "المصدر: مسح منشآت القطاع غير الرسمي، مجموعة البنك الدولي، ٢٠٢١."
+    ],
+    "file": "46-ar-market-beyond-storefronts.png",
+    "sha256": "f87d49f7cff223a15df171828f437125e5a145be638cd9f07e6352904015e832",
+    "byteLength": 372234,
+    "mobileFile": "mobile/46-ar-market-beyond-storefronts.png",
+    "mobileSha256": "2b7f1ce1fc580f9c2f5e807f600e0c4b4f6a0b6cc416d5408c0a0b563979a326",
+    "sourceImage": null,
+    "sourceImageSha256": null,
+    "sourcePromptSummary": "Native layered-premises editorial built from project typography, canonical logo, and original HTML/CSS paper geometry; no map, shop illustration, person, storefront photograph, dashboard, external asset, generated image, or professional reference pixel.",
+    "rawProfessionalReferencePixelsSuppliedToGeneration": false,
+    "fontEvidence": {
+      "family": "Ghroob Arabic ITF",
+      "regularSha256": "4dd0c3f2622fc0cfb2802ede862a24877218f78046cf0830ab6290feb68d3e41",
+      "boldSha256": "d853dc21fe5a274d5a9361d720db94ad60a8fcceb114663118b6f9cc2f9b5d5b"
+    },
+    "technicalPreflight": {
+      "documentLanguage": "ar",
+      "documentDirection": "rtl",
+      "fontLoadedRegular": true,
+      "fontLoadedBold": true,
+      "exactCopyPresent": true,
+      "copyRegionWithinCanvas": true,
+      "copyRegionBounds": {
+        "x": 68,
+        "y": 68,
+        "width": 944,
+        "height": 1130
+      }
+    }
+  }
+}

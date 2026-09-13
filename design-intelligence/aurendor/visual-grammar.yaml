@@ -1,0 +1,63 @@
+schemaVersion: 1.0.0
+brandVersion: final-2026.1
+status: experimental-benchmark-only
+world:
+  name: Operational Intelligence
+  premise: "Invisible systems become physical behaviors inside a precise, calm, material world."
+  recognitionTest: "The post should feel like AURENDOR before the logo through light, material, charged green behavior, Arabic authority, and operational storytelling."
+composition:
+  principles: [semantic-focal-dominance, asymmetric-counterweight, purposeful-negative-space, semantic-depth-planes]
+  oneFocalPoint: true
+  fixedTemplateSkeleton: prohibited
+  grid: "Six-column base may be bent once for the concept; the break must be named and justified."
+typography:
+  latin: "Dh Ranclo Bold for display; verified production files required."
+  hierarchy: "Steep scale contrast with a maximum three-beat opening scan."
+  displayRole: "Type participates in the image geometry, never labels a finished image."
+arabicTypography:
+  font: "Ghroob Arabic ITF with verified production files."
+  method: "Arabic-first authored lines, RTL composition, no tracking, optical right edge, explicit mixed-script isolation."
+  translationPolicy: "English and Arabic share an idea and system, not line count, width, or mirrored layout."
+color:
+  dominantFields: ["#003F35", "#F4F8F5"]
+  depthRange: ["#00221D", "#00302A", "#0B594A", "#CFDDD4"]
+  charge: ["#0EDB23", "#77FF70"]
+  rule: "Neon marks active intelligence, resolution, or signal; it is never a generic fill."
+imagery:
+  priority: [conceptual-photomanipulation, bespoke-3d, conceptual-illustration, owned-product-ui, typography-led]
+  generatedAssetPolicy: "Create bespoke assets from an original AURENDOR concept; never send reference pixels or studio names to generation."
+  forbidden: [generic-robot, glowing-brain, hologram-hand, random-nodes, floating-device-without-proof, full-color-ungraded-stock]
+anthropomorphism:
+  defaultLevels: [1, 2, 3]
+  behaviorFirst: true
+  faceRequiresWrittenBenefit: true
+  permanentMascot: deferred
+characters:
+  system: hybrid
+  modes: [abstract-behavior, object-interaction, selective-character-entity]
+  consistencyGate: "Recurring entities require silhouette, material, proportion, pose, expression, and lighting sheets."
+depth:
+  rule: "Foreground names the stakes, action plane carries the operating behavior, background supplies context or evidence."
+lighting:
+  lightMode: "Soft Baghdad daylight filtered through paper/mineral surfaces; precise shadows, restrained green spill."
+  darkMode: "Deep infrastructure field with local pale-neon activation; no ambient blue-tech glow."
+texture:
+  allowed: [restrained-mineral-grain, paper-fiber, precise-machined-surface, glass, ceramic, brushed-metal]
+  rule: "One material story per direction; texture must explain atmosphere or function."
+iconography:
+  rule: "Use icons only as functional evidence or control states; never as topic decoration."
+motion:
+  verbs: [organize, retrieve, connect, handoff, protect, resolve, recover, scale]
+  behavior: "Movement has anticipation, action, and settled state; avoid perpetual decorative looping."
+negativeSpace:
+  roles: [headline-field, absence-metaphor, gaze-destination, feed-breath]
+logoUsage:
+  role: signature
+  rule: "Quietly authenticate an already recognizable world."
+informationDensity:
+  cover: "One thesis and at most one evidence phrase."
+  carousel: "One cognitive job per slide; progression changes composition without losing system."
+feed:
+  rhythmRoles: [anchor, breath, energy, information, narrative]
+  reviewSizes: [3, 9, 12]
+  repetitionGate: "No repeated skeleton, focal geometry, or action rail within the nearest nine posts."

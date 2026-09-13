@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "1.0.0",
+  "iteration": 37,
+  "generatedAt": "2026-08-30T07:12:28.235Z",
+  "status": "PIXEL_REVIEW_REQUIRED",
+  "publicationEligible": false,
+  "candidate": {
+    "id": "28r-ar-result-needs-provenance-registration",
+    "title": "Arabic provenance registration typography rebuild",
+    "language": "ar",
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "mobileReview": {
+      "width": 324,
+      "height": 405
+    },
+    "exactCopy": [
+      "مبدأ ثقة · ٢٨",
+      "النتيجة بلا مصدر",
+      "ليست معرفة",
+      "مصدر البيانات",
+      "إصدارها",
+      "تاريخ تحديثها",
+      "١ — سجّل مصدر البيانات، إصدارها، وتاريخ تحديثها."
+    ],
+    "file": "28r-ar-result-needs-provenance-registration.png",
+    "sha256": "30ecfa598b2503ddcf9c28ce9cae7ff8b56340ceeb132d428e0d142ffc967f3e",
+    "byteLength": 88501,
+    "mobileFile": "mobile/28r-ar-result-needs-provenance-registration.png",
+    "mobileSha256": "13aa124976612c2687888f3b1e90968d0f8fd5ce099589252594f20007a08c71",
+    "sourceImage": null,
+    "sourceImageSha256": null,
+    "sourcePromptSummary": "Native editorial typography rebuild using live Ghroob text and original CSS/SVG registration geometry: source, version, and update layers converge to register the word knowledge; no mock document, database icon, chain diagram, external asset, generated image, or professional reference pixel.",
+    "rawProfessionalReferencePixelsSuppliedToGeneration": false,
+    "fontEvidence": {
+      "family": "Ghroob Arabic ITF",
+      "regularSha256": "4dd0c3f2622fc0cfb2802ede862a24877218f78046cf0830ab6290feb68d3e41",
+      "boldSha256": "d853dc21fe5a274d5a9361d720db94ad60a8fcceb114663118b6f9cc2f9b5d5b"
+    },
+    "technicalPreflight": {
+      "documentLanguage": "ar",
+      "documentDirection": "rtl",
+      "fontLoadedRegular": true,
+      "fontLoadedBold": true,
+      "exactCopyPresent": true,
+      "copyRegionWithinCanvas": true,
+      "copyRegionBounds": {
+        "x": 68,
+        "y": 68,
+        "width": 944,
+        "height": 1130
+      }
+    }
+  }
+}

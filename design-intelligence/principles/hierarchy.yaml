@@ -1,0 +1,55 @@
+schemaVersion: 1.0.0
+domain: hierarchy
+principles:
+  - id: HIER_THREE_BEATS_MAX
+    name: Three-beat first read
+    description: "Limit the opening scan to a focal idea, a clarifying beat, and a quiet brand or action signal."
+    whyItWorks: "A controlled sequence prevents every element from demanding attention and makes the post understandable at feed speed."
+    appropriateFor: [awareness, education, promotion, announcement, thought-leadership, conversion]
+    avoidWhen: [dense-case-study-detail]
+    visualFamilies: [conceptual-hero, editorial-statement, announcement, product-system-story]
+    languages: [ar, en]
+    anthropomorphismLevels: [0, 1, 2, 3, 4, 5]
+    strongReferenceIds: [ref_51e708951ea61f18, ref_8871f98455278188, ref_7ea2e6edfd24a465]
+    aurendorApplication: "Document the intended first, second, and third fixation; remove or demote anything that inserts a fourth competing beat."
+    retrievalTags: [hierarchy, scan, attention, mobile, clarity]
+    mustNotCopy: "Do not duplicate a source's element order, positions, or scale ratios."
+  - id: HIER_WEIGHT_NOT_CONTAINERS
+    name: Hierarchy through weight, not containers
+    description: "Use scale, contrast, placement, and space before adding cards, pills, outlines, or shadows around every message."
+    whyItWorks: "Visual weight feels designed into the composition while excessive containers reveal a UI-template mentality."
+    appropriateFor: [awareness, thought-leadership, editorial, brand-building, promotion]
+    avoidWhen: [multi-step-data, product-ui-proof]
+    visualFamilies: [conceptual-hero, editorial-statement, announcement]
+    languages: [ar, en]
+    anthropomorphismLevels: [0, 1, 2, 3]
+    strongReferenceIds: [ref_97c66851c15d6c1f, ref_6dd0a9246092f4d5, ref_51e708951ea61f18]
+    aurendorApplication: "A container requires a semantic role such as evidence, state, or interaction; decoration is not a role."
+    retrievalTags: [hierarchy, weight, cards, scale, template]
+    mustNotCopy: "Do not copy a source's framing devices or card system."
+  - id: HIER_EVIDENCE_SUBORDINATED_NOT_HIDDEN
+    name: Evidence is subordinate but findable
+    description: "Keep proof visually below the main claim while giving it a stable region and enough contrast to reward a second look."
+    whyItWorks: "The claim earns attention and the evidence earns trust without competing at the same scale."
+    appropriateFor: [statistic, case-study, education, service-explanation, product-introduction]
+    avoidWhen: [pure-brand-statement]
+    visualFamilies: [data-story, case-study, product-system-story, arabic-educational-carousel]
+    languages: [ar, en]
+    anthropomorphismLevels: [0, 1, 2, 3]
+    strongReferenceIds: [ref_4afce40fe49062b6, ref_51e708951ea61f18, ref_8ef6ff7e70837523]
+    aurendorApplication: "Separate the operational thesis from sourced proof; never use fabricated metrics to fill a visual slot."
+    retrievalTags: [evidence, trust, proof, hierarchy, statistic]
+    mustNotCopy: "Do not reuse source metrics, proof objects, charts, or evidence layouts."
+  - id: HIER_LOGO_QUIET_AUTHORITY
+    name: Logo as quiet authority
+    description: "Place the logo where it closes or authenticates the communication without becoming the primary focal point."
+    whyItWorks: "Recognition is stronger when the entire world feels branded; an oversized logo often signals that the world is not."
+    appropriateFor: [awareness, education, promotion, announcement, case-study, brand-building]
+    avoidWhen: [identity-reveal]
+    visualFamilies: [conceptual-hero, editorial-statement, product-system-story, data-story, character-narrative]
+    languages: [ar, en]
+    anthropomorphismLevels: [0, 1, 2, 3, 4, 5]
+    strongReferenceIds: [ref_51e708951ea61f18, ref_7ea2e6edfd24a465, ref_8871f98455278188]
+    aurendorApplication: "Let materials, light, color behavior, and typography establish AURENDOR before the mark; size the lockup as a final signature."
+    retrievalTags: [logo, brand, authority, restraint, signature]
+    mustNotCopy: "Do not copy source lockups, corner systems, or signature positions."

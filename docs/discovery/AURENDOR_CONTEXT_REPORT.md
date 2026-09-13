@@ -15,9 +15,9 @@ The authoritative 2026 identity is a geometric, futuristic “Digital Civilizati
 1. `marketing/_context/AURENDOR_Brand_Identity_FINAL_2026.md` — founder-approved final identity; canonical visual source.
 2. `marketing/_context/AURENDOR_Social_Design_System_2026.md` — July 2026 social execution system based on the final identity.
 3. `content-engine/ENGINE-STATE.md` — most recent operational corrections and known blockers.
-4. `marketing/AURENDOR VISUAL IDENTITY/` — delivered source assets, vectors, fonts, patterns, and designer examples.
+4. `marketing/brand/visual-identity-2026/` — delivered source assets, vectors, fonts, patterns, and designer examples.
 5. Current voice, product, growth, campaign, and research files under `marketing/_context`, `marketing/campaigns`, and `marketing/research`.
-6. `marketing/new-brand/**`, `AURENDOR_Brand_System_v3.md`, and old Canva setup documents — historical evidence only where they conflict with FINAL 2026.
+6. `_archive/marketing/brand-explorations-new-brand/**`, `AURENDOR_Brand_System_v3.md`, and old Canva setup documents — historical evidence only where they conflict with FINAL 2026.
 
 The full file-level evidence index is generated at `data/brand/source-manifest.json` with SHA-256 hashes, modified dates, inferred authority, topics, and lifecycle status.
 
@@ -51,7 +51,7 @@ The full file-level evidence index is generated at `data/brand/source-manifest.j
 
 - A manual September 2026 content queue exists at `content-engine/READY-TO-PUBLISH` with 33 post manifests referencing 98 approved assets (94 PNG + 4 MP4). Nine additional top-level files are unreferenced/duplicate evidence and are intentionally excluded. The queue is a useful seed dataset and creative benchmark, not a production engine.
 - `content-engine/PRODUCTION-CALENDAR.md`, captions, post JSON files, and QA findings can seed scheduling, review, and evaluation flows.
-- The final logo vectors, Dh Ranclo, restored Ghroob files, patterns, and illustration sources are present under `marketing/AURENDOR VISUAL IDENTITY` and `marketing/brand/fonts/final-2026`.
+- The final logo vectors, Dh Ranclo, restored Ghroob files, patterns, and illustration sources are present under `marketing/brand/visual-identity-2026` and `marketing/brand/fonts/final-2026`.
 - Existing marketing research, campaign plans, sales positioning, website copy, and product screenshots provide evidence for content generation.
 
 ## Existing technical infrastructure

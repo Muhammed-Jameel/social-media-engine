@@ -1,0 +1,58 @@
+{
+  "schemaVersion": "1.0.0",
+  "iteration": 28,
+  "generatedAt": "2026-08-30T07:12:26.734Z",
+  "status": "PIXEL_REVIEW_REQUIRED",
+  "publicationEligible": false,
+  "candidate": {
+    "id": "40-ar-name-things-as-people-do",
+    "title": "Arabic people-language street specimen",
+    "language": "ar",
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "mobileReview": {
+      "width": 324,
+      "height": 405
+    },
+    "exactCopy": [
+      "لغة الناس · ٤٠",
+      "سمِّ الأشياء",
+      "كما يسمّيها الناس",
+      "يقولونها",
+      "يبحثون بها",
+      "يفهمونها",
+      "تعلّم كلماتهم من البحث، وراجع ما يبحثون عنه، ثم اكتب بعبارات مألوفة وواضحة.",
+      "مرجع: دليل أبحاث المستخدم وإرشادات اللغة الواضحة، بوابة الحكومة البريطانية."
+    ],
+    "file": "40-ar-name-things-as-people-do.png",
+    "sha256": "195ae60593bd05bf091d6ce4e37f1f9c9dbca5433fe8236f80a56e249472b054",
+    "byteLength": 91204,
+    "mobileFile": "mobile/40-ar-name-things-as-people-do.png",
+    "mobileSha256": "0e24d37492366d8b0ec64a04588b8964a6813df345a55976d1213bcf5f6d38f2",
+    "sourceImage": null,
+    "sourceImageSha256": null,
+    "sourcePromptSummary": "Native diagonal public-language specimen built from project typography, canonical logo, and original HTML/CSS; no quotation bubble, interface card, sticky note, correction mark, external asset, or professional reference pixel.",
+    "rawProfessionalReferencePixelsSuppliedToGeneration": false,
+    "fontEvidence": {
+      "family": "Ghroob Arabic ITF",
+      "regularSha256": "4dd0c3f2622fc0cfb2802ede862a24877218f78046cf0830ab6290feb68d3e41",
+      "boldSha256": "d853dc21fe5a274d5a9361d720db94ad60a8fcceb114663118b6f9cc2f9b5d5b"
+    },
+    "technicalPreflight": {
+      "documentLanguage": "ar",
+      "documentDirection": "rtl",
+      "fontLoadedRegular": true,
+      "fontLoadedBold": true,
+      "exactCopyPresent": true,
+      "copyRegionWithinCanvas": true,
+      "copyRegionBounds": {
+        "x": 68,
+        "y": 68,
+        "width": 944,
+        "height": 1130
+      }
+    }
+  }
+}

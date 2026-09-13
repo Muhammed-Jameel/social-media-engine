@@ -4,7 +4,7 @@ import {
   AURENDOR_CREATIVE_BRAND_VERSION,
   CANONICAL_HORIZONTAL_LOGO_SOURCE_SHA256,
   duplicateCreativeFingerprints,
-  evaluateSocialCreative,
+  evaluateTechnicalCreativePreflight,
   fingerprintSvg,
   renderSocialSvg,
   type SocialSvgInput,
@@ -130,7 +130,7 @@ await mkdir(outputDirectory, { recursive: true });
 
 const rendered = benchmarkDefinitions.map((definition) => {
   const svg = renderSocialSvg(definition.input);
-  const evaluation = evaluateSocialCreative({ input: definition.input, svg, assetLicenseStatus: "NOT_REQUIRED" });
+  const evaluation = evaluateTechnicalCreativePreflight({ input: definition.input, svg, assetLicenseStatus: "NOT_REQUIRED" });
   if (evaluation.hardFails.length > 0) {
     throw new Error(`${definition.id} failed deterministic creative gates: ${evaluation.hardFails.map((failure) => failure.code).join(", ")}`);
   }

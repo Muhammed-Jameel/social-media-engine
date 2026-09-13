@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "1.0.0",
+  "iteration": 27,
+  "generatedAt": "2026-08-30T07:12:26.647Z",
+  "status": "PIXEL_REVIEW_REQUIRED",
+  "publicationEligible": false,
+  "candidate": {
+    "id": "39-ar-record-observation-not-assumption",
+    "title": "Arabic user-research correction proof",
+    "language": "ar",
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "mobileReview": {
+      "width": 324,
+      "height": 405
+    },
+    "exactCopy": [
+      "بحث مستخدم · ٣٩",
+      "سجّل ما رأيت",
+      "افتراض",
+      "لا ما افترضته",
+      "دوّن ما فعله المستخدم، وما قاله، وأين واجه عائقًا.",
+      "مرجع: دليل أبحاث المستخدم، بوابة الحكومة البريطانية."
+    ],
+    "file": "39-ar-record-observation-not-assumption.png",
+    "sha256": "6fe858e2be4c08c53a18460d95fd741dbfe179b49a5b42b58bf7232463a7084c",
+    "byteLength": 253061,
+    "mobileFile": "mobile/39-ar-record-observation-not-assumption.png",
+    "mobileSha256": "79f214948f062a2b2201fc5008be62be72a65021498f814b65ff5a149e63c555",
+    "sourceImage": null,
+    "sourceImageSha256": null,
+    "sourcePromptSummary": "Native editorial correction-proof poster built from project typography, canonical logo, and original HTML/SVG annotation marks; no sticky-note grid, interview portrait, transcript UI, external asset, or professional reference pixel.",
+    "rawProfessionalReferencePixelsSuppliedToGeneration": false,
+    "fontEvidence": {
+      "family": "Ghroob Arabic ITF",
+      "regularSha256": "4dd0c3f2622fc0cfb2802ede862a24877218f78046cf0830ab6290feb68d3e41",
+      "boldSha256": "d853dc21fe5a274d5a9361d720db94ad60a8fcceb114663118b6f9cc2f9b5d5b"
+    },
+    "technicalPreflight": {
+      "documentLanguage": "ar",
+      "documentDirection": "rtl",
+      "fontLoadedRegular": true,
+      "fontLoadedBold": true,
+      "exactCopyPresent": true,
+      "copyRegionWithinCanvas": true,
+      "copyRegionBounds": {
+        "x": 68,
+        "y": 68,
+        "width": 944,
+        "height": 1130
+      }
+    }
+  }
+}

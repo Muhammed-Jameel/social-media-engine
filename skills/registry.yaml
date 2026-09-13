@@ -16,6 +16,20 @@ skills:
     rejection_reason: null
     rollout_state: draft
     last_reviewed_date: 2026-08-23
+  - name: aurendor-design-corpus-analysis
+    version: 1.0.0
+    commit_hash: pending-creative-quality-rebuild-commit
+    content_hash_sha256: 5e8afe3db4d55365ed0223a702ad60f7a139b7c96f3ca03270d04bded80ad56a
+    source: AURENDOR creative-quality rebuild
+    license: AURENDOR proprietary internal use
+    local_path: skills/aurendor-design-corpus-analysis
+    purpose: Audit a read-only visual corpus and produce safe design taxonomy, principles, annotations, and retrieval metadata.
+    security_review_status: reviewed-read-only-corpus-no-reference-pixels-or-identities-in-generation
+    benchmark_result: official-quick-validate-and-structural-audit-passed_corpus-fixture-evals-pending
+    adopted: true
+    rejection_reason: null
+    rollout_state: draft
+    last_reviewed_date: 2026-08-23
   - name: aurendor-content-strategy
     version: 1.0.0
     commit_hash: pending-initial-project-commit
@@ -44,6 +58,20 @@ skills:
     rejection_reason: null
     rollout_state: draft
     last_reviewed_date: 2026-08-23
+  - name: aurendor-arabic-design-review
+    version: 1.0.0
+    commit_hash: pending-creative-quality-rebuild-commit
+    content_hash_sha256: 13e81b985e7af6e2099d51116c775ada57db4342c8529a896dedb71304895f77
+    source: AURENDOR creative-quality rebuild
+    license: AURENDOR proprietary internal use
+    local_path: skills/aurendor-arabic-design-review
+    purpose: Preflight Arabic-first art direction and inspect rendered Arabic pixels as the independent Arabic critic.
+    security_review_status: reviewed-current-pixels-required-no-copy-mutation-or-solo-approval
+    benchmark_result: official-quick-validate-and-structural-audit-passed_arabic-render-evals-pending
+    adopted: true
+    rejection_reason: null
+    rollout_state: draft
+    last_reviewed_date: 2026-08-23
   - name: aurendor-english-copywriter
     version: 1.0.0
     commit_hash: pending-initial-project-commit
@@ -59,43 +87,85 @@ skills:
     rollout_state: draft
     last_reviewed_date: 2026-08-23
   - name: aurendor-art-direction
-    version: 1.0.0
-    commit_hash: pending-initial-project-commit
-    content_hash_sha256: 5eed63dead7dafb0be8e9014aaf3a92e8f57e46acb75562228e981b7b8ff6ffd
-    source: AURENDOR Content OS master specification
+    version: 2.0.0
+    commit_hash: pending-creative-quality-rebuild-commit
+    content_hash_sha256: 3233d265cde8c8b45285fa69090efb5654d325c1f9de3c535b99805e3fa780f2
+    source: AURENDOR creative-quality rebuild
     license: AURENDOR proprietary internal use
     local_path: skills/aurendor-art-direction
-    purpose: Turn content intent into concept-led FINAL 2026 design briefs.
+    purpose: Retrieve design intelligence, answer 15 art-direction questions, and tournament four or more materially distinct concepts.
     security_review_status: reviewed-no-executable-code-sources-treated-as-data
-    benchmark_result: official-quick-validate-and-structural-audit-passed_behavioral-evals-pending
+    benchmark_result: official-quick-validate-and-structural-audit-passed_concept-tournament-evals-pending
+    adopted: true
+    rejection_reason: null
+    rollout_state: draft
+    last_reviewed_date: 2026-08-23
+  - name: aurendor-anthropomorphic-art-direction
+    version: 1.0.0
+    commit_hash: pending-creative-quality-rebuild-commit
+    content_hash_sha256: b1829838e423f9030022266459d406234284ee183bae9a41ea05c0fbd3ece45a
+    source: AURENDOR creative-quality rebuild
+    license: AURENDOR proprietary internal use
+    local_path: skills/aurendor-anthropomorphic-art-direction
+    purpose: Define restrained human-like system behavior with face, maturity, capability, consistency, and mascot gates.
+    security_review_status: reviewed-no-reference-character-imitation-no-unapproved-mascot-or-capability-claim
+    benchmark_result: official-quick-validate-and-structural-audit-passed_character-system-evals-pending
+    adopted: true
+    rejection_reason: null
+    rollout_state: draft
+    last_reviewed_date: 2026-08-23
+  - name: aurendor-originality-review
+    version: 1.0.0
+    commit_hash: pending-creative-quality-rebuild-commit
+    content_hash_sha256: 5b99984c2ba0dd64b763066624a1ba3065c412827859a5d4e7dd6c496675c2db
+    source: AURENDOR creative-quality rebuild
+    license: AURENDOR proprietary internal use
+    local_path: skills/aurendor-originality-review
+    purpose: Detect structural reference imitation, template reuse, and recent-feed self-repetition before production or approval.
+    security_review_status: reviewed-reference-pixels-reviewer-only-no-identities-or-imitation-in-generation
+    benchmark_result: official-quick-validate-and-structural-audit-passed_originality-calibration-pending
     adopted: true
     rejection_reason: null
     rollout_state: draft
     last_reviewed_date: 2026-08-23
   - name: aurendor-social-design
-    version: 1.0.0
-    commit_hash: pending-initial-project-commit
-    content_hash_sha256: b067fd5ea5453e17e30f5317b7bf8b082c12c81abbc947c69a0c5fa9788a6fd0
-    source: AURENDOR Content OS master specification
+    version: 2.0.0
+    commit_hash: pending-creative-quality-rebuild-commit
+    content_hash_sha256: bb9ae88b11622ab13863a01fc9803d54660ca56efbad71ab686b88eb7b6cd2fe
+    source: AURENDOR creative-quality rebuild
     license: AURENDOR proprietary internal use
     local_path: skills/aurendor-social-design
-    purpose: Produce editable, rendered, licensed social designs from approved briefs with capability fallbacks.
+    purpose: Produce asset-first, Arabic-first, exact-pixel social designs and prove visual revision integrity.
     security_review_status: reviewed-no-executable-code-provider-mutations-require-workflow-authorization
-    benchmark_result: official-quick-validate-and-structural-audit-passed_visual-golden-set-pending
+    benchmark_result: official-quick-validate-and-structural-audit-passed_pixel-revision-and-visual-golden-set-pending
     adopted: true
     rejection_reason: null
     rollout_state: draft
     last_reviewed_date: 2026-08-23
   - name: aurendor-design-critique
-    version: 1.0.0
-    commit_hash: pending-initial-project-commit
-    content_hash_sha256: 38f54b79391129a08c5c4c3174a0addbefd4ce787ca3b8070d4a95527ecd9463
-    source: AURENDOR Content OS master specification
+    version: 2.0.0
+    commit_hash: pending-creative-quality-rebuild-commit
+    content_hash_sha256: ab3ef4fa9416ab528685532e59e99bf4bf01d8c2215dbfb1ef3a433710cfca0d
+    source: AURENDOR creative-quality rebuild
     license: AURENDOR proprietary internal use
     local_path: skills/aurendor-design-critique
-    purpose: Independently score rendered creative, detect hard failures, and prescribe bounded revisions.
+    purpose: Run a four-role 160-point review of current pixels with anchors, blind pairwise comparison, and restart logic.
     security_review_status: reviewed-no-executable-code-rendered-assets-treated-as-data
-    benchmark_result: official-quick-validate-and-structural-audit-passed_visual-grader-calibration-pending
+    benchmark_result: official-quick-validate-and-structural-audit-passed_four-role-visual-grader-calibration-pending
+    adopted: true
+    rejection_reason: null
+    rollout_state: draft
+    last_reviewed_date: 2026-08-23
+  - name: aurendor-feed-curation
+    version: 1.0.0
+    commit_hash: pending-creative-quality-rebuild-commit
+    content_hash_sha256: 8bfb28dcc55abd2d029984f71c6c75cadde1975f43623d45c2dceba09955322e
+    source: AURENDOR creative-quality rebuild
+    license: AURENDOR proprietary internal use
+    local_path: skills/aurendor-feed-curation
+    purpose: Curate actual current pixels into coherent, varied 3-, 9-, and 12-post feed systems.
+    security_review_status: reviewed-no-individual-fail-override-no-template-flattening
+    benchmark_result: official-quick-validate-and-structural-audit-passed_feed-rhythm-evals-pending
     adopted: true
     rejection_reason: null
     rollout_state: draft

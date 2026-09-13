@@ -1,0 +1,1172 @@
+{
+  "schemaVersion": "1.0.0",
+  "reviewId": "arabic-design-review-benchmarks-v2-round2-20260823",
+  "criticRole": "ARABIC_DESIGN_REVIEWER",
+  "reviewedAt": "2026-08-23T16:37:29+03:00",
+  "reviewState": "EXACT_CURRENT_HASH_ROUND2_REVIEW_NOT_RELEASE_APPROVAL",
+  "independentFromGenerator": true,
+  "actualPixelsInspected": true,
+  "governingInputs": {
+    "manifest": {
+      "path": "artifacts/creative-rebuild/benchmarks-v2/manifest.json",
+      "sha256": "5b2a2cb9a078e97862d19c2fc86b87bdeb42162557ba524864789de1c35abdfc",
+      "iteration": 2,
+      "status": "ROUND_2_PIXEL_CRITIQUE_REQUIRED",
+      "currentReleaseGate": "BLOCKED",
+      "publicationEligible": false
+    },
+    "arabicCopySpec": {
+      "path": "artifacts/creative-rebuild/reviews/round2-arabic-copy-spec.md",
+      "sha256": "15d89f9bcd2587d8f08e2b5fbf77c1a64e40994fd6f14852ad951017dbdfce45"
+    },
+    "arabicDesignRules": {
+      "path": "design-intelligence/reports/ARABIC_DESIGN_RULES.md",
+      "sha256": "b9bf160e47feb986fe3859ed2ce73fc8c3a9c49d811eeb6ad27ae2205a4f02ac"
+    },
+    "creativeQualityRubric": {
+      "path": "design-intelligence/reports/CREATIVE_QUALITY_RUBRIC.md",
+      "sha256": "d8dc7e2957a912f5960d1b8988cccbd59edde62516681cf23be3dedd5027d102"
+    },
+    "professionalCritiqueSchema": {
+      "path": "packages/schemas/src/index.ts",
+      "sha256": "3a510fe0a928d37effe36e0a75bdde4d44a759e862ca470dd7a8dd7cd310bc87",
+      "rule": "Eight dimensions x 20, total /160. PROFESSIONAL_CANDIDATE requires at least 145, no hard fail, and an anchor verdict of comparable or above."
+    }
+  },
+  "pixelInputs": {
+    "originals": [
+      {
+        "id": "01-ar-context-handoff",
+        "file": "artifacts/creative-rebuild/benchmarks-v2/01-ar-context-handoff.png",
+        "sha256": "2196c2c4a55b9808cbb50b5414efad08dfa80d3d4c1d4c120cd082181cfa2519",
+        "width": 1080,
+        "height": 1350,
+        "manifestMatch": true
+      },
+      {
+        "id": "02-ar-rag-evidence",
+        "file": "artifacts/creative-rebuild/benchmarks-v2/02-ar-rag-evidence.png",
+        "sha256": "adefabbb8bd36b8614c043241470404007f3bc6e5a90c4f3ea877605d697a9ab",
+        "width": 1080,
+        "height": 1350,
+        "manifestMatch": true
+      },
+      {
+        "id": "03-ar-automation-relay",
+        "file": "artifacts/creative-rebuild/benchmarks-v2/03-ar-automation-relay.png",
+        "sha256": "555d121950dee918b0c30bf86cf58fdd8bcff5eb75764b7accd9cf68a3ba42ac",
+        "width": 1080,
+        "height": 1350,
+        "manifestMatch": true
+      },
+      {
+        "id": "04-ar-decision-question",
+        "file": "artifacts/creative-rebuild/benchmarks-v2/04-ar-decision-question.png",
+        "sha256": "29d75eaf465ab8e27239239c6fc29e3f96df8b21eda9ef96d8f4b850de9b6f51",
+        "width": 1080,
+        "height": 1350,
+        "manifestMatch": true
+      },
+      {
+        "id": "06-ar-operating-pattern",
+        "file": "artifacts/creative-rebuild/benchmarks-v2/06-ar-operating-pattern.png",
+        "sha256": "5bb3c4dd159eb68fbf1990d90775dff42a576a9049a0ad7ac97e366abcef9ab8",
+        "width": 1080,
+        "height": 1350,
+        "manifestMatch": true
+      },
+      {
+        "id": "09-ar-carousel-decision",
+        "file": "artifacts/creative-rebuild/benchmarks-v2/09-ar-carousel-decision.png",
+        "sha256": "0a33470e54a6c597065994723fa74b4119ebfb248a609926b000b6dc402b93de",
+        "width": 1080,
+        "height": 1350,
+        "manifestMatch": true
+      },
+      {
+        "id": "10-ar-carousel-boundaries",
+        "file": "artifacts/creative-rebuild/benchmarks-v2/10-ar-carousel-boundaries.png",
+        "sha256": "b5df95c734b2442c350d1829796870139be6af9edf20fd5fe5f4405c8e0d17a4",
+        "width": 1080,
+        "height": 1350,
+        "manifestMatch": true
+      },
+      {
+        "id": "11-ar-carousel-stop",
+        "file": "artifacts/creative-rebuild/benchmarks-v2/11-ar-carousel-stop.png",
+        "sha256": "b247f546a73af33e67992c8797943ebb4f4a521ed7fe40cf584e597969ceb98d",
+        "width": 1080,
+        "height": 1350,
+        "manifestMatch": true
+      }
+    ],
+    "mobiles": [
+      {
+        "id": "01-ar-context-handoff",
+        "file": "artifacts/creative-rebuild/benchmarks-v2/mobile/01-ar-context-handoff.png",
+        "sha256": "c92679a18be11d8d89dbde0fb93963c64b2e846be5333d4af23ae4cac0efd50b",
+        "width": 324,
+        "height": 405
+      },
+      {
+        "id": "02-ar-rag-evidence",
+        "file": "artifacts/creative-rebuild/benchmarks-v2/mobile/02-ar-rag-evidence.png",
+        "sha256": "d2ef00988442bdd2f1327ed65ab1e6cfff6cc8b41a5de0ee83a55090c0926921",
+        "width": 324,
+        "height": 405
+      },
+      {
+        "id": "03-ar-automation-relay",
+        "file": "artifacts/creative-rebuild/benchmarks-v2/mobile/03-ar-automation-relay.png",
+        "sha256": "5f8b0a4a4bc2dcd9f9fd07003f3f2e02355ef6aa57fde2d6b912999b06a4becb",
+        "width": 324,
+        "height": 405
+      },
+      {
+        "id": "04-ar-decision-question",
+        "file": "artifacts/creative-rebuild/benchmarks-v2/mobile/04-ar-decision-question.png",
+        "sha256": "35d44be70ab86c23ff359031c1efc84e1d426d68fd14ffe15b5c29d14ec97085",
+        "width": 324,
+        "height": 405
+      },
+      {
+        "id": "06-ar-operating-pattern",
+        "file": "artifacts/creative-rebuild/benchmarks-v2/mobile/06-ar-operating-pattern.png",
+        "sha256": "681f5bcd9e70ef279ee57e174ed4935f1aa45f8c3d4f9950cb95f769c7985ea1",
+        "width": 324,
+        "height": 405
+      },
+      {
+        "id": "09-ar-carousel-decision",
+        "file": "artifacts/creative-rebuild/benchmarks-v2/mobile/09-ar-carousel-decision.png",
+        "sha256": "d26957cac259f403d3605b3ce3cc2f2bdb9f747a76835136e01ea709e5bf394f",
+        "width": 324,
+        "height": 405
+      },
+      {
+        "id": "10-ar-carousel-boundaries",
+        "file": "artifacts/creative-rebuild/benchmarks-v2/mobile/10-ar-carousel-boundaries.png",
+        "sha256": "c11e92d47b22ec770cd42970b40d7a04796f3095eaa102e0c0af3a55852f84cb",
+        "width": 324,
+        "height": 405
+      },
+      {
+        "id": "11-ar-carousel-stop",
+        "file": "artifacts/creative-rebuild/benchmarks-v2/mobile/11-ar-carousel-stop.png",
+        "sha256": "dd87942c5da8b3448d2adda806b17f7178f3d73f0da975a0c8ad10e3353e2f87",
+        "width": 324,
+        "height": 405
+      }
+    ],
+    "feed": {
+      "file": "artifacts/creative-rebuild/comparisons/round2/feed-visible-10.png",
+      "sha256": "ca82d1267f1444beae8e629b323f995c206f16a37a5aac7cc4889186cec207bf",
+      "width": 942,
+      "height": 1528,
+      "arabicCandidatesVisible": [
+        "01-ar-context-handoff",
+        "02-ar-rag-evidence",
+        "03-ar-automation-relay",
+        "04-ar-decision-question",
+        "06-ar-operating-pattern",
+        "09-ar-carousel-decision"
+      ]
+    },
+    "carouselSequence": {
+      "file": "artifacts/creative-rebuild/comparisons/round2/carousel-sequence-09-11.png",
+      "sha256": "215ff302e14728ba53a6cd8acecf9d57554e3d9b63f296dc1f635c2f1b23340c",
+      "width": 1104,
+      "height": 449,
+      "sequence": [
+        "09-ar-carousel-decision",
+        "10-ar-carousel-boundaries",
+        "11-ar-carousel-stop"
+      ]
+    },
+    "round1Feed": {
+      "file": "artifacts/creative-rebuild/comparisons/round1/feed-12.png",
+      "sha256": "c799864b68f6b0d4005bacb99230a632c424c2edc0577bc5ca63fb7451d65ad9"
+    }
+  },
+  "fontAndBidiEvidence": {
+    "arabicFamily": "Ghroob Arabic ITF",
+    "regularFontSha256": "4dd0c3f2622fc0cfb2802ede862a24877218f78046cf0830ab6290feb68d3e41",
+    "boldFontSha256": "d853dc21fe5a274d5a9361d720db94ad60a8fcceb114663118b6f9cc2f9b5d5b",
+    "manifestHashesMatchFiles": true,
+    "visibleFallbackArabic": false,
+    "shapingVerdict": "Across all inspected current pixels, Ghroob joins, dots, hamzas, question marks, lexical shaddas, and the selective marks in يظلّ، تُسلِّم، تُصلِح، حدِّد، يغيّر، موثّق remain connected and unclipped. The round-1 fallback micro face is no longer visible.",
+    "numeralVerdict": "Arabic-Indic asset numbers and the explicit carousel counters ١ من ٣، ٢ من ٣، ٣ من ٣ render in the intended order at original and mobile scales.",
+    "mixedScriptVerdict": "Candidate 02 keeps RAG as a stable LTR island while the Arabic phrase and ٠٢ remain in the RTL run; no punctuation inversion is visible.",
+    "documentLanguageFinding": "Every Arabic canvas declares lang=ar and dir=rtl, but the shared outer HTML shell still declares lang=en. This is a technical accessibility/preflight defect; it did not produce a visible shaping failure in these exact pixels."
+  },
+  "professionalAnchorInputs": [
+    {
+      "referenceId": "ref_51e708951ea61f18",
+      "sourcePath": "/Users/muhammedjameel/Downloads/images_2026-07-25_05-56-32/GenAI_Brand_Campaign_Social_Media_Post_For_Spendix.webp",
+      "sourceSha256": "51e708951ea61f184d299ccbd7b3147f95d051912e4c2f4cea6e27a40e6425dd",
+      "inspected": true,
+      "visibleStandard": "Campaign-level variation, single-message props, and controlled pale-field hierarchy."
+    },
+    {
+      "referenceId": "ref_6dd0a9246092f4d5",
+      "sourcePath": "/Users/muhammedjameel/Downloads/images_2026-07-25_05-56-32/Before_Its_Gone_Creative_Visual_OOH_Campaign_Socia.webp",
+      "sourceSha256": "6dd0a9246092f4d586c92b3aa03d494c75bee71a11e3c0d2c68756bb38169103",
+      "inspected": true,
+      "visibleStandard": "One materially specific transformation with close-contact retouching and a decisive diagonal crop."
+    },
+    {
+      "referenceId": "ref_7ea2e6edfd24a465",
+      "sourcePath": "/Users/muhammedjameel/Downloads/images_2026-07-25_05-56-32/Brand_Identity_Visual_System_for_a_Tech_Startup_br.webp",
+      "sourceSha256": "7ea2e6edfd24a4655210897e7455a4b53255816f674b180edf45583d4b66a52b",
+      "inspected": true,
+      "visibleStandard": "A coherent product-system grammar with varied modules, concrete artifacts, and disciplined evidence tiers."
+    },
+    {
+      "referenceId": "ref_f5cec23c32415d6e",
+      "sourcePath": "/Users/muhammedjameel/Downloads/images_2026-07-25_05-56-32/CLARIO_-_AI_Co-Pilot_Startup_Social_Media_Instagra.webp",
+      "sourceSha256": "f5cec23c32415d6e9c7e846c1c7613bb4ce5de61d96c62d88026fcf7d32d98c0",
+      "inspected": true,
+      "visibleStandard": "Typography and one geometric state act as the campaign mechanism rather than as decoration."
+    },
+    {
+      "referenceId": "ref_8871f98455278188",
+      "sourcePath": "/Users/muhammedjameel/Downloads/images_2026-07-25_05-56-32/PAUL_Arabia_AI_Visual_Campaign_Exploration.webp",
+      "sourceSha256": "8871f98455278188eb1488245bdf7a75c23af1f857ff56799f7416e9e03e05f5",
+      "inspected": true,
+      "visibleStandard": "Arabic headline mass and product cutaway resolve one immediate proposition without secondary-copy competition."
+    },
+    {
+      "referenceId": "ref_3991533a0cc6d024",
+      "sourcePath": "/Users/muhammedjameel/Downloads/images_2026-07-25_05-56-32/Rafa_Water_KSA_-_Social_Media.webp",
+      "sourceSha256": "3991533a0cc6d024c86b14b7fe5b02cc7369c44621405a22cda145c0bee9b833",
+      "inspected": true,
+      "visibleStandard": "Short Arabic copy occupies a protected field while product action and perspective carry the proof."
+    },
+    {
+      "referenceId": "ref_8ef6ff7e70837523",
+      "sourcePath": "/Users/muhammedjameel/Downloads/images_2026-07-25_05-56-32/Saudi_Social_Media_Designs_-_Tanfeeth.webp",
+      "sourceSha256": "8ef6ff7e708375231cb1cee8e0999f302380d3f2315b8e76c7fb1176858c470a",
+      "inspected": true,
+      "visibleStandard": "Natural Arabic authority paired with a human consequence and documentary evidence; its dense footer is not a positive precedent."
+    },
+    {
+      "referenceId": "ref_2ca843f06643d5f6",
+      "sourcePath": "/Users/muhammedjameel/Downloads/images_2026-07-25_05-56-32/Saudi_Mobile_App_-_Anouq_social_media_designs.webp",
+      "sourceSha256": "2ca843f06643d5f66de64064822d02749985207598d7d926cb669628a5872b53",
+      "inspected": true,
+      "visibleStandard": "A text-light behavioral transformation that remains legible through spatial consequence alone.",
+      "limitation": "Not a fine Arabic typography anchor."
+    },
+    {
+      "referenceId": "ref_4afce40fe49062b6",
+      "sourcePath": "/Users/muhammedjameel/Downloads/images_2026-07-25_05-56-32/AI_Architecture_Social_Media_Campaign_advertising_.webp",
+      "sourceSha256": "4afce40fe49062b674a5f701764eefe7f3d340e0fae92945e9c9acca4815218d",
+      "inspected": true,
+      "visibleStandard": "Professional carousel variation with each tile assigned one concrete cognitive job."
+    },
+    {
+      "referenceId": "ref_79573233e0b609f3",
+      "sourcePath": "/Users/muhammedjameel/Downloads/images_2026-07-25_05-56-32/Auralis_-_AI_Mental_Wellness_Branding_brand_guidel.webp",
+      "sourceSha256": "79573233e0b609f350f2598be3e288cf3726fa26beff4e8a5bdf119752d9e883",
+      "inspected": true,
+      "visibleStandard": "A premium material world carried consistently through objects, lighting, and reading hierarchy."
+    },
+    {
+      "referenceId": "ref_a549cc94cfd3fc44",
+      "sourcePath": "/Users/muhammedjameel/Downloads/images_2026-07-25_05-56-32/MAL_Fintech_Branding_Product_Concepts.webp",
+      "sourceSha256": "a549cc94cfd3fc4415d5b26b72c5b39d5c43ffcaa0da922c5901613055e1edd3",
+      "inspected": true,
+      "visibleStandard": "Premium dark-field product hierarchy, controlled object depth, and restrained identity marks."
+    },
+    {
+      "referenceId": "ref_8684a4138ac5fc7a",
+      "sourcePath": "/Users/muhammedjameel/Downloads/images_2026-07-25_05-56-32/STC_Gaming_Campaign_Infographic_Design_Art_Directi.webp",
+      "sourceSha256": "8684a4138ac5fc7a678ded0fdaec6c6d497df91b6766abdbcf6307d7f12419e7",
+      "inspected": true,
+      "visibleStandard": "A single typographic gesture directs the composition around one focal subject."
+    }
+  ],
+  "crossAssetArabicVerdict": {
+    "spellingAndGrammar": "The visible round-2 copy is natural Modern Standard Arabic with no base-letter spelling error. The revisions fix round-1 awkwardness in 02, 06, 10, and 11.",
+    "authoredBreaks": "04, 09, and 11 match the specified headline breaks. 01 automatically wraps the specified second headline line and strands الأدوات; 03 automatically wraps بوضوح into a third line. 06 deliberately divides the one-line qualification into two semantic lines. 10 divides the output evidence and, more seriously, covers almost all of طلب جديد with the SVG card layer.",
+    "shaping": "No disconnected Arabic, tofu, clipped dots, or visible fallback family was observed. Selective diacritics survive at original and mobile sizes.",
+    "rtlAction": "06 now reduces from ٤ on the right to ١ on the left; 09 enters from the right and commits to the green left path; 10 moves from right input through the boundary to left output; 11 enters from the right and visibly changes from green to muted after the human stop.",
+    "punctuationAndNumerals": "Arabic comma and question marks stay attached to their phrases. Arabic-Indic metadata numerals and the three من counters are visually stable.",
+    "regionalAuthority": "The system now reads as Arabic-first rather than translated into an LTR shell at the composition level. The remaining authority failures are production-specific: two unauthorized headline wraps and one hidden evidence phrase."
+  },
+  "feedAndSequenceVerdict": {
+    "feed": "The exact feed-visible-10 composite is materially stronger than round 1: Arabic type is unified, the six Arabic feed tiles vary between material macro, dark editorial, data reduction, carousel cover, architectural archive, and industrial narrative, and no fallback metadata becomes a gray unreadable seam. Candidate 03 is visually isolated in the final partial row and still reads more like an industrial fixture than a controlled relay.",
+    "carousel": "The exact 09→10→11 composite forms a coherent pale/dark/pale sequence. All three enter from the right and continue left, the counters remain stable, and the cognitive progression decision→boundary→human stop is clear. Slide 10's missing input evidence is the only sequence-breaking production defect."
+  },
+  "round1Comparison": [
+    {
+      "id": "01-ar-context-handoff",
+      "round1Sha256": "977cd16a93ddf58456054379b40383926a705bc1922eb2c86ad55eda34e42e61",
+      "round1Total": 136,
+      "round2Sha256": "2196c2c4a55b9808cbb50b5414efad08dfa80d3d4c1d4c120cd082181cfa2519",
+      "round2Total": 132,
+      "decisiveImprovement": "NO",
+      "reason": "Support scale and Ghroob consistency improve, but the exact round-2 headline contract regresses into a three-line silhouette with a one-word orphan and a hard fail."
+    },
+    {
+      "id": "02-ar-rag-evidence",
+      "round1Sha256": "cb05d6e3ac983b1b3c1628a23c387af5c15a2c29da71f719a1e71bd7652da05a",
+      "round1Total": 127,
+      "round2Sha256": "adefabbb8bd36b8614c043241470404007f3bc6e5a90c4f3ea877605d697a9ab",
+      "round2Total": 146,
+      "decisiveImprovement": "YES",
+      "reason": "The grammar, line silhouette, Arabic metadata, support scale, and protected type bay are all materially resolved without weakening the archive metaphor."
+    },
+    {
+      "id": "03-ar-automation-relay",
+      "round1Sha256": "d2e2e060104d728ddd41455f5c52e02ce1a7d2b8d95ba6459520cad82acef1cc",
+      "round1Total": 115,
+      "round2Sha256": "555d121950dee918b0c30bf86cf58fdd8bcff5eb75764b7accd9cf68a3ba42ac",
+      "round2Total": 116,
+      "decisiveImprovement": "NO",
+      "reason": "Material craft is more serious, but the image fails its own unprimed baton/stop test and the specified second headline line wraps again."
+    },
+    {
+      "id": "04-ar-decision-question",
+      "round1Sha256": "aa36c360e0ac7e4501a463011227f96210f6679baa4f16b5443bb773d1aa3edc",
+      "round1Total": 127,
+      "round2Sha256": "29d75eaf465ab8e27239239c6fc29e3f96df8b21eda9ef96d8f4b850de9b6f51",
+      "round2Total": 147,
+      "decisiveImprovement": "YES",
+      "reason": "The verb is correctly vocalized, the two-line meaning is intact, the stray dot is gone, and the path now performs the unresolved decision rather than merely decorating it."
+    },
+    {
+      "id": "06-ar-operating-pattern",
+      "round1Sha256": "322862cd08eb87ee270e323a943c708273270199255bb44234a419f45e713355",
+      "round1Total": 111,
+      "round2Sha256": "5bb3c4dd159eb68fbf1990d90775dff42a576a9049a0ad7ac97e366abcef9ab8",
+      "round2Total": 137,
+      "decisiveImprovement": "YES",
+      "reason": "The direction is corrected, four visible branches now collapse into one, the Arabic calques are removed, and the qualification survives mobile, although integrated polish remains below threshold."
+    },
+    {
+      "id": "09-ar-carousel-decision",
+      "round1Sha256": "886d42c48679d5f6170833bca799128c68d67f33a56aef510afe5fdd574b82d5",
+      "round1Total": 116,
+      "round2Sha256": "0a33470e54a6c597065994723fa74b4119ebfb248a609926b000b6dc402b93de",
+      "round2Total": 148,
+      "decisiveImprovement": "YES",
+      "reason": "The plus-like symbol is replaced by a committed fork with rejected and selected consequences, while the copy, counter, caption, and feed silhouette all remain legible."
+    },
+    {
+      "id": "10-ar-carousel-boundaries",
+      "round1Sha256": "6cdaae3548f2c782ad247ef221da3fcc6492980c3ff9bf5367006db077cfa81e",
+      "round1Total": 123,
+      "round2Sha256": "b5df95c734b2442c350d1829796870139be6af9edf20fd5fe5f4405c8e0d17a4",
+      "round2Total": 124,
+      "decisiveImprovement": "PARTIAL_NOT_DECISIVE",
+      "reason": "The boundary and output evidence are more specific, but the required input label is nearly fully occluded in both original and mobile pixels, preventing an overall professional advance."
+    },
+    {
+      "id": "11-ar-carousel-stop",
+      "round1Sha256": "cfea720eeeff4413cea6756fec484300939c3c8fa8bca04456f0b192816ac520",
+      "round1Total": 120,
+      "round2Sha256": "b247f546a73af33e67992c8797943ebb4f4a521ed7fe40cf584e597969ceb98d",
+      "round2Total": 147,
+      "decisiveImprovement": "YES",
+      "reason": "The copy is more authoritative, the stop has an unmistakable human lever, the state visibly changes after it, and the RTL direction is fully reconciled."
+    }
+  ],
+  "candidatePassFail": [
+    {
+      "id": "01-ar-context-handoff",
+      "pass": false,
+      "reason": "REJECT: POOR_TYPOGRAPHY hard fail from unauthorized headline wrapping."
+    },
+    {
+      "id": "02-ar-rag-evidence",
+      "pass": true,
+      "reason": "146/160, no hard fail, and comparable to its professional anchors."
+    },
+    {
+      "id": "03-ar-automation-relay",
+      "pass": false,
+      "reason": "REJECT: the textless route reads as a generic industrial fixture and the headline auto-wraps."
+    },
+    {
+      "id": "04-ar-decision-question",
+      "pass": true,
+      "reason": "147/160, no hard fail, and comparable to its professional anchors."
+    },
+    {
+      "id": "06-ar-operating-pattern",
+      "pass": false,
+      "reason": "137/160: strong and decisively improved, but still below the 145 professional threshold."
+    },
+    {
+      "id": "09-ar-carousel-decision",
+      "pass": true,
+      "reason": "148/160, no hard fail, and comparable to its professional anchors."
+    },
+    {
+      "id": "10-ar-carousel-boundaries",
+      "pass": false,
+      "reason": "REJECT: POOR_TYPOGRAPHY hard fail because طلب جديد is covered in the final pixels."
+    },
+    {
+      "id": "11-ar-carousel-stop",
+      "pass": true,
+      "reason": "147/160, no hard fail, and comparable to its professional anchors."
+    }
+  ],
+  "critiques": [
+    {
+      "critiqueId": "ar-review-r2-01-context-handoff",
+      "renderedAssetId": "01-ar-context-handoff",
+      "renderedAssetSha256": "2196c2c4a55b9808cbb50b5414efad08dfa80d3d4c1d4c120cd082181cfa2519",
+      "criticRole": "ARABIC_DESIGN_REVIEWER",
+      "actualPixelsInspected": true,
+      "viewingScales": [
+        "original",
+        "mobile",
+        "feed"
+      ],
+      "scores": {
+        "concept": 18,
+        "composition": 17,
+        "typography": 13,
+        "visualCraft": 17,
+        "brand": 18,
+        "communication": 17,
+        "professionalPolish": 14,
+        "distinctiveness": 18
+      },
+      "total": 132,
+      "evidenceObservations": [
+        {
+          "dimension": "concept",
+          "region": "central crystal bridge between one left slab and four right tracks",
+          "observation": "The material handoff and uninterrupted green filament make connected context understandable before the support copy is read.",
+          "impact": "positive"
+        },
+        {
+          "dimension": "typography",
+          "region": "upper-right headline at original and 324x405 mobile",
+          "observation": "The specified line إلى مزيد من الأدوات automatically wraps after من, stranding الأدوات as a third one-word line and violating the exact authored silhouette.",
+          "impact": "hard-fail"
+        },
+        {
+          "dimension": "typography",
+          "region": "two-line support beneath the headline",
+          "observation": "بل تحتاج إلى سياق يظلّ متصلًا / من القرار إلى التنفيذ. is natural MSA; the shadda and tanwin remain intact and the support stays readable on mobile.",
+          "impact": "positive"
+        },
+        {
+          "dimension": "visualCraft",
+          "region": "crystal-to-stone socket contacts",
+          "observation": "Refraction, shadow, and the green filament are coherent, although the right crystal edge still merges with several slots rather than resolving one unequivocal receiving socket.",
+          "impact": "negative"
+        },
+        {
+          "dimension": "composition",
+          "region": "upper-right type field against the diagonal macro crop",
+          "observation": "The diagonal counterweight is strong, but the oversized three-line headline compresses the support and turns the clean field into a crowded block.",
+          "impact": "negative"
+        },
+        {
+          "dimension": "brand",
+          "region": "top-left tile in feed-visible-10",
+          "observation": "The mineral bridge, paper field, dark green material, and restrained logo remain recognizable as AURENDOR without repeating the other feed silhouettes.",
+          "impact": "positive"
+        }
+      ],
+      "hardFails": [
+        "POOR_TYPOGRAPHY"
+      ],
+      "professionalAnchorComparison": {
+        "referenceIds": [
+          "ref_51e708951ea61f18",
+          "ref_6dd0a9246092f4d5",
+          "ref_8871f98455278188"
+        ],
+        "verdict": "below",
+        "observableDifferences": [
+          "The candidate's contact metaphor is as specific as the material anchor, but its unresolved right socket is less physically decisive.",
+          "The PAUL Arabia anchor keeps its Arabic proposition in one confident silhouette; this candidate introduces an unauthorized one-word third line.",
+          "The Spendix campaign varies copy and objects without compromising headline shape, while this tile's type box forces the exact phrase to reflow."
+        ]
+      },
+      "strengths": [
+        "Specific material handoff",
+        "Natural support copy",
+        "Strong feed silhouette",
+        "Coherent Arabic shaping"
+      ],
+      "weaknesses": [
+        "Unauthorized headline wrap",
+        "One-word Arabic orphan",
+        "Ambiguous right socket contact"
+      ],
+      "revisionInstructions": [
+        "Recompose width or reduce only the headline size until إلى مزيد من الأدوات remains one authored line at the exact production font.",
+        "Re-render original, mobile, and feed pixels and confirm the crystal enters one unambiguous receiving slot before any new review."
+      ],
+      "restartConcept": false,
+      "decision": "REJECT"
+    },
+    {
+      "critiqueId": "ar-review-r2-02-rag-evidence",
+      "renderedAssetId": "02-ar-rag-evidence",
+      "renderedAssetSha256": "adefabbb8bd36b8614c043241470404007f3bc6e5a90c4f3ea877605d697a9ab",
+      "criticRole": "ARABIC_DESIGN_REVIEWER",
+      "actualPixelsInspected": true,
+      "viewingScales": [
+        "original",
+        "mobile",
+        "feed"
+      ],
+      "scores": {
+        "concept": 19,
+        "composition": 18,
+        "typography": 18,
+        "visualCraft": 18,
+        "brand": 19,
+        "communication": 18,
+        "professionalPolish": 17,
+        "distinctiveness": 19
+      },
+      "total": 146,
+      "evidenceObservations": [
+        {
+          "dimension": "concept",
+          "region": "green evidence cord and attached paper tag leaving the archive",
+          "observation": "One retrievable fragment visibly returns with an attached trace, making the RAG evidence promise specific without an explanatory icon set.",
+          "impact": "positive"
+        },
+        {
+          "dimension": "typography",
+          "region": "upper-left Arabic type bay",
+          "observation": "الإجابة وحدها / لا تكفي and المهم أن تعود / ومعها أدلّتها. match the authored breaks, remain naturally phrased, and preserve the shadda and final punctuation.",
+          "impact": "positive"
+        },
+        {
+          "dimension": "typography",
+          "region": "RAG · مسار الدليل · ٠٢ metadata",
+          "observation": "RAG remains a stable LTR island while the Arabic phrase and Arabic-Indic number retain their intended order; the line is small but still legible at 324x405.",
+          "impact": "positive"
+        },
+        {
+          "dimension": "composition",
+          "region": "left type bay against the right architectural archive",
+          "observation": "Type and high-frequency shelving are separated by a controlled dark gradient, and the retrieval path carries the eye from depth into the calm reading field.",
+          "impact": "positive"
+        },
+        {
+          "dimension": "visualCraft",
+          "region": "transparent risers, layered slabs, cord bends, and foreground tag",
+          "observation": "The shelf contacts and depth cues remain coherent at original resolution; a few ninety-degree cord bends feel diagrammatic, but no broken contact or generator seam dominates.",
+          "impact": "neutral"
+        },
+        {
+          "dimension": "brand",
+          "region": "right tile of the second feed row",
+          "observation": "Architectural darkness, material evidence, and one charged green path create an AURENDOR-specific service story that remains distinct from the other dark tiles.",
+          "impact": "positive"
+        }
+      ],
+      "hardFails": [],
+      "professionalAnchorComparison": {
+        "referenceIds": [
+          "ref_4afce40fe49062b6",
+          "ref_a549cc94cfd3fc44",
+          "ref_79573233e0b609f3"
+        ],
+        "verdict": "comparable",
+        "observableDifferences": [
+          "The candidate matches the architecture carousel anchor's protected hierarchy while using a more message-specific evidence object than its generic feature cards.",
+          "Its dark material handling and quiet mark placement are comparable to the MAL anchor, with stronger semantic depth but less product literalness.",
+          "The archive world is as consistently art-directed as the Auralis material system, although its cord geometry is deliberately more diagrammatic."
+        ]
+      },
+      "strengths": [
+        "Specific RAG evidence metaphor",
+        "Natural authored Arabic",
+        "Stable mixed-script metadata",
+        "Premium architectural depth"
+      ],
+      "weaknesses": [
+        "Small mobile metadata",
+        "Some diagrammatic cord bends"
+      ],
+      "revisionInstructions": [
+        "Preserve the current pixel hash; any adjustment to the cord geometry, metadata size, or copy requires a complete current-hash re-review."
+      ],
+      "restartConcept": false,
+      "decision": "PROFESSIONAL_CANDIDATE"
+    },
+    {
+      "critiqueId": "ar-review-r2-03-automation-relay",
+      "renderedAssetId": "03-ar-automation-relay",
+      "renderedAssetSha256": "555d121950dee918b0c30bf86cf58fdd8bcff5eb75764b7accd9cf68a3ba42ac",
+      "criticRole": "ARABIC_DESIGN_REVIEWER",
+      "actualPixelsInspected": true,
+      "viewingScales": [
+        "original",
+        "mobile",
+        "feed"
+      ],
+      "scores": {
+        "concept": 12,
+        "composition": 16,
+        "typography": 12,
+        "visualCraft": 17,
+        "brand": 17,
+        "communication": 14,
+        "professionalPolish": 14,
+        "distinctiveness": 14
+      },
+      "total": 116,
+      "evidenceObservations": [
+        {
+          "dimension": "concept",
+          "region": "industrial rail, transparent tube, and left receptacle without copy",
+          "observation": "The image reads first as a precision jig or generic conveyor; no discrete baton transfer, verification event, or manual stop is visually performed.",
+          "impact": "hard-fail"
+        },
+        {
+          "dimension": "visualCraft",
+          "region": "machine housings, fasteners, glass tube, and rail contacts",
+          "observation": "Material rendering, contact shadows, and metal-to-polymer transitions are convincing at original resolution despite the missing narrative action.",
+          "impact": "positive"
+        },
+        {
+          "dimension": "typography",
+          "region": "lower-right headline at original and mobile scales",
+          "observation": "The specified second line تُسلِّم المسؤولية بوضوح automatically wraps before بوضوح, creating an unauthorized three-line headline.",
+          "impact": "hard-fail"
+        },
+        {
+          "dimension": "typography",
+          "region": "تُسلِّم and two-line capability boundary",
+          "observation": "The selective verb marks remain visible and خطوة محددة · انتقال واضح / إيقاف ممكن is natural, semantically balanced, and readable on mobile.",
+          "impact": "positive"
+        },
+        {
+          "dimension": "communication",
+          "region": "full 324x405 tile",
+          "observation": "The copy communicates controlled handoff, but the viewer must read it to reinterpret a static machining fixture as automation custody transfer.",
+          "impact": "negative"
+        },
+        {
+          "dimension": "distinctiveness",
+          "region": "isolated final tile in feed-visible-10",
+          "observation": "The photographic silhouette adds feed variation, yet the central object could advertise industrial tooling without changing its visual logic.",
+          "impact": "negative"
+        }
+      ],
+      "hardFails": [
+        "NO_VISUAL_CONCEPT",
+        "POOR_TYPOGRAPHY"
+      ],
+      "professionalAnchorComparison": {
+        "referenceIds": [
+          "ref_2ca843f06643d5f6",
+          "ref_79573233e0b609f3",
+          "ref_7ea2e6edfd24a465"
+        ],
+        "verdict": "materially-below",
+        "observableDifferences": [
+          "The Anouq anchor performs a complete transformation without copy, while this candidate's machine remains static and semantically generic.",
+          "The Auralis anchor gives every material object an immediately legible role; here the continuous green filament never becomes the promised single baton.",
+          "The AppLinks system uses concrete product artifacts and state labels, whereas this fixture supplies no visible verification or human-control evidence."
+        ]
+      },
+      "strengths": [
+        "Convincing machine materials",
+        "Natural Arabic capability line",
+        "Serious non-childish tone"
+      ],
+      "weaknesses": [
+        "Textless concept fails",
+        "No discrete custody baton",
+        "No visible manual stop",
+        "Unauthorized headline wrap"
+      ],
+      "revisionInstructions": [
+        "Restart the image route so one discrete token visibly crosses a verification threshold and physically encounters an unmistakable human stop.",
+        "Recompose the Arabic type box so تُسلِّم المسؤولية بوضوح remains the authored second line at original and mobile sizes.",
+        "Repeat the unprimed textless test before adding copy; reject any next image that still reads as a generic conveyor or industrial jig."
+      ],
+      "restartConcept": true,
+      "decision": "REJECT"
+    },
+    {
+      "critiqueId": "ar-review-r2-04-decision-question",
+      "renderedAssetId": "04-ar-decision-question",
+      "renderedAssetSha256": "29d75eaf465ab8e27239239c6fc29e3f96df8b21eda9ef96d8f4b850de9b6f51",
+      "criticRole": "ARABIC_DESIGN_REVIEWER",
+      "actualPixelsInspected": true,
+      "viewingScales": [
+        "original",
+        "mobile",
+        "feed"
+      ],
+      "scores": {
+        "concept": 18,
+        "composition": 18,
+        "typography": 19,
+        "visualCraft": 18,
+        "brand": 19,
+        "communication": 19,
+        "professionalPolish": 18,
+        "distinctiveness": 18
+      },
+      "total": 147,
+      "evidenceObservations": [
+        {
+          "dimension": "typography",
+          "region": "upper-right two-line thesis",
+          "observation": "الأتمتة لا تُصلِح / قرارًا غامضًا matches the approved semantic break; the damma, kasra, tanwin, joins, and optical right edge remain intact.",
+          "impact": "positive"
+        },
+        {
+          "dimension": "typography",
+          "region": "support line حدِّد القرار قبل أن تبني المسار.",
+          "observation": "The imperative is correctly vocalized, punctuated, and readable at 324x405 without competing with the focal statement.",
+          "impact": "positive"
+        },
+        {
+          "dimension": "concept",
+          "region": "horizontal pale path, decision diamond, and downward green turn",
+          "observation": "The route physically collides with an unresolved point and changes direction, completing rather than duplicating the sentence.",
+          "impact": "positive"
+        },
+        {
+          "dimension": "composition",
+          "region": "right-side type entry against the cropped question mark",
+          "observation": "Arabic owns the first read, the outline question creates a left counterweight, and the long path controls the move into the lower field.",
+          "impact": "positive"
+        },
+        {
+          "dimension": "visualCraft",
+          "region": "decision diamond and 90-degree path junction",
+          "observation": "Stroke caps, joins, and state colors remain crisp at mobile size; the former disconnected neon dot has been removed.",
+          "impact": "positive"
+        },
+        {
+          "dimension": "brand",
+          "region": "center tile of the top feed row",
+          "observation": "The dark editorial breath is immediately AURENDOR yet clearly distinct from the two adjacent material and announcement tiles.",
+          "impact": "positive"
+        }
+      ],
+      "hardFails": [],
+      "professionalAnchorComparison": {
+        "referenceIds": [
+          "ref_f5cec23c32415d6e",
+          "ref_8684a4138ac5fc7a",
+          "ref_6dd0a9246092f4d5"
+        ],
+        "verdict": "comparable",
+        "observableDifferences": [
+          "Like the CLARIO anchor, the candidate turns one geometric interruption into the communication mechanism rather than decorative furniture.",
+          "It matches the STC anchor's controlled type-as-composition gesture while preserving a clearer two-second Arabic hierarchy.",
+          "Its vector path is materially simpler than the OOH anchor but equally disciplined in making one state change carry the proposition."
+        ]
+      },
+      "strengths": [
+        "Exact semantic Arabic breaks",
+        "Correct selective vocalization",
+        "Message-specific path behavior",
+        "Strong feed-scale contrast"
+      ],
+      "weaknesses": [
+        "Large lower field depends on the path remaining visually charged"
+      ],
+      "revisionInstructions": [
+        "Preserve the exact current pixels and line breaks; advance only after the remaining critics and technical preflight independently pass this hash."
+      ],
+      "restartConcept": false,
+      "decision": "PROFESSIONAL_CANDIDATE"
+    },
+    {
+      "critiqueId": "ar-review-r2-06-operating-pattern",
+      "renderedAssetId": "06-ar-operating-pattern",
+      "renderedAssetSha256": "5bb3c4dd159eb68fbf1990d90775dff42a576a9049a0ad7ac97e366abcef9ab8",
+      "criticRole": "ARABIC_DESIGN_REVIEWER",
+      "actualPixelsInspected": true,
+      "viewingScales": [
+        "original",
+        "mobile",
+        "feed"
+      ],
+      "scores": {
+        "concept": 18,
+        "composition": 16,
+        "typography": 17,
+        "visualCraft": 16,
+        "brand": 18,
+        "communication": 18,
+        "professionalPolish": 16,
+        "distinctiveness": 18
+      },
+      "total": 137,
+      "evidenceObservations": [
+        {
+          "dimension": "concept",
+          "region": "four right-hand branches converging into one left-pointing arrow",
+          "observation": "The diagram now performs the declared reduction from four places to one path and remains understandable without the qualification.",
+          "impact": "positive"
+        },
+        {
+          "dimension": "communication",
+          "region": "right ٤ state and left ١ state",
+          "observation": "The natural MSA phrases أماكن لتعرف ما الذي حدث and مسار يريك الخطوة التالية clearly distinguish retrospective checking from the next action.",
+          "impact": "positive"
+        },
+        {
+          "dimension": "composition",
+          "region": "pale left field above the ١ state",
+          "observation": "The unequal split gives the reduction room, but the upper-left field remains substantially inactive and weakens the optical balance at full size.",
+          "impact": "negative"
+        },
+        {
+          "dimension": "visualCraft",
+          "region": "arrow crossing the large ١",
+          "observation": "The direction is correct and strokes are crisp, but the arrow masks the numeral's already minimal top form, making ١ resemble a generic vertical gate on first glance.",
+          "impact": "negative"
+        },
+        {
+          "dimension": "typography",
+          "region": "lower-left qualification at original and mobile",
+          "observation": "مثال توضيحي / وليس من نتائج عملائنا is idiomatic and readable, but its explicit two-line rendering differs from the one-line copy specification.",
+          "impact": "negative"
+        },
+        {
+          "dimension": "brand",
+          "region": "left tile of the second feed row",
+          "observation": "The Arabic-Indic numerals, binary field, and charged reduction provide a distinct AURENDOR data beat between image-led posts.",
+          "impact": "positive"
+        }
+      ],
+      "hardFails": [],
+      "professionalAnchorComparison": {
+        "referenceIds": [
+          "ref_4afce40fe49062b6",
+          "ref_8ef6ff7e70837523",
+          "ref_f5cec23c32415d6e"
+        ],
+        "verdict": "below",
+        "observableDifferences": [
+          "The candidate is more message-specific than many cards in the architecture carousel, but its left field and numeral-arrow contact are less fully resolved.",
+          "It is cleaner than the Tanfeeth footer system, yet that anchor integrates human consequence and evidence more completely than this abstract reduction.",
+          "The CLARIO anchor turns each geometric interruption into a balanced field; this candidate leaves a large pale region without an equivalent compositional job."
+        ]
+      },
+      "strengths": [
+        "Correct four-to-one direction",
+        "Natural Arabic rewrite",
+        "Readable mobile qualification",
+        "Distinct feed data beat"
+      ],
+      "weaknesses": [
+        "Ambiguous numeral-arrow contact",
+        "Inactive upper-left field",
+        "Qualification break differs from spec"
+      ],
+      "revisionInstructions": [
+        "Separate the arrow from the identifying top stroke of ١ so the number remains unmistakable before the left copy is read.",
+        "Give the upper-left negative space a clear balancing job without adding decorative furniture, and reconcile the qualification break with the approved copy spec.",
+        "Return the new original, mobile, and feed hashes for a fresh threshold review."
+      ],
+      "restartConcept": false,
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "critiqueId": "ar-review-r2-09-carousel-decision",
+      "renderedAssetId": "09-ar-carousel-decision",
+      "renderedAssetSha256": "0a33470e54a6c597065994723fa74b4119ebfb248a609926b000b6dc402b93de",
+      "criticRole": "ARABIC_DESIGN_REVIEWER",
+      "actualPixelsInspected": true,
+      "viewingScales": [
+        "original",
+        "mobile",
+        "feed"
+      ],
+      "scores": {
+        "concept": 19,
+        "composition": 18,
+        "typography": 19,
+        "visualCraft": 18,
+        "brand": 19,
+        "communication": 19,
+        "professionalPolish": 18,
+        "distinctiveness": 18
+      },
+      "total": 148,
+      "evidenceObservations": [
+        {
+          "dimension": "typography",
+          "region": "upper-right headline and metadata",
+          "observation": "قبل أن تؤتمت، / اسأل: أين القرار؟ is natural, correctly punctuated, exactly authored, and remains the dominant mobile read; ١ من ٣ is unambiguous.",
+          "impact": "positive"
+        },
+        {
+          "dimension": "concept",
+          "region": "off-centre diamond decision and two leftward outcomes",
+          "observation": "The path visibly selects the charged lower route and terminates the pale alternative, so the mechanism communicates a consequential decision without the caption.",
+          "impact": "positive"
+        },
+        {
+          "dimension": "composition",
+          "region": "calm middle field between headline and lower mechanism",
+          "observation": "The large pause supports a swipe-cover rhythm while the off-centre fork prevents the tile from becoming a generic centered infographic.",
+          "impact": "positive"
+        },
+        {
+          "dimension": "communication",
+          "region": "324x405 mobile and carousel sequence first frame",
+          "observation": "Headline, fork, selected outcome, and caption survive together; the viewer can identify the decision before moving to the boundary slide.",
+          "impact": "positive"
+        },
+        {
+          "dimension": "visualCraft",
+          "region": "rail caps, fork curves, nodes, stop bar, and arrowhead",
+          "observation": "Stroke weights, curve tangencies, and geometry remain crisp at mobile size with no plus-like ambiguity from round 1.",
+          "impact": "positive"
+        },
+        {
+          "dimension": "brand",
+          "region": "center tile of the second feed row and slide one of the sequence",
+          "observation": "The charged-state logic is immediately AURENDOR and the tile functions both as a distinct feed cover and as a coherent sequence entry.",
+          "impact": "positive"
+        }
+      ],
+      "hardFails": [],
+      "professionalAnchorComparison": {
+        "referenceIds": [
+          "ref_4afce40fe49062b6",
+          "ref_8871f98455278188",
+          "ref_8ef6ff7e70837523"
+        ],
+        "verdict": "comparable",
+        "observableDifferences": [
+          "The candidate matches the architecture carousel's one-job-per-slide discipline while using a more immediately causal mechanism.",
+          "Its Arabic headline has the decisive mass of the PAUL Arabia anchor without borrowing its product composition.",
+          "It is less human than the Tanfeeth anchor but more concise and mobile-resilient, with the decision consequence visible before any footer evidence."
+        ]
+      },
+      "strengths": [
+        "Natural decisive Arabic hook",
+        "Unambiguous decision fork",
+        "Correct RTL process direction",
+        "Strong feed and sequence entry"
+      ],
+      "weaknesses": [
+        "Caption remains the smallest meaningful Arabic tier"
+      ],
+      "revisionInstructions": [
+        "Preserve the exact current pixels and counter order; any change requires re-review across original, mobile, feed, and the complete carousel sequence."
+      ],
+      "restartConcept": false,
+      "decision": "PROFESSIONAL_CANDIDATE"
+    },
+    {
+      "critiqueId": "ar-review-r2-10-carousel-boundaries",
+      "renderedAssetId": "10-ar-carousel-boundaries",
+      "renderedAssetSha256": "b5df95c734b2442c350d1829796870139be6af9edf20fd5fe5f4405c8e0d17a4",
+      "criticRole": "ARABIC_DESIGN_REVIEWER",
+      "actualPixelsInspected": true,
+      "viewingScales": [
+        "original",
+        "mobile",
+        "feed"
+      ],
+      "scores": {
+        "concept": 18,
+        "composition": 18,
+        "typography": 12,
+        "visualCraft": 14,
+        "brand": 18,
+        "communication": 15,
+        "professionalPolish": 12,
+        "distinctiveness": 17
+      },
+      "total": 124,
+      "evidenceObservations": [
+        {
+          "dimension": "concept",
+          "region": "right request-card input, central translucent boundary, and left documented output",
+          "observation": "Three request fragments converge through a precise gate into one review file, materially improving the generic empty-panel mechanism from round 1.",
+          "impact": "positive"
+        },
+        {
+          "dimension": "typography",
+          "region": "bottom of the right white input panel",
+          "observation": "The required phrase طلب جديد is covered by the overlaid SVG cards and rail; only a terminal fragment remains visible in both original and mobile pixels.",
+          "impact": "hard-fail"
+        },
+        {
+          "dimension": "typography",
+          "region": "panel questions and lower two-line headline",
+          "observation": "ما الذي يدخل؟، ما الذي يخرج؟، and حدِّد المدخلات والمخرجات / قبل أن تبني المسار are natural, correctly shaped, and readable at mobile size.",
+          "impact": "positive"
+        },
+        {
+          "dimension": "visualCraft",
+          "region": "right panel card stack and evidence-rule zone",
+          "observation": "The card layer physically collides with the evidence text and its rule, creating an unfinished stacking-order seam in an otherwise crisp vector system.",
+          "impact": "negative"
+        },
+        {
+          "dimension": "communication",
+          "region": "middle frame of carousel-sequence-09-11",
+          "observation": "The right-to-left transformation remains understandable from geometry, but the missing input name breaks the promised input/output evidence pair.",
+          "impact": "negative"
+        },
+        {
+          "dimension": "composition",
+          "region": "right panel to center membrane to left panel",
+          "observation": "The three-zone RTL order, asymmetrical panels, and precise boundary create a strong mechanism-stage silhouette distinct from slides 09 and 11.",
+          "impact": "positive"
+        }
+      ],
+      "hardFails": [
+        "POOR_TYPOGRAPHY"
+      ],
+      "professionalAnchorComparison": {
+        "referenceIds": [
+          "ref_4afce40fe49062b6",
+          "ref_3991533a0cc6d024",
+          "ref_7ea2e6edfd24a465"
+        ],
+        "verdict": "below",
+        "observableDifferences": [
+          "The candidate matches the architecture anchor's slide-specific mechanism, but a professional final would not allow the input evidence to be almost completely covered.",
+          "The Rafa anchor keeps copy in a protected field while perspective carries action; this slide lets the action layer destroy one required copy field.",
+          "The AppLinks anchor integrates cards and labels as one system, whereas this candidate's card stack and evidence label visibly compete for the same pixels."
+        ]
+      },
+      "strengths": [
+        "Concrete right-to-left transformation",
+        "Natural Arabic headline",
+        "Clear sequence role",
+        "Distinct boundary geometry"
+      ],
+      "weaknesses": [
+        "Required input evidence hidden",
+        "Broken layer hierarchy",
+        "Output break differs from spec"
+      ],
+      "revisionInstructions": [
+        "Move the request-card stack clear of طلب جديد or relocate the evidence label so the complete phrase is readable at original and 324x405 sizes.",
+        "Reconcile the output evidence line break with the approved copy specification and inspect the complete 09→10→11 composite after re-rendering.",
+        "Submit new exact hashes; the current stacking-order defect cannot be waived by source text or SVG accessibility metadata."
+      ],
+      "restartConcept": false,
+      "decision": "REJECT"
+    },
+    {
+      "critiqueId": "ar-review-r2-11-carousel-stop",
+      "renderedAssetId": "11-ar-carousel-stop",
+      "renderedAssetSha256": "b247f546a73af33e67992c8797943ebb4f4a521ed7fe40cf584e597969ceb98d",
+      "criticRole": "ARABIC_DESIGN_REVIEWER",
+      "actualPixelsInspected": true,
+      "viewingScales": [
+        "original",
+        "mobile",
+        "feed"
+      ],
+      "scores": {
+        "concept": 19,
+        "composition": 18,
+        "typography": 18,
+        "visualCraft": 18,
+        "brand": 19,
+        "communication": 19,
+        "professionalPolish": 18,
+        "distinctiveness": 18
+      },
+      "total": 147,
+      "evidenceObservations": [
+        {
+          "dimension": "typography",
+          "region": "upper-right two-line question",
+          "observation": "ومن المسؤول / عن إيقاف النظام؟ is natural, authoritative, and exactly authored; it avoids the round-1 one-word object line and remains clear at mobile size.",
+          "impact": "positive"
+        },
+        {
+          "dimension": "communication",
+          "region": "green right-hand rail, lever, and muted left-hand rail",
+          "observation": "The process enters from the right and visibly loses its charged state after the human lever, proving the stop without relying on the callout.",
+          "impact": "positive"
+        },
+        {
+          "dimension": "typography",
+          "region": "mechanism callout and lower support",
+          "observation": "نقطة إيقاف بشرية and الموثوقية تبدأ / حين يستطيع الإنسان إيقاف النظام. are idiomatic, correctly joined, and readable in the 324x405 sequence frame.",
+          "impact": "positive"
+        },
+        {
+          "dimension": "visualCraft",
+          "region": "lever pivot, vertical gate, rail contact, and three state diamonds",
+          "observation": "The pivot and interruption are optically clean, and the geometric state change is visible through both color and continuity rather than color alone.",
+          "impact": "positive"
+        },
+        {
+          "dimension": "composition",
+          "region": "headline, central stop mechanism, callout, and lower support",
+          "observation": "Four information tiers remain distinct and the mechanism occupies the action plane without collapsing the mobile hierarchy.",
+          "impact": "positive"
+        },
+        {
+          "dimension": "brand",
+          "region": "third frame of carousel-sequence-09-11",
+          "observation": "The pale resolution frame closes the dark middle slide with the same charged-state grammar while introducing a new human-control silhouette.",
+          "impact": "positive"
+        }
+      ],
+      "hardFails": [],
+      "professionalAnchorComparison": {
+        "referenceIds": [
+          "ref_2ca843f06643d5f6",
+          "ref_4afce40fe49062b6",
+          "ref_8ef6ff7e70837523"
+        ],
+        "verdict": "comparable",
+        "observableDifferences": [
+          "Like the Anouq anchor, the candidate communicates a behavioral consequence spatially; here the human stop is more explicit and less dependent on a lifestyle scene.",
+          "It matches the architecture carousel's slide-specific cognitive job while retaining a stronger cross-slide path grammar.",
+          "The Tanfeeth anchor supplies richer human photography, but this candidate expresses human authority more concisely and with more resilient mobile hierarchy."
+        ]
+      },
+      "strengths": [
+        "Authoritative Arabic question",
+        "Visible human stop consequence",
+        "Correct RTL travel direction",
+        "Strong carousel resolution"
+      ],
+      "weaknesses": [
+        "Support remains the smallest meaningful tier"
+      ],
+      "revisionInstructions": [
+        "Preserve the exact current pixels and inspect this hash with the remaining independent critics; any change to the lever, direction, or copy invalidates this review."
+      ],
+      "restartConcept": false,
+      "decision": "PROFESSIONAL_CANDIDATE"
+    }
+  ],
+  "overallGate": {
+    "professionalCandidatesFromThisCritic": [
+      "02-ar-rag-evidence",
+      "04-ar-decision-question",
+      "09-ar-carousel-decision",
+      "11-ar-carousel-stop"
+    ],
+    "insufficient": [
+      "06-ar-operating-pattern"
+    ],
+    "rejected": [
+      "01-ar-context-handoff",
+      "03-ar-automation-relay",
+      "10-ar-carousel-boundaries"
+    ],
+    "releaseVerdict": "BLOCKED",
+    "reason": "This is one independent specialist review only. Three candidates have hard failures, 06 is below 145, the manifest release gate remains BLOCKED, and every surviving exact hash still requires the other independent critics plus technical, originality, rights, feed, and owner gates. No candidate is declared release-ready or golden here."
+  }
+}

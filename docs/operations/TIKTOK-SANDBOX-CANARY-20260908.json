@@ -1,0 +1,37 @@
+{
+  "testReference": "TT-SANDBOX-20260908-01",
+  "authorization": "Owner requested: done, go test. Scope: one sandbox inbox upload, no public posting.",
+  "postizPostId": "cmts9fjm80002pv7x7mclid3z",
+  "integrationId": "cmts942e50001pv7xvq3hdwid",
+  "provider": "tiktok",
+  "accountDisplayName": "Aurendor",
+  "deliveryMethod": "UPLOAD",
+  "publicPostingAllowed": false,
+  "title": "TEST — do not publish",
+  "content": "AURENDOR — sandbox connection test. Draft for internal review only; do not publish. Test reference: TT-SANDBOX-20260908-01.",
+  "sourceAssetSha256": [
+    "42f161985587fec6f22e3a83df091c0fc001d53fd12dacf43b2fda1196f3b3dd",
+    "1911f1506debe82c37d461db477690b956015e680c34f5ff116cafb489284be8"
+  ],
+  "uploadedAssetSha256": [
+    "a330d304693207712f8e1f7b32b04f6c3a7656a926c5263cff364ed03a49cddd",
+    "8ee25d0cc75b09427fa5e4d5dbb7935082f6d23d09729b858d929334f520961b"
+  ],
+  "mediaNote": "Postiz upload pipeline re-encoded the originals; actual HTTPS upload hashes recorded separately. Both previews inspected in saved draft.",
+  "state": "POSTIZ_CONFIRMED_INBOX_HANDOFF",
+  "scheduledAt": "2026-09-08T06:07:00Z",
+  "dispatchNote": "Saved draft then queued through authenticated Postiz UI. Updated the same record from its default 09:20 slot to 09:07 Baghdad time. No second post created.",
+  "result": {
+    "postizState": "PUBLISHED",
+    "postizUpdatedAt": "2026-09-08T06:07:21.835Z",
+    "releaseId": "missing",
+    "releaseURL": "https://www.tiktok.com/messages?lang=en",
+    "error": null,
+    "interpretation": "The deployed TikTok provider maps SEND_TO_USER_INBOX to this completed result. Postiz's PUBLISHED state means inbox delivery here, not public publication. No public publish request was made.",
+    "mobileInboxConfirmedByOwner": false,
+    "videoUploadTested": false,
+    "productionAppReviewApproved": false
+  },
+  "retryPolicy": "Do not create or dispatch another copy. Reconcile this Postiz post ID if response is ambiguous.",
+  "checks": ["Only one saved record for test reference", "TikTok only", "Explicit UPLOAD persisted", "Connected account enabled, refresh not required", "Two existing slides visually inspected"]
+}

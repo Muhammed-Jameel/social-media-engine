@@ -1,0 +1,94 @@
+schemaVersion: 1.0.0
+domain: imagery
+principles:
+  - id: IMAGE_PEOPLE_WITH_AGENCY
+    name: People are subjects with agency, never decoration
+    description: "Include a person only when their action, decision, or experience is necessary to the story; never use women or any person as ornamental attention bait."
+    whyItWorks: "Narrative casting respects the subject, strengthens credibility, and prevents generic engagement tactics from replacing a real idea."
+    appropriateFor: [storytelling, case-study, user-research, service-explanation]
+    avoidWhen: [interface-proof, workflow-diagram, data-story, typographic-statement]
+    visualFamilies: [character-narrative, case-study, documentary]
+    languages: [ar, en]
+    anthropomorphismLevels: [0]
+    strongReferenceIds: []
+    aurendorApplication: "Default to UI, systems, objects, environments, hands, and motion graphics. Require a narrative-role and agency note for every visible person, with neutral professional framing and no glamour or body-emphasis treatment."
+    retrievalTags: [people, casting, agency, ethics, objectification]
+    mustNotCopy: "Do not use a reference person's identity, pose, wardrobe, or appearance as a generation target."
+  - id: IMAGE_BESPOKE_ASSET_BEFORE_LAYOUT
+    name: Approve the bespoke asset before composition
+    description: "Generate or produce the meaning-bearing scene, object, or illustration first, critique it, then build typography and brand layout around approved pixels."
+    whyItWorks: "A weak focal image cannot be rescued by cards or gradients; separating asset and composition review catches the root failure early."
+    appropriateFor: [awareness, promotion, product-introduction, storytelling, brand-building]
+    avoidWhen: [typography-led-statement, native-data-chart]
+    visualFamilies: [conceptual-hero, character-narrative, product-system-story]
+    languages: [ar, en]
+    anthropomorphismLevels: [0, 1, 2, 3, 4, 5]
+    strongReferenceIds: [ref_6dd0a9246092f4d5, ref_2ca843f06643d5f6, ref_51e708951ea61f18]
+    aurendorApplication: "Require an asset brief, generation provenance, pixel critique, and approved hash before Canva or the scene compositor adds final type."
+    retrievalTags: [asset, image-generation, critique, composition, workflow]
+    mustNotCopy: "Never send unlicensed corpus pixels to a generator or request a source's scene."
+  - id: IMAGE_ONE_CONCEPTUAL_OBJECT
+    name: One conceptual object over icon collections
+    description: "Use a single object or actor whose state embodies the message instead of multiple symbolic icons naming the topic."
+    whyItWorks: "A coherent metaphor creates memorability and depth while icon collections produce generic topic labeling."
+    appropriateFor: [awareness, education, thought-leadership, storytelling, promotion]
+    avoidWhen: [feature-matrix, navigation-instruction]
+    visualFamilies: [conceptual-hero, editorial-statement, character-narrative]
+    languages: [ar, en]
+    anthropomorphismLevels: [0, 1, 2, 3, 4, 5]
+    strongReferenceIds: [ref_6dd0a9246092f4d5, ref_8871f98455278188, ref_51e708951ea61f18]
+    aurendorApplication: "Translate RAG, automation, or infrastructure into one behavior-bearing entity; ban brains, robots, gears, and random nodes."
+    retrievalTags: [object, metaphor, focus, icon, concept]
+    mustNotCopy: "Do not reuse a reference object, transformation, or visual pun."
+  - id: IMAGE_UI_AS_PROOF
+    name: Product UI only when it proves something
+    description: "Show real interface context when a capability, state, or workflow needs evidence; do not use floating screens as generic technology scenery."
+    whyItWorks: "Relevant UI grounds the promise in operational reality and creates specific brand credibility."
+    appropriateFor: [product-introduction, service-explanation, case-study, conversion]
+    avoidWhen: [brand-building, abstract-thought-leadership]
+    visualFamilies: [product-system-story, case-study, before-after]
+    languages: [ar, en]
+    anthropomorphismLevels: [0, 1, 2]
+    strongReferenceIds: [ref_4afce40fe49062b6, ref_7ea2e6edfd24a465, ref_2ca843f06643d5f6]
+    aurendorApplication: "Use owned AURENDOR UI with a named proof role and exact license/source hash; reject fake dashboards and illegible device mockups."
+    retrievalTags: [ui, product, proof, interface, credibility]
+    mustNotCopy: "Do not reuse source UI, devices, product states, or mockup staging."
+  - id: IMAGE_EDGE_CRAFT
+    name: Edges reveal craft
+    description: "Inspect masks, contacts, occlusion, shadows, reflections, depth of field, and material transitions at original resolution."
+    whyItWorks: "Professional polish is often lost at object boundaries; clean relationships make composite scenes feel physically coherent."
+    appropriateFor: [awareness, promotion, product-introduction, storytelling, brand-building]
+    avoidWhen: [native-vector-only]
+    visualFamilies: [conceptual-hero, product-system-story, character-narrative]
+    languages: [ar, en]
+    anthropomorphismLevels: [0, 1, 2, 3, 4, 5]
+    strongReferenceIds: [ref_6dd0a9246092f4d5, ref_97c66851c15d6c1f, ref_2ca843f06643d5f6]
+    aurendorApplication: "Make the graphic-design critic cite at least two boundary regions and reject halos, floating contacts, broken hands, or inconsistent light."
+    retrievalTags: [mask, edge, shadow, reflection, craft]
+    mustNotCopy: "Do not extract, mask, or repurpose any graphic or subject from a reference."
+  - id: IMAGE_TEXTURE_SUPPORTS_ATMOSPHERE
+    name: Texture supports atmosphere
+    description: "Use grain, paper, noise, blur, or surface detail only when it reinforces material, era, evidence, or emotional register."
+    whyItWorks: "Meaningful texture gives the world specificity; generic noise pasted over everything becomes another template signature."
+    appropriateFor: [storytelling, editorial, brand-building, case-study]
+    avoidWhen: [data-story, interface-proof]
+    visualFamilies: [conceptual-hero, editorial-statement, character-narrative, case-study]
+    languages: [ar, en]
+    anthropomorphismLevels: [0, 1, 2, 3, 4, 5]
+    strongReferenceIds: [ref_6dd0a9246092f4d5, ref_51e708951ea61f18, ref_8871f98455278188]
+    aurendorApplication: "Choose one world texture per direction and document its semantic role; keep Arabic glyph edges clean."
+    retrievalTags: [texture, grain, material, atmosphere, detail]
+    mustNotCopy: "Do not sample or replicate a source texture, grain pattern, or surface."
+  - id: IMAGE_NO_GENERIC_AI_SHORTHAND
+    name: No generic AI shorthand
+    description: "Reject glowing brains, humanoid robots, neon circuits, random particles, blue gradients, and hands touching holograms unless the specific concept transforms them beyond recognition."
+    whyItWorks: "Common AI symbols communicate category but not AURENDOR's point of view, capability, or story."
+    appropriateFor: [education, product-introduction, service-explanation, thought-leadership, brand-building]
+    avoidWhen: [none]
+    visualFamilies: [conceptual-hero, product-system-story, character-narrative, editorial-statement]
+    languages: [ar, en]
+    anthropomorphismLevels: [0, 1, 2, 3, 4, 5]
+    strongReferenceIds: [ref_51e708951ea61f18, ref_6dd0a9246092f4d5, ref_2ca843f06643d5f6]
+    aurendorApplication: "Represent AI through evidence-aware behavior, orchestration, retrieval, permission, uncertainty, and operational state change."
+    retrievalTags: [ai, cliche, robot, brain, originality]
+    mustNotCopy: "Do not replace one cliché with a recognizable reference composition."

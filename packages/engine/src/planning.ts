@@ -52,7 +52,7 @@ export function createBootstrapMonthlyPlan(input: MonthlyPlanningInput): Monthly
   if (input.businessPriorities.length === 0) throw new Error("At least one business priority is required.");
   if (input.audiences.length === 0) throw new Error("At least one audience is required.");
   const createdAt = (input.now ?? new Date()).toISOString();
-  const platforms = input.platforms?.length ? input.platforms : ["instagram", "linkedin"];
+  const platforms = input.platforms?.length ? input.platforms : ["instagram", "facebook", "tiktok", "x", "linkedin"];
   const itemIds = slots.map((slot) => stableId(`${input.month}:${slot.day}:${slot.pillar}`));
   const items = slots.map((slot, index) => {
     const keyMessage = messageFor(slot.pillar, input.businessPriorities[index % input.businessPriorities.length] ?? input.businessPriorities[0]!);

@@ -1,6 +1,6 @@
 # AURENDOR skill output contracts
 
-These are the normative v1 field contracts for project-native skill outputs. Runtime schemas should be exported from `@aurendor/schemas` at the referenced paths. Exact strings may be enums in code; IDs are stable strings; timestamps are ISO 8601 with explicit offset or `Z`.
+These are the normative v1 base contracts plus the v2 creative contracts for project-native skill outputs. Runtime schemas should be exported from `@aurendor/schemas` at the referenced paths. Exact strings may be enums in code; IDs are stable strings; timestamps are ISO 8601 with explicit offset or `Z`.
 
 ## Common artifact envelope
 
@@ -41,23 +41,49 @@ Required body fields: `organizationId`, `month`, `timezone`, `businessPriorities
 
 Required body fields: `contentItemId`, `language`, `locale`, `angles[]`, `selectedAngleId`, `selectionRationale`, `platformVariants[]`, `onDesignCopy`, `carouselSlides[]`, `reelScript?`, `altTextByAsset[]`, `claimChecks[]`, `editorialScores`, `rejectedVariantIds[]`. Each claim check is `supported`, `unsupported`, `sensitive`, or `not_applicable`, with source IDs where supported.
 
-## DesignBrief (`packages/schemas/src/creative.ts`)
+## DesignBrief (`packages/schemas/src/index.ts`)
 
 `artifactType: design_brief`
 
 Required body fields: `contentItemId`, `communicationGoal`, `visualConcept`, `focalPoint`, `hierarchy[]`, `layoutFamily`, `canvas`, `safeZones`, `direction`, `typography`, `paletteTokens[]`, `brandDevices[]`, `whitespaceTarget`, `density`, `exactText[]`, `rtl`, `assetRequirements[]`, `referencePrinciples[]`, `forbiddenCliches[]`, `accessibility`, `productionNotes`.
 
-## DesignProductionResult (`packages/schemas/src/creative.ts`)
+This is the compatibility contract for pre-v2 creative work. New art direction must return `ProfessionalDesignBrief`.
+
+## ProfessionalDesignBrief (`packages/schemas/src/index.ts`)
+
+The v2 contract extends `DesignBrief` and is the required art-direction output for new creative.
+
+Required additional fields: `intelligenceVersion`, `purpose`, `desiredFeeling`, `twoSecondTakeaway`, `selectedCandidateId`, `conceptTournament`, `exactLineBreaks[]`, `referenceUses[]`, `recentFeedConstraints`, and `originalityCheck`.
+
+`conceptTournament.candidates[]` contains four to six explored candidates in normal operation, though the runtime compatibility floor is three. Each candidate records purpose, tension, feeling, two-second takeaway, single visual idea, textless comprehension, metaphor, storytelling, verbal–visual relationship, visual family, anthropomorphism, composition zones/grid/depth, typography/Arabic decisions, imagery/asset plan, three to six `REFERENCE_ONLY` principle uses, forbidden additions, originality rationale, professional-choice rationale, and risks.
+
+`conceptTournament` also records pairwise comparisons, selected IDs, and explicit rejection reasons. `selectedCandidateId` must be a tournament winner. Reference uses contain learned principles and anti-copy boundaries; raw corpus pixels, source paths, and creator/project names never enter generation context.
+
+## DesignProductionResult (`packages/schemas/src/index.ts`)
 
 `artifactType: design_production_result`
 
 Required body fields: `designBriefId`, `provider`, `capabilityState`, `idempotencyKey`, `attemptState`, `providerJobId?`, `drafts[]`, `renderedAssets[]`, `editableUrl?`, `assetLicenses[]`, `fontValidation`, `rtlValidation`, `manualHandoff?`, `nextAction`. Rendered assets include dimensions, content hash, storage reference, and render state; an unrendered draft is never marked final.
 
-## DesignCritiqueSet (`packages/schemas/src/creative.ts`)
+For v2 production, the result is complete only when each target-dimension asset is `verified`, its hash resolves to the exact current bytes, and original/mobile/feed review views are available to critique. Preserve revision lineage in the common envelope `inputRefs` and draft records. A changed prompt, job, metadata record, or revision note with unchanged pixels is not a completed visual revision.
+
+## DesignCritiqueSet (`packages/schemas/src/index.ts`)
 
 `artifactType: design_critique_set`
 
 Required body fields: `designDraftId`, `renderedAssetIds[]`, `criticA`, `criticB`, `disagreement`, `adjudication?`, `decision`, `revisionInstructions[]`, `comparison?`. Each critic slot is either a completed independent result or `{status: missing, reason}`. A completed result has the 12 weighted rubric scores totaling 100, `hardFails[]`, slide notes, sequence notes, accessibility/RTL checks, evidence observations, and an independent decision. If either critic is missing, artifact `status` and `decision` are `blocked`; it is never a publication pass. A hard fail overrides the average.
+
+This is the compatibility contract for pre-v2 creative. New visual review must return `ProfessionalCritiqueSet`.
+
+## ProfessionalCritiqueSet (`packages/schemas/src/index.ts`)
+
+Required fields: `setId`, `renderedAssetId`, `renderedAssetSha256`, `language`, `critiques[]`, `pairwiseComparisons[]`, `finalDecision`, `disagreementReasons[]`, and `nextAction`.
+
+Each `ProfessionalCritique` records a unique critic role, the same current SHA-256, `actualPixelsInspected: true`, at least two viewing scales including original and mobile, eight 0–20 scores totaling 160, visible evidence by dimension/region, hard fails, professional-anchor comparison, strengths, weaknesses, revision instructions, `restartConcept`, and an independent decision.
+
+The four panel roles are `SENIOR_ART_DIRECTOR`, `SENIOR_GRAPHIC_DESIGNER`, `SOCIAL_PERFORMANCE_STRATEGIST`, and `ARABIC_DESIGN_REVIEWER`. All four run in the v2 skill; the runtime schema requires the first three and additionally requires the Arabic reviewer for Arabic work.
+
+`PROFESSIONAL_CANDIDATE` requires every role to score at least 145/160 with no hard fail, exact current-hash agreement, and an anchor verdict of `comparable` or `above`. `EXCELLENT` requires at least 152/160 per role. Pairwise records use blind labels and may return `tie-neither-professional`. Any hard fail forces rejection; missing/stale pixels force `BLOCKED` rather than a score.
 
 ## ComplianceDecision (`packages/schemas/src/compliance.ts`)
 

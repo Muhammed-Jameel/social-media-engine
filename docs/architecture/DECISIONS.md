@@ -48,3 +48,8 @@ The engine includes an SVG-based, editable deterministic renderer for core 4:5 a
 
 Optimize the first UX for one AURENDOR owner/admin while retaining organization/brand identifiers throughout the schema. Rejected: premature multi-tenant billing/role complexity. Production auth still requires a secure owner session.
 
+## ADR-009 — Self-hosted Postiz as the social delivery gateway
+
+**Status:** Accepted · **Date:** 2026-09-05
+
+Use a pinned, self-hosted Postiz instance to consolidate provider OAuth and delivery for Instagram, Facebook, LinkedIn, TikTok, and X. AURENDOR remains authoritative for approval, exact copy and asset hashes, scheduling intent, audit history, and duplicate protection. Provider credentials stay in the private Postiz runtime; only a server-side Postiz API key is given to Content OS. Rejected: browser-session automation, because it is brittle and cannot provide durable provider identity, scheduling, reconciliation, or safe idempotency.

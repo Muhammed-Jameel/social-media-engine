@@ -1,0 +1,24 @@
+{
+  "automationId": "aurendor-publishing-and-first-week-learning",
+  "at": "2026-09-11T02:21:37.842487+00:00",
+  "baghdadDate": "2026-09-11",
+  "sync": {
+    "updatedAt": "2026-09-11T02:20:50.634Z",
+    "posts": 50,
+    "observations": 5,
+    "error": null,
+    "newMetricObservations": 0
+  },
+  "scheduling": "Existing six ACKNOWLEDGED intents retained; no resend",
+  "queuedEntriesReconciled": 42,
+  "queueChanges": [],
+  "daySevenReviewDue": [],
+  "production": {
+    "nextCycle": 3,
+    "eligibleAfter": "2026-09-11T06:05:00+00:00",
+    "hoursUntilDue": 99.72,
+    "decision": "Outside rolling96-hour horizon; no cycle started."
+  },
+  "sourceRefresh": "Launch-window sources rechecked earlier today; no repeat due.",
+  "notification": "Suppressed: unchanged from the42-entry scheduling confirmation already delivered to owner."
+}

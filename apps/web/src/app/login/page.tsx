@@ -5,6 +5,7 @@ import { isDemoMode } from "@/lib/auth";
 import { loginAction } from "./actions";
 
 export const metadata = { title: "Owner sign in" };
+export const dynamic = "force-dynamic";
 
 export default async function LoginPage({ searchParams }: { searchParams: Promise<{ error?: string }> }) {
   if (isDemoMode()) redirect("/");

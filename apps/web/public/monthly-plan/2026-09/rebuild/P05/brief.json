@@ -1,0 +1,178 @@
+{
+  "version": "v7",
+  "id": "P05",
+  "date": "2026-09-18",
+  "time": "19:30",
+  "timezone": "Asia/Baghdad",
+  "titleAr": "أُنجز التسليح.\nوبقي أمران.",
+  "titleEn": "Completed work, open follow-up",
+  "series": "أورندور",
+  "audience": "مدير المكتب الهندسي والمهندس المشرف الذي يحتاج إلى فهم ما تغيّر في الموقع وما يتطلب متابعة.",
+  "objective": "تعليم تحديث ميداني مؤرخ يفرق العمل المنجز عن الإجراء المفتوح، وإظهار موضع هذه المعلومات في واجهة بنيان برو الفعلية.",
+  "coreIdea": "التقرير يصف عمل اليوم؛ قائمة المتابعة تكشف ما لم يُحسم بعد. إثبات إنجاز جزء من العمل لا يحسم الفحص أو ترتيب الخطوة التالية.",
+  "hook": "أُنجز التسليح.\nوبقي أمران.",
+  "track": "product_education",
+  "pillar": "bunyan_pro",
+  "level": "intermediate",
+  "funnel": "consideration",
+  "format": "carousel",
+  "platforms": [
+    "Instagram",
+    "Facebook",
+    "LinkedIn",
+    "X"
+  ],
+  "oldIds": [
+    "SEP-08",
+    "SEP-11"
+  ],
+  "sourceIds": [
+    "BUNYAN-01",
+    "BUNYAN-02"
+  ],
+  "sourceUrls": [
+    "assets/product/brief-source-files.json"
+  ],
+  "sourcePacket": [
+    {
+      "ids": [
+        "BUNYAN-01",
+        "BUNYAN-02"
+      ],
+      "kind": "first_party_local_observation",
+      "source": "../september-content-upgrade/assets/product/brief-source-files.json",
+      "claim": "Actual report date and work/issues, and actual open checklist items visible in repository UI using synthetic local fixture data.",
+      "checked": "2026-09-10"
+    },
+    {
+      "kind": "editorial_date_resolution",
+      "claim": "Tomorrow in the September10 report resolves to September11.",
+      "source": "Visible date in 10-engineer-report-360.png; editorial summary explicitly marked."
+    }
+  ],
+  "assets": [
+    "assets/product/10-engineer-report-360.png",
+    "assets/product/11-engineer-checklist-360.png"
+  ],
+  "downloadFiles": [],
+  "productionMethod": "Render variable-count 1080×1350 carousel and separate 1080×1920 Stories using content-system-v7/static/render.cjs. Keep the existing AURENDOR palette, architectural plates, logos, actual Ghroob Arabic and Dh Ranclo Latin font files. Review every frame at360px and recompose overflow; do not shrink text to force a layout.",
+  "tools": [
+    "Verified AURENDOR assets and fonts",
+    "Local browser renderer",
+    "Independent editorial/source review"
+  ],
+  "motion": "Static carousel. Any later video adaptation requires its own paced script and real evidence; do not animate these frames as a substitute.",
+  "claimLimits": [
+    "الصور من واجهة المنتج الفعلية ببيانات عرض محلية تجريبية؛ لا عملاء حقيقيون.",
+    "لم يُختبر الربط بالخادم الإنتاجي أو المزامنة الحية أو توزيع المسؤوليات.",
+    "التقرير وقائمة المهام ليسا إثباتًا للفحص أو موافقة هندسية.",
+    "تسمية بنيان برو في الغلاف التحريري، مع إبقاء تسمية AURENDOR الظاهرة في التطبيق دون تغيير."
+  ],
+  "readyState": "copy_complete_pending_render_and_final_QA",
+  "whySave": "صيغة تحديث تربط التاريخ والعمل والموقع بما ينتظر المتابعة، تصلح في البرنامج أو الرسالة اليومية.",
+  "whyShare": "يرسلها مدير المكتب إلى مهندس الموقع لتوضيح الفرق بين وصف الإنجاز وما يحتاج إجراءً بعده.",
+  "whyFollow": "يرى القارئ السجل الحقيقي وقائمة المتابعة من المنتج، مع تفسير عملي لقراءة كل منهما.",
+  "cta": "في تحديثك القادم، افصل ما أُنجز عن الإجراء الذي ما زال ينتظر متابعة.",
+  "caption": "«أُنجز تسليح الجزء الشرقي من سقف الطابق الأول». جملة واضحة، لكنها لا تخبر مدير المكتب إن كان فحص الاستلام قد تم، أو إذا تأكد موعد المضخة.\n\nفي بيانات العرض التجريبي لبنيان برو، يحمل التقرير تاريخ ١٠ أيلول ٢٠٢٦. يذكر العمل المنجز، ويقول إن الفحص مقرر في اليوم التالي. وفي الملاحظات: تأخر وصول المضخة، والموعد البديل قيد التأكيد. ثم تظهر في قائمة المهام نقطتان مفتوحتان: استلام التسليح قبل الصب، وتأكيد موعد المضخة.\n\nهذه سجلات مختلفة لأسئلة مختلفة: ماذا حدث اليوم؟ وماذا لا يزال يحتاج متابعة؟ لا نفترض من كتابة التقرير أن الفحص اكتمل، ولا أن الملاحظة المفتوحة صار لها مسؤول تلقائيًا. اسأل الفريق من سيتابعها ومتى يعيد التحديث.\n\nيمكنك تطبيق الفكرة بأي وسيلة: «بتاريخ __، أُنجز __ في __. بقي __. يتابعه __، ونراجع حالته في __». إن لم تتفقوا على المسؤول أو الموعد، اجعلهما سؤالًا واضحًا. اللقطات من واجهة المنتج الفعلية ببيانات تجريبية، وليست مشروع عميل.",
+  "linkedin": "يحتاج مدير المكتب من تحديث الموقع إلى شيئين: فهم التغيير الذي حدث، ومعرفة ما يتطلب إجراءً بعده.\n\nفي عرض بنيان برو التجريبي نقرأ تقرير ١٠ أيلول ٢٠٢٦: أُنجز تسليح الجزء الشرقي من سقف الطابق الأول، وفحص الاستلام مقرر في اليوم التالي. وتذكر الملاحظات تأخر المضخة وأن موعدها البديل لم يتأكد. في قائمة المرحلة، يبقى استلام التسليح وتأكيد موعد المضخة مفتوحين.\n\nالفرق عملي: وصف العمل في التقرير لا يغلق بند المتابعة. يستطيع الفريق أن يفهم ما حدث اليوم، ثم يناقش المسؤول عن الإجراء المفتوح والموعد التالي لمراجعته. ما نعرضه هو سجل وقائمة مهام فعلية؛ لا ندعي أن النظام منح موافقة هندسية أو أسند الملاحظة تلقائيًا.\n\nلتوحيد التحديثات داخل مكتبكم، جرّبوا الصيغة التالية: «بتاريخ __، أُنجز __ في __. بقي __. يتابعه __، ونراجع حالته في __». تملأ الوقائع من السجل، ويُتفق على المسؤول والموعد. بهذه الطريقة يعرف من لم يزر الموقع اليوم ما الذي تغير، وما الذي يحتاج منه سؤالًا أو قرارًا.\n\nالصور من الواجهة الفعلية ببيانات محلية تجريبية.",
+  "x": [
+    "في مثال بنيان برو التجريبي: أُنجز تسليح جزء من السقف، لكن فحص الاستلام وتأكيد المضخة ما زالا مفتوحين. التقرير يصف الإنجاز؛ قائمة المرحلة تُظهر المتابعة.",
+    "صيغة يمكنك استخدامها: بتاريخ __، أُنجز __ في __. بقي __. يتابعه __، ونراجع حالته في __. اكتب الوقائع واتفق على المسؤول، ولا تفترض أن الملاحظة أسندت نفسها.",
+    "لقطات المنشور من بنيان برو الفعلي ببيانات تجريبية. تسجيل التقرير أو تحديث المرحلة لا يمنح موافقة هندسية."
+  ],
+  "slides": [
+    {
+      "title": "أُنجز التسليح.\nوبقي أمران.",
+      "body": "تحديث من بنيان برو يوضح العمل والمتابعة.",
+      "layout": "screenshot",
+      "items": [],
+      "media": "assets/product/10-engineer-report-360.png",
+      "mediaCrop": {
+        "x": 48,
+        "y": 513,
+        "w": 984,
+        "h": 330,
+        "imageWidth": 1080
+      },
+      "sourceNote": "واجهة فعلية / بيانات تجريبية"
+    },
+    {
+      "title": "تحديث له تاريخ\nوخطوة تالية",
+      "body": "",
+      "layout": "document",
+      "items": [],
+      "document": {
+        "label": "تلخيص التقرير التجريبي / ١٠ أيلول ٢٠٢٦",
+        "text": "أُنجز تسليح الجزء الشرقي من السقف.\nالفحص مقرر في ١١ أيلول.\nموعد المضخة البديل لم يتأكد."
+      },
+      "sourceNote": "التاريخ التالي محسوب من «غدًا» في تقرير ١٠ أيلول",
+      "designNote": "This is an editorial summary beside real evidence, not a reconstructed software form. No owner is invented."
+    },
+    {
+      "title": "التقرير يصف ما حدث",
+      "body": "",
+      "layout": "screenshot",
+      "items": [],
+      "media": "assets/product/10-engineer-report-360.png",
+      "mediaCrop": {
+        "x": 48,
+        "y": 513,
+        "w": 984,
+        "h": 783,
+        "imageWidth": 1080
+      },
+      "sourceNote": "واجهة فعلية / بيانات تجريبية",
+      "designNote": "Keep the report date, completed work and pump issue readable. Recompose if needed; do not type over or replace UI content."
+    },
+    {
+      "title": "ما زال بندان مفتوحين",
+      "body": "",
+      "layout": "screenshot",
+      "items": [],
+      "media": "assets/product/11-engineer-checklist-360.png",
+      "mediaCrop": {
+        "x": 48,
+        "y": 1110,
+        "w": 984,
+        "h": 680,
+        "imageWidth": 1080
+      },
+      "sourceNote": "قائمة المرحلة: الاستلام وتأكيد المضخة لم يُغلقا",
+      "designNote": "Show the two unchecked items clearly. Actual checklist does not prove engineering inspection or automatic assignment."
+    },
+    {
+      "title": "اجعل التحديث\nقابلًا للمتابعة",
+      "body": "اكتب ما أُنجز، ثم اتفق على ما سيحدث بعده.",
+      "layout": "closing",
+      "items": [
+        {
+          "label": "الواقعة",
+          "text": "بتاريخ __، أُنجز __ في __."
+        },
+        {
+          "label": "المتابعة",
+          "text": "بقي __. يتابعه __، ونراجع حالته في __."
+        }
+      ],
+      "tone": "dark",
+      "sourceNote": "صيغة يمكنك استخدامها حتى في رسالة للفريق"
+    }
+  ],
+  "stories": [
+    {
+      "title": "هل انتهت المتابعة؟",
+      "body": "تقرير الموقع يقول: أُنجز التسليح. قائمة المرحلة ما زالت تعرض بند الاستلام مفتوحًا.",
+      "action": "ما السؤال الذي نحتاج إجابته الآن؟",
+      "sticker": "Native poll: هل تم الفحص؟ / كم صورة أُرسلت؟. Reveal in carousel, retain demo context."
+    },
+    {
+      "title": "بعد وصف الإنجاز",
+      "body": "اكتب الإجراء المفتوح، واتفق على من يتابعه وموعد تحديث حالته.",
+      "action": "الصيغة الكاملة في آخر شريحة ووصف المنشور.",
+      "sticker": "Share published P05; no download link required.",
+      "tone": "dark"
+    }
+  ],
+  "visualConcept": "Actual dated report and unchecked stage tasks carry the argument. One original document summary makes the timeline explicit; the final worksheet transfers the lesson to any team. Preserve current AURENDOR brand around untouched product pixels; omit the unrelated client-view ending.",
+  "adaptationNotes": "Instagram/Facebook: publish five frames in order. LinkedIn: use the workflow-focused text and report/checklist evidence. X: three supplied texts with one matching evidence crop if desired. Stories: ask about the unfinished inspection and reveal the follow-up structure. Product Reel P08 owns a different product question; do not duplicate this report tour."
+}

@@ -17,6 +17,27 @@ describe("durable workflow policy", () => {
     expect(WORKFLOW_STEPS.MONTHLY_PLAN[ownerReview + 2]).toBe("batch-production");
   });
 
+  it("makes retrieval, concept competition, actual pixels, anchors, and feed review durable production stages", () => {
+    const steps = WORKFLOW_STEPS.POST_PRODUCTION;
+    const retrieval = steps.indexOf("design-intelligence-retrieval");
+    const tournament = steps.indexOf("concept-tournament");
+    const pixels = steps.indexOf("render-original-and-mobile");
+    const critics = steps.indexOf("independent-pixel-critics");
+    const anchors = steps.indexOf("professional-anchor-comparison");
+    const originality = steps.indexOf("originality-review");
+    const feed = steps.indexOf("feed-coherence");
+    const ownerReview = steps.indexOf("owner-review");
+
+    expect(retrieval).toBeLessThan(tournament);
+    expect(tournament).toBeLessThan(pixels);
+    expect(pixels).toBeLessThan(critics);
+    expect(critics).toBeLessThan(anchors);
+    expect(anchors).toBeLessThan(originality);
+    expect(originality).toBeLessThan(feed);
+    expect(feed).toBeLessThan(ownerReview);
+    expect(steps[ownerReview + 1]).toBe("schedule");
+  });
+
   it("preserves typed retry and owner-action semantics", () => {
     const error = new EngineError({
       code: "PROVIDER_AUTH_EXPIRED",

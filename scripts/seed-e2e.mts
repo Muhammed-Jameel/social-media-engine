@@ -73,9 +73,19 @@ try {
   await database.query(
     `UPDATE engine_settings
      SET dry_run = true, production_publishing_enabled = false, paused = false,
+         creative_production_paused = true, creative_gate_state = 'BENCHMARKING',
+         creative_gate_evidence = $2::jsonb,
          autonomy_stage = 'OFFLINE', updated_at = '2026-08-23T00:00:00Z'
      WHERE organization_id = $1`,
-    [ORGANIZATION_ID],
+    [
+      ORGANIZATION_ID,
+      json({
+        reason: "Corpus intelligence is built; hash-locked round-three benchmark pixels are under independent review.",
+        releasePolicy: "Current-hash benchmark evidence and an audited release decision are required.",
+        benchmarkManifest: "artifacts/creative-rebuild/benchmarks-v2-round3/manifest.json",
+        benchmarkManifestSha256: "d30681670a5f3ac6703896e55fe5fe700c97b6ab5bce15838cc99bf196941b36",
+      }),
+    ],
   );
 
   for (const [index, fixture] of e2eContentFixtures.entries()) {

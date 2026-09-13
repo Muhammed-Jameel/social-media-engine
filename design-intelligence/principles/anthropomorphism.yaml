@@ -1,0 +1,81 @@
+schemaVersion: 1.0.0
+domain: anthropomorphism
+principles:
+  - id: ANTHRO_BEHAVIOR_BEFORE_FACE
+    name: Behavior before face
+    description: "Humanize coordination, hesitation, effort, search, memory, or recovery before considering eyes, mouths, or a mascot form."
+    whyItWorks: "Behavior makes abstract systems relatable while preserving a sophisticated technology posture and avoiding decorative cuteness."
+    appropriateFor: [education, service-explanation, storytelling, thought-leadership, product-introduction]
+    avoidWhen: [formal-legal, crisis-response]
+    visualFamilies: [conceptual-hero, product-system-story, character-narrative, process-explainer]
+    languages: [ar, en]
+    anthropomorphismLevels: [1, 2, 3]
+    strongReferenceIds: [ref_51e708951ea61f18, ref_2ca843f06643d5f6, ref_6dd0a9246092f4d5]
+    aurendorApplication: "Default to abstract or object behavior at levels 1–3; a face requires a documented comprehension benefit."
+    retrievalTags: [behavior, premium, object, system, restraint]
+    mustNotCopy: "Do not reproduce another brand's character, expression system, silhouette, or signature behavior."
+  - id: ANTHRO_FACE_REMOVAL_TEST
+    name: Face-removal test
+    description: "Remove all facial features from the concept and verify that pose, interaction, scale, and state still communicate the idea."
+    whyItWorks: "If the concept collapses without eyes, the face was carrying generic emotion rather than the operational story."
+    appropriateFor: [education, storytelling, brand-building, engagement]
+    avoidWhen: [portrait-led-testimonial]
+    visualFamilies: [character-narrative, conceptual-hero, product-system-story]
+    languages: [ar, en]
+    anthropomorphismLevels: [2, 3, 4, 5]
+    strongReferenceIds: [ref_51e708951ea61f18, ref_f5593ec327689f0a, ref_2ca843f06643d5f6]
+    aurendorApplication: "Store the test result in every concept candidate and downgrade the anthropomorphism level when the behavior remains legible without a face."
+    retrievalTags: [face, test, behavior, comprehension, restraint]
+    mustNotCopy: "Do not use a reference character as the face-removal test starting point."
+  - id: ANTHRO_CAPABILITY_BOUNDARY
+    name: Visible capability boundary
+    description: "Show what the system can do and where evidence, human judgment, permission, or uncertainty still constrains it."
+    whyItWorks: "Boundaries prevent characters from implying sentience, perfect knowledge, or unearned authority and therefore increase trust."
+    appropriateFor: [education, service-explanation, thought-leadership, product-introduction]
+    avoidWhen: [pure-brand-pattern]
+    visualFamilies: [product-system-story, process-explainer, character-narrative]
+    languages: [ar, en]
+    anthropomorphismLevels: [1, 2, 3, 4, 5]
+    strongReferenceIds: [ref_51e708951ea61f18, ref_4afce40fe49062b6, ref_2ca843f06643d5f6]
+    aurendorApplication: "Depict handoffs, source boundaries, confidence gaps, approvals, or graceful failure instead of omnipotent AI behavior."
+    retrievalTags: [trust, limitation, evidence, permission, uncertainty]
+    mustNotCopy: "Do not reuse the source's UI, symbols, agents, or failure scenario."
+  - id: ANTHRO_LEVEL_FITS_MESSAGE
+    name: Anthropomorphism level fits the message
+    description: "Choose level 0–5 from communication need, not as a campaign ornament, and vary levels across the feed."
+    whyItWorks: "Variation protects seriousness, reduces visual fatigue, and reserves full narrative scenes for messages that earn them."
+    appropriateFor: [awareness, education, promotion, thought-leadership, storytelling, brand-building]
+    avoidWhen: [none]
+    visualFamilies: [conceptual-hero, editorial-statement, product-system-story, character-narrative, process-explainer]
+    languages: [ar, en]
+    anthropomorphismLevels: [0, 1, 2, 3, 4, 5]
+    strongReferenceIds: [ref_51e708951ea61f18, ref_7ea2e6edfd24a465, ref_f5593ec327689f0a]
+    aurendorApplication: "Use levels 0–3 as the normal range, level 4 selectively, and level 5 only when a complete scene materially improves comprehension."
+    retrievalTags: [level, rhythm, feed, variation, message]
+    mustNotCopy: "Do not map AURENDOR levels onto another brand's mascot or character universe."
+  - id: ANTHRO_MATERIAL_CONTINUITY
+    name: Material and silhouette continuity
+    description: "When an entity recurs, preserve its material response, proportions, silhouette logic, pose vocabulary, and light behavior."
+    whyItWorks: "Consistency makes a system recognizable and intentional while still allowing state and expression changes."
+    appropriateFor: [brand-building, education, storytelling, product-introduction]
+    avoidWhen: [one-off-object-metaphor]
+    visualFamilies: [character-narrative, product-system-story]
+    languages: [ar, en]
+    anthropomorphismLevels: [3, 4, 5]
+    strongReferenceIds: [ref_f5cec23c32415d6e, ref_7ea2e6edfd24a465, ref_51e708951ea61f18]
+    aurendorApplication: "Approve recurring entities only after front, side, three-quarter, pose, expression, and material tests pass the character bible."
+    retrievalTags: [consistency, material, silhouette, character, system]
+    mustNotCopy: "Do not borrow another character's proportions, eyes, limb language, surface treatment, or animation timing."
+  - id: ANTHRO_NO_PERMANENT_MASCOT_YET
+    name: Defer the permanent mascot
+    description: "Prototype abstract, object, and selective character directions before locking the brand to one recurring personality."
+    whyItWorks: "A premature mascot narrows the visual world and can make enterprise infrastructure feel childish before its role is validated."
+    appropriateFor: [brand-building, education, storytelling]
+    avoidWhen: [none]
+    visualFamilies: [conceptual-hero, product-system-story, character-narrative]
+    languages: [ar, en]
+    anthropomorphismLevels: [0, 1, 2, 3, 4]
+    strongReferenceIds: [ref_51e708951ea61f18, ref_2ca843f06643d5f6, ref_f5cec23c32415d6e]
+    aurendorApplication: "Adopt a hybrid world now and require benchmark evidence of recognition, maturity, and flexibility before any permanent mascot decision."
+    retrievalTags: [mascot, defer, hybrid, premium, enterprise]
+    mustNotCopy: "Do not adapt an existing mascot system or force a recurring figure into every composition."

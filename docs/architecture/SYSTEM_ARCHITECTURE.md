@@ -19,6 +19,7 @@ Next.js owner console ───────────────┐
      │                              │
      ├── domain services            ├── provider webhooks
      ├── audit log                  │ future provider ingress
+     ├── Postiz API ────────────────┼── Instagram / Facebook / LinkedIn / TikTok / X
      ▼                              ▼
 PostgreSQL-compatible store ◄── durable worker
      │                              │
@@ -55,9 +56,9 @@ Steps are explicit state-machine transitions with persisted attempts, trace IDs,
 
 ## Publication workflow
 
-`preflight → reserve idempotency key → provider create/publish → verify → persist provider ID → analytics watch`
+`preflight → verify approved hashes → reserve idempotency key → upload/cache media → Postiz create/publish → persist acknowledgement → reconcile/analytics watch`
 
-Provider adapters expose their capabilities and limitations. Unsupported operations return `MANUAL_HANDOFF_REQUIRED`; they never pretend to have published.
+The Postiz adapter is server-only and stores the exact outbound payload before dispatch. It never puts the API key in a URL or client bundle. Ambiguous timeouts/5xx outcomes are recorded and never retried automatically. Provider capabilities and policy limitations remain explicit; a connected account is not by itself proof that public publishing is approved.
 
 ## Analytics workflow
 

@@ -1,8 +1,10 @@
 import { describe, expect, it } from "vitest";
+import type { DesignBrief } from "@aurendor/schemas";
 import {
   contrastRatio,
+  DeterministicSvgProvider,
   duplicateCreativeFingerprints,
-  evaluateSocialCreative,
+  evaluateTechnicalCreativePreflight,
   fingerprintSvg,
   renderSocialSvg,
   type SocialSvgInput,
@@ -39,30 +41,64 @@ describe("AURENDOR deterministic creative renderer", () => {
     expect(contrastRatio("#F4F8F5", "#003F35")).toBeGreaterThan(11);
     expect(contrastRatio("#003F35", "#77FF70")).toBeGreaterThan(9);
   });
+
+  it("labels deterministic output as preview and refuses metadata-only revision", async () => {
+    const provider = new DeterministicSvgProvider();
+    expect(await provider.capabilities()).toEqual(expect.objectContaining({ create: "PREVIEW", revise: "MANUAL_HANDOFF_REQUIRED" }));
+    const brief: DesignBrief = {
+      id: "00000000-0000-4000-8000-000000000010",
+      contentItemId: "00000000-0000-4000-8000-000000000011",
+      communicationGoal: "Explain one controlled handoff.",
+      visualConcept: "A path keeps context attached.",
+      focalPoint: "handoff seam",
+      hierarchy: ["seam", "headline"],
+      layoutFamily: "preview-light",
+      canvas: { width: 1080, height: 1350 },
+      imageDirection: "preview geometry",
+      typographyDirection: "Arabic RTL",
+      palette: ["#003F35", "#0EDB23"],
+      whitespaceTarget: 0.42,
+      exactText: ["السياق يبقى متصلاً"],
+      mobileConstraints: ["Inspect final raster pixels."],
+      referenceIds: [],
+      forbiddenCliches: ["robot"],
+      envelope: {
+        schemaVersion: "1.0.0",
+        modelVersion: null,
+        promptVersion: "preview-test",
+        skillVersions: [],
+        templateVersion: null,
+        traceId: "00000000-0000-4000-8000-000000000012",
+        createdAt: "2026-08-23T10:00:00.000Z",
+        sources: [],
+      },
+    };
+    const [draft] = await provider.create(brief);
+    await expect(provider.revise(draft!.id, { instructions: ["Make it more polished"] })).rejects.toThrow("cannot apply a truthful pixel revision");
+  });
 });
 
 describe("AURENDOR offline creative evaluator", () => {
   it("clears objective gates but never claims a visual critic pass", () => {
     const svg = renderSocialSvg(arabicLight);
-    const evaluation = evaluateSocialCreative({ input: arabicLight, svg, assetLicenseStatus: "NOT_REQUIRED" });
+    const evaluation = evaluateTechnicalCreativePreflight({ input: arabicLight, svg, assetLicenseStatus: "NOT_REQUIRED" });
 
     expect(evaluation.hardFails).toEqual([]);
-    expect(evaluation.decision).toBe("AUTOMATED_CHECKS_PASSED_VISUAL_REVIEW_REQUIRED");
-    expect(evaluation.rubric.diagnosticTotal).toBe(88.5);
-    expect(evaluation.rubric.diagnosticTotal).toBeLessThan(evaluation.rubric.publicationCandidateThreshold);
+    expect(evaluation.decision).toBe("TECHNICAL_PREFLIGHT_PASSED_PIXEL_REVIEW_REQUIRED");
+    expect(evaluation.aestheticEvaluation).toEqual(expect.objectContaining({ performed: false, score: null }));
     expect(evaluation.visualInspection).toEqual(expect.objectContaining({ required: true, status: "NOT_PERFORMED" }));
   });
 
   it("hard-fails Arabic copy rendered in the wrong direction", () => {
     const input: SocialSvgInput = { ...arabicLight, direction: "ltr" };
-    const evaluation = evaluateSocialCreative({ input, svg: renderSocialSvg(input), assetLicenseStatus: "NOT_REQUIRED" });
+    const evaluation = evaluateTechnicalCreativePreflight({ input, svg: renderSocialSvg(input), assetLicenseStatus: "NOT_REQUIRED" });
 
     expect(evaluation.hardFails.map((failure) => failure.code)).toContain("RTL_DIRECTION_MISMATCH");
-    expect(evaluation.decision).toBe("REJECTED_BY_AUTOMATION");
+    expect(evaluation.decision).toBe("REJECTED_BY_TECHNICAL_PREFLIGHT");
   });
 
   it("hard-fails unknown asset licensing", () => {
-    const evaluation = evaluateSocialCreative({ input: arabicLight, svg: renderSocialSvg(arabicLight), assetLicenseStatus: "UNKNOWN" });
+    const evaluation = evaluateTechnicalCreativePreflight({ input: arabicLight, svg: renderSocialSvg(arabicLight), assetLicenseStatus: "UNKNOWN" });
 
     expect(evaluation.hardFails.map((failure) => failure.code)).toContain("UNAPPROVED_LICENSE");
   });
@@ -73,7 +109,7 @@ describe("AURENDOR offline creative evaluator", () => {
       headline: "عنوان ".repeat(20),
       support: "تفاصيل كثيرة لا تصلح لتصميم اجتماعي يقرأ على شاشة هاتف صغيرة. ".repeat(5),
     };
-    const evaluation = evaluateSocialCreative({ input, svg: renderSocialSvg(input), assetLicenseStatus: "NOT_REQUIRED" });
+    const evaluation = evaluateTechnicalCreativePreflight({ input, svg: renderSocialSvg(input), assetLicenseStatus: "NOT_REQUIRED" });
     const codes = evaluation.hardFails.map((failure) => failure.code);
 
     expect(codes).toContain("TEXT_CLIPPING_RISK");
@@ -84,7 +120,7 @@ describe("AURENDOR offline creative evaluator", () => {
     const svg = renderSocialSvg(arabicLight)
       .replace('data-aurendor-primary="#003F35"', 'data-aurendor-primary="#E7ECE8"')
       .replace('data-aurendor-secondary="#3A5145"', 'data-aurendor-secondary="#DCE3DE"');
-    const evaluation = evaluateSocialCreative({ input: arabicLight, svg, assetLicenseStatus: "NOT_REQUIRED" });
+    const evaluation = evaluateTechnicalCreativePreflight({ input: arabicLight, svg, assetLicenseStatus: "NOT_REQUIRED" });
     const codes = evaluation.hardFails.map((failure) => failure.code);
 
     expect(codes).toContain("WRONG_BRAND_COLOR");
@@ -94,7 +130,7 @@ describe("AURENDOR offline creative evaluator", () => {
 
   it("hard-fails a missing canonical logo fingerprint", () => {
     const svg = renderSocialSvg(arabicLight).replace(/ data-source-sha256="[a-f0-9]{64}"/u, "");
-    const evaluation = evaluateSocialCreative({ input: arabicLight, svg, assetLicenseStatus: "NOT_REQUIRED" });
+    const evaluation = evaluateTechnicalCreativePreflight({ input: arabicLight, svg, assetLicenseStatus: "NOT_REQUIRED" });
 
     expect(evaluation.hardFails.map((failure) => failure.code)).toContain("WRONG_LOGO");
   });

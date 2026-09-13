@@ -6,8 +6,9 @@ This guide creates a safe local AURENDOR Content OS environment. It leaves exter
 
 - macOS, Linux, or WSL with Node.js `>=22.13.0`; `.nvmrc` pins the tested Node.js `22.23.2` LTS release
 - pnpm `11.19.0`
-- Access to the canonical source tree at `/Users/muhammedjameel/Documents/AURENDOR` if you want to rerun discovery or import the historical queue
+- Access to the canonical source tree at your local AURENDOR root (for example, `/path/to/AURENDOR`) if you want to rerun discovery or import the historical queue
 - Optional: `ffprobe` for richer video metadata during import
+- Docker Desktop when using the self-hosted Postiz publishing gateway
 
 Confirm the runtime:
 
@@ -15,6 +16,8 @@ Confirm the runtime:
 nvm install
 nvm use
 node --version
+corepack enable
+corepack prepare pnpm@11.19.0 --activate
 pnpm --version
 ```
 
@@ -82,6 +85,14 @@ pnpm worker
 
 The worker polls persisted workflow steps. Stop it with `Ctrl+C`. It does not gain provider authority by running.
 
+To start Postiz in a separate terminal:
+
+```bash
+pnpm postiz:up
+```
+
+Create the one administrator before running `pnpm postiz:lock`. See [Self-hosted Postiz](POSTIZ.md) for provider credentials, account authorization, API-key setup, and the supervised canary sequence.
+
 ## 6. Verify the codebase
 
 ```bash
@@ -112,5 +123,6 @@ The local database lives only under this repository’s `.data/pglite`. Stop the
 | Video metadata is incomplete | Install `ffprobe`; the importer can still hash and ingest the file |
 | PGlite lock/start issue | Stop duplicate web/worker processes that point to the same data directory |
 | Provider says not configured | Expected in local mode; see the provider setup guides and do not override the capability state |
+| Postiz page does not load | Confirm Docker Desktop is running, then inspect `pnpm postiz:logs` and `docker compose --env-file .postiz/.env -f infra/postiz/docker-compose.yml ps` |
 | Fixture analytics look successful | They are synthetic demo values, not real account performance |
 | Secret scan reports a path | Rotate/revoke the credential first; never print the match while debugging |

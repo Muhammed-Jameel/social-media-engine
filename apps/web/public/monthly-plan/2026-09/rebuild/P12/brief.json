@@ -1,0 +1,133 @@
+{
+  "version": "v7",
+  "time": "19:30",
+  "timezone": "Asia/Baghdad",
+  "series": "أورندور",
+  "format": "carousel",
+  "platforms": [
+    "Instagram",
+    "Facebook",
+    "LinkedIn",
+    "X"
+  ],
+  "track": "commercial",
+  "funnel": "conversion",
+  "level": "beginner",
+  "downloadFiles": [],
+  "readyState": "copy_complete_pending_render_and_final_QA",
+  "productionMethod": "Render using static/render.cjs. Actual Ghroob and Dh Ranclo, original AURENDOR palette and architectural plates. Recompose at mobile size; preserve qualifying conditions in main copy.",
+  "tools": [
+    "Original brand fonts and assets",
+    "Local browser renderer",
+    "Python standard library for bounded evidence fixtures"
+  ],
+  "motion": "Static only. No moving-poster video adaptation.",
+  "assets": [
+    "assets/plates/SEP-03-slide-04.png"
+  ],
+  "id": "P12",
+  "date": "2026-09-30",
+  "titleAr": "صف لنا\nطلبًا واحدًا",
+  "titleEn": "Start with one real workflow",
+  "pillar": "aurendor_services",
+  "audience": "صاحب شركة أو مدير عمليات يريد مناقشة أتمتة عمل متكرر، ولا يملك مواصفات مشروع تقني.",
+  "objective": "تسهيل أول رسالة مفيدة إلى أورندور بمثال مكتمل وقصير يوضح أين تبدأ مناقشة النطاق.",
+  "coreIdea": "مدخل العمل والعقبة والنتيجة المطلوبة تكفي لبدء فهم المسار. ليس على العميل اختيار النموذج أو معرفة كل الأرقام قبل التواصل.",
+  "sourcePacket": [
+    {
+      "id": "P12-AUTHORIZED-SCOPE",
+      "kind": "first_party_user_scope",
+      "source": "USER-REQUIREMENTS.txt",
+      "claim": "AURENDOR authorized offering includes business automation, AI integrations, internal systems and implementation.",
+      "limits": "No price, response-time, free consultation or completed-client claim."
+    },
+    {
+      "id": "P12-ORIGINAL-INQUIRY",
+      "kind": "synthetic_original",
+      "source": "briefs/P12.json#slides",
+      "claim": "Illustrative completed inquiry for incoming order clarification.",
+      "limits": "Not a client quote or deployed AURENDOR system."
+    }
+  ],
+  "claimLimits": [
+    "الرسالة المعروضة مثال توضيحي، وليست اقتباسًا من عميل أو نتيجة مشروع.",
+    "يُستخدم زر مراسلة حساب أورندور الفعلي عند النشر؛ لا رابط حجز أو وعد بموعد أو سعر."
+  ],
+  "whySave": "يمكن الرجوع إلى صيغة الرسالة عند وصف المسار للفريق أو لمزود تقني؛ ليست مادة تعليمية عميقة.",
+  "whyShare": "يرسلها مدير إلى زميل يعرف تفاصيل الطلبات ليصوغا مثالًا من العمل.",
+  "whyFollow": "تصل محتوى الحساب بخدمة محددة قابلة للنقاش دون وعود تسويق عامة.",
+  "cta": "راسل حساب أورندور: ما العمل المتكرر، أين يتعطل، وما النتيجة التي تحتاجها؟",
+  "slides": [
+    {
+      "title": "صف لنا\nطلبًا واحدًا",
+      "body": "نبدأ من مسار تعرفه في شركتك.",
+      "layout": "hero",
+      "media": "assets/plates/SEP-03-slide-04.png",
+      "eyebrow": "أنظمة وأتمتة من أورندور",
+      "dark": false
+    },
+    {
+      "title": "هكذا تبدأ\nرسالة مفيدة",
+      "body": "",
+      "layout": "document",
+      "document": {
+        "label": "مثال توضيحي لرسالة أولى",
+        "text": "تصلنا طلبات شراء بالنص والصور. يتأخر تجهيزها لأن اسم الصنف ناقص. نحتاج مسودة طلب واضحة، ويُسأل الموظف عن الصنف الملتبس."
+      }
+    },
+    {
+      "title": "هذه التفاصيل\nتحدد ما نبنيه",
+      "body": "ثم نعرف أين تُحفظ المسودة ومن يعتمدها.",
+      "layout": "worksheet",
+      "items": [
+        {
+          "label": "النص والصور",
+          "text": "نبحث طريقة استقبالها واستخراج بيانات الطلب."
+        },
+        {
+          "label": "الصنف الملتبس",
+          "text": "نحدد متى يتوقف المسار ويعود للموظف."
+        }
+      ]
+    },
+    {
+      "title": "أرسل مثالًا\nمن مسار عملك",
+      "body": "ما العمل المتكرر؟ أين يتعطل؟ وما النتيجة التي تحتاجها؟",
+      "layout": "closing",
+      "tone": "dark",
+      "items": [
+        {
+          "label": "راسل حساب أورندور",
+          "text": "يمكنك البدء بوصف قصير، حتى لو لم تعرف حجم الطلبات بدقة."
+        }
+      ]
+    }
+  ],
+  "caption": "إذا كنت تفكر بأتمتة عمل في شركتك، لا تحتاج أن تبدأ باسم نموذج أو قائمة أدوات. ابدأ بطلب واحد يعرف فريقك كيف يمر من شخص إلى آخر.\n\nمثال توضيحي لرسالة: «تصلنا طلبات شراء بالنص والصور. يتأخر تجهيزها لأن اسم الصنف ناقص. نحتاج مسودة طلب واضحة، ويُسأل الموظف عن الصنف الملتبس».\n\nهذا الوصف يفتح أسئلة عملية: من أين تصل الطلبات؟ هل توجد قائمة أصناف؟ أين تُحفظ المسودة؟ ومن يعتمدها؟ استخراج البيانات قد يستفيد من الذكاء الاصطناعي، ونقلها قد يحتاج تكاملًا، أما الصنف الذي لم نستطع تحديده فيحتاج مسارًا واضحًا للعودة إلى الموظف.\n\nهذه قراءة أولية لمثال خيالي، وليست وصفًا لنظام منشور أو وعدًا بأن كل الطلبات ستعمل تلقائيًا. في أورندور نعمل على أنظمة الأعمال وتكاملات الذكاء الاصطناعي وأتمتة المسارات.\n\nراسل حسابنا باسم العمل المتكرر، والعقبة، والنتيجة المطلوبة. إذا لم تعرف عدد الطلبات أو الوقت المستغرق، اذكر ذلك كما هو. تفاصيل النطاق تأتي من فهم المسار.",
+  "linkedin": "الرسالة الأولى عن مشروع أتمتة لا تحتاج أن تكون وثيقة متطلبات. يكفي مثال عمل محدد يوضح المدخل والعقبة والمخرج المطلوب.\n\nمثال توضيحي: «تصلنا طلبات شراء بالنص والصور. يتأخر تجهيزها لأن اسم الصنف ناقص. نحتاج مسودة طلب واضحة، ويُسأل الموظف عن الصنف الملتبس».\n\nمن هذه الرسالة يمكن بدء بحث النطاق: استقبال الطلب، استخراج بياناته، مطابقته مع قائمة الأصناف، إعداد المسودة، ثم تحويل الحالات الملتبسة إلى شخص. لا تعني هذه القراءة أن كل خطوة تحتاج نموذجًا لغويًا، أو أن النظام يستطيع اعتماد الطلب بنفسه. نحتاج أن نعرف أين تحفظ الشركة بياناتها ومن يملك قرار الاعتماد.\n\nهذا مثال خيالي لتوضيح بداية الحوار. أورندور تعمل على أنظمة الأعمال وأتمتة المسارات وتكاملات الذكاء الاصطناعي. إذا كان لديك مسار تريد مناقشته، راسل الحساب بوصف العمل والعقبة والنتيجة المطلوبة. الأرقام غير المعروفة يمكن أن تبقى غير معروفة في الرسالة الأولى.",
+  "x": [
+    "مثال لبدء نقاش أتمتة: «تصلنا طلبات بالنص والصور. اسم الصنف الناقص يؤخر تجهيزها. نحتاج مسودة واضحة، ويعود الصنف الملتبس للموظف». رسالة خيالية قصيرة، لكنها تحدد عملًا يمكن فهمه.",
+    "في أورندور نعمل على أنظمة الأعمال وتكاملات الذكاء الاصطناعي وأتمتة المسارات. راسل الحساب: ما العمل المتكرر؟ أين يتعطل؟ وما النتيجة المطلوبة؟ يمكنك البدء قبل معرفة كل الأرقام."
+  ],
+  "stories": [
+    {
+      "title": "ما الطلب الذي يتكرر؟",
+      "body": "صف العمل، والعقبة، والنتيجة التي تحتاجها.",
+      "action": "أرسل وصفك برسالة إلى حساب أورندور.",
+      "sticker": "Native message/reply entry; no fake booking button or invented link.",
+      "tone": "dark"
+    }
+  ],
+  "visualConcept": "Short completed inquiry as editorial document, then two concrete implications; preserve original brand atmosphere. Three-field invitation instead of a form screenshot. No fake customer message styling, avatar or testimonial marks.",
+  "adaptationNotes": "Instagram four frames; Facebook caption with concrete example; LinkedIn why first-contact details help scope; X two posts; one direct-reply Story. Verify publishing account is AURENDOR and replies enabled; no outside message sent by production agent.",
+  "hook": "صف لنا\nطلبًا واحدًا",
+  "facebook": "إذا كنت تفكر بأتمتة عمل في شركتك، لا تحتاج أن تبدأ باسم نموذج أو قائمة أدوات. ابدأ بطلب واحد يعرف فريقك كيف يمر من شخص إلى آخر.\n\nمثال توضيحي لرسالة: «تصلنا طلبات شراء بالنص والصور. يتأخر تجهيزها لأن اسم الصنف ناقص. نحتاج مسودة طلب واضحة، ويُسأل الموظف عن الصنف الملتبس».\n\nهذا الوصف يفتح أسئلة عملية: من أين تصل الطلبات؟ هل توجد قائمة أصناف؟ أين تُحفظ المسودة؟ ومن يعتمدها؟ استخراج البيانات قد يستفيد من الذكاء الاصطناعي، ونقلها قد يحتاج تكاملًا، أما الصنف الذي لم نستطع تحديده فيحتاج مسارًا واضحًا للعودة إلى الموظف.\n\nهذه قراءة أولية لمثال خيالي، وليست وصفًا لنظام منشور أو وعدًا بأن كل الطلبات ستعمل تلقائيًا. في أورندور نعمل على أنظمة الأعمال وتكاملات الذكاء الاصطناعي وأتمتة المسارات.\n\nراسل حسابنا باسم العمل المتكرر، والعقبة، والنتيجة المطلوبة. إذا لم تعرف عدد الطلبات أو الوقت المستغرق، اذكر ذلك كما هو. تفاصيل النطاق تأتي من فهم المسار.",
+  "sourceIds": [
+    "P12-AUTHORIZED-SCOPE",
+    "P12-ORIGINAL-INQUIRY"
+  ],
+  "sourceUrls": [
+    "USER-REQUIREMENTS.txt",
+    "briefs/P12.json#slides"
+  ]
+}

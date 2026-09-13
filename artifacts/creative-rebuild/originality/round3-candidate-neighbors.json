@@ -1,0 +1,1214 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-08-23T14:40:02.963055+00:00",
+  "purpose": "Reviewer routing only; automated similarity never establishes copying or clearance.",
+  "securityBoundary": "Reference pixels remain in reviewer-only audit sheets and were never supplied to image generation.",
+  "candidateManifest": "artifacts/creative-rebuild/benchmarks-v2-round3/manifest.json",
+  "candidateManifestSha256": "d30681670a5f3ac6703896e55fe5fe700c97b6ab5bce15838cc99bf196941b36",
+  "corpusIndex": "design-intelligence/corpus/files.json",
+  "corpusIndexSha256": "dda78526680058a0c3bcb4b5c3d390db151e99c591984a9a7d9998d123381c6d",
+  "corpusPrimaryCount": 1296,
+  "rankingMethod": "Reciprocal-rank fusion of 64-bit dHash, standardized structural feature distance, and aspect distance; no pass threshold.",
+  "candidates": [
+    {
+      "renderedAssetId": "01-ar-context-handoff",
+      "renderedAssetSha256": "75abe2da653a3626ddd31f0925eca53de28dc1590c52b068883413692944cdd4",
+      "perceptualHash64": "0583ec70b1f9e140",
+      "declaredReferenceIds": [
+        "ref_51e708951ea61f18",
+        "ref_6dd0a9246092f4d5",
+        "ref_8871f98455278188"
+      ],
+      "declaredPrincipleIds": [
+        "STORY_ONE_VERB",
+        "COMP_FOCAL_DOMINANCE",
+        "AR_COMPOSE_RTL_FIRST"
+      ],
+      "nearestCorpusCandidates": [
+        {
+          "referenceId": "ref_68f4f2d02c445c9e",
+          "sha256": "68f4f2d02c445c9ede7abe3eb6b5b653e3c66708313df4fe446347d6c1927fea",
+          "perceptualHashDistance": 25,
+          "normalizedFeatureDistance": 4.021619,
+          "aspectLogDistance": 0.467558,
+          "reciprocalRankFusionScore": 0.039325196
+        },
+        {
+          "referenceId": "ref_4e7721fa1779c722",
+          "sha256": "4e7721fa1779c7227c5750717bc4be8a2db67323e38d400dc4f7285c9b661b0d",
+          "perceptualHashDistance": 30,
+          "normalizedFeatureDistance": 4.029232,
+          "aspectLogDistance": 0.468121,
+          "reciprocalRankFusionScore": 0.033105733
+        },
+        {
+          "referenceId": "ref_5189984ce1a269ad",
+          "sha256": "5189984ce1a269ad776e99604c3e8b30ea1ebab7f9607a332bd26d47d1cded51",
+          "perceptualHashDistance": 33,
+          "normalizedFeatureDistance": 4.036813,
+          "aspectLogDistance": 0.468337,
+          "reciprocalRankFusionScore": 0.030925587
+        },
+        {
+          "referenceId": "ref_5658d0c88df642ed",
+          "sha256": "5658d0c88df642ed3c7d8ad0ab7a8b0edd94823f7d1d02df7095e23e4ede094d",
+          "perceptualHashDistance": 24,
+          "normalizedFeatureDistance": 4.039995,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.028568251
+        },
+        {
+          "referenceId": "ref_189a43bb5649d4b2",
+          "sha256": "189a43bb5649d4b2b4ac1a21afd5c4589294d2ead397c2ac5466e1a3259caa2c",
+          "perceptualHashDistance": 23,
+          "normalizedFeatureDistance": 4.058783,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.028403078
+        },
+        {
+          "referenceId": "ref_1eac0641e30f75c3",
+          "sha256": "1eac0641e30f75c3492b2b497f45a601560a057bd8f02bcfcf94fc9e7a9713d1",
+          "perceptualHashDistance": 23,
+          "normalizedFeatureDistance": 4.159095,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.02776548
+        },
+        {
+          "referenceId": "ref_1897b72bff3c5566",
+          "sha256": "1897b72bff3c5566339d68fa43dc65387e35a1089cf45c86c60be9bd19dfbd28",
+          "perceptualHashDistance": 32,
+          "normalizedFeatureDistance": 4.031442,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.027684242
+        },
+        {
+          "referenceId": "ref_3f4f984da7d06b7f",
+          "sha256": "3f4f984da7d06b7fad803cdd9e7daa86f2f7c849961578be52ce1ef2c5e7787c",
+          "perceptualHashDistance": 21,
+          "normalizedFeatureDistance": 4.064834,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.027298259
+        }
+      ],
+      "reviewerOnlySheet": "artifacts/creative-rebuild/originality/round3-reviewer-only-neighbors/01-ar-context-handoff-nearest-5.png",
+      "automatedDecision": "REVIEWER_REQUIRED",
+      "nearestRecentFeedCandidates": [
+        {
+          "renderedAssetId": "11-ar-carousel-stop",
+          "perceptualHashDistance": 26,
+          "normalizedFeatureDistance": 1.074333
+        },
+        {
+          "renderedAssetId": "06-ar-operating-pattern",
+          "perceptualHashDistance": 26,
+          "normalizedFeatureDistance": 1.259938
+        },
+        {
+          "renderedAssetId": "02-ar-rag-evidence",
+          "perceptualHashDistance": 27,
+          "normalizedFeatureDistance": 1.473109
+        }
+      ]
+    },
+    {
+      "renderedAssetId": "02-ar-rag-evidence",
+      "renderedAssetSha256": "99f38e058cee164a433d7113149ef2e31474f86ca0b146e91888ff90f62ee66a",
+      "perceptualHash64": "e4e464133898a398",
+      "declaredReferenceIds": [
+        "ref_4afce40fe49062b6",
+        "ref_a549cc94cfd3fc44",
+        "ref_79573233e0b609f3"
+      ],
+      "declaredPrincipleIds": [
+        "IMAGE_UI_AS_PROOF",
+        "COMP_SEMANTIC_DEPTH",
+        "COLOR_MATERIAL_LIGHT_BEFORE_GLOW"
+      ],
+      "nearestCorpusCandidates": [
+        {
+          "referenceId": "ref_3790e75699180d41",
+          "sha256": "3790e75699180d41f297ad22113b85b1ee661a0a65bd7c4fded1ec23f2f780f0",
+          "perceptualHashDistance": 22,
+          "normalizedFeatureDistance": 4.009984,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.033841738
+        },
+        {
+          "referenceId": "ref_6dcdcd67d7766ae0",
+          "sha256": "6dcdcd67d7766ae02102850e96f67947969d3cfbc87ee4220e2cab07509b7436",
+          "perceptualHashDistance": 21,
+          "normalizedFeatureDistance": 4.02603,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.029415184
+        },
+        {
+          "referenceId": "ref_f3b5ee0b6b861b5a",
+          "sha256": "f3b5ee0b6b861b5a990b96fe4b409b31097ffa64d11881abee4766c44e114601",
+          "perceptualHashDistance": 22,
+          "normalizedFeatureDistance": 4.07708,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.029189874
+        },
+        {
+          "referenceId": "ref_103ae9001186b364",
+          "sha256": "103ae9001186b364c266d46dd591089bc34f9173d3afb1ceeef18a9b80f532f3",
+          "perceptualHashDistance": 29,
+          "normalizedFeatureDistance": 4.029882,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.02701093
+        },
+        {
+          "referenceId": "ref_f17bbd0eed223bdc",
+          "sha256": "f17bbd0eed223bdc7a370bead96ee65d1d176865ccdea19958ec985bda8fc2e7",
+          "perceptualHashDistance": 29,
+          "normalizedFeatureDistance": 4.02921,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.026967832
+        },
+        {
+          "referenceId": "ref_b763e5f28b00c144",
+          "sha256": "b763e5f28b00c14498f6400e1fc912b461c56d3a1a73deefeb7ca648e6ac44e9",
+          "perceptualHashDistance": 23,
+          "normalizedFeatureDistance": 4.018523,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.026527006
+        },
+        {
+          "referenceId": "ref_cd759f286e263b57",
+          "sha256": "cd759f286e263b57db5662e42cddf428ccbfa1894923ecf4f1a53ae4dc01f25c",
+          "perceptualHashDistance": 25,
+          "normalizedFeatureDistance": 4.013505,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.02630403
+        },
+        {
+          "referenceId": "ref_09d22b3167707406",
+          "sha256": "09d22b316770740630db0de7d092241827cc8502c9f662835f6dc20786f63f31",
+          "perceptualHashDistance": 24,
+          "normalizedFeatureDistance": 4.024688,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.025517798
+        }
+      ],
+      "reviewerOnlySheet": "artifacts/creative-rebuild/originality/round3-reviewer-only-neighbors/02-ar-rag-evidence-nearest-5.png",
+      "automatedDecision": "REVIEWER_REQUIRED",
+      "nearestRecentFeedCandidates": [
+        {
+          "renderedAssetId": "03-ar-automation-relay",
+          "perceptualHashDistance": 23,
+          "normalizedFeatureDistance": 0.688047
+        },
+        {
+          "renderedAssetId": "01-ar-context-handoff",
+          "perceptualHashDistance": 27,
+          "normalizedFeatureDistance": 1.473109
+        },
+        {
+          "renderedAssetId": "11-ar-carousel-stop",
+          "perceptualHashDistance": 27,
+          "normalizedFeatureDistance": 1.996178
+        }
+      ]
+    },
+    {
+      "renderedAssetId": "03-ar-automation-relay",
+      "renderedAssetSha256": "6083c0cad459132bb308769f86031a8e1a78bb1c47b8eaa0e1cb25ba678a2294",
+      "perceptualHash64": "e1e61c7890c02293",
+      "declaredReferenceIds": [
+        "ref_2ca843f06643d5f6",
+        "ref_79573233e0b609f3",
+        "ref_7ea2e6edfd24a465"
+      ],
+      "declaredPrincipleIds": [
+        "ANTHRO_BEHAVIOR_BEFORE_FACE",
+        "ANTHRO_CAPABILITY_BOUNDARY_VISIBLE",
+        "STORY_STATE_TRANSFORMATION"
+      ],
+      "nearestCorpusCandidates": [
+        {
+          "referenceId": "ref_ecdec57ddf5f13bf",
+          "sha256": "ecdec57ddf5f13bf1e32c00e3bf63aae4361b1b8777d923d82a7acb188a06d43",
+          "perceptualHashDistance": 22,
+          "normalizedFeatureDistance": 4.255577,
+          "aspectLogDistance": 0.468337,
+          "reciprocalRankFusionScore": 0.031027208
+        },
+        {
+          "referenceId": "ref_74831bfdf7630447",
+          "sha256": "74831bfdf7630447a6d7edaede6d7ca82c0864b354d219afb72038750be2116c",
+          "perceptualHashDistance": 25,
+          "normalizedFeatureDistance": 4.02504,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.029961427
+        },
+        {
+          "referenceId": "ref_083ed74c902655b5",
+          "sha256": "083ed74c902655b5f026fb3b3245cbcfd0a8622871fa1ea4c73a266165912964",
+          "perceptualHashDistance": 22,
+          "normalizedFeatureDistance": 3.997407,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.029841017
+        },
+        {
+          "referenceId": "ref_68f4f2d02c445c9e",
+          "sha256": "68f4f2d02c445c9ede7abe3eb6b5b653e3c66708313df4fe446347d6c1927fea",
+          "perceptualHashDistance": 23,
+          "normalizedFeatureDistance": 4.19676,
+          "aspectLogDistance": 0.467558,
+          "reciprocalRankFusionScore": 0.029465651
+        },
+        {
+          "referenceId": "ref_0b1690b86d3adbe0",
+          "sha256": "0b1690b86d3adbe066bf4fb6cf4911641d8991ff1c95ab6cef1391b77ab7e894",
+          "perceptualHashDistance": 23,
+          "normalizedFeatureDistance": 4.004768,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.028825636
+        },
+        {
+          "referenceId": "ref_321129dcaf0678a4",
+          "sha256": "321129dcaf0678a43f949ba46059f577924c2a5b6a60a730154c5218564b9ed1",
+          "perceptualHashDistance": 21,
+          "normalizedFeatureDistance": 4.203219,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.028632479
+        },
+        {
+          "referenceId": "ref_c78b665c6cee44be",
+          "sha256": "c78b665c6cee44be3671fed76f78be8fa045e3eb59f2905ee50a48152a4fa0e8",
+          "perceptualHashDistance": 21,
+          "normalizedFeatureDistance": 4.042675,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.028613733
+        },
+        {
+          "referenceId": "ref_c3d2798142eeebfd",
+          "sha256": "c3d2798142eeebfd53efd76592e88b742b92dbb0e2ac0f409722dca1eeb4918e",
+          "perceptualHashDistance": 24,
+          "normalizedFeatureDistance": 4.051943,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.025998084
+        }
+      ],
+      "reviewerOnlySheet": "artifacts/creative-rebuild/originality/round3-reviewer-only-neighbors/03-ar-automation-relay-nearest-5.png",
+      "automatedDecision": "REVIEWER_REQUIRED",
+      "nearestRecentFeedCandidates": [
+        {
+          "renderedAssetId": "02-ar-rag-evidence",
+          "perceptualHashDistance": 23,
+          "normalizedFeatureDistance": 0.688047
+        },
+        {
+          "renderedAssetId": "10-ar-carousel-boundaries",
+          "perceptualHashDistance": 27,
+          "normalizedFeatureDistance": 1.312834
+        },
+        {
+          "renderedAssetId": "04-ar-decision-question",
+          "perceptualHashDistance": 28,
+          "normalizedFeatureDistance": 0.679467
+        }
+      ]
+    },
+    {
+      "renderedAssetId": "04-ar-decision-question",
+      "renderedAssetSha256": "de6254c4bfe9ea3b38484799cff5174f27bda3fa203fa1d1054e348078fc484a",
+      "perceptualHash64": "96be1a94d2c9c886",
+      "declaredReferenceIds": [
+        "ref_f5cec23c32415d6e",
+        "ref_8684a4138ac5fc7a",
+        "ref_6dd0a9246092f4d5"
+      ],
+      "declaredPrincipleIds": [
+        "TYPE_DISPLAY_AS_COMPOSITION",
+        "AR_SEMANTIC_LINE_BREAKS",
+        "COLOR_SEMANTIC_NOT_SKIN"
+      ],
+      "nearestCorpusCandidates": [
+        {
+          "referenceId": "ref_4848da91db8bdcab",
+          "sha256": "4848da91db8bdcab1a340827976eab7971ebe99a08a1977334b69035d25393b2",
+          "perceptualHashDistance": 21,
+          "normalizedFeatureDistance": 4.243506,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.030372278
+        },
+        {
+          "referenceId": "ref_329743a1f6ee4532",
+          "sha256": "329743a1f6ee4532e8b0f262152571c99974a0dd463c6982ad40d4d7923a9b79",
+          "perceptualHashDistance": 23,
+          "normalizedFeatureDistance": 4.062348,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.028792419
+        },
+        {
+          "referenceId": "ref_930a3f804dc387de",
+          "sha256": "930a3f804dc387de32e5a5262ffe96adc8b7234868dbe4948c13fb8436ef8d95",
+          "perceptualHashDistance": 21,
+          "normalizedFeatureDistance": 4.020028,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.02731835
+        },
+        {
+          "referenceId": "ref_47917c8bca6dd5a9",
+          "sha256": "47917c8bca6dd5a9d0c4a25fb4cc2ea525339c604ee6b25aa3c24055f1000495",
+          "perceptualHashDistance": 21,
+          "normalizedFeatureDistance": 4.20543,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.026735452
+        },
+        {
+          "referenceId": "ref_d691e0b9e7cd8d62",
+          "sha256": "d691e0b9e7cd8d62e8ada0ce97fba4042e4b5b5072142d88eab3ddfb7453d42c",
+          "perceptualHashDistance": 39,
+          "normalizedFeatureDistance": 4.018335,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.024319315
+        },
+        {
+          "referenceId": "ref_1eac0641e30f75c3",
+          "sha256": "1eac0641e30f75c3492b2b497f45a601560a057bd8f02bcfcf94fc9e7a9713d1",
+          "perceptualHashDistance": 27,
+          "normalizedFeatureDistance": 4.063559,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.023751695
+        },
+        {
+          "referenceId": "ref_5f54b55a3a3b15af",
+          "sha256": "5f54b55a3a3b15af68be4c662aba3542d052e506af4ec072b325f1aee94b80ce",
+          "perceptualHashDistance": 21,
+          "normalizedFeatureDistance": 4.060188,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.023588224
+        },
+        {
+          "referenceId": "ref_f5624c9712114dc2",
+          "sha256": "f5624c9712114dc28e9b5d842242fd8eb3e0146669d7d36e15d8e6c2e57d182b",
+          "perceptualHashDistance": 33,
+          "normalizedFeatureDistance": 4.014045,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.023372899
+        }
+      ],
+      "reviewerOnlySheet": "artifacts/creative-rebuild/originality/round3-reviewer-only-neighbors/04-ar-decision-question-nearest-5.png",
+      "automatedDecision": "REVIEWER_REQUIRED",
+      "nearestRecentFeedCandidates": [
+        {
+          "renderedAssetId": "03-ar-automation-relay",
+          "perceptualHashDistance": 28,
+          "normalizedFeatureDistance": 0.679467
+        },
+        {
+          "renderedAssetId": "06-ar-operating-pattern",
+          "perceptualHashDistance": 28,
+          "normalizedFeatureDistance": 1.365735
+        },
+        {
+          "renderedAssetId": "10-ar-carousel-boundaries",
+          "perceptualHashDistance": 29,
+          "normalizedFeatureDistance": 1.014607
+        }
+      ]
+    },
+    {
+      "renderedAssetId": "05-en-before-after",
+      "renderedAssetSha256": "541ab579922fdef856e2711af418129dbbb72e1d7bdcc2e45c3b44d335390c05",
+      "perceptualHash64": "687270042534aca5",
+      "declaredReferenceIds": [
+        "ref_51e708951ea61f18",
+        "ref_4afce40fe49062b6",
+        "ref_7ea2e6edfd24a465"
+      ],
+      "declaredPrincipleIds": [
+        "STORY_TENSION_THEN_RESOLUTION",
+        "COMP_SYSTEM_VARIATION_NOT_TEMPLATE",
+        "HIER_EVIDENCE_SUBORDINATED_NOT_HIDDEN"
+      ],
+      "nearestCorpusCandidates": [
+        {
+          "referenceId": "ref_68f4f2d02c445c9e",
+          "sha256": "68f4f2d02c445c9ede7abe3eb6b5b653e3c66708313df4fe446347d6c1927fea",
+          "perceptualHashDistance": 30,
+          "normalizedFeatureDistance": 4.003356,
+          "aspectLogDistance": 0.467558,
+          "reciprocalRankFusionScore": 0.032393658
+        },
+        {
+          "referenceId": "ref_1897b72bff3c5566",
+          "sha256": "1897b72bff3c5566339d68fa43dc65387e35a1089cf45c86c60be9bd19dfbd28",
+          "perceptualHashDistance": 27,
+          "normalizedFeatureDistance": 4.001041,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.030748821
+        },
+        {
+          "referenceId": "ref_0f615732b378cf69",
+          "sha256": "0f615732b378cf697297e167f0597e06e49078a8952c3dbe1e6819b5d2fad372",
+          "perceptualHashDistance": 21,
+          "normalizedFeatureDistance": 4.002195,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.029866816
+        },
+        {
+          "referenceId": "ref_ecdec57ddf5f13bf",
+          "sha256": "ecdec57ddf5f13bf1e32c00e3bf63aae4361b1b8777d923d82a7acb188a06d43",
+          "perceptualHashDistance": 33,
+          "normalizedFeatureDistance": 4.009067,
+          "aspectLogDistance": 0.468337,
+          "reciprocalRankFusionScore": 0.02955416
+        },
+        {
+          "referenceId": "ref_5a395d14ea6f1f98",
+          "sha256": "5a395d14ea6f1f98d8ee11f3544e41c02cc1a68c6aba43963d05902fe5f8e625",
+          "perceptualHashDistance": 24,
+          "normalizedFeatureDistance": 4.00924,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.029303292
+        },
+        {
+          "referenceId": "ref_4e7721fa1779c722",
+          "sha256": "4e7721fa1779c7227c5750717bc4be8a2db67323e38d400dc4f7285c9b661b0d",
+          "perceptualHashDistance": 29,
+          "normalizedFeatureDistance": 4.014752,
+          "aspectLogDistance": 0.468121,
+          "reciprocalRankFusionScore": 0.028784041
+        },
+        {
+          "referenceId": "ref_e3720567ab44c8c9",
+          "sha256": "e3720567ab44c8c93dab835205bb192259af514d8327861cc2e561a54570b237",
+          "perceptualHashDistance": 23,
+          "normalizedFeatureDistance": 4.276673,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.027299036
+        },
+        {
+          "referenceId": "ref_b3d5da883db383d2",
+          "sha256": "b3d5da883db383d2fc4607a40f50ace96dae390f0c5d2a2adf47e9e49af143ed",
+          "perceptualHashDistance": 23,
+          "normalizedFeatureDistance": 3.997824,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.026639575
+        }
+      ],
+      "reviewerOnlySheet": "artifacts/creative-rebuild/originality/round3-reviewer-only-neighbors/05-en-before-after-nearest-5.png",
+      "automatedDecision": "REVIEWER_REQUIRED",
+      "nearestRecentFeedCandidates": [
+        {
+          "renderedAssetId": "08-en-field-notes",
+          "perceptualHashDistance": 26,
+          "normalizedFeatureDistance": 0.813383
+        },
+        {
+          "renderedAssetId": "06-ar-operating-pattern",
+          "perceptualHashDistance": 27,
+          "normalizedFeatureDistance": 1.151869
+        },
+        {
+          "renderedAssetId": "02-ar-rag-evidence",
+          "perceptualHashDistance": 30,
+          "normalizedFeatureDistance": 1.687563
+        }
+      ]
+    },
+    {
+      "renderedAssetId": "06-ar-operating-pattern",
+      "renderedAssetSha256": "268d09df2685c7ca6b2ef3e60a35139b09a9ff16a9ce13e31bde055ddec6c718",
+      "perceptualHash64": "06420624c1412464",
+      "declaredReferenceIds": [
+        "ref_4afce40fe49062b6",
+        "ref_8ef6ff7e70837523",
+        "ref_f5cec23c32415d6e"
+      ],
+      "declaredPrincipleIds": [
+        "HIER_THREE_BEATS_MAX",
+        "TYPE_STEEP_SCALE_CONTRAST",
+        "AR_COMPOSE_RTL_FIRST"
+      ],
+      "nearestCorpusCandidates": [
+        {
+          "referenceId": "ref_4e7721fa1779c722",
+          "sha256": "4e7721fa1779c7227c5750717bc4be8a2db67323e38d400dc4f7285c9b661b0d",
+          "perceptualHashDistance": 22,
+          "normalizedFeatureDistance": 4.074529,
+          "aspectLogDistance": 0.468121,
+          "reciprocalRankFusionScore": 0.03757135
+        },
+        {
+          "referenceId": "ref_488938799e359886",
+          "sha256": "488938799e359886fca1587d3046be5bb4f476f92c320f8bf56f15f8cc80658e",
+          "perceptualHashDistance": 15,
+          "normalizedFeatureDistance": 4.048047,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.034502854
+        },
+        {
+          "referenceId": "ref_954f32cdb324e71f",
+          "sha256": "954f32cdb324e71faaba656cbf49b477b16cc1327edb30651f714ac9f6004554",
+          "perceptualHashDistance": 18,
+          "normalizedFeatureDistance": 4.039182,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.033077317
+        },
+        {
+          "referenceId": "ref_919572aab64729bb",
+          "sha256": "919572aab64729bbd02f1201db77e97bf1d1d9af2c3dc818ad0523b702c15106",
+          "perceptualHashDistance": 20,
+          "normalizedFeatureDistance": 4.012489,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.031501491
+        },
+        {
+          "referenceId": "ref_8b8aaec2d37a2f73",
+          "sha256": "8b8aaec2d37a2f73a31af7c3da5f67d21a83908857c70198135dcd22cbeca88a",
+          "perceptualHashDistance": 19,
+          "normalizedFeatureDistance": 4.070254,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.031260153
+        },
+        {
+          "referenceId": "ref_0d465a9aac9a8380",
+          "sha256": "0d465a9aac9a8380f2be7f58a30554edb082f59f05f503cbaa6e8abe3f3520ef",
+          "perceptualHashDistance": 19,
+          "normalizedFeatureDistance": 4.057455,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.030697354
+        },
+        {
+          "referenceId": "ref_e9ad42cd01eee68c",
+          "sha256": "e9ad42cd01eee68cbff0d692e33b04487e3b5e4df0fb518df9a131f776808bcc",
+          "perceptualHashDistance": 26,
+          "normalizedFeatureDistance": 4.08511,
+          "aspectLogDistance": 0.467985,
+          "reciprocalRankFusionScore": 0.030032728
+        },
+        {
+          "referenceId": "ref_5189984ce1a269ad",
+          "sha256": "5189984ce1a269ad776e99604c3e8b30ea1ebab7f9607a332bd26d47d1cded51",
+          "perceptualHashDistance": 27,
+          "normalizedFeatureDistance": 4.080712,
+          "aspectLogDistance": 0.468337,
+          "reciprocalRankFusionScore": 0.02837325
+        }
+      ],
+      "reviewerOnlySheet": "artifacts/creative-rebuild/originality/round3-reviewer-only-neighbors/06-ar-operating-pattern-nearest-5.png",
+      "automatedDecision": "REVIEWER_REQUIRED",
+      "nearestRecentFeedCandidates": [
+        {
+          "renderedAssetId": "01-ar-context-handoff",
+          "perceptualHashDistance": 26,
+          "normalizedFeatureDistance": 1.259938
+        },
+        {
+          "renderedAssetId": "05-en-before-after",
+          "perceptualHashDistance": 27,
+          "normalizedFeatureDistance": 1.151869
+        },
+        {
+          "renderedAssetId": "04-ar-decision-question",
+          "perceptualHashDistance": 28,
+          "normalizedFeatureDistance": 1.365735
+        }
+      ]
+    },
+    {
+      "renderedAssetId": "07-en-evidence-ledger",
+      "renderedAssetSha256": "d20849aa2f414bcdff1d40f8ca4d7b8e42ff543e7e64bc0b4ccfb202e13b6a9f",
+      "perceptualHash64": "c283a6fcfc7869bf",
+      "declaredReferenceIds": [
+        "ref_a549cc94cfd3fc44",
+        "ref_4afce40fe49062b6",
+        "ref_7ea2e6edfd24a465"
+      ],
+      "declaredPrincipleIds": [
+        "IMAGE_UI_AS_PROOF",
+        "STORY_CONTEXTUAL_MICRODETAILS",
+        "HIER_EVIDENCE_SUBORDINATED_NOT_HIDDEN"
+      ],
+      "nearestCorpusCandidates": [
+        {
+          "referenceId": "ref_cbca97504166b179",
+          "sha256": "cbca97504166b1794ab906fadb720e38925fa7fb1726e7da264431b2f6bc42a7",
+          "perceptualHashDistance": 25,
+          "normalizedFeatureDistance": 4.019167,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.03745457
+        },
+        {
+          "referenceId": "ref_bccdee2f8f1b8106",
+          "sha256": "bccdee2f8f1b81064265dc47fe801a99fef9522a0f2e4370dbb5acf0c92206ab",
+          "perceptualHashDistance": 23,
+          "normalizedFeatureDistance": 4.066123,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.031958509
+        },
+        {
+          "referenceId": "ref_68f4f2d02c445c9e",
+          "sha256": "68f4f2d02c445c9ede7abe3eb6b5b653e3c66708313df4fe446347d6c1927fea",
+          "perceptualHashDistance": 24,
+          "normalizedFeatureDistance": 4.149255,
+          "aspectLogDistance": 0.467558,
+          "reciprocalRankFusionScore": 0.02986041
+        },
+        {
+          "referenceId": "ref_74831bfdf7630447",
+          "sha256": "74831bfdf7630447a6d7edaede6d7ca82c0864b354d219afb72038750be2116c",
+          "perceptualHashDistance": 26,
+          "normalizedFeatureDistance": 4.047003,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.029702274
+        },
+        {
+          "referenceId": "ref_09d22b3167707406",
+          "sha256": "09d22b316770740630db0de7d092241827cc8502c9f662835f6dc20786f63f31",
+          "perceptualHashDistance": 22,
+          "normalizedFeatureDistance": 4.039027,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.029216039
+        },
+        {
+          "referenceId": "ref_39a36a4b958c0894",
+          "sha256": "39a36a4b958c08940d8fb8b90947c3fdc5647133b35bbfd002d05c6efae03c5b",
+          "perceptualHashDistance": 24,
+          "normalizedFeatureDistance": 4.059137,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.028712672
+        },
+        {
+          "referenceId": "ref_103ae9001186b364",
+          "sha256": "103ae9001186b364c266d46dd591089bc34f9173d3afb1ceeef18a9b80f532f3",
+          "perceptualHashDistance": 29,
+          "normalizedFeatureDistance": 4.042028,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.027186421
+        },
+        {
+          "referenceId": "ref_865b7dbac93c6d51",
+          "sha256": "865b7dbac93c6d519f1483d3891847e50dfd198c81a0d6de1f596b318d34a69b",
+          "perceptualHashDistance": 26,
+          "normalizedFeatureDistance": 4.024406,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.026331345
+        }
+      ],
+      "reviewerOnlySheet": "artifacts/creative-rebuild/originality/round3-reviewer-only-neighbors/07-en-evidence-ledger-nearest-5.png",
+      "automatedDecision": "REVIEWER_REQUIRED",
+      "nearestRecentFeedCandidates": [
+        {
+          "renderedAssetId": "01-ar-context-handoff",
+          "perceptualHashDistance": 27,
+          "normalizedFeatureDistance": 1.555802
+        },
+        {
+          "renderedAssetId": "03-ar-automation-relay",
+          "perceptualHashDistance": 29,
+          "normalizedFeatureDistance": 0.851537
+        },
+        {
+          "renderedAssetId": "08-en-field-notes",
+          "perceptualHashDistance": 30,
+          "normalizedFeatureDistance": 1.925548
+        }
+      ]
+    },
+    {
+      "renderedAssetId": "08-en-field-notes",
+      "renderedAssetSha256": "c9e49f6f1d2c80742dbd32c2c6ad4aa5befa1285978566d47aed0c8ee0125e58",
+      "perceptualHash64": "71757565797d6539",
+      "declaredReferenceIds": [
+        "ref_f5cec23c32415d6e",
+        "ref_7ea2e6edfd24a465",
+        "ref_8684a4138ac5fc7a"
+      ],
+      "declaredPrincipleIds": [
+        "TYPE_DISPLAY_AS_COMPOSITION",
+        "COMP_PURPOSEFUL_CROP",
+        "HIER_LOGO_QUIET_AUTHORITY"
+      ],
+      "nearestCorpusCandidates": [
+        {
+          "referenceId": "ref_1897b72bff3c5566",
+          "sha256": "1897b72bff3c5566339d68fa43dc65387e35a1089cf45c86c60be9bd19dfbd28",
+          "perceptualHashDistance": 21,
+          "normalizedFeatureDistance": 3.997208,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.034445801
+        },
+        {
+          "referenceId": "ref_3d6e76ded0526ab1",
+          "sha256": "3d6e76ded0526ab1cae444a01564ab5b13e002d126e0e67a250fa625ebb62e9d",
+          "perceptualHashDistance": 22,
+          "normalizedFeatureDistance": 3.986954,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.034293717
+        },
+        {
+          "referenceId": "ref_e3720567ab44c8c9",
+          "sha256": "e3720567ab44c8c93dab835205bb192259af514d8327861cc2e561a54570b237",
+          "perceptualHashDistance": 19,
+          "normalizedFeatureDistance": 4.243623,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.028857953
+        },
+        {
+          "referenceId": "ref_2ecb8180128968d2",
+          "sha256": "2ecb8180128968d23c9de89197d1c992bb1e9a6d5cd52a4fd90a935f6f78f494",
+          "perceptualHashDistance": 24,
+          "normalizedFeatureDistance": 3.966947,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.028470737
+        },
+        {
+          "referenceId": "ref_ec217beefbf3f705",
+          "sha256": "ec217beefbf3f7055c252255dd4ad8ece805f18c9b5ba2a3989baacec763f136",
+          "perceptualHashDistance": 31,
+          "normalizedFeatureDistance": 3.981493,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.027658972
+        },
+        {
+          "referenceId": "ref_f9099ff97e33d5f7",
+          "sha256": "f9099ff97e33d5f7eb8fff5fb1577abdd7b61568f40f54746001278eaf9a034d",
+          "perceptualHashDistance": 21,
+          "normalizedFeatureDistance": 3.97796,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.027010042
+        },
+        {
+          "referenceId": "ref_20da1247bcdab026",
+          "sha256": "20da1247bcdab02640bb3bf65bd2afdab11818b99d5e5ddd1845ec40dc13af17",
+          "perceptualHashDistance": 30,
+          "normalizedFeatureDistance": 4.015459,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.025496826
+        },
+        {
+          "referenceId": "ref_a22654509737e8fa",
+          "sha256": "a22654509737e8fab89f30eb10a139e759277592ef59a8187ee55350b24cb360",
+          "perceptualHashDistance": 24,
+          "normalizedFeatureDistance": 3.991656,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.025469663
+        }
+      ],
+      "reviewerOnlySheet": "artifacts/creative-rebuild/originality/round3-reviewer-only-neighbors/08-en-field-notes-nearest-5.png",
+      "automatedDecision": "REVIEWER_REQUIRED",
+      "nearestRecentFeedCandidates": [
+        {
+          "renderedAssetId": "05-en-before-after",
+          "perceptualHashDistance": 26,
+          "normalizedFeatureDistance": 0.813383
+        },
+        {
+          "renderedAssetId": "02-ar-rag-evidence",
+          "perceptualHashDistance": 28,
+          "normalizedFeatureDistance": 2.045235
+        },
+        {
+          "renderedAssetId": "09-ar-carousel-decision",
+          "perceptualHashDistance": 29,
+          "normalizedFeatureDistance": 1.241902
+        }
+      ]
+    },
+    {
+      "renderedAssetId": "09-ar-carousel-decision",
+      "renderedAssetSha256": "c62f89b9f9baf7aecdd023f8d3f2f80facd8051653ad9d9aead05b40c355a60f",
+      "perceptualHash64": "418d9568276778e1",
+      "declaredReferenceIds": [
+        "ref_4afce40fe49062b6",
+        "ref_8871f98455278188",
+        "ref_8ef6ff7e70837523"
+      ],
+      "declaredPrincipleIds": [
+        "AR_COMPOSE_RTL_FIRST",
+        "COMP_SYSTEM_VARIATION_NOT_TEMPLATE",
+        "STORY_ONE_VERB"
+      ],
+      "nearestCorpusCandidates": [
+        {
+          "referenceId": "ref_4e7721fa1779c722",
+          "sha256": "4e7721fa1779c7227c5750717bc4be8a2db67323e38d400dc4f7285c9b661b0d",
+          "perceptualHashDistance": 24,
+          "normalizedFeatureDistance": 4.075799,
+          "aspectLogDistance": 0.468121,
+          "reciprocalRankFusionScore": 0.03715202
+        },
+        {
+          "referenceId": "ref_1897b72bff3c5566",
+          "sha256": "1897b72bff3c5566339d68fa43dc65387e35a1089cf45c86c60be9bd19dfbd28",
+          "perceptualHashDistance": 24,
+          "normalizedFeatureDistance": 4.086406,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.032369101
+        },
+        {
+          "referenceId": "ref_31300cdf51427065",
+          "sha256": "31300cdf514270655b275203283d755474c9f330788fb04801296a4bc0ad91c5",
+          "perceptualHashDistance": 23,
+          "normalizedFeatureDistance": 4.103994,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.031191451
+        },
+        {
+          "referenceId": "ref_e3720567ab44c8c9",
+          "sha256": "e3720567ab44c8c93dab835205bb192259af514d8327861cc2e561a54570b237",
+          "perceptualHashDistance": 24,
+          "normalizedFeatureDistance": 4.545007,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.027712848
+        },
+        {
+          "referenceId": "ref_3cdc96e46e462d99",
+          "sha256": "3cdc96e46e462d9957d9b7bbf1bf996e228fe706d901df65de860a3cf03042a5",
+          "perceptualHashDistance": 27,
+          "normalizedFeatureDistance": 4.072028,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.026823923
+        },
+        {
+          "referenceId": "ref_e98fe5a92045351a",
+          "sha256": "e98fe5a92045351ab119fbb71f8955c4258ee915406b0eef813dd803faa6513e",
+          "perceptualHashDistance": 38,
+          "normalizedFeatureDistance": 4.03952,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.02658296
+        },
+        {
+          "referenceId": "ref_239af8f570c6c0e4",
+          "sha256": "239af8f570c6c0e4b46f8c90fec6bdc596988537f39fd23346b8be25d4b9a5da",
+          "perceptualHashDistance": 24,
+          "normalizedFeatureDistance": 4.525019,
+          "aspectLogDistance": 0.468338,
+          "reciprocalRankFusionScore": 0.026574218
+        },
+        {
+          "referenceId": "ref_ec217beefbf3f705",
+          "sha256": "ec217beefbf3f7055c252255dd4ad8ece805f18c9b5ba2a3989baacec763f136",
+          "perceptualHashDistance": 32,
+          "normalizedFeatureDistance": 4.046356,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.026446082
+        }
+      ],
+      "reviewerOnlySheet": "artifacts/creative-rebuild/originality/round3-reviewer-only-neighbors/09-ar-carousel-decision-nearest-5.png",
+      "automatedDecision": "REVIEWER_REQUIRED",
+      "nearestRecentFeedCandidates": [
+        {
+          "renderedAssetId": "01-ar-context-handoff",
+          "perceptualHashDistance": 28,
+          "normalizedFeatureDistance": 1.191603
+        },
+        {
+          "renderedAssetId": "08-en-field-notes",
+          "perceptualHashDistance": 29,
+          "normalizedFeatureDistance": 1.241902
+        },
+        {
+          "renderedAssetId": "10-ar-carousel-boundaries",
+          "perceptualHashDistance": 29,
+          "normalizedFeatureDistance": 1.831068
+        }
+      ]
+    },
+    {
+      "renderedAssetId": "10-ar-carousel-boundaries",
+      "renderedAssetSha256": "6f7c66e4c259a6a63093cbd703dff346a7ed7e64ae0db072629744ccc2fd6da5",
+      "perceptualHash64": "2edcdceed4f23880",
+      "declaredReferenceIds": [
+        "ref_4afce40fe49062b6",
+        "ref_3991533a0cc6d024",
+        "ref_7ea2e6edfd24a465"
+      ],
+      "declaredPrincipleIds": [
+        "COMP_SEMANTIC_DEPTH",
+        "HIER_THREE_BEATS_MAX",
+        "AR_SEMANTIC_LINE_BREAKS"
+      ],
+      "nearestCorpusCandidates": [
+        {
+          "referenceId": "ref_103ae9001186b364",
+          "sha256": "103ae9001186b364c266d46dd591089bc34f9173d3afb1ceeef18a9b80f532f3",
+          "perceptualHashDistance": 23,
+          "normalizedFeatureDistance": 4.03888,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.035132975
+        },
+        {
+          "referenceId": "ref_535ad43f96d1bb65",
+          "sha256": "535ad43f96d1bb65c52230154c6f6a70e5c35bc4d866e0420fa4b8348bd197b4",
+          "perceptualHashDistance": 21,
+          "normalizedFeatureDistance": 4.044574,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.030670483
+        },
+        {
+          "referenceId": "ref_317185b41e9bc3ce",
+          "sha256": "317185b41e9bc3ceacaed983c232113d2c56c516aa674833ff7de3147fff9393",
+          "perceptualHashDistance": 21,
+          "normalizedFeatureDistance": 4.077459,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.028621784
+        },
+        {
+          "referenceId": "ref_caea2e899b75668e",
+          "sha256": "caea2e899b75668e0c052e45cf0bfbda1abf3a89f9313f3814988fff8816469a",
+          "perceptualHashDistance": 23,
+          "normalizedFeatureDistance": 4.083099,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.028188699
+        },
+        {
+          "referenceId": "ref_6dd0a9246092f4d5",
+          "sha256": "6dd0a9246092f4d586c92b3aa03d494c75bee71a11e3c0d2c68756bb38169103",
+          "perceptualHashDistance": 22,
+          "normalizedFeatureDistance": 4.05035,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.027558118
+        },
+        {
+          "referenceId": "ref_541df63bef85d896",
+          "sha256": "541df63bef85d896fc96bfc1df015286844b950cc712ad8fc0d91a7551760004",
+          "perceptualHashDistance": 26,
+          "normalizedFeatureDistance": 3.99483,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.026802564
+        },
+        {
+          "referenceId": "ref_bcbf39878f943e99",
+          "sha256": "bcbf39878f943e9908bf34a8d88ea898b15dac34987a8207590451413d365691",
+          "perceptualHashDistance": 24,
+          "normalizedFeatureDistance": 4.007653,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.026735935
+        },
+        {
+          "referenceId": "ref_5bdc7848412cdb99",
+          "sha256": "5bdc7848412cdb99d2bec8feafaa2226055c7f15bb8cf8c0a0bc4b167a37c889",
+          "perceptualHashDistance": 23,
+          "normalizedFeatureDistance": 4.040722,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.026572333
+        }
+      ],
+      "reviewerOnlySheet": "artifacts/creative-rebuild/originality/round3-reviewer-only-neighbors/10-ar-carousel-boundaries-nearest-5.png",
+      "automatedDecision": "REVIEWER_REQUIRED",
+      "nearestRecentFeedCandidates": [
+        {
+          "renderedAssetId": "03-ar-automation-relay",
+          "perceptualHashDistance": 27,
+          "normalizedFeatureDistance": 1.312834
+        },
+        {
+          "renderedAssetId": "04-ar-decision-question",
+          "perceptualHashDistance": 29,
+          "normalizedFeatureDistance": 1.014607
+        },
+        {
+          "renderedAssetId": "09-ar-carousel-decision",
+          "perceptualHashDistance": 29,
+          "normalizedFeatureDistance": 1.831068
+        }
+      ]
+    },
+    {
+      "renderedAssetId": "11-ar-carousel-stop",
+      "renderedAssetSha256": "f7d84d7bbe3105e334881d0e4a0471e0d554e1d5353cfad46812ba03402a22ea",
+      "perceptualHash64": "498b21181b9c815b",
+      "declaredReferenceIds": [
+        "ref_2ca843f06643d5f6",
+        "ref_4afce40fe49062b6",
+        "ref_8ef6ff7e70837523"
+      ],
+      "declaredPrincipleIds": [
+        "ANTHRO_CAPABILITY_BOUNDARY_VISIBLE",
+        "STORY_TENSION_THEN_RESOLUTION",
+        "AR_COMPOSE_RTL_FIRST"
+      ],
+      "nearestCorpusCandidates": [
+        {
+          "referenceId": "ref_4848da91db8bdcab",
+          "sha256": "4848da91db8bdcab1a340827976eab7971ebe99a08a1977334b69035d25393b2",
+          "perceptualHashDistance": 21,
+          "normalizedFeatureDistance": 4.061926,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.037709507
+        },
+        {
+          "referenceId": "ref_e98fe5a92045351a",
+          "sha256": "e98fe5a92045351ab119fbb71f8955c4258ee915406b0eef813dd803faa6513e",
+          "perceptualHashDistance": 24,
+          "normalizedFeatureDistance": 4.042974,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.03482252
+        },
+        {
+          "referenceId": "ref_329743a1f6ee4532",
+          "sha256": "329743a1f6ee4532e8b0f262152571c99974a0dd463c6982ad40d4d7923a9b79",
+          "perceptualHashDistance": 21,
+          "normalizedFeatureDistance": 4.165043,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.030301425
+        },
+        {
+          "referenceId": "ref_5189984ce1a269ad",
+          "sha256": "5189984ce1a269ad776e99604c3e8b30ea1ebab7f9607a332bd26d47d1cded51",
+          "perceptualHashDistance": 25,
+          "normalizedFeatureDistance": 4.066918,
+          "aspectLogDistance": 0.468337,
+          "reciprocalRankFusionScore": 0.029986267
+        },
+        {
+          "referenceId": "ref_995b7d264027e7f3",
+          "sha256": "995b7d264027e7f3f7653a42e18520273773a76084e2c45b4f0c86f59c571e09",
+          "perceptualHashDistance": 21,
+          "normalizedFeatureDistance": 4.044568,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.029801057
+        },
+        {
+          "referenceId": "ref_ecdec57ddf5f13bf",
+          "sha256": "ecdec57ddf5f13bf1e32c00e3bf63aae4361b1b8777d923d82a7acb188a06d43",
+          "perceptualHashDistance": 24,
+          "normalizedFeatureDistance": 4.208777,
+          "aspectLogDistance": 0.468337,
+          "reciprocalRankFusionScore": 0.029012093
+        },
+        {
+          "referenceId": "ref_20da1247bcdab026",
+          "sha256": "20da1247bcdab02640bb3bf65bd2afdab11818b99d5e5ddd1845ec40dc13af17",
+          "perceptualHashDistance": 25,
+          "normalizedFeatureDistance": 4.122982,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.028223365
+        },
+        {
+          "referenceId": "ref_4e7721fa1779c722",
+          "sha256": "4e7721fa1779c7227c5750717bc4be8a2db67323e38d400dc4f7285c9b661b0d",
+          "perceptualHashDistance": 30,
+          "normalizedFeatureDistance": 4.049693,
+          "aspectLogDistance": 0.468121,
+          "reciprocalRankFusionScore": 0.027811
+        }
+      ],
+      "reviewerOnlySheet": "artifacts/creative-rebuild/originality/round3-reviewer-only-neighbors/11-ar-carousel-stop-nearest-5.png",
+      "automatedDecision": "REVIEWER_REQUIRED",
+      "nearestRecentFeedCandidates": [
+        {
+          "renderedAssetId": "01-ar-context-handoff",
+          "perceptualHashDistance": 26,
+          "normalizedFeatureDistance": 1.074333
+        },
+        {
+          "renderedAssetId": "02-ar-rag-evidence",
+          "perceptualHashDistance": 27,
+          "normalizedFeatureDistance": 1.996178
+        },
+        {
+          "renderedAssetId": "03-ar-automation-relay",
+          "perceptualHashDistance": 30,
+          "normalizedFeatureDistance": 2.077511
+        }
+      ]
+    },
+    {
+      "renderedAssetId": "12-en-complexity-answerable",
+      "renderedAssetSha256": "6b3522b4db1ccef9f260b85d82287dc06e71f85600d8de161ad26091b6b3068a",
+      "perceptualHash64": "86b0f9f1a3b2f6bf",
+      "declaredReferenceIds": [
+        "ref_f5cec23c32415d6e",
+        "ref_8684a4138ac5fc7a",
+        "ref_7ea2e6edfd24a465"
+      ],
+      "declaredPrincipleIds": [
+        "STORY_ONE_VERB",
+        "COMP_FOCAL_DOMINANCE",
+        "COLOR_MATERIAL_LIGHT_BEFORE_GLOW"
+      ],
+      "nearestCorpusCandidates": [
+        {
+          "referenceId": "ref_cbca97504166b179",
+          "sha256": "cbca97504166b1794ab906fadb720e38925fa7fb1726e7da264431b2f6bc42a7",
+          "perceptualHashDistance": 20,
+          "normalizedFeatureDistance": 4.053304,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.037887189
+        },
+        {
+          "referenceId": "ref_74831bfdf7630447",
+          "sha256": "74831bfdf7630447a6d7edaede6d7ca82c0864b354d219afb72038750be2116c",
+          "perceptualHashDistance": 21,
+          "normalizedFeatureDistance": 4.056009,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.035108472
+        },
+        {
+          "referenceId": "ref_86b39fd3b063cccc",
+          "sha256": "86b39fd3b063ccccd3c546b1d5b679be089d382d24c16e5df735eb895c7f48c4",
+          "perceptualHashDistance": 20,
+          "normalizedFeatureDistance": 4.039004,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.035018382
+        },
+        {
+          "referenceId": "ref_0d9254e5004f2ad8",
+          "sha256": "0d9254e5004f2ad8fcd985978deb6e33d614b01e6b3a7218451b148e56ff3bf2",
+          "perceptualHashDistance": 21,
+          "normalizedFeatureDistance": 4.012504,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.031829586
+        },
+        {
+          "referenceId": "ref_e972923b83287930",
+          "sha256": "e972923b83287930adc453b90b0eca1588dd5ae60bc2134147b1a4eded9e6b99",
+          "perceptualHashDistance": 21,
+          "normalizedFeatureDistance": 4.011574,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.030062267
+        },
+        {
+          "referenceId": "ref_cd759f286e263b57",
+          "sha256": "cd759f286e263b57db5662e42cddf428ccbfa1894923ecf4f1a53ae4dc01f25c",
+          "perceptualHashDistance": 24,
+          "normalizedFeatureDistance": 4.011376,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.028679018
+        },
+        {
+          "referenceId": "ref_103ae9001186b364",
+          "sha256": "103ae9001186b364c266d46dd591089bc34f9173d3afb1ceeef18a9b80f532f3",
+          "perceptualHashDistance": 28,
+          "normalizedFeatureDistance": 4.040562,
+          "aspectLogDistance": 0.468816,
+          "reciprocalRankFusionScore": 0.028437579
+        },
+        {
+          "referenceId": "ref_e9ad42cd01eee68c",
+          "sha256": "e9ad42cd01eee68cbff0d692e33b04487e3b5e4df0fb518df9a131f776808bcc",
+          "perceptualHashDistance": 24,
+          "normalizedFeatureDistance": 4.158884,
+          "aspectLogDistance": 0.467985,
+          "reciprocalRankFusionScore": 0.028207438
+        }
+      ],
+      "reviewerOnlySheet": "artifacts/creative-rebuild/originality/round3-reviewer-only-neighbors/12-en-complexity-answerable-nearest-5.png",
+      "automatedDecision": "REVIEWER_REQUIRED",
+      "nearestRecentFeedCandidates": [
+        {
+          "renderedAssetId": "01-ar-context-handoff",
+          "perceptualHashDistance": 30,
+          "normalizedFeatureDistance": 1.527792
+        },
+        {
+          "renderedAssetId": "07-en-evidence-ledger",
+          "perceptualHashDistance": 31,
+          "normalizedFeatureDistance": 0.595328
+        },
+        {
+          "renderedAssetId": "02-ar-rag-evidence",
+          "perceptualHashDistance": 31,
+          "normalizedFeatureDistance": 0.668253
+        }
+      ]
+    }
+  ]
+}

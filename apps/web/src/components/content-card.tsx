@@ -21,6 +21,7 @@ export function ContentCard({ item, compact = false, eager = false }: { item: Co
       </Link>
       <div className="content-card-body">
         <div className="content-card-badges">
+          {item.supersededAt ? <StatusBadge value="SUPERSEDED" label="Historical" /> : null}
           <StatusBadge value={item.status} />
           {(item.riskLevel === "high" || item.riskLevel === "critical") ? <RiskBadge value={item.riskLevel} /> : null}
         </div>
@@ -31,7 +32,7 @@ export function ContentCard({ item, compact = false, eager = false }: { item: Co
         <div className="platform-row" aria-label="Target platforms">
           {item.platforms.map((platform) => <span key={platform}>{humanize(platform)}</span>)}
         </div>
-        {item.qaFlags.length ? <p className="qa-note">{item.qaFlags.length} QA signal{item.qaFlags.length === 1 ? "" : "s"} require review</p> : null}
+        {item.supersededAt ? <p className="qa-note">Read-only history · {item.supersededReason ?? "Replaced by the current plan"}</p> : item.qaFlags.length ? <p className="qa-note">{item.qaFlags.length} QA signal{item.qaFlags.length === 1 ? "" : "s"} require review</p> : null}
         <Link className="text-link" href={`/content/${item.id}`}>Open review <ArrowUpRight aria-hidden="true" size={15} /></Link>
       </div>
     </article>

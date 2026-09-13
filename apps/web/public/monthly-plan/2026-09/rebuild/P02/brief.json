@@ -1,0 +1,176 @@
+{
+  "version": "v7",
+  "id": "P02",
+  "date": "2026-09-12",
+  "time": "19:30",
+  "timezone": "Asia/Baghdad",
+  "titleAr": "مَن التزم؟\nومَن ذُكر اسمه؟",
+  "titleEn": "A name is not an assignment",
+  "series": "أورندور",
+  "audience": "من يكتب محاضر الاجتماعات أو يوزع المتابعات: مدير مشروع، مسؤول عمليات، أو منسق فريق.",
+  "objective": "تمكين القارئ من استخراج متابعة تحافظ على صاحب الالتزام وشرطه، مع مثال مجرّب داخل جلسة وكيل لغوي وطلب قابل لإعادة الاستخدام.",
+  "coreIdea": "الاسم في المحضر قد يكون صاحب اقتراح أو مرشحًا للمهمة أو مستلمًا للملف. الإسناد يُستخرج من العبارة وما يقيّدها، لا من أقرب اسم للفعل.",
+  "hook": "مَن التزم؟\nومَن ذُكر اسمه؟",
+  "track": "independent_value",
+  "pillar": "practical_prompts",
+  "level": "intermediate",
+  "funnel": "awareness",
+  "format": "carousel",
+  "platforms": [
+    "Instagram",
+    "Facebook",
+    "LinkedIn",
+    "X"
+  ],
+  "oldIds": [
+    "SEP-09",
+    "SEP-12"
+  ],
+  "sourceIds": [
+    "EXP-MEETING-01"
+  ],
+  "sourceUrls": [
+    "research/experiments/meeting-extraction/EXPERIMENT.md"
+  ],
+  "sourcePacket": [
+    {
+      "id": "EXP-MEETING-01",
+      "kind": "observed_agent_fixture",
+      "claim": "One delegated language-agent extraction retained conditional commitments, unassigned collection and unapproved nomination in an original five-utterance meeting.",
+      "source": "research/experiments/meeting-extraction/EXPERIMENT.md",
+      "limits": "Single session, original fictional input, no product UI, no provider API test, no reliability or time-saving estimate."
+    },
+    {
+      "kind": "editorial_interpretation",
+      "claim": "A person mentioned as recipient or nominee is not thereby the accepted task owner.",
+      "source": "Original source utterances and preserved extraction; reviewer checks the language rather than filling names."
+    }
+  ],
+  "assets": [
+    "assets/plates/SEP-02-slide-02.png"
+  ],
+  "downloadFiles": [],
+  "productionMethod": "Render variable-count 1080×1350 carousel and separate 1080×1920 Stories using content-system-v7/static/render.cjs. Keep the existing AURENDOR palette, architectural plates, logos, actual Ghroob Arabic and Dh Ranclo Latin font files. Review every frame at360px and recompose overflow; do not shrink text to force a layout.",
+  "tools": [
+    "Verified AURENDOR assets and fonts",
+    "Local browser renderer",
+    "Independent editorial/source review"
+  ],
+  "motion": "Static carousel. Any later video adaptation requires its own paced script and real evidence; do not animate these frames as a substitute.",
+  "claimLimits": [
+    "المحضر خيالي أصلي. الناتج من تجربة وكيل لغوي واحدة داخل الجلسة، وليس محضر عميل أو واجهة أداة مسجلة.",
+    "الشرائح تلخص مقاطع محددة من المدخل والناتج؛ النسخة الكاملة محفوظة في ملف التجربة.",
+    "لم تُحسب دقة أو نسبة توفير، ولا ندعي أن الطلب يمنع كل خطأ.",
+    "حدود «هذا الأسبوع» لم تُفترض؛ طُلب توضيحها قبل تثبيت موعد مريم."
+  ],
+  "readyState": "copy_complete_pending_render_and_final_QA",
+  "whySave": "طلب استخراج قصير، وثلاثة أمثلة تميّز الترشيح واستلام الملف والالتزام المشروط.",
+  "whyShare": "يستخدمه منسق الاجتماع مع زميل يراجع جدول المهام قبل توزيعه، كي يتفقا على معنى الإسناد.",
+  "whyFollow": "يعرض مدخلًا فعليًا وناتج تجربة وملاحظة تحريرية؛ لا يكتفي بقائمة أوامر عامة.",
+  "cta": "عند مراجعة جدول المتابعات، طابق كل مسؤول وموعد مع العبارة التي أنشأت الالتزام.",
+  "caption": "«أرسلوا الصور إلى عمر» تحدد مستلم الصور. لا تخبرنا من يجمعها أو يرسلها. هذا فرق صغير في اللغة، وكبير في جدول المتابعات.\n\nجرّب هذا المدخل الخيالي: «المدير: أرسلوا صور الموقع إلى عمر؛ لم نحدد من يجمعها. عمر: إذا وصلتني الصور اليوم، سأرسل ملخصها مساءً». تاريخ الاجتماع: ١٢ أيلول ٢٠٢٦.\n\nثم اطلب: «استخرج الإجراء، المسؤول، الموعد أو الشرط، الحالة، والعبارة الداعمة. فرّق بين الالتزام والمقترح والمهمة غير المسندة. لا تعتبر مستلم الملف مسؤولًا عن تجهيزه. احتفظ بالشروط والنفي، واختم بأسئلة التوضيح».\n\nنفذنا تجربة داخل جلسة وكيل لغوي على محضر خيالي من خمس عبارات. أبقى الناتج جمع الصور بلا مسؤول، وسجّل التزام عمر مشروطًا بوصولها في اليوم نفسه. وفصل ترشيح مريم لمراجعة عرض عن قبولها الفعلي. هذه ملاحظة من تجربة واحدة، وليست حكمًا على كل أداة.\n\nعند المراجعة، اسأل: هل العبارة تسند العمل إلى هذا الشخص فعلًا؟ وهل يبقى الموعد صحيحًا إذا لم يتحقق الشرط؟ احتفظ بالدليل بجانب الصف؛ سيسهّل على الفريق تصحيح أي التباس قبل توزيع المتابعات.",
+  "linkedin": "يمكن أن يكون جدول الاجتماع منظمًا، ومع ذلك يعطي كل اسم فيه مسؤولية لم يقبلها صاحبه.\n\nفي محضر خيالي استخدمناه للتجربة، قال أحد المشاركين: «أقترح أن تراجع مريم عرض المورد الأحد؛ نحتاج موافقتها أولًا». ثم قالت مريم إنها لن تراجعه «هذا الأسبوع». لا يكفي استخراج اسم مريم وفعل المراجعة ووضعهما في صف مهمة. الترشيح لم يُعتمد، ونطاق «هذا الأسبوع» يحتاج توضيحًا قبل ربط الرفض بالأحد المقترح.\n\nومثال آخر: «أرسلوا الصور إلى عمر» يجعل عمر مستلمًا، بينما «إذا وصلتني الصور اليوم سأرسل ملخصها مساءً» تنشئ له التزامًا آخر مشروطًا.\n\nطلبنا من وكيل لغوي داخل الجلسة استخراج الإجراء والمسؤول والموعد أو الشرط والحالة والعبارة الداعمة. احتفظ الناتج بهذه الفروق في المثال الذي نفذناه. نعرض تجربة واحدة على نص أصلي خيالي، لا اختبار أداء لمنتج.\n\nللاستخدام في فريقكم: راجعوا كل إسناد مع عبارته، ثم راجعوا الشروط التي قد تغير الموعد. وافحصوا أيضًا ما أُسقط من المتابعات. جودة الجدول تظهر عندما يستطيع صاحبه شرح لماذا أُسندت المهمة إلى هذا الشخص، لا عند اكتمال جميع الخانات فقط.",
+  "x": [
+    "«أرسلوا الصور إلى عمر» لا تعني أن عمر سيجمعها. الاسم قد يكون مستلم الملف، أو مقترحًا للمهمة، أو صاحب الالتزام. اقرأ علاقة الاسم بالفعل قبل إنشاء صف المتابعة.",
+    "مثال خيالي جرّبناه داخل جلسة وكيل لغوي: «إذا وصلتني الصور اليوم، سأرسل ملخصها مساءً». الناتج أبقى الموعد مشروطًا بوصول الصور اليوم. حذف الشرط يغيّر الالتزام.",
+    "اطلب: الإجراء / المسؤول / الموعد أو الشرط / الحالة / العبارة الداعمة. ثم راجع الإسناد والشروط، وما سقط من المحضر. احتفظ بالدليل بجانب المهمة."
+  ],
+  "slides": [
+    {
+      "title": "مَن التزم؟\nومَن ذُكر اسمه؟",
+      "body": "حوّل محضر الاجتماع إلى متابعة تحافظ على معنى الكلام.",
+      "layout": "hero",
+      "items": [],
+      "media": "assets/plates/SEP-02-slide-02.png",
+      "eyebrow": "طلب عملي قابل للتجربة",
+      "dark": true
+    },
+    {
+      "title": "ترشيح لم يُعتمد",
+      "body": "نحتاج قبول المهمة، وتوضيح الموعد المقصود.",
+      "layout": "document",
+      "items": [
+        {
+          "label": "ما سجله الناتج",
+          "text": "مريم مقترحة؛ لا توجد موافقة."
+        }
+      ],
+      "document": {
+        "label": "مقتطف من المحضر الخيالي",
+        "text": "علي: أقترح أن تراجع مريم العرض الأحد؛ نحتاج موافقتها.\nمريم: لن أراجع العرض هذا الأسبوع."
+      },
+      "sourceNote": "مقتطف مختصر يحفظ المعنى من مدخل التجربة",
+      "designNote": "Annotation connects proposed owner with missing assent; do not mark Mariam confirmed or infer a regional week boundary."
+    },
+    {
+      "title": "المستلم ليس المُرسل",
+      "body": "لا نُسند تجهيز الصور إلى عمر لمجرد أن الملف سيصل إليه.",
+      "layout": "document",
+      "items": [
+        {
+          "label": "ما سجله الناتج",
+          "text": "جمع الصور: المسؤول غير محدد."
+        },
+        {
+          "label": "ما نحتاج معرفته",
+          "text": "من يجمع الصور، ومن يرسلها؟"
+        }
+      ],
+      "document": {
+        "label": "من المدخل نفسه",
+        "text": "أرسلوا صور الموقع إلى عمر؛ لم نحدد من يجمعها."
+      },
+      "sourceNote": "تلخيص لناتج التجربة؛ النص الكامل محفوظ"
+    },
+    {
+      "title": "الموعد مرتبط بشرط",
+      "body": "",
+      "layout": "document",
+      "items": [
+        {
+          "label": "الالتزام",
+          "text": "يرسل عمر الملخص مساءً إذا وصلت الصور اليوم."
+        },
+        {
+          "label": "السؤال التالي",
+          "text": "متى يرسل الملخص إذا تأخرت الصور؟"
+        }
+      ],
+      "document": {
+        "label": "عمر في المحضر",
+        "text": "إذا وصلتني الصور اليوم، سأرسل ملخصها مساءً."
+      },
+      "sourceNote": "اجتماع خيالي بتاريخ ١٢ أيلول ٢٠٢٦"
+    },
+    {
+      "title": "أضف الدليل\nإلى جدول المتابعة",
+      "body": "لكل صف: الإجراء، المسؤول، الموعد أو الشرط، الحالة، والعبارة الداعمة.",
+      "layout": "closing",
+      "items": [
+        {
+          "label": "قبل توزيع المهام",
+          "text": "طابق كل إسناد وموعد مع العبارة الأصلية."
+        }
+      ],
+      "tone": "dark",
+      "sourceNote": "المدخل المختصر والطلب القابل للنسخ في الوصف"
+    }
+  ],
+  "stories": [
+    {
+      "title": "من يجمع الصور؟",
+      "body": "«أرسلوا الصور إلى عمر؛ لم نحدد من يجمعها».",
+      "action": "هل عمر مسؤول الجمع في هذا النص؟",
+      "sticker": "Native poll: نعم / لم يُحدَّد. Correct answer: لم يُحدَّد. Reveal in second Story."
+    },
+    {
+      "title": "عمر هو المستلم",
+      "body": "الجمع والإرسال ما زالا يحتاجان مسؤولًا. إضافة عمود للعبارة الداعمة تجعل هذا الفرق ظاهرًا.",
+      "action": "جرّب المدخل والطلب الموجودين في وصف المنشور.",
+      "sticker": "Share published P02 after first Story. No public download URL implied.",
+      "tone": "dark"
+    }
+  ],
+  "visualConcept": "Original meeting excerpt panels lead into short observed extraction annotations. A person-role distinction and a conditional commitment each get their own frame. Preserve the architectural hero and existing brand. Do not draw a fake chat interface or render a five-column spreadsheet at unreadable mobile size.",
+  "adaptationNotes": "Instagram/Facebook: five frames with the independent miniature exercise in the caption. LinkedIn: use the separate ownership/conditional-language analysis, optionally with frames2–4. X: three supplied texts. Stories: use the specific ownership poll and evidence reveal. No automatic TikTok post; a future screen demonstration needs a separately recorded tool session."
+}

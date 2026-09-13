@@ -73,7 +73,7 @@ export function createFixtureIdea(input: { month: string; scheduledAt: string; t
     keyMessage: input.title,
     perceptionShift: "Automation begins with a clearly structured workflow, not a generic AI tool.",
     format: "carousel" as const,
-    platforms: ["instagram", "linkedin"] as Platform[],
+    platforms: ["instagram", "facebook", "tiktok", "x", "linkedin"] as Platform[],
     hookHypothesis: "A direct operational tension earns attention without hype.",
     creativeHypothesis: "A light editorial carousel with one dark stat/punch slide will maximize saves and comprehension.",
     cta: "Save the framework and map one repeated workflow this week.",
@@ -91,4 +91,3 @@ function createSlug(value: string): string {
     .replace(/(^-|-$)/g, "")
     .slice(0, 48);
 }
-

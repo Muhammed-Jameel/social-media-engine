@@ -6,8 +6,8 @@ preferred:
   اورندور: Arabic brand rendering
   operational intelligence: category idea
   intelligent infrastructure: strategic description
-  Aurendor Build: public construction product architecture
-  Bunyan Pro: current construction-product working name where source context uses it
+  Bunyan Pro: current public name for the construction operations product
+  Aurendor Build: legacy product alias; do not use in new public-facing content
 avoid:
   - Aurendor Systems as the master brand name
   - generic app developer
@@ -15,6 +15,6 @@ avoid:
   - cheap software
   - construction-only company
   - AI-powered as an unsupported decorative feature claim
-ambiguities:
+resolvedDecisions:
   - term: Aurendor Build vs Bunyan Pro
-    handling: Preserve the source/product context and flag public naming decisions for owner confirmation.
+    decision: Use Bunyan Pro in all new public-facing work; retain Aurendor Build only as a historical alias.

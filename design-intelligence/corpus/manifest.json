@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-08-23T11:22:43.056300+00:00",
+  "source": {
+    "root": "/Users/muhammedjameel/Downloads/images_2026-07-25_05-56-32",
+    "mode": "read-only-reference-material",
+    "filesWereCopied": false,
+    "warning": "Reference files are copyrighted research material. Use extracted principles, never compositions or graphics."
+  },
+  "method": {
+    "deterministic": true,
+    "imageDecoder": "Pillow 12.3.0",
+    "features": [
+      "dimensions/aspect/format/bytes",
+      "SHA-256 exact duplicate detection",
+      "64-bit difference-hash near-duplicate detection",
+      "dominant palette",
+      "luminance/saturation/contrast",
+      "edge-density visual complexity",
+      "border-relative approximate whitespace",
+      "4x4 luminance and edge composition map",
+      "visual center of mass"
+    ],
+    "limitations": [
+      "Computational clusters are similarity neighborhoods, not finished design-taxonomy labels.",
+      "Whitespace, text/image balance, and visual density are heuristics and require pixel review.",
+      "Perceptual hashing can group legitimately distinct minimal compositions; groups require review.",
+      "Professional merit is never inferred from file inclusion or proximity to a centroid."
+    ]
+  },
+  "counts": {
+    "filesystemFiles": 2624,
+    "decodedImages": 2591,
+    "uniqueImageContents": 2589,
+    "primaryTopLevelImages": 1296,
+    "quarantinedDerivedImages": 1295,
+    "corruptOrUndecodable": 0,
+    "ignoredNonImages": 33,
+    "exactDuplicateGroups": 2,
+    "exactDuplicateExtraFiles": 2,
+    "primaryExactDuplicateGroups": 1,
+    "primaryNearDuplicateCandidateGroups": 4,
+    "allLooseFileNearDuplicateCandidateGroups": 1284
+  },
+  "distribution": {
+    "formats": {
+      "JPEG": 1295,
+      "WEBP": 1288,
+      "GIF": 8
+    },
+    "aspectFamilies": {
+      "landscape-4:3": 2591
+    },
+    "bytes": {
+      "minimum": 1140,
+      "median": 34336,
+      "p95": 162022,
+      "maximum": 356738
+    },
+    "megapixels": {
+      "minimum": 0.12,
+      "median": 0.2111,
+      "p95": 0.5107,
+      "maximum": 1.9212
+    }
+  },
+  "artifacts": {
+    "files": "files.json",
+    "clusters": "clusters.json",
+    "exactDuplicates": "exact-duplicates.json",
+    "nearDuplicates": "near-duplicates.json",
+    "corrupt": "corrupt-files.json",
+    "overviewContactSheet": "contact-sheets/00-cluster-overview.jpg"
+  }
+}

@@ -1,14 +1,59 @@
 import { randomUUID } from "node:crypto";
-import type { ApprovalDecision, OwnerCommand } from "@aurendor/schemas";
+import {
+  SocialLearningRuleSchema,
+  type ApprovalDecision,
+  type OwnerCommand,
+  RuleScopeSchema,
+  type RuleCategory,
+  type RuleScope,
+  type SocialLearningRule,
+} from "@aurendor/schemas";
 import type { DatabaseClient, SqlRow } from "./client";
 import { getDatabase } from "./client";
-import { AURENDOR_ORGANIZATION_ID, AURENDOR_OWNER_ID } from "./ids";
+import { AURENDOR_ORGANIZATION_ID, AURENDOR_OWNER_ID, isCreativeProductionPaused, isEnginePaused } from "./ids";
+import { z } from "zod";
+
+const SOCIAL_LEARNING_UUID_FALLBACK = "00000000-0000-4000-8000-000000000000";
+
+function toSchemaCompatibleUuid(value: unknown): string {
+  if (typeof value !== "string") return SOCIAL_LEARNING_UUID_FALLBACK;
+  return z.string().uuid().safeParse(value).success ? value : SOCIAL_LEARNING_UUID_FALLBACK;
+}
+
+function normalizeScopeForSchema(scope: unknown): RuleScope {
+  if (typeof scope !== "object" || scope === null || Array.isArray(scope)) {
+    return RuleScopeSchema.parse({ scopeLevel: "global" });
+  }
+  const candidate = scope as Record<string, unknown>;
+  const normalized = {
+    ...candidate,
+    campaignId: typeof candidate.campaignId === "string" ? toSchemaCompatibleUuid(candidate.campaignId) : candidate.campaignId,
+    contentItemId: typeof candidate.contentItemId === "string" ? toSchemaCompatibleUuid(candidate.contentItemId) : candidate.contentItemId,
+  };
+  const parsedScope = RuleScopeSchema.safeParse(normalized);
+  return parsedScope.success ? parsedScope.data : RuleScopeSchema.parse({ scopeLevel: "global" });
+}
+
+function assertSocialLearningRuleForSchema(rule: SocialLearningRule): void {
+  const normalizedScope = normalizeScopeForSchema(rule.scope);
+  const normalizedRule: SocialLearningRule = {
+    ...rule,
+    organizationId: SOCIAL_LEARNING_UUID_FALLBACK,
+    ruleId: toSchemaCompatibleUuid(rule.ruleId),
+    scope: normalizedScope,
+  };
+  SocialLearningRuleSchema.parse(normalizedRule);
+}
 
 export interface EngineSettingsView {
   dryRun: boolean;
   productionPublishingEnabled: boolean;
   paused: boolean;
   environmentPauseRequested: boolean;
+  creativeProductionPaused: boolean;
+  environmentCreativeProductionPauseRequested: boolean;
+  creativeGateState: string;
+  creativeGateEvidence: Record<string, unknown>;
   autonomyStage: string;
   planningLeadDays: number;
 }
@@ -25,6 +70,9 @@ export interface ContentSummaryView {
   approvalClass: string;
   qaFlags: string[];
   thumbnailUrl: string | null;
+  planVersion: string | null;
+  supersededAt: string | null;
+  supersededReason: string | null;
 }
 
 export interface DashboardView {
@@ -77,6 +125,17 @@ export interface NotificationView {
   status: string;
 }
 
+export interface SocialLearningRuleFilter {
+  category?: RuleCategory;
+  scopeLevel?: RuleScope["scopeLevel"];
+  platform?: string;
+  language?: string;
+  campaignId?: string;
+  contentItemId?: string;
+  brandVersion?: string;
+  includeInactive?: boolean;
+}
+
 export interface ContentDetailView extends ContentSummaryView {
   audience: string;
   funnelStage: string;
@@ -97,6 +156,7 @@ export interface ContentDetailView extends ContentSummaryView {
     sha256: string;
     sequence: number;
     sourcePath: string | null;
+    role: "planning_cover" | "carousel_slide" | "story_frame" | "rendered_asset";
   }>;
   copyVariants: Array<{
     id: string;
@@ -152,10 +212,69 @@ function iso(value: unknown): string {
   return new Date(String(value)).toISOString();
 }
 
+function toOptionalDateIso(value: unknown): string | undefined {
+  if (value === null || value === undefined) return undefined;
+  if (value instanceof Date) return value.toISOString();
+  const parsed = Date.parse(String(value));
+  if (Number.isNaN(parsed)) return undefined;
+  return new Date(parsed).toISOString();
+}
+
+interface SocialLearningRuleRecord extends SqlRow {
+  id: string;
+  organization_id: string;
+  rule_id: string;
+  brand_version: string;
+  category: RuleCategory;
+  scope: unknown;
+  key: string;
+  precedence: number;
+  strength: string;
+  metadata: unknown;
+  active_from: unknown;
+  expires_at: unknown;
+  rule_data: unknown;
+}
+
+function parseSocialLearningRule(row: SocialLearningRuleRecord): SocialLearningRule {
+  const scope = parseJson(row.scope, { scopeLevel: "global" });
+  const ruleData = parseJson<Record<string, unknown>>(row.rule_data, {});
+  const metadata = parseJson<Record<string, unknown>>(row.metadata, {});
+  const normalizedScope = normalizeScopeForSchema(scope);
+  const validated = SocialLearningRuleSchema.parse({
+    ...ruleData,
+    ruleId: toSchemaCompatibleUuid(row.rule_id),
+    organizationId: SOCIAL_LEARNING_UUID_FALLBACK,
+    brandVersion: row.brand_version,
+    category: row.category,
+    scope: normalizedScope,
+    key: row.key,
+    precedence: row.precedence,
+    strength: row.strength,
+    metadata: {
+      source: "SYSTEM",
+      reason: "Imported legacy or partial row.",
+      ...metadata,
+      ...(parseJson<Record<string, unknown>>(ruleData.metadata as unknown, {}) ?? {}),
+    },
+    activeFrom: toOptionalDateIso(row.active_from),
+    expiresAt: toOptionalDateIso(row.expires_at),
+  });
+  return {
+    ...validated,
+    organizationId: row.organization_id,
+    ruleId: row.rule_id,
+    scope: normalizedScope,
+  };
+}
+
 interface SettingsRow extends SqlRow {
   dry_run: boolean;
   production_publishing_enabled: boolean;
   paused: boolean;
+  creative_production_paused: boolean;
+  creative_gate_state: string;
+  creative_gate_evidence: unknown;
   autonomy_stage: string;
   planning_lead_days: number;
 }
@@ -165,26 +284,35 @@ export class ContentOsRepository {
 
   async getSettings(): Promise<EngineSettingsView> {
     const result = await this.database.query<SettingsRow>(
-      `SELECT dry_run, production_publishing_enabled, paused, autonomy_stage, planning_lead_days
+      `SELECT dry_run, production_publishing_enabled, paused,
+              creative_production_paused, creative_gate_state, creative_gate_evidence,
+              autonomy_stage, planning_lead_days
        FROM engine_settings WHERE organization_id = $1`,
       [AURENDOR_ORGANIZATION_ID],
     );
     const row = result.rows[0];
     if (!row) throw new Error("AURENDOR engine settings have not been seeded.");
-    const environmentPauseRequested = process.env.AURENDOR_ENGINE_PAUSED === "true";
+    const environmentPauseRequested = isEnginePaused(process.env);
+    const environmentCreativeProductionPauseRequested = isCreativeProductionPaused(process.env);
     return {
       dryRun: row.dry_run,
       productionPublishingEnabled: row.production_publishing_enabled,
       paused: row.paused || environmentPauseRequested,
       environmentPauseRequested,
+      creativeProductionPaused: row.creative_production_paused || environmentCreativeProductionPauseRequested,
+      environmentCreativeProductionPauseRequested,
+      creativeGateState: row.creative_gate_state,
+      creativeGateEvidence: parseJson<Record<string, unknown>>(row.creative_gate_evidence, {}),
       autonomyStage: row.autonomy_stage,
       planningLeadDays: row.planning_lead_days,
     };
   }
 
-  async listContent(filters: { status?: string; platform?: string; month?: string } = {}): Promise<ContentSummaryView[]> {
+  async listContent(filters: { status?: string; platform?: string; month?: string; lifecycle?: "active" | "superseded" | "all" } = {}): Promise<ContentSummaryView[]> {
     const parameters: unknown[] = [AURENDOR_ORGANIZATION_ID];
     const predicates = ["c.organization_id = $1"];
+    if ((filters.lifecycle ?? "active") === "active") predicates.push("c.superseded_at IS NULL");
+    if (filters.lifecycle === "superseded") predicates.push("c.superseded_at IS NOT NULL");
     if (filters.status) {
       parameters.push(filters.status);
       predicates.push(`c.status = $${parameters.length}`);
@@ -209,9 +337,12 @@ export class ContentOsRepository {
       approval_class: string;
       qa_flags: unknown;
       thumbnail_url: string | null;
+      plan_version: string | null;
+      superseded_at: unknown | null;
+      superseded_reason: string | null;
     }>(
       `SELECT c.id, c.external_key, c.title, c.scheduled_at, c.platforms, c.format, c.status,
-              c.risk_level, c.approval_class, c.qa_flags,
+              c.risk_level, c.approval_class, c.qa_flags, c.plan_version, c.superseded_at, c.superseded_reason,
               (SELECT ra.public_url FROM rendered_assets ra WHERE ra.content_item_id = c.id ORDER BY ra.sequence LIMIT 1) AS thumbnail_url
        FROM content_items c
        WHERE ${predicates.join(" AND ")}
@@ -230,6 +361,9 @@ export class ContentOsRepository {
       approvalClass: row.approval_class,
       qaFlags: parseJson<string[]>(row.qa_flags, []),
       thumbnailUrl: row.thumbnail_url,
+      planVersion: row.plan_version,
+      supersededAt: row.superseded_at ? iso(row.superseded_at) : null,
+      supersededReason: row.superseded_reason,
     }));
   }
 
@@ -296,12 +430,25 @@ export class ContentOsRepository {
       cta: string;
       kpi_hierarchy: unknown;
       source_path: string | null;
+      plan_version: string | null;
+      superseded_at: unknown | null;
+      superseded_reason: string | null;
     }>("SELECT * FROM content_items WHERE id = $1 AND organization_id = $2", [id, AURENDOR_ORGANIZATION_ID]);
     const row = itemResult.rows[0];
     if (!row) return null;
     const [assetResult, copyResult, critiqueResult, approvalResult] = await Promise.all([
-      this.database.query<SqlRow & { id: string; public_url: string | null; mime_type: string; width: number; height: number; sha256: string; sequence: number; source_path: string | null }>(
-        "SELECT id, public_url, mime_type, width, height, sha256, sequence, source_path FROM rendered_assets WHERE content_item_id = $1 ORDER BY sequence",
+      this.database.query<SqlRow & { id: string; public_url: string | null; mime_type: string; width: number; height: number; sha256: string; sequence: number; source_path: string | null; role: "planning_cover" | "carousel_slide" | "story_frame" | "rendered_asset" }>(
+        `SELECT id, public_url, mime_type, width, height, sha256, sequence, source_path,
+                COALESCE(artifact_envelope->>'assetRole', 'rendered_asset') AS role
+         FROM rendered_assets
+         WHERE content_item_id = $1
+         ORDER BY CASE COALESCE(artifact_envelope->>'assetRole', 'rendered_asset')
+                    WHEN 'carousel_slide' THEN 0
+                    WHEN 'planning_cover' THEN 1
+                    WHEN 'story_frame' THEN 2
+                    ELSE 3
+                  END,
+                  sequence`,
         [id],
       ),
       this.database.query<SqlRow & { id: string; platform: string; language: string; caption: string; alt_text: string; hashtags: unknown; editorial_score: number }>(
@@ -342,6 +489,9 @@ export class ContentOsRepository {
       cta: row.cta,
       kpiHierarchy: parseJson<string[]>(row.kpi_hierarchy, []),
       sourcePath: row.source_path,
+      planVersion: row.plan_version,
+      supersededAt: row.superseded_at ? iso(row.superseded_at) : null,
+      supersededReason: row.superseded_reason,
       assets: assetResult.rows.map((asset) => ({
         id: asset.id,
         publicUrl: asset.public_url,
@@ -351,6 +501,7 @@ export class ContentOsRepository {
         sha256: asset.sha256,
         sequence: asset.sequence,
         sourcePath: asset.source_path,
+        role: asset.role,
       })),
       copyVariants: copyResult.rows.map((copy) => ({
         id: copy.id,
@@ -382,6 +533,12 @@ export class ContentOsRepository {
   }
 
   async recordApproval(decision: ApprovalDecision): Promise<void> {
+    const lifecycle = await this.database.query<SqlRow & { superseded_at: unknown | null }>(
+      "SELECT superseded_at FROM content_items WHERE id = $1 AND organization_id = $2",
+      [decision.contentItemId, AURENDOR_ORGANIZATION_ID],
+    );
+    if (!lifecycle.rows[0]) throw new Error("The content item does not exist.");
+    if (lifecycle.rows[0].superseded_at) throw new Error("Superseded content is read-only and cannot receive a new decision.");
     const nextStatus = {
       APPROVE: "APPROVED",
       REQUEST_REVISION: "REVISION_REQUESTED",
@@ -391,10 +548,10 @@ export class ContentOsRepository {
     const auditId = randomUUID();
     await this.database.query(
       `WITH prior AS (
-         SELECT status FROM content_items WHERE id = $1 AND organization_id = $2
+         SELECT status FROM content_items WHERE id = $1 AND organization_id = $2 AND superseded_at IS NULL
        ), updated AS (
          UPDATE content_items SET status = $3, updated_at = now()
-         WHERE id = $1 AND organization_id = $2 RETURNING id, status
+         WHERE id = $1 AND organization_id = $2 AND superseded_at IS NULL RETURNING id, status
        ), approval AS (
          INSERT INTO approvals (id, content_item_id, actor_id, decision, reason_codes, feedback, trace_id, decided_at)
          VALUES ($4, $1, $5, $6, $7::jsonb, $8, $9, $10) RETURNING id
@@ -430,6 +587,15 @@ export class ContentOsRepository {
          UPDATE content_items SET status = 'APPROVED', updated_at = now()
          WHERE strategy_id = $1 AND approval_class = 'MONTHLY_APPROVAL'
            AND status = 'NEEDS_REVIEW' AND risk_level NOT IN ('high', 'critical')
+           AND superseded_at IS NULL
+           AND jsonb_array_length(qa_flags) = 0
+           AND NOT EXISTS (
+             SELECT 1
+             FROM rendered_assets ra
+             JOIN critiques cr ON cr.rendered_asset_id = ra.id
+             WHERE ra.content_item_id = content_items.id
+               AND jsonb_array_length(cr.hard_fails) > 0
+           )
          RETURNING id
        )
        INSERT INTO audit_logs (id, organization_id, actor_id, action, entity_type, entity_id, previous_state, new_state, reason, trace_id)
@@ -543,6 +709,107 @@ export class ContentOsRepository {
       [AURENDOR_ORGANIZATION_ID],
     );
     return result.rows.map((row) => ({ id: row.id, kind: row.kind, title: row.title, body: row.body, actionUrl: row.action_url, status: row.status }));
+  }
+
+  async listSocialLearningRules(filters: SocialLearningRuleFilter = {}): Promise<SocialLearningRule[]> {
+    const includeInactive = filters.includeInactive ?? false;
+    const parameters: unknown[] = [AURENDOR_ORGANIZATION_ID];
+    const predicates = ["organization_id = $1"];
+    if (!includeInactive) {
+      predicates.push("(active_from IS NULL OR active_from <= now())");
+      predicates.push("(expires_at IS NULL OR expires_at >= now())");
+      predicates.push("id NOT LIKE 'legacy:%'");
+    }
+    if (filters.category) {
+      parameters.push(filters.category);
+      predicates.push(`category = $${parameters.length}`);
+    }
+    if (filters.scopeLevel) {
+      parameters.push(filters.scopeLevel);
+      predicates.push(`scope->>'scopeLevel' = $${parameters.length}`);
+    }
+    if (filters.platform) {
+      parameters.push(filters.platform);
+      predicates.push(`scope->>'platform' = $${parameters.length}`);
+    }
+    if (filters.language) {
+      parameters.push(filters.language);
+      predicates.push(`scope->>'language' = $${parameters.length}`);
+    }
+    if (filters.campaignId) {
+      parameters.push(filters.campaignId);
+      predicates.push(`scope->>'campaignId' = $${parameters.length}`);
+    }
+    if (filters.contentItemId) {
+      parameters.push(filters.contentItemId);
+      predicates.push(`scope->>'contentItemId' = $${parameters.length}`);
+    }
+    if (filters.brandVersion) {
+      parameters.push(filters.brandVersion);
+      predicates.push(`brand_version = $${parameters.length}`);
+    }
+    const result = await this.database.query<SocialLearningRuleRecord>(
+      `SELECT id, organization_id, rule_id, brand_version, category, scope, key, precedence, strength,
+              metadata, active_from, expires_at, rule_data, created_at
+       FROM social_learning_rules
+       WHERE ${predicates.join(" AND ")}
+       ORDER BY precedence DESC, created_at DESC`,
+      parameters,
+    );
+    return result.rows.map(parseSocialLearningRule);
+  }
+
+  async upsertSocialLearningRules(rules: SocialLearningRule[]): Promise<void> {
+    if (!rules.length) return;
+    const normalized = rules.map((rule) => {
+      assertSocialLearningRuleForSchema(rule);
+      return rule;
+    });
+    for (const rule of normalized) {
+      await this.database.query(
+        `INSERT INTO social_learning_rules (
+           id, organization_id, rule_id, brand_version, category, scope, key, precedence,
+           strength, metadata, active_from, expires_at, rule_data, created_at, updated_at
+         ) VALUES ($1, $2, $3, $4, $5, $6::jsonb, $7, $8, $9, $10::jsonb, $11, $12, $13::jsonb, now(), now())
+         ON CONFLICT (organization_id, rule_id) DO UPDATE SET
+           brand_version = EXCLUDED.brand_version,
+           category = EXCLUDED.category,
+           scope = EXCLUDED.scope,
+           key = EXCLUDED.key,
+           precedence = EXCLUDED.precedence,
+           strength = EXCLUDED.strength,
+           metadata = EXCLUDED.metadata,
+           active_from = EXCLUDED.active_from,
+           expires_at = EXCLUDED.expires_at,
+           rule_data = EXCLUDED.rule_data,
+           updated_at = now()`,
+        [
+          `${rule.organizationId}:${rule.ruleId}`,
+          rule.organizationId,
+          rule.ruleId,
+          rule.brandVersion,
+          rule.category,
+          JSON.stringify(rule.scope),
+          rule.key,
+          rule.precedence,
+          rule.strength,
+          JSON.stringify(rule.metadata),
+          rule.activeFrom ? rule.activeFrom : null,
+          rule.expiresAt ? rule.expiresAt : null,
+          JSON.stringify(rule),
+        ],
+      );
+    }
+  }
+
+  async deleteSocialLearningRules(ruleIds: string[]): Promise<number> {
+    if (!ruleIds.length) return 0;
+    const placeholders = ruleIds.map((_, index) => `$${index + 2}`).join(", ");
+    const result = await this.database.query(
+      `DELETE FROM social_learning_rules WHERE organization_id = $1 AND rule_id IN (${placeholders})`,
+      [AURENDOR_ORGANIZATION_ID, ...ruleIds],
+    );
+    return result.rowCount;
   }
 
   async getAnalytics(): Promise<AnalyticsView> {

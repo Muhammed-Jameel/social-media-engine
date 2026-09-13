@@ -1,0 +1,200 @@
+{
+  "version": "v7-rebuilt-review",
+  "id": "P04",
+  "date": "2026-09-16",
+  "time": "19:30",
+  "timezone": "Asia/Baghdad",
+  "titleAr": "٣ فواتير. مسودتان فقط.",
+  "titleEn": "Three invoices. Two drafts.",
+  "format": "reel",
+  "platforms": [
+    "Instagram Reels",
+    "Facebook Reels",
+    "TikTok"
+  ],
+  "pillar": "AI for business / tool use",
+  "track": "independent_value",
+  "level": "intermediate",
+  "audience": "مديرو العمليات وأصحاب الأعمال الذين يقيّمون مساعدين مرتبطين ببيانات الشركة.",
+  "objective": "فهم العلاقة بين اقتراح استدعاء الأداة وتنفيذها وعودة نتيجتها من خلال ناتج محلي محدد وقابل للفحص.",
+  "funnel": "consideration",
+  "coreIdea": "الأداة تنفذ داخل البرنامج؛ النتيجة التي تعود هي ما يحدد الخطوة التالية. اختيار فاتورتين من ثلاث يبني على حالة السداد الفعلية في السجلات.",
+  "hook": "٣ فواتير. مسودتان فقط.",
+  "caption": "الطلب: جهّز مسودات تذكير للفواتير غير المدفوعة المستحقة بين ١١ و١٧ أيلول.\n\nقرأت الأداة المحلية ثلاث فواتير داخل الفترة: ١٠٤ و١٠٥ و١٠٦. الفاتورة ١٠٥ كانت مدفوعة؛ لذلك أُعدّت مسودتان فقط، بالأرقام والتواريخ الموجودة في الملف. فاتورة رابعة تستحق في ٢٠ أيلول بقيت خارج نطاق القراءة.\n\nما الذي نريد إظهاره؟ حين يستخدم مساعد لغوي أداة، يقدّم طلب الاستدعاء وبياناته. البرنامج هو الذي ينفّذ الأداة، ثم يعيد النتيجة لتُبنى عليها الخطوة التالية. إذا عرض عليك أحدهم مساعداً للأعمال، تتبّع هذه الحلقة: ما البيانات التي قرأها؟ ما الأداة التي نُفّذت؟ وما الناتج الذي عاد منها؟\n\nالمثال هنا توضيحي: اقتراحات النموذج مُعدّة مسبقاً؛ لم نُجرِ استدعاءً حياً لنموذج. أما قراءة الملف وإنشاء المسودتين فقد نُفّذتا فعلياً ببرنامج محلي على بيانات اصطناعية. النص صياغة الأداة المحلية، ولم تُرسل أي رسالة. هذا ليس اختباراً لقدرة نموذج أو تكاملاً مع نظام محاسبي.\n\nوهذه المهمة المحددة يمكن إنجازها بأتمتة ثابتة أيضاً. نستخدمها لأنها تجعل حدود الأداة ونتيجتها مرئية، لا لأنها تحتاج إلى وكيل مستقل.\n\nعند تصميم مساعد لفريقك، اكتب أمام كل أداة: مدخلاتها، ناتجها، والخطوة التي تسمح بها تلك النتيجة.",
+  "cta": "حدّد الأداة، والنتيجة التي تسمح بالخطوة التالية.",
+  "scenes": [
+    {
+      "start": 0,
+      "end": 3,
+      "job": "Outcome hook",
+      "copy": "٣ فواتير.\nمسودتان فقط.",
+      "support": "اتبع ما يحدث بين الطلب والنتيجة.",
+      "motion": "Three paper objects spread into a two-draft foreground; invoice IDs104/105/106 establish object continuity.",
+      "sound": "Soft original tonal impact; paper spread resolves on the second cue.",
+      "evidence": "EXEC-P04: readCount3 / draftCount2",
+      "handoff": "Invoice identities and draft appearance."
+    },
+    {
+      "start": 3,
+      "end": 7,
+      "job": "Define useful task",
+      "copy": "الطلب يبدأ هنا.",
+      "support": "جهّز مسودات تذكير للفواتير غير المدفوعة.\nمن ١١ إلى ١٧ أيلول ٢٠٢٦",
+      "motion": "White instruction sheet reveals downward; date scope remains explicit.",
+      "sound": "Single opening tone; quiet reading hold.",
+      "evidence": "EXEC-P04 input.request",
+      "handoff": "The request requires the actual invoice records.",
+      "disclosure": "نشرح الحلقة بمحاكاة لاقتراحات النموذج."
+    },
+    {
+      "start": 7,
+      "end": 12,
+      "job": "Separate proposal from execution",
+      "copy": "النموذج يقترح.\nالبرنامج ينفّذ.",
+      "support": "اقرأ فواتير الفترة",
+      "motion": "A single tool instruction travels from the model position along a drawn route to the program position; local-file read returns3records.",
+      "sound": "Dispatch cue and result cue sync with route arrival.",
+      "evidence": "EXEC-P04 trace0",
+      "handoff": "Returned records, not a fictional successful action.",
+      "disclosure": "اقتراح مُعدّ للتوضيح / قراءة الملف المحلي"
+    },
+    {
+      "start": 12,
+      "end": 18,
+      "job": "Returned records change next step",
+      "copy": "تعود النتيجة\nإلى الخطوة التالية. → واحدة مدفوعة.\nتبقى اثنتان.",
+      "support": "١٠٤ غير مدفوعة / ١٠٥ مدفوعة / ١٠٦ غير مدفوعة",
+      "motion": "Three records arrive. Paid105 fades away;104and106stay lime. The next authored proposal names those exact two IDs.",
+      "sound": "Three restrained record-arrival tones, paid-row exit cue.",
+      "evidence": "EXEC-P04 trace0.result / trace1.proposal",
+      "handoff": "Only104and106are submitted to draft creation."
+    },
+    {
+      "start": 18,
+      "end": 25,
+      "job": "Demonstrate completed local output",
+      "copy": "أداة ثانية.\nناتج قابل للاستخدام.",
+      "support": "١٠٤ / ٤٥٠,٠٠٠ دينار / الاستحقاق:١٢ أيلول\n١٠٦ / ٧٥٠,٠٠٠ دينار / الاستحقاق:١٦ أيلول",
+      "motion": "Selected invoice identities become two expanded draft papers. Amount and due date are exposed from the actual local result.",
+      "sound": "Two creation tones; hold without music competing with copy.",
+      "evidence": "EXEC-P04 drafts",
+      "handoff": "A finished draft can now be inspected.",
+      "disclosure": "أُنشئت المسودتان. لم تُرسل أي رسالة."
+    },
+    {
+      "start": 25,
+      "end": 31,
+      "job": "Readable payoff",
+      "copy": "اقرأ مسودة\nالفاتورة ١٠٤.",
+      "support": "مرحباً، نذكّركم باستحقاق\nالفاتورة ١٠٤ بمبلغ ٤٥٠,٠٠٠\nدينار عراقي يوم ٢٠٢٦/٠٩/١٢.\nيرجى إعلامنا إذا كانت الدفعة قد أُنجزت.",
+      "motion": "Lime full-frame change isolates a single white draft at readable mobile size. Same output, date reformatted for display.",
+      "sound": "Soft low resolving tone then quiet.",
+      "evidence": "EXEC-P04 drafts[0].text; editorial numeral/date formatting only",
+      "handoff": "Usable text with verified amount/date.",
+      "disclosure": "هذه صياغة الأداة المحلية، وليست رسالة مرسلة."
+    },
+    {
+      "start": 31,
+      "end": 36,
+      "job": "Transferable implementation lesson",
+      "copy": "هكذا تكتمل\nحلقة الأداة.",
+      "support": "اقتراح الأداة / تنفيذ البرنامج / عودة النتيجة",
+      "motion": "Three concise process steps resolve in order; brand plate returns.",
+      "sound": "Three-stage resolution without a loud logo sting.",
+      "evidence": "REF-ANTHROPIC-TOOLS / executed local demonstration",
+      "cta": "حدّد الأداة، والنتيجة التي تسمح بالخطوة التالية."
+    }
+  ],
+  "productionMethod": "Type C; Remotion4.0.523; new dedicated causal composition; authored model proposals + real local fixture execution; whole-phrase Arabic; original action-linked sound; intentionally caption-first, no narration.",
+  "visualConcept": "Original AURENDOR industrial paper/connector plate under the established green atmosphere. White request papers, lime record selection, two real-output draft papers and a readable lime payoff. Invoice identities persist across the visual argument; no invented software UI.",
+  "assets": [
+    {
+      "path": "remotion/public/media/p04-brand-plate.png",
+      "origin": "Existing AURENDOR SEP-02-slide-02.png brand plate, unmodified except compositing",
+      "rights": "Existing first-party project asset; no new third-party licence claimed"
+    },
+    {
+      "path": "remotion/public/media/p04-causal-sound.wav",
+      "origin": "Original synthesized tonal score designed in this production",
+      "rights": "Original local generation; no borrowed samples"
+    },
+    {
+      "path": "production/P04/execution.json",
+      "origin": "Actual local Node execution with synthetic input",
+      "rights": "Original AURENDOR demonstration"
+    }
+  ],
+  "fonts": {
+    "Arabic": "GhroobArabicITF-Regular/Bold/ExtraBold actual OTF",
+    "English": "DhRanclo-Bold actual OTF",
+    "lineHeight": 1.8,
+    "punctuation": "Unsupported U+066C thousands separator replaced with ASCII comma without changing values."
+  },
+  "toolsUsed": [
+    "Remotion4.0.523",
+    "React19.3.0",
+    "local Node fixture",
+    "Chromium render/CDP actual glyph audit",
+    "FFmpeg decode/mux",
+    "Python original audio synthesis"
+  ],
+  "sourcePacket": [
+    {
+      "id": "EXEC-P04",
+      "path": "production/P04/execution.json",
+      "scope": "3 returned synthetic invoices / 2 real local drafts / 0 external messages / authored model proposals. Not a model benchmark."
+    },
+    {
+      "id": "REF-ANTHROPIC-TOOLS",
+      "url": "https://www.anthropic.com/engineering/building-effective-agents",
+      "reviewed": "2026-09-10",
+      "supports": "Tool results supply environmental feedback for the subsequent step; clear interfaces and simplest sufficient implementation.",
+      "limit": "2024 architectural article now carries a tooling-update notice. No current vendor/model-performance claim derived."
+    }
+  ],
+  "platformAdaptations": {
+    "Instagram/Facebook": "36s1080×1920 master. Use complete caption. Do not crop away the scope line. Cover uses opening paper spread.",
+    "TikTok": "Same portrait mechanism is suitable, but use shorter caption below; do not add fake live-demo label or trending unlicensed music.",
+    "TikTokCaption": "٣ فواتير رجعت من الملف؛ واحدة مدفوعة، فبقيت مسودتان. شاهد الفرق بين اقتراح الأداة وتنفيذها وعودة نتيجتها. محاكاة لاقتراحات النموذج، مع تنفيذ محلي حقيقي على بيانات اصطناعية. لم تُرسل رسائل.",
+    "LinkedIn": "Post portrait video with analysis copy below; no separate16:9export has been produced.",
+    "LinkedInCopy": "المساعد المتصل ببيانات الشركة يُقيَّم من أثر أدواته، لا من كلمة «تم». في هذا المثال المحلي أعادت القراءة ثلاث فواتير ضمن الفترة المطلوبة؛ كانت إحداها مدفوعة، فأنشأت أداة ثانية مسودتين بأرقام وتواريخ السجلات. اقتراحات النموذج هنا مُعدّة للتوضيح، والقراءة وإنشاء المسودات منفّذان فعلياً على بيانات اصطناعية. لم نستخدم نظام محاسبة حياً أو نرسل رسائل. السؤال المفيد في أي تجربة مشابهة: هل يمكن تتبّع مدخل الأداة، ونتيجتها، وما سمحت به تلك النتيجة؟ وهذه المهمة الثابتة نفسها لا تحتاج بالضرورة إلى نموذج؛ قيمة المثال هي إظهار الآلية.",
+    "X": "A native3postthread:1)٣فواتير ضمن الفترة، واحدة مدفوعة، مسودتان.2)اقتراح أداة→تنفيذ كود→نتيجة→خطوة تالية، with105excluded frame.3)Explicit authored-proposal/local-execution scope and transferable tool-contract question. Do not claim identical portrait upload is a full visual adaptation."
+  },
+  "stories": [
+    {
+      "title": "الأداة أعادت ٣ فواتير.",
+      "body": "إحداها مدفوعة. كم مسودة تذكير نحتاج؟",
+      "sticker": "poll",
+      "options": [
+        "مسودتان",
+        "ثلاث مسودات"
+      ],
+      "action": "اختَر، ثم شاهد النتيجة في الفيديو."
+    },
+    {
+      "title": "مسودتان: ١٠٤ و١٠٦.",
+      "body": "الفاتورة ١٠٥ مدفوعة. النموذج يقترح، والبرنامج ينفّذ الأداة ويعيد نتيجتها.",
+      "action": "افتح الفيديو لتتبع الرحلة كاملة.",
+      "sticker": "link_to_post"
+    }
+  ],
+  "status": "review_only",
+  "publicationConstraints": [
+    "Remotion commercial eligibility/company licence remains to be confirmed by root/user.",
+    "New film requires user creative review after rejection of earlier videos; technical checks are not creative approval."
+  ],
+  "notClaimed": [
+    "Live model execution",
+    "Accounting integration",
+    "Messages sent",
+    "Measured time/cost saving",
+    "Autonomous agent required for this fixed task"
+  ],
+  "deliverables": {
+    "video": "exports/P04/reel.mp4",
+    "poster": "exports/P04/poster.png",
+    "mobile": "exports/P04/preview-mobile.mp4",
+    "source": "remotion/src/films/P04Causal.tsx",
+    "fixture": "production/P04/run-fixture.cjs"
+  }
+}

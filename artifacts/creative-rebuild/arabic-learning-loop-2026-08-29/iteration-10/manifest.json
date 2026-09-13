@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "1.0.0",
+  "iteration": 10,
+  "generatedAt": "2026-08-29T14:28:14.061Z",
+  "status": "PIXEL_REVIEW_REQUIRED",
+  "publicationEligible": false,
+  "candidate": {
+    "id": "22-ar-measure-decision-time",
+    "title": "Arabic operational-metric editorial",
+    "language": "ar",
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "mobileReview": {
+      "width": 324,
+      "height": 405
+    },
+    "exactCopy": [
+      "مقياس تشغيلي · ٢٢",
+      "قِس زمن القرار",
+      "لا عدد النقرات",
+      "ابدأ من ظهور الإشارة، وانتهِ عند اتخاذ القرار.",
+      "إشارة",
+      "قرار",
+      "زمن القرار"
+    ],
+    "file": "22-ar-measure-decision-time.png",
+    "sha256": "8aaf6ce9db513a0af619f95257e14abfcd305a07bdfe93b687673ef93d947b1b",
+    "byteLength": 55217,
+    "mobileFile": "mobile/22-ar-measure-decision-time.png",
+    "mobileSha256": "999a58aa75dc85fcb4c5c876b38b869b9c5cac53858596bd13c4f3db026fda4a",
+    "sourceImage": null,
+    "sourceImageSha256": null,
+    "sourcePromptSummary": "Original native HTML/CSS information graphic defining the signal-to-decision interval with two labeled endpoints and no fabricated values; no generated or external pixels.",
+    "rawProfessionalReferencePixelsSuppliedToGeneration": false,
+    "fontEvidence": {
+      "family": "Ghroob Arabic ITF",
+      "regularSha256": "4dd0c3f2622fc0cfb2802ede862a24877218f78046cf0830ab6290feb68d3e41",
+      "boldSha256": "d853dc21fe5a274d5a9361d720db94ad60a8fcceb114663118b6f9cc2f9b5d5b"
+    },
+    "technicalPreflight": {
+      "documentLanguage": "ar",
+      "documentDirection": "rtl",
+      "fontLoadedRegular": true,
+      "fontLoadedBold": true,
+      "exactCopyPresent": true,
+      "copyRegionWithinCanvas": true,
+      "copyRegionBounds": {
+        "x": 112,
+        "y": 66,
+        "width": 900,
+        "height": 364.171875
+      }
+    }
+  }
+}

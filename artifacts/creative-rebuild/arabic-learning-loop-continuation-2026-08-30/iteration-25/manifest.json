@@ -1,0 +1,55 @@
+{
+  "schemaVersion": "1.0.0",
+  "iteration": 25,
+  "generatedAt": "2026-08-30T07:12:26.409Z",
+  "status": "PIXEL_REVIEW_REQUIRED",
+  "publicationEligible": false,
+  "candidate": {
+    "id": "37-ar-progress-real-unfinished",
+    "title": "Arabic Iraq human-development documentary editorial",
+    "language": "ar",
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "mobileReview": {
+      "width": 324,
+      "height": 405
+    },
+    "exactCopy": [
+      "من العراق · ٣٧",
+      "التقدّم حقيقي",
+      "لكنه غير مكتمل",
+      "دخل العراق فئة التنمية البشرية المرتفعة في ٢٠٢٤، مع استمرار الفجوات بين المحافظات وبين النساء والرجال.",
+      "المصدر: التقرير الوطني للتنمية البشرية في العراق ٢٠٢٥."
+    ],
+    "file": "37-ar-progress-real-unfinished.png",
+    "sha256": "f73c92ccfc861d5bbc82423f0c01aa721a9de18f170337b6d2fd09c95907c0dd",
+    "byteLength": 1270488,
+    "mobileFile": "mobile/37-ar-progress-real-unfinished.png",
+    "mobileSha256": "5a1b701be210f7a972181d9c29993853c00ef660c214c02f812287e8a33168d4",
+    "sourceImage": "human-development-source.png",
+    "sourceImageSha256": "8d1affb196d5c09bcd00c50d84709c0c68099e256b37c43a827623dcd79c5a0c",
+    "sourcePromptSummary": "Original fictional documentary-style civic-campus photograph generated without references, writing, logos, landmarks, flags, staged corporate gestures, or professional reference pixels; exact Arabic and source added separately in HTML/CSS.",
+    "rawProfessionalReferencePixelsSuppliedToGeneration": false,
+    "fontEvidence": {
+      "family": "Ghroob Arabic ITF",
+      "regularSha256": "4dd0c3f2622fc0cfb2802ede862a24877218f78046cf0830ab6290feb68d3e41",
+      "boldSha256": "d853dc21fe5a274d5a9361d720db94ad60a8fcceb114663118b6f9cc2f9b5d5b"
+    },
+    "technicalPreflight": {
+      "documentLanguage": "ar",
+      "documentDirection": "rtl",
+      "fontLoadedRegular": true,
+      "fontLoadedBold": true,
+      "exactCopyPresent": true,
+      "copyRegionWithinCanvas": true,
+      "copyRegionBounds": {
+        "x": 68,
+        "y": 68,
+        "width": 944,
+        "height": 1130
+      }
+    }
+  }
+}

@@ -6,6 +6,13 @@ const booleanString = (fallback: boolean) =>
     .optional()
     .transform((value) => (value === undefined ? fallback : value === "true"));
 
+const readBoolean = (environment: NodeJS.ProcessEnv, keys: readonly string[]): "true" | "false" | undefined => {
+  for (const key of keys) {
+    if (environment[key] === "true" || environment[key] === "false") return environment[key];
+  }
+  return undefined;
+};
+
 const EngineConfigSchema = z.object({
   appUrl: z.string().url().default("http://localhost:3000"),
   timezone: z.string().min(1).default("Asia/Baghdad"),
@@ -13,6 +20,7 @@ const EngineConfigSchema = z.object({
   dryRun: booleanString(true),
   productionPublishingEnabled: booleanString(false),
   paused: booleanString(false),
+  creativeProductionPaused: booleanString(false),
   openAiApiKey: z.string().min(1).optional(),
   frontierModel: z.string().min(1).default("gpt-5.6-sol"),
   efficientModel: z.string().min(1).default("gpt-5.6-terra"),
@@ -30,7 +38,16 @@ export function getEngineConfig(environment: NodeJS.ProcessEnv = process.env): E
     demoMode: environment.DEMO_MODE,
     dryRun: environment.DRY_RUN,
     productionPublishingEnabled: environment.PRODUCTION_PUBLISHING_ENABLED,
-    paused: environment.AURENDOR_ENGINE_PAUSED,
+    paused: readBoolean(environment, [
+      "SOCIAL_ENGINE_PAUSED",
+      "SOCIAL_MEDIA_ENGINE_PAUSED",
+      "AURENDOR_ENGINE_PAUSED",
+    ]),
+    creativeProductionPaused: readBoolean(environment, [
+      "SOCIAL_ENGINE_CREATIVE_PRODUCTION_PAUSED",
+      "SOCIAL_MEDIA_CREATIVE_PRODUCTION_PAUSED",
+      "AURENDOR_CREATIVE_PRODUCTION_PAUSED",
+    ]),
     openAiApiKey: environment.OPENAI_API_KEY || undefined,
     frontierModel: environment.OPENAI_FRONTIER_MODEL,
     efficientModel: environment.OPENAI_EFFICIENT_MODEL,

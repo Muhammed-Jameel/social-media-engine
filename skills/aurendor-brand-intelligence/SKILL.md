@@ -28,7 +28,7 @@ Use this authority order, while respecting effective dates:
 1. Owner-approved, active structured records under `data/brand/canonical/` when present.
 2. `marketing/_context/AURENDOR_Brand_Identity_FINAL_2026.md` for current identity.
 3. `marketing/_context/AURENDOR_Social_Design_System_2026.md` for current social execution.
-4. Delivered assets under `marketing/AURENDOR VISUAL IDENTITY/` and current source files for exact logo/font/color evidence.
+4. Delivered assets under `marketing/brand/visual-identity-2026/` and current source files for exact logo/font/color evidence.
 5. Current approved voice, product, audience, research, campaign, and operational records.
 6. `data/brand/source-manifest.json` and `docs/discovery/AURENDOR_CONTEXT_REPORT.md` for discovery and provenance navigation.
 7. Historical files only when explaining lineage or a conflict.

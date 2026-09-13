@@ -243,6 +243,331 @@ export const CritiqueSchema = z
     }
   });
 
+export const DesignPurposeSchema = z.enum([
+  "awareness",
+  "education",
+  "promotion",
+  "announcement",
+  "engagement",
+  "product-introduction",
+  "service-explanation",
+  "thought-leadership",
+  "event",
+  "statistic",
+  "case-study",
+  "storytelling",
+  "brand-building",
+  "conversion",
+  "editorial",
+]);
+
+export const VisualFamilySchema = z.enum([
+  "conceptual-hero",
+  "editorial-statement",
+  "product-system-story",
+  "data-story",
+  "character-narrative",
+  "process-explainer",
+  "before-after",
+  "case-study",
+  "announcement",
+  "arabic-educational-carousel",
+]);
+
+export const ImageryModeSchema = z.enum([
+  "bespoke-photography",
+  "conceptual-photomanipulation",
+  "bespoke-3d",
+  "conceptual-illustration",
+  "product-ui",
+  "typography-led",
+  "abstract-system",
+  "no-imagery",
+]);
+
+export const AnthropomorphismLevelSchema = z.number().int().min(0).max(5);
+
+export const ReferencePrincipleUseSchema = z.object({
+  referenceId: z.string().min(8),
+  principleId: z.string().min(3),
+  learnedPrinciple: z.string().min(12),
+  whyRelevant: z.string().min(12),
+  mustNotCopy: z.string().min(12),
+  rightsState: z.literal("REFERENCE_ONLY"),
+});
+
+const CompositionZoneSchema = z.object({
+  name: z.string().min(2),
+  role: z.enum(["focal", "support", "evidence", "brand", "negative-space"]),
+  x: z.number().min(0).max(1),
+  y: z.number().min(0).max(1),
+  width: z.number().positive().max(1),
+  height: z.number().positive().max(1),
+});
+
+export const CreativeConceptCandidateSchema = z
+  .object({
+    candidateId: z.string().min(3),
+    title: z.string().min(3),
+    purpose: DesignPurposeSchema,
+    audienceTension: z.string().min(12),
+    desiredFeeling: z.string().min(5),
+    twoSecondTakeaway: z.string().min(8),
+    singleVisualIdea: z.string().min(16),
+    textlessComprehension: z.string().min(12),
+    visualMetaphor: z.string().min(12),
+    storytellingMechanism: z.string().min(12),
+    verbalVisualRelationship: z.string().min(12),
+    visualFamily: VisualFamilySchema,
+    anthropomorphism: z.object({
+      level: AnthropomorphismLevelSchema,
+      behaviorHumanized: z.string().min(3),
+      comprehensionBenefit: z.string().min(8),
+      faceRequired: z.boolean(),
+      faceTestResult: z.string().min(8),
+      emotionalRegister: z.string().min(3),
+      capabilityBoundary: z.string().min(8),
+      childishnessRisk: z.enum(["low", "medium", "high"]),
+    }),
+    composition: z.object({
+      focalPoint: z.string().min(3),
+      focalWeight: z.number().min(0.35).max(0.8),
+      centerOfGravity: z.enum(["left", "right", "center", "upper", "lower", "diagonal"]),
+      eyePath: z.array(z.string().min(2)).min(2).max(6),
+      grid: z.object({ columns: z.number().int().min(2).max(12), baseUnit: z.number().int().positive(), intentionalBreak: z.string().min(3).nullable() }),
+      zones: z.array(CompositionZoneSchema).min(3).max(8),
+      foreground: z.string().min(3),
+      middleGround: z.string().min(3),
+      background: z.string().min(3),
+      negativeSpacePurpose: z.string().min(8),
+    }),
+    typography: z.object({
+      language: LanguageSchema,
+      direction: z.enum(["rtl", "ltr"]),
+      headlineLines: z.array(z.string().min(1)).min(1).max(4),
+      displayScaleRatio: z.number().min(2).max(8),
+      alignment: z.enum(["start", "end", "center", "mixed-intentional"]),
+      interactionWithImagery: z.string().min(8),
+      arabicSpecificDecision: z.string().min(8).nullable(),
+    }),
+    imagery: z.object({
+      mode: ImageryModeSchema,
+      subject: z.string().min(3),
+      crop: z.string().min(3),
+      perspective: z.string().min(3),
+      lighting: z.string().min(3),
+      material: z.string().min(3),
+      texture: z.string().min(3),
+      relationToTypography: z.string().min(8),
+      assetPlan: z.array(z.object({ asset: z.string().min(2), source: z.enum(["generated-bespoke", "owned", "licensed", "product-ui", "native-shape", "none"]), licenseEvidence: z.string().min(2) })).min(1),
+    }),
+    referenceUses: z.array(ReferencePrincipleUseSchema).min(3).max(6),
+    forbiddenAdditions: z.array(z.string().min(3)).min(3),
+    originalityRationale: z.string().min(24),
+    professionalChoiceRationale: z.string().min(24),
+    risks: z.array(z.string().min(3)),
+  })
+  .superRefine((value, context) => {
+    if (new Set(value.referenceUses.map((item) => item.referenceId)).size < 3) {
+      context.addIssue({ code: "custom", path: ["referenceUses"], message: "At least three distinct professional references are required to prevent single-reference imitation." });
+    }
+    if (value.typography.language === "ar" && value.typography.direction !== "rtl") {
+      context.addIssue({ code: "custom", path: ["typography", "direction"], message: "Arabic concepts must be composed RTL from the beginning." });
+    }
+    if (value.typography.language === "ar" && !value.typography.arabicSpecificDecision) {
+      context.addIssue({ code: "custom", path: ["typography", "arabicSpecificDecision"], message: "Arabic concepts require an explicit Arabic typographic decision." });
+    }
+  });
+
+export const ConceptTournamentSchema = z
+  .object({
+    candidates: z.array(CreativeConceptCandidateSchema).min(3).max(6),
+    pairwiseComparisons: z.array(
+      z.object({
+        candidateAId: z.string().min(3),
+        candidateBId: z.string().min(3),
+        winnerId: z.string().min(3),
+        conceptReason: z.string().min(12),
+        communicationReason: z.string().min(12),
+        executionRisk: z.string().min(8),
+      }),
+    ).min(2),
+    selectedCandidateIds: z.array(z.string().min(3)).min(1).max(2),
+    rejectedCandidates: z.array(z.object({ candidateId: z.string().min(3), reason: z.string().min(12) })).min(1),
+  })
+  .superRefine((value, context) => {
+    const candidateIds = new Set(value.candidates.map((candidate) => candidate.candidateId));
+    for (const selected of value.selectedCandidateIds) {
+      if (!candidateIds.has(selected)) context.addIssue({ code: "custom", path: ["selectedCandidateIds"], message: `Unknown selected candidate: ${selected}` });
+    }
+    for (const comparison of value.pairwiseComparisons) {
+      if (![comparison.candidateAId, comparison.candidateBId].includes(comparison.winnerId)) {
+        context.addIssue({ code: "custom", path: ["pairwiseComparisons"], message: "Pairwise winner must be one of the compared candidates." });
+      }
+    }
+  });
+
+export const ProfessionalDesignBriefSchema = DesignBriefSchema.extend({
+  intelligenceVersion: z.string().min(3),
+  purpose: DesignPurposeSchema,
+  desiredFeeling: z.string().min(5),
+  twoSecondTakeaway: z.string().min(8),
+  selectedCandidateId: z.string().min(3),
+  conceptTournament: ConceptTournamentSchema,
+  exactLineBreaks: z.array(z.string().min(1)).min(1).max(8),
+  referenceUses: z.array(ReferencePrincipleUseSchema).min(3).max(6),
+  recentFeedConstraints: z.object({
+    comparedPostIds: z.array(z.string()),
+    prohibitedRepeatedStructures: z.array(z.string()),
+    targetRhythmRole: z.enum(["anchor", "breath", "energy", "information", "narrative"]),
+  }),
+  originalityCheck: z.object({ nearestReferenceIds: z.array(z.string()), reviewerRequired: z.boolean(), rationale: z.string().min(16) }),
+}).superRefine((value, context) => {
+  if (!value.conceptTournament.candidates.some((candidate) => candidate.candidateId === value.selectedCandidateId)) {
+    context.addIssue({ code: "custom", path: ["selectedCandidateId"], message: "Selected candidate must exist in the concept tournament." });
+  }
+  if (!value.conceptTournament.selectedCandidateIds.includes(value.selectedCandidateId)) {
+    context.addIssue({ code: "custom", path: ["selectedCandidateId"], message: "Selected candidate must have won the concept tournament." });
+  }
+});
+
+export const ProfessionalCreativeScoreSchema = z.object({
+  concept: z.number().min(0).max(20),
+  composition: z.number().min(0).max(20),
+  typography: z.number().min(0).max(20),
+  visualCraft: z.number().min(0).max(20),
+  brand: z.number().min(0).max(20),
+  communication: z.number().min(0).max(20),
+  professionalPolish: z.number().min(0).max(20),
+  distinctiveness: z.number().min(0).max(20),
+});
+
+export const ProfessionalCriticRoleSchema = z.enum([
+  "SENIOR_ART_DIRECTOR",
+  "SENIOR_GRAPHIC_DESIGNER",
+  "SOCIAL_PERFORMANCE_STRATEGIST",
+  "ARABIC_DESIGN_REVIEWER",
+]);
+
+export const ProfessionalCreativeHardFailSchema = z.enum([
+  "OBVIOUS_TEMPLATE_APPEARANCE",
+  "GENERIC_AI_ROBOT",
+  "UNREADABLE_ARABIC",
+  "ARBITRARY_ICON",
+  "POOR_TYPOGRAPHY",
+  "WEAK_HIERARCHY",
+  "EXCESSIVE_TEXT",
+  "RANDOM_GRADIENT",
+  "MEANINGLESS_DECORATION",
+  "LOW_RESOLUTION_IMAGERY",
+  "BROKEN_PERSPECTIVE",
+  "AI_ARTIFACT",
+  "INCONSISTENT_CHARACTER",
+  "OBJECTIFYING_CASTING",
+  "FEMALE_USED_AS_ATTENTION_DEVICE",
+  "UNJUSTIFIED_HUMAN_SUBJECT",
+  "CASTING_POLICY_MISMATCH",
+  "LOGO_MISUSE",
+  "NO_FOCAL_POINT",
+  "NO_VISUAL_CONCEPT",
+  "CHILDISH_ANTHROPOMORPHISM",
+  "REFERENCE_TOO_CLOSE",
+  "UNLICENSED_ASSET",
+]);
+
+export const ProfessionalCritiqueSchema = z
+  .object({
+    critiqueId: z.string().min(3),
+    renderedAssetId: z.string().min(3),
+    renderedAssetSha256: z.string().regex(/^[a-f0-9]{64}$/),
+    criticRole: ProfessionalCriticRoleSchema,
+    actualPixelsInspected: z.literal(true),
+    viewingScales: z.array(z.enum(["original", "mobile", "thumbnail", "feed"])).min(2),
+    scores: ProfessionalCreativeScoreSchema,
+    total: z.number().min(0).max(160),
+    evidenceObservations: z.array(
+      z.object({
+        dimension: ProfessionalCreativeScoreSchema.keyof(),
+        region: z.string().min(3),
+        observation: z.string().min(12),
+        impact: z.enum(["positive", "neutral", "negative", "hard-fail"]),
+      }),
+    ).min(4),
+    hardFails: z.array(ProfessionalCreativeHardFailSchema),
+    professionalAnchorComparison: z.object({
+      referenceIds: z.array(z.string().min(8)).min(2).max(5),
+      verdict: z.enum(["materially-below", "below", "comparable", "above"]),
+      observableDifferences: z.array(z.string().min(12)).min(2),
+    }),
+    strengths: z.array(z.string().min(8)),
+    weaknesses: z.array(z.string().min(8)),
+    revisionInstructions: z.array(z.string().min(12)),
+    restartConcept: z.boolean(),
+    decision: z.enum(["REJECT", "MAJOR_REVISION", "INSUFFICIENT", "PROFESSIONAL_CANDIDATE", "EXCELLENT"]),
+  })
+  .superRefine((value, context) => {
+    const recomputed = Object.values(value.scores).reduce((sum, score) => sum + score, 0);
+    if (Math.abs(recomputed - value.total) > 0.01) {
+      context.addIssue({ code: "custom", path: ["total"], message: `Total must equal the eight rubric dimensions (${recomputed}).` });
+    }
+    if (value.hardFails.length && value.decision !== "REJECT") {
+      context.addIssue({ code: "custom", path: ["decision"], message: "Any professional hard fail forces rejection." });
+    }
+    if (value.decision === "PROFESSIONAL_CANDIDATE" && value.total < 145) {
+      context.addIssue({ code: "custom", path: ["decision"], message: "Professional candidates require at least 145/160." });
+    }
+    if (value.decision === "EXCELLENT" && value.total < 152) {
+      context.addIssue({ code: "custom", path: ["decision"], message: "Excellent candidates require at least 152/160." });
+    }
+    if (["PROFESSIONAL_CANDIDATE", "EXCELLENT"].includes(value.decision) && ["materially-below", "below"].includes(value.professionalAnchorComparison.verdict)) {
+      context.addIssue({ code: "custom", path: ["professionalAnchorComparison", "verdict"], message: "A design below its professional anchors cannot be a professional candidate." });
+    }
+  });
+
+export const PairwiseCreativeComparisonSchema = z.object({
+  comparisonId: z.string().min(3),
+  candidateAAssetId: z.string().min(3),
+  candidateBAssetId: z.string().min(3),
+  blindLabelsUsed: z.boolean(),
+  winner: z.enum(["A", "B", "tie-neither-professional"]),
+  reasons: z.array(z.string().min(12)).min(3),
+  dimensionWinners: z.record(ProfessionalCreativeScoreSchema.keyof(), z.enum(["A", "B", "tie"])),
+});
+
+export const ProfessionalCritiqueSetSchema = z
+  .object({
+    setId: z.string().min(3),
+    renderedAssetId: z.string().min(3),
+    renderedAssetSha256: z.string().regex(/^[a-f0-9]{64}$/),
+    language: LanguageSchema,
+    critiques: z.array(ProfessionalCritiqueSchema).min(3).max(4),
+    pairwiseComparisons: z.array(PairwiseCreativeComparisonSchema),
+    finalDecision: z.enum(["REJECT", "MAJOR_REVISION", "INSUFFICIENT", "PROFESSIONAL_CANDIDATE", "EXCELLENT", "BLOCKED"]),
+    disagreementReasons: z.array(z.string()),
+    nextAction: z.string().min(8),
+  })
+  .superRefine((value, context) => {
+    const roles = value.critiques.map((critique) => critique.criticRole);
+    const requiredRoles = ["SENIOR_ART_DIRECTOR", "SENIOR_GRAPHIC_DESIGNER", "SOCIAL_PERFORMANCE_STRATEGIST"];
+    if (value.language === "ar") requiredRoles.push("ARABIC_DESIGN_REVIEWER");
+    for (const role of requiredRoles) {
+      if (!roles.includes(role as z.infer<typeof ProfessionalCriticRoleSchema>)) {
+        context.addIssue({ code: "custom", path: ["critiques"], message: `Missing required independent critic: ${role}` });
+      }
+    }
+    if (new Set(roles).size !== roles.length) {
+      context.addIssue({ code: "custom", path: ["critiques"], message: "Critic roles must be independent and unique." });
+    }
+    if (value.critiques.some((critique) => critique.renderedAssetSha256 !== value.renderedAssetSha256)) {
+      context.addIssue({ code: "custom", path: ["renderedAssetSha256"], message: "Every critic must inspect the exact current asset hash." });
+    }
+    if (["PROFESSIONAL_CANDIDATE", "EXCELLENT"].includes(value.finalDecision)) {
+      if (value.critiques.some((critique) => critique.total < 145 || critique.hardFails.length > 0 || ["materially-below", "below"].includes(critique.professionalAnchorComparison.verdict))) {
+        context.addIssue({ code: "custom", path: ["finalDecision"], message: "Every required critic must independently clear the professional bar with no hard fail." });
+      }
+    }
+  });
+
 export const ApprovalDecisionSchema = z.object({
   id: z.string().uuid(),
   contentItemId: z.string().uuid(),
@@ -271,7 +596,7 @@ export const ApprovalDecisionSchema = z.object({
 });
 
 export const ProviderCapabilitySchema = z.object({
-  provider: z.enum(["openai", "canva", "instagram", "facebook", "linkedin", "tiktok", "youtube", "storage", "email"]),
+  provider: z.enum(["openai", "canva", "instagram", "facebook", "linkedin", "tiktok", "x", "youtube", "storage", "email"]),
   accountId: z.string().nullable(),
   capability: z.string().min(2),
   state: CapabilityStateSchema,
@@ -416,6 +741,102 @@ export const OwnerCommandSchema = z.object({
   classification: z.string().min(2),
   proposedChange: z.record(z.string(), z.unknown()),
   requiresConfirmation: z.boolean(),
+});
+
+export const RuleCategorySchema = z.enum(["fact", "brandRule", "preference", "campaign", "performance"]);
+export const RuleScopeSchema = z.object({
+  scopeLevel: z.enum(["global", "brand", "campaign", "platform", "language", "content_type", "content_item"]),
+  campaignId: z.string().uuid().optional(),
+  platform: PlatformSchema.optional(),
+  language: LanguageSchema.optional(),
+  contentItemId: z.string().uuid().optional(),
+});
+
+export const RuleStrengthSchema = z.enum(["WEAK", "MEDIUM", "STRONG", "HARD"]);
+export const RulePrecedenceSchema = z.number().int().min(0).max(100).default(50);
+export const RuleDirectiveTypeSchema = z.enum(["MUST_INCLUDE", "MUST_AVOID", "RECOMMEND", "FORBID", "PRIORITIZE", "DEPRIORITIZE"]);
+
+const RuleMetadataSchema = z.object({
+  actorId: z.string().optional(),
+  source: z.enum(["OWNER", "SYSTEM", "MODEL", "POLICY"]),
+  reason: z.string().min(2),
+  approvedAt: z.string().datetime().optional(),
+  sourceRefs: z.array(SourceReferenceSchema).optional(),
+  tags: z.array(z.string().min(1)).default([]),
+  conflictGroup: z.string().min(2).optional(),
+  isArchived: z.boolean().default(false),
+});
+
+const FeedbackRuleBaseSchema = z.object({
+  ruleId: z.string().uuid(),
+  organizationId: z.string().uuid(),
+  brandVersion: z.string().min(1),
+  category: RuleCategorySchema,
+  scope: RuleScopeSchema,
+  key: z.string().min(1),
+  precedence: RulePrecedenceSchema,
+  strength: RuleStrengthSchema,
+  metadata: RuleMetadataSchema,
+  activeFrom: z.string().datetime().optional(),
+  expiresAt: z.string().datetime().optional(),
+});
+
+export const FeedbackFactSchema = FeedbackRuleBaseSchema.extend({
+  category: z.literal("fact"),
+  fact: z.string().min(3),
+  value: z.unknown(),
+  confidence: z.number().min(0).max(1),
+  supportingStatementIds: z.array(z.string().min(1)).default([]),
+});
+
+export const BrandRuleSchema = FeedbackRuleBaseSchema.extend({
+  category: z.literal("brandRule"),
+  ruleText: z.string().min(3),
+  directive: RuleDirectiveTypeSchema,
+  enforcementContext: z.record(z.string(), z.unknown()),
+});
+
+export const PreferenceSchema = FeedbackRuleBaseSchema.extend({
+  category: z.literal("preference"),
+  preferenceArea: z.string().min(2),
+  value: z.record(z.string(), z.unknown()),
+  persistenceWindowDays: z.number().int().min(0),
+  decayRate: z.number().min(0).max(1),
+});
+
+export const CampaignLearningSchema = FeedbackRuleBaseSchema.extend({
+  category: z.literal("campaign"),
+  campaignId: z.string().uuid(),
+  month: z.string().regex(/^\d{4}-\d{2}$/),
+  objective: z.string().min(3),
+  expectedImpact: z.number().min(-1).max(1),
+  guardrailKpis: z.array(z.string().min(1)).default([]),
+});
+
+export const PerformanceLearningSchema = FeedbackRuleBaseSchema.extend({
+  category: z.literal("performance"),
+  metric: z.string().min(2),
+  direction: z.enum(["up", "down"]),
+  threshold: z.number(),
+  actionVerb: z.string().min(2),
+  evidenceWindowDays: z.number().int().min(1),
+  observedAt: z.string().datetime(),
+  confidence: z.number().min(0).max(1),
+});
+
+export const SocialLearningRuleSchema = z.discriminatedUnion("category", [
+  FeedbackFactSchema,
+  BrandRuleSchema,
+  PreferenceSchema,
+  CampaignLearningSchema,
+  PerformanceLearningSchema,
+]);
+
+export const SocialLearningRuleSetSchema = z.object({
+  schemaVersion: z.string().default(SCHEMA_VERSION),
+  organizationId: z.string().uuid(),
+  generatedAt: z.string().datetime(),
+  rules: z.array(SocialLearningRuleSchema),
 });
 
 /**
@@ -654,7 +1075,7 @@ export const DesignCritiqueSetSchema = NativeArtifactBaseSchema.extend({
   const missing = value.criticA.status === "missing" || value.criticB.status === "missing";
   const completed = [value.criticA, value.criticB].filter((critic): critic is z.infer<typeof CompletedCriticResultSchema> => critic.status === "complete");
   if (missing && (value.status !== "blocked" || value.decision !== "blocked")) {
-    context.addIssue({ code: "custom", path: ["decision"], message: "Two independent critics are required; a partial critique set is blocked." });
+    context.addIssue({ code: "custom", path: ["decision"], message: "Every required independent critic must be present; a partial critique set is blocked." });
   }
   if (completed.some((critic) => critic.hardFails.length > 0) && value.decision === "pass") {
     context.addIssue({ code: "custom", path: ["decision"], message: "A hard fail overrides aggregate creative scores." });
@@ -906,6 +1327,17 @@ export type CopyVariant = z.infer<typeof CopyVariantSchema>;
 export type DesignBrief = z.infer<typeof DesignBriefSchema>;
 export type RenderedAsset = z.infer<typeof RenderedAssetSchema>;
 export type Critique = z.infer<typeof CritiqueSchema>;
+export type DesignPurpose = z.infer<typeof DesignPurposeSchema>;
+export type VisualFamily = z.infer<typeof VisualFamilySchema>;
+export type ImageryMode = z.infer<typeof ImageryModeSchema>;
+export type ReferencePrincipleUse = z.infer<typeof ReferencePrincipleUseSchema>;
+export type CreativeConceptCandidate = z.infer<typeof CreativeConceptCandidateSchema>;
+export type ConceptTournament = z.infer<typeof ConceptTournamentSchema>;
+export type ProfessionalDesignBrief = z.infer<typeof ProfessionalDesignBriefSchema>;
+export type ProfessionalCreativeScore = z.infer<typeof ProfessionalCreativeScoreSchema>;
+export type ProfessionalCritique = z.infer<typeof ProfessionalCritiqueSchema>;
+export type PairwiseCreativeComparison = z.infer<typeof PairwiseCreativeComparisonSchema>;
+export type ProfessionalCritiqueSet = z.infer<typeof ProfessionalCritiqueSetSchema>;
 export type ApprovalDecision = z.infer<typeof ApprovalDecisionSchema>;
 export type ProviderCapability = z.infer<typeof ProviderCapabilitySchema>;
 export type PublicationJob = z.infer<typeof PublicationJobSchema>;
@@ -914,6 +1346,18 @@ export type Experiment = z.infer<typeof ExperimentSchema>;
 export type Insight = z.infer<typeof InsightSchema>;
 export type WorkflowRun = z.infer<typeof WorkflowRunSchema>;
 export type OwnerCommand = z.infer<typeof OwnerCommandSchema>;
+export type RuleCategory = z.infer<typeof RuleCategorySchema>;
+export type RuleScope = z.infer<typeof RuleScopeSchema>;
+export type RuleStrength = z.infer<typeof RuleStrengthSchema>;
+export type RulePrecedence = z.infer<typeof RulePrecedenceSchema>;
+export type RuleDirectiveType = z.infer<typeof RuleDirectiveTypeSchema>;
+export type FeedbackFact = z.infer<typeof FeedbackFactSchema>;
+export type BrandRule = z.infer<typeof BrandRuleSchema>;
+export type Preference = z.infer<typeof PreferenceSchema>;
+export type CampaignLearning = z.infer<typeof CampaignLearningSchema>;
+export type PerformanceLearning = z.infer<typeof PerformanceLearningSchema>;
+export type SocialLearningRule = z.infer<typeof SocialLearningRuleSchema>;
+export type SocialLearningRuleSet = z.infer<typeof SocialLearningRuleSetSchema>;
 export type BrandEvidencePacket = z.infer<typeof BrandEvidencePacketSchema>;
 export type ResearchPacket = z.infer<typeof ResearchPacketSchema>;
 export type MonthlyPlan = z.infer<typeof MonthlyPlanSchema>;

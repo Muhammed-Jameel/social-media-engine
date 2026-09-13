@@ -1,0 +1,201 @@
+{
+  "id": "P08",
+  "version": "complete-58s",
+  "date": "2026-09-24",
+  "platforms": [
+    "Instagram Reels",
+    "Facebook Reels"
+  ],
+  "format": "reel",
+  "titleAr": "من الموقع إلى العميل.",
+  "titleEn": "Bunyan Pro / the complete workflow tour",
+  "audience": "Iraqi engineering offices, construction managers and clients",
+  "objective": "Show the breadth of real product workflows through ten readable feature groups",
+  "funnel": "consideration",
+  "durationSeconds": 58,
+  "status": "CREATIVE_REVIEW",
+  "userAccepted": "Energy and motion of the 18-second reference; approval does not extend to this new cut or publishing",
+  "opening": {
+    "start": 0,
+    "end": 3,
+    "copy": "من الموقع إلى العميل. / Bunyan Pro",
+    "screen": "client-project"
+  },
+  "chapters": [
+    {
+      "start": 3,
+      "end": 8,
+      "titleAr": "المشاريع والفريق",
+      "bodyAr": "مشاريعك، عملاؤك ومهندسوك في مكان واحد.",
+      "primaryScreen": "projects",
+      "secondaryScreen": "users",
+      "screenChangeAt": 5.666666666666666,
+      "captionHoldSeconds": 5,
+      "stableDeviceFromSeconds": 3.466666666666667,
+      "tone": "dark",
+      "coverage": "Project creation and assignment, roles, project list and CSV"
+    },
+    {
+      "start": 8,
+      "end": 13,
+      "titleAr": "المراحل والمهام",
+      "bodyAr": "حدّث التقدّم، وتابع ما بقي في كل مرحلة.",
+      "primaryScreen": "stage-detail",
+      "secondaryScreen": "stage-updated",
+      "screenChangeAt": 10.666666666666666,
+      "captionHoldSeconds": 5,
+      "stableDeviceFromSeconds": 8.466666666666667,
+      "tone": "light",
+      "coverage": "Stage status, dates, manual progress, checklists"
+    },
+    {
+      "start": 13,
+      "end": 18,
+      "titleAr": "التقارير اليومية",
+      "bodyAr": "أعمال اليوم، العمال، المواد وملاحظات التنفيذ.",
+      "primaryScreen": "daily-report",
+      "secondaryScreen": null,
+      "screenChangeAt": null,
+      "captionHoldSeconds": 5,
+      "stableDeviceFromSeconds": 13.466666666666667,
+      "tone": "dark",
+      "coverage": "Daily reports, worker count, materials, weather and issues"
+    },
+    {
+      "start": 18,
+      "end": 23,
+      "titleAr": "المشاكل والملاحظات",
+      "bodyAr": "سجّل الأولوية، واجمع النقاش في سياقه.",
+      "primaryScreen": "issues",
+      "secondaryScreen": "notes",
+      "screenChangeAt": 20.666666666666668,
+      "captionHoldSeconds": 5,
+      "stableDeviceFromSeconds": 18.466666666666665,
+      "tone": "white",
+      "coverage": "Issues, priority and contextual notes"
+    },
+    {
+      "start": 23,
+      "end": 28,
+      "titleAr": "الصور والملفات",
+      "bodyAr": "صور وفيديو ومستندات، مرتبطة بالمشروع والمرحلة.",
+      "primaryScreen": "media",
+      "secondaryScreen": "files",
+      "screenChangeAt": 25.666666666666668,
+      "captionHoldSeconds": 5,
+      "stableDeviceFromSeconds": 23.466666666666665,
+      "tone": "dark",
+      "coverage": "Media uploads, captions, project documents and visibility"
+    },
+    {
+      "start": 28,
+      "end": 33,
+      "titleAr": "المالية والدفعات",
+      "bodyAr": "مصروفات وفواتير، دفعات وطلبات دفع.",
+      "primaryScreen": "finance",
+      "secondaryScreen": "payment-request",
+      "screenChangeAt": 30.666666666666668,
+      "captionHoldSeconds": 5,
+      "stableDeviceFromSeconds": 28.466666666666665,
+      "tone": "light",
+      "coverage": "Expenses, invoices, deposits, balance, budget and requests"
+    },
+    {
+      "start": 33,
+      "end": 38,
+      "titleAr": "طلبات التغيير",
+      "bodyAr": "راجع الطلب وتأثيره على التكلفة والمدة.",
+      "primaryScreen": "changes",
+      "secondaryScreen": null,
+      "screenChangeAt": null,
+      "captionHoldSeconds": 5,
+      "stableDeviceFromSeconds": 33.46666666666667,
+      "tone": "dark",
+      "coverage": "Client request and admin response with manual cost/time impact"
+    },
+    {
+      "start": 38,
+      "end": 43,
+      "titleAr": "بوابة العميل",
+      "bodyAr": "يتابع المراحل، يعلّق، ويسجّل موافقته.",
+      "primaryScreen": "client-stage",
+      "secondaryScreen": "client-approval",
+      "screenChangeAt": 40.666666666666664,
+      "captionHoldSeconds": 5,
+      "stableDeviceFromSeconds": 38.46666666666667,
+      "tone": "white",
+      "coverage": "Client stage visibility, comments and completion acknowledgment"
+    },
+    {
+      "start": 43,
+      "end": 48,
+      "titleAr": "الإشعارات والتصدير",
+      "bodyAr": "تحديثات داخل التطبيق وتقارير قابلة للتصدير.",
+      "primaryScreen": "notifications",
+      "secondaryScreen": "report-export",
+      "screenChangeAt": 45.666666666666664,
+      "captionHoldSeconds": 5,
+      "stableDeviceFromSeconds": 43.46666666666667,
+      "tone": "dark",
+      "coverage": "In-app notifications and project PDF report UI"
+    },
+    {
+      "start": 48,
+      "end": 53,
+      "titleAr": "المعرض والإعدادات",
+      "bodyAr": "اعرض أعمالك، واضبط بيانات المكتب والعملة.",
+      "primaryScreen": "portfolio",
+      "secondaryScreen": "settings",
+      "screenChangeAt": 50.666666666666664,
+      "captionHoldSeconds": 5,
+      "stableDeviceFromSeconds": 48.46666666666667,
+      "tone": "light",
+      "coverage": "Portfolio, company profile, currency and preferences"
+    }
+  ],
+  "ending": {
+    "start": 53,
+    "end": 58,
+    "copy": "كل تحديث، في مكانه. / Bunyan Pro / اطلب عرضًا عمليًا لفريقك.",
+    "screen": "client-project"
+  },
+  "caption": "من الموقع إلى المكتب، ومن المكتب إلى العميل: هذه جولة في بنيان برو.\n\nداخل التطبيق تستطيع متابعة:\n- المشاريع والعملاء والمهندسين، وإسناد المسؤوليات.\n- المراحل والمواعيد ونسب التقدّم وقوائم المهام.\n- تقارير العمل اليومية والعمال والمواد وملاحظات التنفيذ.\n- المشاكل وأولوياتها، والملاحظات المرتبطة بالمشروع والمرحلة.\n- صور الموقع وفيديوهاته، وملفات المشروع والمستندات.\n- المصروفات والفواتير والدفعات والأرصدة وطلبات الدفع.\n- طلبات التغيير وردّ الإدارة وتأثيرها المسجّل على التكلفة والمدة.\n- متابعة العميل وتعليقاته وتسجيل موافقته على المرحلة المكتملة.\n- الإشعارات داخل التطبيق وتقارير المشروع القابلة للتصدير.\n- معرض الأعمال وبيانات المكتب والعملة وتفضيلات العرض.\n\nالموافقة في التطبيق تسجّل موافقة العميل؛ لا تحلّ محل الفحص الهندسي. الرصيد هنا فرق الدفعات والمصروفات المسجّلة، وليس صافي الربح.\n\nتريد أن ترى كيف يناسب مسار عمل مكتبك؟ راسلنا لترتيب عرض عملي لفريقك.\n\nالواجهة فعلية، والبيانات والصور توضيحية وليست نتائج أو أعمال مشروع عميل. الجولة لا تعرض معالجة دفعات بنكية أو وصول إشعارات حية بين أجهزة. تفاصيل كل شاشة ومصادر الصور محفوظة في ملف الإنتاج.",
+  "cta": "اطلب عرضًا عمليًا لفريقك.",
+  "production": {
+    "method": "Actual browser screenshots inside a licensed iPhone mockup, Remotion motion/typography and edit-specific licensed music",
+    "sourceViewport": [
+      390,
+      748
+    ],
+    "phoneViewport": [
+      390,
+      830
+    ],
+    "sourceTransform": "Uniform scale only; source screenshot is contained, no crop/stretch; 54px top and28px bottom device chrome",
+    "fonts": [
+      "Ghroob Arabic ITF",
+      "Dh Ranclo"
+    ],
+    "captureEnvironment": "Isolated local fixture-backed copy of the current product UI",
+    "assets": "capture-provenance.json",
+    "featureSources": "FEATURE-COVERAGE.md",
+    "musicSources": "audio/AUDIO-HANDOFF.md",
+    "mockup": "https://github.com/picturepan2/devices.css",
+    "mockupLicense": "https://github.com/picturepan2/devices.css/blob/master/LICENSE",
+    "motionSource": "../../remotion/src/films/P08Complete.tsx",
+    "runtime": "Remotion4.0.523",
+    "audio": "p08-complete-music.wav",
+    "narration": null
+  },
+  "adaptations": {
+    "TikTok": "Use same vertical master; replace platform caption with first two paragraphs and relevant feature lines. No TikTok-native UI or extra overlays inside the phone.",
+    "LinkedIn": "Use native vertical video with a short operational explanation and invite an office workflow discussion. Do not describe this as every field/setting demonstrated.",
+    "Stories": "Use a native preview linked to the full58second film; avoid cutting individual feature sections into shorter-than-five-second fragments."
+  },
+  "limitations": [
+    "Local demo data, not backend or access-control certification",
+    "Native push delivery, share-token RPC and payment processing not demonstrated",
+    "Account/settings details are inventory context; this is a feature overview, not a tutorial of every setting",
+    "Audio signalQA is not a human listening review"
+  ]
+}

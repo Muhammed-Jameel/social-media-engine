@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "1.0.0",
+  "iteration": 41,
+  "generatedAt": "2026-08-30T07:12:28.589Z",
+  "status": "PIXEL_REVIEW_REQUIRED",
+  "publicationEligible": false,
+  "candidate": {
+    "id": "22r-ar-decision-time-signal-to-decision-corridor",
+    "title": "Arabic signal-to-decision temporal corridor rebuild",
+    "language": "ar",
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "mobileReview": {
+      "width": 324,
+      "height": 405
+    },
+    "exactCopy": [
+      "مقياس تشغيلي · ٢٢",
+      "قِس زمن القرار",
+      "لا عدد النقرات",
+      "ابدأ من ظهور الإشارة، وانتهِ عند اتخاذ القرار.",
+      "إشارة",
+      "قرار",
+      "زمن القرار"
+    ],
+    "file": "22r-ar-decision-time-signal-to-decision-corridor.png",
+    "sha256": "e5dc7c25cc12eab709f3e9a7f1a462f42727865fd45580d64ee5b9da43a23504",
+    "byteLength": 73453,
+    "mobileFile": "mobile/22r-ar-decision-time-signal-to-decision-corridor.png",
+    "mobileSha256": "ba8df8481cfc143af34b7962504e099f56b9d3c4a7e0b2b1f454d5c00541d6c6",
+    "sourceImage": null,
+    "sourceImageSha256": null,
+    "sourcePromptSummary": "Native Arabic perspective corridor using live Ghroob text and original SVG geometry: a small signal at the vanishing point travels through expanding frames to a visible decision boundary, making elapsed decision time spatial rather than a basic timeline; no stopwatch, chart, dashboard, value, external asset, generated image, or professional reference pixel.",
+    "rawProfessionalReferencePixelsSuppliedToGeneration": false,
+    "fontEvidence": {
+      "family": "Ghroob Arabic ITF",
+      "regularSha256": "4dd0c3f2622fc0cfb2802ede862a24877218f78046cf0830ab6290feb68d3e41",
+      "boldSha256": "d853dc21fe5a274d5a9361d720db94ad60a8fcceb114663118b6f9cc2f9b5d5b"
+    },
+    "technicalPreflight": {
+      "documentLanguage": "ar",
+      "documentDirection": "rtl",
+      "fontLoadedRegular": true,
+      "fontLoadedBold": true,
+      "exactCopyPresent": true,
+      "copyRegionWithinCanvas": true,
+      "copyRegionBounds": {
+        "x": 68,
+        "y": 68,
+        "width": 944,
+        "height": 1130
+      }
+    }
+  }
+}

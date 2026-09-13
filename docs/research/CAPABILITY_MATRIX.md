@@ -11,6 +11,20 @@
 - YouTube stays optional until account need and audit readiness are confirmed.
 - Every adapter exposes granular capability state and never maps “not configured” to “supported in production.”
 
+## Postiz gateway
+
+Account setup recheck — 2026-09-08: X OAuth succeeded for `@aurendor_io`; no live post was tested, and its developer console showed zero credits. LinkedIn organization OAuth completed after the owner obtained Advertising API access, and Postiz saved the Aurendor Page. TikTok sandbox is saved for target `aurendor.io`, with only `user.info.basic` and `video.upload`; private credentials are installed. A pinned, hash-guarded upload-only Postiz patch prevents upstream's broad-scope request and rejects Direct Post in both backend and worker. Its 11 contract checks and 10 existing gateway/executor tests passed. Live sandbox OAuth and a two-photo inbox handoff succeeded on Postiz's side; owner mobile confirmation remains pending. Production upload access is not yet approved. See [setup evidence](../setup/POSTIZ.md). These are configuration/sandbox observations, not production capability grants.
+
+| Area | Verified capability | Engine behavior |
+|---|---|---|
+| Deployment | Postiz supports self-hosting and exposes a Public API | Pin the container version and bind the local instance to loopback by default |
+| Provider coverage | Postiz integrations cover Instagram, Facebook, LinkedIn, TikTok, and X | Use one server-side gateway while retaining platform-specific copy and settings |
+| Public API | Integration listing, media upload, and post creation are documented | Validate every response, keep the API key server-side, and store the exact request before dispatch |
+| Scheduling | The post-create request supports draft, schedule, and immediate modes | Default to draft; live modes require independent AURENDOR gates |
+| Policy | Postiz cannot remove provider app review, scopes, rate limits, or TikTok audit requirements | Keep provider restrictions explicit and require supervised account-level validation |
+
+Official sources: [Self-hosting](https://docs.postiz.com/installation/docker-compose), [Public API](https://docs.postiz.com/public-api/introduction), [Create posts](https://docs.postiz.com/public-api/posts/create), [Upload](https://docs.postiz.com/public-api/uploads/upload-file), [Integrations](https://docs.postiz.com/public-api/integrations/list).
+
 ## OpenAI
 
 | Capability | Current finding | Engine policy |
@@ -80,18 +94,22 @@ Official sources: [OAuth](https://learn.microsoft.com/en-us/linkedin/shared/auth
 
 ## TikTok
 
+**Sandbox canary — 2026-09-08:** Aurendor OAuth is connected. One owner-authorized two-photo `MEDIA_UPLOAD` test completed through Postiz at 06:07:21 UTC, with an inbox release URL and no error. This verifies the sandbox photo handoff on Postiz's side; owner mobile-inbox confirmation is pending. Postiz's `PUBLISHED` label is not public-publication evidence for `UPLOAD`. Video, production review, and unattended public posting remain unverified/disabled. [Audit record](../operations/TIKTOK-SANDBOX-CANARY-20260908.json).
+
 | Area | Official capability | Engine behavior |
 |---|---|---|
-| Auth | User OAuth; `video.publish`, `video.upload`, and related approved scopes | Connect only for user-authorized draft handoff |
+| Auth | Upload uses `video.upload`; basic identity uses `user.info.basic` | Request only these two sandbox scopes; no Direct Post permission |
 | Direct Post | Video/photo direct post with current creator info, editable metadata, and explicit consent | Disabled for this internal utility |
 | Unaudited state | Posts are `SELF_ONLY`; maximum five active posting users in 24 hours | Never represent as public automation |
 | Audit policy | Client must target a wide creator audience; internal/private account-management uploader is explicitly not acceptable | Hard capability state `UNAVAILABLE_POLICY` for unattended public post |
 | Draft upload | Uploads content to TikTok for creator completion | Supported manual handoff route |
 | Scheduling | No future-time parameter documented | Notification/manual completion |
-| Analytics | Owned video counts via creator/video APIs | Limited normalized metrics where authorized |
+| Analytics | Owned video counts require additional scopes | Unavailable in this basic/upload-only sandbox; return no data |
 | Comments | General comment bodies are not part of ordinary creator management; Research API is separately restricted | Mark unsupported for this product |
 
 Official sources: [Content Posting get started](https://developers.tiktok.com/docs/en/content-posting-api-get-started), [Direct Post](https://developers.tiktok.com/docs/en/content-posting-api-reference-direct-post), [Upload draft](https://developers.tiktok.com/docs/en/content-posting-api-get-started-upload-content), [Content Sharing Guidelines](https://developers.tiktok.com/doc/content-sharing-guidelines/), [Video query](https://developers.tiktok.com/docs/en/tiktok-api-v2-video-query).
+
+Upload-only implementation review (2026-09-08): [User info field scopes](https://developers.tiktok.com/doc/tiktok-api-v2-get-user-info/), [media transfer requirements](https://developers.tiktok.com/doc/content-posting-api-media-transfer-guide/), and [Postiz TikTok setup](https://docs.postiz.com/self-host/providers/tiktok). Video uploads use `FILE_UPLOAD` in deployed v2.23.0; photo URLs must belong to the verified media domain. Inbox completion still requires the user to review and post in TikTok. No typed AURENDOR contract change: existing `UPLOAD` manual-handoff semantics remain in force.
 
 ## YouTube (optional)
 
@@ -108,4 +126,15 @@ Official sources: [OAuth](https://developers.google.com/youtube/v3/guides/auth/s
 ## Capability-state vocabulary
 
 `AVAILABLE`, `UNAVAILABLE_PERMISSION`, `UNAVAILABLE_PLAN`, `UNAVAILABLE_POLICY`, `PREVIEW`, `MANUAL_HANDOFF_REQUIRED`, and `NOT_CONFIGURED`. These states are stored by capability, not only by provider.
+# Five-platform campaign package — 2026-09-08
 
+The new campaign bridge requires an exact owner-approved variant for Instagram, Facebook, TikTok, X and LinkedIn at one shared schedule time. Partial batches and post-approval caption/account/media changes are blocked. Each native media set is uploaded independently (cached by verified content hash). Provider acknowledgements are not public-delivery confirmations.
+
+- LinkedIn document-style image carousel uses `post_as_images_carousel: true` plus `carousel_name`; false is a collage. Sources: https://docs.postiz.com/public-api/providers/linkedin and https://docs.postiz.com/public-api/providers/linkedin-page (checked 2026-09-08).
+- Instagram single-video Reel delivery uses `post_type: post`; Story delivery is separate. Source: https://docs.postiz.com/public-api/providers/instagram (checked 2026-09-08).
+- The campaign bridge explicitly keeps TikTok in UPLOAD mode. Sandbox inbox handoff was tested separately; public direct delivery is not claimed. Interactive Stories remain a native handoff.
+- Platform dimension targets are editorial composition choices, not a replacement for current account/API capability checks. No live all-five canary has been performed for this new bridge.
+
+## Live learning adapter — 10 September2026
+
+Added schema-validated GET /posts (UTC startDate/endDate) and GET /analytics/post/{postId}?date=7. Read-only deployed probes returned real Instagram and LinkedIn data; Facebook returned no values for tested posts. Preserve unavailable metrics as null, unknown labels/series raw, and actual timestamps. No automatic extrapolation of provider coverage. TikTok inbox URLs are excluded from public-post totals; existing X ERROR requires diagnosis. Source and operating detail: docs/operations/SOCIAL_PUBLISHING_AND_LEARNING.md. This is deployed read evidence, not a successful all-five publishing canary.

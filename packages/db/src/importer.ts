@@ -5,7 +5,7 @@ import { basename, extname, join, relative, resolve } from "node:path";
 import { promisify } from "node:util";
 import type { DatabaseClient } from "./client";
 import { projectRoot } from "./client";
-import { AURENDOR_ORGANIZATION_ID, SEPTEMBER_STRATEGY_ID } from "./ids";
+import { AURENDOR_ORGANIZATION_ID, getSourceRootFromEnvironment, SEPTEMBER_STRATEGY_ID } from "./ids";
 
 const runFile = promisify(execFile);
 
@@ -154,11 +154,31 @@ function qaFlagsFor(id: string): string[] {
   return ["Imported asset set was not exhaustively visually reviewed"];
 }
 
+async function resolveQueueRoot(sourceRoot: string): Promise<string> {
+  const candidates = [
+    join(sourceRoot, "marketing", "content-engine", "READY-TO-PUBLISH"),
+    join(sourceRoot, "content-engine", "READY-TO-PUBLISH"),
+  ];
+
+  for (const candidate of candidates) {
+    try {
+      if ((await stat(candidate)).isDirectory()) return candidate;
+    } catch (error) {
+      if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error;
+    }
+  }
+
+  throw new Error(
+    `Unable to locate the historical content queue. Checked: ${candidates.join(", ")}. ` +
+      "Set SOCIAL_MEDIA_SOURCE_ROOT (or SOCIAL_ENGINE_SOURCE_ROOT / AURENDOR_SOURCE_ROOT) to the repository root if it lives elsewhere.",
+  );
+}
+
 export async function importExistingContent(
   database: DatabaseClient,
-  sourceRoot = resolve(process.env.AURENDOR_SOURCE_ROOT ?? join(projectRoot(), "..")),
+  sourceRoot = resolve(getSourceRootFromEnvironment() ?? join(projectRoot(), "..", "..")),
 ): Promise<ImportSummary> {
-  const queueRoot = join(sourceRoot, "content-engine", "READY-TO-PUBLISH");
+  const queueRoot = await resolveQueueRoot(sourceRoot);
   const folders = (await readdir(queueRoot, { withFileTypes: true }))
     .filter((entry) => entry.isDirectory())
     .map((entry) => join(queueRoot, entry.name))

@@ -2,6 +2,8 @@ export * from "./client";
 export * from "./brand-index";
 export * from "./ids";
 export * from "./importer";
+export * from "./plan-sync";
+export * from "./postiz";
 export * from "./repository";
 export * from "./seed";
 export * from "./webhooks";

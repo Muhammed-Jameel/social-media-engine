@@ -1,9 +1,10 @@
 import { createHash } from "node:crypto";
 import { readdir, readFile, stat, writeFile, mkdir } from "node:fs/promises";
 import { extname, join, relative, resolve, sep } from "node:path";
+import { getSourceRootFromEnvironment } from "../packages/db/src/ids";
 
 const projectRoot = resolve(import.meta.dirname, "..");
-const sourceRoot = resolve(process.env.AURENDOR_SOURCE_ROOT ?? join(projectRoot, ".."));
+const sourceRoot = resolve(getSourceRootFromEnvironment() ?? join(projectRoot, "..", ".."));
 const outputPath = join(projectRoot, "data", "brand", "source-manifest.json");
 
 const ignoredSegments = new Set([

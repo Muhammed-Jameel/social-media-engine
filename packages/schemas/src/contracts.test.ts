@@ -1,9 +1,19 @@
 import { describe, expect, it } from "vitest";
-import { CritiqueSchema, PublicationPlanSchema } from "./index";
+import { CritiqueSchema, PublicationPlanSchema, SocialLearningRuleSchema } from "./index";
 
 const hashA = "a".repeat(64);
 const hashB = "b".repeat(64);
 const hashC = "c".repeat(64);
+const ruleBase = {
+  ruleId: "c57b9b6f-ef2b-4a45-b7c8-6eec5b8f3f9f",
+  organizationId: "8a4dfc20-58e5-4a3a-9f9d-9fb8de8ec7d9",
+  brandVersion: "brand-final-2026-1",
+  scope: { scopeLevel: "global" as const },
+  key: "fact-copy-length",
+  precedence: 40,
+  strength: "MEDIUM" as const,
+  metadata: { source: "MODEL" as const, reason: "Observed improved performance in September benchmark reviews." },
+};
 
 const nativeBase = {
   schemaVersion: "1.0.0" as const,
@@ -156,5 +166,31 @@ describe("native safety contracts", () => {
       },
     };
     expect(PublicationPlanSchema.safeParse(unsafe).success).toBe(false);
+  });
+
+  it("accepts a valid learning fact rule", () => {
+    expect(
+      SocialLearningRuleSchema.safeParse({
+        ...ruleBase,
+        category: "fact",
+        fact: "Owner requires concise one-sentence captions for Arabic reels.",
+        value: "concise-caption-required",
+        confidence: 0.84,
+        supportingStatementIds: ["S-1", "S-2"],
+      }).success,
+    ).toBe(true);
+  });
+
+  it("rejects a malformed learning preference payload", () => {
+    expect(
+      SocialLearningRuleSchema.safeParse({
+        ...ruleBase,
+        category: "preference",
+        preferenceArea: "visual_style",
+        value: { contrast: "high" },
+        persistenceWindowDays: -1,
+        decayRate: 1.2,
+      }).success,
+    ).toBe(false);
   });
 });

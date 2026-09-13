@@ -1,33 +1,31 @@
-import { ArrowRight, Beaker, Info } from "lucide-react";
-import Link from "next/link";
-import { getRepository } from "@aurendor/db/runtime";
-import { AnalyticsChart } from "@/components/analytics-chart";
-import { MetricCard } from "@/components/metric-card";
-import { PageHeader } from "@/components/page-header";
-import { Panel } from "@/components/panel";
-import { compactNumber, percent } from "@/lib/format";
-
-export const metadata = { title: "Analytics" };
-
-export default async function AnalyticsPage() {
-  const analytics = await (await getRepository()).getAnalytics();
-  return (
-    <>
-      <PageHeader eyebrow="Analytics & learning" title="Evidence before optimization." description="Rates are normalized, cohorts are comparable, and synthetic demonstrations remain visibly separated from production truth." actions={<span className="evidence-label"><Beaker size={14} /> Synthetic demo</span>} />
-      <div className="evidence-callout"><Info size={17} /><div><strong>{analytics.window}</strong><span>These values test the analysis surface. They must not be used as proof of AURENDOR performance.</span></div></div>
-      <div className="metric-grid">
-        {analytics.primaryMetrics.map((metric, index) => <MetricCard key={metric.label} label={metric.label} value={metric.unit === "rate" ? percent(metric.value) : compactNumber(metric.value)} note={metric.unit} delta={metric.delta} accent={index === 0} />)}
-      </div>
-      <div className="analytics-grid">
-        <Panel title="Qualified reach" description="Unique people matching the intended audience signal · weekly · synthetic"><AnalyticsChart series={analytics.series} /></Panel>
-        <Panel title="Learning notes" description="Directional observations with explicit next actions.">
-          <div className="analytics-insights">{analytics.insights.slice(0, 4).map((insight, index) => <article key={insight.id}><span>{String(index + 1).padStart(2, "0")}</span><div><p className="meta-line">{insight.confidenceNote}</p><h3>{insight.statement}</h3><p>{insight.nextAction}</p></div></article>)}</div>
-        </Panel>
-      </div>
-      <Panel title="Creative cohorts" description="Format-level rates; no winner is declared without enough comparable posts.">
-        <div className="calendar-table-wrap"><table className="data-table"><thead><tr><th>Cohort</th><th>Posts</th><th>Save rate</th><th>Share rate</th><th>Evidence</th></tr></thead><tbody>{analytics.cohorts.map((cohort) => <tr key={cohort.label}><td><strong>{cohort.label}</strong></td><td>{cohort.posts}</td><td>{percent(cohort.saveRate)}</td><td>{percent(cohort.shareRate)}</td><td>{cohort.confidence}</td></tr>)}</tbody></table></div>
-        <div className="panel-footer"><p>Next optimization decision starts only after production metrics satisfy the cohort minimum.</p><Link href="/runs" className="text-link">Inspect learning runs <ArrowRight size={14} /></Link></div>
-      </Panel>
-    </>
-  );
+import Link from 'next/link';
+import {projectRoot} from '@aurendor/db/runtime';
+import {readLearning,timingReadout,basicEngagement,engagementPerReach,type TrackedPost} from '@aurendor/engine';
+import {PageHeader} from '@/components/page-header';
+import {Panel} from '@/components/panel';
+import {MetricCard} from '@/components/metric-card';
+export const metadata={title:'Live social analytics'};
+const show=(v:number|null|undefined)=>v==null?'Unavailable':v.toLocaleString('en-US',{maximumFractionDigits:2});
+const date=(v:string|null)=>v?new Date(v).toLocaleString('en-GB',{timeZone:'Asia/Baghdad',dateStyle:'medium',timeStyle:'short'}):'Not yet';
+async function loadLiveLearning(){const state=await readLearning(projectRoot());return {state,fresh:!!state.updatedAt&&Date.now()-Date.parse(state.updatedAt)<2*3600000};}
+function status(p:TrackedPost){if(!p.publicConfirmed)return p.platform==='tiktok'&&p.state==='PUBLISHED'?'Public completion unverified':p.state;if(!p.nextCheckAt)return 'Week complete / checkpoint gaps retained';return 'Monitoring first week';}
+export default async function AnalyticsPage({searchParams}:{searchParams:Promise<{platform?:string;post?:string;checkpoint?:string}>}){
+ const q=await searchParams;const {state:s,fresh}=await loadLiveLearning();const posts=s.posts.filter(p=>(!q.platform||p.platform===q.platform)&&(!q.post||p.id===q.post));const checkpoint=[24,72,168].includes(Number(q.checkpoint))?Number(q.checkpoint):168;const cohorts=timingReadout(posts,checkpoint);const observed=s.posts.filter(p=>p.observations.some(o=>o.raw.length));
+ return <>
+ <PageHeader eyebrow="Live Postiz data · first-week learning" title="What happened after publication?" description="Real provider observations, with unavailable metrics kept distinct from zero. Compare each platform and format at the same post age." actions={<a className="button button-secondary" href="/api/social-learning/export">Download observations CSV</a>}/>
+ <div className="evidence-callout"><div><strong>{fresh?'Live collection current':'Collection needs refresh'} · {date(s.updatedAt)} Baghdad</strong><p>{s.syncError||'Postiz public links and metric responses are recorded locally. Scheduled acceptance and TikTok inbox handoffs are not counted as public delivery.'}</p><p>Checks: 2 hours, then daily through day 7. Missed checkpoints stay missing; the next run never invents earlier counts.</p></div></div>
+ <div className="metric-grid"><MetricCard label="Public posts discovered" value={String(s.posts.filter(p=>p.publicConfirmed).length)} note="Provider state + public URL"/><MetricCard label="Posts returning metrics" value={String(observed.length)} note="At least one real response"/><MetricCard label="Connected channels" value={String(s.channels.filter(c=>!c.disabled).length)} note="Connection does not guarantee analytics access"/><MetricCard label="Observations stored" value={String(s.posts.reduce((n,p)=>n+p.observations.length,0))} note="Timestamped; cumulative values never added across checks"/></div>
+ <Panel title="Post performance" description="Every row is one platform post. Views, reach and impressions retain the provider's definitions; unavailable does not mean zero.">
+ <form className="filter-bar" method="get"><label>Platform <select name="platform" defaultValue={q.platform||''}><option value="">All platforms</option>{['instagram','facebook','linkedin','x','tiktok'].map(p=><option key={p}>{p}</option>)}</select></label><button className="button button-secondary">Filter</button><Link href="/analytics">Reset</Link></form>
+ {!posts.length?<p>No posts discovered yet. The collector runs independently of page visits.</p>:<div className="calendar-table-wrap"><table className="data-table"><thead><tr><th>Post / channel</th><th>Publication / status</th><th>Views</th><th>Reach</th><th>Likes</th><th>Comments</th><th>Shares</th><th>Saves</th><th>Next check</th></tr></thead><tbody>{posts.map(p=>{const o=[...p.observations].reverse().find(o=>!o.error&&o.raw.length);return <tr key={p.id}><td><Link href={'/analytics?post='+encodeURIComponent(p.id)}>{p.contentId||p.title}</Link><p>{p.platform}</p></td><td>{date(p.publishedAt)}<p>{status(p)}</p></td><td>{show(o?.metrics.views)}</td><td>{show(o?.metrics.reach)}</td><td>{show(o?.metrics.likes)}</td><td>{show(o?.metrics.comments)}</td><td>{show(o?.metrics.shares)}</td><td>{show(o?.metrics.saves)}</td><td>{date(p.nextCheckAt)}{p.lastError?<p>{p.lastError}</p>:null}</td></tr>})}</tbody></table></div>}
+ </Panel>
+ <Panel title="Posting-time comparison" description="Exploratory timing test in Asia/Baghdad. Morning, afternoon and evening rotate across pillars. This is not a randomized audience experiment and cannot isolate timing from topic quality.">
+ <form method="get" className="filter-bar"><input type="hidden" name="platform" value={q.platform||''}/><label>Equal-age comparison <select name="checkpoint" defaultValue={checkpoint}><option value="24">Day 1</option><option value="72">Day 3</option><option value="168">Day 7</option></select></label><button className="button button-secondary">Compare</button></form>
+ {!cohorts.length?<p>No experiment posts have reached this checkpoint with usable data. No winning time is declared.</p>:<div className="calendar-table-wrap"><table className="data-table"><thead><tr><th>Platform / format</th><th>Time band</th><th>Posts</th><th>Mean views</th><th>Likes + comments / reach</th><th>Evidence</th></tr></thead><tbody>{cohorts.map(c=><tr key={[c.platform,c.format,c.slot].join(':')}><td>{c.platform} / {c.format}</td><td>{c.slot}</td><td>{c.posts}</td><td>{show(c.meanViews)} · {c.withViews} reporting</td><td>{c.engagementRate===null?'Unavailable':(c.engagementRate*100).toFixed(2)+'%'} · {c.withReach} reporting</td><td>{c.evidence}<p>{c.decision}</p></td></tr>)}</tbody></table></div>}
+ <p>At least five comparable posts per time band are required even for a directional read. Use views for discovery, saves/shares for usefulness, and verified inquiries for commercial value. Inquiries and watch-time data are unavailable until explicitly connected; they are never inferred from likes.</p>
+ </Panel>
+ <Panel title="Evidence and first-week history" description="Raw labels and timestamps remain inspectable. Older snapshots are retained when a provider errors or temporarily returns nothing.">
+ {posts.map(p=><details key={p.id}><summary>{p.contentId||p.title} · {p.platform} · {p.observations.length} observations</summary><p>Postiz ID: {p.id} · Reported publication time: {date(p.publishedAt)}{p.publicConfirmed&&p.releaseURL?<> · <a href={p.releaseURL} target="_blank" rel="noreferrer">Open published post</a></>:null}</p><p>Period metrics are not converted to lifetime metrics when their series semantics are unknown.</p>{p.observations.map((o,n)=><div key={n} style={{padding:'12px 0',borderBottom:'1px solid var(--border)'}}><strong>{date(o.observedAt)} · age {o.ageHours.toFixed(1)} hours · {o.checkpointHours===null?'Ad hoc baseline':o.checkpointHours+'h checkpoint'}</strong><p>Likes + comments: {show(basicEngagement(o.metrics))} · per reach: {engagementPerReach(o.metrics)===null?'Unavailable':(engagementPerReach(o.metrics)!*100).toFixed(2)+'%'} {o.error}</p>{o.ambiguous.length?<p>Series retained without aggregation: {o.ambiguous.join(', ')}</p>:null}<details><summary>Original provider metric response</summary><pre style={{whiteSpace:'pre-wrap',overflowWrap:'anywhere'}}>{JSON.stringify(o.raw,null,2)}</pre></details></div>)}</details>)}
+ </Panel><Panel title="Collector runs" description="Collection is a local scheduled task; Postiz's accepted publishing schedules run on its server.">{s.runs.slice(-5).reverse().map((r,i)=><p key={i}>{date(r.at)} · {r.status} · {r.details}</p>)}</Panel>
+ </>;
 }

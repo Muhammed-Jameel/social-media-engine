@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "1.0.0",
+  "iteration": 36,
+  "generatedAt": "2026-08-30T07:12:28.139Z",
+  "status": "PIXEL_REVIEW_REQUIRED",
+  "publicationEligible": false,
+  "candidate": {
+    "id": "30r-ar-name-costly-decision-time-built-from-decisions",
+    "title": "Arabic recurring-decision semantic typography rebuild",
+    "language": "ar",
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "mobileReview": {
+      "width": 324,
+      "height": 405
+    },
+    "exactCopy": [
+      "سؤال تشغيلي · ٣٠",
+      "أي قرار يستهلك",
+      "وقت فريقك كل أسبوع؟",
+      "سمِّه بكلمتين."
+    ],
+    "file": "30r-ar-name-costly-decision-time-built-from-decisions.png",
+    "sha256": "99f96eeed3e0c57189585f1cf0b7b3f74d4b1702c51a4a494ac04c0cd0459bc4",
+    "byteLength": 80083,
+    "mobileFile": "mobile/30r-ar-name-costly-decision-time-built-from-decisions.png",
+    "mobileSha256": "02a7fe8baf9b10a52190071fe6db8db97ac33649e76f77e5ecdcd4cabe1986a8",
+    "sourceImage": null,
+    "sourceImageSha256": null,
+    "sourcePromptSummary": "Native semantic Arabic typography rebuild built from live Ghroob text, canonical logo, and original SVG clipping: the word time is constructed from repeated decision words; no blank form line, clock, calendar, poll UI, external asset, generated image, or professional reference pixel.",
+    "rawProfessionalReferencePixelsSuppliedToGeneration": false,
+    "fontEvidence": {
+      "family": "Ghroob Arabic ITF",
+      "regularSha256": "4dd0c3f2622fc0cfb2802ede862a24877218f78046cf0830ab6290feb68d3e41",
+      "boldSha256": "d853dc21fe5a274d5a9361d720db94ad60a8fcceb114663118b6f9cc2f9b5d5b"
+    },
+    "technicalPreflight": {
+      "documentLanguage": "ar",
+      "documentDirection": "rtl",
+      "fontLoadedRegular": true,
+      "fontLoadedBold": true,
+      "exactCopyPresent": true,
+      "copyRegionWithinCanvas": true,
+      "copyRegionBounds": {
+        "x": 68,
+        "y": 68,
+        "width": 944,
+        "height": 1130
+      }
+    }
+  }
+}

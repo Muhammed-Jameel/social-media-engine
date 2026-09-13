@@ -1,0 +1,1395 @@
+export type SeptemberFormat = "carousel" | "reel";
+
+export type SeptemberCreativeMode =
+  | "typographic"
+  | "workflow_diagram"
+  | "product_ui"
+  | "object_led"
+  | "data_evidence"
+  | "mixed_media";
+
+export type SeptemberContentTrack =
+  | "brand_intro"
+  | "ai_automation_service"
+  | "bunyan_pro"
+  | "value_first";
+
+export type ProductionStatus =
+  | "PLAN_COVER_ONLY"
+  | "HIGGSFIELD_AUTH_REQUIRED"
+  | "READY_FOR_ASSET_PRODUCTION"
+  | "READY_FOR_OWNER_REVIEW";
+
+export interface CarouselFrame {
+  sequence: number;
+  role: "hook" | "story" | "lesson" | "proof" | "cta";
+  title: string;
+  body?: string;
+  assetRefs: string[];
+  altText: string;
+  assetUrl?: string;
+}
+
+export interface SupportingStoryFrame {
+  sequence: number;
+  timing: "before_post" | "after_post";
+  role: "interaction" | "post_cta";
+  exactText: string;
+  interaction: {
+    type: "poll" | "question" | "quiz" | "emoji_slider" | "open_post";
+    prompt: string;
+    options?: string[];
+  };
+  targetPostKey: string;
+  publishOffsetMinutes: number;
+  assetUrl?: string;
+}
+
+export interface CastingPlan {
+  humansPresent: boolean;
+  justification: string;
+  narrativeRoles: string[];
+  policy: {
+    peopleAreNarrativeOnly: true;
+    womenAsAttentionDevice: "FORBIDDEN";
+    objectifyingTreatment: "FORBIDDEN";
+    genderInferenceFromPixels: "FORBIDDEN";
+  };
+  reviewStatus: "DECLARED_NO_HUMANS" | "HUMAN_REVIEW_REQUIRED";
+}
+
+export type ReelSourceType =
+  | "higgsfield_generated"
+  | "screen_recording"
+  | "product_screenshot"
+  | "data_graphic"
+  | "brand_graphic"
+  | "title_card";
+
+export interface ReelClipPlan {
+  id: string;
+  sequence: number;
+  narrativeBeat: string;
+  durationMs: number;
+  sourceType: ReelSourceType;
+  sourceAssetRefs: string[];
+  promptOrDirection: string;
+  overlayText: string;
+  status: "PLANNED" | "GENERATED" | "REJECTED" | "VALIDATED";
+  technicalValidation: "PENDING" | "PASS" | "FAIL";
+  creativeValidation: "PENDING" | "PASS" | "FAIL";
+}
+
+export interface ReelProductionPlan {
+  provider: "higgsfield";
+  connectionState: "AUTH_REQUIRED" | "CONNECTED";
+  canvas: { width: 1080; height: 1920; ratio: "9:16" };
+  targetDurationMs: number;
+  fps: 30;
+  clips: ReelClipPlan[];
+  assemblyRule: string;
+  finalValidation: {
+    state: "BLOCKED" | "PENDING" | "PASS";
+    requiredChecks: string[];
+  };
+}
+
+export interface SeptemberCreativePost {
+  sequence: number;
+  key: string;
+  publishAt: string;
+  title: string;
+  format: SeptemberFormat;
+  creativeMode: SeptemberCreativeMode;
+  contentTrack: SeptemberContentTrack;
+  platforms: string[];
+  pillar: string;
+  audience: string;
+  funnel: "awareness" | "consideration" | "conversion";
+  hook: string;
+  caption: string;
+  cta: string;
+  ctaPlacements: Array<"caption_end" | "carousel_last_frame" | "reel_end_card" | "story_sticker">;
+  storyArc: {
+    setup: string;
+    friction: string;
+    intervention: string;
+    resolution: string;
+  };
+  visualDirection: string;
+  coverUrl: string;
+  altText: string;
+  slides: CarouselFrame[];
+  supportingStories: SupportingStoryFrame[];
+  reelProduction?: ReelProductionPlan;
+  proofBoundary: string;
+  sourceRefs: string[];
+  kpis: string[];
+  castingPlan: CastingPlan;
+  pinCandidate: boolean;
+  productionStatus: ProductionStatus;
+}
+
+export const septemberCampaign = {
+  name: "شهر أول يعرّف أورندور ثم يثبت فائدتها",
+  objective:
+    "تعريف الجمهور بأورندور خلال ثلاثة منشورات افتتاحية، ثم بناء عادة محتوى مفيدة عبر قصة عن خدمات الذكاء والأتمتة، وقصة عن Bunyan Pro، ومعلومة مستقلة قابلة للتطبيق.",
+  primaryAudience: "أصحاب الأعمال وقادة العمليات والفرق التي تريد عملاً أوضح وأقل تكرارًا في العراق والمنطقة.",
+  secondaryAudience: "مديرو المشاريع والإنشاءات، وقادة المنتجات، والمهنيون الذين يريدون استخدام الذكاء الاصطناعي عمليًا.",
+  positioning: "أورندور تفهم العمل أولًا، ثم تبني النظام أو الأتمتة أو المنتج الذي يجعل الخطوة التالية أوضح.",
+  cadence:
+    "ثلاث افتتاحيات مثبتة، ثم تتكرر دورة: خدمة ذكاء وأتمتة ← Bunyan Pro ← فائدة مستقلة. عشرون منشورًا خلال أيام العمل.",
+  creativeBalance:
+    "١٤ كاروسيل و٦ ريلز؛ تصاميم تقودها الواجهات الحقيقية والمخططات والأشياء والحركة. الأشخاص لا يظهرون إلا إذا احتاجتهم القصة.",
+  primaryKpis: ["الحفظ", "المشاركة", "إكمال الشرائح", "إكمال الفيديو", "التفاعل مع القصص", "زيارة الملف", "الرسائل المؤهلة"],
+  storyPolicy:
+    "لكل منشور قصتان داعمتان: تفاعل قبل النشر يجمع تجربة الجمهور، ثم قصة بعد النشر تعيدهم إلى المنشور.",
+  peoplePolicy:
+    "لا يُستخدم أي شخص، وبالأخص النساء، كعنصر جذب زخرفي. كل ظهور بشري يحتاج دورًا سرديًا ووكالة واضحة؛ الافتراضي هو الواجهة أو النظام أو الشيء.",
+  reelPolicy:
+    "تُنتج الريلز عبر Higgsfield بعد الاتصال فقط. يُفحص كل مقطع تقنيًا وإبداعيًا قبل دخوله التجميع، وتستخدم واجهات Bunyan الحقيقية بعد مراجعة الخصوصية.",
+  publishingBoundary:
+    "هذه خطة إنتاج ومراجعة. أغلفة التخطيط ليست أصول نشر؛ الكاروسيلات تحتاج جميع الشرائح، والريلز تبقى محجوبة حتى اتصال Higgsfield وفحص كل مقطع والفيديو النهائي.",
+} as const;
+
+const BUNYAN_UI_ROOT = "marketing/assets/build-app-assets";
+
+function noPeopleCasting(): CastingPlan {
+  return {
+    humansPresent: false,
+    justification: "الفكرة تُشرح بواجهة حقيقية أو مخطط أو أشياء؛ لا حاجة لشخص لجذب الانتباه.",
+    narrativeRoles: [],
+    policy: {
+      peopleAreNarrativeOnly: true,
+      womenAsAttentionDevice: "FORBIDDEN",
+      objectifyingTreatment: "FORBIDDEN",
+      genderInferenceFromPixels: "FORBIDDEN",
+    },
+    reviewStatus: "DECLARED_NO_HUMANS",
+  };
+}
+
+function supportingStories(
+  postKey: string,
+  interaction: Omit<SupportingStoryFrame["interaction"], "type"> & {
+    type: "poll" | "question" | "quiz" | "emoji_slider";
+  },
+  produced = false,
+  afterText = "فصّلنا الفكرة بخطوات واضحة في منشور اليوم.",
+): SupportingStoryFrame[] {
+  return [
+    {
+      sequence: 1,
+      timing: "before_post",
+      role: "interaction",
+      exactText: interaction.prompt,
+      interaction,
+      targetPostKey: postKey,
+      publishOffsetMinutes: -180,
+      ...(produced ? { assetUrl: `/monthly-plan/2026-09/launch-day/${postKey}/story-01.png` } : {}),
+    },
+    {
+      sequence: 2,
+      timing: "after_post",
+      role: "post_cta",
+      exactText: afterText,
+      interaction: {
+        type: "open_post",
+        prompt: "افتح المنشور وشاركنا تجربتك",
+      },
+      targetPostKey: postKey,
+      publishOffsetMinutes: 45,
+      ...(produced ? { assetUrl: `/monthly-plan/2026-09/launch-day/${postKey}/story-02.png` } : {}),
+    },
+  ];
+}
+
+function carouselFrames(
+  frames: Array<{ role: CarouselFrame["role"]; title: string; body?: string; assetRefs?: string[]; altText: string }>,
+  cta: string,
+  producedPostKey?: string,
+): CarouselFrame[] {
+  return [
+    ...frames.map((frame, index) => ({
+      sequence: index + 1,
+      role: frame.role,
+      title: frame.title,
+      ...(frame.body ? { body: frame.body } : {}),
+      assetRefs: frame.assetRefs ?? [],
+      altText: frame.altText,
+      ...(producedPostKey
+        ? { assetUrl: `/monthly-plan/2026-09/launch-day/${producedPostKey}/slide-${String(index + 1).padStart(2, "0")}.png` }
+        : {}),
+    })),
+    {
+      sequence: frames.length + 1,
+      role: "cta" as const,
+      title: cta,
+      assetRefs: [],
+      altText: "الشريحة الأخيرة تحمل دعوة عملية مرتبطة بموضوع المنشور.",
+      ...(producedPostKey
+        ? { assetUrl: `/monthly-plan/2026-09/launch-day/${producedPostKey}/slide-${String(frames.length + 1).padStart(2, "0")}.png` }
+        : {}),
+    },
+  ];
+}
+
+function reelPlan(
+  postKey: string,
+  clips: Array<Omit<ReelClipPlan, "id" | "sequence" | "status" | "technicalValidation" | "creativeValidation">>,
+  cta: string,
+): ReelProductionPlan {
+  const plannedClips: ReelClipPlan[] = [
+    ...clips.map((clip, index) => ({
+      ...clip,
+      id: postKey + "-CLIP-" + String(index + 1).padStart(2, "0"),
+      sequence: index + 1,
+      status: "PLANNED" as const,
+      technicalValidation: "PENDING" as const,
+      creativeValidation: "PENDING" as const,
+    })),
+    {
+      id: postKey + "-CLIP-" + String(clips.length + 1).padStart(2, "0"),
+      sequence: clips.length + 1,
+      narrativeBeat: "CTA end card",
+      durationMs: 1800,
+      sourceType: "title_card",
+      sourceAssetRefs: [],
+      promptOrDirection: "بطاقة ختامية من نظام أورندور البصري، بلا أشخاص.",
+      overlayText: cta,
+      status: "PLANNED",
+      technicalValidation: "PENDING",
+      creativeValidation: "PENDING",
+    },
+  ];
+  return {
+    provider: "higgsfield",
+    connectionState: "AUTH_REQUIRED",
+    canvas: { width: 1080, height: 1920, ratio: "9:16" },
+    targetDurationMs: plannedClips.reduce((total, clip) => total + clip.durationMs, 0),
+    fps: 30,
+    clips: plannedClips,
+    assemblyRule:
+      "لا يدخل التجميع إلا مقطع حالته VALIDATED وقد نجح في الفحص التقني والإبداعي. نتيجة التوليد وحدها ليست موافقة.",
+    finalValidation: {
+      state: "BLOCKED",
+      requiredChecks: [
+        "تطابق القصة والإيقاع",
+        "سلامة الواجهة والرسومات",
+        "دقة النص العربي",
+        "مناطق الأمان 9:16",
+        "جودة الصوت والترجمة",
+        "مطابقة سياسة الأشخاص",
+        "ربط موافقة المالك ببصمة الفيديو النهائية",
+      ],
+    },
+  };
+}
+
+export function finalCaption(post: Pick<SeptemberCreativePost, "caption" | "cta">): string {
+  return post.caption.trim() + "\n\n" + post.cta.trim();
+}
+
+export const septemberCreativePosts: SeptemberCreativePost[] = [
+  {
+    sequence: 1,
+    key: "SEP-01",
+    publishAt: "2026-09-01T10:00:00+03:00",
+    title: "نحن أورندور",
+    format: "carousel",
+    creativeMode: "mixed_media",
+    contentTrack: "brand_intro",
+    platforms: ["Instagram", "Facebook", "TikTok", "X", "LinkedIn"],
+    pillar: "من نحن",
+    audience: "أصحاب الأعمال وقادة العمليات",
+    funnel: "awareness",
+    hook: "شركة تقنية عراقية تبني أنظمة ذكية تجعل العمل المعقّد أوضح وأسهل في المتابعة.",
+    caption:
+      "نحن أورندور، شركة تقنية عراقية تساعد الفرق على تحويل العمل المعقّد إلى مسارات أوضح وأسهل في المتابعة.\n\nنبدأ بفهم ما يحدث فعلًا داخل الفريق: أين تتشتت المعلومات؟ ما الخطوات التي تتكرر؟ وأي القرارات تتأخر لأن الصورة غير مكتملة؟ بعد ذلك نبني الحل المناسب—أتمتة، نظام ذكاء، أو منتجًا رقميًا مخصصًا—ونقيس أثره على العمل.\n\nفي هذه السلسلة نعرّفكم إلى طريقتنا، وما نبنيه، والمشكلات التي نساعد على حلها.",
+    cta: "ما الجزء الذي يحتاج إلى وضوح أكبر في عمل فريقك؟",
+    ctaPlacements: ["caption_end", "carousel_last_frame", "story_sticker"],
+    storyArc: {
+      setup: "ينمو العمل، وتزداد معه الرسائل والملفات والقرارات.",
+      friction: "تتشتت الصورة، ويصبح تحديد المسؤول والخطوة التالية أصعب.",
+      intervention: "تفهم أورندور المسار أولًا، ثم تبني التقنية التي تخدمه.",
+      resolution: "عمل أوضح، ومسؤوليات معروفة، ونتائج يمكن متابعتها وتحسينها.",
+    },
+    visualDirection: "ست صور أصلية ومختلفة ضمن عائلة بصرية واحدة: هوية، احتكاك، تنظيم، قياس، ودعوة للبدء. خامات حجر ومعدن وزجاج أخضر، ضوء استوديو واقعي، ومساحة واسعة للنص؛ من دون أشخاص أو رسوم مسطحة.",
+    coverUrl: "/monthly-plan/2026-09/launch-day/SEP-01/slide-01.png",
+    altText: "غلاف عربي داكن يعلن عن أورندور بوصفها شركة تقنية عراقية تبني أنظمة ذكية للعمل المعقد.",
+    slides: carouselFrames(
+      [
+        { role: "hook", title: "نحن أورندور", body: "شركة تقنية عراقية تبني أنظمة ذكية للأعمال المعقّدة.", altText: "افتتاحية تعرّف أورندور بوصفها شركة تقنية عراقية." },
+        { role: "story", title: "نبني التقنية حول طريقة عملك", body: "لأن الحل الجيد يبدأ من فهم العمل، لا من اختيار الأداة.", altText: "قطعة هندسية مخصصة ترمز إلى تقنية مبنية حول طريقة العمل." },
+        { role: "story", title: "نبدأ من التفاصيل التي تُبطئ فريقك", body: "معلومة متشتتة، خطوة تتكرر، أو قرار ينتظر صورة أوضح.", altText: "مسارات مادية مختلفة تواجه نقاط احتكاك قبل أن تنتظم." },
+        { role: "lesson", title: "ثم نجمعها في مسار واحد واضح", body: "حالة يمكن رؤيتها، مسؤولية معروفة، وخطوة تالية لا تضيع.", altText: "مسارات متعددة تنتظم داخل أداة محاذاة دقيقة." },
+        { role: "proof", title: "وضوح يمكن قياسه وتحسينه", body: "نختبر الحل على العمل الحقيقي، ثم نتعلم من النتيجة.", altText: "أداة قياس ملموسة ترمز إلى اختبار أثر الحل وتحسينه." },
+      ],
+      "ما الذي يحتاج إلى وضوح أكبر في عملك؟",
+      "SEP-01",
+    ),
+    supportingStories: supportingStories("SEP-01", {
+      type: "question",
+      prompt: "ما أكثر ما يسبب التعقيد في سير العمل لدى فريقك؟",
+    }, true, "تعرّف إلى أورندور وما الذي نبنيه للفرق والأعمال."),
+    proofBoundary: "تعريف بالخدمات والمنتج فقط؛ لا توجد أرقام أداء أو نتائج عملاء.",
+    sourceRefs: ["marketing/_context/AURENDOR_Product_Offerings.md", "marketing/strategy/AURENDOR_Content_Plans_3Tracks.md"],
+    kpis: ["زيارة الملف", "التعليقات النوعية", "الحفظ"],
+    castingPlan: noPeopleCasting(),
+    pinCandidate: true,
+    productionStatus: "READY_FOR_OWNER_REVIEW",
+  },
+  {
+    sequence: 2,
+    key: "SEP-02",
+    publishAt: "2026-09-01T14:30:00+03:00",
+    title: "هكذا نعمل معك",
+    format: "carousel",
+    creativeMode: "object_led",
+    contentTrack: "brand_intro",
+    platforms: ["Instagram", "Facebook", "TikTok", "X", "LinkedIn"],
+    pillar: "طريقة عمل أورندور",
+    audience: "قادة العمليات والتحول",
+    funnel: "awareness",
+    hook: "نبدأ بفهم العمل كما يحدث فعلًا، ثم نبني الحل الذي يحتاجه المسار.",
+    caption:
+      "في أورندور، لا نبدأ باسم أداة أو تقنية.\n\nنبدأ بفهم العمل كما يحدث فعلًا: المدخلات، القرارات، المسؤوليات، الاستثناءات، ومصادر البيانات. ثم نحدد أين يضيع الوقت، وما الذي يحتاج إلى وضوح، وأي جزء يستحق أن يُؤتمت.\n\nبعدها نبني الطبقة المناسبة فقط—ربطًا بين الأدوات، أتمتة، مساعد ذكاء، أو نظامًا تشغيليًا مخصصًا—ونختبر أثرها قبل التوسع.",
+    cta: "أي مسار في فريقك تريد أن يصبح أوضح أولًا؟",
+    ctaPlacements: ["caption_end", "carousel_last_frame", "story_sticker"],
+    storyArc: {
+      setup: "معلومة في قناة، وملف في قناة أخرى، وقرار لا يعرفه إلا شخص واحد.",
+      friction: "يبدأ الفريق باختيار الأداة قبل أن يفهم المسار كاملًا.",
+      intervention: "نفهم الواقع، نحدد القرار، نبني الحل المناسب، ثم نقيس أثره.",
+      resolution: "مسار مفهوم يمكن اختباره وتحسينه من دون إضافة أدوات لا يحتاجها الفريق.",
+    },
+    visualDirection: "ست صور مختلفة تروي مراحل العمل ضمن عائلة فوتوغرافية واحدة: منظومة كاملة، خريطة أدلة، نقطة قرار، وحدة مناسبة، اختبار، وبداية مفتوحة. معدن وحجر وزجاج أخضر؛ من دون أيقونات أو واجهات.",
+    coverUrl: "/monthly-plan/2026-09/launch-day/SEP-02/slide-01.png",
+    altText: "غلاف كاروسيل يشرح طريقة عمل أورندور من رسم الواقع إلى القياس.",
+    slides: carouselFrames(
+      [
+        { role: "hook", title: "هكذا نعمل معك", body: "نفهم المسار أولًا، ثم نبني التقنية التي تخدمه.", altText: "منظومة دقيقة من أربع محطات ترمز إلى طريقة عمل أورندور." },
+        { role: "story", title: "أولًا، نفهم العمل كما يحدث فعلًا", body: "نتتبع المدخلات والأدوات والتسليمات ونقاط الانتظار.", altText: "أدلة ومواد عمل مرتبة لكشف المسار الحالي." },
+        { role: "lesson", title: "ثم نحدد أين يُتخذ القرار", body: "من يقرر؟ وفق أي قاعدة؟ وما الذي يحدث عند الاستثناء؟", altText: "وصلة زجاجية متفرعة ترمز إلى نقطة قرار واضحة." },
+        { role: "lesson", title: "ونبني الحل المناسب فقط", body: "ربط، أتمتة، مساعد ذكاء، أو نظام مخصص—بحسب الحاجة.", altText: "وحدة هندسية واحدة تلائم منظومة قائمة بدقة." },
+        { role: "proof", title: "نختبر الأثر قبل أن نتوسع", body: "خط أساس واضح، تجربة محددة، ودليل يساعدنا على اتخاذ القرار.", altText: "منصة اختبار مادية ترمز إلى القياس قبل التوسع." },
+      ],
+      "أي مسار تريد أن يصبح أوضح أولًا؟",
+      "SEP-02",
+    ),
+    supportingStories: supportingStories("SEP-02", {
+      type: "poll",
+      prompt: "أين يضيع وقت فريقك أكثر؟",
+      options: ["المهام المتكررة", "تشتّت المعلومات"],
+    }, true, "تعرّف إلى طريقة عملنا في أربع خطوات واضحة."),
+    proofBoundary: "طريقة عمل توضيحية؛ لا تمثل عميلًا أو مدة تنفيذ أو نسبة تحسن.",
+    sourceRefs: ["marketing/strategy/AURENDOR_Content_Plans_3Tracks.md", BUNYAN_UI_ROOT + "/mockup-images/admin-dashboard-portrait.png"],
+    kpis: ["إكمال الشرائح", "إعادة القراءة", "الحفظ"],
+    castingPlan: noPeopleCasting(),
+    pinCandidate: true,
+    productionStatus: "READY_FOR_OWNER_REVIEW",
+  },
+  {
+    sequence: 3,
+    key: "SEP-03",
+    publishAt: "2026-09-01T19:00:00+03:00",
+    title: "ماذا يمكن أن نبني معك؟",
+    format: "carousel",
+    creativeMode: "object_led",
+    contentTrack: "brand_intro",
+    platforms: ["Instagram", "Facebook", "TikTok", "X", "LinkedIn"],
+    pillar: "ما نقدمه",
+    audience: "أصحاب الأعمال ومديرو المشاريع",
+    funnel: "consideration",
+    hook: "أربعة مسارات تقنية تبدأ كلها من مشكلة العمل، لا من اسم الأداة.",
+    caption:
+      "تختلف التقنية التي تحتاجها باختلاف المشكلة التي تريد حلها.\n\nفي أورندور نبني أربعة أنواع مترابطة من الحلول: أتمتة وذكاء للعمليات المتكررة، أنظمة معرفة تساعد الفرق على الوصول إلى إجابات موثوقة، أنظمة تشغيلية مخصصة للبيانات والصلاحيات والتكاملات، وBunyan Pro لمتابعة عمليات المشاريع الإنشائية بوضوح أكبر.\n\nنبدأ دائمًا من شكل العمل، ثم نختار التقنية التي تخدمه.",
+    cta: "أي تحدٍ من هذه التحديات يشبه ما تواجهه اليوم؟",
+    ctaPlacements: ["caption_end", "carousel_last_frame", "story_sticker"],
+    storyArc: {
+      setup: "توجد أدوات وتقنيات كثيرة، لكن نقطة البداية ليست واضحة دائمًا.",
+      friction: "قد ينشغل الفريق باسم الحل قبل أن يحدد المشكلة التي يريد حلها.",
+      intervention: "نربط كل نوع من الحلول بشكل واضح من أشكال الحاجة.",
+      resolution: "تبدأ المحادثة من التحدي الفعلي، ثم نختار التقنية المناسبة له.",
+    },
+    visualDirection: "ست صور فوتوغرافية مختلفة ضمن عائلة مادية واحدة: نظرة عامة، أتمتة، معرفة، نظام مخصص، Bunyan Pro، ثم نقطة اختيار. لكل خدمة مشهدها الخاص مع خامات مترابطة؛ من دون واجهات مزيفة أو أشخاص.",
+    coverUrl: "/monthly-plan/2026-09/launch-day/SEP-03/slide-01.png",
+    altText: "غلاف كاروسيل يعلن أربعة مسارات تقدمها أورندور.",
+    slides: carouselFrames(
+      [
+        { role: "hook", title: "ماذا يمكن أن نبني معك؟", body: "أربعة مسارات تقنية، نختار بينها بحسب طبيعة المشكلة.", altText: "أربع وحدات مادية مترابطة ترمز إلى مجالات عمل أورندور." },
+        { role: "lesson", title: "أتمتة تقلّل العمل المتكرر", body: "نربط الخطوات، نحدد القواعد، ونبني تصعيدًا واضحًا للحالات الاستثنائية.", altText: "آلة مادية تنظم مدخلات متكررة وتفصل مسار الحالات الاستثنائية." },
+        { role: "lesson", title: "معرفة موثوقة عندما تحتاج إليها", body: "وصول منضبط إلى إجابات تستند إلى وثائق ومصادر مؤسسية معتمدة.", altText: "أرشيف مادي يبرز وثيقة واحدة موصولة بعدسة تحقق." },
+        { role: "lesson", title: "أنظمة مصممة حول فريقك", body: "تطبيقات وبيانات وصلاحيات وتكاملات تتبع طريقة عملك.", altText: "وحدات مادية مختلفة تتكامل داخل هيكل مصمم خصيصًا." },
+        { role: "lesson", title: "Bunyan Pro لإدارة أوضح للمشاريع", body: "رؤية تقدم المشروع وملفاته وصوره ومتابعاته في مكان واحد.", altText: "نموذج مشروع إنشائي متصل بملفاته عبر وصلة زجاجية." },
+      ],
+      "أي من هذه التحديات أقرب إليك؟",
+      "SEP-03",
+    ),
+    supportingStories: supportingStories("SEP-03", {
+      type: "quiz",
+      prompt: "إذا كانت مهمة تتكرر وفق قاعدة واضحة، فما البداية الأنسب؟",
+      options: ["أتمتتها", "إطالة الاجتماع", "إضافة ملف جديد"],
+    }, true, "تعرّف إلى المسارات الأربعة التي نبنيها في أورندور."),
+    proofBoundary: "خريطة اختيار أولية وليست تشخيصًا نهائيًا أو وعدًا بنتيجة.",
+    sourceRefs: ["marketing/_context/AURENDOR_Product_Offerings.md"],
+    kpis: ["إكمال الشرائح", "الحفظ", "الرسائل المؤهلة"],
+    castingPlan: noPeopleCasting(),
+    pinCandidate: true,
+    productionStatus: "READY_FOR_OWNER_REVIEW",
+  },
+  {
+    sequence: 4,
+    key: "SEP-04",
+    publishAt: "2026-09-04T13:00:00+03:00",
+    title: "كل صباح يبدأ بنفس أسئلة العملاء",
+    format: "carousel",
+    creativeMode: "workflow_diagram",
+    contentTrack: "ai_automation_service",
+    platforms: ["Instagram", "Facebook", "TikTok", "X", "LinkedIn"],
+    pillar: "قصص الذكاء والأتمتة",
+    audience: "فرق خدمة العملاء والعمليات",
+    funnel: "consideration",
+    hook: "السؤال يتكرر، لكن الإجابة تبقى معلقة على شخص واحد.",
+    caption:
+      "تخيل فريقًا يبدأ يومه بالبحث عن الطلب نفسه: حالته، صاحبه، والخطوة التالية. يمكن بناء مسار يجمع السؤال، يسترجع المعلومة من مصدر معتمد، ويصعّد الاستثناء إلى إنسان بدل أن يخمّن. هذا سيناريو توضيحي؛ نجاحه يعتمد على جودة المصدر وحدود الصلاحية.",
+    cta: "اكتب أكثر سؤال يتكرر على فريقك، وسنحوّله إلى خريطة مسار.",
+    ctaPlacements: ["caption_end", "carousel_last_frame", "story_sticker"],
+    storyArc: {
+      setup: "العميل يكرر سؤال الحالة.",
+      friction: "الموظف يبحث في أكثر من مكان أو ينتظر زميلًا.",
+      intervention: "استرجاع من مصدر معتمد مع تصعيد بشري.",
+      resolution: "إجابة أوضح من دون اختلاق معلومة.",
+    },
+    visualDirection: "مخطط حواري يحوّل السؤال المتكرر إلى مسار مصدر وثقة وتصعيد، بلا واجهة روبوت أو دماغ متوهج.",
+    coverUrl: "/monthly-plan/2026-09/SEP-04.png",
+    altText: "مخطط عربي لسؤال عميل متكرر يتحول إلى مسار إجابة موثوق.",
+    slides: carouselFrames(
+      [
+        { role: "hook", title: "كل صباح يبدأ بنفس السؤال", altText: "سؤال حالة متكرر." },
+        { role: "story", title: "الحالة موجودة… لكن بمكان آخر", altText: "المعلومة موزعة بين مصادر." },
+        { role: "lesson", title: "اربط السؤال بمصدر معتمد", altText: "المصدر المعتمد قبل الإجابة." },
+        { role: "lesson", title: "إذا لم يثق النظام، يصعّد", altText: "حد ثقة وتصعيد بشري." },
+      ],
+      "شنو أكثر سؤال يتكرر على فريقك؟",
+    ),
+    supportingStories: supportingStories("SEP-04", {
+      type: "question",
+      prompt: "شنو أكثر سؤال يكرره عملاؤكم؟",
+    }),
+    proofBoundary: "سيناريو توضيحي لخدمة جديدة؛ لا توجد نتيجة عميل أو نسبة توفير.",
+    sourceRefs: ["marketing/strategy/AURENDOR_Content_Plans_3Tracks.md"],
+    kpis: ["الحفظ", "التعليقات النوعية", "الرسائل المؤهلة"],
+    castingPlan: noPeopleCasting(),
+    pinCandidate: false,
+    productionStatus: "PLAN_COVER_ONLY",
+  },
+  {
+    sequence: 5,
+    key: "SEP-05",
+    publishAt: "2026-09-07T10:00:00+03:00",
+    title: "العميل يسأل: وين وصل المشروع؟",
+    format: "reel",
+    creativeMode: "product_ui",
+    contentTrack: "bunyan_pro",
+    platforms: ["Instagram", "Facebook", "TikTok", "X", "LinkedIn"],
+    pillar: "قصص Bunyan Pro",
+    audience: "شركات الإنشاءات ومديرو المشاريع",
+    funnel: "consideration",
+    hook: "إذا كانت الإجابة تحتاج ثلاث مكالمات، فالمشكلة مو بالسؤال.",
+    caption:
+      "صورة من الموقع، تحديث مرحلة، ملف، ومتابعة مالية—كل واحدة قد تعيش في مكان مختلف. Bunyan Pro مصمم ليجعل معلومات المشروع أقرب إلى سجل واحد يمكن الرجوع إليه بحسب الدور. نعرض هنا تدفقًا ممكنًا، لا نَعِد بزمن أو وفر قبل قياسه داخل المشروع.",
+    cta: "شاهد التدفق، وقل لنا: أي تحديث يطلبه العميل أكثر شي؟",
+    ctaPlacements: ["caption_end", "reel_end_card", "story_sticker"],
+    storyArc: {
+      setup: "العميل يسأل عن التقدم.",
+      friction: "الفريق يجمع الإجابة من مكالمات وصور وملفات.",
+      intervention: "تحديث مرحلة وربطه بسجل المشروع.",
+      resolution: "رؤية أوضح بحسب المعلومات المتاحة والصلاحيات.",
+    },
+    visualDirection: "ريل يعتمد على تسجيل شاشة ولقطات UI حقيقية ومطموسة البيانات، مع انتقالات Higgsfield حول الجهاز لا داخله.",
+    coverUrl: "/monthly-plan/2026-09/SEP-05.png",
+    altText: "غلاف ريل Bunyan Pro عن سؤال العميل حول تقدم المشروع.",
+    slides: [],
+    supportingStories: supportingStories("SEP-05", {
+      type: "poll",
+      prompt: "كم مرة ينطلب تحديث المشروع؟",
+      options: ["يوميًا", "أسبوعيًا"],
+    }),
+    reelProduction: reelPlan(
+      "SEP-05",
+      [
+        {
+          narrativeBeat: "السؤال",
+          durationMs: 2200,
+          sourceType: "brand_graphic",
+          sourceAssetRefs: [],
+          promptOrDirection: "فقاعة سؤال عربية فوق خط زمني مشروع، بلا أشخاص.",
+          overlayText: "وين وصل المشروع؟",
+        },
+        {
+          narrativeBeat: "التشتت",
+          durationMs: 2600,
+          sourceType: "higgsfield_generated",
+          sourceAssetRefs: [],
+          promptOrDirection: "صور موقع وملف وملاحظة تتحرك من مسارات متفرقة نحو نقطة واحدة، بلا واجهات مزيفة.",
+          overlayText: "الصورة بمكان، والتحديث بمكان",
+        },
+        {
+          narrativeBeat: "Bunyan Pro",
+          durationMs: 3600,
+          sourceType: "screen_recording",
+          sourceAssetRefs: [BUNYAN_UI_ROOT + "/mockup-images/admin-dashboard-portrait.png"],
+          promptOrDirection: "تسجيل حقيقي بعد مراجعة الخصوصية يوضح انتقالًا بين المشروع والتقدم.",
+          overlayText: "سجل مشروع أوضح",
+        },
+      ],
+      "أي تحديث يطلبه العميل أكثر شي؟",
+    ),
+    proofBoundary: "عرض لتدفق منتج مملوك؛ لا يوجد ادعاء بتوفير الوقت أو تمثيل لعميل محدد.",
+    sourceRefs: [BUNYAN_UI_ROOT + "/mockup-images/admin-dashboard-portrait.png"],
+    kpis: ["إكمال الفيديو", "زيارة الملف", "طلبات العرض"],
+    castingPlan: noPeopleCasting(),
+    pinCandidate: false,
+    productionStatus: "HIGGSFIELD_AUTH_REQUIRED",
+  },
+  {
+    sequence: 6,
+    key: "SEP-06",
+    publishAt: "2026-09-08T13:00:00+03:00",
+    title: "هل تحتاج أتمتة، ذكاء، لو مجرد قائمة؟",
+    format: "carousel",
+    creativeMode: "workflow_diagram",
+    contentTrack: "value_first",
+    platforms: ["Instagram", "Facebook", "TikTok", "X", "LinkedIn"],
+    pillar: "فائدة مستقلة",
+    audience: "أي فريق يريد تحسين عمله",
+    funnel: "awareness",
+    hook: "لا تشتري حلًا كبيرًا لمشكلة صغيرة.",
+    caption:
+      "استخدم هذا التشخيص السريع: إذا كانت المهمة لا تتكرر، ابدأ بقائمة. إذا تكررت وقاعدتها واضحة، فكّر بأتمتة. إذا احتاجت قراءة سياق أو صياغة، قد يساعد الذكاء مع مراجعة بشرية. وإذا كانت القاعدة نفسها غامضة، أصلح العملية أولًا.",
+    cta: "احفظ الدليل وجرّبه على مهمة واحدة اليوم.",
+    ctaPlacements: ["caption_end", "carousel_last_frame", "story_sticker"],
+    storyArc: {
+      setup: "الفريق يريد أداة ذكاء لكل شيء.",
+      friction: "المشكلة قد تكون أبسط أو أغمض من أن تُؤتمت.",
+      intervention: "شجرة اختيار من أربعة أسئلة.",
+      resolution: "حل بحجم المشكلة.",
+    },
+    visualDirection: "شجرة قرار عربية واضحة من دون شعارات منتجات أو بيع.",
+    coverUrl: "/monthly-plan/2026-09/SEP-06.png",
+    altText: "شجرة قرار تفرق بين قائمة وأتمتة وذكاء وتحسين عملية.",
+    slides: carouselFrames(
+      [
+        { role: "hook", title: "هل تحتاج أتمتة، ذكاء، لو مجرد قائمة؟", altText: "سؤال تشخيص الأداة المناسبة." },
+        { role: "lesson", title: "هل تتكرر المهمة؟", body: "لا؟ ابدأ بقائمة أو تذكير.", altText: "فحص تكرار المهمة." },
+        { role: "lesson", title: "هل القاعدة واضحة؟", body: "نعم؟ الأتمتة قد تناسبها.", altText: "فحص وضوح القاعدة." },
+        { role: "lesson", title: "هل تحتاج فهم سياق؟", body: "قد يفيد الذكاء مع مراجعة وحدود.", altText: "فحص الحاجة إلى الذكاء." },
+        { role: "lesson", title: "القاعدة غامضة؟", body: "أصلح العملية قبل أي أداة.", altText: "فحص غموض العملية." },
+      ],
+      "جرّب الشجرة على مهمة واحدة واحفظها",
+    ),
+    supportingStories: supportingStories("SEP-06", {
+      type: "poll",
+      prompt: "مهمتك المختارة تتكرر أسبوعيًا؟",
+      options: ["نعم", "لا"],
+    }),
+    proofBoundary: "إطار تشخيص تعليمي عام؛ ليس توصية شراء أو ضمان ملاءمة.",
+    sourceRefs: ["marketing/strategy/AURENDOR_Content_Plans_3Tracks.md"],
+    kpis: ["الحفظ", "المشاركة", "إكمال الشرائح"],
+    castingPlan: noPeopleCasting(),
+    pinCandidate: false,
+    productionStatus: "PLAN_COVER_ONLY",
+  },
+  {
+    sequence: 7,
+    key: "SEP-07",
+    publishAt: "2026-09-09T10:00:00+03:00",
+    title: "الطلب وصل… وبعدين اختفى بالمحادثة",
+    format: "reel",
+    creativeMode: "workflow_diagram",
+    contentTrack: "ai_automation_service",
+    platforms: ["Instagram", "Facebook", "TikTok", "X", "LinkedIn"],
+    pillar: "قصص الذكاء والأتمتة",
+    audience: "فرق المبيعات والخدمة والعمليات",
+    funnel: "consideration",
+    hook: "المشكلة مو بوصول الطلب؛ المشكلة بعدم تحوّله إلى حالة يملكها أحد.",
+    caption:
+      "سيناريو شائع: طلب يصل برسالة، يُنسخ يدويًا، ثم يضيع بين المتابعة والرد. يمكن لمسار أتمتة أن يحول الإدخال إلى سجل، يحدد المسؤول، وينبّه عند التأخر—مع بقاء الحالات غير الواضحة لإنسان. المثال توضيحي ولا يمثل نتيجة عميل.",
+    cta: "أرسل كلمة «مسار» إذا تريد قالبًا لرسم رحلة الطلب.",
+    ctaPlacements: ["caption_end", "reel_end_card", "story_sticker"],
+    storyArc: {
+      setup: "طلب جديد يصل في محادثة.",
+      friction: "لا يتحول إلى سجل أو مالك أو موعد.",
+      intervention: "إدخال منظم وتوجيه وتنبيه وتصعيد.",
+      resolution: "كل طلب يملك حالة قابلة للتتبع.",
+    },
+    visualDirection: "ريل مخطط حركي: رسالة تدخل، بطاقة طلب تتكون، مالك يظهر، وتنبيه تصعيد؛ لا شعارات منصات مزيفة.",
+    coverUrl: "/monthly-plan/2026-09/SEP-07.png",
+    altText: "غلاف ريل عن طلب وصل ثم اختفى في المحادثة.",
+    slides: [],
+    supportingStories: supportingStories("SEP-07", {
+      type: "poll",
+      prompt: "وين توصل الطلبات غالبًا؟",
+      options: ["واتساب", "أكثر من قناة"],
+    }),
+    reelProduction: reelPlan(
+      "SEP-07",
+      [
+        {
+          narrativeBeat: "الطلب يصل",
+          durationMs: 2200,
+          sourceType: "brand_graphic",
+          sourceAssetRefs: [],
+          promptOrDirection: "رسالة مجردة تدخل من طرف الكادر بلا شعار منصة.",
+          overlayText: "طلب جديد",
+        },
+        {
+          narrativeBeat: "يختفي",
+          durationMs: 2400,
+          sourceType: "higgsfield_generated",
+          sourceAssetRefs: [],
+          promptOrDirection: "بطاقة ورقية خضراء تختفي بين طبقات محادثة مجردة، بلا أشخاص.",
+          overlayText: "من يملكه؟ ومتى نتابعه؟",
+        },
+        {
+          narrativeBeat: "مسار منظم",
+          durationMs: 3200,
+          sourceType: "data_graphic",
+          sourceAssetRefs: [],
+          promptOrDirection: "تحريك أربع حالات: سجل، مالك، موعد، تصعيد.",
+          overlayText: "سجل ← مسؤول ← موعد ← تصعيد",
+        },
+      ],
+      "اكتب «مسار» للحصول على القالب",
+    ),
+    proofBoundary: "سيناريو خدمة توضيحي؛ لا يمثل نظامًا منشورًا لدى عميل أو نتيجة كمية.",
+    sourceRefs: ["marketing/strategy/AURENDOR_Content_Plans_3Tracks.md"],
+    kpis: ["إكمال الفيديو", "الرسائل", "الحفظ"],
+    castingPlan: noPeopleCasting(),
+    pinCandidate: false,
+    productionStatus: "HIGGSFIELD_AUTH_REQUIRED",
+  },
+  {
+    sequence: 8,
+    key: "SEP-08",
+    publishAt: "2026-09-10T13:00:00+03:00",
+    title: "صورة الموقع ليست تقريرًا إذا بقيت وحدها",
+    format: "carousel",
+    creativeMode: "product_ui",
+    contentTrack: "bunyan_pro",
+    platforms: ["Instagram", "Facebook", "TikTok", "X", "LinkedIn"],
+    pillar: "قصص Bunyan Pro",
+    audience: "المهندسون ومديرو المشاريع",
+    funnel: "consideration",
+    hook: "الصورة تحتاج مشروعًا ومرحلة وتاريخًا حتى تصبح ذاكرة مفيدة.",
+    caption:
+      "ألبوم الهاتف يحفظ الصورة، لكنه لا يشرح: لأي مشروع؟ أي مرحلة؟ ومن اعتمدها؟ في Bunyan Pro يمكن تنظيم صور الموقع داخل سياق المشروع مع الملفات والتحديثات المرتبطة. ما نعرضه هو قدرة تنظيمية للمنتج، وليس ضمانًا لاكتمال البيانات من دون التزام الفريق.",
+    cta: "افتح آخر صورة موقع عندك: تقدر تعرف سياقها خلال 10 ثوانٍ؟",
+    ctaPlacements: ["caption_end", "carousel_last_frame", "story_sticker"],
+    storyArc: {
+      setup: "صورة مهمة تُلتقط من الموقع.",
+      friction: "تبقى في الهاتف بلا سياق.",
+      intervention: "ربطها بالمشروع والمرحلة والتاريخ.",
+      resolution: "سجل أسهل للعثور عليه بحسب ما أدخله الفريق.",
+    },
+    visualDirection: "كاروسيل قبل/بعد يستخدم صورة موقع مملوكة وواجهة Bunyan حقيقية بعد التنقيح.",
+    coverUrl: "/monthly-plan/2026-09/SEP-08.png",
+    altText: "صورة موقع تتحول من ملف منفرد إلى سجل مشروع منظم.",
+    slides: carouselFrames(
+      [
+        { role: "hook", title: "صورة الموقع ليست تقريرًا إذا بقيت وحدها", altText: "صورة موقع بلا سياق." },
+        { role: "story", title: "بعد شهر: لأي مشروع كانت؟", altText: "صعوبة تذكر سياق الصورة." },
+        { role: "lesson", title: "أضف المشروع والمرحلة والتاريخ", altText: "حقول السياق الأساسية." },
+        {
+          role: "proof",
+          title: "ضعها داخل سجل المشروع",
+          assetRefs: [BUNYAN_UI_ROOT + "/mockup-images/admin-dashboard-portrait.png"],
+          altText: "لقطة واجهة Bunyan Pro حقيقية ومنقحة.",
+        },
+      ],
+      "تقدر تلقى سياق آخر صورة خلال 10 ثوانٍ؟",
+    ),
+    supportingStories: supportingStories("SEP-08", {
+      type: "emoji_slider",
+      prompt: "شلون ثقتك بأنك تلقى صورة موقع قديمة بسرعة؟",
+    }),
+    proofBoundary: "قدرة تنظيم وربط فقط؛ جودة السجل تعتمد على الإدخال والصلاحيات والاستخدام.",
+    sourceRefs: [BUNYAN_UI_ROOT + "/mockup-images/admin-dashboard-portrait.png"],
+    kpis: ["إكمال الشرائح", "الحفظ", "طلبات العرض"],
+    castingPlan: noPeopleCasting(),
+    pinCandidate: false,
+    productionStatus: "PLAN_COVER_ONLY",
+  },
+  {
+    sequence: 9,
+    key: "SEP-09",
+    publishAt: "2026-09-11T10:00:00+03:00",
+    title: "اكتب هذا السياق قبل أن تطلب من الذكاء",
+    format: "carousel",
+    creativeMode: "typographic",
+    contentTrack: "value_first",
+    platforms: ["Instagram", "Facebook", "TikTok", "X", "LinkedIn"],
+    pillar: "فائدة مستقلة",
+    audience: "مستخدمو أدوات الذكاء الاصطناعي",
+    funnel: "awareness",
+    hook: "الطلب الجيد مو أطول طلب؛ هو أوضح طلب.",
+    caption:
+      "قبل إرسال البرومبت، اكتب خمسة أشياء: الهدف، السياق، القيود، شكل الناتج، ومثال قصير. وإذا كانت المهمة حساسة أو تحتاج حقيقة حديثة، اطلب مصادر وراجعها بنفسك. هذا القالب يعمل مع أدوات كثيرة ولا يرتبط بخدمة من أورندور.",
+    cta: "احفظ القالب وانسخه في طلبك القادم.",
+    ctaPlacements: ["caption_end", "carousel_last_frame", "story_sticker"],
+    storyArc: {
+      setup: "طلب عام ينتج جوابًا عامًا.",
+      friction: "الأداة لا تعرف الهدف أو القيود.",
+      intervention: "قالب من خمسة أجزاء.",
+      resolution: "ناتج أسهل للفحص والتعديل.",
+    },
+    visualDirection: "كاروسيل طباعي يحوّل البرومبت إلى خمس بطاقات مرتبة، من دون شعارات أدوات.",
+    coverUrl: "/monthly-plan/2026-09/SEP-09.png",
+    altText: "قالب عربي من خمسة أجزاء لكتابة طلب أوضح للذكاء الاصطناعي.",
+    slides: carouselFrames(
+      [
+        { role: "hook", title: "اكتب هذا السياق قبل أن تطلب من الذكاء", altText: "عنوان قالب البرومبت." },
+        { role: "lesson", title: "١ — الهدف", body: "شنو تريد أن يحدث بعد الناتج؟", altText: "جزء الهدف." },
+        { role: "lesson", title: "٢ — السياق", body: "لمن؟ وفي أي موقف؟", altText: "جزء السياق." },
+        { role: "lesson", title: "٣ — القيود", body: "شنو الممنوع أو المطلوب؟", altText: "جزء القيود." },
+        { role: "lesson", title: "٤ — شكل الناتج", body: "جدول، نقاط، مسودة، أو خطوات.", altText: "جزء شكل الناتج." },
+        { role: "lesson", title: "٥ — مثال", body: "مثال صغير يقلل سوء الفهم.", altText: "جزء المثال." },
+      ],
+      "احفظ القالب وجرّبه في طلبك القادم",
+    ),
+    supportingStories: supportingStories("SEP-09", {
+      type: "question",
+      prompt: "أرسل لنا برومبت ما عطاك نتيجة مفيدة",
+    }),
+    proofBoundary: "نصيحة عامة؛ لا تضمن دقة الناتج أو تلغي ضرورة التحقق.",
+    sourceRefs: ["marketing/strategy/AURENDOR_Content_Plans_3Tracks.md"],
+    kpis: ["الحفظ", "المشاركة", "الردود على القصة"],
+    castingPlan: noPeopleCasting(),
+    pinCandidate: false,
+    productionStatus: "PLAN_COVER_ONLY",
+  },
+  {
+    sequence: 10,
+    key: "SEP-10",
+    publishAt: "2026-09-14T13:00:00+03:00",
+    title: "المعلومة موجودة… بس الوصول إلها متوقف على شخص",
+    format: "carousel",
+    creativeMode: "workflow_diagram",
+    contentTrack: "ai_automation_service",
+    platforms: ["Instagram", "Facebook", "TikTok", "X", "LinkedIn"],
+    pillar: "قصص الذكاء والأتمتة",
+    audience: "الفرق التي تعمل بوثائق وسياسات كثيرة",
+    funnel: "consideration",
+    hook: "إذا غاب الشخص، غابت معه أقصر طريق للمعلومة.",
+    caption:
+      "قد تكون الإجابة داخل ملف صحيح، لكن الوصول إليها يعتمد على من يعرف اسمه ومكانه. يمكن بناء مساعد معرفة يبحث داخل المصادر المصرح بها، يعرض الإجابة مع مرجعها، ويتوقف عندما لا يجد دليلًا كافيًا. هذا مثال على بنية ممكنة، لا وعد بأن كل وثيقة ستنتج جوابًا صحيحًا.",
+    cta: "سمِّ سؤالًا داخليًا يتكرر لأن الوصول للمعلومة صعب.",
+    ctaPlacements: ["caption_end", "carousel_last_frame", "story_sticker"],
+    storyArc: {
+      setup: "وثائق موجودة في أماكن متعددة.",
+      friction: "المعرفة تعتمد على ذاكرة شخص.",
+      intervention: "بحث مصرح به وإجابة مرتبطة بالمصدر.",
+      resolution: "وصول أسرع للفحص مع توقف عند نقص الدليل.",
+    },
+    visualDirection: "خريطة مستندات إلى جواب يحمل رابط مصدر ودرجة ثقة، بلا صندوق دردشة عام.",
+    coverUrl: "/monthly-plan/2026-09/SEP-10.png",
+    altText: "مستندات متعددة ترتبط بإجابة موثقة ومصدر واضح.",
+    slides: carouselFrames(
+      [
+        { role: "hook", title: "المعلومة موجودة… بس الوصول إلها متوقف على شخص", altText: "مشكلة معرفة مؤسسية." },
+        { role: "story", title: "وين الملف؟ شنو اسمه؟ آخر نسخة؟", altText: "أسئلة العثور على الوثيقة." },
+        { role: "lesson", title: "ابحث داخل المصادر المصرح بها", altText: "بحث محدود بالصلاحيات." },
+        { role: "proof", title: "أظهر المرجع، مو الجواب وحده", altText: "إجابة مرتبطة بالمصدر." },
+        { role: "lesson", title: "إذا ماكو دليل كافي: توقف", altText: "حد ثقة وتصعيد." },
+      ],
+      "شنو السؤال الداخلي اللي يتكرر عندكم؟",
+    ),
+    supportingStories: supportingStories("SEP-10", {
+      type: "poll",
+      prompt: "لما تحتاج معلومة داخلية، شتسوي؟",
+      options: ["أسأل شخص", "أبحث بالملفات"],
+    }),
+    proofBoundary: "سيناريو مساعد معرفة توضيحي؛ الدقة والصلاحيات والتغطية تحتاج اختبارًا على مصادر حقيقية.",
+    sourceRefs: ["marketing/_context/AURENDOR_Product_Offerings.md"],
+    kpis: ["الحفظ", "الرسائل المؤهلة", "إكمال الشرائح"],
+    castingPlan: noPeopleCasting(),
+    pinCandidate: false,
+    productionStatus: "PLAN_COVER_ONLY",
+  },
+  {
+    sequence: 11,
+    key: "SEP-11",
+    publishAt: "2026-09-15T10:00:00+03:00",
+    title: "الدفعة مرتبطة بمرحلة… والدليل بمكان ثاني",
+    format: "reel",
+    creativeMode: "product_ui",
+    contentTrack: "bunyan_pro",
+    platforms: ["Instagram", "Facebook", "TikTok", "X", "LinkedIn"],
+    pillar: "قصص Bunyan Pro",
+    audience: "إدارات المشاريع والمالية في الإنشاءات",
+    funnel: "consideration",
+    hook: "متابعة الدفعة تصير أصعب لما التقدم والدليل والمتابعة منفصلات.",
+    caption:
+      "في مشروع إنشائي، المتابعة المالية تحتاج سياقًا: المرحلة، ما تم تحديثه، والملفات أو الصور المرتبطة. Bunyan Pro يجمع متابعة المشروع والدفع ضمن سجل العمل بحسب الصلاحيات. الريل يشرح الربط الممكن فقط؛ لا يقدم حكمًا محاسبيًا أو ضمان تحصيل.",
+    cta: "شاهد الربط، وقل لنا: هل دفعاتكم مرتبطة بمراحل واضحة؟",
+    ctaPlacements: ["caption_end", "reel_end_card", "story_sticker"],
+    storyArc: {
+      setup: "دفعة تنتظر تحقق مرحلة.",
+      friction: "الدليل والتحديث والمتابعة في أماكن مختلفة.",
+      intervention: "ربط المرحلة بالمتابعة وسياق المشروع.",
+      resolution: "صورة أوضح للمتابعة، لا قرار مالي آلي.",
+    },
+    visualDirection: "ريل يعتمد شاشة Bunyan حقيقية، مع رسوم حركة توضّح العلاقة بين مرحلة ودليل ومتابعة.",
+    coverUrl: "/monthly-plan/2026-09/SEP-11.png",
+    altText: "غلاف ريل Bunyan Pro يربط الدفعة بمرحلة المشروع ودليلها.",
+    slides: [],
+    supportingStories: supportingStories("SEP-11", {
+      type: "poll",
+      prompt: "دفعات المشروع مرتبطة بمراحل واضحة؟",
+      options: ["نعم", "مو دائمًا"],
+    }),
+    reelProduction: reelPlan(
+      "SEP-11",
+      [
+        {
+          narrativeBeat: "العلاقة المقطوعة",
+          durationMs: 2400,
+          sourceType: "data_graphic",
+          sourceAssetRefs: [],
+          promptOrDirection: "ثلاث عقد منفصلة: مرحلة، دليل، متابعة.",
+          overlayText: "المرحلة هنا… والدليل هناك",
+        },
+        {
+          narrativeBeat: "واجهة المنتج",
+          durationMs: 3600,
+          sourceType: "screen_recording",
+          sourceAssetRefs: [BUNYAN_UI_ROOT + "/mockup-images/admin-dashboard-portrait.png"],
+          promptOrDirection: "تسجيل واجهة حقيقي ومنقح يمر على التقدم والمتابعة المالية.",
+          overlayText: "سياق المشروع بمكان أوضح",
+        },
+        {
+          narrativeBeat: "حدود المنتج",
+          durationMs: 2200,
+          sourceType: "brand_graphic",
+          sourceAssetRefs: [],
+          promptOrDirection: "بطاقة نصية تفرق بين تنظيم المتابعة والقرار المالي.",
+          overlayText: "تنظيم ومتابعة — مو حكم محاسبي",
+        },
+      ],
+      "هل دفعاتكم مرتبطة بمراحل واضحة؟",
+    ),
+    proofBoundary: "قدرة متابعة تنظيمية فقط؛ لا ادعاء تحصيل أو دقة محاسبية أو نتيجة عميل.",
+    sourceRefs: [BUNYAN_UI_ROOT + "/mockup-images/admin-dashboard-portrait.png"],
+    kpis: ["إكمال الفيديو", "طلبات العرض", "الحفظ"],
+    castingPlan: noPeopleCasting(),
+    pinCandidate: false,
+    productionStatus: "HIGGSFIELD_AUTH_REQUIRED",
+  },
+  {
+    sequence: 12,
+    key: "SEP-12",
+    publishAt: "2026-09-16T13:00:00+03:00",
+    title: "لا تصدّق جواب الذكاء قبل هذه الثلاثة",
+    format: "carousel",
+    creativeMode: "data_evidence",
+    contentTrack: "value_first",
+    platforms: ["Instagram", "Facebook", "TikTok", "X", "LinkedIn"],
+    pillar: "فائدة مستقلة",
+    audience: "مستخدمو أدوات الذكاء في العمل",
+    funnel: "awareness",
+    hook: "الجواب المقنع مو بالضرورة جوابًا صحيحًا.",
+    caption:
+      "قبل استخدام جواب في قرار مهم: افصل الادعاءات القابلة للفحص، اطلب مصدرًا مباشرًا وتاريخًا، ثم افتح المصدر وتأكد أنه يقول الشيء نفسه. وإذا كان القرار قانونيًا أو طبيًا أو ماليًا أو عالي الأثر، ارجع لمختص. الثقة في أسلوب الكتابة ليست دليلًا.",
+    cta: "احفظ قائمة التحقق وشاركها مع شخص يستخدم الذكاء يوميًا.",
+    ctaPlacements: ["caption_end", "carousel_last_frame", "story_sticker"],
+    storyArc: {
+      setup: "جواب مكتوب بثقة.",
+      friction: "الأسلوب يخفي احتمال الخطأ أو القدم.",
+      intervention: "ادعاء، مصدر، تطابق.",
+      resolution: "استخدام أكثر مسؤولية مع تصعيد للقرارات عالية الأثر.",
+    },
+    visualDirection: "ثلاث عدسات فحص على نص قصير: الادعاء، المصدر، التطابق.",
+    coverUrl: "/monthly-plan/2026-09/SEP-12.png",
+    altText: "قائمة من ثلاث خطوات للتحقق من جواب الذكاء الاصطناعي.",
+    slides: carouselFrames(
+      [
+        { role: "hook", title: "لا تصدّق جواب الذكاء قبل هذه الثلاثة", altText: "عنوان قائمة تحقق." },
+        { role: "lesson", title: "١ — افصل الادعاء", body: "شنو الجملة التي يمكن إثباتها أو نفيها؟", altText: "فصل الادعاء." },
+        { role: "lesson", title: "٢ — اطلب مصدرًا وتاريخًا", altText: "طلب المصدر وتاريخه." },
+        { role: "lesson", title: "٣ — افتح المصدر", body: "تأكد أنه يدعم نفس الاستنتاج.", altText: "مطابقة المصدر." },
+        { role: "proof", title: "قرار عالي الأثر؟ ارجع لمختص", altText: "حدود النصيحة العامة." },
+      ],
+      "احفظ قائمة التحقق وطبّقها",
+    ),
+    supportingStories: supportingStories("SEP-12", {
+      type: "quiz",
+      prompt: "وجود رابط مصدر يعني أن الجواب صحيح؟",
+      options: ["لا", "نعم دائمًا"],
+    }),
+    proofBoundary: "تثقيف عام لا يحل محل استشارة متخصصة أو تحقق موضوعي.",
+    sourceRefs: ["marketing/strategy/AURENDOR_Content_Plans_3Tracks.md"],
+    kpis: ["الحفظ", "المشاركة", "إكمال الشرائح"],
+    castingPlan: noPeopleCasting(),
+    pinCandidate: false,
+    productionStatus: "PLAN_COVER_ONLY",
+  },
+  {
+    sequence: 13,
+    key: "SEP-13",
+    publishAt: "2026-09-17T10:00:00+03:00",
+    title: "الموعد تأكد… بس ما وصل لباقي الفريق",
+    format: "carousel",
+    creativeMode: "workflow_diagram",
+    contentTrack: "ai_automation_service",
+    platforms: ["Instagram", "Facebook", "TikTok", "X", "LinkedIn"],
+    pillar: "قصص الذكاء والأتمتة",
+    audience: "فرق الحجوزات والخدمة والمبيعات",
+    funnel: "consideration",
+    hook: "التأكيد مو نهاية المسار إذا التنفيذ يعتمد على ثلاثة فرق.",
+    caption:
+      "تخيل حجزًا يتأكد، لكن التفاصيل تُنسخ يدويًا إلى التقويم والمبيعات والتنفيذ. يمكن لأتمتة أن تنشئ السجل، ترسل المعلومات اللازمة لكل دور، وتترك الاستثناءات للمراجعة. السيناريو يوضح الإمكانية؛ لا يدّعي جاهزية تكامل مع أداة بعينها.",
+    cta: "ارسم الأنظمة التي يجب أن تعرف بالموعد بعد تأكيده.",
+    ctaPlacements: ["caption_end", "carousel_last_frame", "story_sticker"],
+    storyArc: {
+      setup: "موعد مؤكد.",
+      friction: "التفاصيل لا تصل إلى كل من يحتاجها.",
+      intervention: "حدث واحد يوزع معلومات محددة بحسب الدور.",
+      resolution: "تنسيق أوضح مع مسار استثناء.",
+    },
+    visualDirection: "حدث موعد مركزي يرسل فروعًا محددة إلى التقويم والمبيعات والتنفيذ، بدون شعارات أدوات.",
+    coverUrl: "/monthly-plan/2026-09/SEP-13.png",
+    altText: "مخطط موعد مؤكد يرسل المعلومات إلى فرق متعددة.",
+    slides: carouselFrames(
+      [
+        { role: "hook", title: "الموعد تأكد… بس ما وصل لباقي الفريق", altText: "مشكلة توزيع الموعد." },
+        { role: "story", title: "نسخ يدوي إلى ثلاث أماكن", altText: "تكرار إدخال التفاصيل." },
+        { role: "lesson", title: "اجعل التأكيد حدث البداية", altText: "حدث يشغل المسار." },
+        { role: "lesson", title: "كل دور يأخذ ما يحتاجه فقط", altText: "توزيع بحسب الدور." },
+        { role: "proof", title: "الاستثناء يبقى لإنسان", altText: "تصعيد الحالات غير الواضحة." },
+      ],
+      "شنو الأنظمة اللي لازم تعرف بالموعد؟",
+    ),
+    supportingStories: supportingStories("SEP-13", {
+      type: "question",
+      prompt: "بعد تأكيد الموعد، كم مكان تحدّثونه يدويًا؟",
+    }),
+    proofBoundary: "سيناريو أتمتة توضيحي؛ التوافق يعتمد على أدوات العميل وصلاحياتها.",
+    sourceRefs: ["marketing/strategy/AURENDOR_Content_Plans_3Tracks.md"],
+    kpis: ["الحفظ", "الرسائل المؤهلة", "إكمال الشرائح"],
+    castingPlan: noPeopleCasting(),
+    pinCandidate: false,
+    productionStatus: "PLAN_COVER_ONLY",
+  },
+  {
+    sequence: 14,
+    key: "SEP-14",
+    publishAt: "2026-09-18T13:00:00+03:00",
+    title: "مشروع واحد، مو نفس الشاشة لكل شخص",
+    format: "carousel",
+    creativeMode: "product_ui",
+    contentTrack: "bunyan_pro",
+    platforms: ["Instagram", "Facebook", "TikTok", "X", "LinkedIn"],
+    pillar: "قصص Bunyan Pro",
+    audience: "إدارات شركات الإنشاءات وأصحاب المشاريع",
+    funnel: "consideration",
+    hook: "الإدارة والمهندس والعميل يحتاجون نفس الحقيقة، مو نفس التفاصيل.",
+    caption:
+      "الإدارة تريد نظرة عامة، المهندس يحتاج ما يخص التنفيذ، والعميل يريد تقدمًا مفهومًا. Bunyan Pro ينظم رؤية المشروع بحسب الدور والصلاحية حتى لا تصبح كل شاشة نسخة مزدحمة للجميع. العرض البصري يجب أن يستخدم واجهات حقيقية ومنقحة فقط.",
+    cta: "أي رؤية تريد أن نعرضها أولًا: الإدارة، المهندس، لو العميل؟",
+    ctaPlacements: ["caption_end", "carousel_last_frame", "story_sticker"],
+    storyArc: {
+      setup: "ثلاثة أدوار تنظر إلى مشروع واحد.",
+      friction: "إما نقص معلومات أو شاشة مزدحمة.",
+      intervention: "رؤية بحسب الدور والصلاحية.",
+      resolution: "سياق مناسب لكل طرف ضمن نفس سجل المشروع.",
+    },
+    visualDirection: "ثلاث لقطات UI حقيقية منقحة ضمن مسار واحد؛ لا نماذج واجهات مولدة.",
+    coverUrl: "/monthly-plan/2026-09/SEP-14.png",
+    altText: "ثلاث رؤى لواجهة مشروع واحدة بحسب الإدارة والمهندس والعميل.",
+    slides: carouselFrames(
+      [
+        { role: "hook", title: "مشروع واحد، مو نفس الشاشة لكل شخص", altText: "عنوان الرؤى بحسب الدور." },
+        { role: "story", title: "الإدارة: شنو يحتاج انتباه؟", altText: "حاجة الإدارة للنظرة العامة." },
+        { role: "story", title: "المهندس: شنو الخطوة التالية؟", altText: "حاجة المهندس للتنفيذ." },
+        { role: "story", title: "العميل: وين وصل المشروع؟", altText: "حاجة العميل للتقدم." },
+        {
+          role: "proof",
+          title: "رؤية بحسب الدور والصلاحية",
+          assetRefs: [BUNYAN_UI_ROOT + "/mockup-images/admin-dashboard-portrait.png"],
+          altText: "واجهة Bunyan Pro حقيقية بعد مراجعة الخصوصية.",
+        },
+      ],
+      "أي رؤية تريد تشوفها أولًا؟",
+    ),
+    supportingStories: supportingStories("SEP-14", {
+      type: "poll",
+      prompt: "أي رؤية نعرض أولًا؟",
+      options: ["الإدارة", "المهندس"],
+    }),
+    proofBoundary: "وصف لتنظيم الواجهة والصلاحيات؛ لا يدعي تغطية كل احتياج أو إعداد.",
+    sourceRefs: [BUNYAN_UI_ROOT + "/mockup-images/admin-dashboard-portrait.png"],
+    kpis: ["إكمال الشرائح", "طلبات العرض", "الردود"],
+    castingPlan: noPeopleCasting(),
+    pinCandidate: false,
+    productionStatus: "PLAN_COVER_ONLY",
+  },
+  {
+    sequence: 15,
+    key: "SEP-15",
+    publishAt: "2026-09-21T10:00:00+03:00",
+    title: "قرار مهم؟ لا تخلي الذكاء آخر شخص يراجعه",
+    format: "reel",
+    creativeMode: "object_led",
+    contentTrack: "value_first",
+    platforms: ["Instagram", "Facebook", "TikTok", "X", "LinkedIn"],
+    pillar: "فائدة مستقلة",
+    audience: "أي شخص يستخدم الذكاء في قرارات العمل",
+    funnel: "awareness",
+    hook: "كلما زاد أثر القرار، لازم تزيد المراجعة البشرية.",
+    caption:
+      "قسّم الاستخدام إلى ثلاث مناطق: مسودة منخفضة الأثر، توصية تحتاج تحققًا، وقرار عالي الأثر يحتاج مختصًا ومسؤولًا واضحًا. لا تجعل سهولة التوليد تختصر مسؤولية القرار. هذا مبدأ عام ينطبق على أدوات كثيرة.",
+    cta: "احفظ المقياس وحدد: بأي منطقة يقع استخدامك اليوم؟",
+    ctaPlacements: ["caption_end", "reel_end_card", "story_sticker"],
+    storyArc: {
+      setup: "الأداة تنتج جوابًا بسرعة.",
+      friction: "سرعة الناتج قد تُفهم كصلاحية لاتخاذ القرار.",
+      intervention: "ثلاث مناطق للأثر والمراجعة.",
+      resolution: "مسؤولية أوضح بحسب مستوى الخطر.",
+    },
+    visualDirection: "ريل أشياء ومخططات: ثلاث مناطق ضوئية من مسودة إلى قرار عالي الأثر، بلا أشخاص.",
+    coverUrl: "/monthly-plan/2026-09/SEP-15.png",
+    altText: "غلاف ريل يوضح ثلاث مناطق لمراجعة قرارات الذكاء الاصطناعي.",
+    slides: [],
+    supportingStories: supportingStories("SEP-15", {
+      type: "quiz",
+      prompt: "قرار مالي عالي الأثر يحتاج…",
+      options: ["مختص ومسؤول", "جواب أسرع", "برومبت أطول"],
+    }),
+    reelProduction: reelPlan(
+      "SEP-15",
+      [
+        {
+          narrativeBeat: "منطقة المسودة",
+          durationMs: 2400,
+          sourceType: "higgsfield_generated",
+          sourceAssetRefs: [],
+          promptOrDirection: "ورقة مسودة تتحرك داخل منطقة خضراء هادئة، بلا يد أو شخص.",
+          overlayText: "١ — مسودة منخفضة الأثر",
+        },
+        {
+          narrativeBeat: "منطقة التحقق",
+          durationMs: 2600,
+          sourceType: "data_graphic",
+          sourceAssetRefs: [],
+          promptOrDirection: "عدسة تحقق تمر على مصدر وتاريخ.",
+          overlayText: "٢ — توصية تحتاج تحققًا",
+        },
+        {
+          narrativeBeat: "منطقة القرار",
+          durationMs: 2800,
+          sourceType: "brand_graphic",
+          sourceAssetRefs: [],
+          promptOrDirection: "بوابة قرار واضحة تحمل أيقونة مسؤولية لا شخصًا.",
+          overlayText: "٣ — قرار عالي الأثر: مختص ومسؤول",
+        },
+      ],
+      "بأي منطقة يقع استخدامك اليوم؟",
+    ),
+    proofBoundary: "إرشاد عام؛ لا يحدد وحده متطلبات قطاع أو قرار قانوني أو طبي أو مالي.",
+    sourceRefs: ["marketing/strategy/AURENDOR_Content_Plans_3Tracks.md"],
+    kpis: ["إكمال الفيديو", "الحفظ", "المشاركة"],
+    castingPlan: noPeopleCasting(),
+    pinCandidate: false,
+    productionStatus: "HIGGSFIELD_AUTH_REQUIRED",
+  },
+  {
+    sequence: 16,
+    key: "SEP-16",
+    publishAt: "2026-09-22T13:00:00+03:00",
+    title: "المتابعة تأخرت لأن كل شخص انتظر الثاني",
+    format: "reel",
+    creativeMode: "workflow_diagram",
+    contentTrack: "ai_automation_service",
+    platforms: ["Instagram", "Facebook", "TikTok", "X", "LinkedIn"],
+    pillar: "قصص الذكاء والأتمتة",
+    audience: "فرق المبيعات والعمليات",
+    funnel: "conversion",
+    hook: "النسيان مو دائمًا مشكلة شخص؛ أحيانًا المسار نفسه ما يملك إشارة تالية.",
+    caption:
+      "بعد إرسال عرض أو طلب معلومات، قد تنتظر المتابعة في ذاكرة شخص. يمكن لمسار أن يسجل الحدث، ينتظر المدة المحددة، يتحقق من وجود رد، ثم يذكّر المسؤول أو يصعّد—من دون إرسال آلي غير مناسب. المثال توضيحي ويحتاج قواعد موافقة واضحة.",
+    cta: "اكتب أكثر متابعة تتأخر عندكم، وحدد متى يجب أن تبدأ.",
+    ctaPlacements: ["caption_end", "reel_end_card", "story_sticker"],
+    storyArc: {
+      setup: "عرض أو طلب معلومات خرج.",
+      friction: "لا توجد إشارة واضحة للمتابعة.",
+      intervention: "توقيت وفحص رد وتذكير وتصعيد.",
+      resolution: "المتابعة تصبح جزءًا من المسار لا ذاكرة فردية.",
+    },
+    visualDirection: "ريل خط زمني يتحول إلى أربع حالات؛ الحركة توضح الانتظار والفحص والتصعيد.",
+    coverUrl: "/monthly-plan/2026-09/SEP-16.png",
+    altText: "غلاف ريل عن متابعة تأخرت لأن المسؤولية لم تكن واضحة.",
+    slides: [],
+    supportingStories: supportingStories("SEP-16", {
+      type: "question",
+      prompt: "شنو أكثر متابعة تتأخر عندكم؟",
+    }),
+    reelProduction: reelPlan(
+      "SEP-16",
+      [
+        {
+          narrativeBeat: "الانتظار الصامت",
+          durationMs: 2300,
+          sourceType: "higgsfield_generated",
+          sourceAssetRefs: [],
+          promptOrDirection: "كرة حدث ثابتة على خط زمني، لا ساعة حرفية ولا أشخاص.",
+          overlayText: "تم الإرسال… وبعدين؟",
+        },
+        {
+          narrativeBeat: "قاعدة المتابعة",
+          durationMs: 3000,
+          sourceType: "data_graphic",
+          sourceAssetRefs: [],
+          promptOrDirection: "تحريك: انتظر المدة ← افحص الرد ← ذكّر المسؤول.",
+          overlayText: "وقت + حالة + مسؤول",
+        },
+        {
+          narrativeBeat: "الاستثناء",
+          durationMs: 2500,
+          sourceType: "brand_graphic",
+          sourceAssetRefs: [],
+          promptOrDirection: "مسار جانبي للحالة الحساسة يتوقف قبل الإرسال الآلي.",
+          overlayText: "الحالة الحساسة تتوقف لإنسان",
+        },
+      ],
+      "متى لازم تبدأ المتابعة؟",
+    ),
+    proofBoundary: "سيناريو أتمتة توضيحي؛ لا يوجد ادعاء زيادة تحويل أو تقليل تأخير.",
+    sourceRefs: ["marketing/strategy/AURENDOR_Content_Plans_3Tracks.md"],
+    kpis: ["إكمال الفيديو", "الرسائل المؤهلة", "الحفظ"],
+    castingPlan: noPeopleCasting(),
+    pinCandidate: false,
+    productionStatus: "HIGGSFIELD_AUTH_REQUIRED",
+  },
+  {
+    sequence: 17,
+    key: "SEP-17",
+    publishAt: "2026-09-23T10:00:00+03:00",
+    title: "شنو ما يجمعه Bunyan Pro عنك؟",
+    format: "carousel",
+    creativeMode: "product_ui",
+    contentTrack: "bunyan_pro",
+    platforms: ["Instagram", "Facebook", "TikTok", "X", "LinkedIn"],
+    pillar: "ثقة Bunyan Pro",
+    audience: "أصحاب المشاريع وفرق الإنشاءات",
+    funnel: "consideration",
+    hook: "الثقة تبدأ من جواب واضح عن البيانات، مو من عبارة عامة.",
+    caption:
+      "بحسب سياسة Bunyan Pro الحالية: الخدمة لا تستخدم التحليلات، ولا التتبع، ولا الإعلانات، ولا خدمات الذكاء الاصطناعي. هذا ادعاء محدد بحدوده ويجب إعادة التحقق منه قبل النشر إذا تغير المنتج أو مزودوه. المنشور لا يعني أن الخدمة لا تجمع أي بيانات لازمة لتشغيل الحساب والمشروع.",
+    cta: "احفظ المنشور، واقرأ سياسة الخصوصية الكاملة قبل استخدام أي منتج.",
+    ctaPlacements: ["caption_end", "carousel_last_frame", "story_sticker"],
+    storyArc: {
+      setup: "المستخدم يريد فهم ما يحدث لبياناته.",
+      friction: "عبارات الخصوصية العامة لا تجيب.",
+      intervention: "أربع نقاط محددة من السياسة الحالية.",
+      resolution: "ثقة مبنية على حدود قابلة لإعادة التحقق.",
+    },
+    visualDirection: "كاروسيل واجهة/سياسة نظيف بأربع بطاقات نفي محددة وتاريخ تحقق واضح.",
+    coverUrl: "/monthly-plan/2026-09/SEP-17.png",
+    altText: "غلاف يوضح أربعة أشياء لا يستخدمها Bunyan Pro بحسب السياسة الحالية.",
+    slides: carouselFrames(
+      [
+        { role: "hook", title: "شنو ما يجمعه Bunyan Pro عنك؟", altText: "سؤال عن سياسة بيانات Bunyan Pro." },
+        { role: "proof", title: "لا تحليلات", altText: "نفي استخدام analytics بحسب السياسة الحالية." },
+        { role: "proof", title: "لا تتبع", altText: "نفي استخدام tracking بحسب السياسة الحالية." },
+        { role: "proof", title: "لا إعلانات", altText: "نفي استخدام ads بحسب السياسة الحالية." },
+        { role: "proof", title: "لا خدمات ذكاء اصطناعي", altText: "نفي استخدام AI services بحسب السياسة الحالية." },
+        { role: "lesson", title: "اقرأ الحدود وأعد التحقق", body: "السياسة قد تتغير، والتشغيل يحتاج بيانات حساب ومشروع.", altText: "حدود الادعاء وضرورة إعادة التحقق." },
+      ],
+      "اقرأ سياسة الخصوصية الكاملة قبل الاستخدام",
+    ),
+    supportingStories: supportingStories("SEP-17", {
+      type: "quiz",
+      prompt: "هل «لا تتبع» تعني «لا تُجمع أي بيانات»؟",
+      options: ["لا", "نعم"],
+    }),
+    proofBoundary:
+      "الادعاء محصور في عدم استخدام analytics/tracking/ads/AI services بحسب السياسة الحالية؛ يجب إعادة التحقق قبل النشر ولا يعني انعدام كل بيانات التشغيل.",
+    sourceRefs: ["marketing/_context/AURENDOR_Verified_Claims.md"],
+    kpis: ["الحفظ", "زيارة سياسة الخصوصية", "إكمال الشرائح"],
+    castingPlan: noPeopleCasting(),
+    pinCandidate: false,
+    productionStatus: "PLAN_COVER_ONLY",
+  },
+  {
+    sequence: 18,
+    key: "SEP-18",
+    publishAt: "2026-09-24T13:00:00+03:00",
+    title: "لا تؤتمت قبل ما ترسم هذا السطر",
+    format: "carousel",
+    creativeMode: "typographic",
+    contentTrack: "value_first",
+    platforms: ["Instagram", "Facebook", "TikTok", "X", "LinkedIn"],
+    pillar: "فائدة مستقلة",
+    audience: "الفرق التي تخطط للأتمتة",
+    funnel: "awareness",
+    hook: "ابدأ من حدث واحد ونهاية واحدة؛ لا تبدأ من قائمة الأدوات.",
+    caption:
+      "اكتب المسار بسطر: «عندما يحدث ___، يفعل ___، باستخدام ___، وإذا حدث استثناء ___، يتوقف عند ___». بعدها أضف مقياسًا واحدًا مثل وقت الانتظار أو عدد الأخطاء. هذا التمرين وحده يكشف كثيرًا من الغموض قبل شراء أي أداة.",
+    cta: "انسخ السطر واملأ الفراغات لمهمة واحدة.",
+    ctaPlacements: ["caption_end", "carousel_last_frame", "story_sticker"],
+    storyArc: {
+      setup: "فريق يبدأ من أداة لامعة.",
+      friction: "لا يوجد تعريف لبداية المسار أو نهايته أو استثنائه.",
+      intervention: "جملة مسار واحدة ومقياس واحد.",
+      resolution: "متطلبات أوضح قبل البناء.",
+    },
+    visualDirection: "كاروسيل طباعي تفاعلي يملأ جملة المسار خطوة خطوة.",
+    coverUrl: "/monthly-plan/2026-09/SEP-18.png",
+    altText: "قالب جملة واحدة لرسم مسار قبل أتمتته.",
+    slides: carouselFrames(
+      [
+        { role: "hook", title: "لا تؤتمت قبل ما ترسم هذا السطر", altText: "عنوان قالب رسم المسار." },
+        { role: "lesson", title: "عندما يحدث ___", altText: "حدث بداية المسار." },
+        { role: "lesson", title: "يفعل ___ باستخدام ___", altText: "الفعل والمعلومة اللازمة." },
+        { role: "lesson", title: "إذا حدث استثناء ___", altText: "تعريف الاستثناء." },
+        { role: "lesson", title: "يتوقف عند ___", altText: "صاحب القرار أو نقطة التوقف." },
+        { role: "lesson", title: "قِس شيئًا واحدًا", body: "وقت، انتظار، خطأ، أو تسليم.", altText: "مقياس أولي واحد." },
+      ],
+      "انسخ السطر واملأه لمهمة واحدة",
+    ),
+    supportingStories: supportingStories("SEP-18", {
+      type: "question",
+      prompt: "أي مسار تريد ترسمه بجملة واحدة؟",
+    }),
+    proofBoundary: "أداة تخطيط عامة؛ لا تثبت جدوى الأتمتة وحدها.",
+    sourceRefs: ["marketing/strategy/AURENDOR_Content_Plans_3Tracks.md"],
+    kpis: ["الحفظ", "المشاركة", "الردود على القصة"],
+    castingPlan: noPeopleCasting(),
+    pinCandidate: false,
+    productionStatus: "PLAN_COVER_ONLY",
+  },
+  {
+    sequence: 19,
+    key: "SEP-19",
+    publishAt: "2026-09-28T10:00:00+03:00",
+    title: "الموظف الجديد يسأل نفس الأسئلة كل أسبوع",
+    format: "carousel",
+    creativeMode: "workflow_diagram",
+    contentTrack: "ai_automation_service",
+    platforms: ["Instagram", "Facebook", "TikTok", "X", "LinkedIn"],
+    pillar: "قصص الذكاء والأتمتة",
+    audience: "فرق الموارد البشرية والعمليات",
+    funnel: "conversion",
+    hook: "المشكلة مو بالسؤال؛ المشكلة أن المعرفة ما إلها طريق واضح.",
+    caption:
+      "تخيل مساعد onboarding يجيب من دليل معتمد، يعرض المصدر، ويحوّل الأسئلة الحساسة أو غير المغطاة إلى المسؤول الصحيح. وبجانبه checklist تضمن أن المعرفة لا تستبدل الخطوات التشغيلية. هذا سيناريو تصميم، وليس منتجًا جاهزًا أو ادعاء تقليل مدة التدريب.",
+    cta: "اكتب أكثر سؤال يكرره الموظفون الجدد عندكم.",
+    ctaPlacements: ["caption_end", "carousel_last_frame", "story_sticker"],
+    storyArc: {
+      setup: "موظف جديد يبدأ.",
+      friction: "الإجابات موزعة وتعتمد على من هو متاح.",
+      intervention: "مساعد مرتبط بدليل معتمد ومسار تصعيد وقائمة.",
+      resolution: "وصول أوضح مع بقاء المسؤولية البشرية.",
+    },
+    visualDirection: "خريطة onboarding من سؤال إلى مصدر إلى checklist إلى مسؤول، بلا شخصيات مولدة.",
+    coverUrl: "/monthly-plan/2026-09/SEP-19.png",
+    altText: "مخطط مساعد onboarding موثق بمصدر ومسار تصعيد.",
+    slides: carouselFrames(
+      [
+        { role: "hook", title: "الموظف الجديد يسأل نفس الأسئلة كل أسبوع", altText: "مشكلة تكرار أسئلة onboarding." },
+        { role: "story", title: "الجواب موزع بين ملفات وأشخاص", altText: "تشتت معرفة onboarding." },
+        { role: "lesson", title: "أجب من دليل معتمد", altText: "ربط الجواب بالدليل." },
+        { role: "proof", title: "اعرض المصدر وحدود الإجابة", altText: "توثيق وحدود الجواب." },
+        { role: "lesson", title: "السؤال الحساس يذهب للمسؤول", altText: "مسار التصعيد." },
+      ],
+      "شنو أكثر سؤال يكرره الموظف الجديد؟",
+    ),
+    supportingStories: supportingStories("SEP-19", {
+      type: "question",
+      prompt: "شنو أكثر سؤال يتكرر بالـ onboarding؟",
+    }),
+    proofBoundary: "سيناريو خدمة جديد؛ لا يدعي منتجًا جاهزًا أو تقليل مدة تدريب.",
+    sourceRefs: ["marketing/_context/AURENDOR_Product_Offerings.md"],
+    kpis: ["الرسائل المؤهلة", "الحفظ", "إكمال الشرائح"],
+    castingPlan: noPeopleCasting(),
+    pinCandidate: false,
+    productionStatus: "PLAN_COVER_ONLY",
+  },
+  {
+    sequence: 20,
+    key: "SEP-20",
+    publishAt: "2026-09-30T13:00:00+03:00",
+    title: "جولة Bunyan Pro في 30 ثانية",
+    format: "reel",
+    creativeMode: "product_ui",
+    contentTrack: "bunyan_pro",
+    platforms: ["Instagram", "Facebook", "TikTok", "X", "LinkedIn"],
+    pillar: "قصص Bunyan Pro",
+    audience: "شركات الإنشاءات وأصحاب المشاريع",
+    funnel: "conversion",
+    hook: "مشروع، تقدم، صور، ملفات، ومتابعات—شوفها كرحلة واحدة.",
+    caption:
+      "نختم الشهر بجولة قصيرة داخل Bunyan Pro: من قائمة المشاريع إلى تفاصيل مشروع، ثم التقدم وصور الموقع والملفات والمتابعة. كل لقطة يجب أن تكون من المنتج الحقيقي بعد مراجعة الخصوصية؛ أي حركة مولدة تبقى حول الواجهة ولا تغيّرها.",
+    cta: "إذا تريد جولة تناسب دورك، أرسل «Bunyan» وحدد: إدارة، مهندس، أو عميل.",
+    ctaPlacements: ["caption_end", "reel_end_card", "story_sticker"],
+    storyArc: {
+      setup: "مشروع يحمل معلومات كثيرة.",
+      friction: "العرض المجزأ لا يوضح رحلة العمل.",
+      intervention: "جولة قصيرة مرتبة بحسب مهام حقيقية.",
+      resolution: "فهم أولي للمنتج ودعوة إلى عرض حسب الدور.",
+    },
+    visualDirection: "تسجيل شاشة عمودي من المنتج الحقيقي مع تكبيرات نظيفة وانتقالات Higgsfield خارج حدود الواجهة فقط.",
+    coverUrl: "/monthly-plan/2026-09/SEP-20.png",
+    altText: "غلاف جولة Bunyan Pro في ثلاثين ثانية.",
+    slides: [],
+    supportingStories: supportingStories("SEP-20", {
+      type: "poll",
+      prompt: "أي جولة تريدها أولًا؟",
+      options: ["الإدارة", "المهندس"],
+    }),
+    reelProduction: reelPlan(
+      "SEP-20",
+      [
+        {
+          narrativeBeat: "قائمة المشاريع",
+          durationMs: 3200,
+          sourceType: "screen_recording",
+          sourceAssetRefs: [BUNYAN_UI_ROOT + "/mockup-images/admin-dashboard-portrait.png"],
+          promptOrDirection: "تسجيل حقيقي ومنقح يبدأ من نظرة المشاريع.",
+          overlayText: "١ — المشاريع",
+        },
+        {
+          narrativeBeat: "التقدم والسجل",
+          durationMs: 3400,
+          sourceType: "screen_recording",
+          sourceAssetRefs: [BUNYAN_UI_ROOT + "/mockup-images/admin-dashboard-portrait.png"],
+          promptOrDirection: "تسجيل حقيقي ومنقح ينتقل إلى تقدم مشروع.",
+          overlayText: "٢ — التقدم",
+        },
+        {
+          narrativeBeat: "الصور والملفات",
+          durationMs: 3400,
+          sourceType: "screen_recording",
+          sourceAssetRefs: [BUNYAN_UI_ROOT + "/mockup-images/admin-dashboard-portrait.png"],
+          promptOrDirection: "تسجيل حقيقي ومنقح يعرض أصول المشروع.",
+          overlayText: "٣ — صور وملفات",
+        },
+        {
+          narrativeBeat: "المتابعة",
+          durationMs: 3000,
+          sourceType: "screen_recording",
+          sourceAssetRefs: [BUNYAN_UI_ROOT + "/mockup-images/admin-dashboard-portrait.png"],
+          promptOrDirection: "تسجيل حقيقي ومنقح يعرض المتابعة حسب الدور.",
+          overlayText: "٤ — متابعة أوضح",
+        },
+      ],
+      "أرسل «Bunyan» وحدد دورك",
+    ),
+    proofBoundary: "جولة واجهة مملوكة فقط؛ لا ادعاء نتيجة عميل أو اكتمال كل ميزة لكل دور.",
+    sourceRefs: [BUNYAN_UI_ROOT + "/mockup-images/admin-dashboard-portrait.png"],
+    kpis: ["إكمال الفيديو", "طلبات العرض", "الرسائل المؤهلة"],
+    castingPlan: noPeopleCasting(),
+    pinCandidate: false,
+    productionStatus: "HIGGSFIELD_AUTH_REQUIRED",
+  },
+];

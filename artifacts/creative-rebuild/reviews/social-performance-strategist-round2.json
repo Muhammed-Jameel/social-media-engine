@@ -1,0 +1,578 @@
+{
+  "schemaVersion": "1.0.0",
+  "reviewId": "benchmark-v2-round2-social-performance-strategist-2026-08-23",
+  "reviewedAt": "2026-08-23T13:59:39Z",
+  "criticRole": "SOCIAL_PERFORMANCE_STRATEGIST",
+  "independenceStatement": "This review was performed independently from generation, implementation, and the other critic roles. Scores are based on the exact archived round-two original, 324 by 405 mobile, feed, carousel, restart-mechanism, and old-versus-new pixels at the declared hashes. Route names, prompts, HTML, and creator intent were not treated as visual evidence.",
+  "decisionPolicy": {
+    "professionalCandidateMinimum": 145,
+    "excellentMinimum": 152,
+    "hardFailForcesReject": true,
+    "anchorVerdictMustBeComparableOrAboveForProfessionalStatus": true,
+    "performanceLens": "Two-second comprehension, stop power, save or share utility, carousel progression, feed behavior, credibility, and conversion evidence were assessed through the common eight-dimension professional rubric."
+  },
+  "sourceEvidence": {
+    "manifest": "artifacts/creative-rebuild/benchmarks-v2-round2/manifest.json",
+    "manifestSha256": "5b2a2cb9a078e97862d19c2fc86b87bdeb42162557ba524864789de1c35abdfc",
+    "manifestGeneratedAt": "2026-08-23T13:20:12.559Z",
+    "manifestIteration": 2,
+    "rubric": "design-intelligence/reports/CREATIVE_QUALITY_RUBRIC.md",
+    "rubricSha256": "d8dc7e2957a912f5960d1b8988cccbd59edde62516681cf23be3dedd5027d102",
+    "goldenSet": "design-intelligence/reports/GOLDEN_SET.md",
+    "goldenSetSha256": "9f5c1bf70d9d491e2c0ca4a25cddf653bda48375d77c6c570f9dfb5e66bbc36e",
+    "references": "design-intelligence/corpus/references.json",
+    "referencesSha256": "711fcc1987c6809ebc722dd834cee27f0bac079b8d063e55fb73a26c7ca42177"
+  },
+  "inspectionRecord": {
+    "originalsInspected": 12,
+    "mobileRendersInspected": 12,
+    "actualPixelsInspected": true,
+    "manifestHashesVerifiedAgainstArchivedRound2Files": true,
+    "originalPixelInputs": {
+      "01-ar-context-handoff": {"file": "artifacts/creative-rebuild/benchmarks-v2-round2/01-ar-context-handoff.png", "sha256": "2196c2c4a55b9808cbb50b5414efad08dfa80d3d4c1d4c120cd082181cfa2519"},
+      "02-ar-rag-evidence": {"file": "artifacts/creative-rebuild/benchmarks-v2-round2/02-ar-rag-evidence.png", "sha256": "adefabbb8bd36b8614c043241470404007f3bc6e5a90c4f3ea877605d697a9ab"},
+      "03-ar-automation-relay": {"file": "artifacts/creative-rebuild/benchmarks-v2-round2/03-ar-automation-relay.png", "sha256": "555d121950dee918b0c30bf86cf58fdd8bcff5eb75764b7accd9cf68a3ba42ac"},
+      "04-ar-decision-question": {"file": "artifacts/creative-rebuild/benchmarks-v2-round2/04-ar-decision-question.png", "sha256": "29d75eaf465ab8e27239239c6fc29e3f96df8b21eda9ef96d8f4b850de9b6f51"},
+      "05-en-before-after": {"file": "artifacts/creative-rebuild/benchmarks-v2-round2/05-en-before-after.png", "sha256": "8196b72c8030e141c73f4e3a72e93c1ed633cb2334fe773506b21d413c2487d3"},
+      "06-ar-operating-pattern": {"file": "artifacts/creative-rebuild/benchmarks-v2-round2/06-ar-operating-pattern.png", "sha256": "5bb3c4dd159eb68fbf1990d90775dff42a576a9049a0ad7ac97e366abcef9ab8"},
+      "07-en-evidence-ledger": {"file": "artifacts/creative-rebuild/benchmarks-v2-round2/07-en-evidence-ledger.png", "sha256": "a6e3be861848eadc7e7166885bc4a15f975a09d7497d574ccf3dc93f035a4957"},
+      "08-en-field-notes": {"file": "artifacts/creative-rebuild/benchmarks-v2-round2/08-en-field-notes.png", "sha256": "324ce9f53a703e7efb0ae4ca39dfd238713c68ecd368aec2cf88700bac327a2b"},
+      "09-ar-carousel-decision": {"file": "artifacts/creative-rebuild/benchmarks-v2-round2/09-ar-carousel-decision.png", "sha256": "0a33470e54a6c597065994723fa74b4119ebfb248a609926b000b6dc402b93de"},
+      "10-ar-carousel-boundaries": {"file": "artifacts/creative-rebuild/benchmarks-v2-round2/10-ar-carousel-boundaries.png", "sha256": "b5df95c734b2442c350d1829796870139be6af9edf20fd5fe5f4405c8e0d17a4"},
+      "11-ar-carousel-stop": {"file": "artifacts/creative-rebuild/benchmarks-v2-round2/11-ar-carousel-stop.png", "sha256": "b247f546a73af33e67992c8797943ebb4f4a521ed7fe40cf584e597969ceb98d"},
+      "12-en-complexity-answerable": {"file": "artifacts/creative-rebuild/benchmarks-v2-round2/12-en-complexity-answerable.png", "sha256": "05aa3cc222515a687e7566b373add86d3af25b87fb5688ac43d1ddf71a273bb3"}
+    },
+    "mobilePixelInputs": {
+      "01-ar-context-handoff": {"file": "artifacts/creative-rebuild/benchmarks-v2-round2/mobile/01-ar-context-handoff.png", "sha256": "c92679a18be11d8d89dbde0fb93963c64b2e846be5333d4af23ae4cac0efd50b"},
+      "02-ar-rag-evidence": {"file": "artifacts/creative-rebuild/benchmarks-v2-round2/mobile/02-ar-rag-evidence.png", "sha256": "d2ef00988442bdd2f1327ed65ab1e6cfff6cc8b41a5de0ee83a55090c0926921"},
+      "03-ar-automation-relay": {"file": "artifacts/creative-rebuild/benchmarks-v2-round2/mobile/03-ar-automation-relay.png", "sha256": "5f8b0a4a4bc2dcd9f9fd07003f3f2e02355ef6aa57fde2d6b912999b06a4becb"},
+      "04-ar-decision-question": {"file": "artifacts/creative-rebuild/benchmarks-v2-round2/mobile/04-ar-decision-question.png", "sha256": "35d44be70ab86c23ff359031c1efc84e1d426d68fd14ffe15b5c29d14ec97085"},
+      "05-en-before-after": {"file": "artifacts/creative-rebuild/benchmarks-v2-round2/mobile/05-en-before-after.png", "sha256": "af5e0a5d05e8fcd82201f22cc532bf2cd497b40f43eca97481b64fdc9b9e90b3"},
+      "06-ar-operating-pattern": {"file": "artifacts/creative-rebuild/benchmarks-v2-round2/mobile/06-ar-operating-pattern.png", "sha256": "681f5bcd9e70ef279ee57e174ed4935f1aa45f8c3d4f9950cb95f769c7985ea1"},
+      "07-en-evidence-ledger": {"file": "artifacts/creative-rebuild/benchmarks-v2-round2/mobile/07-en-evidence-ledger.png", "sha256": "189d45e1b178f91d085cd9e4b74c0bb3b8606c6ac60a4009bd52a19439268456"},
+      "08-en-field-notes": {"file": "artifacts/creative-rebuild/benchmarks-v2-round2/mobile/08-en-field-notes.png", "sha256": "00beb615543c8f3841526e31cf87e030533bf6737ccf30f2a05ff88bf441095a"},
+      "09-ar-carousel-decision": {"file": "artifacts/creative-rebuild/benchmarks-v2-round2/mobile/09-ar-carousel-decision.png", "sha256": "d26957cac259f403d3605b3ce3cc2f2bdb9f747a76835136e01ea709e5bf394f"},
+      "10-ar-carousel-boundaries": {"file": "artifacts/creative-rebuild/benchmarks-v2-round2/mobile/10-ar-carousel-boundaries.png", "sha256": "c11e92d47b22ec770cd42970b40d7a04796f3095eaa102e0c0af3a55852f84cb"},
+      "11-ar-carousel-stop": {"file": "artifacts/creative-rebuild/benchmarks-v2-round2/mobile/11-ar-carousel-stop.png", "sha256": "dd87942c5da8b3448d2adda806b17f7178f3d73f0da975a0c8ad10e3353e2f87"},
+      "12-en-complexity-answerable": {"file": "artifacts/creative-rebuild/benchmarks-v2-round2/mobile/12-en-complexity-answerable.png", "sha256": "2d0fa97920f71b15fce8e670957192a221d4cc1b66dc950f273bb5bcdc93d2de"}
+    },
+    "comparisonPixelInputs": [
+      {"file": "artifacts/creative-rebuild/comparisons/round2-reviewed/benchmark-suite-12.png", "sha256": "df06dc4e3218b30146275ddb8bd0ca2386ac5932ac7d859cc69b3de005fd79fe", "use": "all twelve candidates at suite scale"},
+      {"file": "artifacts/creative-rebuild/comparisons/round2-reviewed/feed-visible-10.png", "sha256": "ca82d1267f1444beae8e629b323f995c206f16a37a5aac7cc4889186cec207bf", "use": "ten feed-visible tiles and pacing"},
+      {"file": "artifacts/creative-rebuild/comparisons/round2-reviewed/feed-9.png", "sha256": "7579b30df400666fcbef0d25aea3ff44d69e7a89fa40ffc1f99812578d41b694", "use": "three-by-three feed hierarchy and variation"},
+      {"file": "artifacts/creative-rebuild/comparisons/round2-reviewed/feed-3.png", "sha256": "f5d92aa0610c46b85725d5388251cce4e36a6f12a7194f319ad99e6a703b37cd", "use": "focused context-question-series feed row"},
+      {"file": "artifacts/creative-rebuild/comparisons/round2-reviewed/carousel-sequence-09-11.png", "sha256": "215ff302e14728ba53a6cd8acecf9d57554e3d9b63f296dc1f635c2f1b23340c", "use": "slides 09 through 11 as a sequence"},
+      {"file": "artifacts/creative-rebuild/comparisons/round2-reviewed/restart-mechanisms-mobile.png", "sha256": "8cc71e59630d2c67e683219a5643099e3522d2b2c9b75ffb55774a5ddb174a82", "use": "textless mobile mechanism test for 03, 05, 07, and 12"},
+      {"file": "artifacts/creative-rebuild/comparisons/round2-reviewed/old-vs-new-identical-brief.png", "sha256": "a1964c8dcf63010dd743b36a66c22145c4f128db7ab7643da67fa4eb65980e40", "use": "legacy-versus-round-two identical-brief comparison"}
+    ]
+  },
+  "professionalAnchorsInspected": [
+    {"referenceId": "ref_51e708951ea61f18", "sha256": "51e708951ea61f184d299ccbd7b3147f95d051912e4c2f4cea6e27a40e6425dd", "tier": "gold", "use": "single-verb social campaign, stop power, and campaign variation"},
+    {"referenceId": "ref_6dd0a9246092f4d5", "sha256": "6dd0a9246092f4d586c92b3aa03d494c75bee71a11e3c0d2c68756bb38169103", "tier": "gold", "use": "material metaphor and immediate consequence"},
+    {"referenceId": "ref_7ea2e6edfd24a465", "sha256": "7ea2e6edfd24a4655210897e7455a4b53255816f674b180edf45583d4b66a52b", "tier": "gold", "use": "technology brand-system consistency and format adaptability"},
+    {"referenceId": "ref_f5cec23c32415d6e", "sha256": "f5cec23c32415d6e9c7e846c1c7613bb4ce5de61d96c62d88026fcf7d32d98c0", "tier": "gold", "use": "social-native type hierarchy and repeatable campaign behavior"},
+    {"referenceId": "ref_8871f98455278188", "sha256": "8871f98455278188eb1488245bdf7a75c23af1f857ff56799f7416e9e03e05f5", "tier": "gold", "use": "Arabic focal clarity and product appetite"},
+    {"referenceId": "ref_3991533a0cc6d024", "sha256": "3991533a0cc6d024c86b14b7fe5b02cc7369c44621405a22cda145c0bee9b833", "tier": "gold", "use": "regional human context and immediate product consequence"},
+    {"referenceId": "ref_8ef6ff7e70837523", "sha256": "8ef6ff7e708375231cb1cee8e0999f302380d3f2315b8e76c7fb1176858c470a", "tier": "silver", "use": "Arabic persuasion hierarchy and proof density"},
+    {"referenceId": "ref_2ca843f06643d5f6", "sha256": "2ca843f06643d5f66de64064822d02749985207598d7d926cb669628a5872b53", "tier": "silver", "use": "regional product behavior and narrative scene"},
+    {"referenceId": "ref_4afce40fe49062b6", "sha256": "4afce40fe49062b674a5f701764eefe7f3d340e0fae92945e9c9acca4815218d", "tier": "silver", "use": "saveable educational series and capability-specific proof"}
+  ],
+  "critiques": [
+    {
+      "critiqueId": "sps-v2-r2-01-20260823",
+      "renderedAssetId": "01-ar-context-handoff",
+      "renderedAssetSha256": "2196c2c4a55b9808cbb50b5414efad08dfa80d3d4c1d4c120cd082181cfa2519",
+      "mobileAssetSha256": "c92679a18be11d8d89dbde0fb93963c64b2e846be5333d4af23ae4cac0efd50b",
+      "criticRole": "SOCIAL_PERFORMANCE_STRATEGIST",
+      "actualPixelsInspected": true,
+      "viewingScales": ["original", "mobile", "thumbnail", "feed"],
+      "scores": {"concept": 19, "composition": 18, "typography": 17, "visualCraft": 18, "brand": 18, "communication": 19, "professionalPolish": 18, "distinctiveness": 18},
+      "total": 145,
+      "evidenceObservations": [
+        {"dimension": "concept", "region": "single crystal bridge between one slab and several separate tracks", "observation": "The image provides one immediate action—disconnected paths becoming one accountable connection—before the support line is read.", "impact": "positive"},
+        {"dimension": "composition", "region": "upper-right Arabic claim and lower diagonal material junction", "observation": "The type and junction form a clean two-beat mobile scan, and the calm paper field gives the claim enough stop power in the reviewed feed row.", "impact": "positive"},
+        {"dimension": "typography", "region": "three-line Arabic headline at 324 by 405 pixels", "observation": "The headline remains legible and dominant, although the key phrase about more tools breaks into a slightly less natural silhouette than the strongest Arabic anchors.", "impact": "neutral"},
+        {"dimension": "communication", "region": "mobile tile with logo ignored", "observation": "The business thesis is understood in about two seconds and the support copy adds accountability rather than introducing a different claim.", "impact": "positive"},
+        {"dimension": "professionalPolish", "region": "crystal-to-track contacts at original resolution", "observation": "The contact shadows and charged line are credible, but the cloudy crystal interior still reads a little more generated than precision-engineered.", "impact": "negative"},
+        {"dimension": "distinctiveness", "region": "full feed silhouette", "observation": "The asymmetric material handoff is recognizable without the logo and cannot accept arbitrary productivity copy without losing its logic.", "impact": "positive"}
+      ],
+      "hardFails": [],
+      "professionalAnchorComparison": {
+        "referenceIds": ["ref_51e708951ea61f18", "ref_6dd0a9246092f4d5", "ref_8871f98455278188"],
+        "verdict": "comparable",
+        "observableDifferences": [
+          "The candidate is comparable in single-verb comprehension, mobile focal dominance, and using a physical event rather than a generic technology motif.",
+          "The strongest anchors retain slightly cleaner headline silhouettes and more inevitable object contacts, which keeps this at the threshold rather than in excellent territory."
+        ]
+      },
+      "strengths": ["Immediate two-second thesis", "Strong mobile image-to-copy handoff", "Distinctive material world"],
+      "weaknesses": ["Headline silhouette can be more naturally authored", "Crystal interior remains slightly synthetic"],
+      "revisionInstructions": ["Rebalance the headline so its central phrase reads as one authored Arabic unit without reducing mobile size.", "Retouch only the crystal interior and both socket lips; preserve the current crop, hierarchy, and single charged line."],
+      "restartConcept": false,
+      "decision": "PROFESSIONAL_CANDIDATE"
+    },
+    {
+      "critiqueId": "sps-v2-r2-02-20260823",
+      "renderedAssetId": "02-ar-rag-evidence",
+      "renderedAssetSha256": "adefabbb8bd36b8614c043241470404007f3bc6e5a90c4f3ea877605d697a9ab",
+      "mobileAssetSha256": "d2ef00988442bdd2f1327ed65ab1e6cfff6cc8b41a5de0ee83a55090c0926921",
+      "criticRole": "SOCIAL_PERFORMANCE_STRATEGIST",
+      "actualPixelsInspected": true,
+      "viewingScales": ["original", "mobile", "thumbnail", "feed"],
+      "scores": {"concept": 18, "composition": 18, "typography": 17, "visualCraft": 17, "brand": 18, "communication": 18, "professionalPolish": 17, "distinctiveness": 18},
+      "total": 141,
+      "evidenceObservations": [
+        {"dimension": "concept", "region": "returned pale evidence fragment connected to the archive by one green filament", "observation": "The visual gives retrieval a useful provenance behavior, but the tiny returned fragment is secondary to the larger premium-storage impression.", "impact": "neutral"},
+        {"dimension": "composition", "region": "left headline bay and right archive mass", "observation": "The split creates a fast mobile read and useful feed contrast, while the archive depth provides enough visual discovery for an educational save.", "impact": "positive"},
+        {"dimension": "typography", "region": "white and charged-green Arabic claim", "observation": "The claim survives the mobile render, though the small RAG series line has little attention value and the second statement depends on low-contrast text.", "impact": "neutral"},
+        {"dimension": "communication", "region": "whole tile with copy visible", "observation": "Answer plus evidence is clear after the headline and filament are combined, but the image without words can still be read as document storage rather than retrieval.", "impact": "neutral"},
+        {"dimension": "visualCraft", "region": "filament turns, shelf crossings, and evidence-tag attachment", "observation": "The overall world is premium, but several crossings and attachment points look inferred rather than mechanically explicit at original resolution.", "impact": "negative"},
+        {"dimension": "distinctiveness", "region": "dark architectural archive at feed scale", "observation": "It avoids database cylinders, search bars, and generic AI glow, giving the post stronger memorability than a conventional RAG explainer.", "impact": "positive"}
+      ],
+      "hardFails": [],
+      "professionalAnchorComparison": {
+        "referenceIds": ["ref_4afce40fe49062b6", "ref_7ea2e6edfd24a465", "ref_51e708951ea61f18"],
+        "verdict": "below",
+        "observableDifferences": [
+          "The candidate has stronger atmosphere than the educational product-card anchor but reveals less concrete capability evidence at mobile size.",
+          "The best anchors make the decisive artifact dominant; here the evidence fragment is visually subordinate to the archive architecture."
+        ]
+      },
+      "strengths": ["Saveable educational premise", "Strong dark-feed stop", "Non-generic RAG world"],
+      "weaknesses": ["Evidence fragment is too subordinate", "Textless mechanism can read as premium storage", "Attachment craft remains ambiguous"],
+      "revisionInstructions": ["Make the returned evidence fragment and its exact source slot the second unmistakable fixation at mobile size.", "Remove or enlarge metadata that cannot function at feed scale and clarify the filament attachment without adding interface furniture."],
+      "restartConcept": false,
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "critiqueId": "sps-v2-r2-03-20260823",
+      "renderedAssetId": "03-ar-automation-relay",
+      "renderedAssetSha256": "555d121950dee918b0c30bf86cf58fdd8bcff5eb75764b7accd9cf68a3ba42ac",
+      "mobileAssetSha256": "5f8b0a4a4bc2dcd9f9fd07003f3f2e02355ef6aa57fde2d6b912999b06a4becb",
+      "criticRole": "SOCIAL_PERFORMANCE_STRATEGIST",
+      "actualPixelsInspected": true,
+      "viewingScales": ["original", "mobile", "thumbnail", "feed"],
+      "scores": {"concept": 15, "composition": 17, "typography": 17, "visualCraft": 18, "brand": 18, "communication": 14, "professionalPolish": 17, "distinctiveness": 16},
+      "total": 132,
+      "evidenceObservations": [
+        {"dimension": "concept", "region": "continuous glass rod inside three industrial fixtures", "observation": "The mechanism reads as a laboratory test rail rather than one actor transferring custody to another through verification and a human stop.", "impact": "negative"},
+        {"dimension": "composition", "region": "machinery diagonal over the paper-colored copy field", "observation": "The crop has strong thumb-stop value and the mobile hierarchy is controlled, but visual polish cannot compensate for the unclear behavior.", "impact": "positive"},
+        {"dimension": "typography", "region": "lower-right Arabic thesis and support", "observation": "The claim is readable on mobile and supplies the missing meaning, which reveals that the object story is being rescued by copy.", "impact": "neutral"},
+        {"dimension": "visualCraft", "region": "machined housings, rails, and transparent core", "observation": "Materials and lighting are among the suite's most credible, creating curiosity even when the intended sequence is not understood.", "impact": "positive"},
+        {"dimension": "communication", "region": "textless mechanism in restart-mechanisms-mobile", "observation": "An unbriefed viewer cannot identify release, verification, receipt, or human interruption, so the core automation promise fails the two-second test.", "impact": "negative"},
+        {"dimension": "distinctiveness", "region": "complete object with logo ignored", "observation": "The industrial styling is ownable, but the observed action is generic inspection equipment rather than AURENDOR's accountable automation behavior.", "impact": "negative"}
+      ],
+      "hardFails": [],
+      "professionalAnchorComparison": {
+        "referenceIds": ["ref_2ca843f06643d5f6", "ref_7ea2e6edfd24a465", "ref_4afce40fe49062b6"],
+        "verdict": "below",
+        "observableDifferences": [
+          "The candidate exceeds the anchors in bespoke surface rendering but falls below them in immediate product or interaction behavior.",
+          "The anchors give viewers a recognizable actor, action, or capability state; this mechanism remains an attractive but ambiguous fixture."
+        ]
+      },
+      "strengths": ["High visual stop power", "Credible industrial material language", "Readable mobile claim"],
+      "weaknesses": ["Transfer is not visible", "Human stop is not identifiable", "Copy performs the explanatory work"],
+      "revisionInstructions": ["Return to art direction and require one object to be visibly released, verified by a different station, and physically interruptible by a human-scale control.", "Pass the new route as a textless grayscale mobile mechanism before adding the current well-performing Arabic type treatment."],
+      "restartConcept": true,
+      "decision": "MAJOR_REVISION"
+    },
+    {
+      "critiqueId": "sps-v2-r2-04-20260823",
+      "renderedAssetId": "04-ar-decision-question",
+      "renderedAssetSha256": "29d75eaf465ab8e27239239c6fc29e3f96df8b21eda9ef96d8f4b850de9b6f51",
+      "mobileAssetSha256": "35d44be70ab86c23ff359031c1efc84e1d426d68fd14ffe15b5c29d14ec97085",
+      "criticRole": "SOCIAL_PERFORMANCE_STRATEGIST",
+      "actualPixelsInspected": true,
+      "viewingScales": ["original", "mobile", "thumbnail", "feed"],
+      "scores": {"concept": 18, "composition": 18, "typography": 18, "visualCraft": 16, "brand": 18, "communication": 19, "professionalPolish": 17, "distinctiveness": 17},
+      "total": 141,
+      "evidenceObservations": [
+        {"dimension": "concept", "region": "question mark colliding with an operating path", "observation": "The visual converts an unresolved decision into an obstacle, producing a relevant thought-leadership hook rather than a decorative question.", "impact": "positive"},
+        {"dimension": "composition", "region": "upper thesis, central collision, and descending charged path", "observation": "The sparse dark tile creates useful feed punctuation and a clear top-to-bottom mobile scan without card clutter.", "impact": "positive"},
+        {"dimension": "typography", "region": "Arabic thesis at mobile scale", "observation": "The statement is immediately readable and the highlighted phrase supplies the strongest comment-generating tension in the standalone set.", "impact": "positive"},
+        {"dimension": "communication", "region": "headline plus path collision", "observation": "The audience can understand that ambiguous decisions make automation unreliable within two seconds, with the support line deepening the consequence.", "impact": "positive"},
+        {"dimension": "visualCraft", "region": "outline question mark, stock diamond, line, and arrow terminal", "observation": "Crisp execution does not make the familiar diagram primitives feel as authored or ownable as the professional anchors.", "impact": "negative"},
+        {"dimension": "distinctiveness", "region": "full tile without logo", "observation": "The RTL reading path is specific, but question-mark-plus-arrow remains an easily imitated social graphic device.", "impact": "neutral"}
+      ],
+      "hardFails": [],
+      "professionalAnchorComparison": {
+        "referenceIds": ["ref_f5cec23c32415d6e", "ref_6dd0a9246092f4d5", "ref_8ef6ff7e70837523"],
+        "verdict": "below",
+        "observableDifferences": [
+          "The candidate matches the anchors in fast headline hierarchy and social-native negative space but uses a less surprising central device.",
+          "The strongest anchors turn one symbol into a richer material or campaign behavior; this remains a polished standalone punctuation diagram."
+        ]
+      },
+      "strengths": ["Strong comment-oriented hook", "Excellent mobile hierarchy", "Useful dark feed punctuation"],
+      "weaknesses": ["Generic punctuation mechanism", "Lower path ending has little consequence", "Campaign extension is not yet demonstrated"],
+      "revisionInstructions": ["Preserve the headline and collision premise but give the blocked or rerouted path one visibly consequential end state.", "Replace the stock diamond and arrow terminal with one custom junction that can recur across a campaign without becoming a template."],
+      "restartConcept": false,
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "critiqueId": "sps-v2-r2-05-20260823",
+      "renderedAssetId": "05-en-before-after",
+      "renderedAssetSha256": "8196b72c8030e141c73f4e3a72e93c1ed633cb2334fe773506b21d413c2487d3",
+      "mobileAssetSha256": "af5e0a5d05e8fcd82201f22cc532bf2cd497b40f43eca97481b64fdc9b9e90b3",
+      "criticRole": "SOCIAL_PERFORMANCE_STRATEGIST",
+      "actualPixelsInspected": true,
+      "viewingScales": ["original", "mobile", "thumbnail", "feed"],
+      "scores": {"concept": 19, "composition": 18, "typography": 18, "visualCraft": 18, "brand": 18, "communication": 19, "professionalPolish": 17, "distinctiveness": 18},
+      "total": 145,
+      "evidenceObservations": [
+        {"dimension": "concept", "region": "many loose status cords bound into one pale next-action strip", "observation": "The before-to-after operating change remains understandable in the textless mobile mechanism and maps directly to a recognizable work frustration.", "impact": "positive"},
+        {"dimension": "composition", "region": "headline at upper left, hands at center, and output strip to lower right", "observation": "Three clear fixations create a strong thumb-stop and keep the human action legible after mobile reduction.", "impact": "positive"},
+        {"dimension": "typography", "region": "two-part English promise", "observation": "Short verbs and generous contrast make the benefit immediately scannable, with the green second line functioning as the payoff.", "impact": "positive"},
+        {"dimension": "communication", "region": "whole mobile tile", "observation": "The viewer understands the pain, transformation, and desired next action in one scan, making this the strongest standalone performance proposition in round two.", "impact": "positive"},
+        {"dimension": "professionalPolish", "region": "lower-left illustrative qualification panel", "observation": "The qualification protects credibility but its large opaque box competes with the image and makes a case-study-purpose asset feel overtly provisional.", "impact": "negative"},
+        {"dimension": "visualCraft", "region": "cord tension, hands, clamp, and output transition", "observation": "The physical action is convincing at feed size, though a few cord contacts and the strip transition remain slightly synthetic at original resolution.", "impact": "neutral"}
+      ],
+      "hardFails": [],
+      "professionalAnchorComparison": {
+        "referenceIds": ["ref_51e708951ea61f18", "ref_3991533a0cc6d024", "ref_7ea2e6edfd24a465"],
+        "verdict": "comparable",
+        "observableDifferences": [
+          "The candidate is comparable in human relevance, single-verb comprehension, and turning an invisible business friction into one physical action.",
+          "The best anchors integrate their proof or qualification more quietly; the large disclaimer and small contact ambiguities keep this at the threshold."
+        ]
+      },
+      "strengths": ["Strongest pain-to-benefit proposition", "Clear textless transformation", "Human scale adds trust and attention"],
+      "weaknesses": ["Qualification panel is too dominant", "Some cord contacts remain synthetic", "Not valid as a literal case study without first-party evidence"],
+      "revisionInstructions": ["Reduce the qualification panel's visual weight while keeping its illustrative boundary readable at mobile size.", "Retouch the cord-to-clamp and clamp-to-output contacts, and do not relabel this as a client result until first-party evidence exists."],
+      "restartConcept": false,
+      "decision": "PROFESSIONAL_CANDIDATE"
+    },
+    {
+      "critiqueId": "sps-v2-r2-06-20260823",
+      "renderedAssetId": "06-ar-operating-pattern",
+      "renderedAssetSha256": "5bb3c4dd159eb68fbf1990d90775dff42a576a9049a0ad7ac97e366abcef9ab8",
+      "mobileAssetSha256": "681f5bcd9e70ef279ee57e174ed4935f1aa45f8c3d4f9950cb95f769c7985ea1",
+      "criticRole": "SOCIAL_PERFORMANCE_STRATEGIST",
+      "actualPixelsInspected": true,
+      "viewingScales": ["original", "mobile", "thumbnail", "feed"],
+      "scores": {"concept": 15, "composition": 16, "typography": 17, "visualCraft": 15, "brand": 17, "communication": 16, "professionalPolish": 15, "distinctiveness": 15},
+      "total": 126,
+      "evidenceObservations": [
+        {"dimension": "concept", "region": "large Arabic four reduced through an arrow to one path", "observation": "The reduction is legible but communicates a generic consolidation claim rather than a specific operating insight or substantiated statistic.", "impact": "negative"},
+        {"dimension": "composition", "region": "dark-light split and center seam", "observation": "The mobile scan is orderly, but the two halves feel like a familiar before-after template and carry similar visual weight.", "impact": "neutral"},
+        {"dimension": "typography", "region": "Arabic numeral, two statements, and illustrative disclaimer", "observation": "The primary type remains readable, while the disclaimer consumes attention without providing proof that would justify the statistic-oriented post purpose.", "impact": "neutral"},
+        {"dimension": "communication", "region": "whole tile at feed size", "observation": "Viewers can repeat four places become one next step, but they are not given a reason to trust, save, or share the pattern.", "impact": "negative"},
+        {"dimension": "distinctiveness", "region": "numeral-plus-arrow mechanism", "observation": "The device could support many unrelated consulting claims, which limits memory encoding and brand attribution.", "impact": "negative"},
+        {"dimension": "professionalPolish", "region": "arrow crossing and lower qualification", "observation": "Technical alignment is clean but the simple primitives and evidence-light framing remain materially below professional campaign anchors.", "impact": "negative"}
+      ],
+      "hardFails": [],
+      "professionalAnchorComparison": {
+        "referenceIds": ["ref_4afce40fe49062b6", "ref_8ef6ff7e70837523", "ref_f5cec23c32415d6e"],
+        "verdict": "below",
+        "observableDifferences": [
+          "The candidate is less evidence-rich and less socially useful than the educational anchor systems, which provide concrete categories, product states, or persuasive detail.",
+          "Its hierarchy is clean but the numeral-and-arrow mechanism lacks the human consequence or ownable campaign behavior visible in the stronger anchors."
+        ]
+      },
+      "strengths": ["Clear mobile reading order", "Honest illustrative qualification", "Consistent brand palette"],
+      "weaknesses": ["No substantiated statistic", "Generic consolidation diagram", "Low save and share utility"],
+      "revisionInstructions": ["Return to art direction with a concrete operating pattern: show four specific status artifacts becoming one named next-action artifact without implying measured client results.", "Require the visual to remain useful and specific after the numeral and headline are removed before proceeding to final design."],
+      "restartConcept": true,
+      "decision": "MAJOR_REVISION"
+    },
+    {
+      "critiqueId": "sps-v2-r2-07-20260823",
+      "renderedAssetId": "07-en-evidence-ledger",
+      "renderedAssetSha256": "a6e3be861848eadc7e7166885bc4a15f975a09d7497d574ccf3dc93f035a4957",
+      "mobileAssetSha256": "189d45e1b178f91d085cd9e4b74c0bb3b8606c6ac60a4009bd52a19439268456",
+      "criticRole": "SOCIAL_PERFORMANCE_STRATEGIST",
+      "actualPixelsInspected": true,
+      "viewingScales": ["original", "mobile", "thumbnail", "feed"],
+      "scores": {"concept": 19, "composition": 18, "typography": 18, "visualCraft": 17, "brand": 19, "communication": 19, "professionalPolish": 17, "distinctiveness": 18},
+      "total": 145,
+      "evidenceObservations": [
+        {"dimension": "concept", "region": "physical record bound beside a translucent green rail", "observation": "Decision, source, owner, and next action become one portable record, giving the product principle a concrete and saveable behavior.", "impact": "positive"},
+        {"dimension": "composition", "region": "headline upper left and tilted evidence record lower right", "observation": "The diagonal object creates a fast two-fixation scan and maintains contrast in both feed and mobile views.", "impact": "positive"},
+        {"dimension": "typography", "region": "headline and record fields at 324 by 405 pixels", "observation": "The promise remains dominant while the four evidence fields are still readable enough to reward a pause rather than becoming decorative microcopy.", "impact": "positive"},
+        {"dimension": "communication", "region": "whole mobile tile", "observation": "The audience receives both a high-level promise and a practical record structure, increasing save value beyond a purely aspirational brand statement.", "impact": "positive"},
+        {"dimension": "visualCraft", "region": "record edge, green rail, fastener, and lower-right contact", "observation": "The object is convincing at feed scale, but edge contact and translucent material behavior remain less immaculate at original resolution.", "impact": "negative"},
+        {"dimension": "brand", "region": "black mineral object, localized green charge, and evidence language", "observation": "The post combines AURENDOR's visual world with an accountable operating principle instead of relying on color or logo alone.", "impact": "positive"}
+      ],
+      "hardFails": [],
+      "professionalAnchorComparison": {
+        "referenceIds": ["ref_4afce40fe49062b6", "ref_7ea2e6edfd24a465", "ref_51e708951ea61f18"],
+        "verdict": "comparable",
+        "observableDifferences": [
+          "The candidate is comparable in social utility and stronger than the generic educational cards at turning a principle into one ownable object.",
+          "The anchors show more proven campaign breadth or current product evidence; this remains an illustrative record with a small original-resolution craft deficit."
+        ]
+      },
+      "strengths": ["High save value", "Specific accountability model", "Strong brand-to-message fit"],
+      "weaknesses": ["Illustrative rather than first-party product proof", "Object contacts need final retouch", "Long-term series variation is unproven"],
+      "revisionInstructions": ["Retouch the record edge, rail contact, and translucent fastener without changing the current hierarchy or information fields.", "For a literal product introduction, replace the illustrative record with current first-party evidence while retaining the source-decision-owner-next-action structure."],
+      "restartConcept": false,
+      "decision": "PROFESSIONAL_CANDIDATE"
+    },
+    {
+      "critiqueId": "sps-v2-r2-08-20260823",
+      "renderedAssetId": "08-en-field-notes",
+      "renderedAssetSha256": "324ce9f53a703e7efb0ae4ca39dfd238713c68ecd368aec2cf88700bac327a2b",
+      "mobileAssetSha256": "00beb615543c8f3841526e31cf87e030533bf6737ccf30f2a05ff88bf441095a",
+      "criticRole": "SOCIAL_PERFORMANCE_STRATEGIST",
+      "actualPixelsInspected": true,
+      "viewingScales": ["original", "mobile", "thumbnail", "feed"],
+      "scores": {"concept": 17, "composition": 17, "typography": 11, "visualCraft": 16, "brand": 16, "communication": 16, "professionalPolish": 10, "distinctiveness": 17},
+      "total": 120,
+      "evidenceObservations": [
+        {"dimension": "concept", "region": "framed Field Notes issue card", "observation": "The cover establishes a recognizable editorial series and creates useful feed variation, but it does not yet demonstrate the series across multiple subjects.", "impact": "neutral"},
+        {"dimension": "composition", "region": "oversized title crossing the framed issue device", "observation": "The title has immediate mobile stop power and the off-center frame produces a distinctive announcement silhouette.", "impact": "positive"},
+        {"dimension": "typography", "region": "bottom line reading Field Note 01 beside the logo", "observation": "The issue number visibly collides with the logo at original, mobile, and reviewed feed scales, creating an unmistakable final-art typography failure.", "impact": "hard-fail"},
+        {"dimension": "professionalPolish", "region": "lower-right footer and brand signature", "observation": "The collision makes the asset look unproofed at the exact moment it announces a repeatable brand series, directly reducing trust and shareability.", "impact": "negative"},
+        {"dimension": "communication", "region": "headline and operating-intelligence subtitle", "observation": "Viewers understand that a new series exists, but no concrete first issue insight is visible beyond a broad positioning line.", "impact": "neutral"},
+        {"dimension": "distinctiveness", "region": "entire light-field tile", "observation": "The framed editorial object is memorable in the feed, so the concept should be retained after the fatal footer execution is corrected.", "impact": "positive"}
+      ],
+      "hardFails": ["POOR_TYPOGRAPHY"],
+      "professionalAnchorComparison": {
+        "referenceIds": ["ref_f5cec23c32415d6e", "ref_7ea2e6edfd24a465", "ref_4afce40fe49062b6"],
+        "verdict": "below",
+        "observableDifferences": [
+          "The candidate approaches the anchors in series identity and social-native scale but falls visibly below them in final footer spacing and proofing.",
+          "The anchors demonstrate multiple usable expressions; this single cover carries a broad promise and a release-blocking logo collision."
+        ]
+      },
+      "strengths": ["Memorable series-cover silhouette", "Strong mobile title scale", "Useful light-feed reset"],
+      "weaknesses": ["Footer text collides with logo", "Issue proposition is too broad", "Series extensibility is not yet proven"],
+      "revisionInstructions": ["Separate the issue number and logo with a measured protected zone, then re-export and invalidate this hash before any further review.", "Retain the cover concept but test two real issue titles and subjects to prove that the frame is a system rather than a one-off poster."],
+      "restartConcept": false,
+      "decision": "REJECT"
+    },
+    {
+      "critiqueId": "sps-v2-r2-09-20260823",
+      "renderedAssetId": "09-ar-carousel-decision",
+      "renderedAssetSha256": "0a33470e54a6c597065994723fa74b4119ebfb248a609926b000b6dc402b93de",
+      "mobileAssetSha256": "d26957cac259f403d3605b3ce3cc2f2bdb9f747a76835136e01ea709e5bf394f",
+      "criticRole": "SOCIAL_PERFORMANCE_STRATEGIST",
+      "actualPixelsInspected": true,
+      "viewingScales": ["original", "mobile", "thumbnail", "feed"],
+      "scores": {"concept": 19, "composition": 18, "typography": 19, "visualCraft": 17, "brand": 18, "communication": 20, "professionalPolish": 18, "distinctiveness": 18},
+      "total": 147,
+      "evidenceObservations": [
+        {"dimension": "concept", "region": "decision junction changing a grey path into a charged green route", "observation": "The mechanism turns a decision into a visible state change and directly supports the carousel's automation thesis.", "impact": "positive"},
+        {"dimension": "typography", "region": "large two-line Arabic question", "observation": "The question is the fastest and most comment-oriented hook in the Arabic set, remaining fully readable at mobile size.", "impact": "positive"},
+        {"dimension": "composition", "region": "headline, sparse central fork, and lower explanatory line", "observation": "Generous negative space keeps the cover from feeling instructional too early and makes the swipe premise dominant.", "impact": "positive"},
+        {"dimension": "communication", "region": "slide one within carousel-sequence-09-11", "observation": "The frame creates an immediate open loop—what decision is missing—while the one-of-three counter sets a clear expectation for continuation.", "impact": "positive"},
+        {"dimension": "professionalPolish", "region": "junction, line terminals, counter, and logo edge", "observation": "The export is clean and all functional elements survive mobile review, with no visible collision or clipped label.", "impact": "positive"},
+        {"dimension": "distinctiveness", "region": "light-field cover in the reviewed feed", "observation": "The Arabic question and route change form a recognizable campaign behavior, even though the vector language itself is restrained.", "impact": "positive"}
+      ],
+      "hardFails": [],
+      "professionalAnchorComparison": {
+        "referenceIds": ["ref_4afce40fe49062b6", "ref_8871f98455278188", "ref_8ef6ff7e70837523"],
+        "verdict": "comparable",
+        "observableDifferences": [
+          "The candidate is comparable in mobile headline authority, immediate open-loop behavior, and suitability as a saveable educational carousel cover.",
+          "The richer regional anchors use human or product imagery for broader emotional appeal, while this candidate wins through a cleaner strategic question and sequence role."
+        ]
+      },
+      "strengths": ["Best carousel hook", "Excellent mobile Arabic hierarchy", "Clear open loop and swipe reason"],
+      "weaknesses": ["Vector mechanism is visually restrained", "Performance depends on slides two and three delivering proof"],
+      "revisionInstructions": ["Keep the current cover structure and do not add labels, icons, or extra proof to slide one.", "Repair slide two's clipped label and preserve the three-slide promise so this cover's open loop receives a credible payoff."],
+      "restartConcept": false,
+      "decision": "PROFESSIONAL_CANDIDATE"
+    },
+    {
+      "critiqueId": "sps-v2-r2-10-20260823",
+      "renderedAssetId": "10-ar-carousel-boundaries",
+      "renderedAssetSha256": "b5df95c734b2442c350d1829796870139be6af9edf20fd5fe5f4405c8e0d17a4",
+      "mobileAssetSha256": "c11e92d47b22ec770cd42970b40d7a04796f3095eaa102e0c0af3a55852f84cb",
+      "criticRole": "SOCIAL_PERFORMANCE_STRATEGIST",
+      "actualPixelsInspected": true,
+      "viewingScales": ["original", "mobile", "thumbnail", "feed"],
+      "scores": {"concept": 17, "composition": 17, "typography": 11, "visualCraft": 15, "brand": 18, "communication": 17, "professionalPolish": 11, "distinctiveness": 16},
+      "total": 122,
+      "evidenceObservations": [
+        {"dimension": "concept", "region": "three inputs crossing a boundary into one reviewed output", "observation": "The slide advances the carousel by defining inputs, outputs, and a controlled boundary, but the artifact types remain generic.", "impact": "neutral"},
+        {"dimension": "composition", "region": "right-to-left input, boundary, output sequence", "observation": "The RTL progression is easy to follow on mobile and the lower headline provides a clear instructional close.", "impact": "positive"},
+        {"dimension": "typography", "region": "lower-right edge of the white input card", "observation": "A dark clipped Arabic character or label fragment visibly protrudes from behind the input card at original resolution, making the final artwork look broken.", "impact": "hard-fail"},
+        {"dimension": "professionalPolish", "region": "input labels, three grey artifacts, and card boundary", "observation": "The clipping defect is small at mobile scale but remains visible and undermines confidence in a slide whose message is controlled boundaries.", "impact": "negative"},
+        {"dimension": "communication", "region": "slide two inside the reviewed carousel sequence", "observation": "The lesson is understandable, yet generic rectangles do not reveal what the automation accepts or why the output is meaningfully reviewed.", "impact": "neutral"},
+        {"dimension": "distinctiveness", "region": "full mechanism with text ignored", "observation": "Input cards, an aperture, and an output arrow are common explainer primitives and do not encode a uniquely memorable AURENDOR behavior.", "impact": "negative"}
+      ],
+      "hardFails": ["POOR_TYPOGRAPHY"],
+      "professionalAnchorComparison": {
+        "referenceIds": ["ref_4afce40fe49062b6", "ref_3991533a0cc6d024", "ref_7ea2e6edfd24a465"],
+        "verdict": "below",
+        "observableDifferences": [
+          "The candidate is orderly but falls below the anchors in concrete capability proof and final-art accuracy.",
+          "The anchors show recognizable product states or human consequences; this uses generic rectangles and contains a visible clipped label artifact."
+        ]
+      },
+      "strengths": ["Clear RTL sequence", "Useful middle-slide lesson", "Consistent carousel palette"],
+      "weaknesses": ["Visible clipped Arabic fragment", "Generic input and output artifacts", "Insufficient product specificity"],
+      "revisionInstructions": ["Remove the clipped label fragment and re-export before any current-hash approval can continue.", "Replace at least one generic input and the output with recognizable operating artifacts while preserving the right-to-left three-zone sequence."],
+      "restartConcept": false,
+      "decision": "REJECT"
+    },
+    {
+      "critiqueId": "sps-v2-r2-11-20260823",
+      "renderedAssetId": "11-ar-carousel-stop",
+      "renderedAssetSha256": "b247f546a73af33e67992c8797943ebb4f4a521ed7fe40cf584e597969ceb98d",
+      "mobileAssetSha256": "dd87942c5da8b3448d2adda806b17f7178f3d73f0da975a0c8ad10e3353e2f87",
+      "criticRole": "SOCIAL_PERFORMANCE_STRATEGIST",
+      "actualPixelsInspected": true,
+      "viewingScales": ["original", "mobile", "thumbnail", "feed"],
+      "scores": {"concept": 19, "composition": 18, "typography": 18, "visualCraft": 17, "brand": 18, "communication": 19, "professionalPolish": 18, "distinctiveness": 18},
+      "total": 145,
+      "evidenceObservations": [
+        {"dimension": "concept", "region": "manual lever interrupting a charged automation line", "observation": "The frame gives trust a visible human authority mechanism instead of describing oversight as an abstract policy.", "impact": "positive"},
+        {"dimension": "composition", "region": "upper Arabic question, center lever, and lower trust statement", "observation": "Three well-spaced beats keep the final slide readable and provide a satisfying visual payoff after the denser second slide.", "impact": "positive"},
+        {"dimension": "typography", "region": "Arabic headline and supporting trust line at mobile scale", "observation": "The question remains the first read and the lower sentence stays legible enough to close the argument rather than becoming caption-like texture.", "impact": "positive"},
+        {"dimension": "communication", "region": "slide three in carousel-sequence-09-11", "observation": "The viewer understands who can stop the system and why that matters, creating a strong shareable trust principle for automation content.", "impact": "positive"},
+        {"dimension": "visualCraft", "region": "lever pivot, green stop block, and three downstream markers", "observation": "The mechanism is crisp and coherent, though it still resembles a large interface toggle more than a fully physical human intervention.", "impact": "neutral"},
+        {"dimension": "distinctiveness", "region": "complete light-field tile", "observation": "The human-stop behavior is message-specific and stronger than a shield, lock, or generic trust badge, supporting memorable brand attribution.", "impact": "positive"}
+      ],
+      "hardFails": [],
+      "professionalAnchorComparison": {
+        "referenceIds": ["ref_2ca843f06643d5f6", "ref_4afce40fe49062b6", "ref_8ef6ff7e70837523"],
+        "verdict": "comparable",
+        "observableDifferences": [
+          "The candidate is comparable in immediate behavioral clarity and stronger than generic product cards at expressing a trust boundary.",
+          "The regional anchors provide more human or product context, while this candidate compensates with a cleaner and more saveable closing principle."
+        ]
+      },
+      "strengths": ["Strong carousel payoff", "Clear human-control principle", "Excellent mobile readability"],
+      "weaknesses": ["Lever still resembles a UI toggle", "No explicit follow-through state after the stop"],
+      "revisionInstructions": ["Preserve the current question, pacing, and stop behavior while making the lever read slightly more physical and human-operable.", "Do not add another explanatory label; the repaired second slide should supply the specificity this closing frame intentionally omits."],
+      "restartConcept": false,
+      "decision": "PROFESSIONAL_CANDIDATE"
+    },
+    {
+      "critiqueId": "sps-v2-r2-12-20260823",
+      "renderedAssetId": "12-en-complexity-answerable",
+      "renderedAssetSha256": "05aa3cc222515a687e7566b373add86d3af25b87fb5688ac43d1ddf71a273bb3",
+      "mobileAssetSha256": "2d0fa97920f71b15fce8e670957192a221d4cc1b66dc950f273bb5bcdc93d2de",
+      "criticRole": "SOCIAL_PERFORMANCE_STRATEGIST",
+      "actualPixelsInspected": true,
+      "viewingScales": ["original", "mobile", "thumbnail", "feed"],
+      "scores": {"concept": 18, "composition": 18, "typography": 18, "visualCraft": 16, "brand": 18, "communication": 18, "professionalPolish": 17, "distinctiveness": 17},
+      "total": 140,
+      "evidenceObservations": [
+        {"dimension": "concept", "region": "many faint paths entering one diagonal answer corridor", "observation": "The image suggests complexity being constrained into an answerable path, but no concrete question or answer artifact appears.", "impact": "neutral"},
+        {"dimension": "composition", "region": "top-left premise, diagonal band, and lower-right payoff", "observation": "The diagonal creates energetic feed movement and a satisfying premise-to-payoff scan that survives mobile reduction.", "impact": "positive"},
+        {"dimension": "typography", "region": "MAKE COMPLEXITY and ANSWERABLE", "observation": "The short English statement is extremely fast at mobile size and creates an effective shareable brand assertion.", "impact": "positive"},
+        {"dimension": "communication", "region": "whole mobile tile", "observation": "Viewers can repeat the promise immediately, but the visual does not show what answerability means operationally or credibly.", "impact": "neutral"},
+        {"dimension": "visualCraft", "region": "translucent diagonal corridor and overlapping chart lines", "observation": "The line system is controlled yet still resembles a polished analytics illustration rather than a materially specific transformation.", "impact": "negative"},
+        {"dimension": "distinctiveness", "region": "full tile within feed-9", "observation": "It provides useful dark typographic rhythm, but chart paths and a rising corridor remain broadly available technology-brand language.", "impact": "neutral"}
+      ],
+      "hardFails": [],
+      "professionalAnchorComparison": {
+        "referenceIds": ["ref_f5cec23c32415d6e", "ref_7ea2e6edfd24a465", "ref_6dd0a9246092f4d5"],
+        "verdict": "below",
+        "observableDifferences": [
+          "The candidate matches the anchors in fast typography and feed-scale energy but provides less specific evidence or physical consequence.",
+          "The strongest anchors sustain multiple campaign expressions around a concrete behavior; this remains one attractive but generic data-path statement."
+        ]
+      },
+      "strengths": ["Fast mobile brand statement", "Strong diagonal feed movement", "Useful dark visual reset"],
+      "weaknesses": ["No concrete answer artifact", "Generic analytics-line vocabulary", "Campaign extension is unproven"],
+      "revisionInstructions": ["Keep the premise-to-payoff typography but make one question artifact enter and one answer artifact exit the diagonal corridor.", "Reduce nonfunctional background paths so the transformation, not the chart texture, remains the second fixation at mobile size."],
+      "restartConcept": false,
+      "decision": "INSUFFICIENT"
+    }
+  ],
+  "pairwiseComparisons": [
+    {
+      "comparisonId": "round2-identical-brief-legacy-vs-01",
+      "candidateAAssetId": "legacy-identical-brief-operating-map",
+      "candidateBAssetId": "01-ar-context-handoff",
+      "blindLabelsUsed": false,
+      "winner": "B",
+      "reasons": [
+        "Candidate B produces one dominant claim and one physical consequence, while candidate A distributes attention across a border, label, process cards, paragraph, and action panel.",
+        "Candidate B remains comprehensible at feed and mobile scale; candidate A's operational detail collapses before it can create useful proof.",
+        "Candidate B turns connected context into a memorable material event, whereas candidate A resembles a clean but familiar consulting information sheet."
+      ],
+      "dimensionWinners": {"concept": "B", "composition": "B", "typography": "B", "visualCraft": "B", "brand": "B", "communication": "B", "professionalPolish": "B", "distinctiveness": "B"}
+    }
+  ],
+  "feedReview": {
+    "pixels": [
+      "artifacts/creative-rebuild/comparisons/round2-reviewed/feed-3.png",
+      "artifacts/creative-rebuild/comparisons/round2-reviewed/feed-9.png",
+      "artifacts/creative-rebuild/comparisons/round2-reviewed/feed-visible-10.png",
+      "artifacts/creative-rebuild/comparisons/round2-reviewed/benchmark-suite-12.png"
+    ],
+    "verdict": "COHERENT_BUT_NOT_RELEASE_READY",
+    "strengths": [
+      "Dark and light fields, image-led anchors, sparse diagrams, and typographic resets create materially better feed pacing than one repeated template.",
+      "Localized charged green, dark mineral surfaces, paper fields, and quiet signatures create recognizability without requiring a fixed card shell.",
+      "The strongest posts make an operating insight legible at thumbnail scale and retain detail for a second, save-oriented inspection."
+    ],
+    "risks": [
+      "Five adjacent diagram-led assets rely on lines, arrows, apertures, or junctions, so the system can drift back toward abstract explainer sameness.",
+      "The feed has little current first-party product evidence, customer proof, or measured outcome; it is stronger for awareness and education than for conversion.",
+      "The visible footer collision in 08 and clipped label in 10 undermine trust across the suite, even when neighboring tiles are polished."
+    ],
+    "performanceUse": {
+      "awareness": "strong",
+      "educationAndSaves": "strong on 02, 04, 07, and 09 through 11",
+      "thoughtLeadership": "strong on 04 and 09",
+      "conversion": "weak until current product, customer, and outcome evidence are introduced",
+      "seriesPotential": "promising but unproven beyond one Field Notes cover and one three-slide carousel"
+    }
+  },
+  "carouselSequenceReview": {
+    "pixel": "artifacts/creative-rebuild/comparisons/round2-reviewed/carousel-sequence-09-11.png",
+    "verdict": "STRONG_SEQUENCE_BLOCKED_BY_SLIDE_10_DEFECT",
+    "observations": [
+      "Slide 09 creates the best open loop in the suite by asking for the missing decision before automation begins.",
+      "Slide 10 correctly advances from decision to input, boundary, and output, but generic artifacts limit proof and a clipped Arabic fragment is a release-blocking typography failure.",
+      "Slide 11 provides a clear trust payoff by making human stop authority visible and memorable.",
+      "The three slides vary dark and light fields while preserving numbering, typography, line behavior, and a coherent right-to-left narrative."
+    ],
+    "releaseCondition": "Re-export slide 10 without the clipped label, make at least one input and the output specific, then repeat current-hash mobile and sequence review."
+  },
+  "oldVsNewComparison": {
+    "pixel": "artifacts/creative-rebuild/comparisons/round2-reviewed/old-vs-new-identical-brief.png",
+    "sha256": "a1964c8dcf63010dd743b36a66c22145c4f128db7ab7643da67fa4eb65980e40",
+    "legacyAsset": "candidate A, information-dense operating map",
+    "round2Asset": "candidate B, 01-ar-context-handoff",
+    "winner": "ROUND_2_DECISIVELY",
+    "why": [
+      "Round two wins the first two seconds through a single claim, physical junction, and quiet support beat.",
+      "The legacy composition contains more explicit process detail, but that detail becomes unreadable at the social viewing scale and fragments attention.",
+      "Round two creates a message-specific memory structure; the legacy asset can be mistaken for a general consulting process template.",
+      "The win is visible in pixels and does not depend on prompts, implementation metadata, or route descriptions."
+    ]
+  },
+  "summary": {
+    "professionalCandidates": 5,
+    "excellentCandidates": 0,
+    "insufficientCandidates": 3,
+    "majorRevisionCandidates": 2,
+    "rejectedCandidates": 2,
+    "highestScoringAssetId": "09-ar-carousel-decision",
+    "highestScore": 147,
+    "suiteMean": 137.42,
+    "suiteMedian": 141,
+    "publicationEligible": false,
+    "productionRecommendation": "KEEP_CREATIVE_PRODUCTION_BLOCKED",
+    "newDecisivelyBeatsOld": true,
+    "finding": "Round two decisively beats the legacy identical-brief asset and now contains five social-performance-level candidates. The suite is not professionally releasable: two exact-pixel typography failures force rejection, two concepts fail their textless mechanism test, and conversion credibility remains limited by illustrative rather than current first-party proof."
+  },
+  "releaseRecommendation": {
+    "decision": "BLOCKED",
+    "reasons": [
+      "A role-level professional candidate does not become gold until every required independent critic clears the same current hash with no hard fail and a comparable-or-better anchor verdict.",
+      "Candidates 08 and 10 contain exact-pixel hard failures, and candidates 03 and 06 require a concept restart rather than a cosmetic revision.",
+      "The feed is ready for controlled benchmark iteration, not production publishing or conversion claims."
+    ],
+    "priorityOrder": [
+      "Repair and re-export 08 and 10, then invalidate every critique tied to their current hashes.",
+      "Return 03 and 06 to art direction and pass textless mobile mechanism review before rendering new typography.",
+      "Polish 01, 05, 07, 09, and 11 without changing their successful hierarchy or core route.",
+      "Introduce current first-party product, customer, or outcome evidence before using the system for conversion-oriented publishing."
+    ]
+  },
+  "validation": {
+    "professionalCritiqueSchemaRecords": 12,
+    "professionalCritiqueSchemaValid": true,
+    "declaredPixelHashesRecomputed": true,
+    "declaredAnchorHashesRecomputed": true
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "id": "P08",
+  "date": "2026-09-24",
+  "status": "REVIEW_DRAFT",
+  "revision": "hyperframes-56",
+  "titleAr": "من الموقع إلى قرارك.",
+  "titleEn": "From site to decision",
+  "platforms": [
+    "Instagram Reels",
+    "Facebook Reels",
+    "TikTok"
+  ],
+  "format": "9:16 video",
+  "durationSeconds": 56.25,
+  "fps": 60,
+  "resolution": [
+    1080,
+    1920
+  ],
+  "audience": "أصحاب شركات المقاولات والمكاتب الهندسية في العراق",
+  "objective": "Explain ten real Bunyan Pro capabilities through owners’ operational questions; invite a tailored demonstration.",
+  "funnel": "Consideration",
+  "coreIdea": "Scattered project information makes follow-up harder; records kept in the project context support informed review.",
+  "hook": "أكثر من موقع. والتحديثات متفرقة؟",
+  "cta": "اطلب عرضًا عمليًا لشركتك.",
+  "caption": "تغيير واحد بالتصميم يفتح ثلاثة أسئلة: شنو تغيّر؟ شكد يكلّف؟ وكم يوم يضيف؟\n\nلما تفاصيله تتوزّع بين الرسائل والصور والدفاتر، مراجعة القرار تصير أصعب. Bunyan Pro يجمع معلومات المتابعة حول المشروع ومراحله، حتى ترجع للتفصيل بمكانه.\n\nبهذه الجولة تشوف عشر نقاط تهم أصحاب شركات المقاولات والمكاتب الهندسية:\n\n1. المشاريع والفريق: تابع مشاريع المكتب والأشخاص المرتبطين بها.\n2. المراحل والمهام: راجع التقدّم المسجّل وما بقي من بنود المتابعة.\n3. تقارير الموقع: أعمال اليوم، أعداد العمال، المواد وملاحظات التنفيذ.\n4. المشاكل والملاحظات: سجّل المشكلة وأولويتها، واحتفظ بالملاحظات في سياق المشروع.\n5. الصور والملفات: ارجع لصور الموقع ومستنداته ضمن المشروع والمرحلة المرتبطة بها.\n6. المصروفات والدفعات: راجع المصروفات والفواتير والدفعات المسجّلة وطلبات الدفع.\n7. طلبات التغيير: وثّق الطلب، واستجابة المكتب، وأثره المسجّل على الكلفة والمدة.\n8. بوابة العميل: يتابع المراحل، يعلّق عليها، ويسجّل موافقته على المرحلة المكتملة.\n9. الإشعارات والتقارير: تابع التحديثات داخل التطبيق، واستفد من خيارات تصدير التقارير.\n10. معرض الأعمال: اعرض مشاريع المكتب وأعماله.\n\nاختبار بسيط لطريقة متابعتك الحالية: اختَر آخر طلب تغيير، واجمع وصفه وأثره على الكلفة والمدة والرد عليه. هل تقدر تراجعها معًا؟ هذه معلومة تحتاجها قبل القرار، مهما كانت الأداة التي تستخدمها.\n\nالأرقام ونسب التقدّم تعتمد على ما يسجّله الفريق ويحدّثه؛ النظام لا يقدّر الكلف تلقائيًا. موافقة العميل المسجّلة على المرحلة لا تمثّل اعتمادًا هندسيًا.\n\nالواجهات من التطبيق الفعلي. البيانات والصور توضيحية، وليست نتائج أو مشاريع عملاء.\n\nتدير شركة مقاولات أو مكتبًا هندسيًا؟ راسل AURENDOR واذكر أين تتعطّل المتابعة عندكم: تقارير الموقع، طلبات التغيير، أو الدفعات. واطلب عرضًا عمليًا لشركتك.\n\n3D model: “Apple iPhone 15 Pro Max Black” by polyman Studio (@Polyman_3D), CC BY 4.0. Screen content, materials and lighting adapted.\nhttps://sketchfab.com/3d-models/apple-iphone-15-pro-max-black-df17520841214c1792fb8a44c6783ee7\nhttps://creativecommons.org/licenses/by/4.0/",
+  "chapters": [
+    {
+      "id": "projects",
+      "start": 3.75,
+      "end": 7.5,
+      "category": "المشاريع والفريق",
+      "title": "مشاريعك قدّامك.",
+      "body": "المشاريع والفريق في مكان واحد.",
+      "screens": [
+        "projects",
+        "users"
+      ],
+      "theme": "light",
+      "motif": "network"
+    },
+    {
+      "id": "stages",
+      "start": 7.5,
+      "end": 13.125,
+      "category": "المراحل والمهام",
+      "title": "وين وصل التنفيذ؟",
+      "body": "تابع المراحل وما بقي من مهام.",
+      "screens": [
+        "stage-detail",
+        "stage-updated"
+      ],
+      "theme": "dark",
+      "motif": "steps"
+    },
+    {
+      "id": "daily",
+      "start": 13.125,
+      "end": 18.75,
+      "category": "تقارير الموقع",
+      "title": "شنو صار بالموقع اليوم؟",
+      "body": "الأعمال والعمال والمواد، بتقرير واضح.",
+      "screens": [
+        "daily-report"
+      ],
+      "theme": "dark",
+      "motif": "paper"
+    },
+    {
+      "id": "issues",
+      "start": 18.75,
+      "end": 22.5,
+      "category": "المشاكل والملاحظات",
+      "title": "المشكلة بأي مرحلة؟",
+      "body": "سجّل المشكلة، وحدّد مرحلتها وأولويتها.",
+      "screens": [
+        "issues"
+      ],
+      "theme": "lime",
+      "motif": "locator"
+    },
+    {
+      "id": "files",
+      "start": 22.5,
+      "end": 26.25,
+      "category": "الصور والملفات",
+      "title": "وين آخر صورة؟",
+      "body": "صور الموقع وملفاته ضمن المشروع.",
+      "screens": [
+        "media"
+      ],
+      "theme": "light",
+      "motif": "paper"
+    },
+    {
+      "id": "finance",
+      "start": 26.25,
+      "end": 31.875,
+      "category": "المصروفات والدفعات",
+      "title": "كم استلمنا؟ كم صرفنا؟",
+      "body": "مصروفات ودفعات وطلبات دفع واضحة.",
+      "screens": [
+        "finance",
+        "payment-request"
+      ],
+      "theme": "dark",
+      "motif": "balance"
+    },
+    {
+      "id": "changes",
+      "start": 31.875,
+      "end": 37.5,
+      "category": "طلبات التغيير",
+      "title": "شنو كلفة التغيير؟",
+      "body": "وثّق أثره على الكلفة والمدة.",
+      "screens": [
+        "changes"
+      ],
+      "theme": "light",
+      "motif": "split"
+    },
+    {
+      "id": "client",
+      "start": 37.5,
+      "end": 43.125,
+      "category": "بوابة العميل",
+      "title": "العميل يتابع مشروعه.",
+      "body": "يشوف المراحل، يعلّق، ويسجّل موافقته.",
+      "screens": [
+        "client-stage",
+        "client-approval"
+      ],
+      "theme": "lime",
+      "motif": "network"
+    },
+    {
+      "id": "updates",
+      "start": 43.125,
+      "end": 46.875,
+      "category": "الإشعارات والتقارير",
+      "title": "تابع التحديثات.",
+      "body": "إشعارات داخل التطبيق، وتقارير للتصدير.",
+      "screens": [
+        "notifications",
+        "report-export"
+      ],
+      "theme": "dark",
+      "motif": "signal"
+    },
+    {
+      "id": "portfolio",
+      "start": 46.875,
+      "end": 50.625,
+      "category": "معرض الأعمال",
+      "title": "شغلك يعرّف عنك.",
+      "body": "اعرض مشاريع المكتب وأعماله.",
+      "screens": [
+        "portfolio"
+      ],
+      "theme": "dark",
+      "motif": "frame"
+    }
+  ],
+  "method": "Hyperframes + GSAP; GPT-directed HTML/CSS and deterministic sourced Three.js phone model. No Remotion.",
+  "assets": {
+    "screens": "Actual Bunyan Pro UI captures. Synthetic demo records and illustrative site photos. Still states, not continuous screen recordings.",
+    "device": "Apple iPhone 15 Pro Max Black by polyman Studio, CC BY 4.0; see device/ATTRIBUTION.md.",
+    "music": "Games Music by Grigoriy Nuzhny (Mixkit706), licensed recording re-edited to128BPM. No narration.",
+    "brand": "Original Ghroob Arabic / Dh Ranclo English, AURENDOR logos, deepgreen/lime/white."
+  },
+  "sourceTrail": [
+    "../exports/P08-complete/FEATURE-COVERAGE.md",
+    "device/asset-provenance.json",
+    "audio/provenance.json"
+  ],
+  "productionDirection": "Shared128BPM score/edit timeline. Complete phone always in frame. Whole Arabic phrases enter within0.23s, then hold. Longer finance, reports, stages, changes andclient sections. Preserve UI aspect.",
+  "adaptations": {
+    "LinkedIn": "Native vertical upload with owner-workflow caption. A landscape version requires a separate composition.",
+    "Stories": "Create a full chapter excerpt plus CTA; do not split sentences automatically.",
+    "X": "Lead with one owner question and a concrete workflow; attach the complete film."
+  },
+  "limits": [
+    "No claimed numerical savings or revenue uplift.",
+    "Financial values are recorded inputs, not profit or forecasts.",
+    "Client acknowledgement is not engineering certification.",
+    "No final payment submission or successful report download is portrayed.",
+    "Audio signal and synchronization measured; no listening review by assistant."
+  ]
+}

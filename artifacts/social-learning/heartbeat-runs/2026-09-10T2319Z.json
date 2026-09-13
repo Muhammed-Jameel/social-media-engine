@@ -1,0 +1,40 @@
+{
+  "automationId": "aurendor-publishing-and-first-week-learning",
+  "at": "2026-09-10T23:21:26.972044+00:00",
+  "baghdadDate": "2026-09-11",
+  "sync": {
+    "updatedAt": "2026-09-10T23:20:12.474Z",
+    "posts": 8,
+    "observations": 5,
+    "error": null,
+    "newMetricObservations": 0
+  },
+  "policy": {
+    "enabled": true,
+    "paused": false
+  },
+  "releaseValidation": "all six passed",
+  "live": {
+    "states": {
+      "B01": "BLOCKED",
+      "B02": "BLOCKED",
+      "S01": "BLOCKED",
+      "S02": "BLOCKED",
+      "U01": "BLOCKED",
+      "U02": "BLOCKED"
+    },
+    "knownBlockerUnchanged": true,
+    "dispatched": false,
+    "dispatchJournalPresent": false
+  },
+  "daySevenReviewDue": false,
+  "production": {
+    "nextCycle": 3,
+    "firstDue": "2026-09-15T06:05:00Z",
+    "eligibleAfter": "2026-09-11T06:05:00+00:00",
+    "hoursUntilFirstDue": 102.73,
+    "decision": "Outside rolling96-hour production horizon; no new cycle started."
+  },
+  "sourceRefresh": "Launch-window primary sources rechecked around00:19Baghdad today; no mutable source refresh due in this run.",
+  "notification": "suppressed: unchanged known blocker; no new actionable metric or completed media"
+}

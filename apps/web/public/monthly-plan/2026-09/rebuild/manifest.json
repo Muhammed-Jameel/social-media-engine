@@ -1,0 +1,319 @@
+[
+  {
+    "id": "P01",
+    "date": "2026-09-11",
+    "title": "العميل ينتظر.\nوالمبيعات أيضًا.",
+    "status": "REVIEW_DRAFT",
+    "assets": [
+      {
+        "path": "P01/slide-01.png",
+        "sha256": "5f9a299da719649a1f39d7b4427e28162b22893ddbd5074186666fd5bf418411"
+      },
+      {
+        "path": "P01/slide-02.png",
+        "sha256": "8f283b9809b0c2d1973b0a8de1df77794d14fcd3c7193b42c3807b53de220c2f"
+      },
+      {
+        "path": "P01/slide-03.png",
+        "sha256": "0bde14ee4df11bbedaaa8d780eae3e24d351b775e95b9a0c79ed4f8d92629c13"
+      },
+      {
+        "path": "P01/slide-04.png",
+        "sha256": "b1c921687c6c83a502a03e13298d35d9be49d8e78ba463f401038078ccc4128a"
+      },
+      {
+        "path": "P01/story-01.png",
+        "sha256": "111be561b8a2b654134b5f92483d56a497e5668fc6bf22f83306c2715e2152ce"
+      },
+      {
+        "path": "P01/story-02.png",
+        "sha256": "0c8b520691b3eae9759406177ec6046078831f4366a85dd5742adeacc0bfa764"
+      }
+    ]
+  },
+  {
+    "id": "P02",
+    "date": "2026-09-12",
+    "title": "مَن التزم؟\nومَن ذُكر اسمه؟",
+    "status": "REVIEW_DRAFT",
+    "assets": [
+      {
+        "path": "P02/slide-01.png",
+        "sha256": "264315bfd7959101541d81d4850624356a73be6ac0dff97c525f0a7411e81dad"
+      },
+      {
+        "path": "P02/slide-02.png",
+        "sha256": "2dd33ea6baab632ee920e5423af5ccd5c2765964165e595216b303580e5554ad"
+      },
+      {
+        "path": "P02/slide-03.png",
+        "sha256": "11ec6cfef6a7c597b0ba468e6dc7550d499c6872eef0e4927a06579e6baf8795"
+      },
+      {
+        "path": "P02/slide-04.png",
+        "sha256": "739fc194c242de9120f939093e2b064a2918f66f769400878d32f909d25c9256"
+      },
+      {
+        "path": "P02/slide-05.png",
+        "sha256": "b3b6cd285e2709074da37293b66342d91c3a376368d5b6eac281b3b5720d68fd"
+      },
+      {
+        "path": "P02/story-01.png",
+        "sha256": "fc0e872e810247b89899f0971bb3ac93c2a71043684ac9095f04d0929727fb5e"
+      },
+      {
+        "path": "P02/story-02.png",
+        "sha256": "c4ce34defeb40cc1f1d9f44bcd473fe5b4b05a828cb2c4d603416bc88a83b53e"
+      }
+    ]
+  },
+  {
+    "id": "P04",
+    "date": "2026-09-16",
+    "title": "٣ فواتير. مسودتان فقط.",
+    "status": "REJECTED_VIDEO_DIRECTION",
+    "assets": [
+      {
+        "path": "P04/story-01.png",
+        "sha256": "96c31371b2965b0114439111791bfa6582f8b4e3a43618cb436b0f7c2d341608"
+      },
+      {
+        "path": "P04/story-02.png",
+        "sha256": "04b851ed9e246ed8c18c7eb37edb230c4345087054f3916dc9509bd8bac7fbdb"
+      },
+      {
+        "path": "P04/reel.mp4",
+        "sha256": "54c81e55579a9ad7d8cc9fff45baee5b857de1b31261bae9c33b5b287a5504f7"
+      },
+      {
+        "path": "P04/poster.png",
+        "sha256": "3bb991c9d8f1da7a48af3ddfe8d6290d5567765f236cbe42b9a650ebb241cf8b"
+      }
+    ]
+  },
+  {
+    "id": "P05",
+    "date": "2026-09-18",
+    "title": "أُنجز التسليح.\nوبقي أمران.",
+    "status": "REVIEW_DRAFT",
+    "assets": [
+      {
+        "path": "P05/slide-01.png",
+        "sha256": "bfc88f5fe696cf7ffae1ef86123ae2466b4845d62ed7eefdcf5a08a7147b87b5"
+      },
+      {
+        "path": "P05/slide-02.png",
+        "sha256": "cb22839c45408a3bf0d33ce8fabaa97de5ff02634f30bd28a35ed061ad2aeb3c"
+      },
+      {
+        "path": "P05/slide-03.png",
+        "sha256": "8bd57faef0cb52fb0a61e8d47a57c585c2d4a74a53ad8b3e96ed69fbc9d1c4d9"
+      },
+      {
+        "path": "P05/slide-04.png",
+        "sha256": "35f01fc400a3676cb950b3cc7a5dcc9355b2f99be1303e6ef710b73b1f8e4803"
+      },
+      {
+        "path": "P05/slide-05.png",
+        "sha256": "3cb6500d076db260fe04bb48a51c9804674d129f64e86c52e37b3491fba6ff19"
+      },
+      {
+        "path": "P05/story-01.png",
+        "sha256": "00f4ff8c93bfa2dd7eda5ea2ffc991440ba798d6cc60dbb4a73f5a1a5b67904f"
+      },
+      {
+        "path": "P05/story-02.png",
+        "sha256": "abd5e60a7be4cbf733af1a51747c4d1250deb2a59b5fcba2cc47bd74992eeef4"
+      }
+    ]
+  },
+  {
+    "id": "P06",
+    "date": "2026-09-20",
+    "title": "الملف القديم\nقد يكون الصحيح",
+    "status": "REVIEW_DRAFT",
+    "assets": [
+      {
+        "path": "P06/slide-01.png",
+        "sha256": "c4f765514d530ea330aea102af1de881f534b725dedf57b016809cef8feb0e60"
+      },
+      {
+        "path": "P06/slide-02.png",
+        "sha256": "631ba77dfd564865f56b33bad9b9d76df43e90c62323c65b135069a0a10fa950"
+      },
+      {
+        "path": "P06/slide-03.png",
+        "sha256": "dfde41a2304a181eebd04a8fdbea81140f98499c201ef6de115e0511fef12d12"
+      },
+      {
+        "path": "P06/slide-04.png",
+        "sha256": "60ff3e78227c3ddff2b1c3307b296139ba6c67d0f74045d84b4a74c0fa3db9bd"
+      },
+      {
+        "path": "P06/slide-05.png",
+        "sha256": "7d5da6a88c7d76923a290fd12395ccfaa58a0fb7af3f2c44af5255f3806f0e72"
+      },
+      {
+        "path": "P06/story-01.png",
+        "sha256": "b2d4fb1d812501410890e9e47d5b8ee78b95ee7e19e4bf65edf3f14f88fa0a89"
+      },
+      {
+        "path": "P06/story-02.png",
+        "sha256": "835fe9e002de7f88e9e1fcdd02affe6fe4522d6f9aef4a9ef474919f760321be"
+      }
+    ]
+  },
+  {
+    "id": "P07",
+    "date": "2026-09-22",
+    "title": "الأقل للزوج\nليس الأقل للطلب",
+    "status": "REVIEW_DRAFT",
+    "assets": [
+      {
+        "path": "P07/slide-01.png",
+        "sha256": "549fa200003c39aa3209149887321fe09d7e49b7b1ea49a83fb7ab054717b980"
+      },
+      {
+        "path": "P07/slide-02.png",
+        "sha256": "06c90f5aa0757ef27b1226632d17aead0b72ad9a2a73113bae9133278e96d5d7"
+      },
+      {
+        "path": "P07/slide-03.png",
+        "sha256": "7ba310c70aa66ec4dfbd1f3c60ea5a2692b34e89ff402b51c35eceaa059f6b2e"
+      },
+      {
+        "path": "P07/slide-04.png",
+        "sha256": "7542c060d2e2e2929676efd088f9894b4b234719d08fb566cd832df45c3143d4"
+      },
+      {
+        "path": "P07/slide-05.png",
+        "sha256": "e78974e6543eac223ee39219251f08d8efc71587080cbb2be28b45e200305d2f"
+      },
+      {
+        "path": "P07/story-01.png",
+        "sha256": "42f22d0e2f0ce5b67a18c4533d5b627a63ba212c958664050d3cae56fc469dcf"
+      },
+      {
+        "path": "P07/story-02.png",
+        "sha256": "17d9ea87d79358ff8735b1bd97be279ebdc9d9d5824f8d95a8ffd53691374271"
+      }
+    ]
+  },
+  {
+    "id": "P08",
+    "date": "2026-09-24",
+    "title": "من الموقع إلى قرارك.",
+    "status": "REVIEW_DRAFT",
+    "assets": [
+      {
+        "path": "P08-hyperframes/reel.mp4",
+        "sha256": "2ed30104d7fa332e4f0eefb364275fe9f54c287b59550142a6d4696499000d9c"
+      },
+      {
+        "path": "P08-hyperframes/poster.png",
+        "sha256": "93e5110a4d684d1e212b081063400b1ead37f8ca7a17cd00fc3d2bb5a9a98bd3"
+      }
+    ],
+    "revision": "hyperframes-56"
+  },
+  {
+    "id": "P11",
+    "date": "2026-09-26",
+    "title": "نظّف أسماء المواد،\nواحتفظ بأصل كل كمية",
+    "status": "REVIEW_DRAFT",
+    "assets": [
+      {
+        "path": "P11/slide-01.png",
+        "sha256": "988f29df5d424461918fffe2ae5f69e37f280773b93c9db904240f418616b30e"
+      },
+      {
+        "path": "P11/slide-02.png",
+        "sha256": "f66b85b7fb4b84bcd37963d4de739bf37fefd0829ae8ee97b23fa5ae2214a0dd"
+      },
+      {
+        "path": "P11/slide-03.png",
+        "sha256": "b60e8b952fb974aec0ada25e21cfc98226800b3b539e98aa00c5656e2bca7479"
+      },
+      {
+        "path": "P11/slide-04.png",
+        "sha256": "9ae954f60c7bad8942950d60d15b143cd0342a5d9b25dabebc4c1f3da7904e6e"
+      },
+      {
+        "path": "P11/slide-05.png",
+        "sha256": "e8260394d9a4f28d31dea706cd5cecb9ddde7b640350658ddb2fbe01ce1832db"
+      },
+      {
+        "path": "P11/story-01.png",
+        "sha256": "a257cbad7feb6be7a8049cc7458009342f81b2f288c8dcd159c0ab05a4706641"
+      },
+      {
+        "path": "P11/story-02.png",
+        "sha256": "43e5c07127b12e01443de15285e205b545dd1de78bcafeb6f1d0491a22d5f77c"
+      }
+    ]
+  },
+  {
+    "id": "P10",
+    "date": "2026-09-28",
+    "title": "انتهت المهلة.\nهل نُفّذ الطلب؟",
+    "status": "REVIEW_DRAFT",
+    "assets": [
+      {
+        "path": "P10/slide-01.png",
+        "sha256": "ee14a8bf4c097ecf16f2491852ccf874ddea1790a92f9eb5c5cc7121a1c1218e"
+      },
+      {
+        "path": "P10/slide-02.png",
+        "sha256": "7bda0a232cd2328dfe45de3c11da31be4bc81f42a26953c15c2de62a98453d1f"
+      },
+      {
+        "path": "P10/slide-03.png",
+        "sha256": "45bbfbe747338627302acc4cf179f58f79956f8616d850921ff9900ef5bde853"
+      },
+      {
+        "path": "P10/slide-04.png",
+        "sha256": "f882a33658aebc9bd4d5e7796b20d5e3c94a8067f3dd8d7794290793444b2b53"
+      },
+      {
+        "path": "P10/slide-05.png",
+        "sha256": "acfedfd9445a6534b7d9b51ad6e063a0b27398484eab813c96e1ada95aabb045"
+      },
+      {
+        "path": "P10/story-01.png",
+        "sha256": "8d6545b5d82ee170df3510a80f865d421c193984d1b49cf649d353bbfd611f44"
+      },
+      {
+        "path": "P10/story-02.png",
+        "sha256": "c8315c38bc839bef7b7639d675e49b5bc58ca5e947f4faa1aa2622818e66700b"
+      }
+    ]
+  },
+  {
+    "id": "P12",
+    "date": "2026-09-30",
+    "title": "صف لنا\nطلبًا واحدًا",
+    "status": "REVIEW_DRAFT",
+    "assets": [
+      {
+        "path": "P12/slide-01.png",
+        "sha256": "d5d36b5dc64bcadcf0059efb26345835fe9adcf4b9ead6dfd65455616408e4e3"
+      },
+      {
+        "path": "P12/slide-02.png",
+        "sha256": "6c71a715368334d74f7cdce88e5fc22c02cf46f0db9195d4d11980382558b5b0"
+      },
+      {
+        "path": "P12/slide-03.png",
+        "sha256": "53b987c25e8f525fdf61baf939b2ccedba7528b795793b02768af36e62f0675c"
+      },
+      {
+        "path": "P12/slide-04.png",
+        "sha256": "571f4c082a421be0d9a9e76f949351231e645bebfa99db0d96448828e4618021"
+      },
+      {
+        "path": "P12/story-01.png",
+        "sha256": "f2e33c4ac8a23c9153be2f7dfe61ce36b1ec6eefe40f16c11fb9697cd87e84e0"
+      }
+    ]
+  }
+]

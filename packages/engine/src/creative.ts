@@ -121,6 +121,22 @@ export interface CreativeAutomationEvaluation {
   };
 }
 
+export interface TechnicalCreativePreflightEvaluation {
+  evaluatorVersion: "2.0.0";
+  brandVersion: typeof AURENDOR_CREATIVE_BRAND_VERSION;
+  decision: "REJECTED_BY_TECHNICAL_PREFLIGHT" | "TECHNICAL_PREFLIGHT_PASSED_PIXEL_REVIEW_REQUIRED";
+  hardFails: CreativeHardFail[];
+  checks: CreativeAutomationCheck[];
+  contrast: CreativeAutomationEvaluation["contrast"];
+  textDensity: CreativeAutomationEvaluation["textDensity"];
+  aestheticEvaluation: {
+    performed: false;
+    score: null;
+    reason: "Deterministic metadata and markup checks cannot establish visual quality.";
+  };
+  visualInspection: CreativeAutomationEvaluation["visualInspection"];
+}
+
 export interface EvaluateSocialCreativeInput {
   input: SocialSvgInput;
   svg: string;
@@ -194,7 +210,7 @@ function copyBindingHash(input: SocialSvgInput, resolvedFooter: string): string 
 }
 
 /** Exact path geometry from FINAL 2026 horizontal logo Asset 14.svg. */
-function renderCanonicalHorizontalLogo(fill: string, x: number, y: number, width: number): string {
+export function renderCanonicalHorizontalLogo(fill: string, x: number, y: number, width: number): string {
   const scale = width / 414.84;
   return `<g data-role="canonical-logo" data-source-sha256="${CANONICAL_HORIZONTAL_LOGO_SOURCE_SHA256}" fill="${fill}" transform="translate(${x} ${y}) scale(${scale})">
     <path d="M247.15,8.11v21.64h-10.82V8.11h-5.41v8.63l-5.41.44v-9.07h-27.05v5.41h21.64v4.1l-16.27,1.31-5.37.43h0v5.41h0v10.39h27.05v-12.82l5.41-.49v13.31h21.64V8.11h-5.41ZM220.1,29.74h-16.23v-5.46l16.23-1.46v6.92Z"/>
@@ -339,6 +355,11 @@ function scoreTotal(scores: CreativeAutomationScore): number {
  * Performs only deterministic, offline checks. A clean result is deliberately
  * labelled as requiring visual review; it is never equivalent to a visual critic pass.
  */
+/**
+ * @deprecated Compatibility-only diagnostic. Its numeric rubric is not an
+ * aesthetic score and must never be used for selection, approval, or release.
+ * New code must call evaluateTechnicalCreativePreflight and a pixel critic.
+ */
 export function evaluateSocialCreative({ input, svg, assetLicenseStatus }: EvaluateSocialCreativeInput): CreativeAutomationEvaluation {
   const mode = input.mode ?? "light";
   const direction = input.direction ?? expectedDirection(input);
@@ -459,6 +480,28 @@ export function evaluateSocialCreative({ input, svg, assetLicenseStatus }: Evalu
   };
 }
 
+/** Objective markup, copy, contrast, dimension, and rights checks only. */
+export function evaluateTechnicalCreativePreflight(input: EvaluateSocialCreativeInput): TechnicalCreativePreflightEvaluation {
+  const legacy = evaluateSocialCreative(input);
+  return {
+    evaluatorVersion: "2.0.0",
+    brandVersion: legacy.brandVersion,
+    decision: legacy.hardFails.length > 0
+      ? "REJECTED_BY_TECHNICAL_PREFLIGHT"
+      : "TECHNICAL_PREFLIGHT_PASSED_PIXEL_REVIEW_REQUIRED",
+    hardFails: legacy.hardFails,
+    checks: legacy.checks,
+    contrast: legacy.contrast,
+    textDensity: legacy.textDensity,
+    aestheticEvaluation: {
+      performed: false,
+      score: null,
+      reason: "Deterministic metadata and markup checks cannot establish visual quality.",
+    },
+    visualInspection: legacy.visualInspection,
+  };
+}
+
 export function duplicateCreativeFingerprints(svgs: string[]): string[] {
   const seen = new Set<string>();
   const duplicates = new Set<string>();
@@ -474,7 +517,16 @@ export class DeterministicSvgProvider implements DesignProvider {
   private readonly drafts = new Map<string, DesignDraft>();
 
   async capabilities(): Promise<DesignCapabilities> {
-    return { create: "AVAILABLE", revise: "AVAILABLE", render: "AVAILABLE", editable: "AVAILABLE", reasons: [] };
+    return {
+      create: "PREVIEW",
+      revise: "MANUAL_HANDOFF_REQUIRED",
+      render: "AVAILABLE",
+      editable: "AVAILABLE",
+      reasons: [
+        "The deterministic SVG provider is a technical preview renderer, not the professional asset-first production system.",
+        "Semantic revision cannot be claimed unless the rendered pixels change and receive a new hash.",
+      ],
+    };
   }
 
   async create(input: DesignBrief): Promise<DesignDraft[]> {
@@ -496,11 +548,10 @@ export class DeterministicSvgProvider implements DesignProvider {
   }
 
   async revise(draftId: string, revision: { instructions: string[] }): Promise<DesignDraft> {
-    const previous = this.drafts.get(draftId);
-    if (!previous) throw new Error(`Design draft not found: ${draftId}`);
-    const revised = { ...previous, id: randomUUID(), payload: { ...previous.payload, revision } };
-    this.drafts.set(revised.id, revised);
-    return revised;
+    if (!this.drafts.has(draftId)) throw new Error(`Design draft not found: ${draftId}`);
+    throw new Error(
+      `DeterministicSvgProvider cannot apply a truthful pixel revision (${revision.instructions.length} instruction(s)); return to professional production and render a new asset hash.`,
+    );
   }
 
   async render(draftId: string, format: "svg" | "png" | "jpg"): Promise<Array<{ mimeType: string; bytes: Uint8Array }>> {

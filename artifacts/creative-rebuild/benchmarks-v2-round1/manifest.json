@@ -1,0 +1,757 @@
+{
+  "schemaVersion": "2.0.0",
+  "generatedAt": "2026-08-23T12:03:44.744Z",
+  "status": "BENCHMARK_QA_REQUIRED",
+  "publicationEligible": false,
+  "currentReleaseGate": "BLOCKED",
+  "generator": "scripts/generate-creative-rebuild.mts",
+  "renderer": "Chromium actual-pixel capture with embedded approved font files",
+  "canvas": {
+    "width": 1080,
+    "height": 1350
+  },
+  "mobileReview": {
+    "width": 324,
+    "height": 405
+  },
+  "antiCopy": {
+    "corpusPixelsSentToGenerator": false,
+    "creatorOrStudioNamesInPrompts": false,
+    "referenceUse": "Retrieved principles and critic anchors only",
+    "originalityReviewRequired": true
+  },
+  "creativeProcess": {
+    "routesRequiredPerBrief": 4,
+    "selectedRoutesHaveRejectionRationale": true,
+    "professionalPixelCriticsRequired": {
+      "Arabic": 4,
+      "English": 3
+    },
+    "professionalThreshold": 145,
+    "maximum": 160
+  },
+  "creatives": [
+    {
+      "id": "01-ar-context-handoff",
+      "title": "Arabic conceptual hero — context handoff",
+      "language": "ar",
+      "purpose": "education",
+      "visualFamily": "conceptual-hero",
+      "imageryMode": "conceptual-photomanipulation",
+      "anthropomorphismLevel": 1,
+      "twoSecondTakeaway": "More tools do not create one system.",
+      "selectedRoute": "Broken tracks become one accountable material path",
+      "routesConsidered": [
+        {
+          "route": "Broken tracks become one accountable material path",
+          "family": "conceptual-hero",
+          "decision": "selected",
+          "reason": "The communication idea survives without copy and changes the feed silhouette."
+        },
+        {
+          "route": "Type as operating diagram",
+          "family": "editorial-statement",
+          "decision": "rejected",
+          "reason": "Clear but less materially specific for this message."
+        },
+        {
+          "route": "Evidence-led product proof",
+          "family": "product-system-story",
+          "decision": "rejected",
+          "reason": "Requires current first-party UI evidence not present in this controlled benchmark."
+        },
+        {
+          "route": "Behavior-led object character",
+          "family": "character-narrative",
+          "decision": "rejected",
+          "reason": "Human-like behavior would add personality but not enough comprehension here."
+        }
+      ],
+      "referenceIds": [
+        "ref_51e708951ea61f18",
+        "ref_6dd0a9246092f4d5",
+        "ref_8871f98455278188"
+      ],
+      "principleIds": [
+        "STORY_ONE_VERB",
+        "COMP_FOCAL_DOMINANCE",
+        "AR_COMPOSE_RTL_FIRST"
+      ],
+      "copy": [
+        "لا تحتاج شركتك",
+        "إلى أدوات أكثر",
+        "تحتاج إلى سياقٍ يبقى متصلاً من القرار إلى التنفيذ."
+      ],
+      "assetProvenance": [
+        "Original AURENDOR image generation: context-handoff.png; no reference pixels supplied."
+      ],
+      "file": "01-ar-context-handoff.png",
+      "mobileFile": "mobile/01-ar-context-handoff.png",
+      "sha256": "977cd16a93ddf58456054379b40383926a705bc1922eb2c86ad55eda34e42e61",
+      "byteLength": 1711091
+    },
+    {
+      "id": "02-ar-rag-evidence",
+      "title": "Arabic RAG education — evidence archive",
+      "language": "ar",
+      "purpose": "service-explanation",
+      "visualFamily": "product-system-story",
+      "imageryMode": "bespoke-3d",
+      "anthropomorphismLevel": 1,
+      "twoSecondTakeaway": "Retrieval is valuable when evidence returns attached.",
+      "selectedRoute": "One cited fragment returns from a material archive",
+      "routesConsidered": [
+        {
+          "route": "One cited fragment returns from a material archive",
+          "family": "product-system-story",
+          "decision": "selected",
+          "reason": "The communication idea survives without copy and changes the feed silhouette."
+        },
+        {
+          "route": "Type as operating diagram",
+          "family": "editorial-statement",
+          "decision": "rejected",
+          "reason": "Clear but less materially specific for this message."
+        },
+        {
+          "route": "Evidence-led product proof",
+          "family": "product-system-story",
+          "decision": "rejected",
+          "reason": "Requires current first-party UI evidence not present in this controlled benchmark."
+        },
+        {
+          "route": "Behavior-led object character",
+          "family": "character-narrative",
+          "decision": "rejected",
+          "reason": "Human-like behavior would add personality but not enough comprehension here."
+        }
+      ],
+      "referenceIds": [
+        "ref_4afce40fe49062b6",
+        "ref_a549cc94cfd3fc44",
+        "ref_79573233e0b609f3"
+      ],
+      "principleIds": [
+        "IMAGE_UI_AS_PROOF",
+        "COMP_SEMANTIC_DEPTH",
+        "COLOR_MATERIAL_LIGHT_BEFORE_GLOW"
+      ],
+      "copy": [
+        "ليست الإجابة وحدها",
+        "المهم أن تعود ومعها أدلّتها",
+        "RAG · الاسترجاع المعزّز بالمصادر"
+      ],
+      "assetProvenance": [
+        "Original AURENDOR image generation: rag-evidence-archive.png; no reference pixels supplied."
+      ],
+      "file": "02-ar-rag-evidence.png",
+      "mobileFile": "mobile/02-ar-rag-evidence.png",
+      "sha256": "cb05d6e3ac983b1b3c1628a23c387af5c15a2c29da71f719a1e71bd7652da05a",
+      "byteLength": 1451658
+    },
+    {
+      "id": "03-ar-automation-relay",
+      "title": "Arabic behavior-led anthropomorphism — automation relay",
+      "language": "ar",
+      "purpose": "education",
+      "visualFamily": "character-narrative",
+      "imageryMode": "bespoke-3d",
+      "anthropomorphismLevel": 3,
+      "twoSecondTakeaway": "Reliable automation is a controlled relay, not magic.",
+      "selectedRoute": "Three bounded modules coordinate a visible relay",
+      "routesConsidered": [
+        {
+          "route": "Three bounded modules coordinate a visible relay",
+          "family": "character-narrative",
+          "decision": "selected",
+          "reason": "The communication idea survives without copy and changes the feed silhouette."
+        },
+        {
+          "route": "Type as operating diagram",
+          "family": "editorial-statement",
+          "decision": "rejected",
+          "reason": "Clear but less materially specific for this message."
+        },
+        {
+          "route": "Evidence-led product proof",
+          "family": "product-system-story",
+          "decision": "rejected",
+          "reason": "Requires current first-party UI evidence not present in this controlled benchmark."
+        },
+        {
+          "route": "Behavior-led object character",
+          "family": "character-narrative",
+          "decision": "rejected",
+          "reason": "Human-like behavior would add personality but not enough comprehension here."
+        }
+      ],
+      "referenceIds": [
+        "ref_2ca843f06643d5f6",
+        "ref_79573233e0b609f3",
+        "ref_7ea2e6edfd24a465"
+      ],
+      "principleIds": [
+        "ANTHRO_BEHAVIOR_BEFORE_FACE",
+        "ANTHRO_CAPABILITY_BOUNDARY_VISIBLE",
+        "STORY_STATE_TRANSFORMATION"
+      ],
+      "copy": [
+        "الأتمتة الموثوقة",
+        "تسلّم المسؤولية ولا تتظاهر بالسحر",
+        "خطوة محددة · انتقال واضح · إيقاف ممكن"
+      ],
+      "assetProvenance": [
+        "Original AURENDOR image generation: automation-relay.png; no reference pixels supplied."
+      ],
+      "file": "03-ar-automation-relay.png",
+      "mobileFile": "mobile/03-ar-automation-relay.png",
+      "sha256": "d2e2e060104d728ddd41455f5c52e02ce1a7d2b8d95ba6459520cad82acef1cc",
+      "byteLength": 1202412
+    },
+    {
+      "id": "04-ar-decision-question",
+      "title": "Arabic thought leadership — decision question",
+      "language": "ar",
+      "purpose": "thought-leadership",
+      "visualFamily": "editorial-statement",
+      "imageryMode": "typography-led",
+      "anthropomorphismLevel": 0,
+      "twoSecondTakeaway": "Automation cannot repair an ambiguous decision.",
+      "selectedRoute": "The Arabic question mark becomes the unresolved operating object",
+      "routesConsidered": [
+        {
+          "route": "The Arabic question mark becomes the unresolved operating object",
+          "family": "editorial-statement",
+          "decision": "selected",
+          "reason": "The communication idea survives without copy and changes the feed silhouette."
+        },
+        {
+          "route": "Type as operating diagram",
+          "family": "editorial-statement",
+          "decision": "rejected",
+          "reason": "Clear but less materially specific for this message."
+        },
+        {
+          "route": "Evidence-led product proof",
+          "family": "product-system-story",
+          "decision": "rejected",
+          "reason": "Requires current first-party UI evidence not present in this controlled benchmark."
+        },
+        {
+          "route": "Behavior-led object character",
+          "family": "character-narrative",
+          "decision": "rejected",
+          "reason": "Human-like behavior would add personality but not enough comprehension here."
+        }
+      ],
+      "referenceIds": [
+        "ref_f5cec23c32415d6e",
+        "ref_8684a4138ac5fc7a",
+        "ref_6dd0a9246092f4d5"
+      ],
+      "principleIds": [
+        "TYPE_DISPLAY_AS_COMPOSITION",
+        "AR_SEMANTIC_LINE_BREAKS",
+        "COLOR_SEMANTIC_NOT_SKIN"
+      ],
+      "copy": [
+        "الأتمتة لا تصلح",
+        "قراراً غامضاً",
+        "قبل أن تبني المسار، حدّد القرار."
+      ],
+      "assetProvenance": [
+        "Native typography and vector geometry; original AURENDOR composition."
+      ],
+      "file": "04-ar-decision-question.png",
+      "mobileFile": "mobile/04-ar-decision-question.png",
+      "sha256": "aa36c360e0ac7e4501a463011227f96210f6679baa4f16b5443bb773d1aa3edc",
+      "byteLength": 61118
+    },
+    {
+      "id": "05-en-before-after",
+      "title": "English case pattern — before and after",
+      "language": "en",
+      "purpose": "case-study",
+      "visualFamily": "before-after",
+      "imageryMode": "abstract-system",
+      "anthropomorphismLevel": 0,
+      "twoSecondTakeaway": "A visible operating path replaces fragmented follow-up.",
+      "selectedRoute": "Loose ownership points resolve into one accountable path",
+      "routesConsidered": [
+        {
+          "route": "Loose ownership points resolve into one accountable path",
+          "family": "before-after",
+          "decision": "selected",
+          "reason": "The communication idea survives without copy and changes the feed silhouette."
+        },
+        {
+          "route": "Type as operating diagram",
+          "family": "editorial-statement",
+          "decision": "rejected",
+          "reason": "Clear but less materially specific for this message."
+        },
+        {
+          "route": "Evidence-led product proof",
+          "family": "product-system-story",
+          "decision": "rejected",
+          "reason": "Requires current first-party UI evidence not present in this controlled benchmark."
+        },
+        {
+          "route": "Behavior-led object character",
+          "family": "character-narrative",
+          "decision": "rejected",
+          "reason": "Human-like behavior would add personality but not enough comprehension here."
+        }
+      ],
+      "referenceIds": [
+        "ref_51e708951ea61f18",
+        "ref_4afce40fe49062b6",
+        "ref_7ea2e6edfd24a465"
+      ],
+      "principleIds": [
+        "STORY_TENSION_THEN_RESOLUTION",
+        "COMP_SYSTEM_VARIATION_NOT_TEMPLATE",
+        "HIER_EVIDENCE_SUBORDINATED_NOT_HIDDEN"
+      ],
+      "copy": [
+        "FROM CHASING STATUS",
+        "TO SEEING THE NEXT ACTION",
+        "Illustrative workflow pattern — not a client result"
+      ],
+      "assetProvenance": [
+        "Native vector geometry; illustrative pattern explicitly labelled, no fabricated client result."
+      ],
+      "file": "05-en-before-after.png",
+      "mobileFile": "mobile/05-en-before-after.png",
+      "sha256": "f32d848265b9d730bf4570f032434c75f9417d648cda86226e51904ec510e5e2",
+      "byteLength": 73786
+    },
+    {
+      "id": "06-ar-operating-pattern",
+      "title": "Arabic data story — four places to one action",
+      "language": "ar",
+      "purpose": "statistic",
+      "visualFamily": "data-story",
+      "imageryMode": "typography-led",
+      "anthropomorphismLevel": 0,
+      "twoSecondTakeaway": "Fragmented checking becomes one next action.",
+      "selectedRoute": "The denominator physically collapses from four places into one path",
+      "routesConsidered": [
+        {
+          "route": "The denominator physically collapses from four places into one path",
+          "family": "data-story",
+          "decision": "selected",
+          "reason": "The communication idea survives without copy and changes the feed silhouette."
+        },
+        {
+          "route": "Type as operating diagram",
+          "family": "editorial-statement",
+          "decision": "rejected",
+          "reason": "Clear but less materially specific for this message."
+        },
+        {
+          "route": "Evidence-led product proof",
+          "family": "product-system-story",
+          "decision": "rejected",
+          "reason": "Requires current first-party UI evidence not present in this controlled benchmark."
+        },
+        {
+          "route": "Behavior-led object character",
+          "family": "character-narrative",
+          "decision": "rejected",
+          "reason": "Human-like behavior would add personality but not enough comprehension here."
+        }
+      ],
+      "referenceIds": [
+        "ref_4afce40fe49062b6",
+        "ref_8ef6ff7e70837523",
+        "ref_f5cec23c32415d6e"
+      ],
+      "principleIds": [
+        "HIER_THREE_BEATS_MAX",
+        "TYPE_STEEP_SCALE_CONTRAST",
+        "AR_COMPOSE_RTL_FIRST"
+      ],
+      "copy": [
+        "٤ أماكن لتعرف ما حدث",
+        "١ مسار يريك ما التالي",
+        "نمط توضيحي · ليس نتيجة عميل"
+      ],
+      "assetProvenance": [
+        "Native Arabic typography and vector data marks; illustrative, not a measured performance claim."
+      ],
+      "file": "06-ar-operating-pattern.png",
+      "mobileFile": "mobile/06-ar-operating-pattern.png",
+      "sha256": "322862cd08eb87ee270e323a943c708273270199255bb44234a419f45e713355",
+      "byteLength": 40976
+    },
+    {
+      "id": "07-en-evidence-ledger",
+      "title": "English product principle — evidence ledger",
+      "language": "en",
+      "purpose": "product-introduction",
+      "visualFamily": "product-system-story",
+      "imageryMode": "abstract-system",
+      "anthropomorphismLevel": 1,
+      "twoSecondTakeaway": "Every important decision carries its evidence.",
+      "selectedRoute": "A single physical ledger binds claims to source notches",
+      "routesConsidered": [
+        {
+          "route": "A single physical ledger binds claims to source notches",
+          "family": "product-system-story",
+          "decision": "selected",
+          "reason": "The communication idea survives without copy and changes the feed silhouette."
+        },
+        {
+          "route": "Type as operating diagram",
+          "family": "editorial-statement",
+          "decision": "rejected",
+          "reason": "Clear but less materially specific for this message."
+        },
+        {
+          "route": "Evidence-led product proof",
+          "family": "product-system-story",
+          "decision": "rejected",
+          "reason": "Requires current first-party UI evidence not present in this controlled benchmark."
+        },
+        {
+          "route": "Behavior-led object character",
+          "family": "character-narrative",
+          "decision": "rejected",
+          "reason": "Human-like behavior would add personality but not enough comprehension here."
+        }
+      ],
+      "referenceIds": [
+        "ref_a549cc94cfd3fc44",
+        "ref_4afce40fe49062b6",
+        "ref_7ea2e6edfd24a465"
+      ],
+      "principleIds": [
+        "IMAGE_UI_AS_PROOF",
+        "STORY_CONTEXTUAL_MICRODETAILS",
+        "HIER_EVIDENCE_SUBORDINATED_NOT_HIDDEN"
+      ],
+      "copy": [
+        "THE DECISION",
+        "KEEPS ITS EVIDENCE",
+        "Context · source · owner · next action"
+      ],
+      "assetProvenance": [
+        "Native vector ledger; no fabricated product screenshot or unsupported capability claim."
+      ],
+      "file": "07-en-evidence-ledger.png",
+      "mobileFile": "mobile/07-en-evidence-ledger.png",
+      "sha256": "30ba9f21ef1d5ece528bd7a6622e8cf7519e7bc5224769cc59dfe4c6656eb4c7",
+      "byteLength": 76926
+    },
+    {
+      "id": "08-en-field-notes",
+      "title": "English announcement — field notes series",
+      "language": "en",
+      "purpose": "announcement",
+      "visualFamily": "announcement",
+      "imageryMode": "typography-led",
+      "anthropomorphismLevel": 0,
+      "twoSecondTakeaway": "AURENDOR is opening a serious field-notes series.",
+      "selectedRoute": "A filing aperture reveals one charged note inside a quiet editorial field",
+      "routesConsidered": [
+        {
+          "route": "A filing aperture reveals one charged note inside a quiet editorial field",
+          "family": "announcement",
+          "decision": "selected",
+          "reason": "The communication idea survives without copy and changes the feed silhouette."
+        },
+        {
+          "route": "Type as operating diagram",
+          "family": "editorial-statement",
+          "decision": "rejected",
+          "reason": "Clear but less materially specific for this message."
+        },
+        {
+          "route": "Evidence-led product proof",
+          "family": "product-system-story",
+          "decision": "rejected",
+          "reason": "Requires current first-party UI evidence not present in this controlled benchmark."
+        },
+        {
+          "route": "Behavior-led object character",
+          "family": "character-narrative",
+          "decision": "rejected",
+          "reason": "Human-like behavior would add personality but not enough comprehension here."
+        }
+      ],
+      "referenceIds": [
+        "ref_f5cec23c32415d6e",
+        "ref_7ea2e6edfd24a465",
+        "ref_8684a4138ac5fc7a"
+      ],
+      "principleIds": [
+        "TYPE_DISPLAY_AS_COMPOSITION",
+        "COMP_PURPOSEFUL_CROP",
+        "HIER_LOGO_QUIET_AUTHORITY"
+      ],
+      "copy": [
+        "FIELD NOTES",
+        "OPERATING INTELLIGENCE, WITHOUT THE THEATER",
+        "A new AURENDOR series"
+      ],
+      "assetProvenance": [
+        "Native typography and vector aperture; original AURENDOR composition."
+      ],
+      "file": "08-en-field-notes.png",
+      "mobileFile": "mobile/08-en-field-notes.png",
+      "sha256": "87a1f4df4b7a4002a560b9a825a8b74725f6fd1e5d19ff550e5536a9835c7b53",
+      "byteLength": 52762
+    },
+    {
+      "id": "09-ar-carousel-decision",
+      "title": "Arabic carousel 1/3 — locate the decision",
+      "language": "ar",
+      "purpose": "education",
+      "visualFamily": "arabic-educational-carousel",
+      "imageryMode": "typography-led",
+      "anthropomorphismLevel": 0,
+      "twoSecondTakeaway": "Find the decision before automating.",
+      "selectedRoute": "A decision chamber interrupts an unfinished flow",
+      "routesConsidered": [
+        {
+          "route": "A decision chamber interrupts an unfinished flow",
+          "family": "arabic-educational-carousel",
+          "decision": "selected",
+          "reason": "The communication idea survives without copy and changes the feed silhouette."
+        },
+        {
+          "route": "Type as operating diagram",
+          "family": "editorial-statement",
+          "decision": "rejected",
+          "reason": "Clear but less materially specific for this message."
+        },
+        {
+          "route": "Evidence-led product proof",
+          "family": "product-system-story",
+          "decision": "rejected",
+          "reason": "Requires current first-party UI evidence not present in this controlled benchmark."
+        },
+        {
+          "route": "Behavior-led object character",
+          "family": "character-narrative",
+          "decision": "rejected",
+          "reason": "Human-like behavior would add personality but not enough comprehension here."
+        }
+      ],
+      "referenceIds": [
+        "ref_4afce40fe49062b6",
+        "ref_8871f98455278188",
+        "ref_8ef6ff7e70837523"
+      ],
+      "principleIds": [
+        "AR_COMPOSE_RTL_FIRST",
+        "COMP_SYSTEM_VARIATION_NOT_TEMPLATE",
+        "STORY_ONE_VERB"
+      ],
+      "copy": [
+        "قبل أن تؤتمت",
+        "اسأل: أين القرار؟",
+        "١ / ٣"
+      ],
+      "assetProvenance": [
+        "Native Arabic typography and vector mechanism; original AURENDOR carousel system."
+      ],
+      "file": "09-ar-carousel-decision.png",
+      "mobileFile": "mobile/09-ar-carousel-decision.png",
+      "sha256": "886d42c48679d5f6170833bca799128c68d67f33a56aef510afe5fdd574b82d5",
+      "byteLength": 47691
+    },
+    {
+      "id": "10-ar-carousel-boundaries",
+      "title": "Arabic carousel 2/3 — inputs and outputs",
+      "language": "ar",
+      "purpose": "education",
+      "visualFamily": "arabic-educational-carousel",
+      "imageryMode": "abstract-system",
+      "anthropomorphismLevel": 1,
+      "twoSecondTakeaway": "Name the input and output of automation.",
+      "selectedRoute": "A translucent processing boundary exposes what enters and exits",
+      "routesConsidered": [
+        {
+          "route": "A translucent processing boundary exposes what enters and exits",
+          "family": "process-explainer",
+          "decision": "selected",
+          "reason": "The communication idea survives without copy and changes the feed silhouette."
+        },
+        {
+          "route": "Type as operating diagram",
+          "family": "editorial-statement",
+          "decision": "rejected",
+          "reason": "Clear but less materially specific for this message."
+        },
+        {
+          "route": "Evidence-led product proof",
+          "family": "product-system-story",
+          "decision": "rejected",
+          "reason": "Requires current first-party UI evidence not present in this controlled benchmark."
+        },
+        {
+          "route": "Behavior-led object character",
+          "family": "character-narrative",
+          "decision": "rejected",
+          "reason": "Human-like behavior would add personality but not enough comprehension here."
+        }
+      ],
+      "referenceIds": [
+        "ref_4afce40fe49062b6",
+        "ref_3991533a0cc6d024",
+        "ref_7ea2e6edfd24a465"
+      ],
+      "principleIds": [
+        "COMP_SEMANTIC_DEPTH",
+        "HIER_THREE_BEATS_MAX",
+        "AR_SEMANTIC_LINE_BREAKS"
+      ],
+      "copy": [
+        "ما الذي يدخل؟",
+        "ما الذي يخرج؟",
+        "سمِّ الحدود قبل أن تبني المسار",
+        "٢ / ٣"
+      ],
+      "assetProvenance": [
+        "Native Arabic typography and vector boundary; original AURENDOR carousel system."
+      ],
+      "file": "10-ar-carousel-boundaries.png",
+      "mobileFile": "mobile/10-ar-carousel-boundaries.png",
+      "sha256": "6cdaae3548f2c782ad247ef221da3fcc6492980c3ff9bf5367006db077cfa81e",
+      "byteLength": 50949
+    },
+    {
+      "id": "11-ar-carousel-stop",
+      "title": "Arabic carousel 3/3 — human stop",
+      "language": "ar",
+      "purpose": "education",
+      "visualFamily": "arabic-educational-carousel",
+      "imageryMode": "abstract-system",
+      "anthropomorphismLevel": 2,
+      "twoSecondTakeaway": "A reliable system has a visible human stop.",
+      "selectedRoute": "The operating path visibly yields to one human stop",
+      "routesConsidered": [
+        {
+          "route": "The operating path visibly yields to one human stop",
+          "family": "process-explainer",
+          "decision": "selected",
+          "reason": "The communication idea survives without copy and changes the feed silhouette."
+        },
+        {
+          "route": "Type as operating diagram",
+          "family": "editorial-statement",
+          "decision": "rejected",
+          "reason": "Clear but less materially specific for this message."
+        },
+        {
+          "route": "Evidence-led product proof",
+          "family": "product-system-story",
+          "decision": "rejected",
+          "reason": "Requires current first-party UI evidence not present in this controlled benchmark."
+        },
+        {
+          "route": "Behavior-led object character",
+          "family": "character-narrative",
+          "decision": "rejected",
+          "reason": "Human-like behavior would add personality but not enough comprehension here."
+        }
+      ],
+      "referenceIds": [
+        "ref_2ca843f06643d5f6",
+        "ref_4afce40fe49062b6",
+        "ref_8ef6ff7e70837523"
+      ],
+      "principleIds": [
+        "ANTHRO_CAPABILITY_BOUNDARY_VISIBLE",
+        "STORY_TENSION_THEN_RESOLUTION",
+        "AR_COMPOSE_RTL_FIRST"
+      ],
+      "copy": [
+        "ومن يوقف النظام؟",
+        "الموثوقية تبدأ بحدٍّ بشري واضح",
+        "٣ / ٣"
+      ],
+      "assetProvenance": [
+        "Native Arabic typography and vector stop mechanism; original AURENDOR carousel system."
+      ],
+      "file": "11-ar-carousel-stop.png",
+      "mobileFile": "mobile/11-ar-carousel-stop.png",
+      "sha256": "cfea720eeeff4413cea6756fec484300939c3c8fa8bca04456f0b192816ac520",
+      "byteLength": 55927
+    },
+    {
+      "id": "12-en-complexity-answerable",
+      "title": "English brand breath — make complexity answerable",
+      "language": "en",
+      "purpose": "brand-building",
+      "visualFamily": "editorial-statement",
+      "imageryMode": "typography-led",
+      "anthropomorphismLevel": 0,
+      "twoSecondTakeaway": "AURENDOR makes complexity answerable.",
+      "selectedRoute": "A single charged answer line cuts through an oversized editorial statement",
+      "routesConsidered": [
+        {
+          "route": "A single charged answer line cuts through an oversized editorial statement",
+          "family": "editorial-statement",
+          "decision": "selected",
+          "reason": "The communication idea survives without copy and changes the feed silhouette."
+        },
+        {
+          "route": "Type as operating diagram",
+          "family": "editorial-statement",
+          "decision": "rejected",
+          "reason": "Clear but less materially specific for this message."
+        },
+        {
+          "route": "Evidence-led product proof",
+          "family": "product-system-story",
+          "decision": "rejected",
+          "reason": "Requires current first-party UI evidence not present in this controlled benchmark."
+        },
+        {
+          "route": "Behavior-led object character",
+          "family": "character-narrative",
+          "decision": "rejected",
+          "reason": "Human-like behavior would add personality but not enough comprehension here."
+        }
+      ],
+      "referenceIds": [
+        "ref_f5cec23c32415d6e",
+        "ref_8684a4138ac5fc7a",
+        "ref_7ea2e6edfd24a465"
+      ],
+      "principleIds": [
+        "TYPE_DISPLAY_AS_COMPOSITION",
+        "COLOR_DOMINANT_FIELD_ACCENT_CHARGE",
+        "HIER_LOGO_QUIET_AUTHORITY"
+      ],
+      "copy": [
+        "MAKE COMPLEXITY",
+        "ANSWERABLE."
+      ],
+      "assetProvenance": [
+        "Native typography and vector charge line; original AURENDOR composition."
+      ],
+      "file": "12-en-complexity-answerable.png",
+      "mobileFile": "mobile/12-en-complexity-answerable.png",
+      "sha256": "1213fe8459c897e6d9056c684fd30ad85c4e3cbd72a6fc77c4ec1e3a6055b57c",
+      "byteLength": 49800
+    }
+  ],
+  "comparisons": {
+    "oldVsNewIdenticalBrief": "../comparisons/old-vs-new-identical-brief.png",
+    "feed3": "../comparisons/feed-3.png",
+    "feed9": "../comparisons/feed-9.png",
+    "feed12": "../comparisons/feed-12.png",
+    "professionalAnchorPixelsCopied": false,
+    "professionalAnchorReview": "Recorded separately by reference ID against the read-only local corpus."
+  },
+  "knownLimitations": [
+    "These are controlled benchmark candidates, not approved posts or measured campaign results.",
+    "Three focal assets are original image generations and require artifact, edge, and originality review at actual pixels.",
+    "Native vector and typographic scenes still require independent professional comparison; deterministic metadata cannot establish aesthetics.",
+    "No current candidate may enter the golden set or release production until current-hash critics and feed review pass."
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "contentId": "S01",
+      "title": "أي عمل يستحق أول تجربة AI؟",
+      "scheduledAt": "2026-09-11T06:45:00Z",
+      "pillar": "AI services",
+      "timeBand": "morning",
+      "asset": {
+        "path": "apps/web/public/monthly-plan/2026-09/editorial/cycle-01/S01/story-01.png",
+        "sha256": "de65efce378945939cab316f2a10d5a100ab8cf120f8416a9fe20a952f19a1f2",
+        "mimeType": "image/png",
+        "width": 1080,
+        "height": 1920
+      },
+      "accounts": {
+        "instagram": "cmtqyomt30003mm807zw90ni9",
+        "facebook": "cmtqxv80v0001mm80h7l40uau"
+      },
+      "caption": ""
+    },
+    {
+      "contentId": "B01",
+      "title": "أي موقع يحتاجك اليوم؟",
+      "scheduledAt": "2026-09-11T12:00:00Z",
+      "pillar": "Bunyan Pro",
+      "timeBand": "afternoon",
+      "asset": {
+        "path": "apps/web/public/monthly-plan/2026-09/editorial/cycle-01/B01/story-auto.png",
+        "sha256": "ecd129fa50f7689b30e40746139b10137ab01d727e1135bbe5427cfb63ec5faa",
+        "mimeType": "image/png",
+        "width": 1080,
+        "height": 1920
+      },
+      "accounts": {
+        "instagram": "cmtqyomt30003mm807zw90ni9",
+        "facebook": "cmtqxv80v0001mm80h7l40uau"
+      },
+      "caption": ""
+    },
+    {
+      "contentId": "U01",
+      "title": "فهمت الشرح؟ جرّب سؤالًا مختلفًا.",
+      "scheduledAt": "2026-09-12T18:15:00Z",
+      "pillar": "Practical AI",
+      "timeBand": "evening",
+      "asset": {
+        "path": "apps/web/public/monthly-plan/2026-09/editorial/cycle-01/U01/story-01.png",
+        "sha256": "52c8981d91893cbd28d6110b20eed6b385bccfa46af1f9bfcbb3f87eb65c8773",
+        "mimeType": "image/png",
+        "width": 1080,
+        "height": 1920
+      },
+      "accounts": {
+        "instagram": "cmtqyomt30003mm807zw90ni9",
+        "facebook": "cmtqxv80v0001mm80h7l40uau"
+      },
+      "caption": ""
+    },
+    {
+      "contentId": "S02",
+      "title": "العرض المترجم ليس عرضًا واضحًا",
+      "scheduledAt": "2026-09-13T12:10:00Z",
+      "pillar": "AI services",
+      "timeBand": "afternoon",
+      "asset": {
+        "path": "apps/web/public/monthly-plan/2026-09/editorial/cycle-02/S02/story-auto.png",
+        "sha256": "e91f6ee2280b25dcc6a3212ebdb71e94411ee49080687283c3dee506ba7a7785",
+        "mimeType": "image/png",
+        "width": 1080,
+        "height": 1920
+      },
+      "accounts": {
+        "instagram": "cmtqyomt30003mm807zw90ni9",
+        "facebook": "cmtqxv80v0001mm80h7l40uau"
+      },
+      "caption": ""
+    },
+    {
+      "contentId": "B02",
+      "title": "«تعديل بسيط»… على أي حساب؟",
+      "scheduledAt": "2026-09-13T18:25:00Z",
+      "pillar": "Bunyan Pro",
+      "timeBand": "evening",
+      "asset": {
+        "path": "apps/web/public/monthly-plan/2026-09/editorial/cycle-02/B02/story-auto.png",
+        "sha256": "2f58f4f7846c9e16226e04dce21ef3211a529d3150ef96671071aeab6cce26ba",
+        "mimeType": "image/png",
+        "width": 1080,
+        "height": 1920
+      },
+      "accounts": {
+        "instagram": "cmtqyomt30003mm807zw90ni9",
+        "facebook": "cmtqxv80v0001mm80h7l40uau"
+      },
+      "caption": ""
+    },
+    {
+      "contentId": "U02",
+      "title": "غيّر عنصرًا واحدًا. وافحص ما بقي.",
+      "scheduledAt": "2026-09-14T06:55:00Z",
+      "pillar": "Practical AI",
+      "timeBand": "morning",
+      "asset": {
+        "path": "apps/web/public/monthly-plan/2026-09/editorial/cycle-02/U02/story-auto.png",
+        "sha256": "530bed36d36bcd9efee14d65b83c72759da320d5ed3919b841d65bb562c24833",
+        "mimeType": "image/png",
+        "width": 1080,
+        "height": 1920
+      },
+      "accounts": {
+        "instagram": "cmtqyomt30003mm807zw90ni9",
+        "facebook": "cmtqxv80v0001mm80h7l40uau"
+      },
+      "caption": ""
+    }
+  ]
+}

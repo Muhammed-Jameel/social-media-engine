@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "1.0.0",
+  "iteration": 5,
+  "generatedAt": "2026-08-29T14:28:13.626Z",
+  "status": "PIXEL_REVIEW_REQUIRED",
+  "publicationEligible": false,
+  "candidate": {
+    "id": "17-ar-design-for-exception",
+    "title": "Arabic exception-handling human editorial",
+    "language": "ar",
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "mobileReview": {
+      "width": 324,
+      "height": 405
+    },
+    "exactCopy": [
+      "مبدأ تشغيلي · ١٧",
+      "صمّم للاستثناء",
+      "لا للحالة المثالية",
+      "المسار الذكي يعرف متى يتوقّف ويطلب قرارًا."
+    ],
+    "file": "17-ar-design-for-exception.png",
+    "sha256": "a05c2b25566949532e3c36510ed800e3467520161d7cd3195ad98fd93302b1ec",
+    "byteLength": 1470092,
+    "mobileFile": "mobile/17-ar-design-for-exception.png",
+    "mobileSha256": "7404d9d09c05bbbd29cb8bf3bbab00024d8c0ccbfa104aaae2f8d37889e914ef",
+    "sourceImage": "human-exception-source.png",
+    "sourceImageSha256": "1cbe735cd11ee8f1e639fd894abfadcccc144119a6b4faeed629a31461af4e36",
+    "sourcePromptSummary": "A single real hand places one translucent green decision tile across a branching deep-green material path, creating a human stop-and-decide gesture in a calm regional editorial world; textless and generated without references.",
+    "rawProfessionalReferencePixelsSuppliedToGeneration": false,
+    "fontEvidence": {
+      "family": "Ghroob Arabic ITF",
+      "regularSha256": "4dd0c3f2622fc0cfb2802ede862a24877218f78046cf0830ab6290feb68d3e41",
+      "boldSha256": "d853dc21fe5a274d5a9361d720db94ad60a8fcceb114663118b6f9cc2f9b5d5b"
+    },
+    "technicalPreflight": {
+      "documentLanguage": "ar",
+      "documentDirection": "rtl",
+      "fontLoadedRegular": true,
+      "fontLoadedBold": true,
+      "exactCopyPresent": true,
+      "copyRegionWithinCanvas": true,
+      "copyRegionBounds": {
+        "x": 112,
+        "y": 66,
+        "width": 900,
+        "height": 357.796875
+      }
+    }
+  }
+}

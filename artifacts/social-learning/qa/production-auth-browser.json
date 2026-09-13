@@ -1,0 +1,20 @@
+{
+  "loginURL": "http://127.0.0.1:3010/login",
+  "loginFormVisible": true,
+  "unauthenticatedExportStatus": 401,
+  "health": {
+    "status": "ok",
+    "service": "aurendor-content-os",
+    "database": "pglite",
+    "mode": "production-configuration-requested",
+    "publicationCapability": "postiz-supervised",
+    "postizConfigured": true,
+    "publishingEnabled": true,
+    "ownerAuthConfigured": true,
+    "enginePaused": false,
+    "publishingFlagRequested": true,
+    "environmentPauseRequested": false,
+    "environmentCreativeProductionPauseRequested": false,
+    "checkedAt": "2026-09-11T02:01:45.250Z"
+  }
+}

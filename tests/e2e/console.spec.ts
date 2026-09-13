@@ -33,6 +33,22 @@ test("dashboard identifies the demo environment and all 33 imported items", asyn
   await expectHealthyConsolePage(page, runtimeErrors);
 });
 
+test("creative production is visibly held behind a read-only release gate", async ({ page }) => {
+  const runtimeErrors = observeRuntimeErrors(page);
+
+  await page.goto("/");
+  const banner = page.getByRole("alert", { name: "Creative production release gate" });
+  await expect(banner).toContainText("Creative production frozen.");
+  await expect(banner).toContainText("POST_PRODUCTION claims are blocked");
+  await expect(banner).toContainText("BENCHMARKING");
+
+  await banner.getByRole("link", { name: "View gate" }).click();
+  await expect(page.getByRole("heading", { level: 2, name: "Creative quality release gate" })).toBeVisible();
+  await expect(page.locator(".creative-gate-panel")).toContainText("No console toggle");
+  await expect(page.getByRole("button", { name: /release creative/i })).toHaveCount(0);
+  await expectHealthyConsolePage(page, runtimeErrors);
+});
+
 test("W3-P5 remains a high-risk hard fail requiring deliberate review", async ({ page }) => {
   const runtimeErrors = observeRuntimeErrors(page);
 

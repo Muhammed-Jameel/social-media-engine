@@ -1,0 +1,972 @@
+{
+  "schemaVersion": "1.0.0",
+  "clusters": [
+    {
+      "clusterId": "cluster_01",
+      "method": "standardized visual-statistics k-means; requires art-director interpretation",
+      "memberCount": 1,
+      "meanMetrics": {
+        "meanLuminance": 0.0123,
+        "luminanceContrast": 0.0,
+        "meanSaturation": 0.7142,
+        "edgeDensity": 0.0,
+        "approximateWhitespace": 1.0
+      },
+      "aspectFamilies": {
+        "landscape-4:3": 1
+      },
+      "filenameSignals": {
+        "identity-branding": 1,
+        "technology-ai": 1,
+        "character-illustration": 1
+      },
+      "approximatePaletteSignals": [
+        "#070203",
+        "#050303",
+        "#070103"
+      ],
+      "representativeReferenceIds": [
+        "ref_c838acfc51b00161"
+      ],
+      "contactSheet": "contact-sheets/cluster_01.jpg",
+      "humanLabel": null,
+      "humanInterpretationStatus": "pending-multimodal-review"
+    },
+    {
+      "clusterId": "cluster_02",
+      "method": "standardized visual-statistics k-means; requires art-director interpretation",
+      "memberCount": 71,
+      "meanMetrics": {
+        "meanLuminance": 0.4575,
+        "luminanceContrast": 0.8433,
+        "meanSaturation": 0.4132,
+        "edgeDensity": 0.6043,
+        "approximateWhitespace": 0.0335
+      },
+      "aspectFamilies": {
+        "landscape-4:3": 71
+      },
+      "filenameSignals": {
+        "social-campaign": 33,
+        "identity-branding": 6,
+        "technology-ai": 4,
+        "product-commercial": 3,
+        "editorial-poster": 3,
+        "event-announcement": 1
+      },
+      "approximatePaletteSignals": [
+        "#382A25",
+        "#2D322C",
+        "#060705",
+        "#30521E",
+        "#2E2137",
+        "#9C8B24",
+        "#161525",
+        "#2D2223"
+      ],
+      "representativeReferenceIds": [
+        "ref_5f455219401484a6",
+        "ref_95b94d654f5a2895",
+        "ref_88e359648708de23",
+        "ref_8ed66e7790b87c11",
+        "ref_72f7083d999ed162",
+        "ref_cf4cdaf10eb66952",
+        "ref_fdccd1d41a3afb0d",
+        "ref_cf1a6300f36054b2",
+        "ref_e3720567ab44c8c9",
+        "ref_e47976e0c73c515b",
+        "ref_f58ef0e4267169c6",
+        "ref_54ed21f299ba3ef4"
+      ],
+      "contactSheet": "contact-sheets/cluster_02.jpg",
+      "humanLabel": null,
+      "humanInterpretationStatus": "pending-multimodal-review"
+    },
+    {
+      "clusterId": "cluster_03",
+      "method": "standardized visual-statistics k-means; requires art-director interpretation",
+      "memberCount": 41,
+      "meanMetrics": {
+        "meanLuminance": 0.2933,
+        "luminanceContrast": 0.6557,
+        "meanSaturation": 0.5493,
+        "edgeDensity": 0.1859,
+        "approximateWhitespace": 0.3351
+      },
+      "aspectFamilies": {
+        "landscape-4:3": 41
+      },
+      "filenameSignals": {
+        "identity-branding": 16,
+        "social-campaign": 7,
+        "product-commercial": 5,
+        "editorial-poster": 3,
+        "technology-ai": 2
+      },
+      "approximatePaletteSignals": [
+        "#DE3364",
+        "#5E2121",
+        "#0F0F0F",
+        "#E22827",
+        "#00ABFD",
+        "#A63E1A",
+        "#F34E07",
+        "#080808"
+      ],
+      "representativeReferenceIds": [
+        "ref_6dcdcd67d7766ae0",
+        "ref_6ddf1ed857f28e61",
+        "ref_0c3575425aa76fd5",
+        "ref_dd8e83bc6209ed29",
+        "ref_3f72c6e5f22cba0f",
+        "ref_de03a4afcad8b215",
+        "ref_79996dadaf00a5a4",
+        "ref_6d36e7996e43d5df",
+        "ref_5d62b9c77db6b77c",
+        "ref_50e95c5c16d00391",
+        "ref_c89ead872b08a5a5",
+        "ref_fcc31f224fc155b1"
+      ],
+      "contactSheet": "contact-sheets/cluster_03.jpg",
+      "humanLabel": null,
+      "humanInterpretationStatus": "pending-multimodal-review"
+    },
+    {
+      "clusterId": "cluster_04",
+      "method": "standardized visual-statistics k-means; requires art-director interpretation",
+      "memberCount": 14,
+      "meanMetrics": {
+        "meanLuminance": 0.8061,
+        "luminanceContrast": 0.6984,
+        "meanSaturation": 0.1432,
+        "edgeDensity": 0.2656,
+        "approximateWhitespace": 0.4468
+      },
+      "aspectFamilies": {
+        "landscape-4:3": 14
+      },
+      "filenameSignals": {
+        "identity-branding": 4,
+        "social-campaign": 4,
+        "editorial-poster": 1,
+        "data-information": 1,
+        "character-illustration": 1
+      },
+      "approximatePaletteSignals": [
+        "#F5F4F4",
+        "#FBFCFE",
+        "#F4F0EA",
+        "#F8F8F8",
+        "#F6DCD5",
+        "#FBF5E5",
+        "#FBEAD6",
+        "#EBEBEB"
+      ],
+      "representativeReferenceIds": [
+        "ref_b502d24ba02f1032",
+        "ref_51c7389de0f883e4",
+        "ref_94e9ffd69db47919",
+        "ref_ab89ad0f10799f2c",
+        "ref_a8e74727ab7af63e",
+        "ref_cf648314a4b0f5b2",
+        "ref_587edba50289968e",
+        "ref_9e67e15241b87f42",
+        "ref_c6ca1849cf9ba172",
+        "ref_09aa39ff5ff31e02",
+        "ref_9bcc82909d365e18",
+        "ref_3c7ed5a4f47b0f19"
+      ],
+      "contactSheet": "contact-sheets/cluster_04.jpg",
+      "humanLabel": null,
+      "humanInterpretationStatus": "pending-multimodal-review"
+    },
+    {
+      "clusterId": "cluster_05",
+      "method": "standardized visual-statistics k-means; requires art-director interpretation",
+      "memberCount": 13,
+      "meanMetrics": {
+        "meanLuminance": 0.2482,
+        "luminanceContrast": 0.7618,
+        "meanSaturation": 0.5782,
+        "edgeDensity": 0.3777,
+        "approximateWhitespace": 0.2996
+      },
+      "aspectFamilies": {
+        "landscape-4:3": 13
+      },
+      "filenameSignals": {
+        "social-campaign": 3,
+        "technology-ai": 1,
+        "product-commercial": 1
+      },
+      "approximatePaletteSignals": [
+        "#201E02",
+        "#060403",
+        "#1C0D0A",
+        "#0E0B08",
+        "#111B2B",
+        "#2336BB",
+        "#100C0B",
+        "#05050C"
+      ],
+      "representativeReferenceIds": [
+        "ref_aa7244bfb2491b6b",
+        "ref_0505a7d6a6f5274d",
+        "ref_78b7ff75d7073102",
+        "ref_ba9bffb86b48daca",
+        "ref_3147ee9ec9ddbb25",
+        "ref_491b52d93cc6a2e5",
+        "ref_cee3ceb3f7754c4b",
+        "ref_5c22776962b14510",
+        "ref_bccdee2f8f1b8106",
+        "ref_38db61130231db0f",
+        "ref_e0006de0b959f0a1",
+        "ref_69808fe68339fa5c"
+      ],
+      "contactSheet": "contact-sheets/cluster_05.jpg",
+      "humanLabel": null,
+      "humanInterpretationStatus": "pending-multimodal-review"
+    },
+    {
+      "clusterId": "cluster_06",
+      "method": "standardized visual-statistics k-means; requires art-director interpretation",
+      "memberCount": 58,
+      "meanMetrics": {
+        "meanLuminance": 0.2884,
+        "luminanceContrast": 0.8044,
+        "meanSaturation": 0.5333,
+        "edgeDensity": 0.3616,
+        "approximateWhitespace": 0.2832
+      },
+      "aspectFamilies": {
+        "landscape-4:3": 58
+      },
+      "filenameSignals": {
+        "social-campaign": 16,
+        "identity-branding": 8,
+        "typography": 3,
+        "editorial-poster": 2,
+        "product-commercial": 2,
+        "technology-ai": 1
+      },
+      "approximatePaletteSignals": [
+        "#081339",
+        "#0A142F",
+        "#F1057A",
+        "#CE2122",
+        "#0E0D0D",
+        "#010101",
+        "#183188",
+        "#1B1814"
+      ],
+      "representativeReferenceIds": [
+        "ref_f913267f15406a5f",
+        "ref_fe42b7aa28e014ec",
+        "ref_0381bec5126d9436",
+        "ref_99f783635926df60",
+        "ref_7d4c33aec669cec4",
+        "ref_6ab5b5ca0af1e2c9",
+        "ref_751975903ddffb32",
+        "ref_b0989790e897bbea",
+        "ref_08c49b3e400500fa",
+        "ref_85a42b5900a4b032",
+        "ref_d5352847393eff8b",
+        "ref_50fd5af912f291ad"
+      ],
+      "contactSheet": "contact-sheets/cluster_06.jpg",
+      "humanLabel": null,
+      "humanInterpretationStatus": "pending-multimodal-review"
+    },
+    {
+      "clusterId": "cluster_07",
+      "method": "standardized visual-statistics k-means; requires art-director interpretation",
+      "memberCount": 115,
+      "meanMetrics": {
+        "meanLuminance": 0.7909,
+        "luminanceContrast": 0.6386,
+        "meanSaturation": 0.1675,
+        "edgeDensity": 0.3006,
+        "approximateWhitespace": 0.3195
+      },
+      "aspectFamilies": {
+        "landscape-4:3": 115
+      },
+      "filenameSignals": {
+        "social-campaign": 44,
+        "identity-branding": 22,
+        "technology-ai": 14,
+        "product-commercial": 8,
+        "character-illustration": 5,
+        "editorial-poster": 5,
+        "data-information": 3,
+        "event-announcement": 1
+      },
+      "approximatePaletteSignals": [
+        "#FEFEFE",
+        "#F9EFE9",
+        "#F6F7FA",
+        "#EFEAD9",
+        "#EEEEF0",
+        "#F4F4F4",
+        "#CEE5E3",
+        "#E3EAE5"
+      ],
+      "representativeReferenceIds": [
+        "ref_b62db1a95cd3206e",
+        "ref_32879076bf2b4f38",
+        "ref_520f2a0f55a2bc94",
+        "ref_7c18d770f1f9b50f",
+        "ref_3500e8afa47b0e27",
+        "ref_724b08ff848b6caf",
+        "ref_5397a4c878f60e62",
+        "ref_7cc3ec0a15895ac4",
+        "ref_98272485eae3da14",
+        "ref_7853be22e24934d3",
+        "ref_e0b6232c59068adb",
+        "ref_ec217beefbf3f705"
+      ],
+      "contactSheet": "contact-sheets/cluster_07.jpg",
+      "humanLabel": null,
+      "humanInterpretationStatus": "pending-multimodal-review"
+    },
+    {
+      "clusterId": "cluster_08",
+      "method": "standardized visual-statistics k-means; requires art-director interpretation",
+      "memberCount": 7,
+      "meanMetrics": {
+        "meanLuminance": 0.6722,
+        "luminanceContrast": 0.8911,
+        "meanSaturation": 0.1281,
+        "edgeDensity": 0.2674,
+        "approximateWhitespace": 0.2357
+      },
+      "aspectFamilies": {
+        "landscape-4:3": 7
+      },
+      "filenameSignals": {
+        "identity-branding": 4,
+        "social-campaign": 3,
+        "technology-ai": 1
+      },
+      "approximatePaletteSignals": [
+        "#FCFCFC",
+        "#F2F2F2",
+        "#D8C7E1",
+        "#FEFEFE",
+        "#020202",
+        "#EBFBFD",
+        "#F8F5F4",
+        "#090807"
+      ],
+      "representativeReferenceIds": [
+        "ref_9db0b098ef4f3f91",
+        "ref_31300cdf51427065",
+        "ref_8e287e0ddc2095dc",
+        "ref_fd6a2a577e2056c3",
+        "ref_b334c0b622292de7",
+        "ref_d18a6418007415bf",
+        "ref_c6a83a79a3ccee15"
+      ],
+      "contactSheet": "contact-sheets/cluster_08.jpg",
+      "humanLabel": null,
+      "humanInterpretationStatus": "pending-multimodal-review"
+    },
+    {
+      "clusterId": "cluster_09",
+      "method": "standardized visual-statistics k-means; requires art-director interpretation",
+      "memberCount": 73,
+      "meanMetrics": {
+        "meanLuminance": 0.1652,
+        "luminanceContrast": 0.5439,
+        "meanSaturation": 0.459,
+        "edgeDensity": 0.1919,
+        "approximateWhitespace": 0.4758
+      },
+      "aspectFamilies": {
+        "landscape-4:3": 73
+      },
+      "filenameSignals": {
+        "identity-branding": 20,
+        "social-campaign": 16,
+        "data-information": 2,
+        "editorial-poster": 2,
+        "product-commercial": 2,
+        "technology-ai": 2,
+        "character-illustration": 2,
+        "event-announcement": 1
+      },
+      "approximatePaletteSignals": [
+        "#000000",
+        "#090909",
+        "#040404",
+        "#23352D",
+        "#080A1E",
+        "#151515",
+        "#1C1C1C",
+        "#530116"
+      ],
+      "representativeReferenceIds": [
+        "ref_36e02dc15e0620d6",
+        "ref_ad135c43456c5477",
+        "ref_9c20b965e8b828b9",
+        "ref_b246574e910219ce",
+        "ref_6017d63b1a339d71",
+        "ref_27015ac4de59c224",
+        "ref_cd759f286e263b57",
+        "ref_b48141f9dfd97bb1",
+        "ref_2f2e2c2aa5aa422f",
+        "ref_8e60f2608a9c1d83",
+        "ref_584e59792fe0b446",
+        "ref_f7eb62ea7099bde9"
+      ],
+      "contactSheet": "contact-sheets/cluster_09.jpg",
+      "humanLabel": null,
+      "humanInterpretationStatus": "pending-multimodal-review"
+    },
+    {
+      "clusterId": "cluster_10",
+      "method": "standardized visual-statistics k-means; requires art-director interpretation",
+      "memberCount": 2,
+      "meanMetrics": {
+        "meanLuminance": 0.1462,
+        "luminanceContrast": 0.369,
+        "meanSaturation": 0.3421,
+        "edgeDensity": 0.1247,
+        "approximateWhitespace": 0.8079
+      },
+      "aspectFamilies": {
+        "landscape-4:3": 2
+      },
+      "filenameSignals": {
+        "identity-branding": 1,
+        "social-campaign": 1
+      },
+      "approximatePaletteSignals": [
+        "#531841",
+        "#0F0F0F",
+        "#3A3332",
+        "#B2B2B2",
+        "#D4C5CE",
+        "#9D7D92"
+      ],
+      "representativeReferenceIds": [
+        "ref_983539e821a7fdb9",
+        "ref_ac0d35ccf58d8eb9"
+      ],
+      "contactSheet": "contact-sheets/cluster_10.jpg",
+      "humanLabel": null,
+      "humanInterpretationStatus": "pending-multimodal-review"
+    },
+    {
+      "clusterId": "cluster_11",
+      "method": "standardized visual-statistics k-means; requires art-director interpretation",
+      "memberCount": 71,
+      "meanMetrics": {
+        "meanLuminance": 0.6069,
+        "luminanceContrast": 0.8193,
+        "meanSaturation": 0.2939,
+        "edgeDensity": 0.3713,
+        "approximateWhitespace": 0.2144
+      },
+      "aspectFamilies": {
+        "landscape-4:3": 71
+      },
+      "filenameSignals": {
+        "social-campaign": 31,
+        "identity-branding": 19,
+        "technology-ai": 8,
+        "editorial-poster": 6,
+        "product-commercial": 5,
+        "character-illustration": 2,
+        "event-announcement": 1
+      },
+      "approximatePaletteSignals": [
+        "#EBE7E2",
+        "#D7DAD9",
+        "#BFDFF2",
+        "#E8E7EB",
+        "#E3E2E9",
+        "#B1A941",
+        "#355E8B",
+        "#E9DDE9"
+      ],
+      "representativeReferenceIds": [
+        "ref_b6c65829e52c5337",
+        "ref_a0d145a5a84ca778",
+        "ref_cdbffdd8ab53ee72",
+        "ref_21e02fbccc31a638",
+        "ref_ee1899c7d1a02046",
+        "ref_b0d42def0c9a4623",
+        "ref_f3ef1e5c230a0e75",
+        "ref_e3109fe8404467f1",
+        "ref_04c9a9c08d31dc8a",
+        "ref_2ecb8180128968d2",
+        "ref_95e678906ecc2756",
+        "ref_dafbf7081b6c841f"
+      ],
+      "contactSheet": "contact-sheets/cluster_11.jpg",
+      "humanLabel": null,
+      "humanInterpretationStatus": "pending-multimodal-review"
+    },
+    {
+      "clusterId": "cluster_12",
+      "method": "standardized visual-statistics k-means; requires art-director interpretation",
+      "memberCount": 95,
+      "meanMetrics": {
+        "meanLuminance": 0.5392,
+        "luminanceContrast": 0.7222,
+        "meanSaturation": 0.4597,
+        "edgeDensity": 0.3164,
+        "approximateWhitespace": 0.126
+      },
+      "aspectFamilies": {
+        "landscape-4:3": 95
+      },
+      "filenameSignals": {
+        "social-campaign": 26,
+        "identity-branding": 23,
+        "editorial-poster": 5,
+        "character-illustration": 4,
+        "technology-ai": 3,
+        "product-commercial": 2,
+        "typography": 2,
+        "event-announcement": 1
+      },
+      "approximatePaletteSignals": [
+        "#D8AE1A",
+        "#1270B4",
+        "#F47E56",
+        "#CA8E02",
+        "#0792DE",
+        "#54A148",
+        "#9D9D42",
+        "#3C8B58"
+      ],
+      "representativeReferenceIds": [
+        "ref_1743fb8e73a11b43",
+        "ref_e33bfd5c54321aa7",
+        "ref_3991533a0cc6d024",
+        "ref_0d465a9aac9a8380",
+        "ref_f161ed79323b487b",
+        "ref_329743a1f6ee4532",
+        "ref_c76e951b885fc5f3",
+        "ref_b9356f0964b8f2c2",
+        "ref_18419f402af6902c",
+        "ref_eaff727fbb19d56c",
+        "ref_34549a1c6b70a020",
+        "ref_4277fa657ca804e2"
+      ],
+      "contactSheet": "contact-sheets/cluster_12.jpg",
+      "humanLabel": null,
+      "humanInterpretationStatus": "pending-multimodal-review"
+    },
+    {
+      "clusterId": "cluster_13",
+      "method": "standardized visual-statistics k-means; requires art-director interpretation",
+      "memberCount": 129,
+      "meanMetrics": {
+        "meanLuminance": 0.6199,
+        "luminanceContrast": 0.8008,
+        "meanSaturation": 0.3188,
+        "edgeDensity": 0.4652,
+        "approximateWhitespace": 0.0719
+      },
+      "aspectFamilies": {
+        "landscape-4:3": 129
+      },
+      "filenameSignals": {
+        "social-campaign": 72,
+        "identity-branding": 29,
+        "technology-ai": 11,
+        "product-commercial": 11,
+        "editorial-poster": 5,
+        "character-illustration": 1,
+        "event-announcement": 1,
+        "data-information": 1
+      },
+      "approximatePaletteSignals": [
+        "#F9F9FA",
+        "#ECEBEB",
+        "#CDCCCB",
+        "#FDC908",
+        "#F8F6F4",
+        "#EFEFF0",
+        "#EFF0E6",
+        "#F1EFF3"
+      ],
+      "representativeReferenceIds": [
+        "ref_b99da31052b62b46",
+        "ref_914a2e0e6a08f956",
+        "ref_bf27f0ceab9e520f",
+        "ref_017a04baa2348d8c",
+        "ref_1d5a9860353e597c",
+        "ref_bda6d027a0f5b1c1",
+        "ref_14306838f505d853",
+        "ref_8cc854756e85ecbf",
+        "ref_b8912aa4dc8dce56",
+        "ref_5a369f44266eb3cf",
+        "ref_edc460061eff1580",
+        "ref_258798458a1d7866"
+      ],
+      "contactSheet": "contact-sheets/cluster_13.jpg",
+      "humanLabel": null,
+      "humanInterpretationStatus": "pending-multimodal-review"
+    },
+    {
+      "clusterId": "cluster_14",
+      "method": "standardized visual-statistics k-means; requires art-director interpretation",
+      "memberCount": 119,
+      "meanMetrics": {
+        "meanLuminance": 0.4076,
+        "luminanceContrast": 0.8424,
+        "meanSaturation": 0.4066,
+        "edgeDensity": 0.4557,
+        "approximateWhitespace": 0.0732
+      },
+      "aspectFamilies": {
+        "landscape-4:3": 119
+      },
+      "filenameSignals": {
+        "social-campaign": 59,
+        "identity-branding": 36,
+        "technology-ai": 18,
+        "product-commercial": 14,
+        "editorial-poster": 9,
+        "event-announcement": 5,
+        "typography": 1,
+        "data-information": 1
+      },
+      "approximatePaletteSignals": [
+        "#0A0909",
+        "#212121",
+        "#2F3D38",
+        "#072338",
+        "#203929",
+        "#1F110C",
+        "#0B4E5F",
+        "#262525"
+      ],
+      "representativeReferenceIds": [
+        "ref_bfcec0868b8791fc",
+        "ref_c05747e9e0800eb4",
+        "ref_0be87a2500099fa5",
+        "ref_401b834e49ae93b1",
+        "ref_a29b52cd474e65ae",
+        "ref_17e3db15ab8bb5fa",
+        "ref_554aec1a03265eeb",
+        "ref_c2e8c196dc1d6173",
+        "ref_762e571b5b9031ff",
+        "ref_455e5c91458671c8",
+        "ref_1a231cd4c8a24c7c",
+        "ref_67864230eb260db2"
+      ],
+      "contactSheet": "contact-sheets/cluster_14.jpg",
+      "humanLabel": null,
+      "humanInterpretationStatus": "pending-multimodal-review"
+    },
+    {
+      "clusterId": "cluster_15",
+      "method": "standardized visual-statistics k-means; requires art-director interpretation",
+      "memberCount": 83,
+      "meanMetrics": {
+        "meanLuminance": 0.8925,
+        "luminanceContrast": 0.4181,
+        "meanSaturation": 0.0793,
+        "edgeDensity": 0.1127,
+        "approximateWhitespace": 0.7074
+      },
+      "aspectFamilies": {
+        "landscape-4:3": 83
+      },
+      "filenameSignals": {
+        "identity-branding": 39,
+        "social-campaign": 12,
+        "technology-ai": 11,
+        "character-illustration": 3,
+        "data-information": 3,
+        "typography": 1,
+        "editorial-poster": 1
+      },
+      "approximatePaletteSignals": [
+        "#FFFFFF",
+        "#FEFEFE",
+        "#FFFDED",
+        "#F6F6F6",
+        "#FDFDFD",
+        "#F4F4F4",
+        "#9ACDFF",
+        "#F0F0F0"
+      ],
+      "representativeReferenceIds": [
+        "ref_3ad2b8c942325972",
+        "ref_f4c08957645185a1",
+        "ref_8ce057b18b2b9f20",
+        "ref_9c1561b01e2846fc",
+        "ref_ff1e22557e7102b8",
+        "ref_cd5f68f0dfbd4264",
+        "ref_61a3ef2fe3f4ab3a",
+        "ref_1091431988607861",
+        "ref_440b6126b3843f02",
+        "ref_4d346e4257f8793a",
+        "ref_b0ed1725d647a149",
+        "ref_bec1c84246e36535"
+      ],
+      "contactSheet": "contact-sheets/cluster_15.jpg",
+      "humanLabel": null,
+      "humanInterpretationStatus": "pending-multimodal-review"
+    },
+    {
+      "clusterId": "cluster_16",
+      "method": "standardized visual-statistics k-means; requires art-director interpretation",
+      "memberCount": 100,
+      "meanMetrics": {
+        "meanLuminance": 0.3701,
+        "luminanceContrast": 0.7376,
+        "meanSaturation": 0.4361,
+        "edgeDensity": 0.2564,
+        "approximateWhitespace": 0.2008
+      },
+      "aspectFamilies": {
+        "landscape-4:3": 100
+      },
+      "filenameSignals": {
+        "social-campaign": 43,
+        "identity-branding": 31,
+        "technology-ai": 8,
+        "product-commercial": 7,
+        "character-illustration": 3,
+        "editorial-poster": 3,
+        "event-announcement": 1
+      },
+      "approximatePaletteSignals": [
+        "#C6551A",
+        "#EE3F03",
+        "#1828C1",
+        "#293928",
+        "#092044",
+        "#FB4449",
+        "#1A1A21",
+        "#1F1F1E"
+      ],
+      "representativeReferenceIds": [
+        "ref_4df08e78c1a9843e",
+        "ref_edb4a4cf45b7a7be",
+        "ref_17cb898c80762328",
+        "ref_02f99c97e15d0a7c",
+        "ref_5bdc7848412cdb99",
+        "ref_d691e0b9e7cd8d62",
+        "ref_0eeb506ff6f10097",
+        "ref_2ca843f06643d5f6",
+        "ref_4c5424283f7f3023",
+        "ref_9ee394c5125b3904",
+        "ref_238e86dbb8853f2f",
+        "ref_8ef6ff7e70837523"
+      ],
+      "contactSheet": "contact-sheets/cluster_16.jpg",
+      "humanLabel": null,
+      "humanInterpretationStatus": "pending-multimodal-review"
+    },
+    {
+      "clusterId": "cluster_17",
+      "method": "standardized visual-statistics k-means; requires art-director interpretation",
+      "memberCount": 28,
+      "meanMetrics": {
+        "meanLuminance": 0.2129,
+        "luminanceContrast": 0.6345,
+        "meanSaturation": 0.4712,
+        "edgeDensity": 0.2542,
+        "approximateWhitespace": 0.2571
+      },
+      "aspectFamilies": {
+        "landscape-4:3": 28
+      },
+      "filenameSignals": {
+        "identity-branding": 9,
+        "social-campaign": 9,
+        "technology-ai": 5,
+        "product-commercial": 4
+      },
+      "approximatePaletteSignals": [
+        "#060B09",
+        "#15191B",
+        "#050C0B",
+        "#5B1305",
+        "#140E0B",
+        "#0C0506",
+        "#20211F",
+        "#1A1716"
+      ],
+      "representativeReferenceIds": [
+        "ref_bb14c2d508b9a7a8",
+        "ref_3790e75699180d41",
+        "ref_f558f9a7fc20d6fe",
+        "ref_9e70c6ff254a3bc1",
+        "ref_62a0d8eab5ae1695",
+        "ref_c2517c5d603e709f",
+        "ref_4506b267fef8cbb9",
+        "ref_87c054d5a1128f00",
+        "ref_70579f4a5447c82d",
+        "ref_3d4e2d1fbcb102a0",
+        "ref_fbe8aee10e52c77e",
+        "ref_8feb92176a4ff105"
+      ],
+      "contactSheet": "contact-sheets/cluster_17.jpg",
+      "humanLabel": null,
+      "humanInterpretationStatus": "pending-multimodal-review"
+    },
+    {
+      "clusterId": "cluster_18",
+      "method": "standardized visual-statistics k-means; requires art-director interpretation",
+      "memberCount": 76,
+      "meanMetrics": {
+        "meanLuminance": 0.1118,
+        "luminanceContrast": 0.2837,
+        "meanSaturation": 0.4339,
+        "edgeDensity": 0.1099,
+        "approximateWhitespace": 0.6502
+      },
+      "aspectFamilies": {
+        "landscape-4:3": 76
+      },
+      "filenameSignals": {
+        "identity-branding": 39,
+        "technology-ai": 9,
+        "social-campaign": 9,
+        "character-illustration": 4,
+        "event-announcement": 3,
+        "product-commercial": 3,
+        "data-information": 2,
+        "typography": 1
+      },
+      "approximatePaletteSignals": [
+        "#000000",
+        "#060606",
+        "#010101",
+        "#020202",
+        "#050505",
+        "#03265B",
+        "#141514",
+        "#153735"
+      ],
+      "representativeReferenceIds": [
+        "ref_8fb7bcdf5a35e7c5",
+        "ref_083ed74c902655b5",
+        "ref_8cbfd491df855b88",
+        "ref_930a3f804dc387de",
+        "ref_c876c7a680b30e88",
+        "ref_203327628a5f9bd1",
+        "ref_e4fa6a4695ff4af4",
+        "ref_73ef0e3b11cb2d2d",
+        "ref_12436a255e274053",
+        "ref_7abeb1c05691ef85",
+        "ref_a6c04edb831f189a",
+        "ref_8684a4138ac5fc7a"
+      ],
+      "contactSheet": "contact-sheets/cluster_18.jpg",
+      "humanLabel": null,
+      "humanInterpretationStatus": "pending-multimodal-review"
+    },
+    {
+      "clusterId": "cluster_19",
+      "method": "standardized visual-statistics k-means; requires art-director interpretation",
+      "memberCount": 95,
+      "meanMetrics": {
+        "meanLuminance": 0.2829,
+        "luminanceContrast": 0.6696,
+        "meanSaturation": 0.51,
+        "edgeDensity": 0.3692,
+        "approximateWhitespace": 0.1355
+      },
+      "aspectFamilies": {
+        "landscape-4:3": 95
+      },
+      "filenameSignals": {
+        "social-campaign": 36,
+        "identity-branding": 20,
+        "product-commercial": 9,
+        "technology-ai": 8,
+        "editorial-poster": 4,
+        "character-illustration": 2,
+        "event-announcement": 1,
+        "typography": 1
+      },
+      "approximatePaletteSignals": [
+        "#171718",
+        "#08090B",
+        "#1A2D43",
+        "#5533A8",
+        "#07070A",
+        "#0B0D07",
+        "#3E0604",
+        "#2F271A"
+      ],
+      "representativeReferenceIds": [
+        "ref_1abee410633fa2ea",
+        "ref_5f54b55a3a3b15af",
+        "ref_2c3aaa004d6aeb2d",
+        "ref_e6009b9224be8d88",
+        "ref_167b2fcdc5adf745",
+        "ref_91dbd3a0672f5de3",
+        "ref_a02b8eac117fd79c",
+        "ref_2fe495f04220776c",
+        "ref_a5556f7a01e9637f",
+        "ref_1bffaaa0c01309f5",
+        "ref_21f40d1c622afc53",
+        "ref_64e5af13c7e1b84b"
+      ],
+      "contactSheet": "contact-sheets/cluster_19.jpg",
+      "humanLabel": null,
+      "humanInterpretationStatus": "pending-multimodal-review"
+    },
+    {
+      "clusterId": "cluster_20",
+      "method": "standardized visual-statistics k-means; requires art-director interpretation",
+      "memberCount": 104,
+      "meanMetrics": {
+        "meanLuminance": 0.6445,
+        "luminanceContrast": 0.6212,
+        "meanSaturation": 0.2985,
+        "edgeDensity": 0.1902,
+        "approximateWhitespace": 0.2885
+      },
+      "aspectFamilies": {
+        "landscape-4:3": 104
+      },
+      "filenameSignals": {
+        "identity-branding": 27,
+        "social-campaign": 26,
+        "editorial-poster": 5,
+        "product-commercial": 5,
+        "technology-ai": 3,
+        "character-illustration": 2
+      },
+      "approximatePaletteSignals": [
+        "#D6D5D4",
+        "#5ECE02",
+        "#A9CBDB",
+        "#CFC7BC",
+        "#EAEAEA",
+        "#8FE1AC",
+        "#84D6FE",
+        "#BFC3C7"
+      ],
+      "representativeReferenceIds": [
+        "ref_df4060f93cdfb1a4",
+        "ref_4afafe1a3cdf6347",
+        "ref_4a19266abe9ca767",
+        "ref_e5c12d03be58ca66",
+        "ref_a1b068cc931d8556",
+        "ref_68830bb9e5fb38f4",
+        "ref_47ee02cb84ecc54e",
+        "ref_23048fa1207d0b37",
+        "ref_4e7721fa1779c722",
+        "ref_9ca67b981516207a",
+        "ref_228edcd90d325817",
+        "ref_cedbfcaa5b1ff6be"
+      ],
+      "contactSheet": "contact-sheets/cluster_20.jpg",
+      "humanLabel": null,
+      "humanInterpretationStatus": "pending-multimodal-review"
+    }
+  ]
+}

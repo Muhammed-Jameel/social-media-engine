@@ -1,0 +1,118 @@
+schemaVersion: 1.0.0
+method:
+  computationalClusters: 20
+  population: 1296-primary-top-level-reference-covers
+  humanReview: all-cluster-contact-sheets-plus-selected-original-pixels
+  caveat: "Families describe reusable visual reasoning, not quality labels or templates. Corpus covers are low-resolution landscape previews."
+families:
+  - id: conceptual-single-metaphor
+    observedClusters: [cluster_12, cluster_16, cluster_19]
+    visualGrammar: "One meaning-bearing object or scene; strong crop; explicit tension; restrained supporting type; image and copy complete each other."
+    strengths: [fast-comprehension, memorability, high-distinctiveness, emotional-range]
+    weaknesses: [asset-craft-sensitive, easy-to-overliteralize, image-generation-artifact-risk]
+    bestContentTypes: [awareness, education, thought-leadership, service-explanation, storytelling]
+    audience: [founders, operations-leaders, executives, technical-buyers]
+    emotionalEffect: "Curiosity followed by recognition or resolution."
+    aurendorSuitability: very-high
+    role: primary
+  - id: premium-identity-editorial
+    observedClusters: [cluster_08, cluster_09, cluster_15, cluster_18]
+    visualGrammar: "Strong typographic voice; identity-derived geometry; controlled field color; sparse but intentional microinformation; material applications."
+    strengths: [authority, recognizability, campaign-coherence, typographic-confidence]
+    weaknesses: [can-become-logo-presentation, weak-storytelling, sparse-cover-bias]
+    bestContentTypes: [brand-building, announcement, editorial, thought-leadership]
+    audience: [executives, partners, design-aware-technology-buyers]
+    emotionalEffect: "Quiet authority and considered precision."
+    aurendorSuitability: high
+    role: supporting
+  - id: product-system-story
+    observedClusters: [cluster_04, cluster_08, cluster_11, cluster_20]
+    visualGrammar: "Product or interface evidence staged inside a designed world; controlled device/object relationships; capability shown through use rather than decoration."
+    strengths: [specificity, trust, conversion-clarity, proof]
+    weaknesses: [floating-device-cliche, fake-ui-risk, mockup-dependence]
+    bestContentTypes: [product-introduction, service-explanation, case-study, conversion]
+    audience: [operations-leaders, technical-buyers, prospective-clients]
+    emotionalEffect: "Confidence that the promise is operationally real."
+    aurendorSuitability: high
+    role: primary
+  - id: information-led-editorial
+    observedClusters: [cluster_04, cluster_07, cluster_10, cluster_14]
+    visualGrammar: "Modular information hierarchy; short thesis; controlled evidence blocks; repeatable emphasis logic; deliberate breathing space."
+    strengths: [education, clarity, carousel-progression, Arabic-adaptability]
+    weaknesses: [card-grid-template-risk, dense-body-copy, weak-focal-concept]
+    bestContentTypes: [education, statistic, process, case-study, thought-leadership]
+    audience: [founders, managers, practitioners]
+    emotionalEffect: "Order, comprehension, and useful authority."
+    aurendorSuitability: high-with-concept-gate
+    role: primary
+  - id: expressive-typographic-poster
+    observedClusters: [cluster_03, cluster_05, cluster_06, cluster_09]
+    visualGrammar: "Display type acts as image; steep scale contrast; aggressive crop or field; small support copy; strong cultural tone."
+    strengths: [attention, voice, event-energy, memorability]
+    weaknesses: [legibility-risk, trend-dependence, Latin-layout-transfer-risk]
+    bestContentTypes: [announcement, event, editorial, brand-building]
+    audience: [creative-community, younger-professionals, event-audiences]
+    emotionalEffect: "Energy, confidence, and cultural immediacy."
+    aurendorSuitability: selective
+    role: accent
+  - id: behavior-led-anthropomorphism
+    observedClusters: [cluster_04, cluster_12, cluster_14, cluster_20]
+    visualGrammar: "Objects or systems behave as actors through movement, coordination, friction, search, protection, failure, or recovery; faces are optional."
+    strengths: [complexity-made-relatable, storytelling, memorability, humor]
+    weaknesses: [childishness-risk, sentience-overclaim, character-consistency-cost]
+    bestContentTypes: [education, service-explanation, storytelling, product-introduction]
+    audience: [founders, nontechnical-buyers, practitioners]
+    emotionalEffect: "Recognition and human-scale understanding without losing sophistication."
+    aurendorSuitability: very-high-levels-1-to-3
+    role: primary
+  - id: cinematic-technology-world
+    observedClusters: [cluster_05, cluster_16, cluster_17, cluster_18]
+    visualGrammar: "Atmospheric lighting; deep perspective; material surfaces; focused illuminated state; environmental storytelling."
+    strengths: [premium-atmosphere, ambition, depth, launch-impact]
+    weaknesses: [generic-blue-tech-risk, glow-abuse, low-information-capacity]
+    bestContentTypes: [announcement, product-introduction, brand-building, storytelling]
+    audience: [executives, partners, technology-buyers]
+    emotionalEffect: "Capability, scale, and future-facing confidence."
+    aurendorSuitability: medium-with-cliche-filter
+    role: accent
+  - id: arabic-market-concept-advertising
+    observedClusters: [cluster_03, cluster_12, cluster_16, cluster_19]
+    visualGrammar: "Arabic thesis designed with a culturally legible scene or object; locally relevant casting/context; headline and image developed together."
+    strengths: [regional-relevance, immediate-comprehension, strong-verbal-visual-lock]
+    weaknesses: [dense-footer-copy, literal-localization, AI-human-artifact-risk]
+    bestContentTypes: [awareness, promotion, education, service-explanation, storytelling]
+    audience: [Iraqi-and-regional-business-audiences]
+    emotionalEffect: "Familiarity, wit, relevance, and trust."
+    aurendorSuitability: very-high-with-arabic-review
+    role: primary
+  - id: high-density-promotional-board
+    observedClusters: [cluster_02, cluster_05, cluster_06, cluster_13]
+    visualGrammar: "Many campaign tiles, mockups, effects, products, and headlines shown together at nearly equal visual weight."
+    strengths: [portfolio-overview, range-demonstration]
+    weaknesses: [feed-unreadable, weak-single-idea, repetition, overstimulation, presentation-shell-bias]
+    bestContentTypes: [internal-case-study-board]
+    audience: [internal-reviewers]
+    emotionalEffect: "Volume and energy, often at the expense of clarity."
+    aurendorSuitability: reject-as-production-family
+    role: negative-anchor
+clusterInterpretation:
+  cluster_01: "One black/static asset outlier; not a useful quality family."
+  cluster_02: "Very high-density promotional and thumbnail boards; downweight heavily."
+  cluster_03: "Photo-led campaigns and brand/editorial covers with stronger focal control."
+  cluster_04: "Light editorial, product/UI, and sparse illustration systems."
+  cluster_05: "Dark high-contrast promotional/cinematic poster family; mixed craft."
+  cluster_06: "Saturated portfolio and campaign presentation covers; frequent display-type emphasis."
+  cluster_07: "Light social grids and UI/brand boards; high template risk."
+  cluster_08: "Sparse identity-system and tech-brand applications."
+  cluster_09: "Dark premium identity/product and typographic fields."
+  cluster_10: "Extreme sparse editorial covers; useful for restraint, not representative of full posts."
+  cluster_11: "Product and social-ad systems with photography, devices, and campaign tiles."
+  cluster_12: "Conceptual 3D, illustration, campaign scenes, and character candidates."
+  cluster_13: "Mid/high-density commercial social grids; frequent structural repetition."
+  cluster_14: "Digital campaign systems, informational carousels, and technology posts."
+  cluster_15: "Sparse logo/identity covers; useful only for mark restraint and whitespace."
+  cluster_16: "Conceptual brand photography and regional/Arabic campaign scenes."
+  cluster_17: "Dark digital campaigns and product worlds; mixed originality."
+  cluster_18: "Dark sparse identity and logo covers; presentation-cover bias."
+  cluster_19: "Photo/editorial, Arabic commercial, and higher-craft promotional systems."
+  cluster_20: "3D/product/pastel mockup worlds; useful for material and lighting craft."

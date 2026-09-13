@@ -1,4 +1,4 @@
-import { AlertOctagon, Check, CircleStop, Command, DatabaseZap, KeyRound, LockKeyhole, Pause, Play, ShieldCheck, Sparkles } from "lucide-react";
+import { AlertOctagon, Check, CircleStop, Command, DatabaseZap, KeyRound, LockKeyhole, Pause, Play, ShieldAlert, ShieldCheck, Sparkles } from "lucide-react";
 import { getRepository } from "@aurendor/db/runtime";
 import { classifyOwnerCommand } from "@aurendor/engine";
 import { confirmOwnerCommandAction, interpretOwnerCommandAction, setEnginePauseAction } from "@/app/actions";
@@ -12,10 +12,37 @@ export default async function ControlsPage({ searchParams }: { searchParams: Pro
   const { preview, result, error } = await searchParams;
   const settings = await (await getRepository()).getSettings();
   const commandPreview = preview ? classifyOwnerCommand(preview) : null;
+  const evidenceReason = typeof settings.creativeGateEvidence.reason === "string"
+    ? settings.creativeGateEvidence.reason
+    : "No qualifying release evidence has been recorded.";
+  const evidencePolicy = typeof settings.creativeGateEvidence.releasePolicy === "string"
+    ? settings.creativeGateEvidence.releasePolicy
+    : "An audited release decision is required before creative production can resume.";
   return (
     <>
       <PageHeader eyebrow="Safety controls" title="Control is a system property." description="Global pause, dry-run posture, production enablement, and approval gates are explicit. No model or provider can infer permission from intent." actions={<StatusBadge value={settings.paused ? "PAUSED" : "AVAILABLE"} label={settings.paused ? "Engine paused" : "Engine active"} />} />
       {result ? <div className="result-banner" role="status"><Check size={17} /><div><strong>Owner command recorded.</strong><span>The durable audit trail and effective engine state now reflect this confirmed decision.</span></div></div> : null}
+
+      <Panel title="Creative quality release gate" description="A separate, durable boundary holds only production design workflows while the visual system is rebuilt." className="creative-gate-panel">
+        <div className="creative-gate-state">
+          <span className="creative-gate-icon"><ShieldAlert size={27} /></span>
+          <div>
+            <p className="eyebrow">Read-only release state</p>
+            <h3>{settings.creativeGateState.replaceAll("_", " ")}</h3>
+            <p>{evidenceReason}</p>
+          </div>
+          <StatusBadge value={settings.creativeProductionPaused ? "BLOCKED" : "AVAILABLE"} label={settings.creativeProductionPaused ? "POST_PRODUCTION held" : "Released"} />
+        </div>
+        <dl className="creative-gate-facts">
+          <div><dt>Held scope</dt><dd>POST_PRODUCTION claims only</dd></div>
+          <div><dt>Unaffected</dt><dd>Planning · analytics · publishing safeguards · retrospectives</dd></div>
+          <div><dt>Release evidence</dt><dd>{evidencePolicy}</dd></div>
+          <div><dt>Control policy</dt><dd>No console toggle; release requires an audited configuration change.</dd></div>
+        </dl>
+        {settings.environmentCreativeProductionPauseRequested ? (
+          <div className="creative-gate-environment-note"><LockKeyhole size={17} /><span><strong>Deployment creative kill switch is also active.</strong> A released database gate will remain held until `AURENDOR_CREATIVE_PRODUCTION_PAUSED=false` is deployed and the worker restarts.</span></div>
+        ) : null}
+      </Panel>
 
       <Panel title="Command the system in plain language" description="English or Arabic intent is classified into a bounded, inspectable change before it is persisted." className="command-panel">
         <form action={interpretOwnerCommandAction} className="command-form">
@@ -57,6 +84,7 @@ export default async function ControlsPage({ searchParams }: { searchParams: Pro
           <dl className="control-settings">
             <div><dt>Execution</dt><dd><StatusBadge value={settings.dryRun ? "MANUAL_ONLY" : "AVAILABLE"} label={settings.dryRun ? "Dry run" : "Live execution"} /></dd></div>
             <div><dt>Production publishing</dt><dd><StatusBadge value={settings.productionPublishingEnabled ? "AVAILABLE" : "DISABLED"} label={settings.productionPublishingEnabled ? "Enabled" : "Disabled"} /></dd></div>
+            <div><dt>Creative production</dt><dd><StatusBadge value={settings.creativeProductionPaused ? "BLOCKED" : "AVAILABLE"} label={settings.creativeProductionPaused ? "Quality gate held" : "Released"} /></dd></div>
             <div><dt>Autonomy stage</dt><dd>{settings.autonomyStage}</dd></div>
             <div><dt>Planning lead</dt><dd>T−{settings.planningLeadDays} days</dd></div>
           </dl>

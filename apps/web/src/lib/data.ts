@@ -49,6 +49,7 @@ function present(name: string): boolean {
 export function getSetupChecklist(): SetupItem[] {
   return [
     { label: "Owner authentication", description: "A signed owner session protects approvals and controls.", configured: present("OWNER_EMAIL") && present("OWNER_PASSWORD_HASH") && (process.env.OWNER_SESSION_SECRET?.length ?? 0) >= 32, requiredFor: "Production console" },
+    { label: "Postiz publishing bridge", description: "One self-hosted gateway for the five active social channels.", configured: present("POSTIZ_API_URL") && present("POSTIZ_API_KEY"), requiredFor: "Central publishing" },
     { label: "OpenAI model gateway", description: "Structured generation and evaluation through the Responses API.", configured: present("OPENAI_API_KEY"), requiredFor: "Live agent runs" },
     { label: "Canva Connect", description: "Editable production drafts and export handoff.", configured: present("CANVA_CLIENT_ID") && present("CANVA_CLIENT_SECRET"), requiredFor: "Canva workflow" },
     { label: "Meta", description: "Instagram and Facebook account connection.", configured: present("META_APP_ID") && present("META_APP_SECRET"), requiredFor: "Meta publishing" },

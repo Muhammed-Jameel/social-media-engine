@@ -1,8 +1,8 @@
 "use server";
 
 import { randomUUID } from "node:crypto";
-import { getRepository } from "@aurendor/db/runtime";
-import { classifyOwnerCommand } from "@aurendor/engine";
+import { getRepository, getDatabase } from "@aurendor/db/runtime";
+import { classifyOwnerCommand, loadProductionJob } from "@aurendor/engine";
 import { ApprovalDecisionSchema } from "@aurendor/schemas";
 import { z } from "zod";
 import { revalidatePath } from "next/cache";
@@ -18,6 +18,7 @@ function required(formData: FormData, name: string): string {
 export async function reviewContentAction(formData: FormData): Promise<void> {
   await requireOwner();
   const contentItemId = required(formData, "contentItemId");
+  if (await loadProductionJob(await getDatabase(), contentItemId)) redirect(`/production?id=${encodeURIComponent(contentItemId)}`);
   // Imported legacy items use stable `content-*` identifiers rather than UUIDs.
   // Preserve every other shared approval invariant while accepting that durable ID form.
   const webApprovalSchema = ApprovalDecisionSchema.omit({ contentItemId: true }).extend({ contentItemId: z.string().min(1) });

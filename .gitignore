@@ -9,6 +9,7 @@ test-results/
 .env.local
 .env.*.local
 !.env.example
+.postiz/
 *.log
 *.tsbuildinfo
 .DS_Store

@@ -1,0 +1,179 @@
+{
+  "version": "v7",
+  "time": "19:30",
+  "timezone": "Asia/Baghdad",
+  "series": "أورندور",
+  "format": "carousel",
+  "platforms": [
+    "Instagram",
+    "Facebook",
+    "LinkedIn",
+    "X"
+  ],
+  "track": "independent_value",
+  "funnel": "awareness",
+  "level": "intermediate",
+  "downloadFiles": [],
+  "readyState": "copy_complete_pending_render_and_final_QA",
+  "productionMethod": "Render using static/render.cjs. Actual Ghroob and Dh Ranclo, original AURENDOR palette and architectural plates. Recompose at mobile size; preserve qualifying conditions in main copy.",
+  "tools": [
+    "Original brand fonts and assets",
+    "Local browser renderer",
+    "Python standard library for bounded evidence fixtures"
+  ],
+  "motion": "Static only. No moving-poster video adaptation.",
+  "assets": [
+    "assets/plates/SEP-03-slide-03.png"
+  ],
+  "id": "P06",
+  "date": "2026-09-20",
+  "titleAr": "الملف القديم\nقد يكون الصحيح",
+  "titleEn": "The right policy depends on the date",
+  "pillar": "rag_systems",
+  "audience": "مدير عمليات أو مسؤول معرفة داخلية يبني مساعدًا يجيب من سياسات الشركة.",
+  "objective": "شرح اختيار النسخة السارية في تاريخ السؤال، باستخدام وثيقتين وسؤالين بدل قاعدة اختيار أحدث رفع.",
+  "coreIdea": "تاريخ رفع الملف يصف وصوله إلى النظام. تاريخ السريان يحدد الحالات التي يحكمها؛ وقد يحتاج السؤال التاريخي نسخة انتهى العمل بها الآن.",
+  "sourcePacket": [
+    {
+      "id": "P06-FIXTURE",
+      "kind": "executed_synthetic_fixture",
+      "source": "research/experiments/temporal-policy/fixture-and-results.json",
+      "claim": "Date filtering selects v1 for August20 and31, v2 for September1 and20. Both approved; v1 uploaded later.",
+      "limits": "Authored policy and deterministic Python selection. No language model, RAG system or Azure deployment tested."
+    },
+    {
+      "id": "MS-FILTERS",
+      "kind": "primary_documentation",
+      "source": "https://learn.microsoft.com/en-us/azure/search/search-filters",
+      "checked": "2026-09-10",
+      "claim": "Search filters can include/exclude indexed content using filterable metadata values.",
+      "limits": "The effective-date metadata contract is AURENDOR design advice, not an automatic vendor guarantee."
+    }
+  ],
+  "claimLimits": [
+    "مثال سياسة داخلية خيالي، وليس تفسيرًا لقانون أو سياسة جهة حقيقية.",
+    "نُفذ مرشح تواريخ محلي فقط؛ لا ندعي اختبار مساعد RAG أو صلاحيات وصول.",
+    "السريان هنا محدد وواضح بلا تداخل. تعارض النسخ المعتمدة يحتاج حسم مالك السياسة."
+  ],
+  "whySave": "مرجع عند إعداد بيانات إصدارات السياسات واختبارات الأسئلة التاريخية.",
+  "whyShare": "يرسله مسؤول المعرفة إلى مطور المساعد للاتفاق على معنى تاريخ الوثيقة.",
+  "whyFollow": "يتناول قرارًا معماريًا دقيقًا بمثال يمكن فحصه.",
+  "cta": "جرّب سؤالًا عن اليوم وآخر عن تاريخ سابق على التعديل؛ هل يستشهد المساعد بالنسخة المناسبة لكل تاريخ؟",
+  "slides": [
+    {
+      "title": "الملف القديم\nقد يكون الصحيح",
+      "body": "اسأل أولًا: عن أي تاريخ نتحدث؟",
+      "layout": "hero",
+      "media": "assets/plates/SEP-03-slide-03.png",
+      "eyebrow": "المساعد الداخلي ومصادره",
+      "dark": true
+    },
+    {
+      "title": "موعدان.\nوفترتا سريان.",
+      "body": "",
+      "layout": "timeline",
+      "eyebrow": "سياسة خيالية للتوضيح",
+      "items": [
+        {
+          "label": "حتى ٣١ آب",
+          "text": "تسليم التقرير الأسبوعي: الأربعاء."
+        },
+        {
+          "label": "من ١ أيلول",
+          "text": "النسخة المعتمدة الجديدة: الخميس."
+        }
+      ],
+      "sourceNote": "النسخة الجديدة تحل محل السابقة من ١ أيلول"
+    },
+    {
+      "title": "سؤالان في اليوم نفسه",
+      "body": "النسخة القديمة تجيب عن الفترة التي كانت سارية فيها.",
+      "layout": "comparison",
+      "eyebrow": "مثال على اختيار المصدر",
+      "table": {
+        "headers": [
+          "السؤال عن الموعد",
+          "النسخة الصحيحة"
+        ],
+        "rows": [
+          {
+            "cells": [
+              "في ٢٠ آب؟",
+              "القديمة: الأربعاء"
+            ]
+          },
+          {
+            "cells": [
+              "في ٢٠ أيلول؟",
+              "الجديدة: الخميس"
+            ],
+            "kind": "emphasis"
+          }
+        ]
+      }
+    },
+    {
+      "title": "الأحدث رفعًا\nليس الأحدث سريانًا",
+      "body": "ترتيب الملفات حسب الرفع سيختار الأرشيف حتى لسؤال اليوم.",
+      "layout": "timeline",
+      "items": [
+        {
+          "label": "١ أيلول",
+          "text": "رُفعت النسخة الجديدة."
+        },
+        {
+          "label": "٨ أيلول",
+          "text": "رُفعت نسخة الأرشيف القديمة."
+        }
+      ],
+      "eyebrow": "تواريخ خيالية ضمن المثال"
+    },
+    {
+      "title": "اربط الإجابة\nبفترة السريان",
+      "body": "حدّد تاريخ السؤال، ثم اختر النسخة المعتمدة التي تغطيه.",
+      "layout": "closing",
+      "tone": "dark",
+      "items": [
+        {
+          "label": "مع كل نسخة",
+          "text": "بداية السريان، نهايته، الجهة المعتمِدة، والنسخة التي استُبدلت."
+        }
+      ],
+      "sourceNote": "إذا تداخلت الفترات، يُحسم التعارض قبل إعطاء جواب قطعي"
+    }
+  ],
+  "caption": "هل تبحث عن موعد التقرير اليوم، أم عن الموعد الذي كان معمولًا به في آب؟ السؤالان قد يحتاجان مصدرين مختلفين.\n\nفي مثال خيالي، تحدد النسخة الأولى الأربعاء موعدًا للتسليم حتى ٣١ آب. وتحدد نسخة معتمدة تحل محلها الخميس ابتداءً من ١ أيلول. سؤال «ما الموعد في ٢٠ آب؟» يحتاج النسخة الأولى، حتى لو طرحناه في أيلول.\n\nالالتباس يزيد إذا رُفع الأرشيف في ٨ أيلول، بعد رفع السياسة الجديدة في ١ أيلول. تاريخ الرفع يخبر النظام متى وصل الملف؛ لا يخبره متى كانت أحكامه سارية.\n\nنفذنا على بيانات المثال مرشح تواريخ محليًا: اختار القديمة ليومي ٢٠ و٣١ آب، والجديدة ليومي ١ و٢٠ أيلول. هذا تحقق من قاعدة الاختيار، وليس اختبارًا لمساعد لغوي.\n\nعند بناء مساعد يسترجع الإجابة من ملفات الشركة، احتفظ بفترة السريان وحالة الاعتماد وعلاقة الاستبدال مع كل نسخة. إذا لم يحدد السؤال تاريخًا، وضّح ما إذا كان المقصود الوضع الحالي. وإذا تعارضت نسختان معتمدتان، أحِل التعارض إلى مالك السياسة. صلاحية المستخدم في الاطلاع تبقى قيدًا مستقلًا عن صحة اختيار التاريخ.\n\nتدعم مرشحات البحث تحديد الوثائق بحسب بياناتها الوصفية؛ توثيق Microsoft يشرح الآلية: https://learn.microsoft.com/en-us/azure/search/search-filters",
+  "linkedin": "من قرارات تصميم المساعد الداخلي: هل نرتب المصادر بحسب آخر رفع، أم نختارها بحسب التاريخ الذي يسأل عنه الموظف؟\n\nمثال خيالي: موعد التقرير الأربعاء حتى نهاية آب، ثم الخميس منذ ١ أيلول بقرار معتمد يستبدل النسخة السابقة. رُفع الأرشيف في ٨ أيلول. ترتيب الرفع وحده يجعل الأرشيف يبدو أحدث، بينما سؤال عن ٢٠ آب يحتاجه فعلًا وسؤال عن ٢٠ أيلول يحتاج النسخة الجديدة.\n\nالمطلوب فصل تاريخ الإدخال عن فترة السريان. اقترح أن يحمل كل إصدار بداية السريان ونهايته وحالة الاعتماد والجهة المالكة وعلاقة الاستبدال، وأن ينتقل هذا السياق إلى المقاطع المسترجعة. هذا تصميم للبيانات وعقد اختيار المصدر؛ لا يحله توجيه «استخدم أحدث ملف» وحده.\n\nاختبرنا قاعدة التواريخ في برنامج محلي على أربع حالات حدودية وتاريخية. لم نختبر نظام RAG أو مزودًا سحابيًا. وفي التنفيذ الحقيقي، يجب حسم تداخل الفترات وتطبيق صلاحيات الوصول بصورة مستقلة.\n\nآلية التصفية بالبيانات الوصفية موثقة هنا: https://learn.microsoft.com/en-us/azure/search/search-filters",
+  "x": [
+    "ملف سياسة قديم قد يجيب السؤال الصحيح: إذا سألت عن ٢٠ آب، تحتاج ما كان ساريًا يومها. النسخة المعتمدة منذ أيلول لا تغيّر تلقائيًا أحكام الفترة السابقة. مثالنا خيالي.",
+    "تاريخ الرفع ≠ تاريخ السريان. إذا رُفع الأرشيف بعد النسخة الجديدة، فإن «اختر أحدث ملف» قد يعكس الترتيب المطلوب. احتفظ بفترة السريان وعلاقة الاستبدال.",
+    "جرّب سؤالًا تاريخيًا وآخر حاليًا. قارن المصدر المختار لكل منهما. نُفذت قاعدة الاختيار محليًا على مثالنا، دون ادعاء اختبار مساعد لغوي. https://learn.microsoft.com/en-us/azure/search/search-filters"
+  ],
+  "stories": [
+    {
+      "title": "سؤال عن ٢٠ آب",
+      "body": "تغيّر الموعد من الأربعاء إلى الخميس في ١ أيلول.",
+      "action": "أي موعد ينطبق على ٢٠ آب؟",
+      "sticker": "Native poll: الأربعاء / الخميس. Fictional policy example."
+    },
+    {
+      "title": "الأربعاء",
+      "body": "السؤال عن فترة النسخة القديمة، حتى لو طرحناه اليوم.",
+      "action": "راجع تاريخ السريان مع المصدر.",
+      "sticker": "",
+      "tone": "dark"
+    }
+  ],
+  "visualConcept": "An actual temporal comparison: two effective intervals, two questions, then an inverted upload chronology. Use timeline connectors and a compact two-column table. No fictional software interface.",
+  "adaptationNotes": "Instagram: five frames. Facebook: self-contained caption plus carousel. LinkedIn: supplied architecture discussion with comparison frame. X: three posts. Stories: historical-date poll followed by reveal. No legal authority implied.",
+  "hook": "الملف القديم\nقد يكون الصحيح",
+  "facebook": "هل تبحث عن موعد التقرير اليوم، أم عن الموعد الذي كان معمولًا به في آب؟ السؤالان قد يحتاجان مصدرين مختلفين.\n\nفي مثال خيالي، تحدد النسخة الأولى الأربعاء موعدًا للتسليم حتى ٣١ آب. وتحدد نسخة معتمدة تحل محلها الخميس ابتداءً من ١ أيلول. سؤال «ما الموعد في ٢٠ آب؟» يحتاج النسخة الأولى، حتى لو طرحناه في أيلول.\n\nالالتباس يزيد إذا رُفع الأرشيف في ٨ أيلول، بعد رفع السياسة الجديدة في ١ أيلول. تاريخ الرفع يخبر النظام متى وصل الملف؛ لا يخبره متى كانت أحكامه سارية.\n\nنفذنا على بيانات المثال مرشح تواريخ محليًا: اختار القديمة ليومي ٢٠ و٣١ آب، والجديدة ليومي ١ و٢٠ أيلول. هذا تحقق من قاعدة الاختيار، وليس اختبارًا لمساعد لغوي.\n\nعند بناء مساعد يسترجع الإجابة من ملفات الشركة، احتفظ بفترة السريان وحالة الاعتماد وعلاقة الاستبدال مع كل نسخة. إذا لم يحدد السؤال تاريخًا، وضّح ما إذا كان المقصود الوضع الحالي. وإذا تعارضت نسختان معتمدتان، أحِل التعارض إلى مالك السياسة. صلاحية المستخدم في الاطلاع تبقى قيدًا مستقلًا عن صحة اختيار التاريخ.\n\nتدعم مرشحات البحث تحديد الوثائق بحسب بياناتها الوصفية؛ توثيق Microsoft يشرح الآلية: https://learn.microsoft.com/en-us/azure/search/search-filters",
+  "sourceIds": [
+    "P06-FIXTURE",
+    "MS-FILTERS"
+  ],
+  "sourceUrls": [
+    "research/experiments/temporal-policy/fixture-and-results.json",
+    "https://learn.microsoft.com/en-us/azure/search/search-filters"
+  ]
+}
